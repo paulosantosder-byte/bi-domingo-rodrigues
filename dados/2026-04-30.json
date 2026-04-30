@@ -1,0 +1,49 @@
+{
+  "data": "2026-04-30",
+  "metricas": {
+    "total_conversas": 117,
+    "sem_resposta": 7,
+    "criticas": 1,
+    "sem_vendedor": 2
+  },
+  "vendedores": [
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "total_conversas": 66,
+      "sem_resposta": 3,
+      "mediana_resposta_min": 3,
+      "media_resposta_min": 130,
+      "total_respostas": 318
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "total_conversas": 10,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 76,
+      "total_respostas": 58
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "cliente": "Deus E Fiel",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "15:03",
+      "ultima_msg": "15:03",
+      "total_msgs": 24,
+      "status": "critico"
+    },
+    {
+      "id": 2,
+      "cliente": "Vivenda Residence...",
+      "vendedor": "Guilherme",
+      "hora_lista": "17:53",
+      "ultima_msg": "18:07",
+      "total_msgs": 20,
+      "status": "sem_resposta"
+    }
+  ]
+}
