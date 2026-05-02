@@ -1,4 +1,13 @@
 {
-  "relatorios": [],
-  "ultima_atualizacao": ""
+  "relatorios": [
+    {
+      "data": "2026-05-02",
+      "total_conversas": 65,
+      "sem_resposta": 8,
+      "criticas": 7,
+      "nota_media": 0.32,
+      "vendedores": ["Luana", "Maria Luiza Ramos", "Keane", "Claudio Rodrigues", "Caio Roberto", "Guilherme"]
+    }
+  ],
+  "ultima_atualizacao": "2026-05-02T13:18"
 }
