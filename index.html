@@ -13,9 +13,9 @@ body {
   padding: 24px; 
   line-height: 1.5; 
 }
-.container { max-width: 1280px; margin: 0 auto; }
+.container { max-width: 1400px; margin: 0 auto; }
 
-/* Header com seletor de data */
+/* Header */
 header { 
   background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%); 
   color: white; 
@@ -52,65 +52,310 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
   background: white;
   color: #1e40af;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.date-selector select:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
-}
-.loading-indicator {
-  display: inline-block;
-  margin-left: auto;
-  padding: 8px 16px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 6px;
-  font-size: 13px;
 }
 
-/* Resto do CSS - igual ao que você já tem */
-.metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
-.metric-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 4px solid #6366f1; }
+/* Métricas */
+.metrics-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 16px; 
+  margin-bottom: 24px; 
+}
+.metric-card { 
+  background: white; 
+  padding: 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  border-left: 4px solid #6366f1; 
+}
 .metric-card.crit { border-left-color: #dc2626; }
 .metric-card.warn { border-left-color: #f59e0b; }
 .metric-card.ok { border-left-color: #10b981; }
-.metric-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
-.metric-card .value { font-size: 32px; font-weight: 700; margin-top: 4px; }
-.metric-card .hint { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+.metric-card .label { 
+  font-size: 12px; 
+  color: #64748b; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5px; 
+}
+.metric-card .value { 
+  font-size: 32px; 
+  font-weight: 700; 
+  margin-top: 4px; 
+}
+.metric-card .hint { 
+  font-size: 12px; 
+  color: #94a3b8; 
+  margin-top: 4px; 
+}
 
-.section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-.section h2 { font-size: 18px; margin-bottom: 16px; color: #1e293b; }
+/* Seções */
+.section { 
+  background: white; 
+  border-radius: 12px; 
+  padding: 24px; 
+  margin-bottom: 24px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+}
+.section h2 { 
+  font-size: 18px; 
+  margin-bottom: 16px; 
+  color: #1e293b; 
+}
 
-.sellers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-.seller-card { background: white; border-radius: 10px; padding: 18px; border-top: 4px solid var(--seller-color); box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-.seller-name { font-size: 16px; font-weight: 700; color: var(--seller-color); margin-bottom: 12px; }
-.seller-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 12px; }
-.metric { background: #f8fafc; padding: 10px; border-radius: 8px; text-align: center; }
-.m-val { font-size: 18px; font-weight: 700; color: #0f172a; }
-.m-lbl { font-size: 11px; color: #64748b; margin-top: 2px; }
-.seller-foot { font-size: 11px; color: #94a3b8; text-align: center; padding-top: 8px; border-top: 1px solid #e2e8f0; }
+/* Insights (Destaques, Alertas, Oportunidades) */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.insight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.insight-card.positive {
+  border-left: 4px solid #10b981;
+}
+.insight-card.alert {
+  border-left: 4px solid #f59e0b;
+}
+.insight-card.opportunity {
+  border-left: 4px solid #3b82f6;
+}
+.insight-card h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.insight-item {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.insight-item:last-child {
+  margin-bottom: 0;
+}
 
-.tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-.tab { padding: 8px 16px; border-radius: 8px; background: #f1f5f9; border: none; cursor: pointer; font-weight: 600; color: #64748b; font-size: 14px; }
-.tab.active { background: #1e40af; color: white; }
-.tab-content { display: none; }
-.tab-content.active { display: block; }
+/* Vendedores */
+.sellers-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 16px; 
+}
+.seller-card { 
+  background: white; 
+  border-radius: 10px; 
+  padding: 18px; 
+  border-top: 4px solid var(--seller-color); 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06); 
+}
+.seller-name { 
+  font-size: 18px; 
+  font-weight: 700; 
+  color: var(--seller-color); 
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seller-score {
+  background: var(--seller-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.seller-metrics { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  margin-bottom: 12px; 
+}
+.metric { 
+  background: #f8fafc; 
+  padding: 10px; 
+  border-radius: 8px; 
+  text-align: center; 
+}
+.m-val { 
+  font-size: 18px; 
+  font-weight: 700; 
+  color: #0f172a; 
+}
+.m-lbl { 
+  font-size: 11px; 
+  color: #64748b; 
+  margin-top: 2px; 
+}
+.seller-analysis {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+.seller-analysis h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.seller-analysis ul {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.seller-analysis li {
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.seller-analysis li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--seller-color);
+  font-weight: bold;
+}
 
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-th { background: #f8fafc; padding: 10px; text-align: left; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; }
-td { padding: 10px; border-bottom: 1px solid #f1f5f9; }
-tr:hover td { background: #f8fafc; }
+/* Ranking */
+.ranking-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.ranking-table th {
+  background: #f8fafc;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.ranking-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+.ranking-table tr:hover td {
+  background: #f8fafc;
+}
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+}
+.rank-1 { background: #fbbf24; color: #78350f; }
+.rank-2 { background: #d1d5db; color: #374151; }
+.rank-3 { background: #f59e0b; color: #78350f; }
+.rank-other { background: #e5e7eb; color: #6b7280; }
 
-.badge { padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; }
-.badge.crit { background: #fee2e2; color: #b91c1c; }
-.badge.warn { background: #fef3c7; color: #b45309; }
-.badge.ok { background: #d1fae5; color: #065f46; }
+/* Tabs */
+.tabs { 
+  display: flex; 
+  gap: 8px; 
+  margin-bottom: 16px; 
+  flex-wrap: wrap; 
+}
+.tab { 
+  padding: 10px 18px; 
+  border-radius: 8px; 
+  background: #f1f5f9; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: 600; 
+  color: #64748b; 
+  font-size: 14px; 
+  transition: all 0.2s;
+}
+.tab.active { 
+  background: #1e40af; 
+  color: white; 
+}
+.tab:hover:not(.active) {
+  background: #e2e8f0;
+}
+.tab-content { 
+  display: none; 
+}
+.tab-content.active { 
+  display: block; 
+}
 
-.seller { font-weight: 500; }
-.seller.none { color: #94a3b8; font-style: italic; }
+/* Tabela de conversas */
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: 14px; 
+}
+th { 
+  background: #f8fafc; 
+  padding: 10px; 
+  text-align: left; 
+  font-weight: 600; 
+  color: #475569; 
+  border-bottom: 2px solid #e2e8f0; 
+}
+td { 
+  padding: 10px; 
+  border-bottom: 1px solid #f1f5f9; 
+}
+tr:hover td { 
+  background: #f8fafc; 
+}
 
-.footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 16px; }
+/* Badges */
+.badge { 
+  padding: 4px 10px; 
+  border-radius: 6px; 
+  font-size: 11px; 
+  font-weight: 600; 
+  display: inline-block;
+}
+.badge.crit { 
+  background: #fee2e2; 
+  color: #b91c1c; 
+}
+.badge.warn { 
+  background: #fef3c7; 
+  color: #b45309; 
+}
+.badge.ok { 
+  background: #d1fae5; 
+  color: #065f46; 
+}
 
-/* Loading state */
+.seller { 
+  font-weight: 500; 
+}
+.seller.none { 
+  color: #94a3b8; 
+  font-style: italic; 
+}
+
+.footer { 
+  text-align: center; 
+  color: #94a3b8; 
+  font-size: 12px; 
+  padding: 16px; 
+}
+
+/* Loading */
 .loading {
   text-align: center;
   padding: 48px;
@@ -128,30 +373,19 @@ tr:hover td { background: #f8fafc; }
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-
-/* Error state */
-.error {
-  background: #fee2e2;
-  color: #b91c1c;
-  padding: 16px;
-  border-radius: 8px;
-  margin: 24px 0;
-  border-left: 4px solid #dc2626;
-}
 </style>
 </head>
 <body>
 <div class="container">
   <header>
     <h1>📊 BI Atendimento - Domingo e Rodrigues</h1>
-    <div class="sub">Análise de conversas e tempo de resposta dos vendedores</div>
+    <div class="sub">Análise de conversas, tempo de resposta e aderência aos scripts</div>
     
     <div class="date-selector">
       <label>📅 Data:</label>
       <select id="date-select">
         <option value="">Carregando...</option>
       </select>
-      <span class="loading-indicator" id="loading-status">●</span>
     </div>
   </header>
 
@@ -162,18 +396,14 @@ tr:hover td { background: #f8fafc; }
     </div>
   </div>
 
-  <div class="footer" id="footer">
-    Carregando...
-  </div>
+  <div class="footer" id="footer">Carregando...</div>
 </div>
 
 <script>
-// Configuração
 const BASE_URL = 'dados/';
 let datasDisponiveis = [];
 let dadosCache = {};
 
-// Formata data para exibição
 function formatarData(dataISO) {
   const [ano, mes, dia] = dataISO.split('-');
   const data = new Date(ano, mes - 1, dia);
@@ -189,18 +419,17 @@ function formatarData(dataISO) {
   return `${dia}/${mes}/${ano}`;
 }
 
-// Formata tempo de resposta
 function formatarTempo(minutos) {
+  if (!minutos || minutos === 0) return '—';
   if (minutos < 60) return `${minutos} min`;
   const horas = Math.floor(minutos / 60);
   const mins = minutos % 60;
   return `${horas}h ${mins}min`;
 }
 
-// Carrega lista de datas disponíveis
 async function carregarDatasDisponiveis() {
   try {
-    const response = await fetch(`${BASE_URL}index.json`);
+    const response = await fetch(`${BASE_URL}index.json?t=${Date.now()}`);
     if (!response.ok) throw new Error('Erro ao carregar índice');
     
     const data = await response.json();
@@ -208,139 +437,219 @@ async function carregarDatasDisponiveis() {
       new Date(b.data) - new Date(a.data)
     );
     
-    // Popula o seletor
     const select = document.getElementById('date-select');
     select.innerHTML = datasDisponiveis.map(rel => 
       `<option value="${rel.data}">${formatarData(rel.data)} (${rel.total_conversas} conversas)</option>`
     ).join('');
     
-    // Carrega o dia mais recente
     if (datasDisponiveis.length > 0) {
       select.value = datasDisponiveis[0].data;
       carregarDados(datasDisponiveis[0].data);
     }
   } catch (error) {
     document.getElementById('content').innerHTML = `
-      <div class="error">
-        ❌ Erro ao carregar dados: ${error.message}
+      <div class="section">
+        <p style="color: #dc2626;">❌ Erro ao carregar dados: ${error.message}</p>
       </div>
     `;
   }
 }
 
-// Carrega dados de um dia específico
 async function carregarDados(dataISO) {
-  const loadingStatus = document.getElementById('loading-status');
-  loadingStatus.textContent = '⏳ Carregando...';
-  loadingStatus.style.background = 'rgba(255,255,255,0.3)';
-  
   try {
-    // Verifica cache
     if (dadosCache[dataISO]) {
       renderizarDados(dadosCache[dataISO]);
-      loadingStatus.textContent = '✅ Atualizado';
-      loadingStatus.style.background = 'rgba(16,185,129,0.3)';
       return;
     }
     
-    const response = await fetch(`${BASE_URL}${dataISO}.json`);
+    const response = await fetch(`${BASE_URL}${dataISO}.json?t=${Date.now()}`);
     if (!response.ok) throw new Error('Dados não encontrados');
     
     const dados = await response.json();
     dadosCache[dataISO] = dados;
     renderizarDados(dados);
-    
-    loadingStatus.textContent = '✅ Atualizado';
-    loadingStatus.style.background = 'rgba(16,185,129,0.3)';
-    
-    setTimeout(() => {
-      loadingStatus.textContent = '●';
-      loadingStatus.style.background = 'rgba(255,255,255,0.2)';
-    }, 2000);
   } catch (error) {
     document.getElementById('content').innerHTML = `
-      <div class="error">
-        ❌ Erro ao carregar dados de ${formatarData(dataISO)}: ${error.message}
+      <div class="section">
+        <p style="color: #dc2626;">❌ Erro ao carregar dados de ${formatarData(dataISO)}: ${error.message}</p>
       </div>
     `;
-    loadingStatus.textContent = '❌ Erro';
-    loadingStatus.style.background = 'rgba(220,38,38,0.3)';
   }
 }
 
-// Renderiza os dados na página
 function renderizarDados(dados) {
   const content = document.getElementById('content');
   
-  // Métricas
+  // Métricas gerais
   const metricas = `
     <div class="metrics-grid">
       <div class="metric-card">
-        <div class="label">Total de Clientes Atendidos</div>
-        <div class="value">${dados.metricas.total_conversas}</div>
+        <div class="label">Total de Conversas</div>
+        <div class="value">${dados.metricas?.total_conversas || 0}</div>
         <div class="hint">conversas únicas hoje</div>
       </div>
-      <div class="metric-card ${dados.metricas.sem_resposta > 0 ? 'warn' : ''}">
+      <div class="metric-card ${(dados.metricas?.sem_resposta || 0) > 0 ? 'warn' : ''}">
         <div class="label">Sem Resposta</div>
-        <div class="value">${dados.metricas.sem_resposta}</div>
+        <div class="value">${dados.metricas?.sem_resposta || 0}</div>
         <div class="hint">última msg foi do cliente</div>
       </div>
-      <div class="metric-card ${dados.metricas.criticas > 0 ? 'crit' : ''}">
+      <div class="metric-card ${(dados.metricas?.criticas || 0) > 0 ? 'crit' : ''}">
         <div class="label">Críticas</div>
-        <div class="value">${dados.metricas.criticas}</div>
+        <div class="value">${dados.metricas?.criticas || 0}</div>
         <div class="hint">sem resposta NUNCA</div>
       </div>
       <div class="metric-card">
         <div class="label">Sem Vendedor</div>
-        <div class="value">${dados.metricas.sem_vendedor}</div>
+        <div class="value">${dados.metricas?.sem_vendedor || 0}</div>
         <div class="hint">não atribuídas</div>
       </div>
     </div>
   `;
   
-  // Vendedores
+  // Insights
+  const insights = dados.insights ? `
+    <div class="insights-grid">
+      <div class="insight-card positive">
+        <h3>✨ Destaques Positivos</h3>
+        ${(dados.insights.destaques_positivos || []).map(d => `
+          <div class="insight-item">
+            <strong>${d.vendedor}</strong> - ${d.cliente}<br>
+            ${d.acao}<br>
+            <em style="color: #059669;">Resultado: ${d.resultado}</em>
+          </div>
+        `).join('')}
+      </div>
+      
+      <div class="insight-card alert">
+        <h3>⚠️ Alertas Prioritários</h3>
+        ${(dados.insights.alertas || []).map(a => `
+          <div class="insight-item">
+            <strong>${a.vendedor}</strong><br>
+            <span style="color: #d97706;">${a.problema}</span><br>
+            Impacto: ${a.impacto}<br>
+            <em style="color: #0369a1;">Ação: ${a.acao_corretiva}</em>
+          </div>
+        `).join('')}
+      </div>
+      
+      <div class="insight-card opportunity">
+        <h3>💡 Oportunidades de Melhoria</h3>
+        ${(dados.insights.oportunidades || []).map(o => `
+          <div class="insight-item">
+            <strong>${o.tipo}</strong><br>
+            ${o.descricao}<br>
+            <em style="color: #0369a1;">Sugestão: ${o.acao_sugerida}</em>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+  
+  // Vendedores com análise qualitativa
   const vendedores = `
     <div class="section">
       <h2>👥 Performance por Vendedor</h2>
       <div class="sellers-grid">
-        ${dados.vendedores.map(v => `
+        ${(dados.vendedores || []).map(v => `
           <div class="seller-card" style="--seller-color:${v.cor}">
-            <div class="seller-name">${v.nome}</div>
+            <div class="seller-name">
+              ${v.nome}
+              <span class="seller-score">${v.qualidade?.nota_media?.toFixed(1) || '—'}/10</span>
+            </div>
             <div class="seller-metrics">
               <div class="metric"><div class="m-val">${v.total_conversas}</div><div class="m-lbl">Conversas</div></div>
               <div class="metric"><div class="m-val">${v.sem_resposta}</div><div class="m-lbl">Sem resposta</div></div>
               <div class="metric"><div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div><div class="m-lbl">Mediana resp.</div></div>
-              <div class="metric"><div class="m-val">${formatarTempo(v.media_resposta_min)}</div><div class="m-lbl">Média resp.</div></div>
+              <div class="metric"><div class="m-val">${v.qualidade?.aderencia_script || 0}%</div><div class="m-lbl">Aderência</div></div>
             </div>
-            <div class="seller-foot">${v.total_respostas} respostas analisadas</div>
+            ${v.qualidade ? `
+              <div class="seller-analysis">
+                <h4>💪 Pontos Fortes</h4>
+                <ul>
+                  ${(v.qualidade.pontos_fortes || []).map(p => `<li>${p}</li>`).join('')}
+                </ul>
+                <h4 style="margin-top: 12px;">⚡ Pontos de Melhoria</h4>
+                <ul>
+                  ${(v.qualidade.pontos_melhoria || []).map(p => `<li>${p}</li>`).join('')}
+                </ul>
+              </div>
+            ` : ''}
           </div>
         `).join('')}
       </div>
     </div>
   `;
   
-  // Conversas (tabela simplificada - você pode expandir)
+  // Ranking de Aderência
+  const ranking = dados.ranking_qualidade ? `
+    <div class="section">
+      <h2>🏆 Ranking de Aderência ao Script</h2>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Posição</th>
+            <th>Vendedor</th>
+            <th style="text-align: center;">Nota Média</th>
+            <th style="text-align: center;">Aderência</th>
+            <th style="text-align: center;">Badge</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${dados.ranking_qualidade.map((r, idx) => `
+            <tr>
+              <td><span class="rank-badge rank-${idx + 1 <= 3 ? idx + 1 : 'other'}">${r.posicao}º</span></td>
+              <td><strong>${r.vendedor}</strong></td>
+              <td style="text-align: center;"><strong>${r.nota_media.toFixed(1)}</strong>/10</td>
+              <td style="text-align: center;">${r.aderencia}%</td>
+              <td style="text-align: center;">${r.badge}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  ` : '';
+  
+  // Tabs de conversas
   const conversas = `
     <div class="section">
       <h2>📋 Conversas do Dia</h2>
       <div class="tabs">
-        <button class="tab active" data-tab="all">Todas (${dados.conversas.length})</button>
-        <button class="tab" data-tab="unanswered">Sem Resposta (${dados.conversas.filter(c => c.status === 'sem_resposta' || c.status === 'critico').length})</button>
+        <button class="tab active" data-tab="all">Todas (${(dados.conversas || []).length})</button>
+        <button class="tab" data-tab="unanswered">Sem Resposta (${(dados.conversas || []).filter(c => c.status === 'sem_resposta' || c.status === 'critico').length})</button>
       </div>
       <div class="tab-content active" id="tab-all">
         <table>
           <thead>
-            <tr><th>#</th><th>Cliente</th><th>Vendedor</th><th>Última Msg</th><th>Msgs</th><th>Status</th></tr>
+            <tr><th>#</th><th>Cliente</th><th>Vendedor</th><th>Última Msg</th><th>Total Msgs</th><th>Status</th></tr>
           </thead>
           <tbody>
-            ${dados.conversas.map(c => `
+            ${(dados.conversas || []).slice(0, 50).map(c => `
               <tr>
                 <td>${c.id}</td>
                 <td>${c.cliente}</td>
-                <td><span class="seller">${c.vendedor}</span></td>
-                <td>${c.ultima_msg}</td>
-                <td>${c.total_msgs}</td>
+                <td><span class="seller">${c.vendedor || '—'}</span></td>
+                <td>${c.ultima_msg || '—'}</td>
+                <td>${c.total_msgs || 0}</td>
                 <td><span class="badge ${c.status === 'critico' ? 'crit' : c.status === 'sem_resposta' ? 'warn' : 'ok'}">${c.status === 'critico' ? 'CRÍTICO' : c.status === 'sem_resposta' ? 'Sem resposta' : 'OK'}</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-content" id="tab-unanswered">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Cliente</th><th>Vendedor</th><th>Última Msg</th><th>Total Msgs</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            ${(dados.conversas || []).filter(c => c.status === 'sem_resposta' || c.status === 'critico').map(c => `
+              <tr>
+                <td>${c.id}</td>
+                <td>${c.cliente}</td>
+                <td><span class="seller">${c.vendedor || '—'}</span></td>
+                <td>${c.ultima_msg || '—'}</td>
+                <td>${c.total_msgs || 0}</td>
+                <td><span class="badge ${c.status === 'critico' ? 'crit' : 'warn'}">${c.status === 'critico' ? 'CRÍTICO' : 'Sem resposta'}</span></td>
               </tr>
             `).join('')}
           </tbody>
@@ -349,27 +658,26 @@ function renderizarDados(dados) {
     </div>
   `;
   
-  content.innerHTML = metricas + vendedores + conversas;
+  content.innerHTML = metricas + insights + vendedores + ranking + conversas;
   
-  // Atualiza footer
   document.getElementById('footer').textContent = 
-    `Gerado em ${dados.data} • BI Domingo e Rodrigues • ${dados.conversas.length} conversas analisadas`;
+    `Gerado em ${dados.data} • BI Domingo e Rodrigues • ${(dados.conversas || []).length} conversas analisadas`;
   
   // Setup tabs
   document.querySelectorAll('.tab').forEach(t => {
     t.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(x => x.classList.remove('active'));
       t.classList.add('active');
+      document.getElementById('tab-' + t.dataset.tab).classList.add('active');
     });
   });
 }
 
-// Event listener para mudança de data
 document.getElementById('date-select').addEventListener('change', (e) => {
   carregarDados(e.target.value);
 });
 
-// Inicializa
 carregarDatasDisponiveis();
 </script>
 </body>
