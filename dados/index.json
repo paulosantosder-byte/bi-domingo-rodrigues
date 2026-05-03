@@ -2,12 +2,12 @@
   "relatorios": [
     {
       "data": "2026-05-02",
-      "total_conversas": 65,
-      "sem_resposta": 8,
-      "criticas": 7,
-      "nota_media": 0.32,
+      "total_conversas": 71,
+      "sem_resposta": 15,
+      "criticas": 2,
+      "nota_media": 5.4,
       "vendedores": ["Luana", "Maria Luiza Ramos", "Keane", "Claudio Rodrigues", "Caio Roberto", "Guilherme"]
     }
   ],
-  "ultima_atualizacao": "2026-05-02T13:18"
+  "ultima_atualizacao": "2026-05-02T20:55"
 }
