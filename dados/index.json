@@ -2,11 +2,11 @@
   "relatorios": [
     {
       "data": "2026-05-04",
-      "total_conversas": 140,
-      "sem_resposta": 12,
-      "criticas": 2,
-      "nota_media": 3.6,
-      "vendedores": ["Luana", "Maria Luiza Ramos", "Keane", "Claudio Rodrigues", "Caio Roberto", "Guilherme"]
+      "total_conversas": 227,
+      "sem_resposta": 11,
+      "criticas": 5,
+      "nota_media": 5.0,
+      "vendedores": ["Luana", "Caio Roberto", "Claudio Rodrigues", "Keane", "Guilherme", "Maria Luiza Ramos", "Kemily", "Guilherme Comercial"]
     },
     {
       "data": "2026-05-02",
@@ -17,5 +17,5 @@
       "vendedores": ["Luana", "Maria Luiza Ramos", "Keane", "Claudio Rodrigues", "Caio Roberto", "Guilherme"]
     }
   ],
-  "ultima_atualizacao": "2026-05-04T13:25"
+  "ultima_atualizacao": "2026-05-04T18:33"
 }
