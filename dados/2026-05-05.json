@@ -1,7 +1,7 @@
 {
   "data": "2026-05-05",
-  "hora_execucao": "18:30",
-  "observacao_metodologia": "Analise agregada de 2 workspaces: DR2-NOVO (175001) com 23 conversas (extracao detalhada com mensagens completas) e DR4 (152352) com 140 conversas (apos filtro Ignorar - analise por preview de ultima mensagem). 7 conversas com nome contendo 'Ignorar' foram puladas conforme regra do prompt.",
+  "hora_execucao": "18:46",
+  "observacao_metodologia": "Re-execucao 18:46. Analise agregada de 2 workspaces: DR2-NOVO (175001) com 20 conversas visiveis e DR4 (152352) com 139 conversas (apos filtro Ignorar - analise por preview de ultima mensagem). 7 conversas com nome contendo 'Ignorar' foram puladas conforme regra do prompt. Correcao aplicada: ligacoes_dia do Keane corrigido de 13 para 0 (Kemily e Keane sao vendedores distintos; ligacoes_dia.txt registra Kemilly e Guilherme com 13 cada).",
   "metricas": {
     "total_conversas": 163,
     "sem_resposta": 42,
@@ -164,7 +164,7 @@
       "nome": "Keane",
       "cor": "#f59e0b",
       "total_conversas": 9,
-      "ligacoes_dia": 13,
+      "ligacoes_dia": 0,
       "sem_resposta": 0,
       "criticas": 0,
       "mediana_resposta_min": 0,
