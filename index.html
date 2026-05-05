@@ -68,6 +68,7 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 .metric-card.warn { border-left-color: #f59e0b; }
 .metric-card.ok { border-left-color: #10b981; }
 .metric-card.gold { border-left-color: #fbbf24; }
+.metric-card.purple { border-left-color: #8b5cf6; }
 .metric-card .label { 
   font-size: 12px; 
   color: #64748b; 
@@ -140,6 +141,16 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
   line-height: 1.6;
 }
 .insight-item:last-child { margin-bottom: 0; }
+.insight-item .client-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+}
 
 /* Vendedores - Cards principais */
 .sellers-grid { 
@@ -173,7 +184,7 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 }
 .seller-metrics { 
   display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
   margin-bottom: 16px; 
 }
@@ -183,6 +194,11 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
   border-radius: 8px; 
   text-align: center; 
 }
+.metric.calls {
+  background: #f3e8ff;
+  border: 1px solid #ddd6fe;
+}
+.metric.calls .m-val { color: #6d28d9; }
 .m-val { 
   font-size: 20px; 
   font-weight: 700; 
@@ -611,13 +627,18 @@ async function carregarDados(dataISO) {
 function renderizarDados(dados) {
   const content = document.getElementById('content');
   
-  // 1. MÉTRICAS GERAIS
+  // 1. MÉTRICAS GERAIS (com card de Ligações)
   const metricas = `
     <div class="metrics-grid">
       <div class="metric-card">
         <div class="label">Total de Conversas</div>
         <div class="value">${dados.metricas?.total_conversas || 0}</div>
         <div class="hint">conversas únicas hoje</div>
+      </div>
+      <div class="metric-card purple">
+        <div class="label">📞 Total de Ligações</div>
+        <div class="value">${dados.metricas?.total_ligacoes || 0}</div>
+        <div class="hint">ligações realizadas hoje</div>
       </div>
       <div class="metric-card ${(dados.metricas?.sem_resposta || 0) > 0 ? 'warn' : ''}">
         <div class="label">Sem Resposta</div>
@@ -642,14 +663,14 @@ function renderizarDados(dados) {
     </div>
   `;
   
-  // 2. INSIGHTS (Destaques, Alertas, Oportunidades)
+  // 2. INSIGHTS (com nome do cliente destacado)
   const insights = dados.insights ? `
     <div class="insights-grid">
       <div class="insight-card positive">
         <h3>✨ Destaques Positivos</h3>
         ${(dados.insights.destaques_positivos || []).map(d => `
           <div class="insight-item">
-            <strong>${d.vendedor || '—'}</strong>${d.cliente ? ` - ${d.cliente}` : ''}<br>
+            <strong>${d.vendedor || '—'}</strong>${d.cliente ? `<span class="client-tag">👤 ${d.cliente}</span>` : ''}<br>
             ${d.acao || ''}<br>
             ${d.resultado ? `<em style="color: #059669;">✓ ${d.resultado}</em>` : ''}
           </div>
@@ -660,7 +681,7 @@ function renderizarDados(dados) {
         <h3>⚠️ Alertas Prioritários</h3>
         ${(dados.insights.alertas || []).map(a => `
           <div class="insight-item">
-            <strong>${a.vendedor || '—'}</strong><br>
+            <strong>${a.vendedor || '—'}</strong>${a.cliente ? `<span class="client-tag">👤 ${a.cliente}</span>` : ''}<br>
             <span style="color: #d97706;">${a.problema || ''}</span><br>
             ${a.impacto ? `Impacto: ${a.impacto}<br>` : ''}
             ${a.acao_corretiva ? `<em style="color: #0369a1;">→ ${a.acao_corretiva}</em>` : ''}
@@ -672,7 +693,7 @@ function renderizarDados(dados) {
         <h3>💡 Oportunidades de Melhoria</h3>
         ${(dados.insights.oportunidades || []).map(o => `
           <div class="insight-item">
-            <strong>${o.tipo || '—'}</strong><br>
+            <strong>${o.tipo || '—'}</strong>${o.cliente ? `<span class="client-tag">👤 ${o.cliente}</span>` : ''}<br>
             ${o.descricao || ''}<br>
             ${o.acao_sugerida ? `<em style="color: #0369a1;">→ ${o.acao_sugerida}</em>` : ''}
           </div>
@@ -717,7 +738,7 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 4. ANÁLISE DETALHADA POR VENDEDOR
+  // 4. ANÁLISE DETALHADA POR VENDEDOR (com Ligações)
   const vendedores = `
     <div class="section">
       <h2>👥 Análise Detalhada por Vendedor</h2>
@@ -736,13 +757,21 @@ function renderizarDados(dados) {
                 <div class="m-val">${v.total_conversas || 0}</div>
                 <div class="m-lbl">Conversas</div>
               </div>
+              <div class="metric calls">
+                <div class="m-val">${v.ligacoes_dia || 0}</div>
+                <div class="m-lbl">📞 Ligações</div>
+              </div>
               <div class="metric">
                 <div class="m-val">${v.sem_resposta || 0}</div>
                 <div class="m-lbl">Sem Resposta</div>
               </div>
               <div class="metric">
                 <div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div>
-                <div class="m-lbl">Mediana Resp.</div>
+                <div class="m-lbl">Mediana</div>
+              </div>
+              <div class="metric">
+                <div class="m-val">${formatarTempo(v.media_resposta_min)}</div>
+                <div class="m-lbl">Média</div>
               </div>
               <div class="metric">
                 <div class="m-val">${v.qualidade?.aderencia_script || 0}%</div>
@@ -782,6 +811,11 @@ function renderizarDados(dados) {
                         <div class="cat">${p.categoria || ''}</div>
                         <div class="desc">${p.descricao || ''}</div>
                         ${p.impacto ? `<div style="font-size:12px;color:#64748b;margin-top:4px;">Impacto: ${p.impacto}</div>` : ''}
+                        ${p.exemplos_clientes && p.exemplos_clientes.length > 0 ? `
+                          <ul>
+                            ${p.exemplos_clientes.map(e => `<li>${e}</li>`).join('')}
+                          </ul>
+                        ` : ''}
                         ${p.acao_corretiva ? `<div class="action">→ ${p.acao_corretiva}</div>` : ''}
                       </div>
                     `).join('')}
