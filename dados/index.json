@@ -1,22 +1,6 @@
 {
   "relatorios": [
     {
-      "data": "2026-05-05",
-      "total_conversas": 163,
-      "sem_resposta": 42,
-      "criticas": 8,
-      "nota_media": 5.0,
-      "vendedores": [
-        "Caio Roberto",
-        "Kemily",
-        "Guilherme",
-        "Keane",
-        "Luana",
-        "Claudio Rodrigues",
-        "Maria Luiza"
-      ]
-    },
-    {
       "data": "2026-05-04",
       "total_conversas": 227,
       "sem_resposta": 11,
