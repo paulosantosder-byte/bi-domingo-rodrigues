@@ -3,7 +3,7 @@
     {
       "data": "2026-05-05",
       "total_conversas": 102,
-      "sem_resposta": 14,
+      "sem_resposta": 15,
       "criticas": 6,
       "nota_media": 4.3,
       "vendedores": [
@@ -49,5 +49,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-05T13:48"
+  "ultima_atualizacao": "2026-05-05T14:13"
 }

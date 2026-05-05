@@ -1,13 +1,13 @@
 {
   "data": "2026-05-05",
-  "hora_execucao": "13:48",
+  "hora_execucao": "14:13",
   "metricas": {
     "total_conversas": 102,
-    "sem_resposta": 14,
+    "sem_resposta": 15,
     "criticas": 6,
-    "sem_vendedor": 3,
+    "sem_vendedor": 2,
     "nota_media_geral": 4.3,
-    "aderencia_geral": 41
+    "aderencia_geral": 43
   },
   "vendedores": [
     {
@@ -59,7 +59,7 @@
             "categoria": "Agendamento",
             "importancia": "Alta",
             "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com 𝖪𝖾𝗅𝗅𝗒 🥀"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zezinho Viana"
           },
           {
             "id": "D1",
@@ -67,7 +67,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Critica",
             "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com 𝖪𝖾𝗅𝗅𝗒 🥀"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zezinho Viana"
           },
           {
             "id": "D2",
@@ -75,7 +75,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Critica",
             "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com 𝖪𝖾𝗅𝗅𝗒 🥀"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zezinho Viana"
           },
           {
             "id": "D3",
@@ -83,7 +83,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Critica",
             "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com 𝖪𝖾𝗅𝗅𝗒 🥀"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zezinho Viana"
           },
           {
             "id": "D4",
@@ -91,7 +91,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Alta",
             "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com 𝖪𝖾𝗅𝗅𝗒 🥀"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zezinho Viana"
           }
         ],
         "pontos_fortes": [
@@ -112,9 +112,9 @@
             "impacto": "Perde diferenciacao vs concorrentes",
             "conversas_afetadas": 6,
             "exemplos_clientes": [
+              "Cliente Zezinho Viana: vendedor nao usou D1-D4",
               "Cliente 𝖪𝖾𝗅𝗅𝗒 🥀: vendedor nao usou D1-D4",
-              "Cliente Miriel Wilke: vendedor nao usou D1-D4",
-              "Cliente Edivaldo: vendedor nao usou D1-D4"
+              "Cliente Miriel Wilke: vendedor nao usou D1-D4"
             ],
             "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em toda conversa"
           }
@@ -126,14 +126,14 @@
             "ocorrencias": 6
           },
           {
-            "codigo": "X8",
-            "descricao": "Tempo resposta > 60min",
-            "ocorrencias": 2
-          },
-          {
             "codigo": "X7",
             "descricao": "Nao tentou agendar visita",
             "ocorrencias": 3
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 2
           }
         ]
       }
@@ -249,11 +249,11 @@
       "nome": "Caio Roberto",
       "cor": "#0ea5e9",
       "total_conversas": 27,
-      "sem_resposta": 5,
+      "sem_resposta": 6,
       "criticas": 0,
       "mediana_resposta_min": 4,
-      "media_resposta_min": 2,
-      "total_respostas": 22,
+      "media_resposta_min": 3,
+      "total_respostas": 21,
       "qualidade": {
         "nota_media": 4.4,
         "aderencia_script": 50,
@@ -294,7 +294,7 @@
             "categoria": "Agendamento",
             "importancia": "Alta",
             "vezes_perdidas": 27,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zazá Lima"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Samuel Silva"
           },
           {
             "id": "B2",
@@ -310,7 +310,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Critica",
             "vezes_perdidas": 27,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zazá Lima"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Samuel Silva"
           },
           {
             "id": "D3",
@@ -318,7 +318,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Critica",
             "vezes_perdidas": 27,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zazá Lima"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Samuel Silva"
           },
           {
             "id": "D4",
@@ -326,7 +326,7 @@
             "categoria": "Diferenciacao",
             "importancia": "Alta",
             "vezes_perdidas": 27,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Zazá Lima"
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Samuel Silva"
           }
         ],
         "pontos_fortes": [
@@ -335,8 +335,8 @@
             "descricao": "Resposta rapida (mediana 4min)",
             "exemplos": [
               "Cliente Cachoeira: respondeu em 0min",
-              "Cliente Samuel Silva: respondeu em 1min",
-              "Cliente Valfrido lira: respondeu em 6min"
+              "Cliente Valfrido lira: respondeu em 6min",
+              "Cliente rodrigo231085: respondeu em 4min"
             ]
           }
         ],
@@ -579,15 +579,15 @@
     {
       "nome": "Guilherme",
       "cor": "#10b981",
-      "total_conversas": 8,
+      "total_conversas": 9,
       "sem_resposta": 0,
       "criticas": 0,
-      "mediana_resposta_min": 16,
-      "media_resposta_min": 31,
-      "total_respostas": 8,
+      "mediana_resposta_min": 11,
+      "media_resposta_min": 27,
+      "total_respostas": 9,
       "qualidade": {
-        "nota_media": 3.9,
-        "aderencia_script": 41,
+        "nota_media": 3.8,
+        "aderencia_script": 50,
         "argumentos_usados": {
           "A1": 0,
           "A2": 7,
@@ -612,7 +612,7 @@
           "E2": 0,
           "E3": 0,
           "E4": 0,
-          "E5": 0,
+          "E5": 1,
           "F1": 0,
           "F2": 0,
           "F3": 1,
@@ -624,53 +624,62 @@
             "nome": "Gatilho de proximidade",
             "categoria": "Agendamento",
             "importancia": "Alta",
-            "vezes_perdidas": 8,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Uesclei"
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Noelia Cerqueira"
           },
           {
             "id": "D1",
             "nome": "Laboratorio proprio + troca 24h",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 8,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Uesclei"
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Noelia Cerqueira"
           },
           {
             "id": "D2",
             "nome": "17 anos de mercado",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 8,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Uesclei"
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Noelia Cerqueira"
           },
           {
             "id": "D3",
             "nome": "6 mil projetos",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 8,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Uesclei"
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Noelia Cerqueira"
           },
           {
             "id": "D4",
             "nome": "Orfaos solares",
             "categoria": "Diferenciacao",
             "importancia": "Alta",
-            "vezes_perdidas": 8,
-            "exemplo_aplicacao": "Aplicar em proximas conversas como com Uesclei"
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "Aplicar em proximas conversas como com Noelia Cerqueira"
           }
         ],
-        "pontos_fortes": [],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade",
+            "descricao": "Resposta rapida (mediana 11min)",
+            "exemplos": [
+              "Cliente Uesclei: respondeu em 2min",
+              "Cliente Roberto: respondeu em 1min"
+            ]
+          }
+        ],
         "pontos_fracos": [
           {
             "categoria": "Diferenciacao Competitiva",
             "descricao": "NUNCA mencionou laboratorio, 17 anos, 6mil projetos ou orfaos",
             "impacto": "Perde diferenciacao vs concorrentes",
-            "conversas_afetadas": 8,
+            "conversas_afetadas": 9,
             "exemplos_clientes": [
+              "Cliente Noelia Cerqueira: vendedor nao usou D1-D4",
               "Cliente Uesclei: vendedor nao usou D1-D4",
-              "Cliente José Jambeiro: vendedor nao usou D1-D4",
-              "Cliente Luciana: vendedor nao usou D1-D4"
+              "Cliente José Jambeiro: vendedor nao usou D1-D4"
             ],
             "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em toda conversa"
           },
@@ -678,11 +687,11 @@
             "categoria": "Agendamento",
             "descricao": "Nao tentou agendar visita em nenhuma conversa",
             "impacto": "Vende so pelo WhatsApp, alta perda",
-            "conversas_afetadas": 8,
+            "conversas_afetadas": 9,
             "exemplos_clientes": [
+              "Cliente Noelia Cerqueira: nao agendou visita",
               "Cliente Uesclei: nao agendou visita",
-              "Cliente José Jambeiro: nao agendou visita",
-              "Cliente Luciana: nao agendou visita"
+              "Cliente José Jambeiro: nao agendou visita"
             ],
             "acao_corretiva": "Sempre oferecer visita: 'posso passar ai amanha?'"
           }
@@ -691,12 +700,12 @@
           {
             "codigo": "X6",
             "descricao": "Nunca mencionou diferenciais",
-            "ocorrencias": 8
+            "ocorrencias": 9
           },
           {
             "codigo": "X7",
             "descricao": "Nao tentou agendar visita",
-            "ocorrencias": 8
+            "ocorrencias": 9
           },
           {
             "codigo": "X8",
@@ -893,8 +902,8 @@
     {
       "posicao": 6,
       "vendedor": "Guilherme",
-      "nota_media": 3.9,
-      "aderencia": 41,
+      "nota_media": 3.8,
+      "aderencia": 50,
       "badge": "Em desenvolvimento"
     },
     {
@@ -908,6 +917,87 @@
   "conversas": [
     {
       "id": 1,
+      "cliente": "Samuel Silva",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "13:43",
+      "ultima_msg": "13:43",
+      "total_msgs": 9,
+      "status": "sem_resposta",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "9 msgs hoje.  Sem diferenciacao."
+    },
+    {
+      "id": 2,
+      "cliente": "Zezinho Viana",
+      "vendedor": "Claudio Rodrigues",
+      "hora_lista": "13:36",
+      "ultima_msg": "13:36",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "E5"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "5 msgs hoje. Tempo resposta: 0min. Sem diferenciacao."
+    },
+    {
+      "id": 3,
+      "cliente": "Noelia Cerqueira",
+      "vendedor": "Guilherme",
+      "hora_lista": "13:29",
+      "ultima_msg": "13:18",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 3.0,
+      "argumentos_usados": [
+        "E5"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 11,
+      "observacao": "11 msgs hoje. Tempo resposta: 11min. Sem diferenciacao."
+    },
+    {
+      "id": 4,
       "cliente": "yasmim",
       "vendedor": "Maria Luiza",
       "hora_lista": "13:16",
@@ -934,7 +1024,7 @@
       "observacao": "7 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 2,
+      "id": 5,
       "cliente": "Zazá Lima",
       "vendedor": "Caio Roberto",
       "hora_lista": "13:09",
@@ -960,7 +1050,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 3,
+      "id": 6,
       "cliente": "Zataryauh",
       "vendedor": "Maria Luiza",
       "hora_lista": "13:05",
@@ -986,7 +1076,7 @@
       "observacao": "27 msgs hoje. Tempo resposta: 27min. Sem diferenciacao."
     },
     {
-      "id": 4,
+      "id": 7,
       "cliente": "557498055284",
       "vendedor": "Maria Luiza",
       "hora_lista": "13:03",
@@ -1010,7 +1100,7 @@
       "observacao": "16 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 5,
+      "id": 8,
       "cliente": "😎",
       "vendedor": "Keane",
       "hora_lista": "12:54",
@@ -1038,7 +1128,7 @@
       "observacao": "5 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 6,
+      "id": 9,
       "cliente": "Edna",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:48",
@@ -1064,7 +1154,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 7,
+      "id": 10,
       "cliente": "Soares Solucoes Visuais",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:42",
@@ -1091,7 +1181,7 @@
       "observacao": "6 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 8,
+      "id": 11,
       "cliente": "Milton",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:42",
@@ -1117,7 +1207,7 @@
       "observacao": "6 msgs hoje."
     },
     {
-      "id": 9,
+      "id": 12,
       "cliente": "Cachoeira",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:40",
@@ -1144,31 +1234,7 @@
       "observacao": "8 msgs hoje. Tempo resposta: 0min. Sem diferenciacao."
     },
     {
-      "id": 10,
-      "cliente": "Paulo Júnior -Ignorar",
-      "vendedor": "Sem atribuicao",
-      "hora_lista": "12:37",
-      "ultima_msg": "12:37",
-      "total_msgs": 7,
-      "status": "ok",
-      "nota": 3.0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "7 msgs hoje.  Sem diferenciacao."
-    },
-    {
-      "id": 11,
+      "id": 13,
       "cliente": "Quitéria 😁",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:34",
@@ -1194,7 +1260,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 12,
+      "id": 14,
       "cliente": "Paulinho",
       "vendedor": "Maria Luiza",
       "hora_lista": "12:33",
@@ -1218,7 +1284,7 @@
       "observacao": "12 msgs hoje. Tempo resposta: 1min. Sem diferenciacao."
     },
     {
-      "id": 13,
+      "id": 15,
       "cliente": "Pablo Jaasiel",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:33",
@@ -1244,7 +1310,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 14,
+      "id": 16,
       "cliente": "Euza",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:32",
@@ -1270,7 +1336,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 15,
+      "id": 17,
       "cliente": "marcones",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:32",
@@ -1296,7 +1362,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 16,
+      "id": 18,
       "cliente": "Bianca",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:32",
@@ -1322,7 +1388,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 17,
+      "id": 19,
       "cliente": "PR Alexandre Oliveira",
       "vendedor": "Maria Luiza",
       "hora_lista": "12:32",
@@ -1346,7 +1412,7 @@
       "observacao": "17 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 18,
+      "id": 20,
       "cliente": "Glauber",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:31",
@@ -1372,7 +1438,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 19,
+      "id": 21,
       "cliente": "casa",
       "vendedor": "Keane",
       "hora_lista": "12:31",
@@ -1398,7 +1464,7 @@
       "observacao": "5 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 20,
+      "id": 22,
       "cliente": "Yure Freire",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:31",
@@ -1424,34 +1490,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 21,
-      "cliente": "Samuel Silva",
-      "vendedor": "Caio Roberto",
-      "hora_lista": "12:29",
-      "ultima_msg": "12:28",
-      "total_msgs": 8,
-      "status": "ok",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "A2",
-        "F3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 1,
-      "observacao": "8 msgs hoje. Tempo resposta: 1min. Sem diferenciacao."
-    },
-    {
-      "id": 22,
+      "id": 23,
       "cliente": "J",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:29",
@@ -1477,7 +1516,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 23,
+      "id": 24,
       "cliente": "Pinturas Lisboa",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:28",
@@ -1503,7 +1542,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 24,
+      "id": 25,
       "cliente": "carlosfrancineide",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:24",
@@ -1529,7 +1568,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 25,
+      "id": 26,
       "cliente": "Diane Silva",
       "vendedor": "Keane",
       "hora_lista": "12:22",
@@ -1556,7 +1595,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 26,
+      "id": 27,
       "cliente": "Valfrido lira",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:22",
@@ -1584,7 +1623,7 @@
       "observacao": "9 msgs hoje. Tempo resposta: 6min. Sem diferenciacao."
     },
     {
-      "id": 27,
+      "id": 28,
       "cliente": "cicero martins",
       "vendedor": "Luana",
       "hora_lista": "12:21",
@@ -1610,7 +1649,7 @@
       "observacao": "9 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 28,
+      "id": 29,
       "cliente": "Petronio (Munduri)",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:16",
@@ -1637,7 +1676,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 29,
+      "id": 30,
       "cliente": "Dackshow",
       "vendedor": "Maria Luiza",
       "hora_lista": "12:13",
@@ -1661,7 +1700,7 @@
       "observacao": "7 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 30,
+      "id": 31,
       "cliente": "rodrigo231085",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:10",
@@ -1686,7 +1725,7 @@
       "observacao": "37 msgs hoje. Tempo resposta: 4min."
     },
     {
-      "id": 31,
+      "id": 32,
       "cliente": "Dr.Lucas Borges Esperanca",
       "vendedor": "Maria Luiza",
       "hora_lista": "12:10",
@@ -1710,7 +1749,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 32,
+      "id": 33,
       "cliente": "Uesclei",
       "vendedor": "Guilherme",
       "hora_lista": "12:06",
@@ -1738,7 +1777,7 @@
       "observacao": "27 msgs hoje. Tempo resposta: 2min. Sem diferenciacao."
     },
     {
-      "id": 33,
+      "id": 34,
       "cliente": "Rodrigo 🚌🚐🚍",
       "vendedor": "Kemily",
       "hora_lista": "12:05",
@@ -1765,7 +1804,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 34,
+      "id": 35,
       "cliente": "Ciro Ricardo",
       "vendedor": "Keane",
       "hora_lista": "12:03",
@@ -1791,7 +1830,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 35,
+      "id": 36,
       "cliente": "José Jambeiro",
       "vendedor": "Guilherme",
       "hora_lista": "12:02",
@@ -1815,7 +1854,7 @@
       "observacao": "5 msgs hoje. Tempo resposta: 16min. Sem diferenciacao."
     },
     {
-      "id": 36,
+      "id": 37,
       "cliente": "Comercial F&R",
       "vendedor": "Keane",
       "hora_lista": "12:01",
@@ -1839,7 +1878,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 37,
+      "id": 38,
       "cliente": "Ailton Gomes(bebeu)",
       "vendedor": "Caio Roberto",
       "hora_lista": "12:00",
@@ -1865,7 +1904,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 38,
+      "id": 39,
       "cliente": "Manuel Silva Soares",
       "vendedor": "Caio Roberto",
       "hora_lista": "11:58",
@@ -1891,7 +1930,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 39,
+      "id": 40,
       "cliente": "alyssonkastro",
       "vendedor": "Caio Roberto",
       "hora_lista": "11:56",
@@ -1917,7 +1956,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 40,
+      "id": 41,
       "cliente": "Felipe Sento Sé",
       "vendedor": "Sem atribuicao",
       "hora_lista": "11:56",
@@ -1943,7 +1982,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 41,
+      "id": 42,
       "cliente": "Reginaldo",
       "vendedor": "Keane",
       "hora_lista": "11:55",
@@ -1967,7 +2006,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 42,
+      "id": 43,
       "cliente": "lidianelindaura",
       "vendedor": "Keane",
       "hora_lista": "11:55",
@@ -1991,7 +2030,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 43,
+      "id": 44,
       "cliente": "silvamacedoindalecio",
       "vendedor": "Keane",
       "hora_lista": "11:49",
@@ -2018,7 +2057,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 44,
+      "id": 45,
       "cliente": "Matheus.7_7",
       "vendedor": "Keane",
       "hora_lista": "11:45",
@@ -2044,7 +2083,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 45,
+      "id": 46,
       "cliente": "Joelson 😑",
       "vendedor": "Maria Luiza",
       "hora_lista": "11:43",
@@ -2071,7 +2110,7 @@
       "observacao": "5 msgs hoje. Tempo resposta: 173min. Sem diferenciacao."
     },
     {
-      "id": 46,
+      "id": 47,
       "cliente": "~Miquéias",
       "vendedor": "Maria Luiza",
       "hora_lista": "11:42",
@@ -2095,7 +2134,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 47,
+      "id": 48,
       "cliente": "Marcelo",
       "vendedor": "Keane",
       "hora_lista": "11:41",
@@ -2122,7 +2161,7 @@
       "observacao": "6 msgs hoje. Tempo resposta: 79min. Sem diferenciacao."
     },
     {
-      "id": 48,
+      "id": 49,
       "cliente": "Denise Porto 🌷",
       "vendedor": "Keane",
       "hora_lista": "11:40",
@@ -2146,7 +2185,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 49,
+      "id": 50,
       "cliente": "Ruan",
       "vendedor": "Maria Luiza",
       "hora_lista": "11:40",
@@ -2172,7 +2211,7 @@
       "observacao": "8 msgs hoje. Tempo resposta: 61min. Sem diferenciacao."
     },
     {
-      "id": 50,
+      "id": 51,
       "cliente": "Julio Cesar",
       "vendedor": "Maria Luiza",
       "hora_lista": "11:40",
@@ -2200,7 +2239,7 @@
       "observacao": "65 msgs hoje. Tempo resposta: 6min. Sem diferenciacao."
     },
     {
-      "id": 51,
+      "id": 52,
       "cliente": "Celio Souza",
       "vendedor": "Kemily",
       "hora_lista": "11:39",
@@ -2227,7 +2266,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 52,
+      "id": 53,
       "cliente": "Pedim",
       "vendedor": "Kemily",
       "hora_lista": "11:38",
@@ -2254,7 +2293,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 53,
+      "id": 54,
       "cliente": "Laecio",
       "vendedor": "Kemily",
       "hora_lista": "11:37",
@@ -2281,7 +2320,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 54,
+      "id": 55,
       "cliente": "Paulo erico Barbosa soares",
       "vendedor": "Kemily",
       "hora_lista": "11:36",
@@ -2308,7 +2347,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 55,
+      "id": 56,
       "cliente": "Nado",
       "vendedor": "Kemily",
       "hora_lista": "11:36",
@@ -2335,7 +2374,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 56,
+      "id": 57,
       "cliente": "Parêa",
       "vendedor": "Kemily",
       "hora_lista": "11:34",
@@ -2362,7 +2401,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 57,
+      "id": 58,
       "cliente": "SC",
       "vendedor": "Kemily",
       "hora_lista": "11:33",
@@ -2389,7 +2428,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 58,
+      "id": 59,
       "cliente": "Elizângela Pádua 💉🇧🇷🩺",
       "vendedor": "Kemily",
       "hora_lista": "11:33",
@@ -2416,7 +2455,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 59,
+      "id": 60,
       "cliente": "Jefferson",
       "vendedor": "Kemily",
       "hora_lista": "11:33",
@@ -2443,7 +2482,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 60,
+      "id": 61,
       "cliente": "Otávio Cruz",
       "vendedor": "Kemily",
       "hora_lista": "11:32",
@@ -2470,7 +2509,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 61,
+      "id": 62,
       "cliente": "Lais Eduarda",
       "vendedor": "Kemily",
       "hora_lista": "11:32",
@@ -2497,7 +2536,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 62,
+      "id": 63,
       "cliente": "Gilberto",
       "vendedor": "Kemily",
       "hora_lista": "11:32",
@@ -2524,7 +2563,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 63,
+      "id": 64,
       "cliente": "Manoel Maciel Júnior",
       "vendedor": "Keane",
       "hora_lista": "11:19",
@@ -2551,7 +2590,7 @@
       "observacao": "17 msgs hoje. Tempo resposta: 1min. Sem diferenciacao."
     },
     {
-      "id": 64,
+      "id": 65,
       "cliente": "𝖪𝖾𝗅𝗅𝗒 🥀",
       "vendedor": "Claudio Rodrigues",
       "hora_lista": "11:16",
@@ -2580,7 +2619,7 @@
       "observacao": "9 msgs hoje. Tempo resposta: 50min. Sem diferenciacao."
     },
     {
-      "id": 65,
+      "id": 66,
       "cliente": "Miriel Wilke",
       "vendedor": "Claudio Rodrigues",
       "hora_lista": "11:15",
@@ -2609,7 +2648,7 @@
       "observacao": "5 msgs hoje. Tempo resposta: 154min. Sem diferenciacao."
     },
     {
-      "id": 66,
+      "id": 67,
       "cliente": "Edivaldo",
       "vendedor": "Claudio Rodrigues",
       "hora_lista": "11:11",
@@ -2639,7 +2678,7 @@
       "observacao": "5 msgs hoje. Tempo resposta: 108min. Sem diferenciacao."
     },
     {
-      "id": 67,
+      "id": 68,
       "cliente": "Luciana",
       "vendedor": "Guilherme",
       "hora_lista": "11:02",
@@ -2665,7 +2704,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 68,
+      "id": 69,
       "cliente": "Amilton",
       "vendedor": "Guilherme",
       "hora_lista": "10:59",
@@ -2691,7 +2730,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 69,
+      "id": 70,
       "cliente": "Aldisio",
       "vendedor": "Guilherme",
       "hora_lista": "10:57",
@@ -2717,7 +2756,7 @@
       "observacao": "3 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 70,
+      "id": 71,
       "cliente": "Isabel Bezerra",
       "vendedor": "Caio Roberto",
       "hora_lista": "10:39",
@@ -2743,7 +2782,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 71,
+      "id": 72,
       "cliente": "Ze",
       "vendedor": "Caio Roberto",
       "hora_lista": "10:37",
@@ -2769,7 +2808,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 72,
+      "id": 73,
       "cliente": "Edson",
       "vendedor": "Caio Roberto",
       "hora_lista": "10:35",
@@ -2795,7 +2834,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 73,
+      "id": 74,
       "cliente": "Edvaldo Rodrigues",
       "vendedor": "Guilherme",
       "hora_lista": "10:33",
@@ -2821,7 +2860,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 74,
+      "id": 75,
       "cliente": "Ildomar",
       "vendedor": "Keane",
       "hora_lista": "10:19",
@@ -2848,7 +2887,7 @@
       "observacao": "12 msgs hoje. Tempo resposta: 10min. Sem diferenciacao."
     },
     {
-      "id": 75,
+      "id": 76,
       "cliente": "Fellipe Souza",
       "vendedor": "Luana",
       "hora_lista": "10:13",
@@ -2875,7 +2914,7 @@
       "observacao": "5 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 76,
+      "id": 77,
       "cliente": "Vava Rego",
       "vendedor": "Guilherme",
       "hora_lista": "09:47",
@@ -2904,7 +2943,7 @@
       "observacao": "7 msgs hoje. Tempo resposta: 107min. Sem diferenciacao."
     },
     {
-      "id": 77,
+      "id": 78,
       "cliente": "Micaelly",
       "vendedor": "Kemily",
       "hora_lista": "09:47",
@@ -2931,7 +2970,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 78,
+      "id": 79,
       "cliente": "Elter",
       "vendedor": "Claudio Rodrigues",
       "hora_lista": "09:42",
@@ -2959,7 +2998,7 @@
       "observacao": "4 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 79,
+      "id": 80,
       "cliente": "Roberto",
       "vendedor": "Guilherme",
       "hora_lista": "09:40",
@@ -2986,7 +3025,7 @@
       "observacao": "6 msgs hoje. Tempo resposta: 1min. Sem diferenciacao."
     },
     {
-      "id": 80,
+      "id": 81,
       "cliente": "💛 AÉCIO LIMA",
       "vendedor": "Kemily",
       "hora_lista": "09:40",
@@ -3007,7 +3046,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 81,
+      "id": 82,
       "cliente": "Elissandra",
       "vendedor": "Kemily",
       "hora_lista": "09:40",
@@ -3034,7 +3073,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 82,
+      "id": 83,
       "cliente": "Wilson",
       "vendedor": "Kemily",
       "hora_lista": "09:40",
@@ -3061,7 +3100,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 83,
+      "id": 84,
       "cliente": "Givanildo Gomes ( Dinho)",
       "vendedor": "Kemily",
       "hora_lista": "09:39",
@@ -3082,7 +3121,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 84,
+      "id": 85,
       "cliente": "Gildo",
       "vendedor": "Kemily",
       "hora_lista": "09:39",
@@ -3103,7 +3142,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 85,
+      "id": 86,
       "cliente": "Jonas",
       "vendedor": "Kemily",
       "hora_lista": "09:39",
@@ -3124,7 +3163,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 86,
+      "id": 87,
       "cliente": "LL",
       "vendedor": "Kemily",
       "hora_lista": "09:39",
@@ -3151,7 +3190,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 87,
+      "id": 88,
       "cliente": "Ronildo Dantas",
       "vendedor": "Kemily",
       "hora_lista": "09:39",
@@ -3172,7 +3211,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 88,
+      "id": 89,
       "cliente": "Marycélia Macêdo",
       "vendedor": "Kemily",
       "hora_lista": "09:36",
@@ -3193,7 +3232,7 @@
       "observacao": "0 msgs hoje. Cliente sem resposta! Sem diferenciacao."
     },
     {
-      "id": 89,
+      "id": 90,
       "cliente": "Higo Rodrigues",
       "vendedor": "Keane",
       "hora_lista": "09:34",
@@ -3219,7 +3258,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 90,
+      "id": 91,
       "cliente": "Everaldo Reinaldo",
       "vendedor": "Keane",
       "hora_lista": "09:29",
@@ -3246,7 +3285,7 @@
       "observacao": "13 msgs hoje. Tempo resposta: 8min. Sem diferenciacao."
     },
     {
-      "id": 91,
+      "id": 92,
       "cliente": "Maikon",
       "vendedor": "Caio Roberto",
       "hora_lista": "09:11",
@@ -3272,7 +3311,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 92,
+      "id": 93,
       "cliente": "Fábio Evangelista",
       "vendedor": "Caio Roberto",
       "hora_lista": "09:10",
@@ -3298,7 +3337,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 93,
+      "id": 94,
       "cliente": "Edilson Santos",
       "vendedor": "Maria Luiza",
       "hora_lista": "09:08",
@@ -3322,7 +3361,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 94,
+      "id": 95,
       "cliente": "torres",
       "vendedor": "Luana",
       "hora_lista": "09:07",
@@ -3348,7 +3387,7 @@
       "observacao": "4 msgs hoje. Tempo resposta: 5min. Sem diferenciacao."
     },
     {
-      "id": 95,
+      "id": 96,
       "cliente": "JF Distribuidora",
       "vendedor": "Claudio Rodrigues",
       "hora_lista": "09:04",
@@ -3377,7 +3416,7 @@
       "observacao": "2 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 96,
+      "id": 97,
       "cliente": "Mateus",
       "vendedor": "Luana",
       "hora_lista": "08:48",
@@ -3403,7 +3442,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 97,
+      "id": 98,
       "cliente": "Girlene Santos",
       "vendedor": "Maria Luiza",
       "hora_lista": "08:46",
@@ -3427,7 +3466,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 98,
+      "id": 99,
       "cliente": "Eduardo Do Vally",
       "vendedor": "Luana",
       "hora_lista": "08:46",
@@ -3453,7 +3492,7 @@
       "observacao": "4 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 99,
+      "id": 100,
       "cliente": "557488197515",
       "vendedor": "Sem atribuicao",
       "hora_lista": "08:45",
@@ -3477,7 +3516,7 @@
       "observacao": "1 msgs hoje.  Sem diferenciacao."
     },
     {
-      "id": 100,
+      "id": 101,
       "cliente": "joaquim damasceno",
       "vendedor": "Keane",
       "hora_lista": "08:44",
@@ -3502,7 +3541,7 @@
       "observacao": "3 msgs hoje."
     },
     {
-      "id": 101,
+      "id": 102,
       "cliente": "JUÇARA",
       "vendedor": "Luana",
       "hora_lista": "08:42",
@@ -3526,34 +3565,6 @@
       ],
       "tempo_resposta_min": 42,
       "observacao": "2 msgs hoje. Tempo resposta: 42min. Sem diferenciacao."
-    },
-    {
-      "id": 102,
-      "cliente": "Zezinho Viana",
-      "vendedor": "Claudio Rodrigues",
-      "hora_lista": "13:36",
-      "ultima_msg": "13:36",
-      "total_msgs": 5,
-      "status": "sem_resposta",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 0,
-      "observacao": "5 msgs hoje. Tempo resposta: 0min. Sem diferenciacao."
     }
   ]
 }
