@@ -1,12 +1,37 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-05",
+      "total_conversas": 102,
+      "sem_resposta": 14,
+      "criticas": 6,
+      "nota_media": 4.3,
+      "vendedores": [
+        "Claudio Rodrigues",
+        "Keane",
+        "Caio Roberto",
+        "Kemily",
+        "Luana",
+        "Guilherme",
+        "Maria Luiza"
+      ]
+    },
+    {
       "data": "2026-05-04",
       "total_conversas": 227,
       "sem_resposta": 11,
       "criticas": 5,
       "nota_media": 5.0,
-      "vendedores": ["Luana", "Caio Roberto", "Claudio Rodrigues", "Keane", "Guilherme", "Maria Luiza Ramos", "Kemily", "Guilherme Comercial"]
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Claudio Rodrigues",
+        "Keane",
+        "Guilherme",
+        "Maria Luiza Ramos",
+        "Kemily",
+        "Guilherme Comercial"
+      ]
     },
     {
       "data": "2026-05-02",
@@ -14,8 +39,15 @@
       "sem_resposta": 15,
       "criticas": 2,
       "nota_media": 5.4,
-      "vendedores": ["Luana", "Maria Luiza Ramos", "Keane", "Claudio Rodrigues", "Caio Roberto", "Guilherme"]
+      "vendedores": [
+        "Luana",
+        "Maria Luiza Ramos",
+        "Keane",
+        "Claudio Rodrigues",
+        "Caio Roberto",
+        "Guilherme"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-05-04T18:33"
+  "ultima_atualizacao": "2026-05-05T13:48"
 }
