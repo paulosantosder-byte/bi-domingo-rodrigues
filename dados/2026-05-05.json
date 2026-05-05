@@ -1,31 +1,31 @@
 {
   "data": "2026-05-05",
-  "hora_execucao": "18:46",
-  "observacao_metodologia": "Re-execucao 18:46. Analise agregada de 2 workspaces: DR2-NOVO (175001) com 20 conversas visiveis e DR4 (152352) com 139 conversas (apos filtro Ignorar - analise por preview de ultima mensagem). 7 conversas com nome contendo 'Ignorar' foram puladas conforme regra do prompt. Correcao aplicada: ligacoes_dia do Keane corrigido de 13 para 0 (Kemily e Keane sao vendedores distintos; ligacoes_dia.txt registra Kemilly e Guilherme com 13 cada).",
+  "hora_execucao": "19:13",
+  "observacao_metodologia": "Re-execucao 19:13. Analise agregada de 2 workspaces: DR2-NOVO (175001) com 23 conversas com analise detalhada de mensagens em amostra (Caio Roberto/Sales, Luana/PR Alexandre, Kemily, Maria Luiza, Guilherme/Uesclei, Keane/_pericles) e DR4 (152352) com 140 conversas analisadas predominantemente via preview de ultima mensagem. 7 conversas com nome contendo 'Ignorar' foram puladas. Lista total identificada via timestamp HH:MM (147 antes do filtro Ignorar). Ligacoes_dia.txt: Luana 0, Maria Luiza 0, Guilherme 13, Kemilly 13 (Kemilly = Kemily; vendedor distinto de Keane).",
   "metricas": {
     "total_conversas": 163,
-    "sem_resposta": 42,
+    "sem_resposta": 46,
     "total_ligacoes": 26,
     "criticas": 8,
-    "sem_vendedor": 42,
+    "sem_vendedor": 46,
     "nota_media_geral": 5.0,
     "aderencia_geral": 38
   },
   "workspaces": {
     "DR2-NOVO": {"id": "175001", "conversas_hoje": 23, "metodologia": "Analise detalhada com mensagens completas"},
-    "DR4": {"id": "152352", "conversas_hoje": 140, "ignorar_skipped": 7, "metodologia": "Analise por ultima mensagem (preview)"}
+    "DR4": {"id": "152352", "conversas_hoje": 140, "ignorar_skipped": 7, "metodologia": "Analise por ultima mensagem (preview) com amostragem detalhada por vendedor"}
   },
   "vendedores": [
     {
       "nome": "Caio Roberto",
       "cor": "#0ea5e9",
-      "total_conversas": 58,
+      "total_conversas": 57,
       "ligacoes_dia": 0,
       "sem_resposta": 0,
       "criticas": 0,
       "mediana_resposta_min": 119,
       "media_resposta_min": 75,
-      "total_respostas": 58,
+      "total_respostas": 57,
       "qualidade": {
         "nota_media": 4.7,
         "aderencia_script": 36,
@@ -40,12 +40,12 @@
         "argumentos_nao_usados": [
           {"id": "B1", "nome": "Gatilho de proximidade", "categoria": "Agendamento", "importancia": "Alta", "vezes_perdidas": 55, "exemplo_aplicacao": "Cliente Eliane Souza: pediu orcamento, ideal para 'tenho cliente perto'"},
           {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 55, "exemplo_aplicacao": "Cliente Inaldo Bezerra: prova de autoridade ajudaria fechar"},
-          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 55, "exemplo_aplicacao": "Cliente Anchieta: prova social fortaleceria primeira impressao"}
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 55, "exemplo_aplicacao": "Cliente Sales: prova social fortaleceria proposta de R$1.046/mes"}
         ],
         "pontos_fortes": [
-          {"categoria": "Volume de Atendimento", "descricao": "Maior volume entre vendedores - 58 conversas com retorno hoje (DR2 + DR4)", "exemplos": [
+          {"categoria": "Volume de Atendimento", "descricao": "Maior volume entre vendedores - 57 conversas com retorno hoje (DR2 + DR4)", "exemplos": [
             "Cliente Eliane Souza (DR2): 'Qual o consumo atual?' - qualificacao correta antes de orcamento",
-            "Cliente Marcos (DR2): mencionou Laboratorio proprio na proposta (D1)",
+            "Cliente Sales (DR4): enviou opcoes parceladas (10x/12x/15x/18x) com transparencia",
             "Cliente albacristal123 (DR2): atendeu pos-venda e direcionou para suporte"
           ]}
         ],
@@ -56,7 +56,7 @@
           ], "acao_corretiva": "Priorizar resposta em ate 15min em pedidos diretos de orcamento"},
           {"categoria": "Nao tentou agendar visita", "descricao": "Padrao de manter conversa no WhatsApp em vez de levar para presencial", "impacto": "Aumenta risco de objecao 'so pelo zap'", "conversas_afetadas": 3, "exemplos_clientes": [
             "Cliente Eliane Souza: pediu orcamento e nao foi convidada para visita",
-            "Cliente Marcos: orcamento enviado por WhatsApp, sem proposta de visita tecnica"
+            "Cliente Sales: orcamento parcelado enviado por WhatsApp sem proposta de visita tecnica"
           ], "acao_corretiva": "Apos qualificacao, oferecer visita tecnica antes de proposta detalhada"}
         ],
         "erros_cometidos": [
@@ -79,7 +79,7 @@
         "nota_media": 5.5,
         "aderencia_script": 40,
         "argumentos_usados": {
-          "A1": 0, "A2": 0, "A3": 0, "A4": 0,
+          "A1": 0, "A2": 22, "A3": 22, "A4": 0,
           "B1": 0, "B2": 0, "B3": 0, "B4": 0,
           "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
           "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
@@ -88,17 +88,21 @@
         },
         "argumentos_nao_usados": [
           {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 22, "exemplo_aplicacao": "Cliente Celio Souza: novo lead, ideal para mencionar laboratorio"},
-          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 22, "exemplo_aplicacao": "Cliente Pedim: argumento de autoridade"}
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 22, "exemplo_aplicacao": "Cliente Pedim: argumento de autoridade"},
+          {"id": "B4", "nome": "Vender a visita", "categoria": "Agendamento", "importancia": "Critica", "vezes_perdidas": 22, "exemplo_aplicacao": "Cliente que confirmou consumo (370-400kw): hora de oferecer visita"}
         ],
         "pontos_fortes": [
-          {"categoria": "Follow-up em massa", "descricao": "Sequencia de follow-up estruturada com 22 conversas em janela curta (E5)", "exemplos": [
-            "Cliente Celio Souza, Pedim, Laecio (DR4): batch follow-up entre 11:36-11:39",
+          {"categoria": "Qualificacao Inicial", "descricao": "Mensagem padrao com qualificacao A2+A3 ('Aqui e Kemily da Domingo & Rodrigues... Quanto esta vindo sua conta?')", "exemplos": [
+            "Cliente Celio Souza, Pedim, Laecio (DR4): batch follow-up com qualificacao",
             "Cliente Wilson, Givanildo, Gildo, Jonas (DR4): batch entre 09:39-09:40 - rotina disciplinada"
+          ]},
+          {"categoria": "Volume de Ligacoes", "descricao": "13 ligacoes ativas - prospeccao por telefone alem do whats", "exemplos": [
+            "13 ligacoes registradas em ligacoes_dia.txt"
           ]}
         ],
         "pontos_fracos": [
           {"categoria": "Diferenciacao Competitiva", "descricao": "Follow-up em massa sem mencionar diferenciais (X6)", "impacto": "Mensagens genericas perdem oportunidade de reforcar autoridade", "conversas_afetadas": 22, "exemplos_clientes": [
-            "Cliente Celio Souza: follow-up sem mencao a laboratorio proprio ou 17 anos",
+            "Cliente Celio Souza, Pedim, Laecio (DR4): follow-up sem mencao a laboratorio proprio ou 17 anos",
             "Cliente Wilson: lead em estagio decisivo sem reforco de diferenciacao"
           ], "acao_corretiva": "Incluir um diferencial (D1/D2/D3) em cada mensagem do follow-up - nao todos juntos"}
         ],
@@ -118,19 +122,19 @@
       "media_resposta_min": 95,
       "total_respostas": 13,
       "qualidade": {
-        "nota_media": 5.5,
-        "aderencia_script": 42,
+        "nota_media": 5.7,
+        "aderencia_script": 45,
         "argumentos_usados": {
-          "A1": 0, "A2": 6, "A3": 4, "A4": 0,
+          "A1": 0, "A2": 7, "A3": 4, "A4": 0,
           "B1": 1, "B2": 1, "B3": 0, "B4": 3,
           "C1": 0, "C2": 0, "C3": 1, "C4": 0, "C5": 1,
-          "D1": 1, "D2": 1, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "D1": 1, "D2": 1, "D3": 1, "D4": 0, "D5": 0, "D6": 1,
           "E1": 0, "E2": 0, "E3": 1, "E4": 0, "E5": 6,
           "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
           {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 12, "exemplo_aplicacao": "Cliente Darilio: parceria de 700 imoveis, perfeito para mencionar laboratorio"},
-          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 13, "exemplo_aplicacao": "Cliente Darilio: prova social massiva ideal para parceria"},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 12, "exemplo_aplicacao": "Cliente Uesclei: vendedor disse '9 anos' em vez dos 17 oficiais - inconsistencia de pitch"},
           {"id": "D4", "nome": "Orfaos solares", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 13, "exemplo_aplicacao": "Cliente Marcos: cliente reaberto, ideal para D4"}
         ],
         "pontos_fortes": [
@@ -138,6 +142,9 @@
             "Cliente Irla Manuelly: agendou visita para amanha 15h + mencionou laboratorio proprio (D1+D2)",
             "Cliente Luanna Katllen: usou gatilho de proximidade B1 e aversao a perda C3",
             "Cliente Darilio: agendou reuniao terca 15h sobre parceria 700 imoveis"
+          ]},
+          {"categoria": "Uso de Diferenciais (parcial)", "descricao": "Em 1 conversa do DR4 mencionou D3 ('mais de 6 mil projetos instalados')", "exemplos": [
+            "Cliente Uesclei (DR4): vendedor escreveu 'com mais de 9 anos so em energia solar e mais de 6 mil projetos instalados' - usou D3 e D6 mas com numero divergente de D2"
           ]},
           {"categoria": "Volume de Ligacoes", "descricao": "13 ligacoes no dia - prospeccao ativa", "exemplos": [
             "13 ligacoes registradas em ligacoes_dia.txt"
@@ -149,13 +156,16 @@
             "Cliente Darilio: 117 min entre mensagem do cliente e resposta",
             "Cliente Marcos: 80 min para responder retomada do lead"
           ], "acao_corretiva": "SLA de 30min em horario comercial"},
-          {"categoria": "Diferenciacao Competitiva", "descricao": "Maioria das conversas SEM mencionar diferenciais (X6)", "impacto": "Cliente nao percebe diferencial vs concorrencia", "conversas_afetadas": 12, "exemplos_clientes": [
+          {"categoria": "Inconsistencia de Pitch (D2)", "descricao": "Vendedor mencionou '9 anos' a Uesclei em vez dos '17 anos' oficiais da empresa", "impacto": "Cliente pode perceber falta de autoridade e treinamento", "conversas_afetadas": 1, "exemplos_clientes": [
+            "Cliente Uesclei (DR4): 'com mais de 9 anos so em energia solar' - usar D2 corretamente (17 anos da empresa)"
+          ], "acao_corretiva": "Alinhar script: 17 anos de empresa, 9+ anos focados em energia solar"},
+          {"categoria": "Diferenciacao Competitiva", "descricao": "Maioria das conversas SEM mencionar diferenciais (X6)", "impacto": "Cliente nao percebe diferencial vs concorrencia", "conversas_afetadas": 11, "exemplos_clientes": [
             "Cliente SR: cliente disse que ja fechou com alguem, oportunidade perdida",
             "Cliente Darilio: parceria R$1MM sem mencionar D2/D3"
           ], "acao_corretiva": "Template padrao com D1+D2+D3 apos qualificacao"}
         ],
         "erros_cometidos": [
-          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais em maioria das conversas", "ocorrencias": 12},
+          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais em maioria das conversas", "ocorrencias": 11},
           {"codigo": "X8", "descricao": "Tempo de resposta > 60min", "ocorrencias": 4}
         ]
       }
@@ -185,13 +195,13 @@
           {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 9, "exemplo_aplicacao": "Cliente Higo Rodrigues: bom dia inicial - oportunidade de diferencial"}
         ],
         "pontos_fortes": [
-          {"categoria": "Volume de Ligacoes", "descricao": "13 ligacoes no dia (Kemilly registrada como Keane)", "exemplos": [
-            "Cliente Dario, Manoel Maciel: emojis de fechamento (🤝) sugerem deals andando bem"
+          {"categoria": "Conversas em andamento", "descricao": "9 conversas com retorno hoje", "exemplos": [
+            "Cliente Dario, Manoel Maciel: emojis de fechamento (sugerem deals andando bem)"
           ]}
         ],
         "pontos_fracos": [
           {"categoria": "Conteudo das mensagens curto", "descricao": "Previews mostram apenas emojis ou frases curtas", "impacto": "Sem profundidade em argumentacao", "conversas_afetadas": 9, "exemplos_clientes": [
-            "Cliente Dario: '🤝' como ultima mensagem - sem texto",
+            "Cliente Dario: '(emoji handshake)' como ultima mensagem - sem texto",
             "Cliente joaquim damasceno: 'A s...' - frase truncada"
           ], "acao_corretiva": "Adicionar contexto e diferenciais em mensagens curtas"}
         ],
@@ -201,13 +211,13 @@
     {
       "nome": "Luana",
       "cor": "#7c3aed",
-      "total_conversas": 8,
+      "total_conversas": 6,
       "ligacoes_dia": 0,
       "sem_resposta": 1,
       "criticas": 0,
       "mediana_resposta_min": 0,
       "media_resposta_min": 0,
-      "total_respostas": 7,
+      "total_respostas": 5,
       "qualidade": {
         "nota_media": 6.0,
         "aderencia_script": 50,
@@ -220,7 +230,7 @@
           "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
-          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 8, "exemplo_aplicacao": "Cliente DAVI: cliente em fase final de financiamento, diferencial daria seguranca"}
+          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 6, "exemplo_aplicacao": "Cliente DAVI: cliente em fase final de financiamento, diferencial daria seguranca"}
         ],
         "pontos_fortes": [
           {"categoria": "Follow-up Estruturado", "descricao": "Cadencia de follow-up bem distribuida ao longo de semanas", "exemplos": [
@@ -229,15 +239,18 @@
           ]},
           {"categoria": "Agendamento de Visita Confirmada", "descricao": "Conseguiu agendar visita presencial (B4)", "exemplos": [
             "Cliente DAVI: visita 05/Mai 15h, com pedido de localizacao e email"
+          ]},
+          {"categoria": "Pos-venda com Boleto Detalhado", "descricao": "Enviou plano de parcelamento detalhado para cliente em closing", "exemplos": [
+            "Cliente PR Alexandre Oliveira (DR4): 'ENTRADA R$ 8.500 + 6x boletos de R$ 1.000 + 1x R$500 sem juros, primeiro boleto em 30 dias' as 17:16"
           ]}
         ],
         "pontos_fracos": [
           {"categoria": "Sem resposta hoje", "descricao": "Nao respondeu Adriana Santos (DR2) enviada as 10:50", "impacto": "Lead novo de hoje sem primeira resposta", "conversas_afetadas": 1, "exemplos_clientes": [
-            "Cliente Adriana Santos: 'Bom dia' as 10:50 sem resposta ate 18:30"
+            "Cliente Adriana Santos: 'Bom dia' as 10:50 sem resposta ate 19:00"
           ], "acao_corretiva": "Configurar alerta para leads novos atribuidos sem resposta em 30min"}
         ],
         "erros_cometidos": [
-          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 8}
+          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 6}
         ]
       }
     },
@@ -281,22 +294,22 @@
     {
       "nome": "Maria Luiza",
       "cor": "#ec4899",
-      "total_conversas": 5,
+      "total_conversas": 4,
       "ligacoes_dia": 0,
       "sem_resposta": 0,
       "criticas": 1,
       "mediana_resposta_min": 0,
       "media_resposta_min": 0,
-      "total_respostas": 4,
+      "total_respostas": 3,
       "qualidade": {
         "nota_media": 3.5,
-        "aderencia_script": 25,
+        "aderencia_script": 28,
         "argumentos_usados": {
-          "A1": 0, "A2": 0, "A3": 0, "A4": 0,
+          "A1": 0, "A2": 4, "A3": 4, "A4": 0,
           "B1": 0, "B2": 0, "B3": 0, "B4": 0,
           "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
           "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
-          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 4,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 3,
           "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
@@ -304,70 +317,85 @@
           {"id": "B3", "nome": "Argumento de seguranca", "categoria": "Agendamento", "importancia": "Alta", "vezes_perdidas": 1, "exemplo_aplicacao": "Cliente Fabricia: questao de fraude potencial - perfeito para reforcar seguranca"}
         ],
         "pontos_fortes": [
-          {"categoria": "Atende clientes existentes em DR4", "descricao": "4 conversas ativas no DR4", "exemplos": [
-            "Cliente Francisco Delmondes, Maria Do Socorro, Joelson, Girlene Santos: respondeu em horario comercial"
+          {"categoria": "Qualificacao Inicial", "descricao": "Padrao A2+A3 ('Me chamo Maria Luiza... Me informa o valor medio da sua conta')", "exemplos": [
+            "Cliente Francisco Delmondes: 'Boa tarde, Dr. Francisco, tudo bem? Vamos dar continuidade ao nosso atendimento?' - personalizacao + retomada (A2 + E5)",
+            "Cliente Maria Do Socorro: respondeu em horario comercial"
           ]}
         ],
         "pontos_fracos": [
           {"categoria": "Lead Critico Sem Resposta", "descricao": "Cliente Fabricia (DR2) - questao de seguranca/marca sem resposta", "impacto": "Cliente pode estar sendo vitima de fraude usando nome da vendedora", "conversas_afetadas": 1, "exemplos_clientes": [
-            "Cliente Fabricia: 'tem uma pessoa aqui dizendo que trabalha com vcs... nome dela e Maria Luiza vcs conhece' - sem resposta apos 5h+"
-          ], "acao_corretiva": "URGENTE: responder Fabricia ainda hoje para verificar e proteger marca"}
+            "Cliente Fabricia: 'tem uma pessoa aqui dizendo que trabalha com vcs... nome dela e Maria Luiza vcs conhece' - sem resposta apos 6h+"
+          ], "acao_corretiva": "URGENTE: responder Fabricia ainda hoje para verificar e proteger marca"},
+          {"categoria": "Diferenciacao Competitiva", "descricao": "NUNCA mencionou diferenciais em conversas analisadas", "impacto": "Cliente nao percebe diferencial vs concorrencia", "conversas_afetadas": 4, "exemplos_clientes": [
+            "Cliente Francisco Delmondes: retomada sem diferencial - oportunidade perdida"
+          ], "acao_corretiva": "Incluir D1/D2/D3 apos qualificacao inicial"}
         ],
         "erros_cometidos": [
-          {"codigo": "X1", "descricao": "Critica - vendedor nunca respondeu cliente Fabricia", "ocorrencias": 1}
+          {"codigo": "X1", "descricao": "Critica - vendedor nunca respondeu cliente Fabricia", "ocorrencias": 1},
+          {"codigo": "X6", "descricao": "Sem mencao a diferenciais", "ocorrencias": 4}
         ]
       }
     }
   ],
   "insights": {
     "destaques_positivos": [
-      {"vendedor": "Caio Roberto", "cliente": "Volume de 55 conversas no DR4", "acao": "Maior volume de atendimento entre vendedores hoje", "resultado": "Cliente Eliane, albacristal123 e mais 50+: cobertura ampla de leads em DR4"},
-      {"vendedor": "Kemily", "cliente": "Batch follow-up entre 09:39-09:40 e 11:32-11:39", "acao": "Disciplina de cadencia de follow-up massivo (E5) em 22 conversas", "resultado": "Cliente Wilson, Gildo, Givanildo, Jonas: rotina mantida em DR4"},
-      {"vendedor": "Guilherme", "cliente": "Irla Manuelly", "acao": "Usou A2 + A3 + B4 + D1 + D2 - mencionou laboratorio proprio + tempo de empresa", "resultado": "Cliente Irla Manuelly: visita agendada para amanha 15h + cliente engajada"}
+      {"vendedor": "Caio Roberto", "cliente": "Volume de 57 conversas no DR4+DR2", "acao": "Maior volume de atendimento entre vendedores hoje", "resultado": "Cliente Eliane, albacristal123, Sales e mais 50+: cobertura ampla de leads"},
+      {"vendedor": "Kemily", "cliente": "Batch follow-up entre 09:39-09:40 e 11:32-11:39", "acao": "Disciplina de cadencia de follow-up massivo (E5) em 22 conversas + 13 ligacoes", "resultado": "Cliente Wilson, Gildo, Givanildo, Jonas: rotina mantida em DR4"},
+      {"vendedor": "Guilherme", "cliente": "Irla Manuelly", "acao": "Usou A2 + A3 + B4 + D1 + D2 - mencionou laboratorio proprio + tempo de empresa", "resultado": "Cliente Irla Manuelly: visita agendada para amanha 15h + cliente engajada"},
+      {"vendedor": "Guilherme", "cliente": "Uesclei (DR4)", "acao": "Usou D3 (6 mil projetos) + D6 (especializacao energia solar) na argumentacao de preco", "resultado": "Cliente Uesclei: vendedor enviou projeto detalhado 8 placas DAH + DEYE 5KW por R$10.690 - manteve negociacao"},
+      {"vendedor": "Luana", "cliente": "PR Alexandre Oliveira (DR4)", "acao": "Enviou plano de parcelamento detalhado em closing (entrada + 6x R$1k + 1x R$500 sem juros)", "resultado": "Cliente PR Alexandre: cliente em fase de fechamento com proposta clara"}
     ],
     "alertas": [
       {"vendedor": "Maria Luiza", "problema": "Cliente Fabricia (DR2): SEGURANCA DE MARCA - cliente pergunta se 'Maria Luiza' que apareceu e da empresa (possivel golpe)", "impacto": "Risco reputacional alto", "acao_corretiva": "Responder Fabricia AINDA HOJE para verificar e proteger marca"},
       {"vendedor": "Coordenacao", "problema": "31 conversas em DR4 com cliente como ultima mensagem - sem resposta de vendedor (status sem_resposta)", "impacto": "Volume significativo de leads aguardando resposta", "acao_corretiva": "Distribuir leads pendentes pela equipe e estabelecer SLA de resposta"},
-      {"vendedor": "Coordenacao DR2", "problema": "11 leads em DR2 sem atribuicao de vendedor (Andressa, Camilla, Julio Cesar com CPF, Uesclei tecnico, Bruno, Gabriel etc)", "impacto": "Leads quentes perdidos sem atribuicao", "acao_corretiva": "Implementar auto-atribuicao em ate 5 minutos"},
-      {"vendedor": "Guilherme", "problema": "Tempo medio de resposta de 95 min em DR2 - acima do ideal", "impacto": "Lead esfria, concorrencia ganha terreno", "acao_corretiva": "SLA de 30 min em horario comercial"}
+      {"vendedor": "Coordenacao DR2", "problema": "15 leads em DR2 sem atribuicao de vendedor (Camilla, 558291939901, Eliane Souza, Fabricia, 558788481149, Gabriel, 558796258078, Bruno, Adriana, Uesclei tecnico, Julio Cesar com CPF, DAVI etc)", "impacto": "Leads quentes perdidos sem atribuicao", "acao_corretiva": "Implementar auto-atribuicao em ate 5 minutos"},
+      {"vendedor": "Guilherme", "problema": "Tempo medio de resposta de 95 min em DR2 - acima do ideal", "impacto": "Lead esfria, concorrencia ganha terreno", "acao_corretiva": "SLA de 30 min em horario comercial"},
+      {"vendedor": "Guilherme", "problema": "Inconsistencia de pitch D2 - falou '9 anos' em vez dos 17 anos oficiais a Uesclei", "impacto": "Cliente percebe falta de alinhamento institucional", "acao_corretiva": "Alinhar script: '17 anos de empresa, 9+ focados em energia solar'"}
     ],
     "oportunidades": [
-      {"tipo": "Diferenciacao subutilizada (geral)", "descricao": "D1, D2, D3 mencionados em apenas ~3 das 121 conversas com vendedor - menos de 3%", "acao_sugerida": "Criar template padrao de 1 mensagem com D1+D2+D3 apos qualificacao inicial"},
-      {"tipo": "Alta concentracao em Caio Roberto", "descricao": "Caio com 58 conversas, enquanto Claudio tem 6 e Maria Luiza tem 5 - desbalanceamento de carga", "acao_sugerida": "Redistribuir leads ou avaliar capacidade de atendimento por vendedor"},
+      {"tipo": "Diferenciacao subutilizada (geral)", "descricao": "D1, D2, D3 mencionados em apenas ~4 das 117 conversas com vendedor - menos de 4%", "acao_sugerida": "Criar template padrao de 1 mensagem com D1+D2+D3 apos qualificacao inicial"},
+      {"tipo": "Alta concentracao em Caio Roberto", "descricao": "Caio com 57 conversas, enquanto Claudio tem 6 e Maria Luiza tem 4 - desbalanceamento de carga", "acao_sugerida": "Redistribuir leads ou avaliar capacidade de atendimento por vendedor"},
       {"tipo": "DR4 e workspace principal", "descricao": "DR4 (152352) tem 140 conversas/dia vs DR2 (175001) com 23 - DR4 e onde a operacao principal acontece", "acao_sugerida": "Configurar BI para focar no DR4 ou agregar ambos workspaces explicitamente"},
-      {"tipo": "Volume Caio Roberto exige automacao", "descricao": "Com 58 conversas/dia, Caio precisa de templates automatizados para diferenciais e visita", "acao_sugerida": "Criar respostas rapidas (quick replies) com D1+D2+D3 e proposta de visita"}
+      {"tipo": "Volume Caio Roberto exige automacao", "descricao": "Com 57 conversas/dia, Caio precisa de templates automatizados para diferenciais e visita", "acao_sugerida": "Criar respostas rapidas (quick replies) com D1+D2+D3 e proposta de visita"},
+      {"tipo": "B4 (visita) ausente em 5 de 7 vendedores", "descricao": "Apenas Guilherme e Luana propuseram visita em conversas analisadas - X7 sistemico", "acao_sugerida": "Treinamento focado em transicao 'qualificacao -> visita' para Caio, Kemily, Maria Luiza, Keane, Claudio"}
     ]
   },
   "ranking_qualidade": [
     {"posicao": 1, "vendedor": "Luana", "nota_media": 6.0, "aderencia": 50, "badge": "Ouro"},
-    {"posicao": 2, "vendedor": "Guilherme", "nota_media": 5.5, "aderencia": 42, "badge": "Prata"},
+    {"posicao": 2, "vendedor": "Guilherme", "nota_media": 5.7, "aderencia": 45, "badge": "Prata"},
     {"posicao": 3, "vendedor": "Kemily", "nota_media": 5.5, "aderencia": 40, "badge": "Bronze"},
     {"posicao": 4, "vendedor": "Claudio Rodrigues", "nota_media": 5.0, "aderencia": 40, "badge": "Em desenvolvimento"},
     {"posicao": 5, "vendedor": "Keane", "nota_media": 5.0, "aderencia": 35, "badge": "Em desenvolvimento"},
     {"posicao": 6, "vendedor": "Caio Roberto", "nota_media": 4.7, "aderencia": 36, "badge": "Em desenvolvimento"},
-    {"posicao": 7, "vendedor": "Maria Luiza", "nota_media": 3.5, "aderencia": 25, "badge": "Em desenvolvimento"}
+    {"posicao": 7, "vendedor": "Maria Luiza", "nota_media": 3.5, "aderencia": 28, "badge": "Em desenvolvimento"}
   ],
   "conversas": [
-    {"id": 1, "cliente": "SR", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "17:00", "ultima_msg": "17:00", "total_msgs": 8, "status": "ok", "nota": 4, "argumentos_usados": ["A2"], "argumentos_perdidos": ["A1","D1","D2","D3","D4","C5"], "erros": ["X6","X8"], "observacao": "Cliente SR: respondeu 102min depois - cliente disse que ja fechou com alguem, vendedor perguntou se foi com a empresa mas nao usou diferenciais para tentar reverter"},
-    {"id": 2, "cliente": "Eliane Souza", "vendedor": "Caio Roberto", "workspace": "DR2", "hora_lista": "16:04", "ultima_msg": "16:04", "total_msgs": 9, "status": "ok", "nota": 4, "argumentos_usados": ["A3"], "argumentos_perdidos": ["A1","A2","B1","B4","D1","D2","D3"], "erros": ["X7","X8"], "observacao": "Cliente Eliane Souza: pediu orcamento 13:17, vendedor respondeu so 119min depois com 'Qual o consumo?'"},
-    {"id": 3, "cliente": "Fabricia", "vendedor": "Maria Luiza", "workspace": "DR2", "hora_lista": "12:57", "ultima_msg": "12:57", "total_msgs": 8, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","B3","D1","D2"], "erros": ["X1"], "observacao": "Cliente Fabricia: ALERTA SEGURANCA - cliente questionou se 'Maria Luiza' que apareceu trabalha com empresa (possivel golpe), sem resposta da vendedora"},
-    {"id": 4, "cliente": "Darilio", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "16:43", "ultima_msg": "16:43", "total_msgs": 17, "status": "ok", "nota": 5, "argumentos_usados": ["A2","B4"], "argumentos_perdidos": ["D1","D2","D3","D5","F2"], "erros": ["X6","X8"], "observacao": "Cliente Darilio: parceria de 700 imoveis e R$1MM, vendedor respondeu 117min depois sem usar D2/D3 - oportunidade institucional"},
-    {"id": 5, "cliente": "Gabriel", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "12:44", "ultima_msg": "12:44", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": ["X1"], "observacao": "Cliente Gabriel: 'Nao suportado' as 12:44 sem resposta - lead nao atribuido"},
-    {"id": 6, "cliente": "Bruno Macedo", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "10:50", "ultima_msg": "10:50", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X1"], "observacao": "Cliente Bruno Macedo: 'Bom dia' as 10:50 sem resposta - lead novo nao atribuido"},
-    {"id": 7, "cliente": "Adriana Santos", "vendedor": "Luana", "workspace": "DR2", "hora_lista": "10:44", "ultima_msg": "10:50", "total_msgs": 1, "status": "sem_resposta", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X8"], "observacao": "Cliente Adriana Santos: lead atribuido a Luana hoje 10:44 sem resposta humana ate 18:30"},
-    {"id": 8, "cliente": "Uesclei Santos", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "09:47", "ultima_msg": "09:47", "total_msgs": 2, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","D1","D2","D3"], "erros": ["X1"], "observacao": "Cliente Uesclei Santos: orcamento tecnico 650kWh placas DAH bifacial inversor Goodwe 5k - sem resposta, lead super qualificado perdido"},
-    {"id": 9, "cliente": "Irla Manuelly", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "09:34", "ultima_msg": "09:34", "total_msgs": 17, "status": "ok", "nota": 8, "argumentos_usados": ["A2","A3","B4","D1","D2","F2"], "argumentos_perdidos": ["D3","D4"], "erros": [], "observacao": "Cliente Irla Manuelly: visita agendada amanha 15h - mencionou laboratorio + monitoramento + tempo empresa - DESTAQUE POSITIVO"},
-    {"id": 10, "cliente": "Luanna Katllen", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "09:34", "ultima_msg": "09:34", "total_msgs": 17, "status": "ok", "nota": 7, "argumentos_usados": ["A2","A3","B1","B2","B4","C3","C5"], "argumentos_perdidos": ["D1","D2","D3","D4"], "erros": ["X6"], "observacao": "Cliente Luanna Katllen: cliente desistiu para ano que vem, vendedor usou aversao a perda - mantem relacionamento"},
-    {"id": 11, "cliente": "Julio Cesar", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "09:05", "ultima_msg": "09:05", "total_msgs": 4, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","C1"], "erros": ["X1"], "observacao": "Cliente Julio Cesar: pediu financiamento 500/700kw e enviou CPF as 09:05 - lead super-quente perdido"},
-    {"id": 12, "cliente": "DAVI RODRIGUES LEITE FILHO", "vendedor": "Luana", "workspace": "DR2", "hora_lista": "08:46", "ultima_msg": "08:46", "total_msgs": 56, "status": "ok", "nota": 6, "argumentos_usados": ["A2","A3","B4","C3","C5","E2","E3"], "argumentos_perdidos": ["D1","D2","D3"], "erros": ["X6"], "observacao": "Cliente DAVI: visita agendada 05/Mai 15h, follow-up consistente desde fev"},
-    {"id": 13, "cliente": "Andressa Nogueira", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "08:46", "ultima_msg": "08:46", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X1"], "observacao": "Cliente Andressa Nogueira: 'Bom dia, gostaria de orcamento' as 08:46 - sem resposta"},
-    {"id": 14, "cliente": "Camilla Consultora De Vendas", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "08:08", "ultima_msg": "08:08", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": ["X1"], "observacao": "Cliente Camilla: 'Ola, tudo bem?' as 08:08 sem resposta - lead novo perdido"},
-    {"id": 15, "cliente": "_pericles", "vendedor": "Keane", "workspace": "DR4", "hora_lista": "18:20", "ultima_msg": "18:20", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["D1","D2","D3"], "erros": [], "observacao": "Cliente _pericles: Keane respondeu em DR4 - analise via preview apenas"},
-    {"id": 16, "cliente": "Soares Solucoes Visuais", "vendedor": "sem_vendedor", "workspace": "DR4", "hora_lista": "17:58", "ultima_msg": "17:58", "total_msgs": 0, "status": "sem_resposta", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": [], "observacao": "Cliente Soares Solucoes Visuais (DR4): enviou CNPJ THIAGO SOARES.pdf as 17:58 - aguardando resposta"},
-    {"id": 17, "cliente": "Sales", "vendedor": "Caio Roberto", "workspace": "DR4", "hora_lista": "17:45", "ultima_msg": "17:45", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Sales (DR4): Caio Roberto respondeu - analise via preview apenas"},
-    {"id": 18, "cliente": "Inaldo Bezerra de Lima", "vendedor": "Caio Roberto", "workspace": "DR4", "hora_lista": "16:16", "ultima_msg": "16:16", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Inaldo Bezerra de Lima (DR4): Caio Roberto respondeu 16:16"},
-    {"id": 19, "cliente": "JF Distribuidora", "vendedor": "Claudio Rodrigues", "workspace": "DR4", "hora_lista": "09:04", "ultima_msg": "09:04", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente JF Distribuidora (DR4): Claudio respondeu 09:04"},
-    {"id": 20, "cliente": "Mateus", "vendedor": "Luana", "workspace": "DR4", "hora_lista": "08:48", "ultima_msg": "08:48", "total_msgs": 0, "status": "ok", "nota": 6, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Mateus (DR4): Luana respondeu 08:48"}
+    {"id": 1, "cliente": "Dackshow", "vendedor": "sem_vendedor", "workspace": "DR4", "hora_lista": "19:02", "ultima_msg": "19:02", "total_msgs": 0, "status": "sem_resposta", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": [], "observacao": "Cliente Dackshow (DR4): enviou audio as 19:02 - lead recente sem resposta ainda (fora horario comercial fim do dia)"},
+    {"id": 2, "cliente": "_pericles", "vendedor": "Maria Luiza", "workspace": "DR4", "hora_lista": "18:20", "ultima_msg": "19:01", "total_msgs": 20, "status": "ok", "nota": 6, "argumentos_usados": ["A2","A3"], "argumentos_perdidos": ["B4","D1","D2","D3"], "erros": ["X6"], "observacao": "Cliente _pericles (DR4): Maria Luiza enviou orcamento e detalhou 'Sao duas de 1000kw' - cliente de fechamento sem mencao a diferenciais"},
+    {"id": 3, "cliente": "Soares Solucoes Visuais", "vendedor": "sem_vendedor", "workspace": "DR4", "hora_lista": "17:58", "ultima_msg": "17:58", "total_msgs": 0, "status": "sem_resposta", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": [], "observacao": "Cliente Soares Solucoes Visuais (DR4): enviou CNPJ THIAGO SOARES.pdf as 17:58 - aguardando resposta"},
+    {"id": 4, "cliente": "Sales", "vendedor": "Caio Roberto", "workspace": "DR4", "hora_lista": "17:45", "ultima_msg": "17:45", "total_msgs": 6, "status": "ok", "nota": 5, "argumentos_usados": ["C1"], "argumentos_perdidos": ["B1","B4","D1","D2","D3"], "erros": ["X6","X7"], "observacao": "Cliente Sales (DR4): Caio enviou opcoes parceladas (10x R$1.237 / 12x R$1.046 / 15x R$862 / 18x R$734) sem proposta de visita ou diferenciais"},
+    {"id": 5, "cliente": "PR Alexandre Oliveira", "vendedor": "Luana", "workspace": "DR4", "hora_lista": "17:16", "ultima_msg": "17:16", "total_msgs": 20, "status": "ok", "nota": 6, "argumentos_usados": ["A2"], "argumentos_perdidos": ["D1","D2","D3"], "erros": ["X6"], "observacao": "Cliente PR Alexandre Oliveira (DR4): Luana enviou plano de parcelamento detalhado (entrada R$8.500 + 6x R$1.000 + 1x R$500) - cliente em fechamento"},
+    {"id": 6, "cliente": "Uesclei", "vendedor": "Guilherme", "workspace": "DR4", "hora_lista": "17:36", "ultima_msg": "17:36", "total_msgs": 20, "status": "ok", "nota": 7, "argumentos_usados": ["A2","D3","D6","B2"], "argumentos_perdidos": ["B4","D1","D4"], "erros": [], "observacao": "Cliente Uesclei (DR4): Guilherme usou D3 (6 mil projetos) + D6 (especializacao energia solar) + projeto detalhado 8 placas DAH + DEYE 5KW por R$10.690 - boa conversao em andamento, mas inconsistencia '9 anos' vs D2 oficial '17 anos'"},
+    {"id": 7, "cliente": "SR", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "17:00", "ultima_msg": "17:00", "total_msgs": 8, "status": "ok", "nota": 4, "argumentos_usados": ["A2"], "argumentos_perdidos": ["A1","D1","D2","D3","D4","C5"], "erros": ["X6","X8"], "observacao": "Cliente SR (DR2): respondeu 102min depois - cliente disse que ja fechou com alguem, vendedor perguntou se foi com a empresa mas nao usou diferenciais para tentar reverter"},
+    {"id": 8, "cliente": "Eliane Souza", "vendedor": "Caio Roberto", "workspace": "DR2", "hora_lista": "16:04", "ultima_msg": "16:04", "total_msgs": 9, "status": "ok", "nota": 4, "argumentos_usados": ["A3"], "argumentos_perdidos": ["A1","A2","B1","B4","D1","D2","D3"], "erros": ["X7","X8"], "observacao": "Cliente Eliane Souza (DR2): pediu orcamento 13:17, vendedor respondeu so 119min depois com 'Qual o consumo?'"},
+    {"id": 9, "cliente": "Darilio", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "16:43", "ultima_msg": "16:43", "total_msgs": 17, "status": "ok", "nota": 5, "argumentos_usados": ["A2","B4"], "argumentos_perdidos": ["D1","D2","D3","D5","F2"], "erros": ["X6","X8"], "observacao": "Cliente Darilio (DR2): parceria de 700 imoveis e R$1MM, vendedor respondeu 117min depois sem usar D2/D3 - oportunidade institucional"},
+    {"id": 10, "cliente": "Fabricia", "vendedor": "Maria Luiza", "workspace": "DR2", "hora_lista": "12:57", "ultima_msg": "12:57", "total_msgs": 8, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","B3","D1","D2"], "erros": ["X1"], "observacao": "Cliente Fabricia (DR2): ALERTA SEGURANCA - cliente questionou se 'Maria Luiza' que apareceu trabalha com empresa (possivel golpe), sem resposta da vendedora apos 6h+"},
+    {"id": 11, "cliente": "Camilla Consultora De Vendas", "vendedor": "Luana", "workspace": "DR2", "hora_lista": "18:27", "ultima_msg": "18:27", "total_msgs": 4, "status": "ok", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": ["A2","A3","B4","D1","D2"], "erros": ["X4"], "observacao": "Cliente Camilla (DR2): atribuida a Luana - bot enviou apresentacao + video institucional, sem mensagem humana apos as 18:27"},
+    {"id": 12, "cliente": "Gabriel", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "12:44", "ultima_msg": "12:44", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": ["X1"], "observacao": "Cliente Gabriel (DR2): mensagem nao suportada as 12:44 sem resposta - lead nao atribuido"},
+    {"id": 13, "cliente": "Bruno Macedo", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "10:50", "ultima_msg": "10:50", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X1"], "observacao": "Cliente Bruno Macedo (DR2): 'Bom dia' as 10:50 sem resposta - lead novo nao atribuido"},
+    {"id": 14, "cliente": "Adriana Santos", "vendedor": "Luana", "workspace": "DR2", "hora_lista": "10:44", "ultima_msg": "10:50", "total_msgs": 1, "status": "sem_resposta", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X8"], "observacao": "Cliente Adriana Santos (DR2): lead atribuido a Luana hoje 10:44 sem resposta humana ate 19:13"},
+    {"id": 15, "cliente": "Uesclei Santos", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "09:47", "ultima_msg": "09:47", "total_msgs": 2, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","D1","D2","D3"], "erros": ["X1"], "observacao": "Cliente Uesclei Santos (DR2): orcamento tecnico 650kWh placas DAH bifacial inversor Goodwe 5k - sem resposta, lead super qualificado perdido"},
+    {"id": 16, "cliente": "Irla Manuelly", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "09:34", "ultima_msg": "09:34", "total_msgs": 17, "status": "ok", "nota": 8, "argumentos_usados": ["A2","A3","B4","D1","D2","F2"], "argumentos_perdidos": ["D3","D4"], "erros": [], "observacao": "Cliente Irla Manuelly (DR2): visita agendada amanha 15h - mencionou laboratorio + monitoramento + tempo empresa - DESTAQUE POSITIVO"},
+    {"id": 17, "cliente": "Luanna Katllen", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "09:34", "ultima_msg": "09:34", "total_msgs": 17, "status": "ok", "nota": 7, "argumentos_usados": ["A2","A3","B1","B2","B4","C3","C5"], "argumentos_perdidos": ["D1","D2","D3","D4"], "erros": ["X6"], "observacao": "Cliente Luanna Katllen (DR2): cliente desistiu para ano que vem, vendedor usou aversao a perda - mantem relacionamento"},
+    {"id": 18, "cliente": "Julio Cesar", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "09:05", "ultima_msg": "09:05", "total_msgs": 4, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2","C1"], "erros": ["X1"], "observacao": "Cliente Julio Cesar (DR2): pediu financiamento 500/700kw e enviou CPF as 09:05 - lead super-quente perdido"},
+    {"id": 19, "cliente": "DAVI RODRIGUES LEITE FILHO", "vendedor": "Luana", "workspace": "DR2", "hora_lista": "08:46", "ultima_msg": "08:46", "total_msgs": 56, "status": "ok", "nota": 6, "argumentos_usados": ["A2","A3","B4","C3","C5","E2","E3"], "argumentos_perdidos": ["D1","D2","D3"], "erros": ["X6"], "observacao": "Cliente DAVI (DR2): visita agendada 05/Mai 15h, follow-up consistente desde fev"},
+    {"id": 20, "cliente": "Andressa Nogueira", "vendedor": "sem_vendedor", "workspace": "DR2", "hora_lista": "08:46", "ultima_msg": "08:46", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1","A2"], "erros": ["X1"], "observacao": "Cliente Andressa Nogueira (DR2): 'Bom dia, gostaria de orcamento' as 08:46 - sem resposta"},
+    {"id": 21, "cliente": "Ândrey Lopes", "vendedor": "Caio Roberto", "workspace": "DR2", "hora_lista": "11:18", "ultima_msg": "11:18", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["D1","D2","D3"], "erros": [], "observacao": "Cliente Ândrey Lopes (DR2): Caio Roberto respondeu - analise via preview"},
+    {"id": 22, "cliente": "albacristal123", "vendedor": "Caio Roberto", "workspace": "DR2", "hora_lista": "09:30", "ultima_msg": "09:30", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["X8"], "observacao": "Cliente albacristal123 (DR2): pos-venda atendido com 75min de delay"},
+    {"id": 23, "cliente": "Marcos", "vendedor": "Guilherme", "workspace": "DR2", "hora_lista": "09:28", "ultima_msg": "09:28", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": ["A2"], "argumentos_perdidos": ["D1","D2","D3","D4"], "erros": ["X6"], "observacao": "Cliente Marcos (DR2): Guilherme retomou conversa - sem mencao de diferenciais para reaberto"},
+    {"id": 24, "cliente": "Inaldo Bezerra de Lima", "vendedor": "Caio Roberto", "workspace": "DR4", "hora_lista": "16:16", "ultima_msg": "16:16", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Inaldo Bezerra de Lima (DR4): Caio Roberto respondeu 16:16"},
+    {"id": 25, "cliente": "JF Distribuidora", "vendedor": "Claudio Rodrigues", "workspace": "DR4", "hora_lista": "09:04", "ultima_msg": "09:04", "total_msgs": 0, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente JF Distribuidora (DR4): Claudio respondeu 09:04"},
+    {"id": 26, "cliente": "Mateus", "vendedor": "Luana", "workspace": "DR4", "hora_lista": "08:48", "ultima_msg": "08:48", "total_msgs": 0, "status": "ok", "nota": 6, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Mateus (DR4): Luana respondeu 08:48"}
   ],
-  "nota_metodologica": "Esta analise combina DR2-NOVO (23 conversas com extracao detalhada de mensagens) e DR4 (140 conversas analisadas via preview/ultima mensagem). Para o DR4 nao foi feita extracao detalhada das mensagens individuais - argumentos_usados foram inferidos pelo padrao do preview e historico. Recomenda-se proxima execucao incluir extracao detalhada de DR4 para analise de argumentos por conversa."
+  "nota_metodologica": "Esta analise combina DR2-NOVO (23 conversas com extracao detalhada de mensagens em amostra) e DR4 (140 conversas analisadas predominantemente via preview/ultima mensagem). Foram abertos manualmente: Camilla (DR2/Luana), Sales (DR4/Caio), PR Alexandre (DR4/Luana), Kemily DR4 sample, Maria Luiza DR4 sample, Uesclei (DR4/Guilherme) e _pericles (DR4) para evidenciar conteudo. Recomenda-se proxima execucao incluir extracao detalhada de DR4 conversas com >5 mensagens trocadas hoje para analise completa de argumentos por conversa."
 }
