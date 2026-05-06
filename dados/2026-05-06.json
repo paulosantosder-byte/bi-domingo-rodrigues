@@ -1,39 +1,39 @@
 {
   "data": "2026-05-06",
-  "hora_execucao": "13:04",
+  "hora_execucao": "18:30",
   "observacao_metodologia": "Analise profunda do workspace DR4 (152352): cada conversa de hoje foi aberta e suas mensagens (texto + horario) coletadas via JS-injection. Filtragem por data 'Qua, 06 Mai 2026'. Conversas com nome contendo 'Ignorar' foram puladas. Argumentos detectados via regex sobre texto agregado do vendedor. Tempo de resposta calculado dentro do horario comercial 08:00-18:00.",
   "metricas": {
-    "total_conversas": 114,
-    "sem_resposta": 7,
+    "total_conversas": 153,
+    "sem_resposta": 12,
     "total_ligacoes": 1,
-    "criticas": 1,
-    "sem_vendedor": 3,
-    "nota_media_geral": 5.3,
-    "aderencia_geral": 19
+    "criticas": 2,
+    "sem_vendedor": 6,
+    "nota_media_geral": 5.1,
+    "aderencia_geral": 21
   },
   "vendedores": [
     {
       "nome": "Claudio Rodrigues",
       "cor": "#dc2626",
-      "total_conversas": 31,
+      "total_conversas": 36,
       "ligacoes_dia": 0,
-      "sem_resposta": 0,
-      "criticas": 0,
-      "mediana_resposta_min": 25,
-      "media_resposta_min": 20,
-      "total_respostas": 31,
+      "sem_resposta": 2,
+      "criticas": 1,
+      "mediana_resposta_min": 1,
+      "media_resposta_min": 13,
+      "total_respostas": 33,
       "qualidade": {
-        "nota_media": 6.5,
+        "nota_media": 6.0,
         "aderencia_script": 25,
         "argumentos_usados": {
-          "A1": 2,
-          "A2": 31,
-          "A3": 5,
+          "A1": 4,
+          "A2": 34,
+          "A3": 9,
           "A4": 0,
           "B1": 1,
-          "B2": 28,
+          "B2": 27,
           "B3": 0,
-          "B4": 28,
+          "B4": 27,
           "C1": 0,
           "C2": 0,
           "C3": 0,
@@ -61,38 +61,47 @@
             "nome": "Laboratorio proprio + troca 24h",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 31,
-            "exemplo_aplicacao": "Cliente Eng José Barros: aplicar Laboratorio proprio + troca 24h"
+            "vezes_perdidas": 36,
+            "exemplo_aplicacao": "Cliente Pablo Emerson: aplicar Laboratorio proprio + troca 24h"
           },
           {
             "id": "D2",
             "nome": "17 anos de mercado",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 31,
-            "exemplo_aplicacao": "Cliente Eng José Barros: aplicar 17 anos de mercado"
+            "vezes_perdidas": 36,
+            "exemplo_aplicacao": "Cliente Pablo Emerson: aplicar 17 anos de mercado"
           },
           {
             "id": "D3",
             "nome": "6 mil projetos",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 31,
-            "exemplo_aplicacao": "Cliente Eng José Barros: aplicar 6 mil projetos"
+            "vezes_perdidas": 36,
+            "exemplo_aplicacao": "Cliente Pablo Emerson: aplicar 6 mil projetos"
           },
           {
             "id": "D4",
             "nome": "Orfaos solares",
             "categoria": "Diferenciacao",
             "importancia": "Alta",
-            "vezes_perdidas": 31,
-            "exemplo_aplicacao": "Cliente Eng José Barros: aplicar Orfaos solares"
+            "vezes_perdidas": 36,
+            "exemplo_aplicacao": "Cliente Pablo Emerson: aplicar Orfaos solares"
           }
         ],
         "pontos_fortes": [
           {
+            "categoria": "Velocidade",
+            "descricao": "Resposta rapida (mediana 1min)",
+            "exemplos": [
+              "Cliente Pablo Emerson: respondeu em 0min",
+              "Cliente Rosa Duete: respondeu em 0min",
+              "Cliente Alex: respondeu em 1min"
+            ]
+          },
+          {
             "categoria": "Agendamento",
-            "descricao": "Oferece visita (B4 em 28/31)",
+            "descricao": "Oferece visita (B4 em 27/36)",
             "exemplos": [
               "Cliente Eng José Barros: vendedor ofereceu visita tecnica",
               "Cliente Pedrinho Vaqueiro: vendedor ofereceu visita tecnica",
@@ -105,25 +114,30 @@
             "categoria": "Diferenciacao Competitiva",
             "descricao": "NUNCA mencionou laboratorio (D1), 17 anos (D2), 6mil projetos (D3) ou orfaos (D4)",
             "impacto": "Perde diferenciacao vs concorrentes",
-            "conversas_afetadas": 31,
+            "conversas_afetadas": 36,
             "exemplos_clientes": [
-              "Cliente Eng José Barros: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Pedrinho Vaqueiro: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Pr.Ricardo Leal: vendedor nao usou nenhum diferencial (D1-D4)"
+              "Cliente Pablo Emerson: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente Rosa Duete: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente Essa É Minha Paixão Deus: vendedor nao usou nenhum diferencial (D1-D4)"
             ],
             "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em todas conversas com objecao de preco/qualidade"
           }
         ],
         "erros_cometidos": [
           {
+            "codigo": "X3",
+            "descricao": "Ignorou perguntas/objecoes",
+            "ocorrencias": 1
+          },
+          {
             "codigo": "X6",
             "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 31
+            "ocorrencias": 34
           },
           {
             "codigo": "X7",
             "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 2
+            "ocorrencias": 6
           }
         ]
       }
@@ -131,29 +145,508 @@
     {
       "nome": "Caio Roberto",
       "cor": "#0ea5e9",
-      "total_conversas": 9,
+      "total_conversas": 13,
       "ligacoes_dia": 0,
-      "sem_resposta": 2,
+      "sem_resposta": 4,
       "criticas": 0,
-      "mediana_resposta_min": 15,
-      "media_resposta_min": 25,
-      "total_respostas": 7,
+      "mediana_resposta_min": 11,
+      "media_resposta_min": 20,
+      "total_respostas": 9,
       "qualidade": {
-        "nota_media": 5.8,
-        "aderencia_script": 21,
+        "nota_media": 6.0,
+        "aderencia_script": 28,
         "argumentos_usados": {
-          "A1": 3,
-          "A2": 8,
-          "A3": 6,
+          "A1": 5,
+          "A2": 12,
+          "A3": 9,
           "A4": 0,
           "B1": 0,
           "B2": 0,
           "B3": 0,
-          "B4": 4,
+          "B4": 5,
           "C1": 1,
           "C2": 0,
           "C3": 0,
           "C4": 2,
+          "C5": 0,
+          "D1": 2,
+          "D2": 2,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 13,
+            "exemplo_aplicacao": "Cliente Josy🥰: aplicar Gatilho de proximidade"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objecao 'manda Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Critica",
+            "vezes_perdidas": 13,
+            "exemplo_aplicacao": "Cliente Josy🥰: aplicar Quebra objecao 'manda Zap'"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 13,
+            "exemplo_aplicacao": "Cliente Josy🥰: aplicar 6 mil projetos"
+          },
+          {
+            "id": "D4",
+            "nome": "Orfaos solares",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 13,
+            "exemplo_aplicacao": "Cliente Josy🥰: aplicar Orfaos solares"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade",
+            "descricao": "Resposta rapida (mediana 11min)",
+            "exemplos": [
+              "Cliente Aerton Carvalho: respondeu em 1min",
+              "Cliente Nnnn: respondeu em 0min",
+              "Cliente Jose Carlos: respondeu em 11min"
+            ]
+          },
+          {
+            "categoria": "Qualificacao Inicial",
+            "descricao": "Frequente pergunta de qualificacao (A3 em 9/13)",
+            "exemplos": [
+              "Cliente Josy🥰: vendedor pediu valor da conta",
+              "Cliente Ivanilton: vendedor pediu valor da conta",
+              "Cliente Aerton Carvalho: vendedor pediu valor da conta"
+            ]
+          },
+          {
+            "categoria": "Agendamento",
+            "descricao": "Oferece visita (B4 em 5/13)",
+            "exemplos": [
+              "Cliente Josy🥰: vendedor ofereceu visita tecnica",
+              "Cliente Jose Carlos: vendedor ofereceu visita tecnica",
+              "Cliente Iago Ravelle: vendedor ofereceu visita tecnica"
+            ]
+          }
+        ],
+        "pontos_fracos": [],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nunca mencionou diferenciais (D1-D4)",
+            "ocorrencias": 11
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Nao tentou agendar visita (B1-B4)",
+            "ocorrencias": 8
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "total_conversas": 26,
+      "ligacoes_dia": 0,
+      "sem_resposta": 0,
+      "criticas": 0,
+      "mediana_resposta_min": 3,
+      "media_resposta_min": 16,
+      "total_respostas": 26,
+      "qualidade": {
+        "nota_media": 5.3,
+        "aderencia_script": 42,
+        "argumentos_usados": {
+          "A1": 5,
+          "A2": 23,
+          "A3": 12,
+          "A4": 0,
+          "B1": 0,
+          "B2": 1,
+          "B3": 3,
+          "B4": 4,
+          "C1": 2,
+          "C2": 0,
+          "C3": 0,
+          "C4": 1,
+          "C5": 0,
+          "D1": 1,
+          "D2": 4,
+          "D3": 3,
+          "D4": 2,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente 😎: aplicar Gatilho de proximidade"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade",
+            "descricao": "Resposta rapida (mediana 3min)",
+            "exemplos": [
+              "Cliente jailton assis: respondeu em 3min",
+              "Cliente Jocélio Lira: respondeu em 1min",
+              "Cliente Cezzar: respondeu em 1min"
+            ]
+          },
+          {
+            "categoria": "Qualificacao Inicial",
+            "descricao": "Frequente pergunta de qualificacao (A3 em 12/26)",
+            "exemplos": [
+              "Cliente Cicero: vendedor pediu valor da conta",
+              "Cliente Duda: vendedor pediu valor da conta",
+              "Cliente Manoel Maciel Júnior: vendedor pediu valor da conta"
+            ]
+          }
+        ],
+        "pontos_fracos": [],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nunca mencionou diferenciais (D1-D4)",
+            "ocorrencias": 21
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Nao tentou agendar visita (B1-B4)",
+            "ocorrencias": 19
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "total_conversas": 29,
+      "ligacoes_dia": 0,
+      "sem_resposta": 2,
+      "criticas": 0,
+      "mediana_resposta_min": 93,
+      "media_resposta_min": 238,
+      "total_respostas": 27,
+      "qualidade": {
+        "nota_media": 5.0,
+        "aderencia_script": 21,
+        "argumentos_usados": {
+          "A1": 3,
+          "A2": 28,
+          "A3": 8,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 6,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 2,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 2,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 29,
+            "exemplo_aplicacao": "Cliente Renildo Rodrigues: aplicar Gatilho de proximidade"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objecao 'manda Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Critica",
+            "vezes_perdidas": 29,
+            "exemplo_aplicacao": "Cliente Marcia: aplicar Quebra objecao 'manda Zap'"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 29,
+            "exemplo_aplicacao": "Cliente Renildo Rodrigues: aplicar 17 anos de mercado"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 29,
+            "exemplo_aplicacao": "Cliente Renildo Rodrigues: aplicar 6 mil projetos"
+          },
+          {
+            "id": "D4",
+            "nome": "Orfaos solares",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 29,
+            "exemplo_aplicacao": "Cliente Renildo Rodrigues: aplicar Orfaos solares"
+          }
+        ],
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Velocidade",
+            "descricao": "Tempo de resposta mediano 93min (acima de 60min)",
+            "impacto": "Lead esfria, concorrente atende primeiro",
+            "conversas_afetadas": 8,
+            "exemplos_clientes": [
+              "Cliente Andre: respondeu em 600min",
+              "Cliente Edinan Pereira: respondeu em 600min",
+              "Cliente Jefferson Iury Consultor Eletro Mateus: respondeu em 600min"
+            ],
+            "acao_corretiva": "Responder em ate 15min em horario comercial"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nunca mencionou diferenciais (D1-D4)",
+            "ocorrencias": 27
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Nao tentou agendar visita (B1-B4)",
+            "ocorrencias": 23
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 8
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Guilherme",
+      "cor": "#10b981",
+      "total_conversas": 11,
+      "ligacoes_dia": 1,
+      "sem_resposta": 1,
+      "criticas": 0,
+      "mediana_resposta_min": 75,
+      "media_resposta_min": 118,
+      "total_respostas": 10,
+      "qualidade": {
+        "nota_media": 4.9,
+        "aderencia_script": 21,
+        "argumentos_usados": {
+          "A1": 2,
+          "A2": 9,
+          "A3": 9,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 1,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 1,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 1,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente Francisco: aplicar Gatilho de proximidade"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objecao 'manda Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Critica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente Roberto: aplicar Quebra objecao 'manda Zap'"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente Francisco: aplicar 17 anos de mercado"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente Francisco: aplicar 6 mil projetos"
+          },
+          {
+            "id": "D4",
+            "nome": "Orfaos solares",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente Francisco: aplicar Orfaos solares"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Qualificacao Inicial",
+            "descricao": "Frequente pergunta de qualificacao (A3 em 9/11)",
+            "exemplos": [
+              "Cliente Francisco: vendedor pediu valor da conta",
+              "Cliente Jr: vendedor pediu valor da conta",
+              "Cliente José Jambeiro: vendedor pediu valor da conta"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Agendamento",
+            "descricao": "Nao tentou agendar visita em nenhuma conversa hoje",
+            "impacto": "Vende so pelo WhatsApp - alta perda de leads",
+            "conversas_afetadas": 11,
+            "exemplos_clientes": [
+              "Cliente Francisco: nao houve tentativa de visita",
+              "Cliente Jr: nao houve tentativa de visita",
+              "Cliente Luciana: nao houve tentativa de visita"
+            ],
+            "acao_corretiva": "Apos qualificacao oferecer visita: 'posso passar ai amanha?'"
+          },
+          {
+            "categoria": "Velocidade",
+            "descricao": "Tempo de resposta mediano 75min (acima de 60min)",
+            "impacto": "Lead esfria, concorrente atende primeiro",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [
+              "Cliente Uesclei: respondeu em 75min",
+              "Cliente Lucas: respondeu em 268min",
+              "Cliente Rose Castro: respondeu em 263min"
+            ],
+            "acao_corretiva": "Responder em ate 15min em horario comercial"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nunca mencionou diferenciais (D1-D4)",
+            "ocorrencias": 10
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Nao tentou agendar visita (B1-B4)",
+            "ocorrencias": 11
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 4
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "total_conversas": 26,
+      "ligacoes_dia": 0,
+      "sem_resposta": 2,
+      "criticas": 0,
+      "mediana_resposta_min": 3,
+      "media_resposta_min": 32,
+      "total_respostas": 24,
+      "qualidade": {
+        "nota_media": 4.2,
+        "aderencia_script": 10,
+        "argumentos_usados": {
+          "A1": 8,
+          "A2": 15,
+          "A3": 7,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
           "C5": 0,
           "D1": 0,
           "D2": 0,
@@ -177,68 +670,50 @@
             "nome": "Gatilho de proximidade",
             "categoria": "Agendamento",
             "importancia": "Alta",
-            "vezes_perdidas": 9,
-            "exemplo_aplicacao": "Cliente Nnnn: aplicar Gatilho de proximidade"
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente Jaides_nails: aplicar Gatilho de proximidade"
           },
           {
             "id": "D1",
             "nome": "Laboratorio proprio + troca 24h",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 9,
-            "exemplo_aplicacao": "Cliente Nnnn: aplicar Laboratorio proprio + troca 24h"
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente Jaides_nails: aplicar Laboratorio proprio + troca 24h"
           },
           {
             "id": "D2",
             "nome": "17 anos de mercado",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 9,
-            "exemplo_aplicacao": "Cliente Nnnn: aplicar 17 anos de mercado"
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente Jaides_nails: aplicar 17 anos de mercado"
           },
           {
             "id": "D3",
             "nome": "6 mil projetos",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 9,
-            "exemplo_aplicacao": "Cliente Nnnn: aplicar 6 mil projetos"
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente Jaides_nails: aplicar 6 mil projetos"
           },
           {
             "id": "D4",
             "nome": "Orfaos solares",
             "categoria": "Diferenciacao",
             "importancia": "Alta",
-            "vezes_perdidas": 9,
-            "exemplo_aplicacao": "Cliente Nnnn: aplicar Orfaos solares"
+            "vezes_perdidas": 26,
+            "exemplo_aplicacao": "Cliente Jaides_nails: aplicar Orfaos solares"
           }
         ],
         "pontos_fortes": [
           {
             "categoria": "Velocidade",
-            "descricao": "Resposta rapida (mediana 15min)",
+            "descricao": "Resposta rapida (mediana 3min)",
             "exemplos": [
-              "Cliente Nnnn: respondeu em 0min",
-              "Cliente Iago Ravelle: respondeu em 3min",
-              "Cliente Valdemar: respondeu em 15min"
-            ]
-          },
-          {
-            "categoria": "Qualificacao Inicial",
-            "descricao": "Frequente pergunta de qualificacao (A3 em 6/9)",
-            "exemplos": [
-              "Cliente Nnnn: vendedor pediu valor da conta",
-              "Cliente Josy🥰: vendedor pediu valor da conta",
-              "Cliente Iago Ravelle: vendedor pediu valor da conta"
-            ]
-          },
-          {
-            "categoria": "Agendamento",
-            "descricao": "Oferece visita (B4 em 4/9)",
-            "exemplos": [
-              "Cliente Josy🥰: vendedor ofereceu visita tecnica",
-              "Cliente Iago Ravelle: vendedor ofereceu visita tecnica",
-              "Cliente Valdemar: vendedor ofereceu visita tecnica"
+              "Cliente Josivaldo: respondeu em 2min",
+              "Cliente Nery.: respondeu em 0min",
+              "Cliente Tina Oliveira: respondeu em 0min"
             ]
           }
         ],
@@ -247,339 +722,42 @@
             "categoria": "Diferenciacao Competitiva",
             "descricao": "NUNCA mencionou laboratorio (D1), 17 anos (D2), 6mil projetos (D3) ou orfaos (D4)",
             "impacto": "Perde diferenciacao vs concorrentes",
-            "conversas_afetadas": 9,
+            "conversas_afetadas": 26,
             "exemplos_clientes": [
-              "Cliente Nnnn: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Josy🥰: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Iago Ravelle: vendedor nao usou nenhum diferencial (D1-D4)"
+              "Cliente Jaides_nails: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente Josivaldo: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente Nery.: vendedor nao usou nenhum diferencial (D1-D4)"
             ],
             "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em todas conversas com objecao de preco/qualidade"
-          }
-        ],
-        "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 9
           },
-          {
-            "codigo": "X7",
-            "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 5
-          },
-          {
-            "codigo": "X8",
-            "descricao": "Tempo resposta > 60min",
-            "ocorrencias": 1
-          }
-        ]
-      }
-    },
-    {
-      "nome": "Keane",
-      "cor": "#f59e0b",
-      "total_conversas": 24,
-      "ligacoes_dia": 0,
-      "sem_resposta": 0,
-      "criticas": 0,
-      "mediana_resposta_min": 2,
-      "media_resposta_min": 5,
-      "total_respostas": 24,
-      "qualidade": {
-        "nota_media": 5.3,
-        "aderencia_script": 42,
-        "argumentos_usados": {
-          "A1": 6,
-          "A2": 23,
-          "A3": 8,
-          "A4": 0,
-          "B1": 0,
-          "B2": 1,
-          "B3": 2,
-          "B4": 2,
-          "C1": 2,
-          "C2": 0,
-          "C3": 0,
-          "C4": 2,
-          "C5": 0,
-          "D1": 1,
-          "D2": 3,
-          "D3": 3,
-          "D4": 1,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "B1",
-            "nome": "Gatilho de proximidade",
-            "categoria": "Agendamento",
-            "importancia": "Alta",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente O74988116992: aplicar Gatilho de proximidade"
-          }
-        ],
-        "pontos_fortes": [
-          {
-            "categoria": "Velocidade",
-            "descricao": "Resposta rapida (mediana 2min)",
-            "exemplos": [
-              "Cliente jailton assis: respondeu em 3min",
-              "Cliente Jocélio Lira: respondeu em 1min",
-              "Cliente Cezzar: respondeu em 1min"
-            ]
-          }
-        ],
-        "pontos_fracos": [],
-        "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 21
-          },
-          {
-            "codigo": "X7",
-            "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 20
-          }
-        ]
-      }
-    },
-    {
-      "nome": "Luana",
-      "cor": "#7c3aed",
-      "total_conversas": 16,
-      "ligacoes_dia": 0,
-      "sem_resposta": 1,
-      "criticas": 0,
-      "mediana_resposta_min": 16,
-      "media_resposta_min": 12,
-      "total_respostas": 15,
-      "qualidade": {
-        "nota_media": 5.2,
-        "aderencia_script": 21,
-        "argumentos_usados": {
-          "A1": 2,
-          "A2": 16,
-          "A3": 6,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 3,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 1,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 1,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "B1",
-            "nome": "Gatilho de proximidade",
-            "categoria": "Agendamento",
-            "importancia": "Alta",
-            "vezes_perdidas": 16,
-            "exemplo_aplicacao": "Cliente cicero martins: aplicar Gatilho de proximidade"
-          },
-          {
-            "id": "B2",
-            "nome": "Quebra objecao 'manda Zap'",
-            "categoria": "Agendamento",
-            "importancia": "Critica",
-            "vezes_perdidas": 16,
-            "exemplo_aplicacao": "Cliente 🌾CORRINHA NERES🪞⚡️: aplicar Quebra objecao 'manda Zap'"
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 16,
-            "exemplo_aplicacao": "Cliente cicero martins: aplicar 17 anos de mercado"
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 16,
-            "exemplo_aplicacao": "Cliente cicero martins: aplicar 6 mil projetos"
-          },
-          {
-            "id": "D4",
-            "nome": "Orfaos solares",
-            "categoria": "Diferenciacao",
-            "importancia": "Alta",
-            "vezes_perdidas": 16,
-            "exemplo_aplicacao": "Cliente cicero martins: aplicar Orfaos solares"
-          }
-        ],
-        "pontos_fortes": [],
-        "pontos_fracos": [],
-        "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 15
-          },
-          {
-            "codigo": "X7",
-            "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 13
-          }
-        ]
-      }
-    },
-    {
-      "nome": "Guilherme",
-      "cor": "#10b981",
-      "total_conversas": 6,
-      "ligacoes_dia": 1,
-      "sem_resposta": 2,
-      "criticas": 1,
-      "mediana_resposta_min": 52,
-      "media_resposta_min": 35,
-      "total_respostas": 3,
-      "qualidade": {
-        "nota_media": 4.5,
-        "aderencia_script": 10,
-        "argumentos_usados": {
-          "A1": 0,
-          "A2": 4,
-          "A3": 4,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 1,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "B1",
-            "nome": "Gatilho de proximidade",
-            "categoria": "Agendamento",
-            "importancia": "Alta",
-            "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Cliente Tina Oliveira: aplicar Gatilho de proximidade"
-          },
-          {
-            "id": "B2",
-            "nome": "Quebra objecao 'manda Zap'",
-            "categoria": "Agendamento",
-            "importancia": "Critica",
-            "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Cliente Roberto: aplicar Quebra objecao 'manda Zap'"
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Cliente Tina Oliveira: aplicar 17 anos de mercado"
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Cliente Tina Oliveira: aplicar 6 mil projetos"
-          },
-          {
-            "id": "D4",
-            "nome": "Orfaos solares",
-            "categoria": "Diferenciacao",
-            "importancia": "Alta",
-            "vezes_perdidas": 6,
-            "exemplo_aplicacao": "Cliente Tina Oliveira: aplicar Orfaos solares"
-          }
-        ],
-        "pontos_fortes": [
-          {
-            "categoria": "Qualificacao Inicial",
-            "descricao": "Frequente pergunta de qualificacao (A3 em 4/6)",
-            "exemplos": [
-              "Cliente Rose Castro: vendedor pediu valor da conta",
-              "Cliente Lucas: vendedor pediu valor da conta",
-              "Cliente Inês: vendedor pediu valor da conta"
-            ]
-          }
-        ],
-        "pontos_fracos": [
           {
             "categoria": "Agendamento",
             "descricao": "Nao tentou agendar visita em nenhuma conversa hoje",
             "impacto": "Vende so pelo WhatsApp - alta perda de leads",
-            "conversas_afetadas": 6,
+            "conversas_afetadas": 26,
             "exemplos_clientes": [
-              "Cliente Tina Oliveira: nao houve tentativa de visita",
-              "Cliente Rose Castro: nao houve tentativa de visita",
-              "Cliente Lucas: nao houve tentativa de visita"
+              "Cliente Jaides_nails: nao houve tentativa de visita",
+              "Cliente Josivaldo: nao houve tentativa de visita",
+              "Cliente Nery.: nao houve tentativa de visita"
             ],
             "acao_corretiva": "Apos qualificacao oferecer visita: 'posso passar ai amanha?'"
           }
         ],
         "erros_cometidos": [
           {
-            "codigo": "X3",
-            "descricao": "Ignorou perguntas/objecoes",
-            "ocorrencias": 1
-          },
-          {
             "codigo": "X6",
             "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 4
+            "ocorrencias": 26
           },
           {
             "codigo": "X7",
             "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 5
+            "ocorrencias": 26
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo resposta > 60min",
+            "ocorrencias": 2
           }
         ]
       }
@@ -587,19 +765,19 @@
     {
       "nome": "Kemily",
       "cor": "#a855f7",
-      "total_conversas": 1,
+      "total_conversas": 6,
       "ligacoes_dia": 0,
-      "sem_resposta": 0,
-      "criticas": 0,
+      "sem_resposta": 1,
+      "criticas": 1,
       "mediana_resposta_min": 53,
       "media_resposta_min": 53,
-      "total_respostas": 1,
+      "total_respostas": 4,
       "qualidade": {
-        "nota_media": 4.5,
+        "nota_media": 3.9,
         "aderencia_script": 3,
         "argumentos_usados": {
           "A1": 0,
-          "A2": 1,
+          "A2": 5,
           "A3": 0,
           "A4": 0,
           "B1": 0,
@@ -633,40 +811,40 @@
             "nome": "Gatilho de proximidade",
             "categoria": "Agendamento",
             "importancia": "Alta",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Cliente Jota: aplicar Gatilho de proximidade"
+            "vezes_perdidas": 6,
+            "exemplo_aplicacao": "Cliente zeca72310: aplicar Gatilho de proximidade"
           },
           {
             "id": "D1",
             "nome": "Laboratorio proprio + troca 24h",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Cliente Jota: aplicar Laboratorio proprio + troca 24h"
+            "vezes_perdidas": 6,
+            "exemplo_aplicacao": "Cliente zeca72310: aplicar Laboratorio proprio + troca 24h"
           },
           {
             "id": "D2",
             "nome": "17 anos de mercado",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Cliente Jota: aplicar 17 anos de mercado"
+            "vezes_perdidas": 6,
+            "exemplo_aplicacao": "Cliente zeca72310: aplicar 17 anos de mercado"
           },
           {
             "id": "D3",
             "nome": "6 mil projetos",
             "categoria": "Diferenciacao",
             "importancia": "Critica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Cliente Jota: aplicar 6 mil projetos"
+            "vezes_perdidas": 6,
+            "exemplo_aplicacao": "Cliente zeca72310: aplicar 6 mil projetos"
           },
           {
             "id": "D4",
             "nome": "Orfaos solares",
             "categoria": "Diferenciacao",
             "importancia": "Alta",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Cliente Jota: aplicar Orfaos solares"
+            "vezes_perdidas": 6,
+            "exemplo_aplicacao": "Cliente zeca72310: aplicar Orfaos solares"
           }
         ],
         "pontos_fortes": [],
@@ -675,9 +853,11 @@
             "categoria": "Diferenciacao Competitiva",
             "descricao": "NUNCA mencionou laboratorio (D1), 17 anos (D2), 6mil projetos (D3) ou orfaos (D4)",
             "impacto": "Perde diferenciacao vs concorrentes",
-            "conversas_afetadas": 1,
+            "conversas_afetadas": 6,
             "exemplos_clientes": [
-              "Cliente Jota: vendedor nao usou nenhum diferencial (D1-D4)"
+              "Cliente zeca72310: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente Gledson: vendedor nao usou nenhum diferencial (D1-D4)",
+              "Cliente estou em reunião: vendedor nao usou nenhum diferencial (D1-D4)"
             ],
             "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em todas conversas com objecao de preco/qualidade"
           },
@@ -685,159 +865,30 @@
             "categoria": "Agendamento",
             "descricao": "Nao tentou agendar visita em nenhuma conversa hoje",
             "impacto": "Vende so pelo WhatsApp - alta perda de leads",
-            "conversas_afetadas": 1,
+            "conversas_afetadas": 6,
             "exemplos_clientes": [
-              "Cliente Jota: nao houve tentativa de visita"
+              "Cliente zeca72310: nao houve tentativa de visita",
+              "Cliente Gledson: nao houve tentativa de visita",
+              "Cliente estou em reunião: nao houve tentativa de visita"
             ],
             "acao_corretiva": "Apos qualificacao oferecer visita: 'posso passar ai amanha?'"
           }
         ],
         "erros_cometidos": [
           {
+            "codigo": "X3",
+            "descricao": "Ignorou perguntas/objecoes",
+            "ocorrencias": 1
+          },
+          {
             "codigo": "X6",
             "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 1
+            "ocorrencias": 5
           },
           {
             "codigo": "X7",
             "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 1
-          }
-        ]
-      }
-    },
-    {
-      "nome": "Maria Luiza",
-      "cor": "#ec4899",
-      "total_conversas": 24,
-      "ligacoes_dia": 0,
-      "sem_resposta": 2,
-      "criticas": 0,
-      "mediana_resposta_min": 3,
-      "media_resposta_min": 9,
-      "total_respostas": 22,
-      "qualidade": {
-        "nota_media": 4.2,
-        "aderencia_script": 10,
-        "argumentos_usados": {
-          "A1": 8,
-          "A2": 12,
-          "A3": 5,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "B1",
-            "nome": "Gatilho de proximidade",
-            "categoria": "Agendamento",
-            "importancia": "Alta",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente Dackshow: aplicar Gatilho de proximidade"
-          },
-          {
-            "id": "D1",
-            "nome": "Laboratorio proprio + troca 24h",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente Dackshow: aplicar Laboratorio proprio + troca 24h"
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente Dackshow: aplicar 17 anos de mercado"
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciacao",
-            "importancia": "Critica",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente Dackshow: aplicar 6 mil projetos"
-          },
-          {
-            "id": "D4",
-            "nome": "Orfaos solares",
-            "categoria": "Diferenciacao",
-            "importancia": "Alta",
-            "vezes_perdidas": 24,
-            "exemplo_aplicacao": "Cliente Dackshow: aplicar Orfaos solares"
-          }
-        ],
-        "pontos_fortes": [
-          {
-            "categoria": "Velocidade",
-            "descricao": "Resposta rapida (mediana 3min)",
-            "exemplos": [
-              "Cliente Diêgo Guimarães: respondeu em 0min",
-              "Cliente Valdisia: respondeu em 0min",
-              "Cliente Leandro: respondeu em 0min"
-            ]
-          }
-        ],
-        "pontos_fracos": [
-          {
-            "categoria": "Diferenciacao Competitiva",
-            "descricao": "NUNCA mencionou laboratorio (D1), 17 anos (D2), 6mil projetos (D3) ou orfaos (D4)",
-            "impacto": "Perde diferenciacao vs concorrentes",
-            "conversas_afetadas": 24,
-            "exemplos_clientes": [
-              "Cliente Dackshow: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Diêgo Guimarães: vendedor nao usou nenhum diferencial (D1-D4)",
-              "Cliente Valdisia: vendedor nao usou nenhum diferencial (D1-D4)"
-            ],
-            "acao_corretiva": "Incluir D1 (lab proprio + troca 24h) em todas conversas com objecao de preco/qualidade"
-          },
-          {
-            "categoria": "Agendamento",
-            "descricao": "Nao tentou agendar visita em nenhuma conversa hoje",
-            "impacto": "Vende so pelo WhatsApp - alta perda de leads",
-            "conversas_afetadas": 24,
-            "exemplos_clientes": [
-              "Cliente Dackshow: nao houve tentativa de visita",
-              "Cliente Diêgo Guimarães: nao houve tentativa de visita",
-              "Cliente Valdisia: nao houve tentativa de visita"
-            ],
-            "acao_corretiva": "Apos qualificacao oferecer visita: 'posso passar ai amanha?'"
-          }
-        ],
-        "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "Nunca mencionou diferenciais (D1-D4)",
-            "ocorrencias": 24
-          },
-          {
-            "codigo": "X7",
-            "descricao": "Nao tentou agendar visita (B1-B4)",
-            "ocorrencias": 24
+            "ocorrencias": 5
           }
         ]
       }
@@ -850,11 +901,35 @@
         "cliente": "Nicinha",
         "acao": "Cliente Nicinha: Claudio Rodrigues usou A2,A3,B1,C4",
         "resultado": "Nota 7.0/10"
+      },
+      {
+        "vendedor": "Caio Roberto",
+        "cliente": "Josy🥰",
+        "acao": "Cliente Josy🥰: Caio Roberto usou A2,A3,B4,C1,D1",
+        "resultado": "Nota 9.5/10"
       }
     ],
     "alertas": [
       {
+        "vendedor": "Claudio Rodrigues",
+        "problema": "1 conversa(s) sem QUALQUER resposta do vendedor (X3)",
+        "impacto": "Leads perdidos - cliente falou e foi ignorado",
+        "acao_corretiva": "Revisar fila e responder leads pendentes"
+      },
+      {
+        "vendedor": "Luana",
+        "problema": "Mediana de tempo de resposta: 93min (X8)",
+        "impacto": "Leads esfriam antes da resposta",
+        "acao_corretiva": "Responder em ate 15min em horario comercial"
+      },
+      {
         "vendedor": "Guilherme",
+        "problema": "Mediana de tempo de resposta: 75min (X8)",
+        "impacto": "Leads esfriam antes da resposta",
+        "acao_corretiva": "Responder em ate 15min em horario comercial"
+      },
+      {
+        "vendedor": "Kemily",
         "problema": "1 conversa(s) sem QUALQUER resposta do vendedor (X3)",
         "impacto": "Leads perdidos - cliente falou e foi ignorado",
         "acao_corretiva": "Revisar fila e responder leads pendentes"
@@ -872,15 +947,15 @@
     {
       "posicao": 1,
       "vendedor": "Claudio Rodrigues",
-      "nota_media": 6.5,
+      "nota_media": 6.0,
       "aderencia": 25,
       "badge": "Ouro"
     },
     {
       "posicao": 2,
       "vendedor": "Caio Roberto",
-      "nota_media": 5.8,
-      "aderencia": 21,
+      "nota_media": 6.0,
+      "aderencia": 28,
       "badge": "Prata"
     },
     {
@@ -893,44 +968,47 @@
     {
       "posicao": 4,
       "vendedor": "Luana",
-      "nota_media": 5.2,
+      "nota_media": 5.0,
       "aderencia": 21,
       "badge": "Em desenvolvimento"
     },
     {
       "posicao": 5,
       "vendedor": "Guilherme",
-      "nota_media": 4.5,
-      "aderencia": 10,
+      "nota_media": 4.9,
+      "aderencia": 21,
       "badge": "Em desenvolvimento"
     },
     {
       "posicao": 6,
-      "vendedor": "Kemily",
-      "nota_media": 4.5,
-      "aderencia": 3,
+      "vendedor": "Maria Luiza",
+      "nota_media": 4.2,
+      "aderencia": 10,
       "badge": "Em desenvolvimento"
     },
     {
       "posicao": 7,
-      "vendedor": "Maria Luiza",
-      "nota_media": 4.2,
-      "aderencia": 10,
+      "vendedor": "Kemily",
+      "nota_media": 3.9,
+      "aderencia": 3,
       "badge": "Em desenvolvimento"
     }
   ],
   "conversas": [
     {
       "id": 1,
-      "cliente": "Filipe Albuquerque",
-      "vendedor": "Sem atribuicao",
-      "vendedor_botconversa": "",
-      "hora_lista": "12:51",
-      "ultima_msg": "12:51",
-      "total_msgs": 0,
+      "cliente": "Renildo Rodrigues",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:21",
+      "ultima_msg": "18:21",
+      "total_msgs": 11,
       "status": "ok",
-      "nota": 0,
-      "argumentos_usados": [],
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
       "argumentos_perdidos": [
         "D1",
         "D2",
@@ -938,20 +1016,23 @@
         "D4",
         "B1"
       ],
-      "erros": [],
-      "tempo_resposta_min": null,
-      "observacao": "0 msgs hoje"
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 32,
+      "observacao": "11 msgs hoje | Resp 32min | Sem D1-D4 | Qualificou (A3)"
     },
     {
       "id": 2,
-      "cliente": "cicero martins",
+      "cliente": "Andre",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
-      "hora_lista": "12:50",
-      "ultima_msg": "12:50",
-      "total_msgs": 5,
-      "status": "sem_resposta",
-      "nota": 4.5,
+      "hora_lista": "18:16",
+      "ultima_msg": "18:16",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 4.0,
       "argumentos_usados": [
         "A2"
       ],
@@ -964,158 +1045,19 @@
       ],
       "erros": [
         "X6",
-        "X7"
+        "X7",
+        "X8"
       ],
-      "tempo_resposta_min": null,
-      "observacao": "5 msgs hoje | Sem D1-D4"
+      "tempo_resposta_min": 600,
+      "observacao": "4 msgs hoje | Resp 600min | Sem D1-D4"
     },
     {
       "id": 3,
-      "cliente": "O74988116992",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "12:49",
-      "ultima_msg": "12:49",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "1 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 4,
-      "cliente": "Lex Cosméticos",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "12:47",
-      "ultima_msg": "12:47",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "1 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 5,
-      "cliente": "Miriam",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "12:43",
-      "ultima_msg": "12:43",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "C1",
-        "C4"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "3 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 6,
-      "cliente": "Nnnn",
-      "vendedor": "Caio Roberto",
-      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
-      "hora_lista": "12:38",
-      "ultima_msg": "12:38",
-      "total_msgs": 4,
-      "status": "ok",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A1",
-        "A2",
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 0,
-      "observacao": "4 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 7,
-      "cliente": "Dackshow",
-      "vendedor": "Maria Luiza",
-      "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "12:38",
-      "ultima_msg": "12:38",
-      "total_msgs": 38,
-      "status": "sem_resposta",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "38 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 8,
-      "cliente": "Cicero",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "12:38",
-      "ultima_msg": "12:38",
+      "cliente": "Willames moto taxi",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:09",
+      "ultima_msg": "18:09",
       "total_msgs": 2,
       "status": "ok",
       "nota": 4.5,
@@ -1137,15 +1079,71 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 11,
-      "cliente": "Tina Oliveira",
-      "vendedor": "Guilherme",
-      "vendedor_botconversa": "Guilherme | Gestor em Energia",
-      "hora_lista": "12:36",
-      "ultima_msg": "12:36",
-      "total_msgs": 1,
-      "status": "critico",
-      "nota": 1,
+      "id": 4,
+      "cliente": "Edinan Pereira",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:07",
+      "ultima_msg": "18:07",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 600,
+      "observacao": "5 msgs hoje | Resp 600min | Sem D1-D4"
+    },
+    {
+      "id": 5,
+      "cliente": "Jefferson Iury Consultor Eletro Mateus",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:07",
+      "ultima_msg": "18:07",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 600,
+      "observacao": "4 msgs hoje | Resp 600min | Sem D1-D4"
+    },
+    {
+      "id": 6,
+      "cliente": "Márcia Nascimento",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:06",
+      "ultima_msg": "18:06",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 3.5,
       "argumentos_usados": [],
       "argumentos_perdidos": [
         "D1",
@@ -1155,19 +1153,665 @@
         "B1"
       ],
       "erros": [
-        "X3"
+        "X6",
+        "X7"
       ],
       "tempo_resposta_min": null,
-      "observacao": "1 msgs hoje | CRITICO: sem resposta vendedor!"
+      "observacao": "2 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 7,
+      "cliente": "Giseley",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:02",
+      "ultima_msg": "18:02",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "2 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 8,
+      "cliente": "Gi",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:00",
+      "ultima_msg": "18:00",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "5 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 9,
+      "cliente": "😎",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "17:58",
+      "ultima_msg": "17:58",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 10,
+      "cliente": "Marcio.( FECHADO)",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "17:56",
+      "ultima_msg": "17:56",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 22,
+      "observacao": "7 msgs hoje | Resp 22min | Sem D1-D4"
+    },
+    {
+      "id": 11,
+      "cliente": "Francisco",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "17:53",
+      "ultima_msg": "17:53",
+      "total_msgs": 16,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 2,
+      "observacao": "16 msgs hoje | Resp 2min | Sem D1-D4 | Qualificou (A3)"
     },
     {
       "id": 12,
-      "cliente": "Diêgo Guimarães",
+      "cliente": "Heitor",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "17:52",
+      "ultima_msg": "17:52",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [],
+      "tempo_resposta_min": null,
+      "observacao": "0 msgs hoje"
+    },
+    {
+      "id": 13,
+      "cliente": "Jaides_nails",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "12:34",
-      "ultima_msg": "12:34",
-      "total_msgs": 19,
+      "hora_lista": "17:29",
+      "ultima_msg": "17:29",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 14,
+      "cliente": "Josivaldo",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "17:26",
+      "ultima_msg": "17:26",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 2,
+      "observacao": "7 msgs hoje | Resp 2min | Sem D1-D4"
+    },
+    {
+      "id": 15,
+      "cliente": "Nery.",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "17:16",
+      "ultima_msg": "17:16",
+      "total_msgs": 36,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "36 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 16,
+      "cliente": "Dackshow",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "16:38",
+      "ultima_msg": "16:38",
+      "total_msgs": 41,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 225,
+      "observacao": "41 msgs hoje | Resp 225min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 17,
+      "cliente": "Jr",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "16:32",
+      "ultima_msg": "16:32",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "C2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 5,
+      "observacao": "14 msgs hoje | Resp 5min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 18,
+      "cliente": "Luciana",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "16:30",
+      "ultima_msg": "16:30",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "3 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 19,
+      "cliente": "Valdisia",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "16:22",
+      "ultima_msg": "16:22",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 76,
+      "observacao": "10 msgs hoje | Resp 76min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 20,
+      "cliente": "Uesclei",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "16:20",
+      "ultima_msg": "16:20",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 75,
+      "observacao": "15 msgs hoje | Resp 75min | Sem D1-D4"
+    },
+    {
+      "id": 21,
+      "cliente": "José Jambeiro",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "16:15",
+      "ultima_msg": "16:15",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 22,
+      "cliente": "Cicero",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "16:10",
+      "ultima_msg": "16:10",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "3 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 23,
+      "cliente": "Duda",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "16:07",
+      "ultima_msg": "16:07",
+      "total_msgs": 46,
+      "status": "ok",
+      "nota": 9.0,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B3",
+        "B4",
+        "D2",
+        "D4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D3",
+        "B1",
+        "B2",
+        "C1"
+      ],
+      "erros": [],
+      "tempo_resposta_min": 21,
+      "observacao": "46 msgs hoje | Resp 21min | Qualificou (A3)"
+    },
+    {
+      "id": 24,
+      "cliente": "Lucas",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "16:03",
+      "ultima_msg": "16:03",
+      "total_msgs": 18,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 268,
+      "observacao": "18 msgs hoje | Resp 268min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 25,
+      "cliente": "Rose Castro",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "15:59",
+      "ultima_msg": "15:59",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 263,
+      "observacao": "7 msgs hoje | Resp 263min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 26,
+      "cliente": "Belinha",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "15:57",
+      "ultima_msg": "15:55",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A3",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 199,
+      "observacao": "2 msgs hoje | Resp 199min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 27,
+      "cliente": "Tina Oliveira",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "15:55",
+      "ultima_msg": "15:47",
+      "total_msgs": 17,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "17 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 28,
+      "cliente": "ddondokinhaspnz",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "15:47",
+      "ultima_msg": "15:40",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 6.0,
+      "argumentos_usados": [
+        "B4",
+        "C1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 29,
+      "cliente": "Manoel Maciel Júnior",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "15:40",
+      "ultima_msg": "15:37",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "C1",
+        "C4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 30,
+      "cliente": "Miriam",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "15:37",
+      "ultima_msg": "15:34",
+      "total_msgs": 6,
       "status": "ok",
       "nota": 4.5,
       "argumentos_usados": [
@@ -1185,16 +1829,124 @@
         "X6",
         "X7"
       ],
-      "tempo_resposta_min": 0,
-      "observacao": "19 msgs hoje | Resp 0min | Sem D1-D4"
+      "tempo_resposta_min": 3,
+      "observacao": "6 msgs hoje | Resp 3min | Sem D1-D4"
     },
     {
-      "id": 13,
-      "cliente": "Valdisia",
-      "vendedor": "Maria Luiza",
-      "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "12:33",
-      "ultima_msg": "12:33",
+      "id": 31,
+      "cliente": "PR Alexandre Oliveira",
+      "vendedor": "Sem atribuicao",
+      "vendedor_botconversa": "",
+      "hora_lista": "15:34",
+      "ultima_msg": "15:34",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 3,
+      "observacao": "6 msgs hoje | Resp 3min | Sem D1-D4"
+    },
+    {
+      "id": 32,
+      "cliente": "O74988116992",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "15:27",
+      "ultima_msg": "15:34",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 33,
+      "cliente": "ALBUQUERQUE🇧🇷",
+      "vendedor": "Sem atribuicao",
+      "vendedor_botconversa": "",
+      "hora_lista": "15:34",
+      "ultima_msg": "15:34",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [],
+      "tempo_resposta_min": null,
+      "observacao": "0 msgs hoje"
+    },
+    {
+      "id": 34,
+      "cliente": "Marcia",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "15:22",
+      "ultima_msg": "15:07",
+      "total_msgs": 13,
+      "status": "ok",
+      "nota": 8.0,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B4",
+        "D1",
+        "D5"
+      ],
+      "argumentos_perdidos": [
+        "D2",
+        "D3",
+        "D4",
+        "B1",
+        "B2"
+      ],
+      "erros": [
+        "X8"
+      ],
+      "tempo_resposta_min": 68,
+      "observacao": "13 msgs hoje | Resp 68min | Qualificou (A3)"
+    },
+    {
+      "id": 35,
+      "cliente": "Pablo Emerson",
+      "vendedor": "Claudio Rodrigues",
+      "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
+      "hora_lista": "15:07",
+      "ultima_msg": "15:02",
       "total_msgs": 4,
       "status": "ok",
       "nota": 5.0,
@@ -1218,7 +1970,696 @@
       "observacao": "4 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 15,
+      "id": 36,
+      "cliente": "Rosa Duete",
+      "vendedor": "Claudio Rodrigues",
+      "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
+      "hora_lista": "15:02",
+      "ultima_msg": "15:02",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "4 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 37,
+      "cliente": "Josy🥰",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "14:51",
+      "ultima_msg": "14:51",
+      "total_msgs": 27,
+      "status": "sem_resposta",
+      "nota": 9.5,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B4",
+        "C1",
+        "D1",
+        "D2"
+      ],
+      "argumentos_perdidos": [
+        "D3",
+        "D4",
+        "B1",
+        "B2"
+      ],
+      "erros": [],
+      "tempo_resposta_min": null,
+      "observacao": "27 msgs hoje | Qualificou (A3)"
+    },
+    {
+      "id": 38,
+      "cliente": "Ivanilton",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "14:42",
+      "ultima_msg": "14:42",
+      "total_msgs": 19,
+      "status": "sem_resposta",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "C4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "19 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 39,
+      "cliente": "Mateus(fechado )",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "14:39",
+      "ultima_msg": "14:39",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 40,
+      "cliente": "Essa É Minha Paixão Deus",
+      "vendedor": "Claudio Rodrigues",
+      "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
+      "hora_lista": "14:37",
+      "ultima_msg": "14:37",
+      "total_msgs": 1,
+      "status": "critico",
+      "nota": 1,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X3"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | CRITICO: sem resposta vendedor!"
+    },
+    {
+      "id": 41,
+      "cliente": "Josimar Cunha",
+      "vendedor": "Claudio Rodrigues",
+      "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
+      "hora_lista": "14:37",
+      "ultima_msg": "14:36",
+      "total_msgs": 7,
+      "status": "sem_resposta",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "7 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 42,
+      "cliente": "Aerton Carvalho",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "14:35",
+      "ultima_msg": "14:35",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 1,
+      "observacao": "6 msgs hoje | Resp 1min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 43,
+      "cliente": "558796624698",
+      "vendedor": "Sem atribuicao",
+      "vendedor_botconversa": "",
+      "hora_lista": "14:32",
+      "ultima_msg": "14:32",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 3.5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "2 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 44,
+      "cliente": "cicero martins ( fechado )falta a biometria",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "14:31",
+      "ultima_msg": "14:31",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 101,
+      "observacao": "6 msgs hoje | Resp 101min | Sem D1-D4"
+    },
+    {
+      "id": 45,
+      "cliente": "Cleison",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "14:31",
+      "ultima_msg": "14:31",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 93,
+      "observacao": "4 msgs hoje | Resp 93min | Sem D1-D4"
+    },
+    {
+      "id": 46,
+      "cliente": "Lex Cosméticos",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "14:31",
+      "ultima_msg": "14:31",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "2 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 47,
+      "cliente": "Filipe Albuquerque",
+      "vendedor": "Keane",
+      "vendedor_botconversa": "Keane",
+      "hora_lista": "14:26",
+      "ultima_msg": "14:26",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 74,
+      "observacao": "3 msgs hoje | Resp 74min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 48,
+      "cliente": "Denise Studio Hair",
+      "vendedor": "Sem atribuicao",
+      "vendedor_botconversa": "Alan Oliveira - Gestor de energia",
+      "hora_lista": "14:06",
+      "ultima_msg": "14:06",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 1,
+      "observacao": "3 msgs hoje | Resp 1min | Sem D1-D4"
+    },
+    {
+      "id": 49,
+      "cliente": "zeca72310",
+      "vendedor": "Kemily",
+      "vendedor_botconversa": "Kemily | Gestora de Energia",
+      "hora_lista": "14:01",
+      "ultima_msg": "14:01",
+      "total_msgs": 1,
+      "status": "critico",
+      "nota": 1,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X3"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | CRITICO: sem resposta vendedor!"
+    },
+    {
+      "id": 50,
+      "cliente": "Nnnn",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "13:37",
+      "ultima_msg": "13:37",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 0,
+      "observacao": "5 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 51,
+      "cliente": "Esmeralda Lopes Corretora de Imóveis CRECI-PE 207",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:23",
+      "ultima_msg": "18:23",
+      "total_msgs": 2,
+      "status": "sem_resposta",
+      "nota": 6.5,
+      "argumentos_usados": [
+        "A2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "2 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 52,
+      "cliente": "Jose Carlos",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "13:37",
+      "ultima_msg": "13:37",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 9.0,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B4",
+        "D1",
+        "D2"
+      ],
+      "argumentos_perdidos": [
+        "D3",
+        "D4",
+        "B1",
+        "B2",
+        "C1"
+      ],
+      "erros": [],
+      "tempo_resposta_min": 11,
+      "observacao": "6 msgs hoje | Resp 11min | Qualificou (A3)"
+    },
+    {
+      "id": 53,
+      "cliente": "Sales",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "13:35",
+      "ultima_msg": "13:35",
+      "total_msgs": 46,
+      "status": "sem_resposta",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "46 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 54,
+      "cliente": "kaelison",
+      "vendedor": "Caio Roberto",
+      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
+      "hora_lista": "13:21",
+      "ultima_msg": "13:21",
+      "total_msgs": 4,
+      "status": "sem_resposta",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "4 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 55,
+      "cliente": "Geraldinho",
+      "vendedor": "Claudio Rodrigues",
+      "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
+      "hora_lista": "13:17",
+      "ultima_msg": "13:17",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 56,
+      "cliente": "Gledson",
+      "vendedor": "Kemily",
+      "vendedor_botconversa": "Kemily | Gestora de Energia",
+      "hora_lista": "13:11",
+      "ultima_msg": "13:11",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 57,
+      "cliente": "Diêgo Guimarães",
+      "vendedor": "Maria Luiza",
+      "vendedor_botconversa": "Maria Luiza Ramos",
+      "hora_lista": "13:03",
+      "ultima_msg": "13:03",
+      "total_msgs": 22,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": 3,
+      "observacao": "22 msgs hoje | Resp 3min | Sem D1-D4"
+    },
+    {
+      "id": 58,
+      "cliente": "estou em reunião",
+      "vendedor": "Kemily",
+      "vendedor_botconversa": "Kemily | Gestora de Energia",
+      "hora_lista": "13:02",
+      "ultima_msg": "13:02",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 59,
+      "cliente": "😎 Luciano Jose 🥸",
+      "vendedor": "Kemily",
+      "vendedor_botconversa": "Kemily | Gestora de Energia",
+      "hora_lista": "12:59",
+      "ultima_msg": "12:59",
+      "total_msgs": 2,
+      "status": "sem_resposta",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "2 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 60,
+      "cliente": "Lidia Medrado",
+      "vendedor": "Kemily",
+      "vendedor_botconversa": "Kemily | Gestora de Energia",
+      "hora_lista": "12:57",
+      "ultima_msg": "12:57",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "1 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 61,
       "cliente": "Leandro",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -1246,7 +2687,7 @@
       "observacao": "25 msgs hoje | Resp 0min | Sem D1-D4"
     },
     {
-      "id": 16,
+      "id": 62,
       "cliente": "jailton assis",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -1275,7 +2716,7 @@
       "observacao": "11 msgs hoje | Resp 3min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 17,
+      "id": 63,
       "cliente": "Everaldo Reinaldo",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -1302,7 +2743,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 18,
+      "id": 64,
       "cliente": "Barbosa",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -1327,32 +2768,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 19,
-      "cliente": "Josivaldo",
-      "vendedor": "Maria Luiza",
-      "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "12:24",
-      "ultima_msg": "12:24",
-      "total_msgs": 3,
-      "status": "sem_resposta",
-      "nota": 3.5,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "3 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 20,
+      "id": 65,
       "cliente": "Sampaio",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -1379,7 +2795,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 22,
+      "id": 66,
       "cliente": "maria Lúcia",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -1404,18 +2820,16 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 23,
+      "id": 67,
       "cliente": "Ruan",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
       "hora_lista": "12:08",
-      "ultima_msg": "12:08",
-      "total_msgs": 4,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A1"
-      ],
+      "ultima_msg": "13:03",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 3.5,
+      "argumentos_usados": [],
       "argumentos_perdidos": [
         "D1",
         "D2",
@@ -1427,11 +2841,11 @@
         "X6",
         "X7"
       ],
-      "tempo_resposta_min": 3,
-      "observacao": "4 msgs hoje | Resp 3min | Sem D1-D4"
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 24,
+      "id": 68,
       "cliente": "Jocélio Lira",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -1460,41 +2874,13 @@
       "observacao": "14 msgs hoje | Resp 1min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 25,
-      "cliente": "Josy🥰",
-      "vendedor": "Caio Roberto",
-      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
-      "hora_lista": "12:06",
-      "ultima_msg": "12:06",
-      "total_msgs": 18,
-      "status": "sem_resposta",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "B4"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "18 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 26,
+      "id": 69,
       "cliente": "Iago Ravelle",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
       "hora_lista": "12:02",
       "ultima_msg": "12:02",
-      "total_msgs": 60,
+      "total_msgs": 46,
       "status": "ok",
       "nota": 7.5,
       "argumentos_usados": [
@@ -1515,10 +2901,10 @@
         "X6"
       ],
       "tempo_resposta_min": 3,
-      "observacao": "60 msgs hoje | Resp 3min | Sem D1-D4 | Qualificou (A3)"
+      "observacao": "46 msgs hoje | Resp 3min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 27,
+      "id": 70,
       "cliente": "zzxx",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -1547,7 +2933,62 @@
       "observacao": "5 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 29,
+      "id": 71,
+      "cliente": "Andre",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:24",
+      "ultima_msg": "18:24",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 4.5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "5 msgs hoje | Sem D1-D4"
+    },
+    {
+      "id": 72,
+      "cliente": "Esmeralda Lopes Corretora de Imóveis CRECI-PE 207",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:25",
+      "ultima_msg": "18:25",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 6.0,
+      "argumentos_usados": [
+        "A2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X8"
+      ],
+      "tempo_resposta_min": 600,
+      "observacao": "3 msgs hoje | Resp 600min | Sem D1-D4"
+    },
+    {
+      "id": 73,
       "cliente": "Tatiane Lima",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -1574,34 +3015,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 30,
-      "cliente": "Cleison",
-      "vendedor": "Luana",
-      "vendedor_botconversa": "Luana - Gestora de energia",
-      "hora_lista": "11:55",
-      "ultima_msg": "11:55",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "2 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 31,
+      "id": 74,
       "cliente": "🌾CORRINHA NERES🪞⚡️",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -1629,35 +3043,7 @@
       "observacao": "24 msgs hoje | Resp 16min | Qualificou (A3)"
     },
     {
-      "id": 32,
-      "cliente": "Mateus",
-      "vendedor": "Luana",
-      "vendedor_botconversa": "Luana - Gestora de energia",
-      "hora_lista": "11:51",
-      "ultima_msg": "11:51",
-      "total_msgs": 4,
-      "status": "ok",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A2",
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "4 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 33,
+      "id": 75,
       "cliente": "Julio Cesar",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -1682,37 +3068,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 34,
-      "cliente": "Sales",
-      "vendedor": "Caio Roberto",
-      "vendedor_botconversa": "Caio Roberto | Gestor de energia",
-      "hora_lista": "11:44",
-      "ultima_msg": "11:44",
-      "total_msgs": 43,
-      "status": "sem_resposta",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "C1",
-        "C4"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "43 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 35,
+      "id": 76,
       "cliente": "Valdemar",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
@@ -1740,8 +3096,8 @@
       "observacao": "3 msgs hoje | Resp 15min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 36,
-      "cliente": "JUÇARA",
+      "id": 77,
+      "cliente": "JUÇARA(VENDIDO)",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
       "hora_lista": "11:37",
@@ -1768,35 +3124,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 37,
-      "cliente": "Rose Castro",
-      "vendedor": "Guilherme",
-      "vendedor_botconversa": "Guilherme | Gestor em Energia",
-      "hora_lista": "11:35",
-      "ultima_msg": "11:35",
-      "total_msgs": 5,
-      "status": "sem_resposta",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A2",
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "5 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 38,
+      "id": 78,
       "cliente": "Cleiton",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -1823,35 +3151,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 39,
-      "cliente": "Lucas",
-      "vendedor": "Guilherme",
-      "vendedor_botconversa": "Guilherme | Gestor em Energia",
-      "hora_lista": "11:34",
-      "ultima_msg": "11:34",
-      "total_msgs": 15,
-      "status": "sem_resposta",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A2",
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "15 msgs hoje | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 40,
+      "id": 79,
       "cliente": "Cezzar",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -1880,7 +3180,7 @@
       "observacao": "7 msgs hoje | Resp 1min | Qualificou (A3)"
     },
     {
-      "id": 41,
+      "id": 80,
       "cliente": "Inês",
       "vendedor": "Guilherme",
       "vendedor_botconversa": "Guilherme | Gestor em Energia",
@@ -1908,7 +3208,7 @@
       "observacao": "6 msgs hoje | Resp 19min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 42,
+      "id": 81,
       "cliente": "Aguiar",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -1935,7 +3235,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 43,
+      "id": 82,
       "cliente": "558788666024",
       "vendedor": "Sem atribuicao",
       "vendedor_botconversa": "",
@@ -1960,7 +3260,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 44,
+      "id": 83,
       "cliente": "silvamacedoindalecio",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -1989,35 +3289,7 @@
       "observacao": "11 msgs hoje | Resp 25min | Qualificou (A3)"
     },
     {
-      "id": 45,
-      "cliente": "Nery.",
-      "vendedor": "Maria Luiza",
-      "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "11:06",
-      "ultima_msg": "11:06",
-      "total_msgs": 17,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A1",
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 10,
-      "observacao": "17 msgs hoje | Resp 10min | Sem D1-D4"
-    },
-    {
-      "id": 47,
+      "id": 84,
       "cliente": "Caio Lustosa",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2044,7 +3316,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 48,
+      "id": 85,
       "cliente": "Alcides",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2072,7 +3344,7 @@
       "observacao": "14 msgs hoje | Resp 42min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 49,
+      "id": 86,
       "cliente": "Roberto",
       "vendedor": "Guilherme",
       "vendedor_botconversa": "Guilherme | Gestor em Energia",
@@ -2099,7 +3371,7 @@
       "observacao": "1 msgs hoje | Qualificou (A3)"
     },
     {
-      "id": 50,
+      "id": 87,
       "cliente": "Maciel",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2128,7 +3400,7 @@
       "observacao": "9 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 51,
+      "id": 88,
       "cliente": "~",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2156,7 +3428,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 52,
+      "id": 89,
       "cliente": "Wallison",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2184,7 +3456,7 @@
       "observacao": "5 msgs hoje | Resp 2min | Sem D1-D4"
     },
     {
-      "id": 53,
+      "id": 90,
       "cliente": "@uelington_fisio",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2211,34 +3483,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 54,
-      "cliente": "Heitor",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "10:34",
-      "ultima_msg": "10:34",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "1 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 55,
+      "id": 91,
       "cliente": "Fbs Toda Vida❤️😇",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2265,7 +3510,7 @@
       "observacao": "3 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 56,
+      "id": 92,
       "cliente": "Rafael Cruz",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2292,7 +3537,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 57,
+      "id": 93,
       "cliente": "José Cleber",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2317,7 +3562,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 58,
+      "id": 94,
       "cliente": "Tânia Silva Souza",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -2344,7 +3589,7 @@
       "observacao": "3 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 59,
+      "id": 95,
       "cliente": "Ayrllam",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -2371,7 +3616,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 60,
+      "id": 96,
       "cliente": "Ytallo Mares",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -2398,7 +3643,7 @@
       "observacao": "3 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 61,
+      "id": 97,
       "cliente": "Fellipe Souza",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -2425,7 +3670,7 @@
       "observacao": "3 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 62,
+      "id": 98,
       "cliente": "Ildomar",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2452,7 +3697,7 @@
       "observacao": "7 msgs hoje | Resp 2min | Sem D1-D4"
     },
     {
-      "id": 63,
+      "id": 99,
       "cliente": "Zataryauh",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2479,7 +3724,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 64,
+      "id": 100,
       "cliente": "Rosângela Brito",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2507,34 +3752,7 @@
       "observacao": "14 msgs hoje | Resp 22min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 65,
-      "cliente": "Uesclei",
-      "vendedor": "Guilherme",
-      "vendedor_botconversa": "Guilherme | Gestor em Energia",
-      "hora_lista": "10:06",
-      "ultima_msg": "10:06",
-      "total_msgs": 10,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 52,
-      "observacao": "10 msgs hoje | Resp 52min | Sem D1-D4"
-    },
-    {
-      "id": 66,
+      "id": 101,
       "cliente": "João de Deus de Souza Car",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2561,10 +3779,10 @@
       "observacao": "5 msgs hoje | Resp 13min | Sem D1-D4"
     },
     {
-      "id": 67,
+      "id": 102,
       "cliente": "558788784907",
       "vendedor": "Sem atribuicao",
-      "vendedor_botconversa": "",
+      "vendedor_botconversa": "Observação",
       "hora_lista": "09:54",
       "ultima_msg": "09:54",
       "total_msgs": 1,
@@ -2586,7 +3804,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 68,
+      "id": 103,
       "cliente": "Eng José Barros",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2614,7 +3832,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 69,
+      "id": 104,
       "cliente": "Pedrinho Vaqueiro",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2642,7 +3860,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 70,
+      "id": 105,
       "cliente": "Risoleta Souza Nascimento",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -2669,7 +3887,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 71,
+      "id": 106,
       "cliente": "Pr.Ricardo Leal",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2697,7 +3915,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 72,
+      "id": 107,
       "cliente": "Nén da Lage 👨‍👩‍👧",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2725,7 +3943,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 73,
+      "id": 108,
       "cliente": "Manassés Lima",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2753,7 +3971,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 74,
+      "id": 109,
       "cliente": "IONICE",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2781,7 +3999,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 75,
+      "id": 110,
       "cliente": "Junior Nicacio",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2809,7 +4027,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 76,
+      "id": 111,
       "cliente": "James Equipadora",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2837,7 +4055,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 77,
+      "id": 112,
       "cliente": "Recanto da Mãe",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2865,7 +4083,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 78,
+      "id": 113,
       "cliente": "mariaestellacastro56",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2893,7 +4111,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 79,
+      "id": 114,
       "cliente": "CARLIZZE PORCELANATOS",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2921,7 +4139,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 80,
+      "id": 115,
       "cliente": "Pricilla Souza ✨",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -2948,7 +4166,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 81,
+      "id": 116,
       "cliente": "Hora Web Agencia Digital",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -2976,7 +4194,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 82,
+      "id": 117,
       "cliente": "Maria Braz",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3004,7 +4222,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 83,
+      "id": 118,
       "cliente": "Maricelia Borges",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3032,7 +4250,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 84,
+      "id": 119,
       "cliente": "Kaká Da Cebola 🧅🚀",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3060,7 +4278,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 85,
+      "id": 120,
       "cliente": "José Silvano",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3088,7 +4306,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 86,
+      "id": 121,
       "cliente": "Fernanda Thais .",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3116,7 +4334,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 87,
+      "id": 122,
       "cliente": "Darson Lima Mendonça",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3144,7 +4362,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 88,
+      "id": 123,
       "cliente": "Carleã",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3172,51 +4390,16 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 89,
-      "cliente": "Marcia",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "09:38",
-      "ultima_msg": "09:38",
-      "total_msgs": 13,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "A1",
-        "A2",
-        "A3",
-        "C1",
-        "C4"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 4,
-      "observacao": "13 msgs hoje | Resp 4min | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 90,
+      "id": 124,
       "cliente": "Juarez Aquino",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
       "hora_lista": "09:38",
       "ultima_msg": "09:38",
-      "total_msgs": 1,
+      "total_msgs": 0,
       "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "A2",
-        "B2",
-        "B4"
-      ],
+      "nota": 0,
+      "argumentos_usados": [],
       "argumentos_perdidos": [
         "D1",
         "D2",
@@ -3224,14 +4407,12 @@
         "D4",
         "B1"
       ],
-      "erros": [
-        "X6"
-      ],
+      "erros": [],
       "tempo_resposta_min": null,
-      "observacao": "1 msgs hoje | Sem D1-D4"
+      "observacao": "0 msgs hoje"
     },
     {
-      "id": 91,
+      "id": 125,
       "cliente": "Rosa",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3259,7 +4440,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 92,
+      "id": 126,
       "cliente": "Jilson Andrade De Amorim",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3287,7 +4468,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 93,
+      "id": 127,
       "cliente": "Gozaga 🤠",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3315,7 +4496,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 94,
+      "id": 128,
       "cliente": "JF Distribuidora",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3343,7 +4524,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 95,
+      "id": 129,
       "cliente": "Wheroilton Castro",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3371,7 +4552,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 96,
+      "id": 130,
       "cliente": "LiLa",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
@@ -3398,7 +4579,7 @@
       "observacao": "3 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 97,
+      "id": 131,
       "cliente": "Nicinha",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3427,7 +4608,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 98,
+      "id": 132,
       "cliente": "𝖪𝖾𝗅𝗅𝗒 🥀",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3454,7 +4635,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 99,
+      "id": 133,
       "cliente": "genivaldomartinsdossantos",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -3479,7 +4660,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 100,
+      "id": 134,
       "cliente": "Francisco Delmondes",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -3504,7 +4685,7 @@
       "observacao": "4 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 101,
+      "id": 135,
       "cliente": "Paulinho",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -3529,7 +4710,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 102,
+      "id": 136,
       "cliente": "Sieny❣️",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3558,7 +4739,7 @@
       "observacao": "9 msgs hoje | Resp 54min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 103,
+      "id": 137,
       "cliente": "Alex",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3587,7 +4768,7 @@
       "observacao": "7 msgs hoje | Resp 1min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 104,
+      "id": 138,
       "cliente": "Antonio Moreno",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3617,7 +4798,7 @@
       "observacao": "7 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 105,
+      "id": 139,
       "cliente": "Ana",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
@@ -3646,7 +4827,7 @@
       "observacao": "12 msgs hoje | Resp 77min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 106,
+      "id": 140,
       "cliente": "R",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -3674,7 +4855,63 @@
       "observacao": "4 msgs hoje | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 107,
+      "id": 141,
+      "cliente": "Andre",
+      "vendedor": "Luana",
+      "vendedor_botconversa": "Luana - Gestora de energia",
+      "hora_lista": "18:28",
+      "ultima_msg": "18:28",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 4.0,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "tempo_resposta_min": 600,
+      "observacao": "6 msgs hoje | Resp 600min | Sem D1-D4"
+    },
+    {
+      "id": 142,
+      "cliente": "Francisco",
+      "vendedor": "Guilherme",
+      "vendedor_botconversa": "Guilherme | Gestor em Energia",
+      "hora_lista": "18:28",
+      "ultima_msg": "18:28",
+      "total_msgs": 17,
+      "status": "sem_resposta",
+      "nota": 5.0,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "tempo_resposta_min": null,
+      "observacao": "17 msgs hoje | Sem D1-D4 | Qualificou (A3)"
+    },
+    {
+      "id": 143,
       "cliente": "José Romulo",
       "vendedor": "Claudio Rodrigues",
       "vendedor_botconversa": "Claudio Rodrigues | Gestor de Energia",
@@ -3703,7 +4940,7 @@
       "observacao": "13 msgs hoje | Resp 25min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 108,
+      "id": 144,
       "cliente": "Impériogessopnz",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -3728,7 +4965,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 109,
+      "id": 145,
       "cliente": "Petronio (Munduri)",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
@@ -3755,7 +4992,7 @@
       "observacao": "6 msgs hoje | Resp 33min | Sem D1-D4"
     },
     {
-      "id": 110,
+      "id": 146,
       "cliente": "Elita Dá Silva Luna",
       "vendedor": "Maria Luiza",
       "vendedor_botconversa": "Maria Luiza Ramos",
@@ -3782,7 +5019,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 111,
+      "id": 147,
       "cliente": "Soares Solucoes Visuais",
       "vendedor": "Caio Roberto",
       "vendedor_botconversa": "Caio Roberto | Gestor de energia",
@@ -3809,34 +5046,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 112,
-      "cliente": "ALBUQUERQUE🇧🇷",
-      "vendedor": "Keane",
-      "vendedor_botconversa": "Keane",
-      "hora_lista": "08:56",
-      "ultima_msg": "08:56",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": null,
-      "observacao": "2 msgs hoje | Sem D1-D4"
-    },
-    {
-      "id": 113,
+      "id": 148,
       "cliente": "Jota",
       "vendedor": "Kemily",
       "vendedor_botconversa": "Kemily | Gestora de Energia",
@@ -3863,7 +5073,7 @@
       "observacao": "5 msgs hoje | Resp 53min | Sem D1-D4"
     },
     {
-      "id": 114,
+      "id": 149,
       "cliente": "Tiago",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -3891,7 +5101,7 @@
       "observacao": "3 msgs hoje"
     },
     {
-      "id": 115,
+      "id": 150,
       "cliente": "torres",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -3918,7 +5128,7 @@
       "observacao": "1 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 116,
+      "id": 151,
       "cliente": "Fabi oliveira",
       "vendedor": "Luana",
       "vendedor_botconversa": "Luana - Gestora de energia",
@@ -3947,35 +5157,7 @@
       "observacao": "5 msgs hoje | Resp 0min | Sem D1-D4 | Qualificou (A3)"
     },
     {
-      "id": 117,
-      "cliente": "PR Alexandre Oliveira",
-      "vendedor": "Maria Luiza",
-      "vendedor_botconversa": "Maria Luiza Ramos",
-      "hora_lista": "08:39",
-      "ultima_msg": "08:39",
-      "total_msgs": 5,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A1",
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 3,
-      "observacao": "5 msgs hoje | Resp 3min | Sem D1-D4"
-    },
-    {
-      "id": 118,
+      "id": 152,
       "cliente": "Refrigeração",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
@@ -4002,35 +5184,7 @@
       "observacao": "2 msgs hoje | Sem D1-D4"
     },
     {
-      "id": 119,
-      "cliente": "Renildo Rodrigues",
-      "vendedor": "Luana",
-      "vendedor_botconversa": "Luana - Gestora de energia",
-      "hora_lista": "08:32",
-      "ultima_msg": "08:32",
-      "total_msgs": 10,
-      "status": "ok",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "A2",
-        "A3"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4",
-        "B1"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "tempo_resposta_min": 32,
-      "observacao": "10 msgs hoje | Resp 32min | Sem D1-D4 | Qualificou (A3)"
-    },
-    {
-      "id": 120,
+      "id": 153,
       "cliente": "Marcondes C Macedo ☀️🌵",
       "vendedor": "Keane",
       "vendedor_botconversa": "Keane",
