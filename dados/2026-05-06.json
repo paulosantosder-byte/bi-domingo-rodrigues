@@ -1,11 +1,11 @@
 {
   "data": "2026-05-06",
-  "hora_execucao": "18:30",
+  "hora_execucao": "18:35",
   "observacao_metodologia": "Analise profunda do workspace DR4 (152352): cada conversa de hoje foi aberta e suas mensagens (texto + horario) coletadas via JS-injection. Filtragem por data 'Qua, 06 Mai 2026'. Conversas com nome contendo 'Ignorar' foram puladas. Argumentos detectados via regex sobre texto agregado do vendedor. Tempo de resposta calculado dentro do horario comercial 08:00-18:00.",
   "metricas": {
     "total_conversas": 153,
     "sem_resposta": 12,
-    "total_ligacoes": 1,
+    "total_ligacoes": 5,
     "criticas": 2,
     "sem_vendedor": 6,
     "nota_media_geral": 5.1,
@@ -484,7 +484,7 @@
       "nome": "Guilherme",
       "cor": "#10b981",
       "total_conversas": 11,
-      "ligacoes_dia": 1,
+      "ligacoes_dia": 5,
       "sem_resposta": 1,
       "criticas": 0,
       "mediana_resposta_min": 75,
