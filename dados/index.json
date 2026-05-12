@@ -2,17 +2,19 @@
   "relatorios": [
     {
       "data": "2026-05-12",
-      "total_conversas": 117,
-      "sem_resposta": 10,
-      "criticas": 2,
-      "nota_media": 4.1,
+      "total_conversas": 130,
+      "sem_resposta": 13,
+      "criticas": 3,
+      "nota_media": 4.0,
       "vendedores": [
         "Keane",
         "Maria Luiza",
         "Guilherme",
         "Caio Roberto",
-        "Kemily"
-      ]
+        "Kemily",
+        "Luana"
+      ],
+      "fontes": ["DR4", "DR2"]
     },
     {
       "data": "2026-05-11",
@@ -110,5 +112,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-12T12:55:00"
+  "ultima_atualizacao": "2026-05-12T14:30:00"
 }
