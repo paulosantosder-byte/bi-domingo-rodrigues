@@ -2,10 +2,10 @@
   "relatorios": [
     {
       "data": "2026-05-12",
-      "total_conversas": 75,
-      "sem_resposta": 6,
-      "criticas": 0,
-      "nota_media": 2.7,
+      "total_conversas": 74,
+      "sem_resposta": 4,
+      "criticas": 1,
+      "nota_media": 0.1,
       "vendedores": [
         "Maria Luiza",
         "Keane",
@@ -112,5 +112,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-12T10:33:23"
+  "ultima_atualizacao": "2026-05-12T10:51:27"
 }
