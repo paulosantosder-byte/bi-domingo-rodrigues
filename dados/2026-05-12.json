@@ -1,13 +1,13 @@
 {
   "data": "2026-05-12",
-  "hora_execucao": "10:51",
+  "hora_execucao": "10:55",
   "metricas": {
-    "total_conversas": 74,
+    "total_conversas": 73,
     "sem_resposta": 4,
     "total_ligacoes": 2,
     "criticas": 1,
     "sem_vendedor": 0,
-    "nota_media_geral": 0.1,
+    "nota_media_geral": 0.2,
     "aderencia_geral": 0
   },
   "vendedores": [
@@ -375,142 +375,6 @@
             "codigo": "X7",
             "descricao": "Não tentou agendar visita",
             "ocorrencias": 4
-          }
-        ]
-      }
-    },
-    {
-      "nome": "Claudio Rodrigues",
-      "cor": "#dc2626",
-      "total_conversas": 1,
-      "ligacoes_dia": 0,
-      "sem_resposta": 0,
-      "mediana_resposta_min": 1.0,
-      "media_resposta_min": 1,
-      "total_respostas": 1,
-      "qualidade": {
-        "nota_media": 0.0,
-        "aderencia_script": 0,
-        "argumentos_usados": {
-          "A1": 1,
-          "A2": 0,
-          "A3": 0,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "D1",
-            "nome": "Laboratório próprio + troca 24h",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Quando cliente pediu preço ou comparou com concorrente"
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Quando cliente pediu preço ou comparou com concorrente"
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Quando cliente pediu preço ou comparou com concorrente"
-          },
-          {
-            "id": "D4",
-            "nome": "Órfãos solares",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 1,
-            "exemplo_aplicacao": "Quando cliente pediu preço ou comparou com concorrente"
-          }
-        ],
-        "pontos_fortes": [
-          {
-            "categoria": "A1 - Velocidade de resposta",
-            "descricao": "Usou A1 em 1 conversas",
-            "exemplos": [
-              "Cliente Fernanda Thais .: aplicou A1"
-            ]
-          }
-        ],
-        "pontos_fracos": [
-          {
-            "categoria": "Diferenciação Competitiva",
-            "descricao": "NÃO usou D1 (Laboratório próprio + troca 24h) em 1 conversas",
-            "impacto": "Perde diferenciação vs concorrentes",
-            "conversas_afetadas": 1,
-            "exemplos_clientes": [
-              "Cliente Fernanda Thais .: não mencionou D1"
-            ],
-            "acao_corretiva": "Incluir D1 na qualificação inicial e ao falar de preço"
-          },
-          {
-            "categoria": "Diferenciação Competitiva",
-            "descricao": "NÃO usou D2 (17 anos de mercado) em 1 conversas",
-            "impacto": "Perde diferenciação vs concorrentes",
-            "conversas_afetadas": 1,
-            "exemplos_clientes": [
-              "Cliente Fernanda Thais .: não mencionou D2"
-            ],
-            "acao_corretiva": "Incluir D2 na qualificação inicial e ao falar de preço"
-          },
-          {
-            "categoria": "Diferenciação Competitiva",
-            "descricao": "NÃO usou D3 (6 mil projetos) em 1 conversas",
-            "impacto": "Perde diferenciação vs concorrentes",
-            "conversas_afetadas": 1,
-            "exemplos_clientes": [
-              "Cliente Fernanda Thais .: não mencionou D3"
-            ],
-            "acao_corretiva": "Incluir D3 na qualificação inicial e ao falar de preço"
-          },
-          {
-            "categoria": "Diferenciação Competitiva",
-            "descricao": "NÃO usou D4 (Órfãos solares) em 1 conversas",
-            "impacto": "Perde diferenciação vs concorrentes",
-            "conversas_afetadas": 1,
-            "exemplos_clientes": [
-              "Cliente Fernanda Thais .: não mencionou D4"
-            ],
-            "acao_corretiva": "Incluir D4 na qualificação inicial e ao falar de preço"
-          }
-        ],
-        "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "NUNCA mencionou nenhum diferencial competitivo",
-            "ocorrencias": 1
           }
         ]
       }
@@ -1226,7 +1090,7 @@
       },
       {
         "tipo": "Treinamento em diferenciais",
-        "descricao": "69 conversas sem mencionar nenhum diferencial competitivo (X6)",
+        "descricao": "68 conversas sem mencionar nenhum diferencial competitivo (X6)",
         "acao_sugerida": "Treinamento focado em D1-D4 com role-play obrigatório semanal"
       },
       {
@@ -1274,13 +1138,6 @@
     },
     {
       "posicao": 6,
-      "vendedor": "Claudio Rodrigues",
-      "nota_media": 0.0,
-      "aderencia": 0,
-      "badge": "📊 Em desenvolvimento"
-    },
-    {
-      "posicao": 7,
       "vendedor": "Kemily",
       "nota_media": 0.0,
       "aderencia": 0,
@@ -2409,33 +2266,6 @@
       "tempo_resposta_mediana_min": null,
       "tempo_resposta_max_min": null,
       "observacao": "Cliente Luiz Gustavo Iunes: 0 msgs cliente, 1 msgs vendedor; erros X6"
-    },
-    {
-      "id": 43,
-      "cliente": "Fernanda Thais .",
-      "vendedor": "Claudio Rodrigues",
-      "hora_lista": "09:19",
-      "ultima_msg": "09:19",
-      "total_msgs": 3,
-      "total_msgs_vendedor": 1,
-      "total_msgs_cliente": 2,
-      "status": "ok",
-      "nota": 0.0,
-      "argumentos_usados": [
-        "A1"
-      ],
-      "argumentos_perdidos": [
-        "D1",
-        "D2",
-        "D3",
-        "D4"
-      ],
-      "erros": [
-        "X6"
-      ],
-      "tempo_resposta_mediana_min": 1.0,
-      "tempo_resposta_max_min": 1,
-      "observacao": "Cliente Fernanda Thais .: 2 msgs cliente, 1 msgs vendedor; tempo resposta mediana 1.0min; usou A1; erros X6"
     },
     {
       "id": 44,
