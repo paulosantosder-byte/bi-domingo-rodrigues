@@ -15,7 +15,6 @@ body {
 }
 .container { max-width: 1400px; margin: 0 auto; }
 
-/* Header */
 header { 
   background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%); 
   color: white; 
@@ -28,39 +27,24 @@ header h1 { font-size: 28px; margin-bottom: 8px; }
 header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 
 .date-selector {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: flex; align-items: center; gap: 12px;
   background: rgba(255,255,255,0.2);
-  padding: 12px 16px;
-  border-radius: 10px;
-  margin-top: 16px;
+  padding: 12px 16px; border-radius: 10px; margin-top: 16px;
 }
 .date-selector label { font-weight: 600; font-size: 14px; }
 .date-selector select {
-  flex: 1;
-  max-width: 300px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  background: white;
-  color: #1e40af;
-  cursor: pointer;
+  flex: 1; max-width: 300px; padding: 10px 16px;
+  border: none; border-radius: 8px; font-size: 14px;
+  font-weight: 600; background: white; color: #1e40af; cursor: pointer;
 }
 
-/* Métricas */
 .metrics-grid { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 16px; 
-  margin-bottom: 24px; 
+  gap: 16px; margin-bottom: 24px; 
 }
 .metric-card { 
-  background: white; 
-  padding: 20px; 
-  border-radius: 12px; 
+  background: white; padding: 20px; border-radius: 12px; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
   border-left: 4px solid #6366f1; 
 }
@@ -69,47 +53,161 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 .metric-card.ok { border-left-color: #10b981; }
 .metric-card.gold { border-left-color: #fbbf24; }
 .metric-card.purple { border-left-color: #8b5cf6; }
-.metric-card .label { 
-  font-size: 12px; 
-  color: #64748b; 
-  text-transform: uppercase; 
-  letter-spacing: 0.5px; 
-}
-.metric-card .value { 
-  font-size: 32px; 
-  font-weight: 700; 
-  margin-top: 4px; 
-}
-.metric-card .hint { 
-  font-size: 12px; 
-  color: #94a3b8; 
-  margin-top: 4px; 
-}
+.metric-card.blue { border-left-color: #3b82f6; }
+.metric-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+.metric-card .value { font-size: 32px; font-weight: 700; margin-top: 4px; }
+.metric-card .hint { font-size: 12px; color: #94a3b8; margin-top: 4px; }
 
-/* Seções */
+.account-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+.account-badge.dr4 { background: #dbeafe; color: #1e40af; }
+.account-badge.dr2 { background: #fce7f3; color: #be185d; }
+
 .section { 
-  background: white; 
-  border-radius: 12px; 
-  padding: 24px; 
-  margin-bottom: 24px; 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  background: white; border-radius: 12px; padding: 24px; 
+  margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
 }
-.section h2 { 
-  font-size: 20px; 
-  margin-bottom: 16px; 
-  color: #1e293b; 
-}
-.section h2 .badge-count {
-  font-size: 13px;
-  background: #f1f5f9;
-  color: #64748b;
-  padding: 2px 10px;
+.section h2 { font-size: 20px; margin-bottom: 16px; color: #1e293b; }
+
+/* OPORTUNIDADES PRIORITÁRIAS */
+.priority-section {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
   border-radius: 12px;
-  margin-left: 8px;
-  vertical-align: middle;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 2px solid #f59e0b;
+}
+.priority-section h2 {
+  color: #78350f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.priority-section .intro {
+  color: #92400e;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.priority-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.priority-tab {
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid #fbbf24;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #78350f;
+  transition: all 0.2s;
+}
+.priority-tab.active {
+  background: #f59e0b;
+  color: white;
+}
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 14px;
+}
+.priority-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  border-left: 4px solid #f59e0b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: none;
+}
+.priority-card.show { display: block; }
+.priority-card.quente { border-left-color: #dc2626; }
+.priority-card.consumo { border-left-color: #8b5cf6; }
+.priority-card.followup { border-left-color: #f59e0b; }
+.priority-card.recuperacao { border-left-color: #6b7280; }
+.priority-card.indicacao { border-left-color: #10b981; }
+
+.priority-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.priority-client {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+.priority-cat {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: #fef3c7;
+  color: #92400e;
+}
+.priority-cat.quente { background: #fee2e2; color: #991b1b; }
+.priority-cat.consumo { background: #f3e8ff; color: #6b21a8; }
+.priority-cat.followup { background: #fef3c7; color: #92400e; }
+.priority-cat.recuperacao { background: #f3f4f6; color: #374151; }
+.priority-cat.indicacao { background: #d1fae5; color: #065f46; }
+
+.priority-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+.priority-meta span { background: #f1f5f9; padding: 2px 8px; border-radius: 6px; }
+.priority-meta .urgent { background: #fee2e2; color: #991b1b; font-weight: 600; }
+
+.priority-motivo {
+  font-size: 13px;
+  color: #475569;
+  background: #f8fafc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.priority-motivo strong { color: #1e293b; }
+
+.priority-recomendacao {
+  background: #dbeafe;
+  border-left: 3px solid #1e40af;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+.priority-recomendacao strong { display: block; margin-bottom: 4px; }
+
+.priority-args {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.priority-arg {
+  background: #ecfeff;
+  border: 1px solid #06b6d4;
+  color: #155e75;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
 }
 
-/* Insights */
+/* INSIGHTS */
 .insights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -125,375 +223,181 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 .insight-card.positive { border-left: 4px solid #10b981; }
 .insight-card.alert { border-left: 4px solid #f59e0b; }
 .insight-card.opportunity { border-left: 4px solid #3b82f6; }
-.insight-card h3 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.insight-card h3 { font-size: 16px; margin-bottom: 12px; }
 .insight-item {
-  background: #f8fafc;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  line-height: 1.6;
+  background: #f8fafc; padding: 12px; border-radius: 8px;
+  margin-bottom: 8px; font-size: 14px; line-height: 1.6;
 }
 .insight-item:last-child { margin-bottom: 0; }
 .insight-item .client-tag {
-  display: inline-block;
-  background: #dbeafe;
-  color: #1e40af;
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 6px;
+  display: inline-block; background: #dbeafe; color: #1e40af;
+  padding: 2px 8px; border-radius: 6px; font-size: 12px;
+  font-weight: 600; margin-left: 6px;
 }
 
-/* Vendedores - Cards principais */
+/* VENDEDORES */
 .sellers-grid { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
   gap: 16px; 
 }
 .seller-card { 
-  background: white; 
-  border-radius: 12px; 
-  padding: 20px; 
+  background: white; border-radius: 12px; padding: 20px; 
   border-top: 4px solid var(--seller-color); 
   box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
 }
 .seller-name { 
-  font-size: 18px; 
-  font-weight: 700; 
-  color: var(--seller-color); 
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 18px; font-weight: 700; color: var(--seller-color); 
+  margin-bottom: 12px; display: flex; 
+  justify-content: space-between; align-items: center;
 }
 .seller-score {
-  background: var(--seller-color);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 700;
+  background: var(--seller-color); color: white;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 14px; font-weight: 700;
 }
 .seller-metrics { 
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
-  margin-bottom: 16px; 
+  display: grid; grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; margin-bottom: 16px; 
 }
 .metric { 
-  background: #f8fafc; 
-  padding: 12px; 
-  border-radius: 8px; 
-  text-align: center; 
+  background: #f8fafc; padding: 12px; border-radius: 8px; text-align: center; 
 }
-.metric.calls {
-  background: #f3e8ff;
-  border: 1px solid #ddd6fe;
-}
+.metric.calls { background: #f3e8ff; border: 1px solid #ddd6fe; }
 .metric.calls .m-val { color: #6d28d9; }
-.m-val { 
-  font-size: 20px; 
-  font-weight: 700; 
-  color: #0f172a; 
-}
-.m-lbl { 
-  font-size: 11px; 
-  color: #64748b; 
-  margin-top: 2px; 
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+.m-val { font-size: 20px; font-weight: 700; color: #0f172a; }
+.m-lbl { font-size: 11px; color: #64748b; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-/* Análise expansível */
 .expand-btn {
-  width: 100%;
-  background: var(--seller-color);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: opacity 0.2s;
+  width: 100%; background: var(--seller-color); color: white;
+  border: none; padding: 12px; border-radius: 8px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  margin-top: 8px; transition: opacity 0.2s;
 }
 .expand-btn:hover { opacity: 0.9; }
 
-.seller-details {
-  display: none;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 2px solid #e2e8f0;
-}
+.seller-details { display: none; margin-top: 16px; padding-top: 16px; border-top: 2px solid #e2e8f0; }
 .seller-details.open { display: block; }
 
-.detail-section {
-  margin-bottom: 20px;
-}
+.detail-section { margin-bottom: 20px; }
 .detail-section h4 {
-  font-size: 13px;
-  font-weight: 700;
-  color: #475569;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding-bottom: 6px;
+  font-size: 13px; font-weight: 700; color: #475569;
+  margin-bottom: 10px; text-transform: uppercase;
+  letter-spacing: 0.5px; padding-bottom: 6px;
   border-bottom: 1px solid #e2e8f0;
 }
 
-/* Pontos fortes */
 .strength-item, .weakness-item {
-  background: #f8fafc;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  font-size: 13px;
-  line-height: 1.5;
+  background: #f8fafc; padding: 12px; border-radius: 8px;
+  margin-bottom: 8px; font-size: 13px; line-height: 1.5;
 }
 .strength-item { border-left: 3px solid #10b981; }
 .weakness-item { border-left: 3px solid #f59e0b; }
-.strength-item .cat, .weakness-item .cat {
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 4px;
-}
-.strength-item .desc, .weakness-item .desc {
-  color: #475569;
-}
-.strength-item ul, .weakness-item ul {
-  list-style: none;
-  margin-top: 6px;
-  font-size: 12px;
-  color: #64748b;
-}
-.strength-item li, .weakness-item li {
-  padding-left: 14px;
-  position: relative;
-  margin-bottom: 2px;
-}
-.strength-item li:before {
-  content: "✓"; position: absolute; left: 0; color: #10b981;
-}
-.weakness-item li:before {
-  content: "✗"; position: absolute; left: 0; color: #f59e0b;
-}
+.strength-item .cat, .weakness-item .cat { font-weight: 700; color: #1e293b; margin-bottom: 4px; }
+.strength-item .desc, .weakness-item .desc { color: #475569; }
+.strength-item ul, .weakness-item ul { list-style: none; margin-top: 6px; font-size: 12px; color: #64748b; }
+.strength-item li, .weakness-item li { padding-left: 14px; position: relative; margin-bottom: 2px; }
+.strength-item li:before { content: "✓"; position: absolute; left: 0; color: #10b981; }
+.weakness-item li:before { content: "✗"; position: absolute; left: 0; color: #f59e0b; }
 .weakness-item .action {
-  background: #dbeafe;
-  color: #1e40af;
-  padding: 6px 10px;
-  border-radius: 6px;
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 500;
+  background: #dbeafe; color: #1e40af; padding: 6px 10px;
+  border-radius: 6px; margin-top: 8px; font-size: 12px; font-weight: 500;
 }
 
-/* Argumentos não usados */
 .args-not-used {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 8px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px;
 }
 .arg-card {
-  background: #fef2f2;
-  border: 1px solid #fecaca;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 12px;
+  background: #fef2f2; border: 1px solid #fecaca;
+  padding: 10px; border-radius: 8px; font-size: 12px;
 }
 .arg-card .arg-id {
-  display: inline-block;
-  background: #dc2626;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 11px;
-  margin-bottom: 4px;
+  display: inline-block; background: #dc2626; color: white;
+  padding: 2px 6px; border-radius: 4px; font-weight: 700;
+  font-size: 11px; margin-bottom: 4px;
 }
-.arg-card .arg-name {
-  font-weight: 600;
-  color: #7f1d1d;
-  margin-bottom: 4px;
-}
-.arg-card .arg-info {
-  color: #991b1b;
-  font-size: 11px;
-}
+.arg-card .arg-name { font-weight: 600; color: #7f1d1d; margin-bottom: 4px; }
+.arg-card .arg-info { color: #991b1b; font-size: 11px; }
 .arg-card.crit { background: #fef2f2; border-color: #f87171; }
 .arg-card.alta { background: #fff7ed; border-color: #fdba74; }
 .arg-card.media { background: #fefce8; border-color: #fde047; }
 
-/* Erros cometidos */
-.error-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
+.error-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .error-tag {
-  background: #fef2f2;
-  color: #b91c1c;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
+  background: #fef2f2; color: #b91c1c; padding: 6px 12px;
+  border-radius: 6px; font-size: 12px; font-weight: 600;
   border: 1px solid #fecaca;
 }
 .error-tag .count {
-  background: #b91c1c;
-  color: white;
-  padding: 1px 6px;
-  border-radius: 10px;
-  margin-left: 6px;
-  font-size: 11px;
+  background: #b91c1c; color: white; padding: 1px 6px;
+  border-radius: 10px; margin-left: 6px; font-size: 11px;
 }
 
-/* Ranking */
-.ranking-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
+.ranking-table { width: 100%; border-collapse: separate; border-spacing: 0; }
 .ranking-table th {
-  background: #f8fafc;
-  padding: 12px;
-  text-align: left;
-  font-weight: 600;
-  color: #475569;
-  border-bottom: 2px solid #e2e8f0;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  background: #f8fafc; padding: 12px; text-align: left;
+  font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0;
+  font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;
 }
-.ranking-table td {
-  padding: 14px 12px;
-  border-bottom: 1px solid #f1f5f9;
-  font-size: 14px;
-}
+.ranking-table td { padding: 14px 12px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
 .ranking-table tr:hover td { background: #f8fafc; }
 .rank-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 14px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  font-weight: 700; font-size: 14px;
 }
 .rank-1 { background: #fbbf24; color: #78350f; }
 .rank-2 { background: #d1d5db; color: #374151; }
 .rank-3 { background: #f59e0b; color: #78350f; }
 .rank-other { background: #e5e7eb; color: #6b7280; }
 
-/* Progress bar */
 .progress {
-  background: #e5e7eb;
-  height: 8px;
-  border-radius: 4px;
-  overflow: hidden;
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 150px;
+  background: #e5e7eb; height: 8px; border-radius: 4px;
+  overflow: hidden; width: 100%; display: inline-block;
+  vertical-align: middle; max-width: 150px;
 }
-.progress-bar {
-  height: 100%;
-  border-radius: 4px;
-  background: linear-gradient(90deg, #10b981, #059669);
-}
+.progress-bar { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #10b981, #059669); }
 .progress-bar.medium { background: linear-gradient(90deg, #f59e0b, #d97706); }
 .progress-bar.low { background: linear-gradient(90deg, #dc2626, #b91c1c); }
 
-/* Tabs */
-.tabs { 
-  display: flex; 
-  gap: 8px; 
-  margin-bottom: 16px; 
-  flex-wrap: wrap; 
-}
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
 .tab { 
-  padding: 10px 18px; 
-  border-radius: 8px; 
-  background: #f1f5f9; 
-  border: none; 
-  cursor: pointer; 
-  font-weight: 600; 
-  color: #64748b; 
-  font-size: 14px; 
-  transition: all 0.2s;
+  padding: 10px 18px; border-radius: 8px; background: #f1f5f9; 
+  border: none; cursor: pointer; font-weight: 600; color: #64748b; 
+  font-size: 14px; transition: all 0.2s;
 }
 .tab.active { background: #1e40af; color: white; }
 .tab:hover:not(.active) { background: #e2e8f0; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
-/* Tabela conversas */
-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-  font-size: 14px; 
-}
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
 th { 
-  background: #f8fafc; 
-  padding: 10px; 
-  text-align: left; 
-  font-weight: 600; 
-  color: #475569; 
-  border-bottom: 2px solid #e2e8f0; 
+  background: #f8fafc; padding: 10px; text-align: left;
+  font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; 
 }
-td { 
-  padding: 10px; 
-  border-bottom: 1px solid #f1f5f9; 
-}
+td { padding: 10px; border-bottom: 1px solid #f1f5f9; }
 tr:hover td { background: #f8fafc; }
 
-.badge { 
-  padding: 4px 10px; 
-  border-radius: 6px; 
-  font-size: 11px; 
-  font-weight: 600; 
-  display: inline-block;
-}
+.badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; display: inline-block; }
 .badge.crit { background: #fee2e2; color: #b91c1c; }
 .badge.warn { background: #fef3c7; color: #b45309; }
 .badge.ok { background: #d1fae5; color: #065f46; }
 
 .note-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: 700;
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 12px; font-weight: 700;
 }
 .note-pill.high { background: #d1fae5; color: #065f46; }
 .note-pill.med { background: #fef3c7; color: #b45309; }
 .note-pill.low { background: #fee2e2; color: #b91c1c; }
 
-.footer { 
-  text-align: center; 
-  color: #94a3b8; 
-  font-size: 12px; 
-  padding: 16px; 
-}
-
+.footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 16px; }
 .loading { text-align: center; padding: 48px; color: #64748b; }
 .spinner {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border: 4px solid #f1f5f9;
-  border-top-color: #667eea;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+  display: inline-block; width: 40px; height: 40px;
+  border: 4px solid #f1f5f9; border-top-color: #667eea;
+  border-radius: 50%; animation: spin 1s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 </style>
@@ -502,13 +406,10 @@ tr:hover td { background: #f8fafc; }
 <div class="container">
   <header>
     <h1>📊 BI Atendimento - Domingo e Rodrigues</h1>
-    <div class="sub">Análise de conversas, tempo de resposta e aderência aos scripts</div>
-    
+    <div class="sub">Análise consolidada DR4 + DR2 com oportunidades prioritárias</div>
     <div class="date-selector">
       <label>📅 Data:</label>
-      <select id="date-select">
-        <option value="">Carregando...</option>
-      </select>
+      <select id="date-select"><option value="">Carregando...</option></select>
     </div>
   </header>
 
@@ -533,21 +434,15 @@ function formatarData(dataISO) {
   const hoje = new Date();
   const ontem = new Date(hoje);
   ontem.setDate(ontem.getDate() - 1);
-  
-  if (data.toDateString() === hoje.toDateString()) {
-    return `${dia}/${mes}/${ano} - Hoje`;
-  } else if (data.toDateString() === ontem.toDateString()) {
-    return `${dia}/${mes}/${ano} - Ontem`;
-  }
+  if (data.toDateString() === hoje.toDateString()) return `${dia}/${mes}/${ano} - Hoje`;
+  if (data.toDateString() === ontem.toDateString()) return `${dia}/${mes}/${ano} - Ontem`;
   return `${dia}/${mes}/${ano}`;
 }
 
 function formatarTempo(minutos) {
   if (!minutos || minutos === 0) return '—';
   if (minutos < 60) return `${minutos} min`;
-  const horas = Math.floor(minutos / 60);
-  const mins = minutos % 60;
-  return `${horas}h ${mins}min`;
+  return `${Math.floor(minutos / 60)}h ${minutos % 60}min`;
 }
 
 function getNoteClass(nota) {
@@ -562,108 +457,139 @@ function getProgressClass(pct) {
   return 'low';
 }
 
+function getCategoriaClass(cat) {
+  if (!cat) return '';
+  if (cat.includes('QUENTE')) return 'quente';
+  if (cat.includes('CONSUMO')) return 'consumo';
+  if (cat.includes('FOLLOW')) return 'followup';
+  if (cat.includes('RECUPERA')) return 'recuperacao';
+  if (cat.includes('INDICA')) return 'indicacao';
+  return '';
+}
+
 async function carregarDatasDisponiveis() {
   try {
     const response = await fetch(`${BASE_URL}index.json?t=${Date.now()}`);
     if (!response.ok) throw new Error('Erro ao carregar índice');
-    
     const data = await response.json();
-    datasDisponiveis = (data.relatorios || []).sort((a, b) => 
-      new Date(b.data) - new Date(a.data)
-    );
-    
+    datasDisponiveis = (data.relatorios || []).sort((a, b) => new Date(b.data) - new Date(a.data));
     const select = document.getElementById('date-select');
-    
     if (datasDisponiveis.length === 0) {
       select.innerHTML = '<option value="">Nenhum relatório disponível</option>';
-      document.getElementById('content').innerHTML = `
-        <div class="section">
-          <p style="color: #64748b; text-align: center; padding: 40px;">
-            📭 Nenhum relatório disponível ainda.<br>
-            Execute a análise pelo arquivo analisar.bat
-          </p>
-        </div>
-      `;
+      document.getElementById('content').innerHTML = `<div class="section"><p style="color:#64748b;text-align:center;padding:40px;">📭 Nenhum relatório disponível.</p></div>`;
       return;
     }
-    
-    select.innerHTML = datasDisponiveis.map(rel => 
-      `<option value="${rel.data}">${formatarData(rel.data)} (${rel.total_conversas} conversas)</option>`
-    ).join('');
-    
+    select.innerHTML = datasDisponiveis.map(rel => `<option value="${rel.data}">${formatarData(rel.data)} (${rel.total_conversas} conversas)</option>`).join('');
     select.value = datasDisponiveis[0].data;
     carregarDados(datasDisponiveis[0].data);
   } catch (error) {
-    document.getElementById('content').innerHTML = `
-      <div class="section">
-        <p style="color: #dc2626;">❌ Erro ao carregar dados: ${error.message}</p>
-      </div>
-    `;
+    document.getElementById('content').innerHTML = `<div class="section"><p style="color:#dc2626;">❌ ${error.message}</p></div>`;
   }
 }
 
 async function carregarDados(dataISO) {
   try {
-    if (dadosCache[dataISO]) {
-      renderizarDados(dadosCache[dataISO]);
-      return;
-    }
-    
+    if (dadosCache[dataISO]) { renderizarDados(dadosCache[dataISO]); return; }
     const response = await fetch(`${BASE_URL}${dataISO}.json?t=${Date.now()}`);
     if (!response.ok) throw new Error('Dados não encontrados');
-    
     const dados = await response.json();
     dadosCache[dataISO] = dados;
     renderizarDados(dados);
   } catch (error) {
-    document.getElementById('content').innerHTML = `
-      <div class="section">
-        <p style="color: #dc2626;">❌ Erro ao carregar dados de ${formatarData(dataISO)}: ${error.message}</p>
-      </div>
-    `;
+    document.getElementById('content').innerHTML = `<div class="section"><p style="color:#dc2626;">❌ ${error.message}</p></div>`;
   }
 }
 
 function renderizarDados(dados) {
   const content = document.getElementById('content');
+  const m = dados.metricas || {};
   
-  // 1. MÉTRICAS GERAIS (com card de Ligações)
+  // 1. MÉTRICAS
   const metricas = `
     <div class="metrics-grid">
-      <div class="metric-card">
-        <div class="label">Total de Conversas</div>
-        <div class="value">${dados.metricas?.total_conversas || 0}</div>
-        <div class="hint">conversas únicas hoje</div>
+      <div class="metric-card blue">
+        <div class="label">Total Geral</div>
+        <div class="value">${m.total_conversas || 0}</div>
+        <div class="hint">DR4: ${m.total_conversas_dr4 || 0} | DR2: ${m.total_conversas_dr2 || 0}</div>
       </div>
       <div class="metric-card purple">
-        <div class="label">📞 Total de Ligações</div>
-        <div class="value">${dados.metricas?.total_ligacoes || 0}</div>
+        <div class="label">📞 Total Ligações</div>
+        <div class="value">${m.total_ligacoes || 0}</div>
         <div class="hint">ligações realizadas hoje</div>
       </div>
-      <div class="metric-card ${(dados.metricas?.sem_resposta || 0) > 0 ? 'warn' : ''}">
+      <div class="metric-card ${(m.sem_resposta || 0) > 0 ? 'warn' : ''}">
         <div class="label">Sem Resposta</div>
-        <div class="value">${dados.metricas?.sem_resposta || 0}</div>
+        <div class="value">${m.sem_resposta || 0}</div>
         <div class="hint">última msg foi do cliente</div>
       </div>
-      <div class="metric-card ${(dados.metricas?.criticas || 0) > 0 ? 'crit' : ''}">
+      <div class="metric-card ${(m.criticas || 0) > 0 ? 'crit' : ''}">
         <div class="label">Críticas</div>
-        <div class="value">${dados.metricas?.criticas || 0}</div>
+        <div class="value">${m.criticas || 0}</div>
         <div class="hint">sem resposta NUNCA</div>
       </div>
       <div class="metric-card gold">
         <div class="label">Nota Média Geral</div>
-        <div class="value">${(dados.metricas?.nota_media_geral || 0).toFixed(1)}</div>
+        <div class="value">${(m.nota_media_geral || 0).toFixed(1)}</div>
         <div class="hint">de 10 pontos</div>
       </div>
       <div class="metric-card ok">
-        <div class="label">Aderência ao Script</div>
-        <div class="value">${dados.metricas?.aderencia_geral || 0}%</div>
+        <div class="label">Aderência Script</div>
+        <div class="value">${m.aderencia_geral || 0}%</div>
         <div class="hint">média geral</div>
       </div>
     </div>
   `;
   
-  // 2. INSIGHTS (com nome do cliente destacado)
+  // 2. OPORTUNIDADES PRIORITÁRIAS (NOVA SEÇÃO)
+  const ops = dados.oportunidades_prioritarias || [];
+  const oportunidades = ops.length > 0 ? `
+    <div class="priority-section">
+      <h2>🎯 Oportunidades Prioritárias <span style="font-size:14px;background:#f59e0b;color:white;padding:4px 10px;border-radius:12px;">${ops.length}</span></h2>
+      <div class="intro">Clientes que merecem atenção especial — alta probabilidade de conversão, ticket elevado ou risco de perder a venda.</div>
+      
+      <div class="priority-tabs">
+        <button class="priority-tab active" data-priority="all">Todas (${ops.length})</button>
+        <button class="priority-tab" data-priority="quente">🔥 Quentes (${ops.filter(o => (o.categoria||'').includes('QUENTE')).length})</button>
+        <button class="priority-tab" data-priority="consumo">💎 Alto Consumo (${ops.filter(o => (o.categoria||'').includes('CONSUMO')).length})</button>
+        <button class="priority-tab" data-priority="followup">⚠️ Follow-up (${ops.filter(o => (o.categoria||'').includes('FOLLOW')).length})</button>
+        <button class="priority-tab" data-priority="recuperacao">🚨 Recuperação (${ops.filter(o => (o.categoria||'').includes('RECUPERA')).length})</button>
+        <button class="priority-tab" data-priority="indicacao">⭐ Indicação (${ops.filter(o => (o.categoria||'').includes('INDICA')).length})</button>
+      </div>
+      
+      <div class="priority-grid">
+        ${ops.map((o, idx) => {
+          const catClass = getCategoriaClass(o.categoria);
+          return `
+            <div class="priority-card show ${catClass}" data-cat="${catClass}">
+              <div class="priority-header">
+                <div>
+                  <div class="priority-client">${o.cliente || '—'}</div>
+                  <div style="font-size:12px;color:#64748b;margin-top:2px;">Vendedor: <strong>${o.vendedor || 'não atribuído'}</strong> ${o.conta ? `<span class="account-badge ${o.conta.toLowerCase()}">${o.conta}</span>` : ''}</div>
+                </div>
+                <span class="priority-cat ${catClass}">${o.categoria || '—'}</span>
+              </div>
+              <div class="priority-meta">
+                ${o.urgencia ? `<span class="${o.urgencia === 'HOJE' ? 'urgent' : ''}">⏰ ${o.urgencia}</span>` : ''}
+              </div>
+              <div class="priority-motivo"><strong>Por que é prioridade:</strong> ${o.motivo || ''}</div>
+              <div class="priority-recomendacao">
+                <strong>📋 Recomendação:</strong>
+                ${o.recomendacao || ''}
+              </div>
+              ${(o.argumentos_recomendados || []).length > 0 ? `
+                <div style="font-size:12px;color:#64748b;margin-bottom:6px;">Argumentos recomendados:</div>
+                <div class="priority-args">
+                  ${o.argumentos_recomendados.map(a => `<span class="priority-arg">${a}</span>`).join('')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  ` : '';
+  
+  // 3. INSIGHTS
   const insights = dados.insights ? `
     <div class="insights-grid">
       <div class="insight-card positive">
@@ -672,65 +598,48 @@ function renderizarDados(dados) {
           <div class="insight-item">
             <strong>${d.vendedor || '—'}</strong>${d.cliente ? `<span class="client-tag">👤 ${d.cliente}</span>` : ''}<br>
             ${d.acao || ''}<br>
-            ${d.resultado ? `<em style="color: #059669;">✓ ${d.resultado}</em>` : ''}
+            ${d.resultado ? `<em style="color:#059669;">✓ ${d.resultado}</em>` : ''}
           </div>
-        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum destaque registrado</div>'}
+        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum destaque</div>'}
       </div>
-      
       <div class="insight-card alert">
         <h3>⚠️ Alertas Prioritários</h3>
         ${(dados.insights.alertas || []).map(a => `
           <div class="insight-item">
             <strong>${a.vendedor || '—'}</strong>${a.cliente ? `<span class="client-tag">👤 ${a.cliente}</span>` : ''}<br>
-            <span style="color: #d97706;">${a.problema || ''}</span><br>
+            <span style="color:#d97706;">${a.problema || ''}</span><br>
             ${a.impacto ? `Impacto: ${a.impacto}<br>` : ''}
-            ${a.acao_corretiva ? `<em style="color: #0369a1;">→ ${a.acao_corretiva}</em>` : ''}
+            ${a.acao_corretiva ? `<em style="color:#0369a1;">→ ${a.acao_corretiva}</em>` : ''}
           </div>
         `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum alerta</div>'}
       </div>
-      
       <div class="insight-card opportunity">
         <h3>💡 Oportunidades de Melhoria</h3>
         ${(dados.insights.oportunidades || []).map(o => `
           <div class="insight-item">
             <strong>${o.tipo || '—'}</strong>${o.cliente ? `<span class="client-tag">👤 ${o.cliente}</span>` : ''}<br>
             ${o.descricao || ''}<br>
-            ${o.acao_sugerida ? `<em style="color: #0369a1;">→ ${o.acao_sugerida}</em>` : ''}
+            ${o.acao_sugerida ? `<em style="color:#0369a1;">→ ${o.acao_sugerida}</em>` : ''}
           </div>
-        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhuma oportunidade identificada</div>'}
+        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhuma oportunidade</div>'}
       </div>
     </div>
   ` : '';
   
-  // 3. RANKING DE QUALIDADE
+  // 4. RANKING
   const ranking = dados.ranking_qualidade && dados.ranking_qualidade.length > 0 ? `
     <div class="section">
       <h2>🏆 Ranking de Aderência ao Script</h2>
       <table class="ranking-table">
-        <thead>
-          <tr>
-            <th style="width: 60px;">Posição</th>
-            <th>Vendedor</th>
-            <th style="text-align: center;">Nota Média</th>
-            <th>Aderência</th>
-            <th style="text-align: center;">Badge</th>
-          </tr>
-        </thead>
+        <thead><tr><th style="width:60px;">Posição</th><th>Vendedor</th><th style="text-align:center;">Nota</th><th>Aderência</th><th style="text-align:center;">Badge</th></tr></thead>
         <tbody>
           ${dados.ranking_qualidade.map((r, idx) => `
             <tr>
               <td><span class="rank-badge rank-${idx + 1 <= 3 ? idx + 1 : 'other'}">${r.posicao}º</span></td>
               <td><strong>${r.vendedor}</strong></td>
-              <td style="text-align: center;">
-                <span class="note-pill ${getNoteClass(r.nota_media)}">${r.nota_media.toFixed(1)}/10</span>
-              </td>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar ${getProgressClass(r.aderencia)}" style="width: ${r.aderencia}%"></div>
-                </div>
-                <span style="margin-left: 8px; font-weight: 600;">${r.aderencia}%</span>
-              </td>
-              <td style="text-align: center; font-size: 18px;">${r.badge}</td>
+              <td style="text-align:center;"><span class="note-pill ${getNoteClass(r.nota_media)}">${r.nota_media.toFixed(1)}/10</span></td>
+              <td><div class="progress"><div class="progress-bar ${getProgressClass(r.aderencia)}" style="width:${r.aderencia}%"></div></div><span style="margin-left:8px;font-weight:600;">${r.aderencia}%</span></td>
+              <td style="text-align:center;font-size:18px;">${r.badge}</td>
             </tr>
           `).join('')}
         </tbody>
@@ -738,128 +647,30 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 4. ANÁLISE DETALHADA POR VENDEDOR (com Ligações)
+  // 5. VENDEDORES
   const vendedores = `
     <div class="section">
       <h2>👥 Análise Detalhada por Vendedor</h2>
-      <p style="color: #64748b; font-size: 14px; margin-bottom: 16px;">
-        Clique em "Ver Análise Detalhada" para expandir pontos fortes, fracos e argumentos não utilizados.
-      </p>
+      <p style="color:#64748b;font-size:14px;margin-bottom:16px;">Clique em "Ver Análise Detalhada" para expandir.</p>
       <div class="sellers-grid">
         ${(dados.vendedores || []).map((v, idx) => `
           <div class="seller-card" style="--seller-color:${v.cor}">
-            <div class="seller-name">
-              ${v.nome}
-              <span class="seller-score">${v.qualidade?.nota_media?.toFixed(1) || '—'}/10</span>
-            </div>
+            <div class="seller-name">${v.nome}<span class="seller-score">${v.qualidade?.nota_media?.toFixed(1) || '—'}/10</span></div>
             <div class="seller-metrics">
-              <div class="metric">
-                <div class="m-val">${v.total_conversas || 0}</div>
-                <div class="m-lbl">Conversas</div>
-              </div>
-              <div class="metric calls">
-                <div class="m-val">${v.ligacoes_dia || 0}</div>
-                <div class="m-lbl">📞 Ligações</div>
-              </div>
-              <div class="metric">
-                <div class="m-val">${v.sem_resposta || 0}</div>
-                <div class="m-lbl">Sem Resposta</div>
-              </div>
-              <div class="metric">
-                <div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div>
-                <div class="m-lbl">Mediana</div>
-              </div>
-              <div class="metric">
-                <div class="m-val">${formatarTempo(v.media_resposta_min)}</div>
-                <div class="m-lbl">Média</div>
-              </div>
-              <div class="metric">
-                <div class="m-val">${v.qualidade?.aderencia_script || 0}%</div>
-                <div class="m-lbl">Aderência</div>
-              </div>
+              <div class="metric"><div class="m-val">${v.total_conversas || 0}</div><div class="m-lbl">Conversas</div></div>
+              <div class="metric calls"><div class="m-val">${v.ligacoes_dia || 0}</div><div class="m-lbl">📞 Ligações</div></div>
+              <div class="metric"><div class="m-val">${v.sem_resposta || 0}</div><div class="m-lbl">Sem Resposta</div></div>
+              <div class="metric"><div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div><div class="m-lbl">Mediana</div></div>
+              <div class="metric"><div class="m-val">${formatarTempo(v.media_resposta_min)}</div><div class="m-lbl">Média</div></div>
+              <div class="metric"><div class="m-val">${v.qualidade?.aderencia_script || 0}%</div><div class="m-lbl">Aderência</div></div>
             </div>
-            
             ${v.qualidade ? `
-              <button class="expand-btn" onclick="toggleDetails(${idx})">
-                Ver Análise Detalhada ▼
-              </button>
-              
+              <button class="expand-btn" onclick="toggleDetails(${idx})">Ver Análise Detalhada ▼</button>
               <div class="seller-details" id="details-${idx}">
-                
-                ${(v.qualidade.pontos_fortes || []).length > 0 ? `
-                  <div class="detail-section">
-                    <h4>💪 Pontos Fortes</h4>
-                    ${v.qualidade.pontos_fortes.map(p => `
-                      <div class="strength-item">
-                        <div class="cat">${p.categoria || ''}</div>
-                        <div class="desc">${p.descricao || ''}</div>
-                        ${p.exemplos && p.exemplos.length > 0 ? `
-                          <ul>
-                            ${p.exemplos.map(e => `<li>${e}</li>`).join('')}
-                          </ul>
-                        ` : ''}
-                      </div>
-                    `).join('')}
-                  </div>
-                ` : ''}
-                
-                ${(v.qualidade.pontos_fracos || []).length > 0 ? `
-                  <div class="detail-section">
-                    <h4>⚡ Pontos de Melhoria</h4>
-                    ${v.qualidade.pontos_fracos.map(p => `
-                      <div class="weakness-item">
-                        <div class="cat">${p.categoria || ''}</div>
-                        <div class="desc">${p.descricao || ''}</div>
-                        ${p.impacto ? `<div style="font-size:12px;color:#64748b;margin-top:4px;">Impacto: ${p.impacto}</div>` : ''}
-                        ${p.exemplos_clientes && p.exemplos_clientes.length > 0 ? `
-                          <ul>
-                            ${p.exemplos_clientes.map(e => `<li>${e}</li>`).join('')}
-                          </ul>
-                        ` : ''}
-                        ${p.acao_corretiva ? `<div class="action">→ ${p.acao_corretiva}</div>` : ''}
-                      </div>
-                    `).join('')}
-                  </div>
-                ` : ''}
-                
-                ${(v.qualidade.argumentos_nao_usados || []).length > 0 ? `
-                  <div class="detail-section">
-                    <h4>❌ Argumentos NÃO Usados (Oportunidades Perdidas)</h4>
-                    <div class="args-not-used">
-                      ${v.qualidade.argumentos_nao_usados.map(arg => {
-                        const importancia = (arg.importancia || 'media').toLowerCase();
-                        const impClass = importancia.includes('crítica') || importancia.includes('critica') ? 'crit' : 
-                                        importancia.includes('alta') ? 'alta' : 'media';
-                        return `
-                          <div class="arg-card ${impClass}">
-                            <span class="arg-id">${arg.id}</span>
-                            <div class="arg-name">${arg.nome}</div>
-                            <div class="arg-info">
-                              ${arg.categoria || ''}<br>
-                              <strong>${arg.importancia || ''}</strong>
-                              ${arg.vezes_perdidas ? ` • ${arg.vezes_perdidas}x` : ''}
-                            </div>
-                          </div>
-                        `;
-                      }).join('')}
-                    </div>
-                  </div>
-                ` : ''}
-                
-                ${(v.qualidade.erros_cometidos || []).length > 0 ? `
-                  <div class="detail-section">
-                    <h4>🚨 Erros Cometidos</h4>
-                    <div class="error-list">
-                      ${v.qualidade.erros_cometidos.map(e => `
-                        <div class="error-tag">
-                          ${e.codigo}: ${e.descricao}
-                          ${e.ocorrencias ? `<span class="count">${e.ocorrencias}x</span>` : ''}
-                        </div>
-                      `).join('')}
-                    </div>
-                  </div>
-                ` : ''}
-                
+                ${(v.qualidade.pontos_fortes || []).length > 0 ? `<div class="detail-section"><h4>💪 Pontos Fortes</h4>${v.qualidade.pontos_fortes.map(p => `<div class="strength-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.exemplos && p.exemplos.length > 0 ? `<ul>${p.exemplos.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}</div>`).join('')}</div>` : ''}
+                ${(v.qualidade.pontos_fracos || []).length > 0 ? `<div class="detail-section"><h4>⚡ Pontos de Melhoria</h4>${v.qualidade.pontos_fracos.map(p => `<div class="weakness-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.impacto ? `<div style="font-size:12px;color:#64748b;margin-top:4px;">Impacto: ${p.impacto}</div>` : ''}${p.exemplos_clientes && p.exemplos_clientes.length > 0 ? `<ul>${p.exemplos_clientes.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}${p.acao_corretiva ? `<div class="action">→ ${p.acao_corretiva}</div>` : ''}</div>`).join('')}</div>` : ''}
+                ${(v.qualidade.argumentos_nao_usados || []).length > 0 ? `<div class="detail-section"><h4>❌ Argumentos NÃO Usados</h4><div class="args-not-used">${v.qualidade.argumentos_nao_usados.map(arg => {const imp = (arg.importancia||'media').toLowerCase();const cls = imp.includes('critica')||imp.includes('crítica')?'crit':imp.includes('alta')?'alta':'media';return `<div class="arg-card ${cls}"><span class="arg-id">${arg.id}</span><div class="arg-name">${arg.nome}</div><div class="arg-info">${arg.categoria||''}<br><strong>${arg.importancia||''}</strong>${arg.vezes_perdidas ? ` • ${arg.vezes_perdidas}x` : ''}</div></div>`;}).join('')}</div></div>` : ''}
+                ${(v.qualidade.erros_cometidos || []).length > 0 ? `<div class="detail-section"><h4>🚨 Erros Cometidos</h4><div class="error-list">${v.qualidade.erros_cometidos.map(e => `<div class="error-tag">${e.codigo}: ${e.descricao}${e.ocorrencias ? `<span class="count">${e.ocorrencias}x</span>` : ''}</div>`).join('')}</div></div>` : ''}
               </div>
             ` : ''}
           </div>
@@ -868,7 +679,7 @@ function renderizarDados(dados) {
     </div>
   `;
   
-  // 5. CONVERSAS DO DIA (TABS)
+  // 6. CONVERSAS
   const conversasDia = (dados.conversas || []);
   const semResposta = conversasDia.filter(c => c.status === 'sem_resposta' || c.status === 'critico');
   const criticas = conversasDia.filter(c => c.status === 'critico');
@@ -881,25 +692,16 @@ function renderizarDados(dados) {
         <button class="tab" data-tab="unanswered">Sem Resposta (${semResposta.length})</button>
         <button class="tab" data-tab="critical">Críticas (${criticas.length})</button>
       </div>
-      
-      <div class="tab-content active" id="tab-all">
-        ${renderTableConversas(conversasDia)}
-      </div>
-      <div class="tab-content" id="tab-unanswered">
-        ${renderTableConversas(semResposta)}
-      </div>
-      <div class="tab-content" id="tab-critical">
-        ${renderTableConversas(criticas)}
-      </div>
+      <div class="tab-content active" id="tab-all">${renderTableConversas(conversasDia)}</div>
+      <div class="tab-content" id="tab-unanswered">${renderTableConversas(semResposta)}</div>
+      <div class="tab-content" id="tab-critical">${renderTableConversas(criticas)}</div>
     </div>
   `;
   
-  content.innerHTML = metricas + insights + ranking + vendedores + conversas;
+  content.innerHTML = metricas + oportunidades + insights + ranking + vendedores + conversas;
+  document.getElementById('footer').textContent = `Gerado em ${dados.data} às ${dados.hora_execucao || '—'} • ${conversasDia.length} conversas`;
   
-  document.getElementById('footer').textContent = 
-    `Gerado em ${dados.data} às ${dados.hora_execucao || '—'} • BI Domingo e Rodrigues • ${conversasDia.length} conversas analisadas`;
-  
-  // Setup tabs
+  // Setup tabs conversas
   document.querySelectorAll('.tab').forEach(t => {
     t.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
@@ -908,30 +710,34 @@ function renderizarDados(dados) {
       document.getElementById('tab-' + t.dataset.tab).classList.add('active');
     });
   });
+  
+  // Setup tabs prioridades
+  document.querySelectorAll('.priority-tab').forEach(t => {
+    t.addEventListener('click', () => {
+      document.querySelectorAll('.priority-tab').forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      const filtro = t.dataset.priority;
+      document.querySelectorAll('.priority-card').forEach(c => {
+        if (filtro === 'all' || c.dataset.cat === filtro) {
+          c.classList.add('show');
+        } else {
+          c.classList.remove('show');
+        }
+      });
+    });
+  });
 }
 
 function renderTableConversas(conversas) {
-  if (conversas.length === 0) {
-    return '<p style="color:#94a3b8; padding:20px; text-align:center;">Nenhuma conversa nesta categoria</p>';
-  }
-  
+  if (conversas.length === 0) return '<p style="color:#94a3b8;padding:20px;text-align:center;">Nenhuma conversa</p>';
   return `
     <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Cliente</th>
-          <th>Vendedor</th>
-          <th>Última Msg</th>
-          <th>Msgs</th>
-          <th>Nota</th>
-          <th>Status</th>
-        </tr>
-      </thead>
+      <thead><tr><th>#</th><th>Conta</th><th>Cliente</th><th>Vendedor</th><th>Última Msg</th><th>Msgs</th><th>Nota</th><th>Status</th></tr></thead>
       <tbody>
         ${conversas.map(c => `
           <tr>
             <td>${c.id}</td>
+            <td>${c.conta ? `<span class="account-badge ${c.conta.toLowerCase()}">${c.conta}</span>` : '—'}</td>
             <td><strong>${c.cliente || '—'}</strong></td>
             <td>${c.vendedor || '<em style="color:#94a3b8;">não atribuído</em>'}</td>
             <td>${c.ultima_msg || '—'}</td>
@@ -948,7 +754,6 @@ function renderTableConversas(conversas) {
 function toggleDetails(idx) {
   const details = document.getElementById('details-' + idx);
   const btn = details.previousElementSibling;
-  
   if (details.classList.contains('open')) {
     details.classList.remove('open');
     btn.innerHTML = 'Ver Análise Detalhada ▼';
@@ -958,10 +763,7 @@ function toggleDetails(idx) {
   }
 }
 
-document.getElementById('date-select').addEventListener('change', (e) => {
-  carregarDados(e.target.value);
-});
-
+document.getElementById('date-select').addEventListener('change', (e) => carregarDados(e.target.value));
 carregarDatasDisponiveis();
 </script>
 </body>
