@@ -2,18 +2,19 @@
   "relatorios": [
     {
       "data": "2026-05-13",
-      "total_conversas": 134,
-      "sem_resposta": 9,
-      "criticas": 4,
-      "nota_media": 2.3,
+      "total_conversas": 196,
+      "sem_resposta": 2,
+      "criticas": 0,
+      "nota_media": 0.0,
       "vendedores": [
-        "Alan Oliveira",
-        "Caio Roberto",
-        "Guilherme",
+        "Luana",
+        "Maria Luiza",
         "Keane",
         "Kemily",
-        "Luana",
-        "Maria Luiza"
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
       ]
     },
     {
@@ -128,5 +129,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-13T13:48"
+  "ultima_atualizacao": "2026-05-13T20:51"
 }
