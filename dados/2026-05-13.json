@@ -1,0 +1,5484 @@
+{
+  "data": "2026-05-13",
+  "hora_execucao": "13:48",
+  "metricas": {
+    "total_conversas": 134,
+    "total_conversas_dr4": 120,
+    "total_conversas_dr2": 14,
+    "total_ligacoes": 74,
+    "sem_resposta": 9,
+    "criticas": 4,
+    "sem_vendedor": 6,
+    "nota_media_geral": 2.3,
+    "aderencia_geral": 10
+  },
+  "vendedores": [
+    {
+      "nome": "Alan Oliveira",
+      "cor": "#f97316",
+      "total_conversas": 15,
+      "ligacoes_dia": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 4.0,
+      "total_respostas": 9,
+      "qualidade": {
+        "nota_media": 1.7,
+        "aderencia_script": 8,
+        "argumentos_usados": {
+          "A1": 2,
+          "A2": 12,
+          "A3": 13,
+          "A4": 0,
+          "B1": 1,
+          "B2": 0,
+          "B3": 0,
+          "B4": 2,
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 1,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          },
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade (bairro)",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 14,
+            "exemplo_aplicacao": "14 conversas sem este argumento; ex.: Alan Pinheiro, Eng José Barros, Leide"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Mediana de resposta 5min (excelente)",
+            "exemplos": [
+              "Cliente Alan Pinheiro: resposta em 3min",
+              "Cliente Josimar Cunha: resposta em 5min"
+            ]
+          },
+          {
+            "categoria": "Personalização",
+            "descricao": "Usou nome do cliente em 12/15 conversas",
+            "exemplos": [
+              "Cliente Alan Pinheiro: vendedor personalizou com o nome",
+              "Cliente Eng José Barros: vendedor personalizou com o nome",
+              "Cliente Leide: vendedor personalizou com o nome"
+            ]
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 13/15 conversas",
+            "exemplos": [
+              "Cliente Alan Pinheiro: vendedor pediu valor da conta de luz",
+              "Cliente Leide: vendedor pediu valor da conta de luz",
+              "Cliente Josimar Cunha: vendedor pediu valor da conta de luz"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 15/15 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente Alan Pinheiro: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Eng José Barros: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Leide: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 15/15 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente Alan Pinheiro: não mencionou os 17 anos de mercado",
+              "Cliente Eng José Barros: não mencionou os 17 anos de mercado",
+              "Cliente Leide: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 13/15 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 13,
+            "exemplos_clientes": [
+              "Cliente Alan Pinheiro: vendedor não tentou agendar visita",
+              "Cliente Leide: vendedor não tentou agendar visita",
+              "Cliente Josimar Cunha: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 12
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 12
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Caio Roberto",
+      "cor": "#0ea5e9",
+      "total_conversas": 11,
+      "ligacoes_dia": 0,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 3,
+      "media_resposta_min": 33.8,
+      "total_respostas": 32,
+      "qualidade": {
+        "nota_media": 2.7,
+        "aderencia_script": 14,
+        "argumentos_usados": {
+          "A1": 8,
+          "A2": 2,
+          "A3": 10,
+          "A4": 0,
+          "B1": 3,
+          "B2": 0,
+          "B3": 1,
+          "B4": 2,
+          "C1": 7,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 1,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 10,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "11 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 10,
+            "exemplo_aplicacao": "10 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, Aerton Carvalho"
+          },
+          {
+            "id": "A2",
+            "nome": "Personalização (nome cliente)",
+            "categoria": "Primeiro Contato",
+            "importancia": "Alta",
+            "vezes_perdidas": 9,
+            "exemplo_aplicacao": "9 conversas sem este argumento; ex.: Dewilson Nogueira, ..t, alvesantoniodelima03"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Mediana de resposta 3min (excelente)",
+            "exemplos": [
+              "Cliente Dewilson Nogueira: resposta em 2min",
+              "Cliente ..t: resposta em 5min",
+              "Cliente alvesantoniodelima03: resposta em 4min"
+            ]
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 10/11 conversas",
+            "exemplos": [
+              "Cliente Dewilson Nogueira: vendedor pediu valor da conta de luz",
+              "Cliente ..t: vendedor pediu valor da conta de luz",
+              "Cliente alvesantoniodelima03: vendedor pediu valor da conta de luz"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 10/11 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 10,
+            "exemplos_clientes": [
+              "Cliente Dewilson Nogueira: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente ..t: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Aerton Carvalho: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 11/11 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 11,
+            "exemplos_clientes": [
+              "Cliente Dewilson Nogueira: não mencionou os 17 anos de mercado",
+              "Cliente ..t: não mencionou os 17 anos de mercado",
+              "Cliente alvesantoniodelima03: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 9/11 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 9,
+            "exemplos_clientes": [
+              "Cliente Dewilson Nogueira: vendedor não tentou agendar visita",
+              "Cliente ..t: vendedor não tentou agendar visita",
+              "Cliente alvesantoniodelima03: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 10
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 9
+          },
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 8
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo de resposta > 60min",
+            "ocorrencias": 2
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Guilherme",
+      "cor": "#10b981",
+      "total_conversas": 15,
+      "ligacoes_dia": 4,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 90,
+      "media_resposta_min": 60.9,
+      "total_respostas": 25,
+      "qualidade": {
+        "nota_media": 3.2,
+        "aderencia_script": 12,
+        "argumentos_usados": {
+          "A1": 8,
+          "A2": 13,
+          "A3": 13,
+          "A4": 0,
+          "B1": 3,
+          "B2": 0,
+          "B3": 0,
+          "B4": 2,
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 8,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 1,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 15,
+            "exemplo_aplicacao": "15 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 14,
+            "exemplo_aplicacao": "14 conversas sem este argumento; ex.: João Carlos, Graca Silva, Raimundo"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Personalização",
+            "descricao": "Usou nome do cliente em 13/15 conversas",
+            "exemplos": [
+              "Cliente João Carlos: vendedor personalizou com o nome",
+              "Cliente Raimundo: vendedor personalizou com o nome",
+              "Cliente Pedro: vendedor personalizou com o nome"
+            ]
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 13/15 conversas",
+            "exemplos": [
+              "Cliente João Carlos: vendedor pediu valor da conta de luz",
+              "Cliente Graca Silva: vendedor pediu valor da conta de luz",
+              "Cliente Raimundo: vendedor pediu valor da conta de luz"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 15/15 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente João Carlos: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Graca Silva: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Raimundo: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 15/15 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente João Carlos: não mencionou os 17 anos de mercado",
+              "Cliente Graca Silva: não mencionou os 17 anos de mercado",
+              "Cliente Raimundo: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 13/15 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 13,
+            "exemplos_clientes": [
+              "Cliente João Carlos: vendedor não tentou agendar visita",
+              "Cliente Graca Silva: vendedor não tentou agendar visita",
+              "Cliente Raimundo: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 11
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 9
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo de resposta > 60min",
+            "ocorrencias": 6
+          },
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 1
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "total_conversas": 25,
+      "ligacoes_dia": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 2,
+      "media_resposta_min": 4.3,
+      "total_respostas": 43,
+      "qualidade": {
+        "nota_media": 2.6,
+        "aderencia_script": 13,
+        "argumentos_usados": {
+          "A1": 13,
+          "A2": 12,
+          "A3": 21,
+          "A4": 0,
+          "B1": 13,
+          "B2": 6,
+          "B3": 4,
+          "B4": 5,
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 1,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 12,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 2,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "25 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "25 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "25 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "25 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "25 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 24,
+            "exemplo_aplicacao": "24 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 24,
+            "exemplo_aplicacao": "24 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender a visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 20,
+            "exemplo_aplicacao": "20 conversas sem este argumento; ex.: Sheila Fernanda, Romero Torres, Murilo Martins"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Mediana de resposta 2min (excelente)",
+            "exemplos": [
+              "Cliente Sheila Fernanda: resposta em 1min",
+              "Cliente Murilo Martins: resposta em 1min",
+              "Cliente Rosa: resposta em 2min"
+            ]
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 21/25 conversas",
+            "exemplos": [
+              "Cliente Sheila Fernanda: vendedor pediu valor da conta de luz",
+              "Cliente Murilo Martins: vendedor pediu valor da conta de luz",
+              "Cliente Rosa: vendedor pediu valor da conta de luz"
+            ]
+          },
+          {
+            "categoria": "Agendamento de visita",
+            "descricao": "Tentou agendar visita em 5 conversas",
+            "exemplos": [
+              "Cliente Julio: vendedor tentou agendar visita técnica",
+              "Cliente Vivi: vendedor tentou agendar visita técnica",
+              "Cliente Miriam: vendedor tentou agendar visita técnica"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 25/25 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 25,
+            "exemplos_clientes": [
+              "Cliente Sheila Fernanda: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Romero Torres: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Murilo Martins: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 24/25 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 24,
+            "exemplos_clientes": [
+              "Cliente Sheila Fernanda: não mencionou os 17 anos de mercado",
+              "Cliente Romero Torres: não mencionou os 17 anos de mercado",
+              "Cliente Murilo Martins: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 20/25 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 20,
+            "exemplos_clientes": [
+              "Cliente Sheila Fernanda: vendedor não tentou agendar visita",
+              "Cliente Romero Torres: vendedor não tentou agendar visita",
+              "Cliente Murilo Martins: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 21
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 17
+          },
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 4
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Kemily",
+      "cor": "#14b8a6",
+      "total_conversas": 12,
+      "ligacoes_dia": 35,
+      "sem_resposta": 3,
+      "mediana_resposta_min": 1,
+      "media_resposta_min": 32.0,
+      "total_respostas": 14,
+      "qualidade": {
+        "nota_media": 3.6,
+        "aderencia_script": 10,
+        "argumentos_usados": {
+          "A1": 7,
+          "A2": 3,
+          "A3": 11,
+          "A4": 0,
+          "B1": 4,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 8,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender a visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 12,
+            "exemplo_aplicacao": "12 conversas sem este argumento; ex.: alexandra💘😘, Kemily Carvalho, zeca72310"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Mediana de resposta 1min (excelente)",
+            "exemplos": [
+              "Cliente alexandra💘😘: resposta em 1min",
+              "Cliente JOÃO: resposta em 1min",
+              "Cliente Araci Oliveira: resposta em 1min"
+            ]
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 11/12 conversas",
+            "exemplos": [
+              "Cliente alexandra💘😘: vendedor pediu valor da conta de luz",
+              "Cliente zeca72310: vendedor pediu valor da conta de luz",
+              "Cliente .: vendedor pediu valor da conta de luz"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 12/12 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 12,
+            "exemplos_clientes": [
+              "Cliente alexandra💘😘: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Kemily Carvalho: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente zeca72310: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 12/12 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 12,
+            "exemplos_clientes": [
+              "Cliente alexandra💘😘: não mencionou os 17 anos de mercado",
+              "Cliente Kemily Carvalho: não mencionou os 17 anos de mercado",
+              "Cliente zeca72310: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 12/12 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 12,
+            "exemplos_clientes": [
+              "Cliente alexandra💘😘: vendedor não tentou agendar visita",
+              "Cliente Kemily Carvalho: vendedor não tentou agendar visita",
+              "Cliente zeca72310: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 8
+          },
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 4
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 4
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 1
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo de resposta > 60min",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "total_conversas": 34,
+      "ligacoes_dia": 0,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 2,
+      "media_resposta_min": 2.7,
+      "total_respostas": 21,
+      "qualidade": {
+        "nota_media": 1.6,
+        "aderencia_script": 8,
+        "argumentos_usados": {
+          "A1": 9,
+          "A2": 17,
+          "A3": 13,
+          "A4": 0,
+          "B1": 1,
+          "B2": 0,
+          "B3": 0,
+          "B4": 2,
+          "C1": 6,
+          "C2": 0,
+          "C3": 0,
+          "C4": 1,
+          "C5": 0,
+          "D1": 3,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 2,
+          "D6": 0,
+          "E1": 17,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 3,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 34,
+            "exemplo_aplicacao": "34 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade (bairro)",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 33,
+            "exemplo_aplicacao": "33 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender a visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 32,
+            "exemplo_aplicacao": "32 conversas sem este argumento; ex.: Paulo Afonso, Robson, Tarcisio Oliveira"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Mediana de resposta 2min (excelente)",
+            "exemplos": [
+              "Cliente Robson: resposta em 1min",
+              "Cliente Claudemy: resposta em 3min",
+              "Cliente murivaldo: resposta em 1min"
+            ]
+          },
+          {
+            "categoria": "Personalização",
+            "descricao": "Usou nome do cliente em 17/34 conversas",
+            "exemplos": [
+              "Cliente Tarcisio Oliveira: vendedor personalizou com o nome",
+              "Cliente Alencar: vendedor personalizou com o nome",
+              "Cliente Evelangio: vendedor personalizou com o nome"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 31/34 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 31,
+            "exemplos_clientes": [
+              "Cliente Paulo Afonso: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Robson: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Tarcisio Oliveira: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 34/34 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 34,
+            "exemplos_clientes": [
+              "Cliente Paulo Afonso: não mencionou os 17 anos de mercado",
+              "Cliente Robson: não mencionou os 17 anos de mercado",
+              "Cliente Tarcisio Oliveira: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 32/34 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 32,
+            "exemplos_clientes": [
+              "Cliente Paulo Afonso: vendedor não tentou agendar visita",
+              "Cliente Robson: vendedor não tentou agendar visita",
+              "Cliente Tarcisio Oliveira: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 31
+          },
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 30
+          },
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 8
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 3
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "total_conversas": 16,
+      "ligacoes_dia": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 24,
+      "media_resposta_min": 59.0,
+      "total_respostas": 23,
+      "qualidade": {
+        "nota_media": 1.5,
+        "aderencia_script": 8,
+        "argumentos_usados": {
+          "A1": 6,
+          "A2": 7,
+          "A3": 13,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 2,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 9,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "A4",
+            "nome": "Evitar preço sem qualificação",
+            "categoria": "Primeiro Contato",
+            "importancia": "Crítica",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "B1",
+            "nome": "Gatilho de proximidade (bairro)",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "B2",
+            "nome": "Quebra objeção 'só pelo Zap'",
+            "categoria": "Agendamento",
+            "importancia": "Alta",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender a visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "C5",
+            "nome": "Pergunta direta (clareza)",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 16,
+            "exemplo_aplicacao": "16 conversas sem este argumento; ex.: Willamys Barbosa, Maiza, Suyane"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Qualificação",
+            "descricao": "Perguntou sobre conta de luz/consumo em 13/16 conversas",
+            "exemplos": [
+              "Cliente Maiza: vendedor pediu valor da conta de luz",
+              "Cliente Luzinete Josefa: vendedor pediu valor da conta de luz",
+              "Cliente Raimundo: vendedor pediu valor da conta de luz"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1)",
+            "descricao": "NÃO mencionou laboratório próprio em 16/16 conversas",
+            "impacto": "Perde diferenciação crítica vs. concorrentes",
+            "conversas_afetadas": 16,
+            "exemplos_clientes": [
+              "Cliente Willamys Barbosa: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Maiza: vendedor nunca mencionou laboratório/troca 24h",
+              "Cliente Suyane: vendedor nunca mencionou laboratório/troca 24h"
+            ],
+            "acao_corretiva": "Treinar uso obrigatório de D1: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Autoridade (D2)",
+            "descricao": "NÃO mencionou 17 anos em 16/16 conversas",
+            "impacto": "Perde argumento de autoridade",
+            "conversas_afetadas": 16,
+            "exemplos_clientes": [
+              "Cliente Willamys Barbosa: não mencionou os 17 anos de mercado",
+              "Cliente Maiza: não mencionou os 17 anos de mercado",
+              "Cliente Suyane: não mencionou os 17 anos de mercado"
+            ],
+            "acao_corretiva": "Incluir 'Temos 17 anos de mercado' em apresentação inicial"
+          },
+          {
+            "categoria": "Agendamento de visita (B4)",
+            "descricao": "NÃO ofereceu visita em 16/16 conversas",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 16,
+            "exemplos_clientes": [
+              "Cliente Willamys Barbosa: vendedor não tentou agendar visita",
+              "Cliente Maiza: vendedor não tentou agendar visita",
+              "Cliente Suyane: vendedor não tentou agendar visita"
+            ],
+            "acao_corretiva": "Toda conversa com lead qualificado deve terminar com tentativa de agendar visita"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 16
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 16
+          },
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem genérica copy-paste",
+            "ocorrencias": 6
+          },
+          {
+            "codigo": "X8",
+            "descricao": "Tempo de resposta > 60min",
+            "ocorrencias": 2
+          },
+          {
+            "codigo": "X2",
+            "descricao": "Insistente sem agregar valor",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    }
+  ],
+  "insights": {
+    "destaques_positivos": [
+      {
+        "vendedor": "Keane",
+        "cliente": "Anderson",
+        "acao": "Argumentos: A1, A2, A3, B2, B3, B4, E1",
+        "resultado": "Nota 5.1"
+      },
+      {
+        "vendedor": "Keane",
+        "cliente": "Sheila Fernanda",
+        "acao": "Argumentos: A1, A3, E1",
+        "resultado": "Nota 5"
+      },
+      {
+        "vendedor": "Kemily",
+        "cliente": "alexandra💘😘",
+        "acao": "Argumentos: A1, A3, E1",
+        "resultado": "Nota 5"
+      },
+      {
+        "vendedor": "Keane",
+        "cliente": "Romero Torres",
+        "acao": "Argumentos: A2, B1, E1",
+        "resultado": "Nota 5"
+      },
+      {
+        "vendedor": "Kemily",
+        "cliente": ".",
+        "acao": "Argumentos: A1, A3, B1, E1",
+        "resultado": "Nota 5"
+      }
+    ],
+    "alertas": [
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Alice",
+        "problema": "Cliente Alice: tempo de resposta 121min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Kemily",
+        "cliente": ".",
+        "problema": "Cliente .: tempo de resposta 219min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Guilherme",
+        "cliente": "João Carlos",
+        "problema": "Cliente João Carlos: tempo de resposta 94min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Guilherme",
+        "cliente": "Graca Silva",
+        "problema": "Cliente Graca Silva: tempo de resposta 93min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Caio Roberto",
+        "cliente": "Aerton Carvalho",
+        "problema": "Cliente Aerton Carvalho: tempo de resposta 231min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Vando Rodrgues dos santos",
+        "problema": "Cliente Vando Rodrgues dos santos: tempo de resposta 231min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Guilherme",
+        "cliente": "Valdemir Freitas😎",
+        "problema": "Cliente Valdemir Freitas😎: tempo de resposta 91min (>1h em horário comercial)",
+        "impacto": "Lead esfria, concorrência aproveita",
+        "acao_corretiva": "Reduzir tempo de resposta para <15min"
+      },
+      {
+        "vendedor": "Luana",
+        "cliente": "Fernando Alves",
+        "problema": "Cliente sem resposta do vendedor hoje",
+        "impacto": "Lead esfriando",
+        "acao_corretiva": "Vendedor deve retomar imediatamente"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "Diferenciação subutilizada (D1)",
+        "cliente": "Todos vendedores",
+        "descricao": "D1 (laboratório/troca 24h) não usado em 130/134 conversas (97%)",
+        "acao_sugerida": "Treinamento obrigatório: incluir D1 em script de apresentação"
+      },
+      {
+        "tipo": "Autoridade subutilizada (D2)",
+        "cliente": "Todos vendedores",
+        "descricao": "D2 (17 anos de mercado) ausente em 133/134 conversas",
+        "acao_sugerida": "Adicionar '17 anos de mercado' em apresentação padrão"
+      }
+    ]
+  },
+  "ranking_qualidade": [
+    {
+      "posicao": 1,
+      "vendedor": "Kemily",
+      "nota_media": 3.6,
+      "aderencia": 10,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "vendedor": "Guilherme",
+      "nota_media": 3.2,
+      "aderencia": 12,
+      "badge": "🥈 Prata"
+    },
+    {
+      "posicao": 3,
+      "vendedor": "Caio Roberto",
+      "nota_media": 2.7,
+      "aderencia": 14,
+      "badge": "🥉 Bronze"
+    },
+    {
+      "posicao": 4,
+      "vendedor": "Keane",
+      "nota_media": 2.6,
+      "aderencia": 13,
+      "badge": "📊 Em desenvolvimento"
+    },
+    {
+      "posicao": 5,
+      "vendedor": "Alan Oliveira",
+      "nota_media": 1.7,
+      "aderencia": 8,
+      "badge": "📊 Em desenvolvimento"
+    },
+    {
+      "posicao": 6,
+      "vendedor": "Luana",
+      "nota_media": 1.6,
+      "aderencia": 8,
+      "badge": "📊 Em desenvolvimento"
+    },
+    {
+      "posicao": 7,
+      "vendedor": "Maria Luiza",
+      "nota_media": 1.5,
+      "aderencia": 8,
+      "badge": "📊 Em desenvolvimento"
+    }
+  ],
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Suyane",
+      "vendedor": "Maria Luiza",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (10 msgs cliente x 10 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Maria Luiza deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "..t",
+      "vendedor": "Caio Roberto",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (3 msgs cliente x 4 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Caio Roberto deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Araci Oliveira",
+      "vendedor": "Kemily",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (3 msgs cliente x 3 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Kemily deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "erisvania",
+      "vendedor": "Caio Roberto",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (5 msgs cliente x 7 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Caio Roberto deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Baiano Jeronimo",
+      "vendedor": "Kemily",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (4 msgs cliente x 3 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Kemily deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Ruideglan",
+      "vendedor": "Luana",
+      "conta": "DR2",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu por último (1 msgs cliente x 2 vendedor hoje). Lead esfriando.",
+      "recomendacao": "Vendedor Luana deve retomar com mensagem personalizada ou áudio curto + sugestão de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A2 - nome cliente",
+        "B4 - agendar visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Bruna Lorrane",
+      "vendedor": "SEM VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente enviou 1 msgs hoje sem nenhuma resposta",
+      "recomendacao": "Atribuir vendedor URGENTE e responder ainda hoje",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A1 - velocidade",
+        "A3 - qualificação",
+        "B4 - agendar visita"
+      ]
+    },
+    {
+      "cliente": "Naanda Siqueira",
+      "vendedor": "SEM VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente enviou 2 msgs hoje sem nenhuma resposta",
+      "recomendacao": "Atribuir vendedor URGENTE e responder ainda hoje",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A1 - velocidade",
+        "A3 - qualificação",
+        "B4 - agendar visita"
+      ]
+    },
+    {
+      "cliente": "Antonio Firmo",
+      "vendedor": "SEM VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente enviou 5 msgs hoje sem nenhuma resposta",
+      "recomendacao": "Atribuir vendedor URGENTE e responder ainda hoje",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A1 - velocidade",
+        "A3 - qualificação",
+        "B4 - agendar visita"
+      ]
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Sheila Fernanda",
+      "vendedor": "Keane",
+      "hora_lista": "13:32",
+      "ultima_msg": "13:32",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4."
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "Willamys Barbosa",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:32",
+      "ultima_msg": "13:32",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 2.6,
+      "argumentos_usados": [
+        "A2",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Paulo Afonso",
+      "vendedor": "Luana",
+      "hora_lista": "13:31",
+      "ultima_msg": "13:31",
+      "total_msgs": 2,
+      "status": "sem_resposta",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "Maiza",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:30",
+      "ultima_msg": "13:30",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "alexandra💘😘",
+      "vendedor": "Kemily",
+      "hora_lista": "13:28",
+      "ultima_msg": "13:28",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4."
+    },
+    {
+      "id": 6,
+      "conta": "DR4",
+      "cliente": "Kemily Carvalho",
+      "vendedor": "Kemily",
+      "hora_lista": "13:27",
+      "ultima_msg": "13:27",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 0.9,
+      "argumentos_usados": [
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X2",
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: E1. Erros: X2,X4,X6,X7."
+    },
+    {
+      "id": 7,
+      "conta": "DR4",
+      "cliente": "Suyane",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:24",
+      "ultima_msg": "13:24",
+      "total_msgs": 20,
+      "status": "sem_resposta",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 8,
+      "conta": "DR4",
+      "cliente": "Luzinete Josefa",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:23",
+      "ultima_msg": "13:23",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 9,
+      "conta": "DR4",
+      "cliente": "Raimundo",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:21",
+      "ultima_msg": "13:21",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 10,
+      "conta": "DR4",
+      "cliente": "dezinha",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:20",
+      "ultima_msg": "13:20",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 11,
+      "conta": "DR4",
+      "cliente": "Gabriel Alves ",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:17",
+      "ultima_msg": "13:17",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 12,
+      "conta": "DR4",
+      "cliente": "Jeferson Nunes",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:15",
+      "ultima_msg": "13:15",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 13,
+      "conta": "DR4",
+      "cliente": "Cleuson Cezário",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:14",
+      "ultima_msg": "13:14",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 14,
+      "conta": "DR4",
+      "cliente": "Alice",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:12",
+      "ultima_msg": "13:12",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A2",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A2,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 15,
+      "conta": "DR4",
+      "cliente": "Romero Torres",
+      "vendedor": "Keane",
+      "hora_lista": "13:11",
+      "ultima_msg": "13:11",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,B1,E1. Erros: nenhum."
+    },
+    {
+      "id": 16,
+      "conta": "DR4",
+      "cliente": "Jonas Teles🍃",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "13:10",
+      "ultima_msg": "13:10",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 17,
+      "conta": "DR4",
+      "cliente": "Dewilson Nogueira",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "13:05",
+      "ultima_msg": "13:05",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 18,
+      "conta": "DR4",
+      "cliente": "Robson",
+      "vendedor": "Luana",
+      "hora_lista": "12:46",
+      "ultima_msg": "12:46",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 19,
+      "conta": "DR4",
+      "cliente": "Tarcisio Oliveira",
+      "vendedor": "Luana",
+      "hora_lista": "12:38",
+      "ultima_msg": "12:38",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 20,
+      "conta": "DR4",
+      "cliente": "zeca72310",
+      "vendedor": "Kemily",
+      "hora_lista": "12:33",
+      "ultima_msg": "12:33",
+      "total_msgs": 2,
+      "status": "sem_resposta",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 21,
+      "conta": "DR4",
+      "cliente": "Murilo Martins",
+      "vendedor": "Keane",
+      "hora_lista": "12:32",
+      "ultima_msg": "12:32",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 3.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1",
+        "B2",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,B1,B2,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 22,
+      "conta": "DR4",
+      "cliente": "torres",
+      "vendedor": "Luana",
+      "hora_lista": "12:32",
+      "ultima_msg": "12:32",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 23,
+      "conta": "DR4",
+      "cliente": "..t",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "12:25",
+      "ultima_msg": "12:25",
+      "total_msgs": 7,
+      "status": "sem_resposta",
+      "nota": 2.7,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 24,
+      "conta": "DR4",
+      "cliente": "Rosa",
+      "vendedor": "Keane",
+      "hora_lista": "12:24",
+      "ultima_msg": "12:24",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A1",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3. Erros: X6,X7."
+    },
+    {
+      "id": 25,
+      "conta": "DR4",
+      "cliente": "Nilmq",
+      "vendedor": "Keane",
+      "hora_lista": "12:24",
+      "ultima_msg": "12:24",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 26,
+      "conta": "DR4",
+      "cliente": "Alan Pinheiro",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "12:16",
+      "ultima_msg": "12:16",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 3.6,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 27,
+      "conta": "DR4",
+      "cliente": ".",
+      "vendedor": "Kemily",
+      "hora_lista": "12:15",
+      "ultima_msg": "12:15",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A3,B1,E1. Erros: X4,X8."
+    },
+    {
+      "id": 28,
+      "conta": "DR4",
+      "cliente": "Pedim",
+      "vendedor": "Kemily",
+      "hora_lista": "12:13",
+      "ultima_msg": "12:13",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,B1. Erros: X6,X7."
+    },
+    {
+      "id": 29,
+      "conta": "DR4",
+      "cliente": "Joao Lopes",
+      "vendedor": "Luana",
+      "hora_lista": "12:13",
+      "ultima_msg": "12:13",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 2.5,
+      "argumentos_usados": [
+        "A3",
+        "D1",
+        "D5",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X2",
+        "X4",
+        "X7"
+      ],
+      "observacao": "Usou: A3,D1,D5,E1. Erros: X2,X4,X7."
+    },
+    {
+      "id": 30,
+      "conta": "DR4",
+      "cliente": "JOÃO",
+      "vendedor": "Kemily",
+      "hora_lista": "12:12",
+      "ultima_msg": "12:12",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4."
+    },
+    {
+      "id": 31,
+      "conta": "DR4",
+      "cliente": "Gervalde Nogueira",
+      "vendedor": "Keane",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 3.7,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,B1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 32,
+      "conta": "DR4",
+      "cliente": "Eufrásio Andrade",
+      "vendedor": "Kemily",
+      "hora_lista": "12:05",
+      "ultima_msg": "12:05",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,A3,B1. Erros: nenhum."
+    },
+    {
+      "id": 33,
+      "conta": "DR4",
+      "cliente": "João Carlos",
+      "vendedor": "Guilherme",
+      "hora_lista": "13:35",
+      "ultima_msg": "13:35",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A2,A3,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 34,
+      "conta": "DR4",
+      "cliente": "Graca Silva",
+      "vendedor": "Guilherme",
+      "hora_lista": "13:34",
+      "ultima_msg": "13:34",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 1.9,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7,X8."
+    },
+    {
+      "id": 35,
+      "conta": "DR4",
+      "cliente": "alvesantoniodelima03",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "12:01",
+      "ultima_msg": "12:01",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 3.9,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B3",
+        "C1",
+        "D1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X4",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,B3,C1,D1,E1. Erros: X4,X7."
+    },
+    {
+      "id": 36,
+      "conta": "DR4",
+      "cliente": "Raimundo",
+      "vendedor": "Guilherme",
+      "hora_lista": "12:01",
+      "ultima_msg": "12:01",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,A3. Erros: nenhum."
+    },
+    {
+      "id": 37,
+      "conta": "DR4",
+      "cliente": "Alencar",
+      "vendedor": "Luana",
+      "hora_lista": "12:00",
+      "ultima_msg": "12:00",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 3.1,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 38,
+      "conta": "DR4",
+      "cliente": "Pedro",
+      "vendedor": "Guilherme",
+      "hora_lista": "12:00",
+      "ultima_msg": "12:00",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 2.8,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 39,
+      "conta": "DR4",
+      "cliente": "Joedson Andrade",
+      "vendedor": "Guilherme",
+      "hora_lista": "12:00",
+      "ultima_msg": "12:00",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 2.8,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 40,
+      "conta": "DR4",
+      "cliente": "um",
+      "vendedor": "Keane",
+      "hora_lista": "11:54",
+      "ultima_msg": "11:54",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 2.4,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X2",
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,B1,E1. Erros: X2,X4,X6,X7."
+    },
+    {
+      "id": 41,
+      "conta": "DR4",
+      "cliente": "Aerton Carvalho",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "11:52",
+      "ultima_msg": "11:52",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 3.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A2,A3,B1,C1,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 42,
+      "conta": "DR4",
+      "cliente": "Vando Rodrgues dos santos",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:50",
+      "ultima_msg": "11:50",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7,X8."
+    },
+    {
+      "id": 43,
+      "conta": "DR4",
+      "cliente": "JUÇARA(VENDIDO)",
+      "vendedor": "Luana",
+      "hora_lista": "11:49",
+      "ultima_msg": "11:49",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 44,
+      "conta": "DR4",
+      "cliente": "Maria Licelia",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:48",
+      "ultima_msg": "11:48",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 2.8,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X2",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1. Erros: X2,X6,X7."
+    },
+    {
+      "id": 45,
+      "conta": "DR4",
+      "cliente": "Alexandre Bahia",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:48",
+      "ultima_msg": "11:48",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 46,
+      "conta": "DR4",
+      "cliente": "Valdemir Freitas😎",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:47",
+      "ultima_msg": "11:47",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 3.3,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A2,A3,B1,E1. Erros: X6,X7,X8."
+    },
+    {
+      "id": 47,
+      "conta": "DR4",
+      "cliente": "vida,amor e fé 🫀",
+      "vendedor": "Keane",
+      "hora_lista": "11:47",
+      "ultima_msg": "11:47",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 48,
+      "conta": "DR4",
+      "cliente": "José",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:47",
+      "ultima_msg": "11:47",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 4.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B1",
+        "B4",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X2",
+        "X6"
+      ],
+      "observacao": "Usou: A1,A2,A3,B1,B4,E1. Erros: X2,X6."
+    },
+    {
+      "id": 49,
+      "conta": "DR4",
+      "cliente": "Araci Oliveira",
+      "vendedor": "Kemily",
+      "hora_lista": "11:45",
+      "ultima_msg": "11:45",
+      "total_msgs": 6,
+      "status": "sem_resposta",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 50,
+      "conta": "DR4",
+      "cliente": "Varjão",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:41",
+      "ultima_msg": "11:41",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.1,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "C1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,C1. Erros: X6,X7."
+    },
+    {
+      "id": 51,
+      "conta": "DR4",
+      "cliente": "Gilmar Acosta - Advogados Associados",
+      "vendedor": "Luana",
+      "hora_lista": "11:40",
+      "ultima_msg": "11:40",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 52,
+      "conta": "DR4",
+      "cliente": "Gildemar",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:40",
+      "ultima_msg": "11:40",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,B1. Erros: X6,X7."
+    },
+    {
+      "id": 53,
+      "conta": "DR4",
+      "cliente": "Neguinho mega trio",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:39",
+      "ultima_msg": "11:39",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 3.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1. Erros: X6,X7."
+    },
+    {
+      "id": 54,
+      "conta": "DR4",
+      "cliente": "Leile Ribeiro",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:39",
+      "ultima_msg": "11:39",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,F3. Erros: X6,X7."
+    },
+    {
+      "id": 55,
+      "conta": "DR4",
+      "cliente": "Jozen nilson Dias",
+      "vendedor": "Kemily",
+      "hora_lista": "11:33",
+      "ultima_msg": "11:33",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 56,
+      "conta": "DR4",
+      "cliente": "Evelangio",
+      "vendedor": "Luana",
+      "hora_lista": "11:31",
+      "ultima_msg": "11:31",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 2.6,
+      "argumentos_usados": [
+        "A2",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 57,
+      "conta": "DR4",
+      "cliente": "CORRINHA NERES",
+      "vendedor": "Luana",
+      "hora_lista": "11:29",
+      "ultima_msg": "11:29",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2. Erros: X6,X7."
+    },
+    {
+      "id": 58,
+      "conta": "DR4",
+      "cliente": "Jhonatan Gabriel",
+      "vendedor": "Luana",
+      "hora_lista": "11:22",
+      "ultima_msg": "11:22",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 59,
+      "conta": "DR4",
+      "cliente": "Cláudio Campos",
+      "vendedor": "Keane",
+      "hora_lista": "11:16",
+      "ultima_msg": "11:16",
+      "total_msgs": 19,
+      "status": "ok",
+      "nota": 4.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "B3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,B1,B2,B3,E1. Erros: X6,X7."
+    },
+    {
+      "id": 60,
+      "conta": "DR4",
+      "cliente": "Ivanilton",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "11:16",
+      "ultima_msg": "11:16",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 1.5,
+      "argumentos_usados": [
+        "A3",
+        "B4",
+        "C1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A3,B4,C1. Erros: X6."
+    },
+    {
+      "id": 61,
+      "conta": "DR4",
+      "cliente": "Jeane Silva",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:15",
+      "ultima_msg": "11:15",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 2.1,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A1,A2,A3,B4. Erros: X6."
+    },
+    {
+      "id": 62,
+      "conta": "DR4",
+      "cliente": "Pedro Gonçalves",
+      "vendedor": "Luana",
+      "hora_lista": "11:13",
+      "ultima_msg": "11:13",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 63,
+      "conta": "DR4",
+      "cliente": "Maria Amorim Aguiar",
+      "vendedor": "Kemily",
+      "hora_lista": "11:00",
+      "ultima_msg": "11:00",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4."
+    },
+    {
+      "id": 64,
+      "conta": "DR4",
+      "cliente": "Lua",
+      "vendedor": "Luana",
+      "hora_lista": "10:51",
+      "ultima_msg": "10:51",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3,F3. Erros: X6,X7."
+    },
+    {
+      "id": 65,
+      "conta": "DR4",
+      "cliente": "Sampaio",
+      "vendedor": "Luana",
+      "hora_lista": "10:50",
+      "ultima_msg": "10:50",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 66,
+      "conta": "DR4",
+      "cliente": "Claudemy",
+      "vendedor": "Luana",
+      "hora_lista": "10:50",
+      "ultima_msg": "10:50",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 3.4,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "D1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,D1,E1. Erros: X7."
+    },
+    {
+      "id": 67,
+      "conta": "DR4",
+      "cliente": "_pericles",
+      "vendedor": "Keane",
+      "hora_lista": "10:46",
+      "ultima_msg": "10:46",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 68,
+      "conta": "DR4",
+      "cliente": "Sileide",
+      "vendedor": "Keane",
+      "hora_lista": "10:45",
+      "ultima_msg": "10:45",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 3.7,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,B1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 69,
+      "conta": "DR4",
+      "cliente": "Adriele",
+      "vendedor": "Keane",
+      "hora_lista": "10:42",
+      "ultima_msg": "10:42",
+      "total_msgs": 12,
+      "status": "ok",
+      "nota": 3.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1,F3. Erros: X6,X7."
+    },
+    {
+      "id": 70,
+      "conta": "DR4",
+      "cliente": "Rocelio Dias",
+      "vendedor": "Keane",
+      "hora_lista": "10:41",
+      "ultima_msg": "10:41",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,B1. Erros: X6,X7."
+    },
+    {
+      "id": 71,
+      "conta": "DR4",
+      "cliente": "Eng José Barros",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:38",
+      "ultima_msg": "10:38",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,B4. Erros: nenhum."
+    },
+    {
+      "id": 72,
+      "conta": "DR4",
+      "cliente": "Leide",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:37",
+      "ultima_msg": "10:37",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 73,
+      "conta": "DR4",
+      "cliente": "Andrey Gomes",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:36",
+      "ultima_msg": "10:36",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,B4. Erros: nenhum."
+    },
+    {
+      "id": 74,
+      "conta": "DR4",
+      "cliente": "Josimar Cunha",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:35",
+      "ultima_msg": "10:35",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 75,
+      "conta": "DR4",
+      "cliente": "Josias",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:33",
+      "ultima_msg": "10:33",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,B1. Erros: X6,X7."
+    },
+    {
+      "id": 76,
+      "conta": "DR4",
+      "cliente": "Junior",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:33",
+      "ultima_msg": "10:33",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 77,
+      "conta": "DR4",
+      "cliente": "Heloyza",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:31",
+      "ultima_msg": "10:31",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 78,
+      "conta": "DR4",
+      "cliente": "Socorro Matos",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:31",
+      "ultima_msg": "10:31",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 79,
+      "conta": "DR4",
+      "cliente": "Dj Candite",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:30",
+      "ultima_msg": "10:30",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 80,
+      "conta": "DR4",
+      "cliente": "Cliente DR4 78891",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:30",
+      "ultima_msg": "10:30",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 81,
+      "conta": "DR4",
+      "cliente": "Ytallo Mares",
+      "vendedor": "Luana",
+      "hora_lista": "10:30",
+      "ultima_msg": "10:30",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.1,
+      "argumentos_usados": [
+        "A2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A2,B4. Erros: X6."
+    },
+    {
+      "id": 82,
+      "conta": "DR4",
+      "cliente": "Verônica Dória",
+      "vendedor": "Keane",
+      "hora_lista": "10:29",
+      "ultima_msg": "10:29",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.4,
+      "argumentos_usados": [
+        "A2",
+        "B3",
+        "D2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X7"
+      ],
+      "observacao": "Usou: A2,B3,D2. Erros: X7."
+    },
+    {
+      "id": 83,
+      "conta": "DR4",
+      "cliente": "Rosa Duete",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:28",
+      "ultima_msg": "10:28",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 84,
+      "conta": "DR4",
+      "cliente": "Rubem Farias",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:27",
+      "ultima_msg": "10:27",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 85,
+      "conta": "DR4",
+      "cliente": "Naldo",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:26",
+      "ultima_msg": "10:26",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 86,
+      "conta": "DR4",
+      "cliente": "José Cláudio",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "10:26",
+      "ultima_msg": "10:26",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,A3. Erros: nenhum."
+    },
+    {
+      "id": 87,
+      "conta": "DR4",
+      "cliente": "Julio",
+      "vendedor": "Keane",
+      "hora_lista": "10:25",
+      "ultima_msg": "10:25",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.6,
+      "argumentos_usados": [
+        "A3",
+        "B1",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A3,B1,B4. Erros: X6."
+    },
+    {
+      "id": 88,
+      "conta": "DR4",
+      "cliente": "Vivi",
+      "vendedor": "Keane",
+      "hora_lista": "10:22",
+      "ultima_msg": "10:22",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.1,
+      "argumentos_usados": [
+        "A3",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A3,B4. Erros: X6."
+    },
+    {
+      "id": 89,
+      "conta": "DR4",
+      "cliente": "Jonas",
+      "vendedor": "Luana",
+      "hora_lista": "10:21",
+      "ultima_msg": "10:21",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 2.2,
+      "argumentos_usados": [
+        "A2",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,E1. Erros: X6,X7."
+    },
+    {
+      "id": 90,
+      "conta": "DR4",
+      "cliente": "Marcondes C Macedo",
+      "vendedor": "Keane",
+      "hora_lista": "10:14",
+      "ultima_msg": "10:14",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,B2. Erros: X6,X7."
+    },
+    {
+      "id": 91,
+      "conta": "DR4",
+      "cliente": "Jaguar",
+      "vendedor": "Luana",
+      "hora_lista": "10:13",
+      "ultima_msg": "10:13",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.6,
+      "argumentos_usados": [
+        "A2",
+        "C1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,C1. Erros: X6,X7."
+    },
+    {
+      "id": 92,
+      "conta": "DR4",
+      "cliente": "Carlos Figueiredo",
+      "vendedor": "Luana",
+      "hora_lista": "10:12",
+      "ultima_msg": "10:12",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0.2,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3. Erros: X6,X7."
+    },
+    {
+      "id": 93,
+      "conta": "DR4",
+      "cliente": "Cliente DR4 19742",
+      "vendedor": "Keane",
+      "hora_lista": "10:06",
+      "ultima_msg": "10:06",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.7,
+      "argumentos_usados": [
+        "A3",
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3,B1,B2,B3. Erros: X6,X7."
+    },
+    {
+      "id": 94,
+      "conta": "DR4",
+      "cliente": "Lourival",
+      "vendedor": "Luana",
+      "hora_lista": "10:06",
+      "ultima_msg": "10:06",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3. Erros: X6,X7."
+    },
+    {
+      "id": 95,
+      "conta": "DR4",
+      "cliente": "albertinaribei00",
+      "vendedor": "Guilherme",
+      "hora_lista": "10:05",
+      "ultima_msg": "10:05",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A3. Erros: nenhum."
+    },
+    {
+      "id": 96,
+      "conta": "DR4",
+      "cliente": "Pablo Emerson",
+      "vendedor": "Luana",
+      "hora_lista": "10:04",
+      "ultima_msg": "10:04",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "D1",
+        "D5"
+      ],
+      "argumentos_perdidos": [
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X7"
+      ],
+      "observacao": "Usou: A3,D1,D5. Erros: X7."
+    },
+    {
+      "id": 97,
+      "conta": "DR4",
+      "cliente": "Clea",
+      "vendedor": "Luana",
+      "hora_lista": "10:02",
+      "ultima_msg": "10:02",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 2.2,
+      "argumentos_usados": [
+        "A2",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,E1. Erros: X6,X7."
+    },
+    {
+      "id": 98,
+      "conta": "DR4",
+      "cliente": "Terezinha",
+      "vendedor": "Guilherme",
+      "hora_lista": "09:59",
+      "ultima_msg": "09:59",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2",
+        "A3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A2,A3. Erros: nenhum."
+    },
+    {
+      "id": 99,
+      "conta": "DR4",
+      "cliente": "Tharly Santos",
+      "vendedor": "Luana",
+      "hora_lista": "09:59",
+      "ultima_msg": "09:59",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 2.7,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X2",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,C1,E1. Erros: X2,X6,X7."
+    },
+    {
+      "id": 100,
+      "conta": "DR4",
+      "cliente": "Genilson",
+      "vendedor": "Luana",
+      "hora_lista": "09:59",
+      "ultima_msg": "09:59",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X2",
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3,C1,E1. Erros: X2,X4,X6,X7."
+    },
+    {
+      "id": 101,
+      "conta": "DR4",
+      "cliente": "Fernando Alves",
+      "vendedor": "Luana",
+      "hora_lista": "—",
+      "ultima_msg": "—",
+      "total_msgs": 0,
+      "status": "critico",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Cliente sem resposta hoje"
+    },
+    {
+      "id": 102,
+      "conta": "DR4",
+      "cliente": "Miriam",
+      "vendedor": "Keane",
+      "hora_lista": "09:50",
+      "ultima_msg": "09:50",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 2,
+      "argumentos_usados": [
+        "A2",
+        "B1",
+        "B4",
+        "C1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A2,B1,B4,C1. Erros: X6."
+    },
+    {
+      "id": 103,
+      "conta": "DR4",
+      "cliente": "Anderson",
+      "vendedor": "Keane",
+      "hora_lista": "09:48",
+      "ultima_msg": "09:48",
+      "total_msgs": 13,
+      "status": "ok",
+      "nota": 5.1,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B2",
+        "B3",
+        "B4",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A1,A2,A3,B2,B3,B4,E1. Erros: X6."
+    },
+    {
+      "id": 104,
+      "conta": "DR4",
+      "cliente": "Cicero Motos",
+      "vendedor": "Keane",
+      "hora_lista": "09:44",
+      "ultima_msg": "09:44",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 1.6,
+      "argumentos_usados": [
+        "A3",
+        "B2",
+        "B4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A3,B2,B4. Erros: X6."
+    },
+    {
+      "id": 105,
+      "conta": "DR4",
+      "cliente": "Givaldo Tavares",
+      "vendedor": "Keane",
+      "hora_lista": "09:39",
+      "ultima_msg": "09:39",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 1.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,F3. Erros: X6,X7."
+    },
+    {
+      "id": 106,
+      "conta": "DR4",
+      "cliente": "Zita Rego",
+      "vendedor": "Kemily",
+      "hora_lista": "09:21",
+      "ultima_msg": "09:21",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4."
+    },
+    {
+      "id": 107,
+      "conta": "DR4",
+      "cliente": "katryn",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:20",
+      "ultima_msg": "09:20",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 108,
+      "conta": "DR4",
+      "cliente": "Raquel Rodrigues",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:20",
+      "ultima_msg": "09:20",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 3.1,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 109,
+      "conta": "DR4",
+      "cliente": "Danyel Mathis",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:18",
+      "ultima_msg": "09:18",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 110,
+      "conta": "DR4",
+      "cliente": "Bartolomeu",
+      "vendedor": "Keane",
+      "hora_lista": "09:10",
+      "ultima_msg": "09:10",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 3.7,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,B1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 111,
+      "conta": "DR4",
+      "cliente": "erisvania",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:09",
+      "ultima_msg": "09:09",
+      "total_msgs": 12,
+      "status": "sem_resposta",
+      "nota": 3.7,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1",
+        "B4",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 112,
+      "conta": "DR4",
+      "cliente": "murivaldo",
+      "vendedor": "Luana",
+      "hora_lista": "09:09",
+      "ultima_msg": "09:09",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2. Erros: X6,X7."
+    },
+    {
+      "id": 113,
+      "conta": "DR4",
+      "cliente": "Ducas",
+      "vendedor": "Keane",
+      "hora_lista": "09:07",
+      "ultima_msg": "09:07",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 3.2,
+      "argumentos_usados": [
+        "A2",
+        "A3",
+        "B1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A2,A3,B1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 114,
+      "conta": "DR4",
+      "cliente": "Gildo Henrique",
+      "vendedor": "Luana",
+      "hora_lista": "09:07",
+      "ultima_msg": "09:07",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 2.7,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "E1",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,E1,F3. Erros: X6,X7."
+    },
+    {
+      "id": 115,
+      "conta": "DR4",
+      "cliente": "ismael",
+      "vendedor": "Luana",
+      "hora_lista": "09:07",
+      "ultima_msg": "09:07",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2. Erros: X6,X7."
+    },
+    {
+      "id": 116,
+      "conta": "DR4",
+      "cliente": "Reginaldo Dosca",
+      "vendedor": "Luana",
+      "hora_lista": "09:03",
+      "ultima_msg": "09:03",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 3.2,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "A3",
+        "E1",
+        "F3"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,A3,E1,F3. Erros: X6,X7."
+    },
+    {
+      "id": 117,
+      "conta": "DR4",
+      "cliente": "jacilenemoura96pe",
+      "vendedor": "Keane",
+      "hora_lista": "08:57",
+      "ultima_msg": "08:57",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A3",
+        "B1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [],
+      "observacao": "Usou: A3,B1. Erros: nenhum."
+    },
+    {
+      "id": 118,
+      "conta": "DR4",
+      "cliente": "Ayrllam",
+      "vendedor": "Luana",
+      "hora_lista": "08:51",
+      "ultima_msg": "08:51",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 2,
+      "argumentos_usados": [
+        "A2",
+        "B1",
+        "B4",
+        "C4"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Usou: A2,B1,B4,C4. Erros: X6."
+    },
+    {
+      "id": 119,
+      "conta": "DR4",
+      "cliente": "Pamela",
+      "vendedor": "Luana",
+      "hora_lista": "08:46",
+      "ultima_msg": "08:46",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: nenhum. Erros: X6,X7."
+    },
+    {
+      "id": 120,
+      "conta": "DR4",
+      "cliente": "Baiano Jeronimo",
+      "vendedor": "Kemily",
+      "hora_lista": "02:15",
+      "ultima_msg": "02:15",
+      "total_msgs": 7,
+      "status": "sem_resposta",
+      "nota": 5,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 121,
+      "conta": "DR2",
+      "cliente": "Ruideglan",
+      "vendedor": "Luana",
+      "hora_lista": "13:12",
+      "ultima_msg": "13:12",
+      "total_msgs": 3,
+      "status": "sem_resposta",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 122,
+      "conta": "DR2",
+      "cliente": "Souzza",
+      "vendedor": "Luana",
+      "hora_lista": "12:15",
+      "ultima_msg": "12:15",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 123,
+      "conta": "DR2",
+      "cliente": "Sem nome",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: nenhum. Erros: X6,X7."
+    },
+    {
+      "id": 124,
+      "conta": "DR2",
+      "cliente": "Paulo Santos - Domingo e Rodrigues",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: nenhum. Erros: X6,X7."
+    },
+    {
+      "id": 125,
+      "conta": "DR2",
+      "cliente": "Jamily Emilly",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 17,
+      "status": "sem_resposta",
+      "nota": 1.9,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Última msg do cliente; vendedor não retomou ainda"
+    },
+    {
+      "id": 126,
+      "conta": "DR2",
+      "cliente": "Bruna Lorrane",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 1,
+      "status": "critico",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Sem vendedor atribuído"
+    },
+    {
+      "id": 127,
+      "conta": "DR2",
+      "cliente": "Naanda Siqueira",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "11:58",
+      "ultima_msg": "11:58",
+      "total_msgs": 2,
+      "status": "critico",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [],
+      "observacao": "Sem vendedor atribuído"
+    },
+    {
+      "id": 128,
+      "conta": "DR2",
+      "cliente": "Antonio Firmo",
+      "vendedor": "(sem vendedor)",
+      "hora_lista": "11:44",
+      "ultima_msg": "11:44",
+      "total_msgs": 5,
+      "status": "critico",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X3"
+      ],
+      "observacao": "Sem vendedor atribuído"
+    },
+    {
+      "id": 129,
+      "conta": "DR2",
+      "cliente": "jucivaniacavalcanti645",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:20",
+      "ultima_msg": "11:20",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A3",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3,E1. Erros: X4,X6,X7."
+    },
+    {
+      "id": 130,
+      "conta": "DR2",
+      "cliente": "LK",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "11:12",
+      "ultima_msg": "11:12",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 2.8,
+      "argumentos_usados": [
+        "A1",
+        "A3",
+        "B1",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7",
+        "X8"
+      ],
+      "observacao": "Usou: A1,A3,B1,C1,E1. Erros: X4,X6,X7,X8."
+    },
+    {
+      "id": 131,
+      "conta": "DR2",
+      "cliente": "Pedro Junior TUBIBA",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:02",
+      "ultima_msg": "11:02",
+      "total_msgs": 3,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "C1",
+        "A3"
+      ],
+      "erros": [
+        "X8"
+      ],
+      "observacao": "Usou: A2. Erros: X8."
+    },
+    {
+      "id": 132,
+      "conta": "DR2",
+      "cliente": "Ana Paula Cruz",
+      "vendedor": "Guilherme",
+      "hora_lista": "11:02",
+      "ultima_msg": "11:02",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 3.1,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 133,
+      "conta": "DR2",
+      "cliente": "Leticia Rodrigues",
+      "vendedor": "Luana",
+      "hora_lista": "10:16",
+      "ultima_msg": "10:16",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 3.1,
+      "argumentos_usados": [
+        "A1",
+        "A2",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A1,A2,C1,E1. Erros: X6,X7."
+    },
+    {
+      "id": 134,
+      "conta": "DR2",
+      "cliente": "Ronieri Passos",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:48",
+      "ultima_msg": "09:48",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A3",
+        "C1",
+        "E1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "X2",
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Usou: A3,C1,E1. Erros: X2,X4,X6,X7."
+    }
+  ],
+  "metodologia": {
+    "tipo": "Análise automatizada via scraping Chrome + heurística keyword-based",
+    "cobertura": "100% das conversas com mensagens hoje (DR4 + DR2)",
+    "limitacoes": "Detecção de argumentos baseada em regex/palavras-chave; pode subestimar uso de argumentos parafraseados. Detecção de erros é conservadora.",
+    "horario_comercial": "Segunda-Sábado 08:00-18:00 (domingos não contam)"
+  }
+}
