@@ -1,0 +1,2760 @@
+{
+  "data": "2026-05-14",
+  "hora_execucao": "13:52",
+  "metricas": {
+    "total_conversas": 87,
+    "total_conversas_dr4": 87,
+    "total_conversas_dr2": 0,
+    "total_ligacoes": 4,
+    "sem_resposta": 16,
+    "criticas": 1,
+    "sem_vendedor": 2,
+    "nota_media_geral": 4.2,
+    "aderencia_geral": 14
+  },
+  "vendedores": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "total_conversas": 25,
+      "ligacoes_dia": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 2,
+      "media_resposta_min": 1,
+      "total_respostas": 4,
+      "qualidade": {
+        "nota_media": 4.7,
+        "aderencia_script": 18,
+        "argumentos_usados": {
+          "A1": 4,
+          "A2": 2,
+          "A3": 5,
+          "A4": 0,
+          "B1": 5,
+          "B2": 0,
+          "B3": 0,
+          "B4": 5,
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 1,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 25,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Respondeu rápido em 4 conversa(s)",
+            "exemplos": []
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Pediu valor da conta de luz em 5 conversa(s)",
+            "exemplos": []
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva",
+            "descricao": "NUNCA mencionou laboratório próprio (D1)",
+            "impacto": "Perde diferenciação vs concorrentes",
+            "conversas_afetadas": 25,
+            "exemplos_clientes": [
+              "Cliente Maria Da Silva: Score 1.8, errors X6,X7",
+              "Cliente Matheus: Score 1.3, errors X6,X7",
+              "Cliente Eliana: Score 1.3, errors X6,X7"
+            ],
+            "acao_corretiva": "Incluir D1 em toda conversa: 'Temos laboratório próprio, troca em 24h'"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 4
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 4
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Caio Roberto",
+      "cor": "#0ea5e9",
+      "total_conversas": 4,
+      "ligacoes_dia": 0,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 4.5,
+        "aderencia_script": 0,
+        "argumentos_usados": {
+          "A1": 0,
+          "A2": 0,
+          "A3": 0,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Cliente diz \"tá caro\""
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 4,
+            "exemplo_aplicacao": "Sempre - tirar do WhatsApp"
+          }
+        ],
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva",
+            "descricao": "NUNCA mencionou laboratório próprio (D1)",
+            "impacto": "Perde diferenciação vs concorrentes",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Incluir D1 em toda conversa: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Agendamento",
+            "descricao": "NUNCA tentou agendar visita técnica (B4)",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Sempre oferecer visita técnica como próximo passo"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Kemily",
+      "cor": "#14b8a6",
+      "total_conversas": 11,
+      "ligacoes_dia": 1,
+      "sem_resposta": 7,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 1,
+      "qualidade": {
+        "nota_media": 4.1,
+        "aderencia_script": 7,
+        "argumentos_usados": {
+          "A1": 1,
+          "A2": 0,
+          "A3": 3,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente diz \"tá caro\""
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 11,
+            "exemplo_aplicacao": "Sempre - tirar do WhatsApp"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Respondeu rápido em 1 conversa(s)",
+            "exemplos": []
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Pediu valor da conta de luz em 3 conversa(s)",
+            "exemplos": []
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva",
+            "descricao": "NUNCA mencionou laboratório próprio (D1)",
+            "impacto": "Perde diferenciação vs concorrentes",
+            "conversas_afetadas": 11,
+            "exemplos_clientes": [
+              "Cliente .: Score 1.3, errors X6,X7"
+            ],
+            "acao_corretiva": "Incluir D1 em toda conversa: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Agendamento",
+            "descricao": "NUNCA tentou agendar visita técnica (B4)",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 11,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Sempre oferecer visita técnica como próximo passo"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 1
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "total_conversas": 40,
+      "ligacoes_dia": 0,
+      "sem_resposta": 3,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 11,
+      "qualidade": {
+        "nota_media": 4,
+        "aderencia_script": 15,
+        "argumentos_usados": {
+          "A1": 11,
+          "A2": 5,
+          "A3": 7,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 3,
+          "B4": 3,
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 40,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 40,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 40,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 40,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 40,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Respondeu rápido em 11 conversa(s)",
+            "exemplos": []
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Pediu valor da conta de luz em 7 conversa(s)",
+            "exemplos": []
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva",
+            "descricao": "NUNCA mencionou laboratório próprio (D1)",
+            "impacto": "Perde diferenciação vs concorrentes",
+            "conversas_afetadas": 40,
+            "exemplos_clientes": [
+              "Cliente Dulineide: Score 1.3, errors X6,X7",
+              "Cliente Rosy Cleide Cardoso: Score 2.4, errors X6",
+              "Cliente José Barbosa Nogueira: Score 1.3, errors X6,X7"
+            ],
+            "acao_corretiva": "Incluir D1 em toda conversa: 'Temos laboratório próprio, troca em 24h'"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X1",
+            "descricao": "Enviou preço sem qualificação prévia",
+            "ocorrencias": 3
+          },
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 11
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 9
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 4,
+        "aderencia_script": 0,
+        "argumentos_usados": {
+          "A1": 0,
+          "A2": 0,
+          "A3": 0,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente diz \"tá caro\""
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Sempre - tirar do WhatsApp"
+          }
+        ],
+        "pontos_fortes": [],
+        "pontos_fracos": [],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Guilherme",
+      "cor": "#10b981",
+      "total_conversas": 1,
+      "ligacoes_dia": 3,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 4,
+        "aderencia_script": 0,
+        "argumentos_usados": {
+          "A1": 0,
+          "A2": 0,
+          "A3": 0,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente diz \"tá caro\""
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 1,
+            "exemplo_aplicacao": "Sempre - tirar do WhatsApp"
+          }
+        ],
+        "pontos_fortes": [],
+        "pontos_fracos": [],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Alan Oliveira",
+      "cor": "#f97316",
+      "total_conversas": 3,
+      "ligacoes_dia": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 1,
+      "qualidade": {
+        "nota_media": 3.6,
+        "aderencia_script": 20,
+        "argumentos_usados": {
+          "A1": 1,
+          "A2": 1,
+          "A3": 1,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratório próprio + troca 24h",
+            "categoria": "Diferenciação",
+            "importancia": "Crítica",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Quando cliente pergunta garantia ou compara concorrente"
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Qualquer abertura de conversa qualificada"
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciação",
+            "importancia": "Alta",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Quando cliente questiona experiência"
+          },
+          {
+            "id": "D4",
+            "nome": "Órfãos solares",
+            "categoria": "Diferenciação",
+            "importancia": "Média",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Cliente já comprou de outra empresa"
+          },
+          {
+            "id": "C1",
+            "nome": "Financiamento sem entrada",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Cliente diz \"tá caro\""
+          },
+          {
+            "id": "C2",
+            "nome": "Prova social específica",
+            "categoria": "Quebra Objeção",
+            "importancia": "Alta",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Cliente em dúvida"
+          },
+          {
+            "id": "B4",
+            "nome": "Vender visita técnica",
+            "categoria": "Agendamento",
+            "importancia": "Crítica",
+            "vezes_perdidas": 3,
+            "exemplo_aplicacao": "Sempre - tirar do WhatsApp"
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta",
+            "descricao": "Respondeu rápido em 1 conversa(s)",
+            "exemplos": []
+          },
+          {
+            "categoria": "Qualificação",
+            "descricao": "Pediu valor da conta de luz em 1 conversa(s)",
+            "exemplos": []
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva",
+            "descricao": "NUNCA mencionou laboratório próprio (D1)",
+            "impacto": "Perde diferenciação vs concorrentes",
+            "conversas_afetadas": 3,
+            "exemplos_clientes": [
+              "Cliente Cyda Carvalho: Score 1.8, errors X6,X7"
+            ],
+            "acao_corretiva": "Incluir D1 em toda conversa: 'Temos laboratório próprio, troca em 24h'"
+          },
+          {
+            "categoria": "Agendamento",
+            "descricao": "NUNCA tentou agendar visita técnica (B4)",
+            "impacto": "Vende só pelo WhatsApp - perde conversão",
+            "conversas_afetadas": 3,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Sempre oferecer visita técnica como próximo passo"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 1
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Não tentou agendar visita",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    }
+  ],
+  "insights": {
+    "destaques_positivos": [],
+    "alertas": [
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Dulineide",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Keane",
+        "cliente": "Maria Da Silva",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "José Barbosa Nogueira",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Alex Andrade",
+        "problema": "Erros: X1, X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Keane",
+        "cliente": "Matheus",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Cicera Zilene",
+        "problema": "Erros: X1, X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Marivaldo",
+        "problema": "Erros: X1, X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Maria Luiza",
+        "cliente": "Jancy",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Keane",
+        "cliente": "Eliana",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      },
+      {
+        "vendedor": "Alan Oliveira",
+        "cliente": "Cyda Carvalho",
+        "problema": "Erros: X6, X7",
+        "impacto": "Risco de perder o lead por falta de aderência ao script",
+        "acao_corretiva": "Treinamento individual sobre uso de diferenciais (D1-D4) e agendamento (B4)"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "🚨 RECUPERAÇÃO",
+        "cliente": "Cyda Carvalho",
+        "descricao": "Cliente colocou objeção de preço ou mencionou concorrência",
+        "acao_sugerida": "Acionar D1 (laboratório), D2 (17 anos), C1 (financiamento) e D5 (checklist comparativo)"
+      },
+      {
+        "tipo": "⚠️ FOLLOW-UP URGENTE",
+        "cliente": "Gilberto",
+        "descricao": "Cliente fez pergunta: \"Pode mi liga agora\" e aguarda resposta",
+        "acao_sugerida": "Responder à pergunta do cliente o mais rápido possível, depois oferecer visita"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Vivi",
+        "descricao": "Cliente pediu informação sobre agendamento/visita",
+        "acao_sugerida": "Confirmar visita técnica nas próximas 24-48h"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "só Jesus é o caminho...",
+        "descricao": "Cliente pediu informação sobre agendamento/visita",
+        "acao_sugerida": "Confirmar visita técnica nas próximas 24-48h"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "wanderlice lucinaro",
+        "descricao": "Cliente pediu informação sobre agendamento/visita",
+        "acao_sugerida": "Confirmar visita técnica nas próximas 24-48h"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Roberto Inácio",
+        "descricao": "Cliente pediu informação sobre agendamento/visita",
+        "acao_sugerida": "Confirmar visita técnica nas próximas 24-48h"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Jose luanderson Nunes gom",
+        "descricao": "Cliente pediu informação sobre agendamento/visita",
+        "acao_sugerida": "Confirmar visita técnica nas próximas 24-48h"
+      },
+      {
+        "tipo": "🚨 RECUPERAÇÃO",
+        "cliente": "Anderson",
+        "descricao": "Cliente colocou objeção de preço ou mencionou concorrência",
+        "acao_sugerida": "Acionar D1 (laboratório), D2 (17 anos), C1 (financiamento) e D5 (checklist comparativo)"
+      }
+    ]
+  },
+  "ranking_qualidade": [
+    {
+      "posicao": 1,
+      "vendedor": "Keane",
+      "nota_media": 4.7,
+      "aderencia": 18,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "vendedor": "Caio Roberto",
+      "nota_media": 4.5,
+      "aderencia": 0,
+      "badge": "🥈 Prata"
+    },
+    {
+      "posicao": 3,
+      "vendedor": "Kemily",
+      "nota_media": 4.1,
+      "aderencia": 7,
+      "badge": "🥉 Bronze"
+    },
+    {
+      "posicao": 4,
+      "vendedor": "Maria Luiza",
+      "nota_media": 4,
+      "aderencia": 15,
+      "badge": "📊 Em desenvolvimento"
+    },
+    {
+      "posicao": 5,
+      "vendedor": "Alan Oliveira",
+      "nota_media": 3.6,
+      "aderencia": 20,
+      "badge": "📊 Em desenvolvimento"
+    }
+  ],
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Cyda Carvalho",
+      "vendedor": "Alan Oliveira",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente colocou objeção de preço ou mencionou concorrência",
+      "recomendacao": "Acionar D1 (laboratório), D2 (17 anos), C1 (financiamento) e D5 (checklist comparativo)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratório",
+        "D2 - 17 anos",
+        "C1 - financiamento",
+        "F4 - plantar dúvida"
+      ]
+    },
+    {
+      "cliente": "Gilberto",
+      "vendedor": "Alan Oliveira",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente fez pergunta: \"Pode mi liga agora\" e aguarda resposta",
+      "recomendacao": "Responder à pergunta do cliente o mais rápido possível, depois oferecer visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Vivi",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente pediu informação sobre agendamento/visita",
+      "recomendacao": "Confirmar visita técnica nas próximas 24-48h",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "B3 - segurança",
+        "D1 - laboratório"
+      ]
+    },
+    {
+      "cliente": "só Jesus é o caminho...",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente pediu informação sobre agendamento/visita",
+      "recomendacao": "Confirmar visita técnica nas próximas 24-48h",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "B3 - segurança",
+        "D1 - laboratório"
+      ]
+    },
+    {
+      "cliente": "wanderlice lucinaro",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente pediu informação sobre agendamento/visita",
+      "recomendacao": "Confirmar visita técnica nas próximas 24-48h",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "B3 - segurança",
+        "D1 - laboratório"
+      ]
+    },
+    {
+      "cliente": "Roberto Inácio",
+      "vendedor": "Maria Luiza",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente pediu informação sobre agendamento/visita",
+      "recomendacao": "Confirmar visita técnica nas próximas 24-48h",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "B3 - segurança",
+        "D1 - laboratório"
+      ]
+    },
+    {
+      "cliente": "Jose luanderson Nunes gom",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente pediu informação sobre agendamento/visita",
+      "recomendacao": "Confirmar visita técnica nas próximas 24-48h",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "B3 - segurança",
+        "D1 - laboratório"
+      ]
+    },
+    {
+      "cliente": "Anderson",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente colocou objeção de preço ou mencionou concorrência",
+      "recomendacao": "Acionar D1 (laboratório), D2 (17 anos), C1 (financiamento) e D5 (checklist comparativo)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratório",
+        "D2 - 17 anos",
+        "C1 - financiamento",
+        "F4 - plantar dúvida"
+      ]
+    },
+    {
+      "cliente": "Sirleide ❤️",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "Cliente mencionou conta R$ 200,00 (alto ticket)",
+      "recomendacao": "Priorizar visita técnica nas próximas 24h, levar simulação detalhada de payback",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratório",
+        "D2 - 17 anos",
+        "C1 - financiamento sem entrada",
+        "B4 - visita técnica"
+      ]
+    },
+    {
+      "cliente": "Dulineide",
+      "vendedor": "Maria Luiza",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu mas vendedor não voltou ainda",
+      "recomendacao": "Retomar conversa com áudio curto + oferta de visita",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "C2 - prova social"
+      ]
+    },
+    {
+      "cliente": "Matheus",
+      "vendedor": "Keane",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu mas vendedor não voltou ainda",
+      "recomendacao": "Retomar conversa com áudio curto + oferta de visita",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "C2 - prova social"
+      ]
+    },
+    {
+      "cliente": "Varjão",
+      "vendedor": "Maria Luiza",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu mas vendedor não voltou ainda",
+      "recomendacao": "Retomar conversa com áudio curto + oferta de visita",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "B4 - visita",
+        "C2 - prova social"
+      ]
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Dulineide",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:56",
+      "ultima_msg": "12:56",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 3 msgs vendedor / 2 msgs cliente"
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "Rosy Cleide Cardoso",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:46",
+      "ultima_msg": "12:46",
+      "total_msgs": 12,
+      "status": "ok",
+      "nota": 2.4,
+      "argumentos_usados": [
+        "A3",
+        "B4",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Análise profunda - 7 msgs vendedor / 5 msgs cliente"
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Maria Da Silva",
+      "vendedor": "Keane",
+      "hora_lista": "12:24",
+      "ultima_msg": "12:24",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A3",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 8 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "José Barbosa Nogueira",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:58",
+      "ultima_msg": "11:58",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 9 msgs vendedor / 5 msgs cliente"
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "Alex Andrade",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:14",
+      "ultima_msg": "11:14",
+      "total_msgs": 35,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "B3",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X1",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 23 msgs vendedor / 12 msgs cliente"
+    },
+    {
+      "id": 6,
+      "conta": "DR4",
+      "cliente": "Matheus",
+      "vendedor": "Keane",
+      "hora_lista": "13:19",
+      "ultima_msg": "13:19",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 3 msgs vendedor / 2 msgs cliente"
+    },
+    {
+      "id": 7,
+      "conta": "DR4",
+      "cliente": "Varjão",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:01",
+      "ultima_msg": "11:01",
+      "total_msgs": 28,
+      "status": "sem_resposta",
+      "nota": 2.2,
+      "argumentos_usados": [
+        "B4",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Análise profunda - 21 msgs vendedor / 7 msgs cliente"
+    },
+    {
+      "id": 8,
+      "conta": "DR4",
+      "cliente": "Cicera Zilene",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:47",
+      "ultima_msg": "10:47",
+      "total_msgs": 39,
+      "status": "ok",
+      "nota": 0.7,
+      "argumentos_usados": [
+        "B3",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X1",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 27 msgs vendedor / 12 msgs cliente"
+    },
+    {
+      "id": 9,
+      "conta": "DR4",
+      "cliente": "Marivaldo",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:37",
+      "ultima_msg": "10:37",
+      "total_msgs": 26,
+      "status": "ok",
+      "nota": 0.6,
+      "argumentos_usados": [
+        "C1",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X1",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 15 msgs vendedor / 11 msgs cliente"
+    },
+    {
+      "id": 10,
+      "conta": "DR4",
+      "cliente": "Jancy",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:15",
+      "ultima_msg": "10:15",
+      "total_msgs": 16,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 10 msgs vendedor / 6 msgs cliente"
+    },
+    {
+      "id": 11,
+      "conta": "DR4",
+      "cliente": "Eliana",
+      "vendedor": "Keane",
+      "hora_lista": "09:54",
+      "ultima_msg": "09:54",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 4 msgs vendedor / 3 msgs cliente"
+    },
+    {
+      "id": 12,
+      "conta": "DR4",
+      "cliente": "Cyda Carvalho",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "09:34",
+      "ultima_msg": "09:34",
+      "total_msgs": 28,
+      "status": "ok",
+      "nota": 1.8,
+      "argumentos_usados": [
+        "A3",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 18 msgs vendedor / 10 msgs cliente"
+    },
+    {
+      "id": 13,
+      "conta": "DR4",
+      "cliente": "Elias Neto",
+      "vendedor": "Keane",
+      "hora_lista": "09:24",
+      "ultima_msg": "09:24",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A3",
+        "B1",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 4 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 14,
+      "conta": "DR4",
+      "cliente": "Clebson Carlos Ribeiro",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:17",
+      "ultima_msg": "09:17",
+      "total_msgs": 39,
+      "status": "ok",
+      "nota": 2.3,
+      "argumentos_usados": [
+        "A3",
+        "B3",
+        "A1",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 25 msgs vendedor / 14 msgs cliente"
+    },
+    {
+      "id": 15,
+      "conta": "DR4",
+      "cliente": "Lindomar Costa",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:04",
+      "ultima_msg": "09:04",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 5 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 16,
+      "conta": "DR4",
+      "cliente": "irish",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "08:57",
+      "ultima_msg": "08:57",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 5 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 17,
+      "conta": "DR4",
+      "cliente": "Paulo César",
+      "vendedor": null,
+      "hora_lista": "08:22",
+      "ultima_msg": "08:22",
+      "total_msgs": 1,
+      "status": "critico",
+      "nota": 1.3,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise profunda - 0 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 18,
+      "conta": "DR4",
+      "cliente": ".",
+      "vendedor": "Kemily",
+      "hora_lista": "05:27",
+      "ultima_msg": "05:27",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 1.3,
+      "argumentos_usados": [
+        "A3",
+        "A1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Análise profunda - 3 msgs vendedor / 1 msgs cliente"
+    },
+    {
+      "id": 19,
+      "conta": "DR4",
+      "cliente": "erisvania",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "13:18",
+      "ultima_msg": "13:18",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Oi Caio, estou vendo ainda mais assim que eu resolver eu te aviso viu"
+    },
+    {
+      "id": 20,
+      "conta": "DR4",
+      "cliente": "558781463639",
+      "vendedor": null,
+      "hora_lista": "13:14",
+      "ultima_msg": "13:14",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Chegou um lead pra você, Matheus - +558788454528"
+    },
+    {
+      "id": 21,
+      "conta": "DR4",
+      "cliente": "Araci Oliveira",
+      "vendedor": "Kemily",
+      "hora_lista": "13:11",
+      "ultima_msg": "13:11",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Petrolina Pé"
+    },
+    {
+      "id": 22,
+      "conta": "DR4",
+      "cliente": "Gilberto",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "13:09",
+      "ultima_msg": "13:09",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Pode mi liga agora"
+    },
+    {
+      "id": 23,
+      "conta": "DR4",
+      "cliente": "Diácono Jonas",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:48",
+      "ultima_msg": "12:48",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />É bom, para ter conforto."
+    },
+    {
+      "id": 24,
+      "conta": "DR4",
+      "cliente": "Vania",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:47",
+      "ultima_msg": "12:47",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 25,
+      "conta": "DR4",
+      "cliente": "Robson",
+      "vendedor": "Luana",
+      "hora_lista": "12:47",
+      "ultima_msg": "12:47",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 26,
+      "conta": "DR4",
+      "cliente": "Cleriston",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:46",
+      "ultima_msg": "12:46",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 27,
+      "conta": "DR4",
+      "cliente": "Suyane",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "12:46",
+      "ultima_msg": "12:46",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Entendi, eu vou ver oque eu consigo fazer, e entro em conta"
+    },
+    {
+      "id": 28,
+      "conta": "DR4",
+      "cliente": "Leandro Marques",
+      "vendedor": "Keane",
+      "hora_lista": "12:43",
+      "ultima_msg": "12:43",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Me informa o valor médio da sua conta de energia atualmente que já preparo um orçamento para a sua n"
+    },
+    {
+      "id": 29,
+      "conta": "DR4",
+      "cliente": "Job Santana",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "12:42",
+      "ultima_msg": "12:42",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Caio Roberto | Gestor de energia:</strong><br />Boa tarde!"
+    },
+    {
+      "id": 30,
+      "conta": "DR4",
+      "cliente": "Julio",
+      "vendedor": "Keane",
+      "hora_lista": "12:27",
+      "ultima_msg": "12:27",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 31,
+      "conta": "DR4",
+      "cliente": "katryn",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "12:20",
+      "ultima_msg": "12:20",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Ta certo"
+    },
+    {
+      "id": 32,
+      "conta": "DR4",
+      "cliente": "Vivi",
+      "vendedor": "Keane",
+      "hora_lista": "12:06",
+      "ultima_msg": "12:06",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B4"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Olá, Vivi! Tudo bem? Estou com seu orçamento pronto e disponív"
+    },
+    {
+      "id": 33,
+      "conta": "DR4",
+      "cliente": "Batista",
+      "vendedor": "Keane",
+      "hora_lista": "12:01",
+      "ultima_msg": "12:01",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B1"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Olá, Batista. Tudo bem? Vi seu interesse em energia solar, ten"
+    },
+    {
+      "id": 34,
+      "conta": "DR4",
+      "cliente": "cird",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:59",
+      "ultima_msg": "11:59",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 35,
+      "conta": "DR4",
+      "cliente": ".",
+      "vendedor": "Keane",
+      "hora_lista": "11:54",
+      "ultima_msg": "11:54",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Tentando contato por ligação para falarmos sobre seu projeto s"
+    },
+    {
+      "id": 36,
+      "conta": "DR4",
+      "cliente": "ALBUQUERQUE🇧🇷",
+      "vendedor": "Keane",
+      "hora_lista": "11:49",
+      "ultima_msg": "11:49",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 37,
+      "conta": "DR4",
+      "cliente": "Lucileide Rodrigues 🌺🩵",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:48",
+      "ultima_msg": "11:48",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 38,
+      "conta": "DR4",
+      "cliente": "só Jesus é o caminho...",
+      "vendedor": "Keane",
+      "hora_lista": "11:31",
+      "ultima_msg": "11:31",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B4"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Por estar trabalhando 24 horas, Sr. David optou por chamada vi"
+    },
+    {
+      "id": 39,
+      "conta": "DR4",
+      "cliente": "vida,amor e fé 🫀",
+      "vendedor": "Keane",
+      "hora_lista": "11:13",
+      "ultima_msg": "11:13",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 40,
+      "conta": "DR4",
+      "cliente": "Alex Dias Gomes",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:10",
+      "ultima_msg": "11:10",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Só pra registrar: Cliente atendeu, porém estava em reunião "
+    },
+    {
+      "id": 41,
+      "conta": "DR4",
+      "cliente": "Regina Nunes",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:08",
+      "ultima_msg": "11:08",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 42,
+      "conta": "DR4",
+      "cliente": "Josanea Brandao",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:06",
+      "ultima_msg": "11:06",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 43,
+      "conta": "DR4",
+      "cliente": "Léo",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "11:01",
+      "ultima_msg": "11:01",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Posso sim"
+    },
+    {
+      "id": 44,
+      "conta": "DR4",
+      "cliente": "Ivanilda",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:58",
+      "ultima_msg": "10:58",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Só pra registrar: Cliente informou que não estava em casa n"
+    },
+    {
+      "id": 45,
+      "conta": "DR4",
+      "cliente": "Edson Cardoso",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:55",
+      "ultima_msg": "10:55",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 46,
+      "conta": "DR4",
+      "cliente": "Guiomar Dos Santos Santos",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:51",
+      "ultima_msg": "10:51",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 47,
+      "conta": "DR4",
+      "cliente": "Rogério",
+      "vendedor": "Keane",
+      "hora_lista": "10:47",
+      "ultima_msg": "10:47",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Estou a disposição!"
+    },
+    {
+      "id": 48,
+      "conta": "DR4",
+      "cliente": "Nelson Luna",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:46",
+      "ultima_msg": "10:46",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Bom dia"
+    },
+    {
+      "id": 49,
+      "conta": "DR4",
+      "cliente": "I 😃",
+      "vendedor": "Keane",
+      "hora_lista": "10:39",
+      "ultima_msg": "10:39",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Posso retornar as 14h?"
+    },
+    {
+      "id": 50,
+      "conta": "DR4",
+      "cliente": "Fran",
+      "vendedor": "Keane",
+      "hora_lista": "10:37",
+      "ultima_msg": "10:37",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Transcrevendo nossa conversa   por ligação:<br /><br />Sr. Fra"
+    },
+    {
+      "id": 51,
+      "conta": "DR4",
+      "cliente": "Maria",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:33",
+      "ultima_msg": "10:33",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 52,
+      "conta": "DR4",
+      "cliente": "JOSENILDO BARBOSA",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:23",
+      "ultima_msg": "10:23",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 53,
+      "conta": "DR4",
+      "cliente": "Horácio",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:18",
+      "ultima_msg": "10:18",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />👍"
+    },
+    {
+      "id": 54,
+      "conta": "DR4",
+      "cliente": "Bárbara Talisma",
+      "vendedor": "Kemily",
+      "hora_lista": "10:18",
+      "ultima_msg": "10:18",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Olá! Tenho interesse e queria mais informações, por favor."
+    },
+    {
+      "id": 55,
+      "conta": "DR4",
+      "cliente": "Marcos Vieira Marques",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:10",
+      "ultima_msg": "10:10",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Vou encaminhar o senhor para um vendedor."
+    },
+    {
+      "id": 56,
+      "conta": "DR4",
+      "cliente": "Danilo elétrica",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "10:09",
+      "ultima_msg": "10:09",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Disponha😁"
+    },
+    {
+      "id": 57,
+      "conta": "DR4",
+      "cliente": "Fretes e mudança",
+      "vendedor": "Keane",
+      "hora_lista": "10:07",
+      "ultima_msg": "10:07",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B1"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Olá, vi seu interesse em adquirir sua usina solar, tentei cont"
+    },
+    {
+      "id": 58,
+      "conta": "DR4",
+      "cliente": "wanderlice lucinaro",
+      "vendedor": "Keane",
+      "hora_lista": "10:04",
+      "ultima_msg": "10:04",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B4"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Transcrevendo nossa ligação:<br /><br />Foi conversado com Don"
+    },
+    {
+      "id": 59,
+      "conta": "DR4",
+      "cliente": "🙏🏻",
+      "vendedor": "Keane",
+      "hora_lista": "09:45",
+      "ultima_msg": "09:45",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Aguardando retorno da ligação!"
+    },
+    {
+      "id": 60,
+      "conta": "DR4",
+      "cliente": "Mércia",
+      "vendedor": "Kemily",
+      "hora_lista": "09:43",
+      "ultima_msg": "09:43",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Bom dia eu já tenho um ar condicionado em um quarto e quero colocar outro ar condicionado em mais um"
+    },
+    {
+      "id": 61,
+      "conta": "DR4",
+      "cliente": "Berger Aguiar",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:39",
+      "ultima_msg": "09:39",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Só pra registrar: Cliente atendeu e ficou agendado para o p"
+    },
+    {
+      "id": 62,
+      "conta": "DR4",
+      "cliente": "Marcos Macedo",
+      "vendedor": "Keane",
+      "hora_lista": "09:37",
+      "ultima_msg": "09:37",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keanny Brandão:</strong><br />Perfeito! Me passa teu endereço"
+    },
+    {
+      "id": 63,
+      "conta": "DR4",
+      "cliente": "Roberto Inácio",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:33",
+      "ultima_msg": "09:33",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B4"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Visita agendada para sexta-feira às 16h com o cliente Rober"
+    },
+    {
+      "id": 64,
+      "conta": "DR4",
+      "cliente": "Kezia Liye",
+      "vendedor": "Kemily",
+      "hora_lista": "09:31",
+      "ultima_msg": "09:31",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Me informa o valor médio da sua conta de energia atualmente que já preparo um orçamento para a sua n"
+    },
+    {
+      "id": 65,
+      "conta": "DR4",
+      "cliente": "Kemily Carvalho",
+      "vendedor": "Kemily",
+      "hora_lista": "09:30",
+      "ultima_msg": "09:30",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Chegou um lead pra você, Kezia - +557481129087"
+    },
+    {
+      "id": 66,
+      "conta": "DR4",
+      "cliente": "..t",
+      "vendedor": "Caio Roberto",
+      "hora_lista": "09:28",
+      "ultima_msg": "09:28",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Caio Roberto | Gestor de energia:</strong><br />Bom dia!!"
+    },
+    {
+      "id": 67,
+      "conta": "DR4",
+      "cliente": "Linde Neide",
+      "vendedor": "Keane",
+      "hora_lista": "09:21",
+      "ultima_msg": "09:21",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 68,
+      "conta": "DR4",
+      "cliente": "Corrinha",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:21",
+      "ultima_msg": "09:21",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 69,
+      "conta": "DR4",
+      "cliente": "Regimária Florêncio",
+      "vendedor": "Keane",
+      "hora_lista": "09:19",
+      "ultima_msg": "09:19",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B1"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keane:</strong><br />Vi seu interesse em energia solar, tentei contato por ligação, porém se"
+    },
+    {
+      "id": 70,
+      "conta": "DR4",
+      "cliente": "Alexandre Bahia",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:18",
+      "ultima_msg": "09:18",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Eu fico no seu aguardo."
+    },
+    {
+      "id": 71,
+      "conta": "DR4",
+      "cliente": "Joaquin Paulino",
+      "vendedor": "Keane",
+      "hora_lista": "09:15",
+      "ultima_msg": "09:15",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B1"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keane:</strong><br />Olá, Joaquim! Bom Dia, tudo bem?<br /><br />Vi seu interesse em energia"
+    },
+    {
+      "id": 72,
+      "conta": "DR4",
+      "cliente": "Socorro Rapadura",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:12",
+      "ultima_msg": "09:12",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 73,
+      "conta": "DR4",
+      "cliente": "Heitor Melo",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:11",
+      "ultima_msg": "09:11",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 74,
+      "conta": "DR4",
+      "cliente": "Jose luanderson Nunes gom",
+      "vendedor": "Keane",
+      "hora_lista": "09:09",
+      "ultima_msg": "09:09",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 6,
+      "argumentos_usados": [
+        "B4",
+        "C1"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keane:</strong><br />Aguardando o comprovante de energia e documento para simulação de finan"
+    },
+    {
+      "id": 75,
+      "conta": "DR4",
+      "cliente": "Anderson",
+      "vendedor": "Keane",
+      "hora_lista": "09:03",
+      "ultima_msg": "09:03",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "B4"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keane:</strong><br />Entendo, e posso te passar o orçamento sim, mas o senhor concorda que é"
+    },
+    {
+      "id": 76,
+      "conta": "DR4",
+      "cliente": "Luan De Souza",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:02",
+      "ultima_msg": "09:02",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />Só pra registrar: Cliente atendeu, informou que está na rua"
+    },
+    {
+      "id": 77,
+      "conta": "DR4",
+      "cliente": "franciscosantosclaro2025",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "09:00",
+      "ultima_msg": "09:00",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 78,
+      "conta": "DR4",
+      "cliente": "Eduardo Cabral",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "08:58",
+      "ultima_msg": "08:58",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: [audio]"
+    },
+    {
+      "id": 79,
+      "conta": "DR4",
+      "cliente": "Lúcia",
+      "vendedor": "Maria Luiza",
+      "hora_lista": "08:56",
+      "ultima_msg": "08:56",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Maria Luiza Ramos:</strong><br />A senhora pretende instalar ar condicionado ou chuveiro elé"
+    },
+    {
+      "id": 80,
+      "conta": "DR4",
+      "cliente": "Sirleide ❤️",
+      "vendedor": "Keane",
+      "hora_lista": "08:56",
+      "ultima_msg": "08:56",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "F3"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Keane:</strong><br />Me indique 5 amigos, e eu entrarei em contato. Cada indicação que fecha"
+    },
+    {
+      "id": 81,
+      "conta": "DR4",
+      "cliente": "Lays Souza✨",
+      "vendedor": "Kemily",
+      "hora_lista": "08:52",
+      "ultima_msg": "08:52",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Quero fazer as indicações pra ganhar os 200 reais"
+    },
+    {
+      "id": 82,
+      "conta": "DR4",
+      "cliente": "Lucas",
+      "vendedor": "Alan Oliveira",
+      "hora_lista": "08:49",
+      "ultima_msg": "08:49",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: <strong>Alan Oliveira - Gestor de energia:</strong><br />Bom dia Lucas, tudo certo?"
+    },
+    {
+      "id": 83,
+      "conta": "DR4",
+      "cliente": "Dinha",
+      "vendedor": "Guilherme",
+      "hora_lista": "08:15",
+      "ultima_msg": "08:15",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Quero economizar com energia solar"
+    },
+    {
+      "id": 84,
+      "conta": "DR4",
+      "cliente": "wilsonbezerra123a",
+      "vendedor": "Kemily",
+      "hora_lista": "07:42",
+      "ultima_msg": "07:42",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5.5,
+      "argumentos_usados": [
+        "A3"
+      ],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Me informa o valor médio da sua conta de energia atualmente que já preparo um orçamento para a sua n"
+    },
+    {
+      "id": 85,
+      "conta": "DR4",
+      "cliente": ".",
+      "vendedor": "Kemily",
+      "hora_lista": "06:46",
+      "ultima_msg": "06:46",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: 500$"
+    },
+    {
+      "id": 86,
+      "conta": "DR4",
+      "cliente": "Arlete",
+      "vendedor": "Kemily",
+      "hora_lista": "06:33",
+      "ultima_msg": "06:33",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Olá! Tenho interesse e queria mais informações, por favor."
+    },
+    {
+      "id": 87,
+      "conta": "DR4",
+      "cliente": "Romário Silva",
+      "vendedor": "Kemily",
+      "hora_lista": "01:00",
+      "ultima_msg": "01:00",
+      "total_msgs": 0,
+      "status": "sem_resposta",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Análise rasa - última msg: Eu tenho o Programa Notícias em Destaque, na Rádio Lagoa Grande FM 88.7 e o Blog Notícias em Destaqu"
+    }
+  ]
+}

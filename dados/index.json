@@ -1,6 +1,22 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-14",
+      "total_conversas": 87,
+      "sem_resposta": 16,
+      "criticas": 1,
+      "nota_media": 4.2,
+      "vendedores": [
+        "Keane",
+        "Caio Roberto",
+        "Kemily",
+        "Maria Luiza",
+        "Luana",
+        "Guilherme",
+        "Alan Oliveira"
+      ]
+    },
+    {
       "data": "2026-05-13",
       "total_conversas": 196,
       "sem_resposta": 2,
@@ -129,5 +145,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-13T20:51"
+  "ultima_atualizacao": "2026-05-14T13:55"
 }
