@@ -6,291 +6,123 @@
 <title>BI Domingo e Rodrigues</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-  background: #f1f5f9; 
-  color: #0f172a; 
-  padding: 24px; 
-  line-height: 1.5; 
-}
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f1f5f9; color: #0f172a; padding: 24px; line-height: 1.5; }
 .container { max-width: 1400px; margin: 0 auto; }
 
-header { 
-  background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%); 
-  color: white; 
-  padding: 28px 32px; 
-  border-radius: 14px; 
-  margin-bottom: 24px; 
-  box-shadow: 0 10px 30px rgba(124,58,237,0.2); 
-}
+header { background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%); color: white; padding: 28px 32px; border-radius: 14px; margin-bottom: 24px; box-shadow: 0 10px 30px rgba(124,58,237,0.2); }
 header h1 { font-size: 28px; margin-bottom: 8px; }
 header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 
-.date-selector {
-  display: flex; align-items: center; gap: 12px;
-  background: rgba(255,255,255,0.2);
-  padding: 12px 16px; border-radius: 10px; margin-top: 16px;
-}
+.date-selector { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.2); padding: 12px 16px; border-radius: 10px; margin-top: 16px; }
 .date-selector label { font-weight: 600; font-size: 14px; }
-.date-selector select {
-  flex: 1; max-width: 300px; padding: 10px 16px;
-  border: none; border-radius: 8px; font-size: 14px;
-  font-weight: 600; background: white; color: #1e40af; cursor: pointer;
-}
+.date-selector select { flex: 1; max-width: 300px; padding: 10px 16px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; background: white; color: #1e40af; cursor: pointer; }
 
-.metrics-grid { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 16px; margin-bottom: 24px; 
-}
-.metric-card { 
-  background: white; padding: 20px; border-radius: 12px; 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
-  border-left: 4px solid #6366f1; 
-}
+.metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.metric-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 4px solid #6366f1; }
 .metric-card.crit { border-left-color: #dc2626; }
 .metric-card.warn { border-left-color: #f59e0b; }
 .metric-card.ok { border-left-color: #10b981; }
 .metric-card.gold { border-left-color: #fbbf24; }
 .metric-card.purple { border-left-color: #8b5cf6; }
 .metric-card.blue { border-left-color: #3b82f6; }
+.metric-card.pink { border-left-color: #ec4899; }
+.metric-card.teal { border-left-color: #14b8a6; }
 .metric-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
 .metric-card .value { font-size: 32px; font-weight: 700; margin-top: 4px; }
 .metric-card .hint { font-size: 12px; color: #94a3b8; margin-top: 4px; }
 
-.account-badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-weight: 700;
-  margin-left: 6px;
-}
+.account-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; margin-left: 6px; }
 .account-badge.dr4 { background: #dbeafe; color: #1e40af; }
 .account-badge.dr2 { background: #fce7f3; color: #be185d; }
 
-.section { 
-  background: white; border-radius: 12px; padding: 24px; 
-  margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
-}
+.role-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 6px; }
+.role-badge.sdr { background: #fce7f3; color: #9f1239; }
+.role-badge.vendedor { background: #dbeafe; color: #1e3a8a; }
+
+.section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
 .section h2 { font-size: 20px; margin-bottom: 16px; color: #1e293b; }
 
-/* OPORTUNIDADES PRIORITÁRIAS */
-.priority-section {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  border-radius: 12px;
+.section-team {
+  background: linear-gradient(to right, white, #f8fafc);
+  border-left: 6px solid;
   padding: 24px;
+  border-radius: 12px;
   margin-bottom: 24px;
-  border: 2px solid #f59e0b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-.priority-section h2 {
-  color: #78350f;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.priority-section .intro {
-  color: #92400e;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-.priority-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-.priority-tab {
-  padding: 8px 14px;
-  background: white;
-  border: 1px solid #fbbf24;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 600;
-  color: #78350f;
-  transition: all 0.2s;
-}
-.priority-tab.active {
-  background: #f59e0b;
-  color: white;
-}
-.priority-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 14px;
-}
-.priority-card {
-  background: white;
-  border-radius: 10px;
-  padding: 16px;
-  border-left: 4px solid #f59e0b;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  display: none;
-}
+.section-team.sdrs { border-left-color: #ec4899; }
+.section-team.vendedores { border-left-color: #1e40af; }
+.section-team h2 { font-size: 22px; margin-bottom: 8px; }
+.section-team .desc { color: #64748b; font-size: 14px; margin-bottom: 16px; }
+
+/* Oportunidades Prioritárias */
+.priority-section { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 12px; padding: 24px; margin-bottom: 24px; border: 2px solid #f59e0b; }
+.priority-section h2 { color: #78350f; display: flex; align-items: center; gap: 10px; }
+.priority-section .intro { color: #92400e; font-size: 14px; margin-bottom: 16px; }
+.priority-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.priority-tab { padding: 8px 14px; background: white; border: 1px solid #fbbf24; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: #78350f; transition: all 0.2s; }
+.priority-tab.active { background: #f59e0b; color: white; }
+.priority-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 14px; }
+.priority-card { background: white; border-radius: 10px; padding: 16px; border-left: 4px solid #f59e0b; box-shadow: 0 2px 6px rgba(0,0,0,0.08); display: none; }
 .priority-card.show { display: block; }
 .priority-card.quente { border-left-color: #dc2626; }
 .priority-card.consumo { border-left-color: #8b5cf6; }
 .priority-card.followup { border-left-color: #f59e0b; }
 .priority-card.recuperacao { border-left-color: #6b7280; }
 .priority-card.indicacao { border-left-color: #10b981; }
-
-.priority-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-.priority-client {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1e293b;
-}
-.priority-cat {
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-weight: 600;
-  background: #fef3c7;
-  color: #92400e;
-}
+.priority-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.priority-client { font-size: 16px; font-weight: 700; color: #1e293b; }
+.priority-cat { font-size: 12px; padding: 4px 10px; border-radius: 12px; font-weight: 600; background: #fef3c7; color: #92400e; }
 .priority-cat.quente { background: #fee2e2; color: #991b1b; }
 .priority-cat.consumo { background: #f3e8ff; color: #6b21a8; }
 .priority-cat.followup { background: #fef3c7; color: #92400e; }
 .priority-cat.recuperacao { background: #f3f4f6; color: #374151; }
 .priority-cat.indicacao { background: #d1fae5; color: #065f46; }
-
-.priority-meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  font-size: 12px;
-  color: #64748b;
-}
+.priority-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; font-size: 12px; color: #64748b; }
 .priority-meta span { background: #f1f5f9; padding: 2px 8px; border-radius: 6px; }
 .priority-meta .urgent { background: #fee2e2; color: #991b1b; font-weight: 600; }
-
-.priority-motivo {
-  font-size: 13px;
-  color: #475569;
-  background: #f8fafc;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
+.priority-motivo { font-size: 13px; color: #475569; background: #f8fafc; padding: 10px; border-radius: 8px; margin-bottom: 10px; }
 .priority-motivo strong { color: #1e293b; }
-
-.priority-recomendacao {
-  background: #dbeafe;
-  border-left: 3px solid #1e40af;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 13px;
-  color: #1e3a8a;
-  margin-bottom: 10px;
-}
+.priority-recomendacao { background: #dbeafe; border-left: 3px solid #1e40af; padding: 10px; border-radius: 6px; font-size: 13px; color: #1e3a8a; margin-bottom: 10px; }
 .priority-recomendacao strong { display: block; margin-bottom: 4px; }
+.priority-args { display: flex; flex-wrap: wrap; gap: 6px; }
+.priority-arg { background: #ecfeff; border: 1px solid #06b6d4; color: #155e75; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
 
-.priority-args {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.priority-arg {
-  background: #ecfeff;
-  border: 1px solid #06b6d4;
-  color: #155e75;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-/* INSIGHTS */
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 16px;
-  margin-bottom: 24px;
-}
-.insight-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
+/* Insights */
+.insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.insight-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
 .insight-card.positive { border-left: 4px solid #10b981; }
 .insight-card.alert { border-left: 4px solid #f59e0b; }
 .insight-card.opportunity { border-left: 4px solid #3b82f6; }
 .insight-card h3 { font-size: 16px; margin-bottom: 12px; }
-.insight-item {
-  background: #f8fafc; padding: 12px; border-radius: 8px;
-  margin-bottom: 8px; font-size: 14px; line-height: 1.6;
-}
+.insight-item { background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 8px; font-size: 14px; line-height: 1.6; }
 .insight-item:last-child { margin-bottom: 0; }
-.insight-item .client-tag {
-  display: inline-block; background: #dbeafe; color: #1e40af;
-  padding: 2px 8px; border-radius: 6px; font-size: 12px;
-  font-weight: 600; margin-left: 6px;
-}
+.insight-item .client-tag { display: inline-block; background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-left: 6px; }
 
-/* VENDEDORES */
-.sellers-grid { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
-  gap: 16px; 
-}
-.seller-card { 
-  background: white; border-radius: 12px; padding: 20px; 
-  border-top: 4px solid var(--seller-color); 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
-}
-.seller-name { 
-  font-size: 18px; font-weight: 700; color: var(--seller-color); 
-  margin-bottom: 12px; display: flex; 
-  justify-content: space-between; align-items: center;
-}
-.seller-score {
-  background: var(--seller-color); color: white;
-  padding: 6px 14px; border-radius: 20px;
-  font-size: 14px; font-weight: 700;
-}
-.seller-metrics { 
-  display: grid; grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; margin-bottom: 16px; 
-}
-.metric { 
-  background: #f8fafc; padding: 12px; border-radius: 8px; text-align: center; 
-}
+/* Cards de pessoas (SDR/Vendedor) */
+.people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; }
+.person-card { background: white; border-radius: 12px; padding: 20px; border-top: 4px solid var(--person-color); box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.person-name { font-size: 18px; font-weight: 700; color: var(--person-color); margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+.person-score { background: var(--person-color); color: white; padding: 6px 14px; border-radius: 20px; font-size: 14px; font-weight: 700; }
+.person-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.metric { background: #f8fafc; padding: 12px; border-radius: 8px; text-align: center; }
 .metric.calls { background: #f3e8ff; border: 1px solid #ddd6fe; }
 .metric.calls .m-val { color: #6d28d9; }
+.metric.visits { background: #ecfdf5; border: 1px solid #a7f3d0; }
+.metric.visits .m-val { color: #065f46; }
 .m-val { font-size: 20px; font-weight: 700; color: #0f172a; }
 .m-lbl { font-size: 11px; color: #64748b; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-.expand-btn {
-  width: 100%; background: var(--seller-color); color: white;
-  border: none; padding: 12px; border-radius: 8px;
-  font-size: 14px; font-weight: 600; cursor: pointer;
-  margin-top: 8px; transition: opacity 0.2s;
-}
+.expand-btn { width: 100%; background: var(--person-color); color: white; border: none; padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; transition: opacity 0.2s; }
 .expand-btn:hover { opacity: 0.9; }
 
-.seller-details { display: none; margin-top: 16px; padding-top: 16px; border-top: 2px solid #e2e8f0; }
-.seller-details.open { display: block; }
+.person-details { display: none; margin-top: 16px; padding-top: 16px; border-top: 2px solid #e2e8f0; }
+.person-details.open { display: block; }
 
 .detail-section { margin-bottom: 20px; }
-.detail-section h4 {
-  font-size: 13px; font-weight: 700; color: #475569;
-  margin-bottom: 10px; text-transform: uppercase;
-  letter-spacing: 0.5px; padding-bottom: 6px;
-  border-bottom: 1px solid #e2e8f0;
-}
+.detail-section h4 { font-size: 13px; font-weight: 700; color: #475569; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; padding-bottom: 6px; border-bottom: 1px solid #e2e8f0; }
 
-.strength-item, .weakness-item {
-  background: #f8fafc; padding: 12px; border-radius: 8px;
-  margin-bottom: 8px; font-size: 13px; line-height: 1.5;
-}
+.strength-item, .weakness-item { background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 8px; font-size: 13px; line-height: 1.5; }
 .strength-item { border-left: 3px solid #10b981; }
 .weakness-item { border-left: 3px solid #f59e0b; }
 .strength-item .cat, .weakness-item .cat { font-weight: 700; color: #1e293b; margin-bottom: 4px; }
@@ -299,23 +131,21 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 .strength-item li, .weakness-item li { padding-left: 14px; position: relative; margin-bottom: 2px; }
 .strength-item li:before { content: "✓"; position: absolute; left: 0; color: #10b981; }
 .weakness-item li:before { content: "✗"; position: absolute; left: 0; color: #f59e0b; }
-.weakness-item .action {
-  background: #dbeafe; color: #1e40af; padding: 6px 10px;
-  border-radius: 6px; margin-top: 8px; font-size: 12px; font-weight: 500;
-}
+.weakness-item .action { background: #dbeafe; color: #1e40af; padding: 6px 10px; border-radius: 6px; margin-top: 8px; font-size: 12px; font-weight: 500; }
 
-.args-not-used {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px;
-}
-.arg-card {
-  background: #fef2f2; border: 1px solid #fecaca;
-  padding: 10px; border-radius: 8px; font-size: 12px;
-}
-.arg-card .arg-id {
-  display: inline-block; background: #dc2626; color: white;
-  padding: 2px 6px; border-radius: 4px; font-weight: 700;
-  font-size: 11px; margin-bottom: 4px;
-}
+/* SDR específico - etapas */
+.sdr-stages { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+.sdr-stage { background: #f8fafc; padding: 10px; border-radius: 8px; text-align: center; border: 2px solid #e2e8f0; }
+.sdr-stage.high { background: #d1fae5; border-color: #10b981; }
+.sdr-stage.med { background: #fef3c7; border-color: #f59e0b; }
+.sdr-stage.low { background: #fee2e2; border-color: #dc2626; }
+.sdr-stage .stage-name { font-size: 11px; color: #64748b; font-weight: 600; margin-bottom: 4px; }
+.sdr-stage .stage-val { font-size: 18px; font-weight: 700; }
+.sdr-stage .stage-pct { font-size: 10px; color: #64748b; }
+
+.args-not-used { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.arg-card { background: #fef2f2; border: 1px solid #fecaca; padding: 10px; border-radius: 8px; font-size: 12px; }
+.arg-card .arg-id { display: inline-block; background: #dc2626; color: white; padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-bottom: 4px; }
 .arg-card .arg-name { font-weight: 600; color: #7f1d1d; margin-bottom: 4px; }
 .arg-card .arg-info { color: #991b1b; font-size: 11px; }
 .arg-card.crit { background: #fef2f2; border-color: #f87171; }
@@ -323,82 +153,48 @@ header .sub { opacity: 0.9; font-size: 14px; margin-bottom: 16px; }
 .arg-card.media { background: #fefce8; border-color: #fde047; }
 
 .error-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.error-tag {
-  background: #fef2f2; color: #b91c1c; padding: 6px 12px;
-  border-radius: 6px; font-size: 12px; font-weight: 600;
-  border: 1px solid #fecaca;
-}
-.error-tag .count {
-  background: #b91c1c; color: white; padding: 1px 6px;
-  border-radius: 10px; margin-left: 6px; font-size: 11px;
-}
+.error-tag { background: #fef2f2; color: #b91c1c; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; border: 1px solid #fecaca; }
+.error-tag .count { background: #b91c1c; color: white; padding: 1px 6px; border-radius: 10px; margin-left: 6px; font-size: 11px; }
 
+/* Ranking */
 .ranking-table { width: 100%; border-collapse: separate; border-spacing: 0; }
-.ranking-table th {
-  background: #f8fafc; padding: 12px; text-align: left;
-  font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0;
-  font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;
-}
+.ranking-table th { background: #f8fafc; padding: 12px; text-align: left; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
 .ranking-table td { padding: 14px 12px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
 .ranking-table tr:hover td { background: #f8fafc; }
-.rank-badge {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px; border-radius: 50%;
-  font-weight: 700; font-size: 14px;
-}
+.rank-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; }
 .rank-1 { background: #fbbf24; color: #78350f; }
 .rank-2 { background: #d1d5db; color: #374151; }
 .rank-3 { background: #f59e0b; color: #78350f; }
 .rank-other { background: #e5e7eb; color: #6b7280; }
-
-.progress {
-  background: #e5e7eb; height: 8px; border-radius: 4px;
-  overflow: hidden; width: 100%; display: inline-block;
-  vertical-align: middle; max-width: 150px;
-}
+.progress { background: #e5e7eb; height: 8px; border-radius: 4px; overflow: hidden; width: 100%; display: inline-block; vertical-align: middle; max-width: 150px; }
 .progress-bar { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #10b981, #059669); }
 .progress-bar.medium { background: linear-gradient(90deg, #f59e0b, #d97706); }
 .progress-bar.low { background: linear-gradient(90deg, #dc2626, #b91c1c); }
 
 .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-.tab { 
-  padding: 10px 18px; border-radius: 8px; background: #f1f5f9; 
-  border: none; cursor: pointer; font-weight: 600; color: #64748b; 
-  font-size: 14px; transition: all 0.2s;
-}
+.tab { padding: 10px 18px; border-radius: 8px; background: #f1f5f9; border: none; cursor: pointer; font-weight: 600; color: #64748b; font-size: 14px; transition: all 0.2s; }
 .tab.active { background: #1e40af; color: white; }
 .tab:hover:not(.active) { background: #e2e8f0; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
-th { 
-  background: #f8fafc; padding: 10px; text-align: left;
-  font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; 
-}
+th { background: #f8fafc; padding: 10px; text-align: left; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; }
 td { padding: 10px; border-bottom: 1px solid #f1f5f9; }
 tr:hover td { background: #f8fafc; }
-
 .badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; display: inline-block; }
 .badge.crit { background: #fee2e2; color: #b91c1c; }
 .badge.warn { background: #fef3c7; color: #b45309; }
 .badge.ok { background: #d1fae5; color: #065f46; }
 
-.note-pill {
-  display: inline-block; padding: 2px 8px; border-radius: 10px;
-  font-size: 12px; font-weight: 700;
-}
+.note-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 700; }
 .note-pill.high { background: #d1fae5; color: #065f46; }
 .note-pill.med { background: #fef3c7; color: #b45309; }
 .note-pill.low { background: #fee2e2; color: #b91c1c; }
 
 .footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 16px; }
 .loading { text-align: center; padding: 48px; color: #64748b; }
-.spinner {
-  display: inline-block; width: 40px; height: 40px;
-  border: 4px solid #f1f5f9; border-top-color: #667eea;
-  border-radius: 50%; animation: spin 1s linear infinite;
-}
+.spinner { display: inline-block; width: 40px; height: 40px; border: 4px solid #f1f5f9; border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 </style>
 </head>
@@ -406,7 +202,7 @@ tr:hover td { background: #f8fafc; }
 <div class="container">
   <header>
     <h1>📊 BI Atendimento - Domingo e Rodrigues</h1>
-    <div class="sub">Análise consolidada DR4 + DR2 com oportunidades prioritárias</div>
+    <div class="sub">Análise SDRs (qualificação) + Vendedores (fechamento) | DR4 + DR2</div>
     <div class="date-selector">
       <label>📅 Data:</label>
       <select id="date-select"><option value="">Carregando...</option></select>
@@ -500,11 +296,108 @@ async function carregarDados(dataISO) {
   }
 }
 
+function renderSDRCard(s, idx) {
+  // Calcula taxas de execução de cada etapa
+  const totalConv = s.total_conversas || 1;
+  const etapas = s.qualidade?.etapas_cumpridas || {};
+  const pct = (val) => Math.round((val / totalConv) * 100);
+  const stageClass = (p) => p >= 70 ? 'high' : p >= 40 ? 'med' : 'low';
+  
+  return `
+    <div class="person-card" style="--person-color:${s.cor}">
+      <div class="person-name">${s.nome} <span class="role-badge sdr">SDR</span><span class="person-score">${s.qualidade?.nota_media?.toFixed(1) || '—'}/10</span></div>
+      <div class="person-metrics">
+        <div class="metric"><div class="m-val">${s.total_conversas || 0}</div><div class="m-lbl">Conversas</div></div>
+        <div class="metric calls"><div class="m-val">${s.ligacoes_dia || 0}</div><div class="m-lbl">📞 Ligações</div></div>
+        <div class="metric visits"><div class="m-val">${s.visitas_agendadas || 0}</div><div class="m-lbl">📅 Visitas</div></div>
+        <div class="metric"><div class="m-val">${s.taxa_conversao || 0}%</div><div class="m-lbl">Conversão</div></div>
+        <div class="metric"><div class="m-val">${formatarTempo(s.mediana_resposta_min)}</div><div class="m-lbl">Mediana</div></div>
+        <div class="metric"><div class="m-val">${s.qualidade?.aderencia_script || 0}%</div><div class="m-lbl">Aderência</div></div>
+      </div>
+      
+      <div style="font-size:13px;font-weight:700;color:#475569;margin-bottom:8px;text-transform:uppercase;">📋 Etapas do Script SDR</div>
+      <div class="sdr-stages">
+        <div class="sdr-stage ${stageClass(pct(etapas['SDR-1_abertura'] || 0))}">
+          <div class="stage-name">SDR-1 Abertura</div>
+          <div class="stage-val">${etapas['SDR-1_abertura'] || 0}</div>
+          <div class="stage-pct">${pct(etapas['SDR-1_abertura'] || 0)}%</div>
+        </div>
+        <div class="sdr-stage ${stageClass(pct(etapas['SDR-2_qualificacao'] || 0))}">
+          <div class="stage-name">SDR-2 Qualif.</div>
+          <div class="stage-val">${etapas['SDR-2_qualificacao'] || 0}</div>
+          <div class="stage-pct">${pct(etapas['SDR-2_qualificacao'] || 0)}%</div>
+        </div>
+        <div class="sdr-stage ${stageClass(pct(etapas['SDR-3_quebra_objecao'] || 0))}">
+          <div class="stage-name">SDR-3 Objeção</div>
+          <div class="stage-val">${etapas['SDR-3_quebra_objecao'] || 0}</div>
+          <div class="stage-pct">${pct(etapas['SDR-3_quebra_objecao'] || 0)}%</div>
+        </div>
+        <div class="sdr-stage ${stageClass(pct(etapas['SDR-4_agendamento'] || 0))}">
+          <div class="stage-name">SDR-4 Agendar</div>
+          <div class="stage-val">${etapas['SDR-4_agendamento'] || 0}</div>
+          <div class="stage-pct">${pct(etapas['SDR-4_agendamento'] || 0)}%</div>
+        </div>
+      </div>
+      
+      ${s.qualidade ? `
+        <button class="expand-btn" onclick="toggleDetails('sdr-${idx}')">Ver Análise Detalhada ▼</button>
+        <div class="person-details" id="details-sdr-${idx}">
+          ${renderQualidadeBlocks(s.qualidade, true)}
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function renderVendedorCard(v, idx) {
+  return `
+    <div class="person-card" style="--person-color:${v.cor}">
+      <div class="person-name">${v.nome} <span class="role-badge vendedor">VENDEDOR</span><span class="person-score">${v.qualidade?.nota_media?.toFixed(1) || '—'}/10</span></div>
+      <div class="person-metrics">
+        <div class="metric"><div class="m-val">${v.total_conversas || 0}</div><div class="m-lbl">Conversas</div></div>
+        <div class="metric calls"><div class="m-val">${v.ligacoes_dia || 0}</div><div class="m-lbl">📞 Ligações</div></div>
+        <div class="metric visits"><div class="m-val">${v.visitas_realizadas || 0}</div><div class="m-lbl">🏠 Visitas</div></div>
+        <div class="metric"><div class="m-val">${v.propostas_enviadas || 0}</div><div class="m-lbl">📄 Propostas</div></div>
+        <div class="metric"><div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div><div class="m-lbl">Mediana</div></div>
+        <div class="metric"><div class="m-val">${v.qualidade?.aderencia_script || 0}%</div><div class="m-lbl">Aderência</div></div>
+      </div>
+      ${v.qualidade ? `
+        <button class="expand-btn" onclick="toggleDetails('vend-${idx}')">Ver Análise Detalhada ▼</button>
+        <div class="person-details" id="details-vend-${idx}">
+          ${renderQualidadeBlocks(v.qualidade, false)}
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function renderQualidadeBlocks(qualidade, isSDR) {
+  let html = '';
+  
+  if ((qualidade.pontos_fortes || []).length > 0) {
+    html += `<div class="detail-section"><h4>💪 Pontos Fortes</h4>${qualidade.pontos_fortes.map(p => `<div class="strength-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.exemplos && p.exemplos.length > 0 ? `<ul>${p.exemplos.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}</div>`).join('')}</div>`;
+  }
+  
+  if ((qualidade.pontos_fracos || []).length > 0) {
+    html += `<div class="detail-section"><h4>⚡ Pontos de Melhoria</h4>${qualidade.pontos_fracos.map(p => `<div class="weakness-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.impacto ? `<div style="font-size:12px;color:#64748b;margin-top:4px;">Impacto: ${p.impacto}</div>` : ''}${p.exemplos_clientes && p.exemplos_clientes.length > 0 ? `<ul>${p.exemplos_clientes.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}${p.acao_corretiva ? `<div class="action">→ ${p.acao_corretiva}</div>` : ''}</div>`).join('')}</div>`;
+  }
+  
+  if (!isSDR && (qualidade.argumentos_nao_usados || []).length > 0) {
+    html += `<div class="detail-section"><h4>❌ Argumentos NÃO Usados</h4><div class="args-not-used">${qualidade.argumentos_nao_usados.map(arg => {const imp = (arg.importancia||'media').toLowerCase();const cls = imp.includes('critica')||imp.includes('crítica')?'crit':imp.includes('alta')?'alta':'media';return `<div class="arg-card ${cls}"><span class="arg-id">${arg.id}</span><div class="arg-name">${arg.nome}</div><div class="arg-info">${arg.categoria||''}<br><strong>${arg.importancia||''}</strong>${arg.vezes_perdidas ? ` • ${arg.vezes_perdidas}x` : ''}</div></div>`;}).join('')}</div></div>`;
+  }
+  
+  if ((qualidade.erros_cometidos || []).length > 0) {
+    html += `<div class="detail-section"><h4>🚨 Erros Cometidos</h4><div class="error-list">${qualidade.erros_cometidos.map(e => `<div class="error-tag">${e.codigo}: ${e.descricao}${e.ocorrencias ? `<span class="count">${e.ocorrencias}x</span>` : ''}</div>`).join('')}</div></div>`;
+  }
+  
+  return html;
+}
+
 function renderizarDados(dados) {
   const content = document.getElementById('content');
   const m = dados.metricas || {};
   
-  // 1. MÉTRICAS
+  // 1. MÉTRICAS GERAIS
   const metricas = `
     <div class="metrics-grid">
       <div class="metric-card blue">
@@ -512,41 +405,40 @@ function renderizarDados(dados) {
         <div class="value">${m.total_conversas || 0}</div>
         <div class="hint">DR4: ${m.total_conversas_dr4 || 0} | DR2: ${m.total_conversas_dr2 || 0}</div>
       </div>
+      <div class="metric-card pink">
+        <div class="label">📋 Nota SDRs</div>
+        <div class="value">${(m.nota_media_sdr || 0).toFixed(1)}</div>
+        <div class="hint">média de qualificação</div>
+      </div>
+      <div class="metric-card gold">
+        <div class="label">💼 Nota Vendedores</div>
+        <div class="value">${(m.nota_media_vendedor || 0).toFixed(1)}</div>
+        <div class="hint">média de fechamento</div>
+      </div>
       <div class="metric-card purple">
         <div class="label">📞 Total Ligações</div>
         <div class="value">${m.total_ligacoes || 0}</div>
-        <div class="hint">ligações realizadas hoje</div>
+        <div class="hint">realizadas hoje</div>
       </div>
       <div class="metric-card ${(m.sem_resposta || 0) > 0 ? 'warn' : ''}">
         <div class="label">Sem Resposta</div>
         <div class="value">${m.sem_resposta || 0}</div>
-        <div class="hint">última msg foi do cliente</div>
+        <div class="hint">última msg do cliente</div>
       </div>
       <div class="metric-card ${(m.criticas || 0) > 0 ? 'crit' : ''}">
         <div class="label">Críticas</div>
         <div class="value">${m.criticas || 0}</div>
         <div class="hint">sem resposta NUNCA</div>
       </div>
-      <div class="metric-card gold">
-        <div class="label">Nota Média Geral</div>
-        <div class="value">${(m.nota_media_geral || 0).toFixed(1)}</div>
-        <div class="hint">de 10 pontos</div>
-      </div>
-      <div class="metric-card ok">
-        <div class="label">Aderência Script</div>
-        <div class="value">${m.aderencia_geral || 0}%</div>
-        <div class="hint">média geral</div>
-      </div>
     </div>
   `;
   
-  // 2. OPORTUNIDADES PRIORITÁRIAS (NOVA SEÇÃO)
+  // 2. OPORTUNIDADES
   const ops = dados.oportunidades_prioritarias || [];
   const oportunidades = ops.length > 0 ? `
     <div class="priority-section">
       <h2>🎯 Oportunidades Prioritárias <span style="font-size:14px;background:#f59e0b;color:white;padding:4px 10px;border-radius:12px;">${ops.length}</span></h2>
-      <div class="intro">Clientes que merecem atenção especial — alta probabilidade de conversão, ticket elevado ou risco de perder a venda.</div>
-      
+      <div class="intro">Clientes que merecem atenção especial.</div>
       <div class="priority-tabs">
         <button class="priority-tab active" data-priority="all">Todas (${ops.length})</button>
         <button class="priority-tab" data-priority="quente">🔥 Quentes (${ops.filter(o => (o.categoria||'').includes('QUENTE')).length})</button>
@@ -555,33 +447,27 @@ function renderizarDados(dados) {
         <button class="priority-tab" data-priority="recuperacao">🚨 Recuperação (${ops.filter(o => (o.categoria||'').includes('RECUPERA')).length})</button>
         <button class="priority-tab" data-priority="indicacao">⭐ Indicação (${ops.filter(o => (o.categoria||'').includes('INDICA')).length})</button>
       </div>
-      
       <div class="priority-grid">
-        ${ops.map((o, idx) => {
-          const catClass = getCategoriaClass(o.categoria);
+        ${ops.map(o => {
+          const cls = getCategoriaClass(o.categoria);
+          const papelClass = (o.papel || '').toUpperCase() === 'SDR' ? 'sdr' : 'vendedor';
           return `
-            <div class="priority-card show ${catClass}" data-cat="${catClass}">
+            <div class="priority-card show ${cls}" data-cat="${cls}">
               <div class="priority-header">
                 <div>
                   <div class="priority-client">${o.cliente || '—'}</div>
-                  <div style="font-size:12px;color:#64748b;margin-top:2px;">Vendedor: <strong>${o.vendedor || 'não atribuído'}</strong> ${o.conta ? `<span class="account-badge ${o.conta.toLowerCase()}">${o.conta}</span>` : ''}</div>
+                  <div style="font-size:12px;color:#64748b;margin-top:2px;">
+                    ${o.pessoa ? `<strong>${o.pessoa}</strong>` : 'não atribuído'}
+                    ${o.papel ? `<span class="role-badge ${papelClass}">${o.papel}</span>` : ''}
+                    ${o.conta ? `<span class="account-badge ${o.conta.toLowerCase()}">${o.conta}</span>` : ''}
+                  </div>
                 </div>
-                <span class="priority-cat ${catClass}">${o.categoria || '—'}</span>
+                <span class="priority-cat ${cls}">${o.categoria || '—'}</span>
               </div>
-              <div class="priority-meta">
-                ${o.urgencia ? `<span class="${o.urgencia === 'HOJE' ? 'urgent' : ''}">⏰ ${o.urgencia}</span>` : ''}
-              </div>
+              <div class="priority-meta">${o.urgencia ? `<span class="${o.urgencia === 'HOJE' ? 'urgent' : ''}">⏰ ${o.urgencia}</span>` : ''}</div>
               <div class="priority-motivo"><strong>Por que é prioridade:</strong> ${o.motivo || ''}</div>
-              <div class="priority-recomendacao">
-                <strong>📋 Recomendação:</strong>
-                ${o.recomendacao || ''}
-              </div>
-              ${(o.argumentos_recomendados || []).length > 0 ? `
-                <div style="font-size:12px;color:#64748b;margin-bottom:6px;">Argumentos recomendados:</div>
-                <div class="priority-args">
-                  ${o.argumentos_recomendados.map(a => `<span class="priority-arg">${a}</span>`).join('')}
-                </div>
-              ` : ''}
+              <div class="priority-recomendacao"><strong>📋 Recomendação:</strong>${o.recomendacao || ''}</div>
+              ${(o.argumentos_recomendados || []).length > 0 ? `<div style="font-size:12px;color:#64748b;margin-bottom:6px;">Argumentos recomendados:</div><div class="priority-args">${o.argumentos_recomendados.map(a => `<span class="priority-arg">${a}</span>`).join('')}</div>` : ''}
             </div>
           `;
         }).join('')}
@@ -594,49 +480,58 @@ function renderizarDados(dados) {
     <div class="insights-grid">
       <div class="insight-card positive">
         <h3>✨ Destaques Positivos</h3>
-        ${(dados.insights.destaques_positivos || []).map(d => `
-          <div class="insight-item">
-            <strong>${d.vendedor || '—'}</strong>${d.cliente ? `<span class="client-tag">👤 ${d.cliente}</span>` : ''}<br>
-            ${d.acao || ''}<br>
-            ${d.resultado ? `<em style="color:#059669;">✓ ${d.resultado}</em>` : ''}
-          </div>
-        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum destaque</div>'}
+        ${(dados.insights.destaques_positivos || []).map(d => {
+          const papelClass = (d.papel || '').toUpperCase() === 'SDR' ? 'sdr' : 'vendedor';
+          return `<div class="insight-item"><strong>${d.pessoa || d.vendedor || '—'}</strong>${d.papel ? `<span class="role-badge ${papelClass}">${d.papel}</span>` : ''}${d.cliente ? `<span class="client-tag">👤 ${d.cliente}</span>` : ''}<br>${d.acao || ''}<br>${d.resultado ? `<em style="color:#059669;">✓ ${d.resultado}</em>` : ''}</div>`;
+        }).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum destaque</div>'}
       </div>
       <div class="insight-card alert">
         <h3>⚠️ Alertas Prioritários</h3>
-        ${(dados.insights.alertas || []).map(a => `
-          <div class="insight-item">
-            <strong>${a.vendedor || '—'}</strong>${a.cliente ? `<span class="client-tag">👤 ${a.cliente}</span>` : ''}<br>
-            <span style="color:#d97706;">${a.problema || ''}</span><br>
-            ${a.impacto ? `Impacto: ${a.impacto}<br>` : ''}
-            ${a.acao_corretiva ? `<em style="color:#0369a1;">→ ${a.acao_corretiva}</em>` : ''}
-          </div>
-        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum alerta</div>'}
+        ${(dados.insights.alertas || []).map(a => {
+          const papelClass = (a.papel || '').toUpperCase() === 'SDR' ? 'sdr' : 'vendedor';
+          return `<div class="insight-item"><strong>${a.pessoa || a.vendedor || '—'}</strong>${a.papel ? `<span class="role-badge ${papelClass}">${a.papel}</span>` : ''}${a.cliente ? `<span class="client-tag">👤 ${a.cliente}</span>` : ''}<br><span style="color:#d97706;">${a.problema || ''}</span><br>${a.impacto ? `Impacto: ${a.impacto}<br>` : ''}${a.acao_corretiva ? `<em style="color:#0369a1;">→ ${a.acao_corretiva}</em>` : ''}</div>`;
+        }).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhum alerta</div>'}
       </div>
       <div class="insight-card opportunity">
         <h3>💡 Oportunidades de Melhoria</h3>
-        ${(dados.insights.oportunidades || []).map(o => `
-          <div class="insight-item">
-            <strong>${o.tipo || '—'}</strong>${o.cliente ? `<span class="client-tag">👤 ${o.cliente}</span>` : ''}<br>
-            ${o.descricao || ''}<br>
-            ${o.acao_sugerida ? `<em style="color:#0369a1;">→ ${o.acao_sugerida}</em>` : ''}
-          </div>
-        `).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhuma oportunidade</div>'}
+        ${(dados.insights.oportunidades || []).map(o => `<div class="insight-item"><strong>${o.tipo || '—'}</strong>${o.cliente ? `<span class="client-tag">👤 ${o.cliente}</span>` : ''}<br>${o.descricao || ''}<br>${o.acao_sugerida ? `<em style="color:#0369a1;">→ ${o.acao_sugerida}</em>` : ''}</div>`).join('') || '<div class="insight-item" style="color:#94a3b8">Nenhuma oportunidade</div>'}
       </div>
     </div>
   ` : '';
   
-  // 4. RANKING
-  const ranking = dados.ranking_qualidade && dados.ranking_qualidade.length > 0 ? `
+  // 4. RANKING SDRs
+  const rankingSDR = (dados.ranking_sdrs || []).length > 0 ? `
     <div class="section">
-      <h2>🏆 Ranking de Aderência ao Script</h2>
+      <h2>🏆 Ranking SDRs (Qualificação)</h2>
+      <table class="ranking-table">
+        <thead><tr><th style="width:60px;">Posição</th><th>SDR</th><th style="text-align:center;">Nota</th><th>Aderência</th><th style="text-align:center;">Visitas Agendadas</th><th style="text-align:center;">Badge</th></tr></thead>
+        <tbody>
+          ${dados.ranking_sdrs.map((r, idx) => `
+            <tr>
+              <td><span class="rank-badge rank-${idx + 1 <= 3 ? idx + 1 : 'other'}">${r.posicao}º</span></td>
+              <td><strong>${r.nome}</strong></td>
+              <td style="text-align:center;"><span class="note-pill ${getNoteClass(r.nota_media)}">${r.nota_media.toFixed(1)}/10</span></td>
+              <td><div class="progress"><div class="progress-bar ${getProgressClass(r.aderencia)}" style="width:${r.aderencia}%"></div></div><span style="margin-left:8px;font-weight:600;">${r.aderencia}%</span></td>
+              <td style="text-align:center;font-weight:700;color:#10b981;">${r.visitas_agendadas || 0}</td>
+              <td style="text-align:center;font-size:18px;">${r.badge}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  ` : '';
+  
+  // 5. RANKING Vendedores
+  const rankingVend = (dados.ranking_vendedores || []).length > 0 ? `
+    <div class="section">
+      <h2>🏆 Ranking Vendedores (Fechamento)</h2>
       <table class="ranking-table">
         <thead><tr><th style="width:60px;">Posição</th><th>Vendedor</th><th style="text-align:center;">Nota</th><th>Aderência</th><th style="text-align:center;">Badge</th></tr></thead>
         <tbody>
-          ${dados.ranking_qualidade.map((r, idx) => `
+          ${dados.ranking_vendedores.map((r, idx) => `
             <tr>
               <td><span class="rank-badge rank-${idx + 1 <= 3 ? idx + 1 : 'other'}">${r.posicao}º</span></td>
-              <td><strong>${r.vendedor}</strong></td>
+              <td><strong>${r.nome}</strong></td>
               <td style="text-align:center;"><span class="note-pill ${getNoteClass(r.nota_media)}">${r.nota_media.toFixed(1)}/10</span></td>
               <td><div class="progress"><div class="progress-bar ${getProgressClass(r.aderencia)}" style="width:${r.aderencia}%"></div></div><span style="margin-left:8px;font-weight:600;">${r.aderencia}%</span></td>
               <td style="text-align:center;font-size:18px;">${r.badge}</td>
@@ -647,43 +542,34 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 5. VENDEDORES
-  const vendedores = `
-    <div class="section">
-      <h2>👥 Análise Detalhada por Vendedor</h2>
-      <p style="color:#64748b;font-size:14px;margin-bottom:16px;">Clique em "Ver Análise Detalhada" para expandir.</p>
-      <div class="sellers-grid">
-        ${(dados.vendedores || []).map((v, idx) => `
-          <div class="seller-card" style="--seller-color:${v.cor}">
-            <div class="seller-name">${v.nome}<span class="seller-score">${v.qualidade?.nota_media?.toFixed(1) || '—'}/10</span></div>
-            <div class="seller-metrics">
-              <div class="metric"><div class="m-val">${v.total_conversas || 0}</div><div class="m-lbl">Conversas</div></div>
-              <div class="metric calls"><div class="m-val">${v.ligacoes_dia || 0}</div><div class="m-lbl">📞 Ligações</div></div>
-              <div class="metric"><div class="m-val">${v.sem_resposta || 0}</div><div class="m-lbl">Sem Resposta</div></div>
-              <div class="metric"><div class="m-val">${formatarTempo(v.mediana_resposta_min)}</div><div class="m-lbl">Mediana</div></div>
-              <div class="metric"><div class="m-val">${formatarTempo(v.media_resposta_min)}</div><div class="m-lbl">Média</div></div>
-              <div class="metric"><div class="m-val">${v.qualidade?.aderencia_script || 0}%</div><div class="m-lbl">Aderência</div></div>
-            </div>
-            ${v.qualidade ? `
-              <button class="expand-btn" onclick="toggleDetails(${idx})">Ver Análise Detalhada ▼</button>
-              <div class="seller-details" id="details-${idx}">
-                ${(v.qualidade.pontos_fortes || []).length > 0 ? `<div class="detail-section"><h4>💪 Pontos Fortes</h4>${v.qualidade.pontos_fortes.map(p => `<div class="strength-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.exemplos && p.exemplos.length > 0 ? `<ul>${p.exemplos.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}</div>`).join('')}</div>` : ''}
-                ${(v.qualidade.pontos_fracos || []).length > 0 ? `<div class="detail-section"><h4>⚡ Pontos de Melhoria</h4>${v.qualidade.pontos_fracos.map(p => `<div class="weakness-item"><div class="cat">${p.categoria || ''}</div><div class="desc">${p.descricao || ''}</div>${p.impacto ? `<div style="font-size:12px;color:#64748b;margin-top:4px;">Impacto: ${p.impacto}</div>` : ''}${p.exemplos_clientes && p.exemplos_clientes.length > 0 ? `<ul>${p.exemplos_clientes.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}${p.acao_corretiva ? `<div class="action">→ ${p.acao_corretiva}</div>` : ''}</div>`).join('')}</div>` : ''}
-                ${(v.qualidade.argumentos_nao_usados || []).length > 0 ? `<div class="detail-section"><h4>❌ Argumentos NÃO Usados</h4><div class="args-not-used">${v.qualidade.argumentos_nao_usados.map(arg => {const imp = (arg.importancia||'media').toLowerCase();const cls = imp.includes('critica')||imp.includes('crítica')?'crit':imp.includes('alta')?'alta':'media';return `<div class="arg-card ${cls}"><span class="arg-id">${arg.id}</span><div class="arg-name">${arg.nome}</div><div class="arg-info">${arg.categoria||''}<br><strong>${arg.importancia||''}</strong>${arg.vezes_perdidas ? ` • ${arg.vezes_perdidas}x` : ''}</div></div>`;}).join('')}</div></div>` : ''}
-                ${(v.qualidade.erros_cometidos || []).length > 0 ? `<div class="detail-section"><h4>🚨 Erros Cometidos</h4><div class="error-list">${v.qualidade.erros_cometidos.map(e => `<div class="error-tag">${e.codigo}: ${e.descricao}${e.ocorrencias ? `<span class="count">${e.ocorrencias}x</span>` : ''}</div>`).join('')}</div></div>` : ''}
-              </div>
-            ` : ''}
-          </div>
-        `).join('')}
+  // 6. SDRs (seção destacada)
+  const sdrs = (dados.sdrs || []);
+  const secaoSDRs = sdrs.length > 0 ? `
+    <div class="section-team sdrs">
+      <h2>📋 SDRs - Qualificação Inicial</h2>
+      <div class="desc">Responsáveis pelo primeiro contato e agendamento de visitas. Avaliados pelo Script SDR (4 etapas).</div>
+      <div class="people-grid">
+        ${sdrs.map((s, idx) => renderSDRCard(s, idx)).join('')}
       </div>
     </div>
-  `;
+  ` : '';
   
-  // 6. CONVERSAS
+  // 7. Vendedores (seção destacada)
+  const vendedoresList = (dados.vendedores || []);
+  const secaoVendedores = vendedoresList.length > 0 ? `
+    <div class="section-team vendedores">
+      <h2>💼 Vendedores - Fechamento e Pós-venda</h2>
+      <div class="desc">Responsáveis pelo fechamento de venda. Avaliados pelo Script Vendedor (categorias A-F).</div>
+      <div class="people-grid">
+        ${vendedoresList.map((v, idx) => renderVendedorCard(v, idx)).join('')}
+      </div>
+    </div>
+  ` : '';
+  
+  // 8. Conversas
   const conversasDia = (dados.conversas || []);
   const semResposta = conversasDia.filter(c => c.status === 'sem_resposta' || c.status === 'critico');
   const criticas = conversasDia.filter(c => c.status === 'critico');
-  
   const conversas = `
     <div class="section">
       <h2>📋 Conversas do Dia</h2>
@@ -698,10 +584,10 @@ function renderizarDados(dados) {
     </div>
   `;
   
-  content.innerHTML = metricas + oportunidades + insights + ranking + vendedores + conversas;
+  content.innerHTML = metricas + oportunidades + insights + rankingSDR + rankingVend + secaoSDRs + secaoVendedores + conversas;
+  
   document.getElementById('footer').textContent = `Gerado em ${dados.data} às ${dados.hora_execucao || '—'} • ${conversasDia.length} conversas`;
   
-  // Setup tabs conversas
   document.querySelectorAll('.tab').forEach(t => {
     t.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
@@ -711,18 +597,14 @@ function renderizarDados(dados) {
     });
   });
   
-  // Setup tabs prioridades
   document.querySelectorAll('.priority-tab').forEach(t => {
     t.addEventListener('click', () => {
       document.querySelectorAll('.priority-tab').forEach(x => x.classList.remove('active'));
       t.classList.add('active');
-      const filtro = t.dataset.priority;
+      const f = t.dataset.priority;
       document.querySelectorAll('.priority-card').forEach(c => {
-        if (filtro === 'all' || c.dataset.cat === filtro) {
-          c.classList.add('show');
-        } else {
-          c.classList.remove('show');
-        }
+        if (f === 'all' || c.dataset.cat === f) c.classList.add('show');
+        else c.classList.remove('show');
       });
     });
   });
@@ -732,33 +614,37 @@ function renderTableConversas(conversas) {
   if (conversas.length === 0) return '<p style="color:#94a3b8;padding:20px;text-align:center;">Nenhuma conversa</p>';
   return `
     <table>
-      <thead><tr><th>#</th><th>Conta</th><th>Cliente</th><th>Vendedor</th><th>Última Msg</th><th>Msgs</th><th>Nota</th><th>Status</th></tr></thead>
+      <thead><tr><th>#</th><th>Conta</th><th>Cliente</th><th>Pessoa</th><th>Papel</th><th>Última Msg</th><th>Msgs</th><th>Nota</th><th>Status</th></tr></thead>
       <tbody>
-        ${conversas.map(c => `
-          <tr>
-            <td>${c.id}</td>
-            <td>${c.conta ? `<span class="account-badge ${c.conta.toLowerCase()}">${c.conta}</span>` : '—'}</td>
-            <td><strong>${c.cliente || '—'}</strong></td>
-            <td>${c.vendedor || '<em style="color:#94a3b8;">não atribuído</em>'}</td>
-            <td>${c.ultima_msg || '—'}</td>
-            <td>${c.total_msgs || 0}</td>
-            <td>${c.nota !== undefined ? `<span class="note-pill ${getNoteClass(c.nota)}">${c.nota}/10</span>` : '—'}</td>
-            <td><span class="badge ${c.status === 'critico' ? 'crit' : c.status === 'sem_resposta' ? 'warn' : 'ok'}">${c.status === 'critico' ? 'CRÍTICO' : c.status === 'sem_resposta' ? 'Sem resposta' : 'OK'}</span></td>
-          </tr>
-        `).join('')}
+        ${conversas.map(c => {
+          const papelClass = (c.papel || '').toUpperCase() === 'SDR' ? 'sdr' : 'vendedor';
+          return `
+            <tr>
+              <td>${c.id}</td>
+              <td>${c.conta ? `<span class="account-badge ${c.conta.toLowerCase()}">${c.conta}</span>` : '—'}</td>
+              <td><strong>${c.cliente || '—'}</strong></td>
+              <td>${c.pessoa || c.vendedor || '<em style="color:#94a3b8;">não atribuído</em>'}</td>
+              <td>${c.papel ? `<span class="role-badge ${papelClass}">${c.papel}</span>` : '—'}</td>
+              <td>${c.ultima_msg || '—'}</td>
+              <td>${c.total_msgs || 0}</td>
+              <td>${c.nota !== undefined ? `<span class="note-pill ${getNoteClass(c.nota)}">${c.nota}/10</span>` : '—'}</td>
+              <td><span class="badge ${c.status === 'critico' ? 'crit' : c.status === 'sem_resposta' ? 'warn' : 'ok'}">${c.status === 'critico' ? 'CRÍTICO' : c.status === 'sem_resposta' ? 'Sem resposta' : 'OK'}</span></td>
+            </tr>
+          `;
+        }).join('')}
       </tbody>
     </table>
   `;
 }
 
-function toggleDetails(idx) {
-  const details = document.getElementById('details-' + idx);
-  const btn = details.previousElementSibling;
-  if (details.classList.contains('open')) {
-    details.classList.remove('open');
+function toggleDetails(id) {
+  const d = document.getElementById('details-' + id);
+  const btn = d.previousElementSibling;
+  if (d.classList.contains('open')) {
+    d.classList.remove('open');
     btn.innerHTML = 'Ver Análise Detalhada ▼';
   } else {
-    details.classList.add('open');
+    d.classList.add('open');
     btn.innerHTML = 'Ocultar Análise ▲';
   }
 }
