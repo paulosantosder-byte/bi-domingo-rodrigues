@@ -2,14 +2,18 @@
   "relatorios": [
     {
       "data": "2026-05-15",
-      "total_conversas": 106,
-      "sem_resposta": 10,
-      "criticas": 0,
-      "nota_media_sdr": 1.1,
-      "nota_media_vendedor": 0.2,
+      "tipo_analise": "ontem",
+      "total_conversas": 184,
+      "total_conversas_dr4": 164,
+      "total_conversas_dr2": 20,
+      "sem_resposta": 13,
+      "criticas": 1,
+      "mensagens_apos_18h": 20,
+      "nota_media_sdr": 6.2,
+      "nota_media_vendedor": 6.8,
       "sdrs": [
         "Maria Luiza",
-        "Keanny Brandão",
+        "Keane",
         "Kemily"
       ],
       "vendedores": [
@@ -171,5 +175,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-15T14:20:50"
+  "ultima_atualizacao": "2026-05-16T01:35:00"
 }
