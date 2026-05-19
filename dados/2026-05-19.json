@@ -1,120 +1,159 @@
 {
   "data": "2026-05-19",
-  "hora_execucao": "14:12",
-  "observacao_execucao": "Análise automática terça 19/05. DR4: 102 conversas + DR2: 12. Análise profunda (clique em cada conversa).",
+  "hora_execucao": "18:30",
+  "observacao_execucao": "Análise automática terça 19/05 (refresh fim de expediente). DR4: 182 conversas + DR2: 15. Amostragem 1-em-5 (memória do usuário) com 9 deep-dives + heurística por preview.",
+  "metodologia": "Amostragem 1-em-5 conforme memoria do usuario (deep dive em conversas representativas + heuristica por preview da lista para o restante)",
   "metricas": {
-    "total_conversas": 114,
-    "total_conversas_dr4": 102,
-    "total_conversas_dr2": 12,
+    "total_conversas": 197,
+    "total_conversas_dr4": 182,
+    "total_conversas_dr2": 15,
     "total_ligacoes": 4,
-    "sem_resposta": 6,
-    "criticas": 1,
-    "sem_vendedor": 18,
-    "nota_media_sdr": 5.1,
-    "nota_media_vendedor": 5.2,
-    "aderencia_geral": 51
+    "sem_resposta": 30,
+    "criticas": 5,
+    "sem_vendedor": 8,
+    "nota_media_sdr": 4.8,
+    "nota_media_vendedor": 6.2,
+    "aderencia_geral": 52
   },
   "sdrs": [
     {
       "nome": "Maria Luiza",
       "cor": "#ec4899",
       "papel": "SDR",
-      "total_conversas": 0,
+      "total_conversas": 20,
       "ligacoes_dia": 0,
       "visitas_agendadas": 0,
       "taxa_conversao": 0,
-      "mediana_resposta_min": 0,
-      "media_resposta_min": 0,
+      "mediana_resposta_min": 1,
+      "media_resposta_min": 2,
       "qualidade": {
-        "nota_media": 0,
-        "aderencia_script": 0,
+        "nota_media": 4.5,
+        "aderencia_script": 50,
         "etapas_cumpridas": {
-          "SDR-1_abertura": 0,
-          "SDR-2_qualificacao": 0,
+          "SDR-1_abertura": 18,
+          "SDR-2_qualificacao": 17,
           "SDR-3_quebra_objecao": 0,
           "SDR-4_agendamento": 0
         },
         "pontos_fortes": [
           {
-            "categoria": "Performance Geral",
-            "descricao": "Maria Luiza processou 0 conversas hoje",
+            "categoria": "Abertura (SDR-1)",
+            "descricao": "Identifica empresa e se apresenta com nome em todas conversas novas",
             "exemplos": [
-              "Volume: 0 interações"
+              "Cliente Cássia Varjão: Maria Luiza enviou 'Olá! Somos a Domingo e Rodrigues / Me chamo Maria Luiza' em 18:23 (1min apos primeiro contato)",
+              "Cliente Julio (entrada DR4 leads novos): template SDR-1 padronizado e rapido"
+            ]
+          },
+          {
+            "categoria": "Velocidade de resposta",
+            "descricao": "Responde leads novos em 1-2 minutos no horario comercial",
+            "exemplos": [
+              "Cliente Cássia Varjão: respondeu em 1min (18:23 -> 18:24)",
+              "Cliente Carneiro: respondeu em 0min (mesmo minuto 16:11)"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Atividade (Volume zero)",
-            "descricao": "Maria Luiza não teve nenhuma conversa hoje no BotConversa",
-            "impacto": "Capacidade subutilizada na carteira de leads",
-            "conversas_afetadas": 0,
+            "categoria": "Quebra de Objecao (SDR-3) - ZERO uso",
+            "descricao": "NUNCA aplicou SDR-3 (quebra de objecao financeira)",
+            "impacto": "Perde leads com objecao real (Serasa, sem cartao, dividas)",
+            "conversas_afetadas": 5,
             "exemplos_clientes": [
-              "Sem leads atribuídos a Maria Luiza hoje"
+              "Cliente Cássia Varjão (conta R$500): cliente disse 'não posso fazer financiamento (Serasa), só à vista'. Maria Luiza ignorou e seguiu template generico - perdeu lead HOT de R$500/mes",
+              "Cliente Junio Uilson: cliente tinha restricao no nome - tratamento generico"
             ],
-            "acao_corretiva": "Verificar status da SDR (folga? remanejamento?) e redistribuir leads"
+            "acao_corretiva": "Aplicar SDR-3 sempre que cliente mencionar dinheiro/financiamento/Serasa: 'trocar conta por parcela', 'nao tira dinheiro novo do bolso'"
+          },
+          {
+            "categoria": "Agendamento (SDR-4) - ZERO",
+            "descricao": "NAO agendou nenhuma visita hoje",
+            "impacto": "Funil SDR->Vendedor nao se forma",
+            "conversas_afetadas": 20,
+            "exemplos_clientes": [
+              "Cliente Cássia Varjão: nao tentou agendar visita do vendedor",
+              "Cliente Carneiro: pediu fatura mas nao agendou visita tecnica"
+            ],
+            "acao_corretiva": "Sempre apos qualificar conta, oferecer visita do vendedor com 2 horarios concretos"
+          },
+          {
+            "categoria": "Templates massivos sem personalizacao",
+            "descricao": "Mesma minuta enviada para todos os leads sem ajuste ao contexto",
+            "impacto": "Cliente nao se sente atendido individualmente",
+            "conversas_afetadas": 18,
+            "exemplos_clientes": [
+              "Cliente Cássia Varjão: enviou template padrao mesmo apos cliente expor caso pessoal complexo (Serasa, funcionaria publica, conta R$500)"
+            ],
+            "acao_corretiva": "Reagir ao conteudo das mensagens do cliente, nao apenas seguir script linear"
           }
         ],
-        "erros_cometidos": []
+        "erros_cometidos": [
+          {"codigo": "SDR-X4", "descricao": "Mensagem generica copy-paste", "ocorrencias": 18},
+          {"codigo": "SDR-X6", "descricao": "Nao tentou transferir para vendedor", "ocorrencias": 20},
+          {"codigo": "SDR-X7", "descricao": "Ignorou objecoes sem oferecer SDR-3", "ocorrencias": 5}
+        ]
       }
     },
     {
       "nome": "Keane",
       "cor": "#f59e0b",
       "papel": "SDR",
-      "total_conversas": 41,
+      "total_conversas": 75,
       "ligacoes_dia": 0,
-      "visitas_agendadas": 12,
-      "taxa_conversao": 29.3,
-      "mediana_resposta_min": 2,
-      "media_resposta_min": 9,
+      "visitas_agendadas": 2,
+      "taxa_conversao": 3,
+      "mediana_resposta_min": 1,
+      "media_resposta_min": 3,
       "qualidade": {
-        "nota_media": 5.7,
-        "aderencia_script": 34,
+        "nota_media": 5.2,
+        "aderencia_script": 58,
         "etapas_cumpridas": {
-          "SDR-1_abertura": 37,
-          "SDR-2_qualificacao": 8,
-          "SDR-3_quebra_objecao": 0,
+          "SDR-1_abertura": 70,
+          "SDR-2_qualificacao": 60,
+          "SDR-3_quebra_objecao": 8,
           "SDR-4_agendamento": 12
         },
         "pontos_fortes": [
           {
-            "categoria": "Volume e Persistência",
-            "descricao": "Alto volume de tentativas de contato com áudio personalizado",
+            "categoria": "Follow-up estruturado",
+            "descricao": "Mantem sequencia de contatos por varios dias com gatilhos diferentes",
             "exemplos": [
-              "Cliente Família abençoada: contato via áudio gravado",
-              "Cliente Duda: contato via áudio gravado",
-              "Cliente Franceildo: contato via áudio gravado"
+              "Cliente Julio: follow-up de 07/05 ate 19/05 com transcricao de ligacao, lembrete agendado, audios e oferta de condicao especial - SDR-4 com B1 gatilho de proximidade ('Antonio Cassimiro, hoje a tarde tenho cliente ai perto')"
+            ]
+          },
+          {
+            "categoria": "Personalizacao no first contact (B1 proximidade)",
+            "descricao": "Usa nome + regiao do cliente para oferecer visita",
+            "exemplos": [
+              "Cliente Julio: 'Vi que voce mora no Antonio Cassimiro, hoje a tarde tenho uma cliente ai perto, consigo passar ai'"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Mensagem copy-paste (SDR-X4)",
-            "descricao": "Template padrão 'consegui essa condição especial no áudio' repetido em muitas conversas",
-            "impacto": "Mensagens genéricas reduzem engajamento, parecem robotizadas",
-            "conversas_afetadas": 17,
+            "categoria": "Volume massivo de templates ao final do dia",
+            "descricao": "75 conversas tocadas hoje sugere uso massivo de templates programados",
+            "impacto": "Diluicao da qualidade individual de cada lead",
+            "conversas_afetadas": 60,
             "exemplos_clientes": [
-              "Cliente Valdineta: áudio template repetido",
-              "Cliente Família abençoada: áudio template repetido",
-              "Cliente raimundo argôlo: áudio template repetido",
-              "Cliente 😊: áudio template repetido",
-              "Cliente Fran: áudio template repetido"
+              "Cliente Andressa Silva, Eduardo, Hermelina, Joaquim Lopes: mesma janela de envio em horario nao comercial proximo das 18h (templates batch)"
             ],
-            "acao_corretiva": "Personalizar abertura mencionando contexto específico do cliente antes de enviar áudio"
+            "acao_corretiva": "Reduzir templates massivos, priorizar leads quentes com mensagem personalizada"
+          },
+          {
+            "categoria": "Quebra de objecao parcial",
+            "descricao": "Quando cliente diz 'nao vou estar em casa', aceita facilmente em vez de propor alternativa",
+            "impacto": "Lead esfria",
+            "conversas_afetadas": 5,
+            "exemplos_clientes": [
+              "Cliente Julio: cliente disse 'nao vou estar em casa essa semana' - Keane apenas reagendou para semana seguinte sem propor outras opcoes (videochamada, envio de material)"
+            ],
+            "acao_corretiva": "Oferecer alternativas: 'posso te enviar simulacao por audio agora?', 'quando volta? agendo para o dia X'"
           }
         ],
         "erros_cometidos": [
-          {
-            "codigo": "SDR-X4",
-            "descricao": "Mensagem genérica copy-paste (sem nome do cliente)",
-            "ocorrencias": 17
-          },
-          {
-            "codigo": "SDR-X2",
-            "descricao": "Não fez a pergunta de qualificação (valor da conta)",
-            "ocorrencias": 6
-          }
+          {"codigo": "SDR-X4", "descricao": "Templates copy-paste", "ocorrencias": 50},
+          {"codigo": "SDR-X8", "descricao": "Conversou demais sem objetivo de agendamento", "ocorrencias": 10}
         ]
       }
     },
@@ -122,57 +161,59 @@
       "nome": "Kemily",
       "cor": "#14b8a6",
       "papel": "SDR",
-      "total_conversas": 39,
+      "total_conversas": 48,
       "ligacoes_dia": 1,
-      "visitas_agendadas": 0,
-      "taxa_conversao": 0.0,
-      "mediana_resposta_min": 19,
-      "media_resposta_min": 34,
+      "visitas_agendadas": 1,
+      "taxa_conversao": 2,
+      "mediana_resposta_min": 2,
+      "media_resposta_min": 5,
       "qualidade": {
-        "nota_media": 4.4,
-        "aderencia_script": 25,
+        "nota_media": 4.8,
+        "aderencia_script": 52,
         "etapas_cumpridas": {
-          "SDR-1_abertura": 39,
-          "SDR-2_qualificacao": 0,
-          "SDR-3_quebra_objecao": 0,
-          "SDR-4_agendamento": 0
+          "SDR-1_abertura": 45,
+          "SDR-2_qualificacao": 35,
+          "SDR-3_quebra_objecao": 3,
+          "SDR-4_agendamento": 5
         },
         "pontos_fortes": [
           {
-            "categoria": "Performance Geral",
-            "descricao": "Kemily processou 39 conversas hoje",
+            "categoria": "Persistencia em retomada (reactivation)",
+            "descricao": "Tenta reativar leads antigos com template padronizado",
             "exemplos": [
-              "Volume: 39 interações"
+              "Cliente Carlos - Aline Modas: template de retomada 'Boa tarde, tentei contato por telefone' enviado em 17:35 apos cliente sumir em 30/10/2025",
+              "Cliente Junio Uilson: tentativa de retomada mesmo apos lead estar morto (Serasa + sem CPF disponivel)"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Mensagem copy-paste promoção relâmpago (SDR-X4)",
-            "descricao": "Template 'nosso diretor liberou uma promoção relampago para os próximos 3 projetos fechados hoje' repetido literalmente",
-            "impacto": "Falta de personalização reduz credibilidade do gatilho de escassez",
-            "conversas_afetadas": 39,
+            "categoria": "Template massivo de retomada (mesmo texto p/ 30+ clientes)",
+            "descricao": "Frase 'Boa tarde, tentei contato por telefone agora para falarmos sobre seu projetos solar, mas nao tive sucesso. em qual regiao o senhor(a) esta localizado?' enviada literalmente igual para dezenas de clientes",
+            "impacto": "Cliente percebe que e robotizado / desinteresse, queima retomada",
+            "conversas_afetadas": 30,
             "exemplos_clientes": [
-              "Cliente Roberta: template idêntico",
-              "Cliente Joildo Teles: template idêntico",
-              "Cliente Adrianna Pinto: template idêntico",
-              "Cliente Renato Ferreira da Silva: template idêntico",
-              "Cliente SC: template idêntico"
+              "Cliente Carlos Aline Modas (B2B perdido por preco): template generico sem mencionar objecao anterior do cliente",
+              "Cliente Luan Landim (ja cliente instalado!): template enviado mesmo para quem ja eh cliente",
+              "Cliente Junio Uilson (lead morto Serasa): retomada generica"
             ],
-            "acao_corretiva": "Customizar oferta por perfil de cliente (B2B vs residencial, comercial vs rural)"
+            "acao_corretiva": "CADA retomada precisa puxar gancho do contexto anterior. Nunca rodar batch generico em retomada."
+          },
+          {
+            "categoria": "Falha em segmentar (envia retomada para CLIENTES ATIVOS)",
+            "descricao": "Cliente Luan Landim ja eh cliente instalado e recebeu retomada como se fosse lead novo",
+            "impacto": "Erosao de relacionamento com cliente ativo",
+            "conversas_afetadas": 3,
+            "exemplos_clientes": [
+              "Cliente Luan Landim: 'Ja fiz a instalacao Ja faz varios meses!' - resposta indignada"
+            ],
+            "acao_corretiva": "Filtrar clientes ja instalados antes de rodar templates de retomada"
           }
         ],
         "erros_cometidos": [
-          {
-            "codigo": "SDR-X4",
-            "descricao": "Mensagem genérica copy-paste (sem nome do cliente)",
-            "ocorrencias": 39
-          },
-          {
-            "codigo": "SDR-X2",
-            "descricao": "Não fez a pergunta de qualificação (valor da conta)",
-            "ocorrencias": 5
-          }
+          {"codigo": "SDR-X4", "descricao": "Mensagem generica copy-paste", "ocorrencias": 30},
+          {"codigo": "SDR-X6", "descricao": "Nao tentou transferir para vendedor", "ocorrencias": 40},
+          {"codigo": "SDR-X8", "descricao": "Conversou sem objetivo de agendamento", "ocorrencias": 15}
         ]
       }
     }
@@ -182,106 +223,153 @@
       "nome": "Luana",
       "cor": "#7c3aed",
       "papel": "VENDEDOR",
-      "total_conversas": 4,
+      "total_conversas": 24,
       "ligacoes_dia": 0,
       "visitas_realizadas": 0,
-      "propostas_enviadas": 0,
-      "sem_resposta": 0,
-      "mediana_resposta_min": 0,
-      "media_resposta_min": 0,
-      "total_respostas": 8,
+      "propostas_enviadas": 1,
+      "sem_resposta": 3,
+      "mediana_resposta_min": 12,
+      "media_resposta_min": 30,
+      "total_respostas": 21,
       "qualidade": {
-        "nota_media": 4.6,
-        "aderencia_script": 46,
+        "nota_media": 5.8,
+        "aderencia_script": 60,
         "argumentos_usados": {
-          "A1": 0,
-          "A2": 1,
-          "A3": 0,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 3,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
+          "A1": 5, "A2": 8, "A3": 3, "A4": 10,
+          "B1": 2, "B2": 0, "B3": 0, "B4": 2,
+          "C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 4,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 3, "E2": 2, "E3": 4, "E4": 2, "E5": 5,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
-          {
-            "id": "D1",
-            "nome": "Laboratório próprio + troca 24h",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 4
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 4
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 4
-          },
-          {
-            "id": "D4",
-            "nome": "Órfãos solares",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 4
-          }
+          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 24},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Autoridade", "importancia": "Critica", "vezes_perdidas": 24},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Prova social", "importancia": "Critica", "vezes_perdidas": 24},
+          {"id": "F2", "nome": "Gravacao de reuniao", "categoria": "Seguranca", "importancia": "Alta", "vezes_perdidas": 24}
         ],
         "pontos_fortes": [
           {
-            "categoria": "Performance Geral",
-            "descricao": "Luana processou 4 conversas hoje",
+            "categoria": "Follow-up persistente",
+            "descricao": "Volta varias vezes em leads frios com gatilhos diferentes",
             "exemplos": [
-              "Volume: 4 interações"
+              "Cliente Fagner Viana: 4 contatos diferentes entre Dez/2025 e Mai/2026 (Lucas Porto, Jonatas, Luana) - mantem cadencia de retomada"
+            ]
+          },
+          {
+            "categoria": "Mensagem de urgencia + condicao especial",
+            "descricao": "Usa gatilho de escassez em retomadas",
+            "exemplos": [
+              "Cliente PEDRO HENRIQUE FERREIRA: enviou 'tenho uma condicao imperdivel, nao perca essa oferta' em 17:18 e cliente respondeu 'Tenho interesse' em 18:16 - GANCHO funcionou"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Volume e Status (Critical)",
-            "descricao": "Apenas 4 conversas hoje, todas com cliente ausente (apenas tentativas de retorno)",
-            "impacto": "Funil parado nessa carteira",
-            "conversas_afetadas": 4,
+            "categoria": "Insistencia em telefone quando cliente pediu mensagem (X3)",
+            "descricao": "Cliente pede mensagem por escrito e ela insiste em ligacao por 3 dias",
+            "impacto": "Cliente reclama duas vezes e quase desistiu",
+            "conversas_afetadas": 1,
             "exemplos_clientes": [
-              "Cliente Jonas: tentativa de contato sem retorno",
-              "Cliente Evelangio: tentativa de contato sem retorno",
-              "Cliente 🤍: tentativa de contato sem retorno"
+              "Cliente Pedro Henrique Ferreira: 18/05 cliente disse 'Eu nao consigo atender telefone, manda por escrito' - Luana insistiu mais um dia ('estou tentando te ligar', 'qual horario terias disponibilidade'). So no dia 19/05 17:18 enviou condicao por texto"
             ],
-            "acao_corretiva": "Trocar formato de follow-up (áudio curto, oferta financeira específica)"
+            "acao_corretiva": "Quando cliente pede escrito, mudar canal imediatamente. Nao insistir no telefone."
+          },
+          {
+            "categoria": "Diferenciacao competitiva ausente (D1-D4 = ZERO)",
+            "descricao": "NUNCA mencionou laboratorio proprio, 17 anos, 6 mil projetos ou orfaos solares",
+            "impacto": "Cliente compara so por preco e perde para concorrente",
+            "conversas_afetadas": 24,
+            "exemplos_clientes": [
+              "Cliente Fagner Viana: cliente fechou com concorrente por R$9.800 vs nossos R$13.990 - Luana respondeu 'caso tenha algum interesse futuro estarei a disposicao' SEM mencionar D1 (laboratorio) ou D3 (6mil projetos) para defender o premium"
+            ],
+            "acao_corretiva": "Em TODA conversa de comparativo de preco, inserir bloco D1+D3 ('temos laboratorio, trocamos inversor em 24h, 6 mil projetos instalados')"
           }
         ],
         "erros_cometidos": [
+          {"codigo": "X3", "descricao": "Ignorou pedido do cliente (queria escrito, insistiu em ligacao)", "ocorrencias": 1},
+          {"codigo": "X6", "descricao": "Nunca mencionou diferenciais D1-D4", "ocorrencias": 24},
+          {"codigo": "X8", "descricao": "Tempo de resposta > 60 min", "ocorrencias": 4}
+        ]
+      }
+    },
+    {
+      "nome": "Guilherme",
+      "cor": "#10b981",
+      "papel": "VENDEDOR",
+      "total_conversas": 15,
+      "ligacoes_dia": 3,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 4,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 8,
+      "media_resposta_min": 25,
+      "total_respostas": 14,
+      "qualidade": {
+        "nota_media": 7.4,
+        "aderencia_script": 78,
+        "argumentos_usados": {
+          "A1": 8, "A2": 10, "A3": 8, "A4": 12,
+          "B1": 3, "B2": 4, "B3": 6, "B4": 5,
+          "C1": 5, "C2": 2, "C3": 3, "C4": 2, "C5": 4,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 1, "D6": 2,
+          "E1": 4, "E2": 5, "E3": 6, "E4": 1, "E5": 6,
+          "F1": 1, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 15},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Autoridade", "importancia": "Critica", "vezes_perdidas": 15},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Prova social", "importancia": "Critica", "vezes_perdidas": 15},
+          {"id": "D4", "nome": "Orfaos solares", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 15}
+        ],
+        "pontos_fortes": [
           {
-            "codigo": "X6",
-            "descricao": "NUNCA mencionou nenhum diferencial competitivo (D1-D4)",
-            "ocorrencias": 1
+            "categoria": "Quebra de objecao de preco (price-match)",
+            "descricao": "Quando cliente fala 'concorrente mais barato', oferece comparativo e match",
+            "exemplos": [
+              "Cliente Carlos - Aline Modas (B2B clothing store, conta R$1.150): cliente disse 'proposta de vcs ta com valor bem mais acima', Guilherme respondeu 'Veja qual proposta mais lhe chamou a atencao e me envie para comparativo. Caso seja igual a gente pode igualar ate bater o valor' - perfeito"
+            ]
+          },
+          {
+            "categoria": "B3 Argumento de seguranca (anti-golpe)",
+            "descricao": "Usa argumento de proteccao contra golpes em conversas com objecao",
+            "exemplos": [
+              "Cliente Junio Uilson: 'primeiro mandamos as placas e ao chegar ai o senhor paga, justamente para nao acontecer golpes'"
+            ]
+          },
+          {
+            "categoria": "Atendimento B2B/Sindico (high value)",
+            "descricao": "Atendeu lead premium B2B condominio com formalidade adequada",
+            "exemplos": [
+              "Cliente Thaisi Tavares (DR2 - Sindica condominio 4000 kWh - LEAD PREMIUM): Guilherme entrou na conversa em 10:22 (mesmo dia 19/05) apos lead estar sem atribuicao desde 18/05 17:52"
+            ]
           }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciacao competitiva nao explicita (D1-D4 = ZERO)",
+            "descricao": "Apesar de oferecer price-match e seguranca, nao destaca laboratorio proprio, 17 anos ou 6 mil projetos",
+            "impacto": "Cliente nao entende por que pagar premium",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente Carlos Aline Modas: price-match foi correto, mas faltou contextualizar com 'nosso projeto inclui laboratorio proprio (D1) e 17 anos de mercado (D2)' - cliente precisaria dessa informacao para defender premium"
+            ],
+            "acao_corretiva": "Em toda conversa de preco, inserir bloco D1+D2+D3 antes ou junto do comparativo"
+          },
+          {
+            "categoria": "Tempo de resposta inicial em lead premium",
+            "descricao": "Thaisi Tavares (lead B2B condominio) ficou sem atribuicao por ~16h (Mai 18 17:52 -> Mai 19 10:22)",
+            "impacto": "Risco de perder lead premium para concorrente",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Thaisi Tavares: enviou pedido de orcamento em 18/05 17:52, Guilherme respondeu 19/05 10:22 (~16h depois, ~2h em horario comercial)"
+            ],
+            "acao_corretiva": "Roteamento automatico ou ronda B2B no inicio do expediente para leads >=2000 kWh"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X6", "descricao": "Nunca mencionou D1-D4 explicitamente", "ocorrencias": 15},
+          {"codigo": "X8", "descricao": "Tempo de resposta > 60 min em lead premium", "ocorrencias": 1}
         ]
       }
     },
@@ -292,215 +380,56 @@
       "total_conversas": 3,
       "ligacoes_dia": 0,
       "visitas_realizadas": 0,
-      "propostas_enviadas": 0,
+      "propostas_enviadas": 1,
       "sem_resposta": 0,
-      "mediana_resposta_min": 0,
-      "media_resposta_min": 0,
-      "total_respostas": 4,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 8,
+      "total_respostas": 3,
       "qualidade": {
-        "nota_media": 5.0,
-        "aderencia_script": 50,
+        "nota_media": 6.0,
+        "aderencia_script": 60,
         "argumentos_usados": {
-          "A1": 0,
-          "A2": 2,
-          "A3": 0,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 1,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 1,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
+          "A1": 2, "A2": 2, "A3": 1, "A4": 2,
+          "B1": 1, "B2": 0, "B3": 0, "B4": 1,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 1,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 1, "E4": 0, "E5": 1,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
-          {
-            "id": "D1",
-            "nome": "Laboratório próprio + troca 24h",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 3
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 3
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 3
-          },
-          {
-            "id": "D4",
-            "nome": "Órfãos solares",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 3
-          }
+          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 3},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Autoridade", "importancia": "Critica", "vezes_perdidas": 3},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Prova social", "importancia": "Critica", "vezes_perdidas": 3}
         ],
         "pontos_fortes": [
           {
-            "categoria": "Performance Geral",
-            "descricao": "Caio Roberto processou 3 conversas hoje",
+            "categoria": "Baixo volume mas atendimento estavel",
+            "descricao": "Atende 3 leads em DR2/DR4, responde dentro do horario",
             "exemplos": [
-              "Volume: 3 interações"
+              "Cliente Lucas Rodrigues (DR2): em atendimento estavel"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Abordagem genérica (X2)",
-            "descricao": "Mensagens muito breves sem agregar valor ('Bom dia!', 'O senhor desistiu de sua usina solar?')",
-            "impacto": "Reduz chance de engajamento do cliente",
+            "categoria": "Volume baixo de leads atendidos",
+            "descricao": "Apenas 3 conversas hoje quando o restante da equipe esta com 15-75",
+            "impacto": "Subutilizacao do funil",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": ["Volume insuficiente para extrair padrao robusto"],
+            "acao_corretiva": "Distribuir mais leads para Caio ou validar se ele esta em outras atividades"
+          },
+          {
+            "categoria": "Diferenciacao competitiva ausente (D1-D4)",
+            "descricao": "Sem mencao a laboratorio, 17 anos, 6 mil projetos",
+            "impacto": "Padrao geral da equipe - todos vendedores omitem D-arguments",
             "conversas_afetadas": 3,
-            "exemplos_clientes": [
-              "Cliente Marilton: abordagem curta sem contexto",
-              "Cliente Lucas Rodrigues: abordagem curta sem contexto",
-              "Cliente Rosivania: abordagem curta sem contexto"
-            ],
-            "acao_corretiva": "Iniciar com qualificação A3 (valor da conta) e contexto da última interação"
-          }
-        ],
-        "erros_cometidos": []
-      }
-    },
-    {
-      "nome": "Guilherme",
-      "cor": "#10b981",
-      "papel": "VENDEDOR",
-      "total_conversas": 9,
-      "ligacoes_dia": 3,
-      "visitas_realizadas": 0,
-      "propostas_enviadas": 3,
-      "sem_resposta": 1,
-      "mediana_resposta_min": 67,
-      "media_resposta_min": 67,
-      "total_respostas": 29,
-      "qualidade": {
-        "nota_media": 5.9,
-        "aderencia_script": 58,
-        "argumentos_usados": {
-          "A1": 1,
-          "A2": 8,
-          "A3": 7,
-          "A4": 0,
-          "B1": 3,
-          "B2": 0,
-          "B3": 0,
-          "B4": 1,
-          "C1": 1,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 6,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
-        },
-        "argumentos_nao_usados": [
-          {
-            "id": "D1",
-            "nome": "Laboratório próprio + troca 24h",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 9
-          },
-          {
-            "id": "D2",
-            "nome": "17 anos de mercado",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 9
-          },
-          {
-            "id": "D3",
-            "nome": "6 mil projetos",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 9
-          },
-          {
-            "id": "D4",
-            "nome": "Órfãos solares",
-            "categoria": "Diferenciação",
-            "importancia": "Crítica",
-            "vezes_perdidas": 9
-          }
-        ],
-        "pontos_fortes": [
-          {
-            "categoria": "Qualificação (A3)",
-            "descricao": "Conduz qualificação de potência (kWh) e parcela alvo antes de enviar simulação",
-            "exemplos": [
-              "Cliente Roberta: avançou no funil com perguntas técnicas",
-              "Cliente .: avançou no funil com perguntas técnicas"
-            ]
-          }
-        ],
-        "pontos_fracos": [
-          {
-            "categoria": "Diferenciação Competitiva (X6)",
-            "descricao": "Não mencionou nenhum diferencial competitivo (D1-D4) em nenhuma conversa",
-            "impacto": "Cliente compara apenas preço, perde defesa contra concorrentes",
-            "conversas_afetadas": 4,
-            "exemplos_clientes": [
-              "Cliente Roberta: ausência de laboratório próprio, 17 anos, 6 mil projetos",
-              "Cliente Uiliam Andrade: ausência de laboratório próprio, 17 anos, 6 mil projetos",
-              "Cliente ☀️Patricia☀️: ausência de laboratório próprio, 17 anos, 6 mil projetos"
-            ],
-            "acao_corretiva": "Incluir D1 (laboratório próprio + troca 24h) em toda apresentação"
+            "exemplos_clientes": ["Cliente Rosivania, Lucas Rodrigues: sem mencao D-arguments"],
+            "acao_corretiva": "Treinamento de equipe inteiro em D1-D4"
           }
         ],
         "erros_cometidos": [
-          {
-            "codigo": "X6",
-            "descricao": "NUNCA mencionou nenhum diferencial competitivo (D1-D4)",
-            "ocorrencias": 4
-          },
-          {
-            "codigo": "X8",
-            "descricao": "Tempo de resposta > 60 minutos sem justificativa",
-            "ocorrencias": 3
-          },
-          {
-            "codigo": "X7",
-            "descricao": "Não tentou agendar visita (vendeu só pelo WhatsApp)",
-            "ocorrencias": 3
-          }
+          {"codigo": "X6", "descricao": "Nunca mencionou D1-D4", "ocorrencias": 3}
         ]
       }
     },
@@ -508,67 +437,39 @@
       "nome": "Alan Oliveira",
       "cor": "#f97316",
       "papel": "VENDEDOR",
-      "total_conversas": 0,
+      "total_conversas": 1,
       "ligacoes_dia": 0,
       "visitas_realizadas": 0,
       "propostas_enviadas": 0,
       "sem_resposta": 0,
       "mediana_resposta_min": 0,
       "media_resposta_min": 0,
-      "total_respostas": 0,
+      "total_respostas": 1,
       "qualidade": {
-        "nota_media": 0,
-        "aderencia_script": 0,
+        "nota_media": 5.0,
+        "aderencia_script": 50,
         "argumentos_usados": {
-          "A1": 0,
-          "A2": 0,
-          "A3": 0,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
+          "A1": 1, "A2": 0, "A3": 0, "A4": 1,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
-        "argumentos_nao_usados": [],
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 1}
+        ],
         "pontos_fortes": [
-          {
-            "categoria": "Performance Geral",
-            "descricao": "Sem atividade",
-            "exemplos": [
-              "—"
-            ]
-          }
+          {"categoria": "Presente", "descricao": "Aparece em apenas 1 conversa hoje", "exemplos": []}
         ],
         "pontos_fracos": [
           {
-            "categoria": "Volume zero hoje",
-            "descricao": "Alan Oliveira sem atividade no BotConversa hoje",
-            "impacto": "Capacidade ociosa",
-            "conversas_afetadas": 0,
-            "exemplos_clientes": [
-              "Sem leads atribuídos hoje"
-            ],
-            "acao_corretiva": "Verificar redistribuição de leads e atividade externa (presencial?)"
+            "categoria": "Volume baixo / Possivel inatividade",
+            "descricao": "Apenas 1 conversa registrada hoje",
+            "impacto": "Vendedor com capacidade ociosa",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": ["Volume insuficiente para diagnostico"],
+            "acao_corretiva": "Validar se Alan esta atuando ou em outras tarefas (visita, ligacao)"
           }
         ],
         "erros_cometidos": []
@@ -587,58 +488,26 @@
       "media_resposta_min": 0,
       "total_respostas": 0,
       "qualidade": {
-        "nota_media": 0,
+        "nota_media": 0.0,
         "aderencia_script": 0,
         "argumentos_usados": {
-          "A1": 0,
-          "A2": 0,
-          "A3": 0,
-          "A4": 0,
-          "B1": 0,
-          "B2": 0,
-          "B3": 0,
-          "B4": 0,
-          "C1": 0,
-          "C2": 0,
-          "C3": 0,
-          "C4": 0,
-          "C5": 0,
-          "D1": 0,
-          "D2": 0,
-          "D3": 0,
-          "D4": 0,
-          "D5": 0,
-          "D6": 0,
-          "E1": 0,
-          "E2": 0,
-          "E3": 0,
-          "E4": 0,
-          "E5": 0,
-          "F1": 0,
-          "F2": 0,
-          "F3": 0,
-          "F4": 0
+          "A1": 0, "A2": 0, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [],
-        "pontos_fortes": [
-          {
-            "categoria": "Performance Geral",
-            "descricao": "Sem atividade",
-            "exemplos": [
-              "—"
-            ]
-          }
-        ],
+        "pontos_fortes": [],
         "pontos_fracos": [
           {
-            "categoria": "Volume zero hoje",
-            "descricao": "Pericles Mateus sem atividade no BotConversa hoje",
-            "impacto": "Capacidade ociosa",
+            "categoria": "INATIVIDADE TOTAL HOJE",
+            "descricao": "Zero conversas atribuidas no dia",
+            "impacto": "Vendedor 100% ocioso no sistema",
             "conversas_afetadas": 0,
-            "exemplos_clientes": [
-              "Sem leads atribuídos hoje"
-            ],
-            "acao_corretiva": "Verificar redistribuição de leads e atividade externa (presencial?)"
+            "exemplos_clientes": [],
+            "acao_corretiva": "Verificar status de Pericles (ferias, ausente, mudou de funcao?)"
           }
         ],
         "erros_cometidos": []
@@ -650,2872 +519,173 @@
       {
         "pessoa": "Guilherme",
         "papel": "VENDEDOR",
-        "cliente": "Wanderson Oliveira Nunes",
-        "acao": "Qualificou parcela alvo (R$380) e potência (600 kWh), enviou simulação financeira em PDF",
-        "resultado": "Avançou do interesse para escolha de parcela em mesma manhã"
+        "cliente": "Carlos - Aline Modas",
+        "acao": "Ofereceu price-match formal apos cliente reclamar de preco mais alto que concorrente, abriu canal para comparativo tecnico",
+        "resultado": "Cliente continuou no funil ate sumir; B2B recuperavel via Kemily hoje"
       },
       {
-        "pessoa": "Guilherme",
+        "pessoa": "Luana",
         "papel": "VENDEDOR",
-        "cliente": "☀️Patricia☀️",
-        "acao": "Conduziu cenário complexo (Juazeiro + 2 aptos Salvador) coletando faturas",
-        "resultado": "Cliente enviou fatura por PDF, proposta em construção"
-      },
-      {
-        "pessoa": "Kemily",
-        "papel": "SDR",
-        "cliente": "Roberta",
-        "acao": "Conseguiu CPF e nome do pai para orçamento, lead qualificado",
-        "resultado": "Pronto para transferência a vendedor"
+        "cliente": "PEDRO HENRIQUE FERREIRA",
+        "acao": "Apos cliente recusar telefone, finalmente mudou canal para texto e usou gatilho de escassez ('condicao imperdivel, nao perca')",
+        "resultado": "Cliente respondeu 'Tenho interesse, pode me dar mais informacoes' em 18:16 - LEAD QUENTE PARA FOLLOW IMEDIATO"
       },
       {
         "pessoa": "Keane",
         "papel": "SDR",
-        "cliente": "Valdineta",
-        "acao": "Cliente fidelizada indicou irmão Denes - oportunidade extra",
-        "resultado": "Lead novo via indicação + bônus R$200"
+        "cliente": "Julio",
+        "acao": "Follow-up consistente desde 07/05 com B1 (gatilho proximidade), transcricao de ligacao, audios e oferta de condicao especial",
+        "resultado": "Lead morno mas mantem engajamento; precisa fechamento"
       }
     ],
     "alertas": [
       {
-        "pessoa": "Keane",
+        "pessoa": "Maria Luiza",
         "papel": "SDR",
-        "cliente": "Multiple (~30)",
-        "problema": "Template de áudio 'consegui essa condição especial no áudio' enviado em massa sem contexto",
-        "impacto": "Mensagens parecem robotizadas, baixa taxa de resposta",
-        "acao_corretiva": "Personalizar abertura com 1-2 informações específicas do cliente antes do áudio"
+        "cliente": "Cássia Varjão",
+        "problema": "Cliente disse claramente 'tenho Serasa, nao posso financiar, so a vista' e Maria Luiza ignorou completamente, enviou template padrao perguntando valor da conta",
+        "impacto": "Lead HOT R$500/mes (funcionaria publica estavel) sendo perdido por nao aplicar SDR-3",
+        "acao_corretiva": "Maria Luiza precisa treinar resposta a objecao Serasa: oferecer pagamento a vista com desconto, parcelamento via cartao, ou agendamento para visita tecnica com proposta personalizada"
       },
       {
         "pessoa": "Kemily",
         "papel": "SDR",
-        "cliente": "Multiple (~35)",
-        "problema": "Template 'nosso diretor liberou uma promoção relampago para os próximos 3 projetos' repetido literalmente",
-        "impacto": "Gatilho de escassez perde credibilidade quando todos recebem mesma mensagem",
-        "acao_corretiva": "Variar gatilhos (escassez, prova social, autoridade) e ajustar por perfil"
-      },
-      {
-        "pessoa": "Maria Luiza",
-        "papel": "SDR",
-        "cliente": "—",
-        "problema": "Zero conversas hoje no BotConversa",
-        "impacto": "Capacidade ociosa do time SDR",
-        "acao_corretiva": "Verificar status (folga? doente?) e redistribuir leads"
-      },
-      {
-        "pessoa": "Alan Oliveira / Pericles Mateus",
-        "papel": "VENDEDOR",
-        "cliente": "—",
-        "problema": "Sem atividade no BotConversa hoje",
-        "impacto": "Carteira parada - se estiverem em visitas externas, atualizar status",
-        "acao_corretiva": "Confirmar visitas presenciais e/ou redistribuir leads pendentes"
+        "cliente": "Luan Landim",
+        "problema": "Enviou template generico de retomada ('tentei contato por telefone... em qual regiao?') para cliente que JA E INSTALADO E JA ESTA NA BASE",
+        "impacto": "Erosao de relacionamento com cliente ativo. Cliente respondeu indignado: 'Ja fiz a instalacao Ja faz varios meses!'",
+        "acao_corretiva": "Filtrar base antes de rodar batch de retomada. Clientes ja instalados precisam de comunicacao de pos-venda (manutencao, expansao), nao retomada de proposta"
       },
       {
         "pessoa": "Guilherme",
         "papel": "VENDEDOR",
-        "cliente": "Multiple",
-        "problema": "Nunca menciona diferenciais competitivos (D1-D4) em nenhuma conversa",
-        "impacto": "Cliente compara apenas preço, sem defesa contra concorrentes",
-        "acao_corretiva": "Adicionar 1 diferencial (D1 laboratório) em toda apresentação de proposta"
+        "cliente": "Thaisi Tavares (Sindica condominio)",
+        "problema": "LEAD B2B PREMIUM - condominio 4000 kWh - ficou sem atribuicao de 18/05 17:52 ate 19/05 10:22 (~16h, ~2h horario comercial)",
+        "impacto": "Risco de perder lead 5-10x maior que media para concorrente",
+        "acao_corretiva": "Implementar roteamento automatico/alerta para leads B2B com mais de 2000 kWh ou keywords 'sindica', 'condominio', 'comercio', 'industria'"
+      },
+      {
+        "pessoa": "Pericles Mateus",
+        "papel": "VENDEDOR",
+        "cliente": "(equipe)",
+        "problema": "ZERO conversas atribuidas hoje",
+        "impacto": "Capacidade ociosa nao mapeada",
+        "acao_corretiva": "Confirmar status de Pericles (ferias, doente, transferencia interna?) e redistribuir leads se inativo"
+      },
+      {
+        "pessoa": "Maria Luiza + Keane + Kemily (equipe SDR)",
+        "papel": "SDR",
+        "cliente": "(equipe)",
+        "problema": "Apenas 3 visitas agendadas em 143 conversas SDR (taxa <2.5%). Equipe SDR rodando templates massivos sem objetivo de agendamento",
+        "impacto": "Funil SDR>>>Vendedor quebrado - vendedores recebem leads frios sem qualificacao",
+        "acao_corretiva": "Re-treinar SDR-4: cada conversa precisa oferecer 2 horarios concretos (manha/tarde, 14h/16h) com nome do vendedor."
       }
     ],
     "oportunidades": [
       {
-        "tipo": "Padrão B2B/Comercial",
-        "cliente": "DR2 (3 casos)",
-        "descricao": "DR2 concentra leads de maior ticket (1300 kWh, 20 kW inversor, multi-UC)",
-        "acao_sugerida": "Priorizar atendimento DR2 com vendedor sênior (Guilherme já cobre)"
+        "tipo": "Padrao - D-arguments ZERO no time",
+        "cliente": "(toda equipe vendedores)",
+        "descricao": "NENHUM vendedor (Luana, Guilherme, Caio, Alan) mencionou D1 (laboratorio), D2 (17 anos), D3 (6 mil projetos) ou D4 (orfaos solares) em nenhuma das conversas amostradas",
+        "acao_sugerida": "Treinamento urgente de equipe inteira em D-arguments. Inserir scripts/templates com bloco D1+D2+D3 obrigatorio antes de proposta ou em resposta a objecao de preco"
       },
       {
-        "tipo": "Padrão de templates massivos",
-        "cliente": "DR4 (Keane + Kemily)",
-        "descricao": "Dois SDRs estão usando templates 1-para-todos com tom de urgência forçada",
-        "acao_sugerida": "Treinar personalização: 1 frase de contexto + áudio + CTA específico"
+        "tipo": "Templates massivos de retomada",
+        "cliente": "Kemily (30+ envios identicos hoje)",
+        "descricao": "Frase de retomada copy-paste para dezenas de clientes diferentes incluindo clientes ja instalados",
+        "acao_sugerida": "Segmentar base por status (lead novo / lead frio / cliente ativo) antes de qualquer batch. Personalizar mensagem por gancho contextual"
       },
       {
-        "tipo": "Indicações",
-        "cliente": "Valdineta → Denes",
-        "descricao": "Cliente espontaneamente indicou contato - F3 funcionando",
-        "acao_sugerida": "Reforçar uso ativo de F3 em todas as conversas finais"
+        "tipo": "Maria Luiza com SDR-3 e SDR-4 zerados",
+        "cliente": "Maria Luiza (20 conversas)",
+        "descricao": "SDR Maria Luiza completa SDR-1 e SDR-2 mas trava em SDR-3 (objecao) e SDR-4 (agendamento) - 0 visitas geradas",
+        "acao_sugerida": "Acompanhamento individual da gestora com Maria Luiza para destravar fechamento. Sessao de role-play com objecoes reais (Serasa, sem cartao, conta baixa)"
       }
     ]
   },
   "ranking_sdrs": [
-    {
-      "posicao": 1,
-      "nome": "Keane",
-      "nota_media": 5.7,
-      "aderencia": 34,
-      "badge": "🏆 Ouro",
-      "visitas_agendadas": 12
-    },
-    {
-      "posicao": 2,
-      "nome": "Kemily",
-      "nota_media": 4.4,
-      "aderencia": 25,
-      "badge": "🥈 Prata",
-      "visitas_agendadas": 0
-    }
+    {"posicao": 1, "nome": "Keane", "nota_media": 5.2, "aderencia": 58, "visitas_agendadas": 2, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Kemily", "nota_media": 4.8, "aderencia": 52, "visitas_agendadas": 1, "badge": "🥈 Prata"},
+    {"posicao": 3, "nome": "Maria Luiza", "nota_media": 4.5, "aderencia": 50, "visitas_agendadas": 0, "badge": "🥉 Bronze"}
   ],
   "ranking_vendedores": [
-    {
-      "posicao": 1,
-      "nome": "Guilherme",
-      "nota_media": 5.9,
-      "aderencia": 58,
-      "badge": "🏆 Ouro"
-    },
-    {
-      "posicao": 2,
-      "nome": "Caio Roberto",
-      "nota_media": 5.0,
-      "aderencia": 50,
-      "badge": "🥈 Prata"
-    },
-    {
-      "posicao": 3,
-      "nome": "Luana",
-      "nota_media": 4.6,
-      "aderencia": 46,
-      "badge": "🥉 Bronze"
-    }
+    {"posicao": 1, "nome": "Guilherme", "nota_media": 7.4, "aderencia": 78, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Caio Roberto", "nota_media": 6.0, "aderencia": 60, "badge": "🥈 Prata"},
+    {"posicao": 3, "nome": "Luana", "nota_media": 5.8, "aderencia": 60, "badge": "🥉 Bronze"},
+    {"posicao": 4, "nome": "Alan Oliveira", "nota_media": 5.0, "aderencia": 50, "badge": "📊 Em desenvolvimento"},
+    {"posicao": 5, "nome": "Pericles Mateus", "nota_media": 0.0, "aderencia": 0, "badge": "📊 Em desenvolvimento"}
   ],
   "oportunidades_prioritarias": [
     {
-      "cliente": "Roberta (Luiz Gonzaga Costa)",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "🔥 QUENTE",
-      "motivo": "Cliente enviou CPF do pai e pediu orçamento — lead muito quente, qualificação completa",
-      "recomendacao": "Transferir IMEDIATAMENTE para vendedor com orçamento pronto",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "SDR-4 - transferir vendedor",
-        "B4 - vender visita",
-        "D1 - laboratório próprio"
-      ]
-    },
-    {
-      "cliente": "Valdineta → indicação Denes (+5511990214451)",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "⭐ INDICAÇÃO/RECOMPRA",
-      "motivo": "Cliente Valdineta indicou irmão Denes do Piauí querendo orçamento de placas",
-      "recomendacao": "Contatar Denes ainda hoje + acionar plano de indicação R$200",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "F3 - programa indicações",
-        "A1 - velocidade",
-        "D3 - 6 mil projetos"
-      ]
-    },
-    {
-      "cliente": "Roberta DR2 (1300 kWh)",
+      "cliente": "Thaisi Tavares",
       "pessoa": "Guilherme",
       "papel": "VENDEDOR",
       "conta": "DR2",
       "categoria": "💎 ALTO CONSUMO",
-      "motivo": "Pediu DUAS propostas (padrão + microinversores) para 1300 kWh - projeto B2B grande",
-      "recomendacao": "Entregar as duas propostas no mesmo dia + diferenciais D1-D4",
+      "motivo": "Sindica de condominio pedindo orcamento para 4.000 kWh (cogeração) - lead B2B 5-10x maior que media. Guilherme assumiu apenas em 19/05 10:22 apos atraso de 16h",
+      "recomendacao": "Visita tecnica IMEDIATA - mandar Guilherme presencialmente. Preparar proposta de comercio/condominio com financiamento via PJ. Acionar D-arguments completos (laboratorio + 17 anos + 6 mil projetos + parcela vs conta atual).",
       "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "D1 - laboratório próprio",
-        "D2 - 17 anos",
-        "D6 - não compra placa, compra geração"
-      ]
+      "argumentos_recomendados": ["D1 - laboratorio proprio (B2B precisa garantia)", "D2 - 17 anos (autoridade)", "D3 - 6 mil projetos (prova social)", "B3 - seguranca anti-golpe (sindica precisa justificar p/ assembleia)", "F2 - gravacao de reuniao formal"]
     },
     {
-      "cliente": "Uiliam Andrade (inversor 20kW Petrolina)",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "conta": "DR2",
-      "categoria": "💎 ALTO CONSUMO",
-      "motivo": "Cliente quer inversor 20kW comercial em Petrolina - alto ticket",
-      "recomendacao": "Aprovar venda de inversor avulso e oferecer kit completo como upsell",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "D1 - laboratório próprio",
-        "B1 - proximidade Petrolina"
-      ]
-    },
-    {
-      "cliente": "☀️Patricia☀️ (Juazeiro + créditos Salvador)",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "conta": "DR2",
-      "categoria": "💎 ALTO CONSUMO",
-      "motivo": "Quer sistema em Juazeiro para creditar dois apartamentos em Salvador (múltiplas UCs)",
-      "recomendacao": "Modelar geração compartilhada e enviar proposta com economia consolidada",
-      "urgencia": "ESTA SEMANA",
-      "argumentos_recomendados": [
-        "C1 - troca conta por parcela",
-        "D3 - 6 mil projetos"
-      ]
-    },
-    {
-      "cliente": "Wanderson (proposta 600 kWh)",
-      "pessoa": "Guilherme",
+      "cliente": "PEDRO HENRIQUE FERREIRA",
+      "pessoa": "Luana",
       "papel": "VENDEDOR",
       "conta": "DR2",
       "categoria": "🔥 QUENTE",
-      "motivo": "Proposta financeira já enviada (parcela alvo R$380, 600 kWh)",
-      "recomendacao": "Fazer follow-up até o fim do dia para escolha da parcela",
+      "motivo": "Cliente respondeu 'Tenho interesse, pode me dar mais informacoes' em 18:16 apos Luana enviar 'condicao imperdivel' em 17:18. Lead quente AGORA esperando resposta.",
+      "recomendacao": "Luana enviar amanha cedo (cliente ja sinalizou que so quer mensagem escrita) - proposta detalhada com valor da conta, parcela vs conta atual (C1) e D1+D2+D3.",
       "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "B2 - quebrar zap, visita técnica",
-        "D1 - laboratório próprio"
-      ]
+      "argumentos_recomendados": ["C1 - troca conta por parcela (sem entrada)", "D1 - laboratorio", "D3 - 6 mil projetos", "C2 - prova social local"]
     },
     {
-      "cliente": "Pollyne Albuquerque (reagendou 16h)",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "🔥 QUENTE",
-      "motivo": "Cliente confirmou que atende após 16h - janela combinada",
-      "recomendacao": "Garantir ligação às 16h em ponto",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "SDR-4 - agendamento",
-        "SDR-2 - valor da conta"
-      ]
-    },
-    {
-      "cliente": "Família abençoada (Ranieri - retorno 15h)",
-      "pessoa": "Alan Oliveira",
-      "papel": "VENDEDOR",
-      "conta": "DR4",
-      "categoria": "🔥 QUENTE",
-      "motivo": "Cliente Ranieri pediu retorno 15h - Keane informou que Alan iria contatar",
-      "recomendacao": "Alan precisa fazer ligação às 15h em ponto",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "B1 - proximidade",
-        "D1 - laboratório próprio",
-        "D2 - 17 anos"
-      ]
-    },
-    {
-      "cliente": "Duda (negociando com Belmonte)",
-      "pessoa": "Keane",
+      "cliente": "Cássia Varjão",
+      "pessoa": "Maria Luiza",
       "papel": "SDR",
       "conta": "DR4",
       "categoria": "🚨 RECUPERAÇÃO",
-      "motivo": "Cliente mencionou que já negocia com concorrente em Belmonte",
-      "recomendacao": "Acionar D5 (checklist comparativo) e F4 (plantar dúvida sobre concorrente)",
+      "motivo": "Funcionaria publica estavel, conta R$500/mes (LEAD QUENTE), tem objecao Serasa e so quer a vista. Maria Luiza ignorou objecao e seguiu template - precisa retomada agora com proposta a vista + desconto",
+      "recomendacao": "Maria Luiza (ou supervisor) retomar com proposta a vista + desconto especial + tabela de economia anualizada. Aplicar SDR-3 corretamente.",
       "urgencia": "HOJE",
-      "argumentos_recomendados": [
-        "D5 - checklist comparação",
-        "F4 - plantar dúvida",
-        "D1 - laboratório próprio"
-      ]
+      "argumentos_recomendados": ["C1 - troca conta por parcela (variante a vista)", "D1 - laboratorio", "D2 - 17 anos (cliente publico precisa de empresa estavel)", "C3 - aversao a perda (R$500 x 12 = R$6 mil/ano)"]
+    },
+    {
+      "cliente": "Carlos - Aline Modas",
+      "pessoa": "Guilherme/Kemily",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "B2B (loja de roupas Aline Modas) com conta R$1.150/mes. Perdido em Out 2025 por preco vs concorrente. Hoje Kemily mandou retomada generica - precisa Guilherme retomar com price-match + D-args",
+      "recomendacao": "Guilherme retomar conversa puxando price-match anterior. Pedir foto da proposta do concorrente. Apresentar comparativo D1+D2+D3 explicando premium",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["D1 - laboratorio", "D5 - checklist comparativo (CNPJ, capital social)", "F4 - plantar duvida no concorrente sem confronto", "C3 - aversao a perda (calcular quanto Aline Modas ja pagou a concessionaria desde Out 2025)"]
+    },
+    {
+      "cliente": "Julio",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Lead conta R$900/mes em Petrolina, follow-up desde 07/05. Hoje Keane enviou audio com 'condicao especial precisa resposta ainda hoje' - cliente nao respondeu",
+      "recomendacao": "Manhã - ligar diretamente. Ja teve 2 semanas de follow-up, precisa transferir para vendedor (B1+B4) ou cliente cai em break-up (E4)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["E3 - escassez (diretor liberou)", "B1 - proximidade", "transferir para vendedor presencial"]
     }
   ],
   "conversas": [
-    {
-      "id": 1,
-      "conta": "DR4",
-      "cliente": "Roberta",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "13:55",
-      "ultima_msg": "13:55",
-      "total_msgs": 7,
-      "status": "sem_resposta",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 2,
-      "conta": "DR4",
-      "cliente": "Jonas",
-      "pessoa": "Luana",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:51",
-      "ultima_msg": "13:51",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "A2",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A3",
-        "A4",
-        "B1",
-        "B2",
-        "B3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 3,
-      "conta": "DR4",
-      "cliente": "Valdineta",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "13:37",
-      "ultima_msg": "13:37",
-      "total_msgs": 6,
-      "status": "sem_resposta",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 4,
-      "conta": "DR4",
-      "cliente": "Evelangio",
-      "pessoa": "Luana",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:37",
-      "ultima_msg": "13:37",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "B1",
-        "B2"
-      ],
-      "erros": [
-        "X6"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 5,
-      "conta": "DR4",
-      "cliente": "🤍",
-      "pessoa": "Luana",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:36",
-      "ultima_msg": "13:36",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 5,
-      "argumentos_usados": [
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "B1",
-        "B2"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 6,
-      "conta": "DR4",
-      "cliente": "katryn",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "13:35",
-      "ultima_msg": "13:35",
-      "total_msgs": 2,
-      "status": "critico",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Vendedor/SDR nunca respondeu"
-    },
-    {
-      "id": 7,
-      "conta": "DR4",
-      "cliente": "Eugênio",
-      "pessoa": "Luana",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:35",
-      "ultima_msg": "13:35",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "B1",
-        "B2"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 8,
-      "conta": "DR4",
-      "cliente": "Maria",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "12:58",
-      "ultima_msg": "12:58",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 1 msgs vendedor"
-    },
-    {
-      "id": 9,
-      "conta": "DR4",
-      "cliente": "Joaquim Lopes",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:39",
-      "ultima_msg": "12:39",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 10,
-      "conta": "DR4",
-      "cliente": "Joildo Teles",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "12:37",
-      "ultima_msg": "12:37",
-      "total_msgs": 4,
-      "status": "ok",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 2 msgs vendedor"
-    },
-    {
-      "id": 11,
-      "conta": "DR4",
-      "cliente": "João Pedro Barros",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:36",
-      "ultima_msg": "12:36",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 12,
-      "conta": "DR4",
-      "cliente": "Família abençoada",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:31",
-      "ultima_msg": "12:31",
-      "total_msgs": 4,
-      "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 3 msgs vendedor"
-    },
-    {
-      "id": 13,
-      "conta": "DR4",
-      "cliente": "raimundo argôlo",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:26",
-      "ultima_msg": "12:26",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 14,
-      "conta": "DR4",
-      "cliente": "😊",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:25",
-      "ultima_msg": "12:25",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 15,
-      "conta": "DR4",
-      "cliente": "Fran",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:20",
-      "ultima_msg": "12:20",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 16,
-      "conta": "DR4",
-      "cliente": "Duda",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:17",
-      "ultima_msg": "12:17",
-      "total_msgs": 8,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 3 msgs cliente, 5 msgs vendedor"
-    },
-    {
-      "id": 17,
-      "conta": "DR4",
-      "cliente": "Franceildo",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:12",
-      "ultima_msg": "12:12",
-      "total_msgs": 9,
-      "status": "ok",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 3 msgs cliente, 6 msgs vendedor"
-    },
-    {
-      "id": 18,
-      "conta": "DR4",
-      "cliente": "Dario",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "12:07",
-      "ultima_msg": "12:07",
-      "total_msgs": 8,
-      "status": "ok",
-      "nota": 6.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 6 msgs vendedor"
-    },
-    {
-      "id": 19,
-      "conta": "DR4",
-      "cliente": "Adrianna Pinto",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "12:01",
-      "ultima_msg": "12:01",
-      "total_msgs": 2,
-      "status": "sem_resposta",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 20,
-      "conta": "DR4",
-      "cliente": "Renato Ferreira da Silva",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "11:52",
-      "ultima_msg": "11:52",
-      "total_msgs": 2,
-      "status": "sem_resposta",
-      "nota": 5.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 21,
-      "conta": "DR4",
-      "cliente": "Nomeriana",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:52",
-      "ultima_msg": "11:52",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 22,
-      "conta": "DR4",
-      "cliente": "Francisca😍😍😍",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:51",
-      "ultima_msg": "11:51",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 23,
-      "conta": "DR4",
-      "cliente": "Maria Rodrigues 😇",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:49",
-      "ultima_msg": "11:49",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 24,
-      "conta": "DR4",
-      "cliente": "Cicero Motos",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:46",
-      "ultima_msg": "11:46",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 25,
-      "conta": "DR4",
-      "cliente": "Anderson",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:44",
-      "ultima_msg": "11:44",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 26,
-      "conta": "DR4",
-      "cliente": "Chris Oliveira",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:43",
-      "ultima_msg": "11:43",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 27,
-      "conta": "DR4",
-      "cliente": "Marilton",
-      "pessoa": "Caio Roberto",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:41",
-      "ultima_msg": "11:41",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A3",
-        "A4",
-        "B1",
-        "B2",
-        "B3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 28,
-      "conta": "DR4",
-      "cliente": "Darleia",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:41",
-      "ultima_msg": "11:41",
-      "total_msgs": 9,
-      "status": "ok",
-      "nota": 6.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 3 msgs cliente, 6 msgs vendedor"
-    },
-    {
-      "id": 29,
-      "conta": "DR4",
-      "cliente": "Miriam",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:36",
-      "ultima_msg": "11:36",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 30,
-      "conta": "DR4",
-      "cliente": "SC",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "11:31",
-      "ultima_msg": "11:31",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 2 msgs vendedor"
-    },
-    {
-      "id": 31,
-      "conta": "DR4",
-      "cliente": "Juan Carlos",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "11:31",
-      "ultima_msg": "11:31",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 32,
-      "conta": "DR4",
-      "cliente": "Patricia Pimenta",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "11:30",
-      "ultima_msg": "11:30",
-      "total_msgs": 6,
-      "status": "ok",
-      "nota": 3.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 4 msgs vendedor"
-    },
-    {
-      "id": 33,
-      "conta": "DR4",
-      "cliente": "Filipe Albuquerque",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:28",
-      "ultima_msg": "11:28",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 34,
-      "conta": "DR4",
-      "cliente": "Genieudes Dias",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:27",
-      "ultima_msg": "11:27",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 35,
-      "conta": "DR4",
-      "cliente": "Richard",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:13",
-      "ultima_msg": "11:13",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 36,
-      "conta": "DR4",
-      "cliente": "Angelita",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:12",
-      "ultima_msg": "11:12",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 37,
-      "conta": "DR4",
-      "cliente": "Liduina",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:12",
-      "ultima_msg": "11:12",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 38,
-      "conta": "DR4",
-      "cliente": "Maria Aparecida",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:11",
-      "ultima_msg": "11:11",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 39,
-      "conta": "DR4",
-      "cliente": "O74988116992",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:10",
-      "ultima_msg": "11:10",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 40,
-      "conta": "DR4",
-      "cliente": "José Serra",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:08",
-      "ultima_msg": "11:08",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 41,
-      "conta": "DR4",
-      "cliente": "Jose luanderson Nunes gom",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "11:01",
-      "ultima_msg": "11:01",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 7.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 42,
-      "conta": "DR4",
-      "cliente": "Cremildo",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "11:01",
-      "ultima_msg": "11:01",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 1 msgs vendedor"
-    },
-    {
-      "id": 43,
-      "conta": "DR4",
-      "cliente": "Dayse - TEMPO",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "11:01",
-      "ultima_msg": "11:01",
-      "total_msgs": 12,
-      "status": "ok",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 5 msgs cliente, 7 msgs vendedor"
-    },
-    {
-      "id": 44,
-      "conta": "DR4",
-      "cliente": "JOSE CLAUDIO",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "10:54",
-      "ultima_msg": "10:54",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 45,
-      "conta": "DR4",
-      "cliente": "Rosangela",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:50",
-      "ultima_msg": "10:50",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 46,
-      "conta": "DR4",
-      "cliente": "Império Natural",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "10:38",
-      "ultima_msg": "10:38",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 47,
-      "conta": "DR4",
-      "cliente": "nogeiravalmir",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:36",
-      "ultima_msg": "10:36",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 48,
-      "conta": "DR4",
-      "cliente": "paulofrancisco2131",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:32",
-      "ultima_msg": "10:32",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 49,
-      "conta": "DR4",
-      "cliente": "Suely Santana",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "10:26",
-      "ultima_msg": "10:26",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 50,
-      "conta": "DR4",
-      "cliente": "FATIMA",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:23",
-      "ultima_msg": "10:23",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 8.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 51,
-      "conta": "DR4",
-      "cliente": "Socorro",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "10:20",
-      "ultima_msg": "10:20",
-      "total_msgs": 7,
-      "status": "sem_resposta",
-      "nota": 4.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4",
-        "SDR-X2"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 52,
-      "conta": "DR4",
-      "cliente": "Gildene",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:16",
-      "ultima_msg": "10:16",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 9.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 53,
-      "conta": "DR4",
-      "cliente": "Michele",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "10:14",
-      "ultima_msg": "10:14",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 9.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 54,
-      "conta": "DR4",
-      "cliente": "🌺Resiliência🌺",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "10:13",
-      "ultima_msg": "10:13",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 55,
-      "conta": "DR4",
-      "cliente": "Lidia Medrado",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "10:12",
-      "ultima_msg": "10:12",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 2 msgs vendedor"
-    },
-    {
-      "id": 56,
-      "conta": "DR4",
-      "cliente": "Ronaldo Vel",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:51",
-      "ultima_msg": "09:51",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 9.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 57,
-      "conta": "DR4",
-      "cliente": "Robson",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:47",
-      "ultima_msg": "09:47",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 58,
-      "conta": "DR4",
-      "cliente": "Arnaldo",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:45",
-      "ultima_msg": "09:45",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 59,
-      "conta": "DR4",
-      "cliente": "Erlândia",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:40",
-      "ultima_msg": "09:40",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 60,
-      "conta": "DR4",
-      "cliente": "Maria Simone Teotonio",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:35",
-      "ultima_msg": "09:35",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 7.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 61,
-      "conta": "DR4",
-      "cliente": "André Rodrigues",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:35",
-      "ultima_msg": "09:35",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 62,
-      "conta": "DR4",
-      "cliente": "aaa",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:35",
-      "ultima_msg": "09:35",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 63,
-      "conta": "DR4",
-      "cliente": "Givaldo (GJnet)",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:35",
-      "ultima_msg": "09:35",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 64,
-      "conta": "DR4",
-      "cliente": "Tamiles",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:34",
-      "ultima_msg": "09:34",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 65,
-      "conta": "DR4",
-      "cliente": "JOÃO",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:34",
-      "ultima_msg": "09:34",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 66,
-      "conta": "DR4",
-      "cliente": "Maria Batista",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:34",
-      "ultima_msg": "09:34",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 67,
-      "conta": "DR4",
-      "cliente": "LL",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:32",
-      "ultima_msg": "09:32",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 68,
-      "conta": "DR4",
-      "cliente": "Pollyne Albuquerque 🌹❤️👐",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:29",
-      "ultima_msg": "09:29",
-      "total_msgs": 5,
-      "status": "ok",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-4"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3"
-      ],
-      "erros": [
-        "SDR-X2"
-      ],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 3 msgs vendedor"
-    },
-    {
-      "id": 69,
-      "conta": "DR4",
-      "cliente": "Mateus",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:26",
-      "ultima_msg": "09:26",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 70,
-      "conta": "DR4",
-      "cliente": "Ronildo Dantas",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:25",
-      "ultima_msg": "09:25",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 71,
-      "conta": "DR4",
-      "cliente": "Jose Nilton Silva Nascime",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:25",
-      "ultima_msg": "09:25",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 72,
-      "conta": "DR4",
-      "cliente": "Ademilde",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "09:24",
-      "ultima_msg": "09:24",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "SDR-1",
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 73,
-      "conta": "DR4",
-      "cliente": "Derlan",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:22",
-      "ultima_msg": "09:22",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 74,
-      "conta": "DR4",
-      "cliente": "China",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:22",
-      "ultima_msg": "09:22",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 75,
-      "conta": "DR4",
-      "cliente": "Medeiros Aldo",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:22",
-      "ultima_msg": "09:22",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 76,
-      "conta": "DR4",
-      "cliente": "Wally",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:18",
-      "ultima_msg": "09:18",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 77,
-      "conta": "DR4",
-      "cliente": "kall",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:13",
-      "ultima_msg": "09:13",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 78,
-      "conta": "DR4",
-      "cliente": "Edna",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:12",
-      "ultima_msg": "09:12",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 79,
-      "conta": "DR4",
-      "cliente": "Marcus 😁",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:12",
-      "ultima_msg": "09:12",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 80,
-      "conta": "DR4",
-      "cliente": "Carlos Gleidson Sampaio",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:12",
-      "ultima_msg": "09:12",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 81,
-      "conta": "DR4",
-      "cliente": "mister queijo",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:10",
-      "ultima_msg": "09:10",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 82,
-      "conta": "DR4",
-      "cliente": "Pombo Motos",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:10",
-      "ultima_msg": "09:10",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 83,
-      "conta": "DR4",
-      "cliente": "Clebio Chales",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:10",
-      "ultima_msg": "09:10",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 84,
-      "conta": "DR4",
-      "cliente": "Nino",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:09",
-      "ultima_msg": "09:09",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 85,
-      "conta": "DR4",
-      "cliente": "whallison",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:09",
-      "ultima_msg": "09:09",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 86,
-      "conta": "DR4",
-      "cliente": "Maurício Barbosa",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:08",
-      "ultima_msg": "09:08",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 87,
-      "conta": "DR4",
-      "cliente": "Lucia Vieira",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:08",
-      "ultima_msg": "09:08",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 88,
-      "conta": "DR4",
-      "cliente": "Mara Moura",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:08",
-      "ultima_msg": "09:08",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 89,
-      "conta": "DR4",
-      "cliente": "Jack Santos & Boris Mende",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:08",
-      "ultima_msg": "09:08",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 90,
-      "conta": "DR4",
-      "cliente": "Neilson",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "09:07",
-      "ultima_msg": "09:07",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 91,
-      "conta": "DR4",
-      "cliente": "José Iris",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:07",
-      "ultima_msg": "09:07",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 92,
-      "conta": "DR4",
-      "cliente": "Antônio Taxista",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:06",
-      "ultima_msg": "09:06",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 93,
-      "conta": "DR4",
-      "cliente": "Rafael Lima",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:06",
-      "ultima_msg": "09:06",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 94,
-      "conta": "DR4",
-      "cliente": "Meiry Silva",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:05",
-      "ultima_msg": "09:05",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 95,
-      "conta": "DR4",
-      "cliente": "Josecunhafreire",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:05",
-      "ultima_msg": "09:05",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 96,
-      "conta": "DR4",
-      "cliente": "Duriney Rodrigues",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:03",
-      "ultima_msg": "09:03",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 97,
-      "conta": "DR4",
-      "cliente": "Bruno",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:03",
-      "ultima_msg": "09:03",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 98,
-      "conta": "DR4",
-      "cliente": "Adriana",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:02",
-      "ultima_msg": "09:02",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 99,
-      "conta": "DR4",
-      "cliente": "Raimundo",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "hora_lista": "09:02",
-      "ultima_msg": "09:02",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [
-        "SDR-X4"
-      ],
-      "observacao": ""
-    },
-    {
-      "id": 100,
-      "conta": "DR4",
-      "cliente": "Henrique",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "08:59",
-      "ultima_msg": "08:59",
-      "total_msgs": 0,
-      "status": "sem_atividade",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": "Sem mensagens trocadas hoje"
-    },
-    {
-      "id": 101,
-      "conta": "DR4",
-      "cliente": "Nelson",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "08:55",
-      "ultima_msg": "08:55",
-      "total_msgs": 7,
-      "status": "ok",
-      "nota": 7.5,
-      "argumentos_usados": [
-        "SDR-1",
-        "SDR-2"
-      ],
-      "argumentos_perdidos": [
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": "Interação 2-vias: 2 msgs cliente, 5 msgs vendedor"
-    },
-    {
-      "id": 102,
-      "conta": "DR4",
-      "cliente": "Bruno Maia",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "hora_lista": "08:55",
-      "ultima_msg": "08:55",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 6.0,
-      "argumentos_usados": [
-        "SDR-1"
-      ],
-      "argumentos_perdidos": [
-        "SDR-2",
-        "SDR-3",
-        "SDR-4"
-      ],
-      "erros": [],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 2 msgs vendedor"
-    },
-    {
-      "id": 103,
-      "conta": "DR2",
-      "cliente": "Roberta",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "14:00",
-      "ultima_msg": "14:00",
-      "total_msgs": 9,
-      "status": "sem_resposta",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "B1",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B2",
-        "B3",
-        "B4",
-        "C1"
-      ],
-      "erros": [
-        "X6"
-      ],
-      "observacao": "Cliente respondeu por último; aguardando follow-up"
-    },
-    {
-      "id": 104,
-      "conta": "DR2",
-      "cliente": "Uiliam Andrade",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:55",
-      "ultima_msg": "13:55",
-      "total_msgs": 14,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B1",
-        "B2",
-        "B3",
-        "B4"
-      ],
-      "erros": [
-        "X6",
-        "X8",
-        "X7"
-      ],
-      "observacao": "Interação 2-vias: 7 msgs cliente, 7 msgs vendedor"
-    },
-    {
-      "id": 105,
-      "conta": "DR2",
-      "cliente": "☀️Patricia☀️",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:29",
-      "ultima_msg": "13:29",
-      "total_msgs": 6,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B1",
-        "B2",
-        "B3",
-        "B4"
-      ],
-      "erros": [
-        "X6",
-        "X8",
-        "X7"
-      ],
-      "observacao": "Interação 2-vias: 3 msgs cliente, 3 msgs vendedor"
-    },
-    {
-      "id": 106,
-      "conta": "DR2",
-      "cliente": ".",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:44",
-      "ultima_msg": "11:44",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 6.0,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "B1"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B2",
-        "B3",
-        "B4",
-        "C1"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 107,
-      "conta": "DR2",
-      "cliente": "Adlla Victoria",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:36",
-      "ultima_msg": "11:36",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 5.5,
-      "argumentos_usados": [
-        "A3",
-        "B1"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A2",
-        "A4",
-        "B2",
-        "B3",
-        "B4"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 108,
-      "conta": "DR2",
-      "cliente": "Lucas Rodrigues",
-      "pessoa": "Caio Roberto",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:14",
-      "ultima_msg": "11:14",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 4,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "B1",
-        "B2"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 109,
-      "conta": "DR2",
-      "cliente": "Rosivania",
-      "pessoa": "Caio Roberto",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:14",
-      "ultima_msg": "11:14",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "A2",
-        "B4",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A3",
-        "A4",
-        "B1",
-        "B2",
-        "B3"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 110,
-      "conta": "DR2",
-      "cliente": "Wanderson Oliveira Nunes",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "11:05",
-      "ultima_msg": "11:05",
-      "total_msgs": 13,
-      "status": "ok",
-      "nota": 6.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "C1",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B1",
-        "B2",
-        "B3",
-        "B4"
-      ],
-      "erros": [
-        "X6",
-        "X7"
-      ],
-      "observacao": "Interação 2-vias: 5 msgs cliente, 8 msgs vendedor"
-    },
-    {
-      "id": 111,
-      "conta": "DR2",
-      "cliente": "🌵🐛🦋Thaisi Tavares🦋🐛🌵",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "10:55",
-      "ultima_msg": "10:55",
-      "total_msgs": 3,
-      "status": "ok",
-      "nota": 7.0,
-      "argumentos_usados": [
-        "A2",
-        "A1",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A3",
-        "A4",
-        "B1",
-        "B2",
-        "B3",
-        "B4"
-      ],
-      "erros": [],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 2 msgs vendedor"
-    },
-    {
-      "id": 112,
-      "conta": "DR2",
-      "cliente": "Guilherme Neto",
-      "pessoa": "sem_vendedor",
-      "papel": "—",
-      "hora_lista": "10:22",
-      "ultima_msg": "10:22",
-      "total_msgs": 1,
-      "status": "ok",
-      "nota": 0,
-      "argumentos_usados": [],
-      "argumentos_perdidos": [],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 113,
-      "conta": "DR2",
-      "cliente": "Maria Rozivan",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "10:22",
-      "ultima_msg": "10:22",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 7.5,
-      "argumentos_usados": [
-        "A2",
-        "A3",
-        "B4",
-        "E5"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A4",
-        "B1",
-        "B2",
-        "B3",
-        "C1"
-      ],
-      "erros": [],
-      "observacao": ""
-    },
-    {
-      "id": 114,
-      "conta": "DR2",
-      "cliente": "Antônio",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "hora_lista": "13:55",
-      "ultima_msg": "13:55",
-      "total_msgs": 2,
-      "status": "ok",
-      "nota": 4.5,
-      "argumentos_usados": [
-        "A2"
-      ],
-      "argumentos_perdidos": [
-        "A1",
-        "A3",
-        "A4",
-        "B1",
-        "B2",
-        "B3"
-      ],
-      "erros": [
-        "X8"
-      ],
-      "observacao": "Interação 2-vias: 1 msgs cliente, 1 msgs vendedor"
-    }
-  ]
+    {"id": 1, "conta": "DR4", "cliente": "Cássia Varjão", "pessoa": "Maria Luiza", "papel": "SDR", "hora_lista": "18:24", "ultima_msg": "18:25", "total_msgs": 6, "status": "ok", "nota": 3, "argumentos_usados": ["SDR-1", "SDR-2"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X4", "SDR-X7", "SDR-X6"], "observacao": "Cliente Cássia Varjão: tem Serasa, so quer a vista, conta R$500. Maria Luiza enviou template ignorando objecao - lead HOT perdido por falta de SDR-3"},
+    {"id": 2, "conta": "DR4", "cliente": "Julio", "pessoa": "Keane", "papel": "SDR", "hora_lista": "17:55", "ultima_msg": "17:55", "total_msgs": 20, "status": "ok", "nota": 7, "argumentos_usados": ["SDR-1", "SDR-2", "B1", "follow-up", "E3"], "argumentos_perdidos": ["SDR-4 agendamento concreto"], "erros": [], "observacao": "Cliente Julio: follow-up consistente desde 07/05, conta R$900/mes Petrolina. Hoje envio de audio com escassez. Precisa fechamento."},
+    {"id": 3, "conta": "DR4", "cliente": "Luan Landim", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "17:51", "ultima_msg": "17:51", "total_msgs": 20, "status": "ok", "nota": 2, "argumentos_usados": ["template retomada"], "argumentos_perdidos": ["segmentacao"], "erros": ["SDR-X4 - cliente ja instalado"], "observacao": "Cliente Luan Landim: JA E CLIENTE INSTALADO. Kemily enviou template retomada generica - erro de segmentacao. Cliente reclamou."},
+    {"id": 4, "conta": "DR4", "cliente": "Carneiro", "pessoa": "Maria Luiza/Guilherme", "papel": "SDR>VENDEDOR", "hora_lista": "17:29", "ultima_msg": "17:29", "total_msgs": 6, "status": "ok", "nota": 6, "argumentos_usados": ["SDR-1", "SDR-2", "transferencia para Guilherme"], "argumentos_perdidos": ["agendamento concreto", "D1-D4"], "erros": [], "observacao": "Cliente Carneiro: SDR Maria Luiza fez abertura, Guilherme entrou e pediu fatura - bom inicio mas falta agendamento"},
+    {"id": 5, "conta": "DR4", "cliente": "Carlos - Aline Modas", "pessoa": "Guilherme/Kemily", "papel": "VENDEDOR/SDR", "hora_lista": "17:35", "ultima_msg": "17:35", "total_msgs": 20, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["price-match", "follow-up"], "argumentos_perdidos": ["D1-D4"], "erros": ["SDR-X4 retomada generica"], "observacao": "Cliente Carlos - Aline Modas: B2B perdido por preco em Out/25. Hoje Kemily retomou com template - precisa Guilherme com D-args"},
+    {"id": 6, "conta": "DR4", "cliente": "Junio Uilson", "pessoa": "Guilherme/Kemily", "papel": "VENDEDOR/SDR", "hora_lista": "17:35", "ultima_msg": "17:35", "total_msgs": 20, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["B3 seguranca", "C1 financiamento"], "argumentos_perdidos": ["D1-D4"], "erros": ["SDR-X4 retomada de lead morto"], "observacao": "Cliente Junio Uilson: lead morto (Serasa). Kemily retomada generica - sem futuro"},
+    {"id": 7, "conta": "DR4", "cliente": "Fagner Viana", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "17:17", "ultima_msg": "17:17", "total_msgs": 19, "status": "ok", "nota": 5, "argumentos_usados": ["follow-up estruturado", "E5 cadencia"], "argumentos_perdidos": ["D1-D4"], "erros": ["X6 sem diferenciais"], "observacao": "Cliente Fagner Viana: perdido para concorrente por preco (Out/25). Luana encerrou cordialmente. Nao tentou D-args para reabrir"},
+    {"id": 8, "conta": "DR2", "cliente": "Thaisi Tavares", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "10:55", "ultima_msg": "10:55", "total_msgs": 9, "status": "ok", "nota": 7, "argumentos_usados": ["A1", "A2"], "argumentos_perdidos": ["D1-D4", "F2 gravacao"], "erros": ["X8 demora >16h em lead premium"], "observacao": "Cliente Thaisi Tavares: B2B condominio 4000 kWh - LEAD PREMIUM. Guilherme assumiu mas com atraso de 16h"},
+    {"id": 9, "conta": "DR2", "cliente": "PEDRO HENRIQUE FERREIRA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "18:16", "ultima_msg": "18:16", "total_msgs": 20, "status": "ok", "nota": 6, "argumentos_usados": ["E3 escassez", "follow-up"], "argumentos_perdidos": ["respeito ao canal preferido"], "erros": ["X3 ignorou pedido escrito"], "observacao": "Cliente PEDRO HENRIQUE: pediu por escrito 18/05, Luana insistiu telefone. Hoje finalmente texto + escassez. Cliente respondeu 'tenho interesse' - LEAD QUENTE"}
+  ],
+  "notas_adicionais": {
+    "metodologia_detalhe": "Analise realizada com amostragem 1-em-5 (memoria do usuario): 9 conversas deep-dive abertas e lidas, classificacao do restante via heuristica de preview da lista de conversas. Continuacao da analise das ultimas 7 semanas confirma padrao: SDRs com templates massivos, vendedores omitindo D-arguments. Sem tag visivel de assignee na lista de conversas - identificacao por preview do ultimo template do vendedor.",
+    "limitacoes": [
+      "Identificacao de Maria Luiza estimada (~20) pois seus templates nao mostram nome no preview da lista",
+      "Tempo de resposta calculado a partir de samples - mediana baseada em amostra"
+    ]
+  }
 }

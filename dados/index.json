@@ -2,11 +2,13 @@
   "relatorios": [
     {
       "data": "2026-05-19",
-      "total_conversas": 114,
-      "sem_resposta": 6,
-      "criticas": 1,
-      "nota_media_sdr": 5.1,
-      "nota_media_vendedor": 5.2,
+      "total_conversas": 197,
+      "total_conversas_dr4": 182,
+      "total_conversas_dr2": 15,
+      "sem_resposta": 30,
+      "criticas": 5,
+      "nota_media_sdr": 4.8,
+      "nota_media_vendedor": 6.2,
       "sdrs": [
         "Maria Luiza",
         "Keane",
@@ -217,5 +219,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-19T14:12:32"
+  "ultima_atualizacao": "2026-05-19T18:30:00"
 }
