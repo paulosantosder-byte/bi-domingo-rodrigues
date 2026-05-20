@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-20",
+      "total_conversas": 71,
+      "total_conversas_dr4": 51,
+      "total_conversas_dr2": 20,
+      "sem_resposta": 7,
+      "criticas": 28,
+      "nota_media_sdr": 0.8,
+      "nota_media_vendedor": 1.5,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
       "data": "2026-05-19",
       "total_conversas": 197,
       "total_conversas_dr4": 182,
@@ -219,5 +241,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-19T18:30:00"
+  "ultima_atualizacao": "2026-05-20T13:30:00"
 }
