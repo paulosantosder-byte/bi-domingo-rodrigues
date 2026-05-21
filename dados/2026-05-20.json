@@ -1,145 +1,76 @@
 {
   "data": "2026-05-20",
-  "hora_execucao": "13:30",
+  "hora_execucao": "20:30",
+
   "metricas": {
-    "total_conversas": 71,
-    "total_conversas_dr4": 51,
-    "total_conversas_dr2": 20,
+    "total_conversas": 202,
+    "total_conversas_dr4": 177,
+    "total_conversas_dr2": 25,
     "total_ligacoes": 4,
-    "sem_resposta": 7,
-    "criticas": 28,
-    "sem_vendedor": 7,
-    "nota_media_sdr": 0.8,
-    "nota_media_vendedor": 1.5,
-    "aderencia_geral": 18
+    "sem_resposta": 35,
+    "criticas": 8,
+    "sem_vendedor": 47,
+    "nota_media_sdr": 5.0,
+    "nota_media_vendedor": 5.4,
+    "aderencia_geral": 48
   },
+
   "sdrs": [
-    {
-      "nome": "Maria Luiza",
-      "cor": "#ec4899",
-      "papel": "SDR",
-      "total_conversas": 2,
-      "ligacoes_dia": 0,
-      "visitas_agendadas": 0,
-      "taxa_conversao": 0,
-      "mediana_resposta_min": null,
-      "media_resposta_min": null,
-      "qualidade": {
-        "nota_media": 0.0,
-        "aderencia_script": 0,
-        "etapas_cumpridas": {
-          "SDR-1_abertura": 0,
-          "SDR-2_qualificacao": 0,
-          "SDR-3_quebra_objecao": 0,
-          "SDR-4_agendamento": 0
-        },
-        "pontos_fortes": [],
-        "pontos_fracos": [
-          {
-            "categoria": "Abandono total de leads (SDR-X6)",
-            "descricao": "Ambos leads atribuidos a Maria Luiza estao em status critico (sem resposta nenhuma)",
-            "impacto": "100% de perda - leads novos chegando sem atendimento",
-            "conversas_afetadas": 2,
-            "exemplos_clientes": [
-              "Cliente Edilson Santos (DR4 11:31): cliente enviou 7 mensagens sem nenhuma resposta de Maria Luiza",
-              "Cliente Glau (DR2 13:20): lead novo SCRIPT-1, sem nenhuma interacao"
-            ],
-            "acao_corretiva": "Verificar se Maria Luiza esta operando hoje. Reatribuir leads urgentemente."
-          }
-        ],
-        "erros_cometidos": [
-          {
-            "codigo": "SDR-X6",
-            "descricao": "Nao tentou transferir para vendedor (perdeu o lead)",
-            "ocorrencias": 2
-          },
-          {
-            "codigo": "SDR-X2",
-            "descricao": "Nao fez pergunta de qualificacao",
-            "ocorrencias": 1
-          }
-        ]
-      }
-    },
     {
       "nome": "Keane",
       "cor": "#f59e0b",
       "papel": "SDR",
-      "total_conversas": 34,
+      "total_conversas": 58,
       "ligacoes_dia": 0,
       "visitas_agendadas": 0,
       "taxa_conversao": 0,
-      "mediana_resposta_min": 1,
-      "media_resposta_min": 13,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
       "qualidade": {
-        "nota_media": 1.0,
-        "aderencia_script": 12,
+        "nota_media": 5.1,
+        "aderencia_script": 48,
         "etapas_cumpridas": {
-          "SDR-1_abertura": 24,
-          "SDR-2_qualificacao": 17,
-          "SDR-3_quebra_objecao": 0,
-          "SDR-4_agendamento": 4
+          "SDR-1_abertura": 22,
+          "SDR-2_qualificacao": 22,
+          "SDR-3_quebra_objecao": 4,
+          "SDR-4_agendamento": 2
         },
         "pontos_fortes": [
           {
-            "categoria": "Velocidade de Resposta (A1)",
-            "descricao": "Quando responde, e rapido - mediana 1 minuto",
+            "categoria": "Abertura automatizada (SDR-1)",
+            "descricao": "Script automatizado executando bem a SDR-1 (apresentação Domingo e Rodrigues + benefício 95%)",
             "exemplos": [
-              "Cliente Clescio Pereira: respondeu em 1min apos primeira msg do cliente",
-              "Cliente Matheus M.: 11 respostas em sequencia rapida, conversa fluindo",
-              "Cliente Iran: response_min=1, qualificou conta de luz"
-            ]
-          },
-          {
-            "categoria": "Abertura (SDR-1)",
-            "descricao": "Cumprimenta pelo nome em 70% dos casos quando responde",
-            "exemplos": [
-              "Cliente Valdemir: 'Olá, Valdemir! Tudo bem?' - script SDR-1a executado",
-              "Cliente Daniela Oliveira: cumprimentou + qualificou pesquisa previa"
+              "Cliente Rilda Duarte: bot respondeu imediato 'Olá! Somos a Domingo e Rodrigues' + 'Me chamo Keane'",
+              "Cliente Maria Edileuza: SDR-1 e SDR-2 disparados em sequência via automação"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Abandono Massivo de Leads Matinais (SDR-X6/X5)",
-            "descricao": "Leads chegaram entre 04:00-10:00 e Keane so comecou a responder apos 11:30 (atraso de 3h+)",
-            "impacto": "Janela de ouro perdida - leads quentes esfriam",
-            "conversas_afetadas": 12,
+            "categoria": "Agendamento (SDR-4)",
+            "descricao": "Quase nenhuma conversa converte em visita agendada — fica preso na qualificação",
+            "impacto": "Lead chega ao funil mas não passa pro vendedor",
+            "conversas_afetadas": 35,
             "exemplos_clientes": [
-              "Cliente Valdemir Aparecido (DR4): cliente em 05:21, Keane em 11:45 = 3h25min de atraso, ja em status sem_resposta",
-              "Cliente Elizangela Gomes (DR4): cliente em 10:03, Keane respondeu so em 13:05 = 3h02min",
-              "Cliente Natali Brito (DR4): cliente em 09:53 com pedido de 500kW (B2B), Keane respondeu so em 13:05 = 3h12min - lead de ALTO consumo",
-              "Cliente Rosangela (DR4): cliente em 10:02 declarou conta R$200, Keane respondeu so em 13:01 = 2h59min",
-              "Cliente Alcione (DR4): demora total >2h apos client mandar audio em 12:40",
-              "Cliente Daniela Oliveira (DR4): cliente em 10:17 com conta R$600, Keane so anotou observacao para retorno a tarde - sem resposta direta ate 13:15"
+              "Cliente Rilda Duarte: cliente respondeu 'R$ 300', bot não avancou para SDR-4",
+              "Cliente Victor Paulo: cliente disse 'boa noite' e nada de agendamento"
             ],
-            "acao_corretiva": "ESCALAR: Keane precisa estar operacional desde 08:00. Considerar redistribuicao de leads matinais para outro SDR ou ativar atendimento bot mais robusto."
+            "acao_corretiva": "Configurar gatilho automatico para SDR-4 quando cliente informa valor da conta"
           },
           {
-            "categoria": "Qualificacao Incompleta (SDR-X2)",
-            "descricao": "Nao pergunta explicitamente valor da conta - depende do bot inicial",
-            "impacto": "Vendedor recebe lead sem contexto financeiro",
-            "conversas_afetadas": 18,
+            "categoria": "Resposta humana",
+            "descricao": "Volume alto (58 conversas) com pouca intervencao manual",
+            "impacto": "Cliente sente abordagem generica",
+            "conversas_afetadas": 40,
             "exemplos_clientes": [
-              "Cliente Alcione: nao perguntou conta apos cliente dizer 'so um ar-condicionado'",
-              "Cliente Lucia Maria: nao qualificou valor",
-              "Cliente Hedel Antunes: nao perguntou conta de luz"
+              "Cliente Maria Edileuza: somente templates automaticos"
             ],
-            "acao_corretiva": "Sempre perguntar valor explicitamente, nao confiar so no bot."
-          },
-          {
-            "categoria": "Quebra de Objecao SDR-3 NUNCA usada",
-            "descricao": "Zero ocorrencias do argumento 'trocar conta por parcela'",
-            "impacto": "Leads com objecao financeira nao sao recuperados",
-            "conversas_afetadas": 34,
-            "exemplos_clientes": [],
-            "acao_corretiva": "Treinar SDR-3 com role-play diario."
+            "acao_corretiva": "Definir SLA de resposta humana em ate 30min apos cliente responder"
           }
         ],
         "erros_cometidos": [
-          {"codigo": "SDR-X2", "descricao": "Nao fez pergunta de qualificacao", "ocorrencias": 18},
-          {"codigo": "SDR-X5", "descricao": "Demorou muito para responder (>30min)", "ocorrencias": 3},
-          {"codigo": "SDR-X6", "descricao": "Nao transferiu para vendedor", "ocorrencias": 11}
+          { "codigo": "SDR-X3", "descricao": "Foi vago no agendamento", "ocorrencias": 35 },
+          { "codigo": "SDR-X6", "descricao": "Nao tentou transferir para vendedor", "ocorrencias": 50 }
         ]
       }
     },
@@ -147,166 +78,159 @@
       "nome": "Kemily",
       "cor": "#14b8a6",
       "papel": "SDR",
-      "total_conversas": 8,
+      "total_conversas": 28,
       "ligacoes_dia": 1,
       "visitas_agendadas": 0,
       "taxa_conversao": 0,
-      "mediana_resposta_min": null,
-      "media_resposta_min": 0,
-      "qualidade": {
-        "nota_media": 0.0,
-        "aderencia_script": 0,
-        "etapas_cumpridas": {
-          "SDR-1_abertura": 0,
-          "SDR-2_qualificacao": 0,
-          "SDR-3_quebra_objecao": 0,
-          "SDR-4_agendamento": 0
-        },
-        "pontos_fortes": [],
-        "pontos_fracos": [
-          {
-            "categoria": "Abandono Total de Leads NOVOS (SDR-X6)",
-            "descricao": "100% dos leads atribuidos hoje estao em status critico - nenhuma resposta humana",
-            "impacto": "Lead NOVO chegando e sendo perdido sem contato",
-            "conversas_afetadas": 7,
-            "exemplos_clientes": [
-              "Cliente Daniel Machado (DR4 13:18): cliente respondeu '500Kw' e CEP - Kemily nao respondeu",
-              "Cliente Rosimeire Silva (DR4 12:46): cliente disse 300 reais - sem resposta",
-              "Cliente Adriano (DR4 11:34): lead NOVO sem qualquer interacao",
-              "Cliente MARCOS WALGRENIO (DR4 12:00): lead NOVO desde 12:00 sem resposta",
-              "Cliente Victor Paulo (DR4 12:25): 9 mensagens do cliente sem resposta - perda critica",
-              "Cliente Matthaus (DR4 11:09): QUENTE tag mas sem resposta de Kemily",
-              "Cliente Royale/®️🎯 (DR4): cliente NOVO sem resposta"
-            ],
-            "acao_corretiva": "URGENTE: verificar se Kemily esta operacional. Reatribuir leads NOVO ao Keane ou outro SDR. Foco em volume."
-          }
-        ],
-        "erros_cometidos": [
-          {"codigo": "SDR-X6", "descricao": "Nao transferiu/atendeu lead", "ocorrencias": 6},
-          {"codigo": "SDR-X2", "descricao": "Nao qualificou", "ocorrencias": 6}
-        ]
-      }
-    }
-  ],
-  "vendedores": [
-    {
-      "nome": "Luana",
-      "cor": "#7c3aed",
-      "papel": "VENDEDOR",
-      "total_conversas": 13,
-      "ligacoes_dia": 0,
-      "visitas_realizadas": 0,
-      "propostas_enviadas": 0,
-      "sem_resposta": 1,
       "mediana_resposta_min": 0,
       "media_resposta_min": 0,
-      "total_respostas": 11,
       "qualidade": {
-        "nota_media": 1.6,
-        "aderencia_script": 10,
-        "argumentos_usados": {
-          "A1": 9, "A2": 1, "A3": 0, "A4": 0,
-          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
-          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
-          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
-          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
-          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        "nota_media": 5.0,
+        "aderencia_script": 50,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 19,
+          "SDR-2_qualificacao": 19,
+          "SDR-3_quebra_objecao": 2,
+          "SDR-4_agendamento": 1
         },
-        "argumentos_nao_usados": [
-          {"id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 13},
-          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 13},
-          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 13},
-          {"id": "B1", "nome": "Gatilho de proximidade", "categoria": "Agendamento", "importancia": "Alta", "vezes_perdidas": 13},
-          {"id": "C1", "nome": "Financiamento - trocar conta por parcela", "categoria": "Objecao", "importancia": "Alta", "vezes_perdidas": 13}
-        ],
         "pontos_fortes": [
           {
-            "categoria": "Velocidade A1",
-            "descricao": "Responde em 0-1 minutos consistentemente",
+            "categoria": "Volume e Velocidade",
+            "descricao": "Mantem boa cadencia via automacao (templates SDR-1 + SDR-2 enviados rapido)",
             "exemplos": [
-              "Cliente Edy Mascarenhas: response_min=1, atendeu reativacao",
-              "Cliente Evelangio: response_min=1, resposta imediata",
-              "Cliente PEDRO HENRIQUE FERREIRA: tentativa de ligacao + msg escrita em sequencia"
+              "Cliente Kemily Carvalho: bot enviou Ola + SDR-1 em sequencia rapida"
             ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Diferenciacao Competitiva ZERO (X6)",
-            "descricao": "Em 13 conversas, NUNCA mencionou laboratorio, 17 anos ou 6 mil projetos",
-            "impacto": "Cliente compara so por preco - perde para concorrente",
-            "conversas_afetadas": 13,
+            "categoria": "Abandono de leads",
+            "descricao": "ALERTA CRITICO: 1 ligacao mas atende muitos leads sem fechar agendamento (padrao repetindo)",
+            "impacto": "Alta perda de leads qualificados",
+            "conversas_afetadas": 25,
             "exemplos_clientes": [
-              "Cliente Elisabete: 13 msgs e nenhum diferencial mencionado",
-              "Cliente Evelangio: oportunidade DR4 sem diferenciacao",
-              "Cliente Tarcisio Oliveira: lead quente sem D1-D4"
+              "Cliente Lucineide: informou R$ 260 mas sem follow-up humano"
             ],
-            "acao_corretiva": "Implementar checklist obrigatorio: cada conversa deve mencionar pelo menos 1 argumento D."
-          },
-          {
-            "categoria": "Sem qualificacao A3",
-            "descricao": "Nao pergunta valor da conta nem regiao na maioria dos casos",
-            "impacto": "Sem contexto para precificar",
-            "conversas_afetadas": 11,
-            "exemplos_clientes": [],
-            "acao_corretiva": "Sempre fazer A3 antes de qualquer proposta."
+            "acao_corretiva": "Acompanhamento gerencial diario de SLA Kemily ate estabilizar"
           }
         ],
         "erros_cometidos": [
-          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais (D1-D4)", "ocorrencias": 13}
+          { "codigo": "SDR-X5", "descricao": "Demorou muito para responder", "ocorrencias": 20 },
+          { "codigo": "SDR-X6", "descricao": "Nao tentou transferir para vendedor", "ocorrencias": 25 }
         ]
       }
     },
     {
-      "nome": "Caio Roberto",
-      "cor": "#0ea5e9",
-      "papel": "VENDEDOR",
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "papel": "SDR",
       "total_conversas": 4,
       "ligacoes_dia": 0,
-      "visitas_realizadas": 0,
-      "propostas_enviadas": 0,
-      "sem_resposta": 1,
-      "mediana_resposta_min": 5,
-      "media_resposta_min": 3,
-      "total_respostas": 3,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
       "qualidade": {
-        "nota_media": 1.0,
-        "aderencia_script": 10,
-        "argumentos_usados": {
-          "A1": 3, "A2": 0, "A3": 0, "A4": 0,
-          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
-          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
-          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
-          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
-          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        "nota_media": 5.0,
+        "aderencia_script": 50,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 4,
+          "SDR-2_qualificacao": 3,
+          "SDR-3_quebra_objecao": 1,
+          "SDR-4_agendamento": 0
         },
-        "argumentos_nao_usados": [
-          {"id": "D1", "nome": "Laboratorio proprio", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 4}
-        ],
         "pontos_fortes": [
           {
-            "categoria": "Volume com Yuri Souza",
-            "descricao": "12 mensagens enviadas - investimento serio na conversa",
-            "exemplos": ["Cliente Yuri Souza: 12 respostas, conversa longa"]
+            "categoria": "Cobertura DR2",
+            "descricao": "Unica SDR ativa na conta DR2 hoje",
+            "exemplos": [
+              "Cliente Glau: SDR-1 e SDR-2 enviados via script"
+            ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Diferenciacao ZERO (X6)",
-            "descricao": "Em todos 4 leads, nenhum D1-D4 mencionado",
-            "impacto": "Yuri Souza ficou em sem_resposta apos toda essa atividade",
-            "conversas_afetadas": 4,
-            "exemplos_clientes": [
-              "Cliente Yuri Souza: 12 msgs do Caio, 7 do cliente, agora SEM_RESPOSTA - lead pode estar esfriando",
-              "Cliente katryn: lead esta em sem_resposta",
-              "Cliente Alan de Sá: critico - sem resposta nenhuma",
-              "Cliente Hipolito: 3 respostas mas zero diferencial"
-            ],
-            "acao_corretiva": "Treinar Caio em script D obrigatorio."
+            "categoria": "Volume baixo",
+            "descricao": "Apenas 4 conversas no dia (3 DR4 + 1 DR2) - volume muito abaixo de Keane (58) e Kemily (28)",
+            "impacto": "Capacidade subutilizada",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Verificar distribuicao de leads entre SDRs e disponibilidade da Maria Luiza"
           }
         ],
         "erros_cometidos": [
-          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 4}
+          { "codigo": "SDR-X8", "descricao": "Volume diario muito baixo (ociosidade)", "ocorrencias": 1 }
+        ]
+      }
+    }
+  ],
+
+  "vendedores": [
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "papel": "VENDEDOR",
+      "total_conversas": 33,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 6,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 5.8,
+        "aderencia_script": 55,
+        "argumentos_usados": {
+          "A1": 8, "A2": 1, "A3": 4, "A4": 0,
+          "B1": 3, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 2, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 1, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          { "id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 32 },
+          { "id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 33 },
+          { "id": "D3", "nome": "6 mil projetos instalados", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 33 }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Volume e Cobertura",
+            "descricao": "Maior volume entre vendedores (33 conversas DR4+DR2)",
+            "exemplos": [
+              "Cliente Elisabete: 13 mensagens trocadas, conversa avancada",
+              "Cliente ROMERSON: usou D1 (laboratorio), B1 (visita) e C1 (parcela)"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciacao Competitiva (D-series)",
+            "descricao": "Quase nunca menciona D1-D4 (laboratorio, 17 anos, 6 mil projetos)",
+            "impacto": "Perde diferenciacao competitiva - lead compara so preco",
+            "conversas_afetadas": 32,
+            "exemplos_clientes": [
+              "Cliente PEDRO HENRIQUE: 9 msgs sem citar diferenciais",
+              "Cliente IVAN DE AMORIM: 2 msgs sem D1-D4"
+            ],
+            "acao_corretiva": "Treinar Luana a inserir D1 (laboratorio proprio) em toda conversa"
+          },
+          {
+            "categoria": "Follow-up urgente",
+            "descricao": "6 conversas com cliente esperando resposta",
+            "impacto": "Risco de perder leads quentes",
+            "conversas_afetadas": 6,
+            "exemplos_clientes": [
+              "Cliente IVAN DE AMORIM: cliente respondeu e sem retorno",
+              "Cliente Gabriel Almeida: cliente engajado mas sem follow-up"
+            ],
+            "acao_corretiva": "Priorizar follow-up em todas as conversas sem_resposta amanha 08:00"
+          }
+        ],
+        "erros_cometidos": [
+          { "codigo": "X6", "descricao": "NUNCA mencionou diferenciais D1-D4", "ocorrencias": 32 },
+          { "codigo": "X7", "descricao": "Nao tentou agendar visita (vendeu so pelo WhatsApp)", "ocorrencias": 25 }
         ]
       }
     },
@@ -314,50 +238,54 @@
       "nome": "Guilherme",
       "cor": "#10b981",
       "papel": "VENDEDOR",
-      "total_conversas": 2,
+      "total_conversas": 13,
       "ligacoes_dia": 3,
       "visitas_realizadas": 0,
       "propostas_enviadas": 0,
-      "sem_resposta": 1,
+      "sem_resposta": 2,
       "mediana_resposta_min": 0,
       "media_resposta_min": 0,
-      "total_respostas": 1,
+      "total_respostas": 0,
       "qualidade": {
-        "nota_media": 1.0,
-        "aderencia_script": 12,
+        "nota_media": 5.8,
+        "aderencia_script": 58,
         "argumentos_usados": {
-          "A1": 1, "A2": 1, "A3": 0, "A4": 0,
-          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
-          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "A1": 4, "A2": 2, "A3": 2, "A4": 0,
+          "B1": 1, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
           "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
           "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
           "F1": 0, "F2": 0, "F3": 0, "F4": 0
         },
         "argumentos_nao_usados": [
-          {"id": "D1", "nome": "Laboratorio proprio", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 2}
+          { "id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 13 },
+          { "id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciacao", "importancia": "Alta", "vezes_perdidas": 13 }
         ],
         "pontos_fortes": [
           {
-            "categoria": "Personalizacao",
-            "descricao": "Usa o nome do cliente na resposta",
-            "exemplos": ["Cliente Roberta: 'Bom dia, sra. Roberta' - personalizacao formal A2"]
+            "categoria": "Ligacoes ativas",
+            "descricao": "UNICO da equipe que registrou ligacoes hoje (3) - postura proativa",
+            "exemplos": [
+              "Cliente Uiliam Andrade: conversa engajada com 7 msgs trocadas",
+              "Cliente Beatriz: SDR-1 mais resposta humana"
+            ]
           }
         ],
         "pontos_fracos": [
           {
-            "categoria": "Lead B2B 1300kWh ABANDONADO (X3)",
-            "descricao": "Roberta solicitou orcamento 1300kWh (ALTO CONSUMO B2B) e ficou em critico",
-            "impacto": "PERDA CRITICA - lead B2B premium sem follow-up",
-            "conversas_afetadas": 1,
+            "categoria": "Diferenciacao D-series",
+            "descricao": "Nao usa argumentos D1 (laboratorio), D2 (17 anos), D3 (6k projetos)",
+            "impacto": "Diferenciacao competitiva nula",
+            "conversas_afetadas": 13,
             "exemplos_clientes": [
-              "Cliente Roberta (DR2): pediu orcamento para 1300kWh, casa terrea telhado ceramica - lead alto consumo critico"
+              "Cliente Jamisson: 5 msgs sem nenhuma mencao a diferenciais",
+              "Cliente Roberta: cliente perguntou da regiao e sem D1/D2 em sequencia"
             ],
-            "acao_corretiva": "RESGATE HOJE: ligar para Roberta com proposta presencial."
+            "acao_corretiva": "Treinar uso de D1+D2+D3 como kit obrigatorio na 2a mensagem"
           }
         ],
         "erros_cometidos": [
-          {"codigo": "X3", "descricao": "Ignorou lead alto consumo", "ocorrencias": 1},
-          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 2}
+          { "codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 13 }
         ]
       }
     },
@@ -365,371 +293,393 @@
       "nome": "Alan Oliveira",
       "cor": "#f97316",
       "papel": "VENDEDOR",
-      "total_conversas": 0,
+      "total_conversas": 11,
       "ligacoes_dia": 0,
       "visitas_realizadas": 0,
       "propostas_enviadas": 0,
-      "sem_resposta": 0,
-      "mediana_resposta_min": null,
-      "media_resposta_min": null,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
       "total_respostas": 0,
       "qualidade": {
-        "nota_media": 0,
-        "aderencia_script": 0,
-        "argumentos_usados": {"A1": 0, "A2": 0, "A3": 0, "A4": 0, "B1": 0, "B2": 0, "B3": 0, "B4": 0, "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0, "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0, "F1": 0, "F2": 0, "F3": 0, "F4": 0},
-        "argumentos_nao_usados": [],
-        "pontos_fortes": [],
-        "pontos_fracos": [
+        "nota_media": 5.2,
+        "aderencia_script": 50,
+        "argumentos_usados": {
+          "A1": 3, "A2": 0, "A3": 1, "A4": 0,
+          "B1": 1, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          { "id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 11 }
+        ],
+        "pontos_fortes": [
           {
-            "categoria": "AUSENTE HOJE",
-            "descricao": "Nao apareceu em nenhuma conversa hoje (DR4 ou DR2)",
-            "impacto": "Capacidade ociosa enquanto leads sao abandonados por outros",
-            "conversas_afetadas": 0,
-            "exemplos_clientes": [],
-            "acao_corretiva": "Verificar status. Atribuir leads em backlog para Alan."
+            "categoria": "Volume medio",
+            "descricao": "11 conversas em curso",
+            "exemplos": []
           }
         ],
-        "erros_cometidos": []
+        "pontos_fracos": [
+          {
+            "categoria": "Sem ligacoes",
+            "descricao": "Zero ligacoes registradas hoje",
+            "impacto": "Subutilizacao do canal mais quente",
+            "conversas_afetadas": 11,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Estabelecer meta minima de 3 ligacoes/dia"
+          }
+        ],
+        "erros_cometidos": [
+          { "codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 11 }
+        ]
+      }
+    },
+    {
+      "nome": "Caio Roberto",
+      "cor": "#0ea5e9",
+      "papel": "VENDEDOR",
+      "total_conversas": 6,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 5.0,
+        "aderencia_script": 50,
+        "argumentos_usados": {
+          "A1": 2, "A2": 0, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          { "id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 6 }
+        ],
+        "pontos_fortes": [
+          { "categoria": "Carteira pequena", "descricao": "Apenas 6 conversas - facilita atencao personalizada", "exemplos": [] }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Volume baixo",
+            "descricao": "Apenas 6 conversas no dia",
+            "impacto": "Subutilizacao do potencial",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Verificar distribuicao de leads para Caio"
+          }
+        ],
+        "erros_cometidos": [
+          { "codigo": "X6", "descricao": "NUNCA mencionou diferenciais", "ocorrencias": 6 }
+        ]
       }
     },
     {
       "nome": "Pericles Mateus",
       "cor": "#8b5cf6",
       "papel": "VENDEDOR",
-      "total_conversas": 1,
+      "total_conversas": 2,
       "ligacoes_dia": 0,
       "visitas_realizadas": 0,
       "propostas_enviadas": 0,
-      "sem_resposta": 0,
-      "mediana_resposta_min": null,
-      "media_resposta_min": null,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
       "total_respostas": 0,
       "qualidade": {
-        "nota_media": 0,
-        "aderencia_script": 0,
-        "argumentos_usados": {"A1": 0, "A2": 0, "A3": 0, "A4": 0, "B1": 0, "B2": 0, "B3": 0, "B4": 0, "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0, "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0, "F1": 0, "F2": 0, "F3": 0, "F4": 0},
-        "argumentos_nao_usados": [],
+        "nota_media": 4.5,
+        "aderencia_script": 40,
+        "argumentos_usados": {
+          "A1": 1, "A2": 0, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          { "id": "D1", "nome": "Laboratorio proprio + troca 24h", "categoria": "Diferenciacao", "importancia": "Critica", "vezes_perdidas": 2 }
+        ],
         "pontos_fortes": [],
         "pontos_fracos": [
           {
-            "categoria": "Lead Cristiele abandonado (X3)",
-            "descricao": "Unico lead atribuido a Pericles esta critico - 0 respostas",
-            "impacto": "Cliente em DR4 sem nenhuma interacao",
-            "conversas_afetadas": 1,
-            "exemplos_clientes": ["Cliente Cristiele (DR4 11:57): 2 msgs do cliente, 0 respostas"],
-            "acao_corretiva": "Acionar Pericles imediatamente."
+            "categoria": "Atividade quase nula",
+            "descricao": "Apenas 2 conversas hoje",
+            "impacto": "Subutilizacao extrema",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Avaliar disponibilidade/atribuicao de Pericles"
           }
         ],
-        "erros_cometidos": [
-          {"codigo": "X3", "descricao": "Ignorou cliente", "ocorrencias": 1}
-        ]
+        "erros_cometidos": []
       }
     }
   ],
+
   "insights": {
     "destaques_positivos": [
       {
-        "pessoa": "Keane",
-        "papel": "SDR",
-        "cliente": "Matheus M.",
-        "acao": "11 respostas em sequencia rapida, cumprimentou, ofereceu horarios (14h/16h)",
-        "resultado": "Cliente engajado, conversa fluindo - oportunidade de fechamento"
+        "pessoa": "Guilherme",
+        "papel": "VENDEDOR",
+        "cliente": "Uiliam Andrade",
+        "acao": "Unico vendedor ativo no canal voz hoje (3 ligacoes) + conversas engajadas",
+        "resultado": "Postura mais proativa que pares - referencia para o time"
       },
       {
-        "pessoa": "Keane",
-        "papel": "SDR",
-        "cliente": "Clescio Pereira",
-        "acao": "Response_min=1, qualificou conta + perguntou pesquisa previa",
-        "resultado": "Lead em status OK, qualificado"
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "ROMERSON FERNANDES",
+        "acao": "Cobertura ampla (33 conversas DR4+DR2) e usou D1 (laboratorio), B1 (visita) e C1 (parcela)",
+        "resultado": "Caso isolado em que Luana aplicou kit de argumentacao"
       },
       {
         "pessoa": "Luana",
         "papel": "VENDEDOR",
         "cliente": "Elisabete",
-        "acao": "5 respostas rapidas em DR2, reativacao R1 efetiva",
-        "resultado": "Cliente respondeu de volta - relacionamento mantido"
+        "acao": "13 mensagens trocadas em conversa avancada",
+        "resultado": "Lead engajado com sinais de avanco no funil"
       }
     ],
     "alertas": [
       {
-        "pessoa": "Kemily",
-        "papel": "SDR",
-        "cliente": "Victor Paulo",
-        "problema": "Cliente enviou 9 mensagens, Kemily nao respondeu nenhuma",
-        "impacto": "Lead NOVO sendo perdido - 9 sinais ignorados",
-        "acao_corretiva": "URGENTE: atender ainda hoje ou reatribuir"
-      },
-      {
-        "pessoa": "Kemily",
-        "papel": "SDR",
-        "cliente": "Matthaus",
-        "problema": "Tag QUENTE no lead mas sem atendimento da Kemily",
-        "impacto": "Lead quente esfriando",
-        "acao_corretiva": "Prioridade #1 do dia"
-      },
-      {
-        "pessoa": "Guilherme",
-        "papel": "VENDEDOR",
-        "cliente": "Roberta",
-        "problema": "Lead B2B 1300kWh ALTO CONSUMO sem resposta",
-        "impacto": "Perda de oportunidade comercial alta",
-        "acao_corretiva": "Ligar HOJE com proposta presencial"
-      },
-      {
         "pessoa": "Keane",
         "papel": "SDR",
-        "cliente": "Natali Brito",
-        "problema": "Lead pediu 500kW B2B as 09:52, Keane respondeu so as 13:05",
-        "impacto": "3h12min de atraso em lead industrial",
-        "acao_corretiva": "Resgatar com proposta diferenciada B2B"
+        "cliente": "Multiplos leads",
+        "problema": "58 conversas com baixissima conversao para agendamento - fluxo preso apos SDR-2",
+        "impacto": "Top of funnel inflado mas pipeline real estagnado",
+        "acao_corretiva": "Revisar gatilho automatico SDR-3/SDR-4 e exigir intervencao humana apos cliente informar valor da conta"
+      },
+      {
+        "pessoa": "Kemily",
+        "papel": "SDR",
+        "cliente": "Multiplos leads",
+        "problema": "28 conversas sob responsabilidade mas so 1 ligacao - repetindo padrao historico de abandono",
+        "impacto": "Leads qualificados sendo perdidos por falta de follow-up humano",
+        "acao_corretiva": "Acompanhamento gerencial diario de SLA de Kemily ate estabilizar"
+      },
+      {
+        "pessoa": "Equipe Vendedores",
+        "papel": "VENDEDOR",
+        "cliente": "Todos",
+        "problema": "Argumentos D1-D4 (diferenciacao competitiva) usados em <5% das conversas",
+        "impacto": "Vendedores competindo so por preco - margem comprimida",
+        "acao_corretiva": "Tornar D1 (laboratorio proprio + troca 24h) obrigatorio nas duas primeiras mensagens"
+      },
+      {
+        "pessoa": "Sem atribuicao",
+        "papel": "SDR",
+        "cliente": "47 conversas (39 DR4 + 8 DR2)",
+        "problema": "23% das conversas do dia sem responsavel atribuido",
+        "impacto": "Leads no limbo - risco de churn imediato",
+        "acao_corretiva": "Triagem urgente pela gerencia amanha 08:00 para redistribuir"
       },
       {
         "pessoa": "Maria Luiza",
         "papel": "SDR",
-        "cliente": "Edilson Santos",
-        "problema": "Cliente enviou 7 msgs (DR4 11:31), zero resposta - lead estourado",
-        "impacto": "Lead com claro interesse abandonado",
-        "acao_corretiva": "Reatribuir AGORA para outro SDR"
-      },
-      {
-        "pessoa": "Caio Roberto",
-        "papel": "VENDEDOR",
-        "cliente": "Yuri Souza",
-        "problema": "12 msgs de Caio + 7 do cliente, agora SEM_RESPOSTA",
-        "impacto": "Cliente engajado pode estar perdendo interesse - 'esfriou'",
-        "acao_corretiva": "Caio enviar audio personalizado HOJE com D1+D2"
-      },
-      {
-        "pessoa": "Ryan Victor",
-        "papel": "DESCONHECIDO",
-        "cliente": "Daiane",
-        "problema": "Lead DR2 atribuido a Ryan Victor - pessoa NAO esta na lista oficial da equipe",
-        "impacto": "Possivel atribuicao incorreta, lead sem atendimento adequado",
-        "acao_corretiva": "Verificar quem e Ryan Victor / reatribuir para vendedor oficial"
+        "cliente": "—",
+        "problema": "Apenas 4 conversas no dia (3 DR4 + 1 DR2)",
+        "impacto": "Capacidade ociosa enquanto Keane e Kemily sobrecarregados",
+        "acao_corretiva": "Validar disponibilidade e rebalancear distribuicao de leads"
       }
     ],
     "oportunidades": [
       {
-        "tipo": "Padrao de Abandono Matinal",
-        "cliente": "Multiplos",
-        "descricao": "12 leads chegaram entre 04:00-11:00 e foram respondidos so apos 11:30",
-        "acao_sugerida": "Implementar rota de plantao 08:00-10:00 ou bot mais robusto"
+        "tipo": "🔥 QUENTE",
+        "cliente": "Elisabete (DR2 - Luana)",
+        "descricao": "Conversa com 13 mensagens hoje - lead muito engajado",
+        "acao_sugerida": "Luana deve agendar visita tecnica nas proximas 24h e usar D1+D2"
       },
       {
-        "tipo": "Ausencia de SDR-3 em 100% dos casos",
-        "cliente": "Todos",
-        "descricao": "Nenhum SDR mencionou 'trocar conta por parcela' (SDR-3 quebra de objecao)",
-        "acao_sugerida": "Treinamento urgente SDR-3 - role-play diario"
+        "tipo": "🔥 QUENTE",
+        "cliente": "Souzza (DR2 - Luana)",
+        "descricao": "11 mensagens trocadas - alto interesse",
+        "acao_sugerida": "Fechar visita tecnica e usar argumento C1 (financiamento sem entrada)"
       },
       {
-        "tipo": "Diferenciais D nunca usados pelos vendedores",
-        "cliente": "Todos os leads de vendedores",
-        "descricao": "Em 20 conversas de vendedores, D1 (lab proprio) foi mencionado apenas 1 vez por Luana",
-        "acao_sugerida": "Tornar D1+D2+D3 obrigatorios no primeiro contato do vendedor"
+        "tipo": "⚠️ FOLLOW-UP URGENTE",
+        "cliente": "Gabriel Almeida (DR2 - Luana)",
+        "descricao": "Cliente respondeu e ficou sem retorno",
+        "acao_sugerida": "Luana retomar 08:00 amanha (cliente das 10:00)"
       },
       {
-        "tipo": "Lead NOVO sem atendimento",
-        "cliente": "Adriano, Daniel Machado, Rosimeire Silva, MARCOS WALGRENIO, Matthaus, Royale",
-        "descricao": "6 leads com tag NOVO em DR4 abandonados",
-        "acao_sugerida": "Forca-tarefa Keane+Kemily para zerar leads NOVO ate 17:00"
+        "tipo": "⚠️ FOLLOW-UP URGENTE",
+        "cliente": "IVAN DE AMORIM (DR2 - Luana)",
+        "descricao": "Cliente mandou audio, vendedor nao respondeu",
+        "acao_sugerida": "Luana priorizar este lead amanha cedo"
+      },
+      {
+        "tipo": "🚨 RECUPERAÇÃO",
+        "cliente": "Roberta (DR2 - Guilherme)",
+        "descricao": "Cliente perguntou e ficou sem resposta",
+        "acao_sugerida": "Guilherme retomar com C1 + B1 (visita) amanha"
       }
     ]
   },
+
   "ranking_sdrs": [
-    {"posicao": 1, "nome": "Keane", "nota_media": 1.0, "aderencia": 12, "visitas_agendadas": 0, "badge": "Ouro"},
-    {"posicao": 2, "nome": "Kemily", "nota_media": 0.0, "aderencia": 0, "visitas_agendadas": 0, "badge": "Prata"},
-    {"posicao": 3, "nome": "Maria Luiza", "nota_media": 0.0, "aderencia": 0, "visitas_agendadas": 0, "badge": "Bronze"}
+    { "posicao": 1, "nome": "Keane", "nota_media": 5.1, "aderencia": 48, "visitas_agendadas": 0, "badge": "🏆 Ouro" },
+    { "posicao": 2, "nome": "Kemily", "nota_media": 5.0, "aderencia": 50, "visitas_agendadas": 0, "badge": "🥈 Prata" },
+    { "posicao": 3, "nome": "Maria Luiza", "nota_media": 5.0, "aderencia": 50, "visitas_agendadas": 0, "badge": "🥉 Bronze" }
   ],
+
   "ranking_vendedores": [
-    {"posicao": 1, "nome": "Luana", "nota_media": 1.6, "aderencia": 10, "badge": "Ouro"},
-    {"posicao": 2, "nome": "Caio Roberto", "nota_media": 1.0, "aderencia": 10, "badge": "Prata"},
-    {"posicao": 3, "nome": "Guilherme", "nota_media": 1.0, "aderencia": 12, "badge": "Bronze"},
-    {"posicao": 4, "nome": "Pericles Mateus", "nota_media": 0.0, "aderencia": 0, "badge": "Em desenvolvimento"},
-    {"posicao": 5, "nome": "Alan Oliveira", "nota_media": 0.0, "aderencia": 0, "badge": "Em desenvolvimento"}
+    { "posicao": 1, "nome": "Guilherme", "nota_media": 5.8, "aderencia": 58, "badge": "🏆 Ouro" },
+    { "posicao": 2, "nome": "Luana", "nota_media": 5.8, "aderencia": 55, "badge": "🥈 Prata" },
+    { "posicao": 3, "nome": "Alan Oliveira", "nota_media": 5.2, "aderencia": 50, "badge": "🥉 Bronze" },
+    { "posicao": 4, "nome": "Caio Roberto", "nota_media": 5.0, "aderencia": 50, "badge": "📊 Em desenvolvimento" },
+    { "posicao": 5, "nome": "Pericles Mateus", "nota_media": 4.5, "aderencia": 40, "badge": "📊 Em desenvolvimento" }
   ],
+
   "oportunidades_prioritarias": [
     {
-      "cliente": "Roberta",
-      "pessoa": "Guilherme",
-      "papel": "VENDEDOR",
-      "conta": "DR2",
-      "categoria": "ALTO CONSUMO",
-      "motivo": "Lead B2B 1300kWh sem atendimento - casa terrea para instalacao",
-      "recomendacao": "Ligar HOJE oferecendo visita tecnica presencial. Usar B3 (seguranca) + D1 (laboratorio).",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["B1 - proximidade", "D1 - laboratorio", "D3 - 6 mil projetos"]
-    },
-    {
-      "cliente": "Natali Brito",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "ALTO CONSUMO",
-      "motivo": "Cliente pediu projeto de 500kW (industrial/B2B), conta R$390 declarada e atraso de 3h na resposta",
-      "recomendacao": "Resgatar com SDR-3 + transferir IMEDIATAMENTE para Caio (B2B) ou Guilherme",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-4 - agendamento", "D2 - 17 anos", "D3 - 6 mil projetos B2B"]
-    },
-    {
-      "cliente": "Victor Paulo",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "FOLLOW-UP URGENTE",
-      "motivo": "9 mensagens do cliente sem nenhuma resposta - lead NOVO interesseado",
-      "recomendacao": "Atender HOJE com pedido de desculpas + SDR-1 completo + agendar 14h",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-1", "SDR-2", "SDR-4"]
-    },
-    {
-      "cliente": "Matthaus",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "QUENTE",
-      "motivo": "Lead com tag QUENTE no sistema mas sem atendimento da Kemily",
-      "recomendacao": "Prioridade #1 - usar SDR-3 e fechar visita ainda hoje",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-3", "SDR-4 horarios concretos"]
-    },
-    {
-      "cliente": "Edilson Santos",
-      "pessoa": "Maria Luiza",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "FOLLOW-UP URGENTE",
-      "motivo": "7 mensagens do cliente sem resposta - lead com claro interesse abandonado",
-      "recomendacao": "Reatribuir para Keane ou Kemilly se Maria Luiza nao estiver operando",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-1", "SDR-4"]
-    },
-    {
-      "cliente": "Yuri Souza",
-      "pessoa": "Caio Roberto",
-      "papel": "VENDEDOR",
-      "conta": "DR4",
-      "categoria": "RECUPERACAO",
-      "motivo": "12 msgs do Caio + 7 do cliente, agora SEM_RESPOSTA - investimento alto sem diferenciacao",
-      "recomendacao": "Audio personalizado com D1 (laboratorio proprio) + B1 (proximidade) hoje a tarde",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["D1 - laboratorio", "D2 - 17 anos", "B1 - proximidade"]
-    },
-    {
-      "cliente": "PEDRO HENRIQUE FERREIRA",
+      "cliente": "Elisabete",
       "pessoa": "Luana",
       "papel": "VENDEDOR",
       "conta": "DR2",
-      "categoria": "FOLLOW-UP URGENTE",
-      "motivo": "Cliente pediu por escrito (nao audio), reativacao_Fin1 em andamento",
-      "recomendacao": "Enviar mensagem ESCRITA com diferenciais D1-D3 conforme solicitacao do cliente",
+      "categoria": "🔥 QUENTE",
+      "motivo": "13 mensagens trocadas - cliente altamente engajado",
+      "recomendacao": "Agendar visita tecnica nas proximas 24h",
       "urgencia": "HOJE",
-      "argumentos_recomendados": ["D1", "D2", "D3", "C1 - financiamento"]
+      "argumentos_recomendados": ["D1 - laboratorio", "B1 - visita tecnica", "C1 - financiamento sem entrada"]
     },
     {
-      "cliente": "Daniel Machado",
-      "pessoa": "Kemily",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "QUENTE",
-      "motivo": "Cliente NOVO, declarou 500Kw + enviou CEP 55593460 - lead quentissimo nao respondido",
-      "recomendacao": "Resposta imediata com saudacao + agendamento de visita Caio/Guilherme",
+      "cliente": "Souzza",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🔥 QUENTE",
+      "motivo": "11 mensagens - alto interesse",
+      "recomendacao": "Fechar visita tecnica",
       "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-1", "SDR-4 horarios"]
-    },
-    {
-      "cliente": "Daniela Oliveira",
-      "pessoa": "Keane",
-      "papel": "SDR",
-      "conta": "DR4",
-      "categoria": "QUENTE",
-      "motivo": "Conta R$600 (alta), Keane ja teve contato telefonico e prometeu retorno - cliente esperando",
-      "recomendacao": "Cumprir promessa de retorno no final da tarde com proposta personalizada",
-      "urgencia": "HOJE",
-      "argumentos_recomendados": ["SDR-3", "SDR-4"]
+      "argumentos_recomendados": ["B1 - visita", "C1 - parcela", "D2 - 17 anos"]
     },
     {
       "cliente": "Uiliam Andrade",
       "pessoa": "Guilherme",
       "papel": "VENDEDOR",
       "conta": "DR2",
-      "categoria": "QUENTE",
-      "motivo": "Cliente pediu inversor 20kW - B2B/medio porte - em sem_resposta",
-      "recomendacao": "Retomar com pergunta tecnica + agendar visita",
+      "categoria": "🔥 QUENTE",
+      "motivo": "7 mensagens + Guilherme ja ligou hoje",
+      "recomendacao": "Confirmar visita e enviar proposta",
       "urgencia": "HOJE",
-      "argumentos_recomendados": ["B2", "D6 - geracao de energia"]
+      "argumentos_recomendados": ["D1 - laboratorio", "D2 - 17 anos"]
+    },
+    {
+      "cliente": "PEDRO HENRIQUE FERREIRA",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🔥 QUENTE",
+      "motivo": "9 mensagens trocadas, lead de reativacao",
+      "recomendacao": "Avancar para visita tecnica",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["D1 - laboratorio", "C1 - financiamento"]
+    },
+    {
+      "cliente": "Gabriel Almeida",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente respondeu pela manha e Luana nao retornou",
+      "recomendacao": "Retomar amanha 08:00 com C1 + B1",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["C1 - parcela", "B1 - visita"]
+    },
+    {
+      "cliente": "IVAN DE AMORIM BARBOSA FILHO",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente mandou audio, vendedor nao respondeu",
+      "recomendacao": "Ouvir audio e responder amanha 08:00",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["A3 - valor da conta", "B1 - visita"]
+    },
+    {
+      "cliente": "Roberta",
+      "pessoa": "Guilherme",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente perguntou da regiao e ficou sem resposta",
+      "recomendacao": "Retomar com B1 (visita) e A2 (regiao)",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["A2 - regiao", "B1 - visita"]
+    },
+    {
+      "cliente": "RAILA CALIANE DA COSTA RODRIGUES",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente parou de responder apos primeira interacao",
+      "recomendacao": "Mensagem de retomada com C1 (financiamento)",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["C1 - parcela", "B1 - visita"]
+    },
+    {
+      "cliente": "Rilda Duarte",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente informou conta de R$ 300 - pronto para SDR-3 + SDR-4",
+      "recomendacao": "Amanha 08:00 Keane (humano) responder e propor 2 horarios",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["SDR-3 - quebra objecao", "SDR-4 - agendamento"]
+    },
+    {
+      "cliente": "47 conversas sem atribuicao",
+      "pessoa": "Triagem Gerencia",
+      "papel": "SDR",
+      "conta": "DR4+DR2",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "23% das conversas do dia sem responsavel",
+      "recomendacao": "Gerencia redistribuir entre SDRs amanha 08:00",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["SDR-1 - apresentacao", "SDR-2 - qualificacao"]
     }
   ],
+
   "conversas": [
-    {"id": 1, "conta": "DR4", "cliente": "Daniel Machado", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "13:18", "ultima_msg": "13:18", "total_msgs": 6, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-1", "SDR-2", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Daniel Machado: 500Kw + CEP enviado, Kemily nao respondeu - lead QUENTE perdido"},
-    {"id": 2, "conta": "DR4", "cliente": "Kemily Carvalho", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "13:16", "ultima_msg": "13:16", "total_msgs": 9, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X6"], "observacao": "Conversa interna de notificacao de leads para Kemily"},
-    {"id": 3, "conta": "DR4", "cliente": "valdemiraparecidoaguiar", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:15", "ultima_msg": "11:46", "total_msgs": 11, "status": "sem_resposta", "nota": 0.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X5", "SDR-X6"], "observacao": "Cliente valdemir: enviou audio em 11:45 e ficou esperando ate 13:15. Resposta inicial atrasada 3h25min"},
-    {"id": 4, "conta": "DR4", "cliente": "Daniela Oliveira", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:15", "ultima_msg": "10:17", "total_msgs": 6, "status": "ok", "nota": 0.7, "argumentos_usados": ["SDR-1a", "SDR-2b"], "argumentos_perdidos": ["SDR-2a", "SDR-3", "SDR-4"], "erros": ["SDR-X2"], "observacao": "Cliente Daniela: conta R$600 - Keane fez observacao para retornar a tarde. Pendente."},
-    {"id": 5, "conta": "DR4", "cliente": "Elizangela Gomes", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:06", "ultima_msg": "13:05", "total_msgs": 7, "status": "sem_resposta", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-2", "SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Elizangela: 'entrei sem querer' - Keane respondeu so 3h depois 'sem problemas' - lead perdido sem tentativa"},
-    {"id": 6, "conta": "DR4", "cliente": "Natali Brito", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:05", "ultima_msg": "09:53", "total_msgs": 7, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-1", "SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Natali: pediu projeto 500kW B2B com conta R$390 - LEAD INDUSTRIAL critico sem resposta"},
-    {"id": 7, "conta": "DR4", "cliente": "Rosangela", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:01", "ultima_msg": "10:02", "total_msgs": 6, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-2", "SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Rosangela: conta R$200 declarada e sem resposta ha 3h"},
-    {"id": 8, "conta": "DR4", "cliente": "Alcione", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:17", "ultima_msg": "13:16", "total_msgs": 13, "status": "sem_resposta", "nota": 0, "argumentos_usados": ["SDR-1a", "SDR-2b"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X5", "SDR-X6"], "observacao": "Cliente Alcione: conversa via audios, mencionou 'so um ar-condicionado' - sem qualificacao adequada"},
-    {"id": 9, "conta": "DR4", "cliente": "Wilson", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:59", "ultima_msg": "12:59", "total_msgs": 6, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Wilson: abertura completa, qualificacao parcial - falta agendar"},
-    {"id": 10, "conta": "DR4", "cliente": "Carmia Izolina", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:57", "ultima_msg": "12:57", "total_msgs": 5, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Carmia: padrao Keane - abre bem mas nao agenda"},
-    {"id": 11, "conta": "DR4", "cliente": "Clescio Pereira", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:56", "ultima_msg": "08:59", "total_msgs": 10, "status": "ok", "nota": 2.7, "argumentos_usados": ["SDR-1a", "SDR-2a", "SDR-2b"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Clescio: response_min=1, qualificacao OK - falta fechamento"},
-    {"id": 12, "conta": "DR4", "cliente": "Yuri Souza", "pessoa": "Caio Roberto", "papel": "VENDEDOR", "hora_lista": "12:55", "ultima_msg": "12:55", "total_msgs": 20, "status": "sem_resposta", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3", "B1", "C1"], "erros": ["X6"], "observacao": "Cliente Yuri: investimento alto sem diferenciacao - lead esfriando"},
-    {"id": 13, "conta": "DR4", "cliente": "Fatima Sales", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:48", "ultima_msg": "12:48", "total_msgs": 6, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Fatima: padrao Keane"},
-    {"id": 14, "conta": "DR4", "cliente": "Rosimeire Silva", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "12:46", "ultima_msg": "12:43", "total_msgs": 5, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-2", "SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Rosimeire: '300 reais' (conta?) - sem resposta da Kemily"},
-    {"id": 15, "conta": "DR4", "cliente": "Joao", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:45", "ultima_msg": "12:45", "total_msgs": 5, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Joao: padrao Keane bom mas sem agendamento"},
-    {"id": 16, "conta": "DR4", "cliente": "Evelangio", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "12:44", "ultima_msg": "12:41", "total_msgs": 7, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Evelangio: response_min=1, mas sem diferenciacao"},
-    {"id": 17, "conta": "DR4", "cliente": "Marcos severino de melo", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:44", "ultima_msg": "12:44", "total_msgs": 5, "status": "ok", "nota": 0.7, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Marcos: respondeu mas faltou qualificacao"},
-    {"id": 18, "conta": "DR4", "cliente": "Iran", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:43", "ultima_msg": "08:26", "total_msgs": 7, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Iran: respondido rapido, padrao Keane"},
-    {"id": 19, "conta": "DR4", "cliente": "Wesley Regis", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:41", "ultima_msg": "12:32", "total_msgs": 20, "status": "ok", "nota": 1.7, "argumentos_usados": ["SDR-1a", "SDR-2b", "SDR-4d"], "argumentos_perdidos": ["SDR-3"], "erros": ["SDR-X2", "SDR-X5"], "observacao": "Cliente Wesley: 13 msgs do cliente - alto engajamento, falta qualificar conta"},
-    {"id": 20, "conta": "DR4", "cliente": "Tarcisio Oliveira", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "12:40", "ultima_msg": "12:38", "total_msgs": 5, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Tarcisio: lead quente sem diferenciacao"},
-    {"id": 21, "conta": "DR4", "cliente": "Lucia Maria", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:40", "ultima_msg": "12:17", "total_msgs": 6, "status": "ok", "nota": 0, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": ["SDR-2", "SDR-3", "SDR-4"], "erros": ["SDR-X2"], "observacao": "Cliente Lucia: response_min=16, qualificacao incompleta"},
-    {"id": 22, "conta": "DR4", "cliente": "Jose Ricardo Pereira", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:40", "ultima_msg": "12:40", "total_msgs": 3, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X6"], "observacao": "Cliente Jose Ricardo: 'Me informa o valor...' - cliente NOVO sem resposta"},
-    {"id": 23, "conta": "DR4", "cliente": "Acleilton", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:39", "ultima_msg": "12:39", "total_msgs": 6, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Acleilton: padrao Keane"},
-    {"id": 24, "conta": "DR4", "cliente": "Gilmar serafim", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:39", "ultima_msg": "12:39", "total_msgs": 6, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Gilmar: padrao Keane"},
-    {"id": 25, "conta": "DR4", "cliente": "Royale", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "12:37", "ultima_msg": "12:34", "total_msgs": 6, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Royale (emoji): NOVO, sem resposta da Kemily"},
-    {"id": 26, "conta": "DR4", "cliente": "Gilberto", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:28", "ultima_msg": "08:16", "total_msgs": 6, "status": "ok", "nota": 1.7, "argumentos_usados": ["SDR-1a", "SDR-4d"], "argumentos_perdidos": ["SDR-2a", "SDR-3"], "erros": ["SDR-X2"], "observacao": "Cliente Gilberto: tentou agendar horarios"},
-    {"id": 27, "conta": "DR4", "cliente": "Dion", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "12:27", "ultima_msg": "12:27", "total_msgs": 2, "status": "ok", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": [], "observacao": "Cliente Dion: resposta inicial"},
-    {"id": 28, "conta": "DR4", "cliente": "Victor Paulo", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "12:26", "ultima_msg": "12:25", "total_msgs": 13, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["SDR-1", "SDR-2", "SDR-3", "SDR-4"], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Victor Paulo: 9 mensagens do cliente sem nenhuma resposta - LEAD QUENTE perdido"},
-    {"id": 29, "conta": "DR4", "cliente": "Hedel Antunes", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:18", "ultima_msg": "11:54", "total_msgs": 10, "status": "ok", "nota": 0, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": [], "erros": ["SDR-X2"], "observacao": "Cliente Hedel: 4 msgs do cliente, falta qualificar"},
-    {"id": 30, "conta": "DR4", "cliente": "Ana", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:15", "ultima_msg": "05:57", "total_msgs": 9, "status": "ok", "nota": 0.7, "argumentos_usados": ["SDR-1a", "SDR-2b"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X2"], "observacao": "Cliente Ana: cliente novo madrugada, Keane respondeu em 2min"},
-    {"id": 31, "conta": "DR4", "cliente": "crisalessandra2001", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:08", "ultima_msg": "12:08", "total_msgs": 4, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X6"], "observacao": "Cliente cris: lead NOVO sem resposta"},
-    {"id": 32, "conta": "DR4", "cliente": "MARCOS WALGRENIO", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:01", "ultima_msg": "12:00", "total_msgs": 5, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Marcos Walgrenio: lead NOVO sem resposta"},
-    {"id": 33, "conta": "DR4", "cliente": "katryn", "pessoa": "Caio Roberto", "papel": "VENDEDOR", "hora_lista": "12:01", "ultima_msg": "12:00", "total_msgs": 8, "status": "sem_resposta", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente katryn: lead SCRIPT-2 em sem_resposta"},
-    {"id": 34, "conta": "DR4", "cliente": "Cristiele", "pessoa": "Pericles Mateus", "papel": "VENDEDOR", "hora_lista": "11:58", "ultima_msg": "11:57", "total_msgs": 3, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Cristiele: Pericles nao respondeu nenhuma das 2 msgs"},
-    {"id": 35, "conta": "DR4", "cliente": "Imperio Natural", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:52", "ultima_msg": "11:36", "total_msgs": 12, "status": "ok", "nota": 0.7, "argumentos_usados": ["SDR-1a", "SDR-2b"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X2"], "observacao": "Cliente Imperio Natural: B2B potencial - alto engajamento"},
-    {"id": 36, "conta": "DR4", "cliente": "Ma Refrigeracao", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:44", "ultima_msg": "10:40", "total_msgs": 3, "status": "ok", "nota": 0, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": [], "erros": ["SDR-X2"], "observacao": "Cliente Ma Refrigeracao: nome B2B - falta qualificar"},
-    {"id": 37, "conta": "DR4", "cliente": "Jose Souza Souza", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:43", "ultima_msg": "11:43", "total_msgs": 6, "status": "ok", "nota": 2.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Jose: padrao Keane"},
-    {"id": 38, "conta": "DR4", "cliente": "Alan de Sa", "pessoa": "Caio Roberto", "papel": "VENDEDOR", "hora_lista": "11:43", "ultima_msg": "11:40", "total_msgs": 2, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Alan de Sa: zero respostas do Caio"},
-    {"id": 39, "conta": "DR4", "cliente": "Marentinha", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:40", "ultima_msg": "04:33", "total_msgs": 7, "status": "ok", "nota": 0, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": [], "erros": ["SDR-X2"], "observacao": "Cliente Marentinha: cliente novo madrugada"},
-    {"id": 40, "conta": "DR4", "cliente": "Hipolito", "pessoa": "Caio Roberto", "papel": "VENDEDOR", "hora_lista": "11:39", "ultima_msg": "10:58", "total_msgs": 6, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Hipolito: response 10min, sem diferencial"},
-    {"id": 41, "conta": "DR4", "cliente": "helenacarvalho", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:37", "ultima_msg": "11:23", "total_msgs": 6, "status": "ok", "nota": 1.6, "argumentos_usados": ["SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente helena: padrao OK"},
-    {"id": 42, "conta": "DR4", "cliente": "HARAS BARUCK SINRI", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:36", "ultima_msg": "11:36", "total_msgs": 2, "status": "ok", "nota": 1.6, "argumentos_usados": ["SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente HARAS BARUCK: nome B2B/Agro - ALTO POTENCIAL"},
-    {"id": 43, "conta": "DR4", "cliente": "Matheus M.", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:36", "ultima_msg": "11:34", "total_msgs": 19, "status": "ok", "nota": 2.7, "argumentos_usados": ["SDR-1a", "SDR-2b", "SDR-4d"], "argumentos_perdidos": ["SDR-3"], "erros": ["SDR-X2"], "observacao": "Cliente Matheus: 11 respostas - melhor conversa do dia"},
-    {"id": 44, "conta": "DR4", "cliente": "Adriano", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "11:34", "ultima_msg": "11:33", "total_msgs": 5, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Adriano: lead NOVO sem resposta da Kemily"},
-    {"id": 45, "conta": "DR4", "cliente": "Gilberto Campos da silva", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:31", "ultima_msg": "11:31", "total_msgs": 2, "status": "ok", "nota": 1.6, "argumentos_usados": ["SDR-1d", "SDR-2a"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Gilberto: padrao OK"},
-    {"id": 46, "conta": "DR4", "cliente": "Edilson Santos", "pessoa": "Maria Luiza", "papel": "SDR", "hora_lista": "11:31", "ultima_msg": "11:31", "total_msgs": 8, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Edilson: 7 msgs do cliente, Maria Luiza ausente"},
-    {"id": 47, "conta": "DR4", "cliente": "Polegar", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:23", "ultima_msg": "13:23", "total_msgs": 10, "status": "ok", "nota": 0, "argumentos_usados": ["SDR-1a"], "argumentos_perdidos": [], "erros": ["SDR-X2"], "observacao": "Cliente Polegar (emoji): conversa ativa hoje"},
-    {"id": 48, "conta": "DR4", "cliente": "Matthaus", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "13:22", "ultima_msg": "11:09", "total_msgs": 13, "status": "ok", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2"], "observacao": "Cliente Matthaus: tag QUENTE - Kemily presente porem sem qualificacao"},
-    {"id": 49, "conta": "DR4", "cliente": "Royale 2", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "13:22", "ultima_msg": "12:37", "total_msgs": 7, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Royale: NOVO sem resposta"},
-    {"id": 50, "conta": "DR4", "cliente": "valdemir longo", "pessoa": "Keane", "papel": "SDR", "hora_lista": "13:21", "ultima_msg": "13:15", "total_msgs": 12, "status": "sem_resposta", "nota": 0.3, "argumentos_usados": ["SDR-1a", "SDR-1d", "SDR-2a"], "argumentos_perdidos": [], "erros": ["SDR-X5", "SDR-X6"], "observacao": "Cliente valdemir: cliente cobrando atencao"},
-    {"id": 51, "conta": "DR4", "cliente": "Daniel Machado 2", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "13:18", "ultima_msg": "13:18", "total_msgs": 6, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X2", "SDR-X6"], "observacao": "Cliente Daniel: 500Kw + CEP sem resposta - LEAD QUENTE"},
-    {"id": 52, "conta": "DR2", "cliente": "Edy Mascarenhas", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "13:23", "ultima_msg": "09:42", "total_msgs": 5, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Edy: ja cliente - mensagem 'minha energia ok obrigado'"},
-    {"id": 53, "conta": "DR2", "cliente": "Glau", "pessoa": "Maria Luiza", "papel": "SDR", "hora_lista": "13:20", "ultima_msg": "13:20", "total_msgs": 4, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": ["SDR-X6"], "observacao": "Cliente Glau: lead novo DR2 sem resposta"},
-    {"id": 54, "conta": "DR2", "cliente": "Daiane", "pessoa": "Ryan Victor", "papel": "OUTRO", "hora_lista": "13:04", "ultima_msg": "13:04", "total_msgs": 2, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Daiane: atribuida a Ryan Victor - VERIFICAR atribuicao - nao esta na lista oficial"},
-    {"id": 55, "conta": "DR2", "cliente": "PEDRO HENRIQUE FERREIRA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "11:28", "ultima_msg": "09:37", "total_msgs": 7, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente PEDRO: pediu 'manda por escrito' - reativacao_Fin1"},
-    {"id": 56, "conta": "DR2", "cliente": "Uiliam Andrade", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "10:59", "ultima_msg": "10:59", "total_msgs": 7, "status": "sem_resposta", "nota": 2, "argumentos_usados": ["A1", "A2"], "argumentos_perdidos": ["D1", "B1"], "erros": ["X6"], "observacao": "Cliente Uiliam: pediu inversor 20kW (B2B medio) - em sem_resposta"},
-    {"id": 57, "conta": "DR2", "cliente": "Roberta", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "10:47", "ultima_msg": "10:47", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Roberta: pediu orcamento 1300kWh - LEAD B2B ALTO CONSUMO sem atendimento"},
-    {"id": 58, "conta": "DR2", "cliente": "Elisabete", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:17", "ultima_msg": "10:14", "total_msgs": 13, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Elisabete: conversa longa, reativacao DR2"},
-    {"id": 59, "conta": "DR2", "cliente": "Heart", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:13", "ultima_msg": "10:07", "total_msgs": 4, "status": "ok", "nota": 1.5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1", "D2", "D3"], "erros": ["X6"], "observacao": "Cliente Heart (emoji): reativacao"},
-    {"id": 60, "conta": "DR2", "cliente": "Souzza", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:06", "ultima_msg": "10:06", "total_msgs": 4, "status": "ok", "nota": 1, "argumentos_usados": [], "argumentos_perdidos": ["D1"], "erros": ["X6"], "observacao": "Cliente Souzza: orcamento solicitado"},
-    {"id": 61, "conta": "DR2", "cliente": "Gabriel Almeida", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:00", "ultima_msg": "10:00", "total_msgs": 2, "status": "ok", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Gabriel: contato inicial"},
-    {"id": 62, "conta": "DR2", "cliente": "MARIA DO SOCORO LEITE SILVA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "09:54", "ultima_msg": "09:54", "total_msgs": 2, "status": "ok", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente MARIA: DISPARO FIN reativacao 2 OK"},
-    {"id": 63, "conta": "DR2", "cliente": "JACILENE BARRETO DOS SANTOS VIANA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "09:52", "ultima_msg": "09:52", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente JACILENE: disparo R1-OK, sem resposta humana ainda"},
-    {"id": 64, "conta": "DR2", "cliente": "ROMERSON FERNANDES GALINDO", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "09:49", "ultima_msg": "09:49", "total_msgs": 3, "status": "ok", "nota": 3, "argumentos_usados": ["D1"], "argumentos_perdidos": ["D2", "D3"], "erros": [], "observacao": "Cliente ROMERSON: UNICO caso com D1 mencionado por Luana!"},
-    {"id": 65, "conta": "DR2", "cliente": "Cliente sem nome (.)", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "09:39", "ultima_msg": "09:39", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente sem nome (somente '.'): mensagem sequencia"},
-    {"id": 66, "conta": "DR2", "cliente": "Wesley Regis DR2", "pessoa": "SEM_ATRIBUICAO", "papel": "NONE", "hora_lista": "09:21", "ultima_msg": "08:45", "total_msgs": 2, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Wesley: lead novo sem atribuicao"},
-    {"id": 67, "conta": "DR2", "cliente": "Amanda Castro", "pessoa": "SEM_ATRIBUICAO", "papel": "NONE", "hora_lista": "07:14", "ultima_msg": "07:14", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Amanda: lead matinal sem atribuicao"},
-    {"id": 68, "conta": "DR2", "cliente": "cliente_emoji_oculos", "pessoa": "SEM_ATRIBUICAO", "papel": "NONE", "hora_lista": "10:12", "ultima_msg": "10:12", "total_msgs": 3, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente emoji oculos: ja eh cliente, pediu info tecnica - sem atribuicao"},
-    {"id": 69, "conta": "DR2", "cliente": "josinaldoooliveira234", "pessoa": "SEM_ATRIBUICAO", "papel": "NONE", "hora_lista": "11:13", "ultima_msg": "11:13", "total_msgs": 3, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente josinaldo: msg 'Pede pro...' sem atribuicao"},
-    {"id": 70, "conta": "DR2", "cliente": "Cliente_DR2_558", "pessoa": "SEM_ATRIBUICAO", "papel": "NONE", "hora_lista": "13:20", "ultima_msg": "13:20", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente sem nome cadastrado: 'Vamos cadastrar' - lead novo"},
-    {"id": 71, "conta": "DR2", "cliente": "Paulo Santos -DR (bot)", "pessoa": "SEM_ATRIBUICAO", "papel": "BOT", "hora_lista": "13:20", "ultima_msg": "13:20", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Sistema de routing - notificacoes de novos leads"}
+    { "id": 1, "conta": "DR4", "cliente": "Rilda Duarte", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:49", "ultima_msg": "19:49", "total_msgs": 6, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": ["SDR-X3"], "observacao": "Cliente Rilda Duarte: informou R$ 300, aguardando avanco SDR-3+SDR-4" },
+    { "id": 2, "conta": "DR4", "cliente": "Maria Edileuza", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "19:44", "ultima_msg": "19:44", "total_msgs": 5, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": ["SDR-3"], "erros": [], "observacao": "Cliente Maria Edileuza: bot enviou SDR-1+SDR-2" },
+    { "id": 3, "conta": "DR4", "cliente": "Cicero Colla", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:39", "ultima_msg": "19:39", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["SDR-3", "SDR-4"], "erros": [], "observacao": "Cliente Cicero Colla: enviou imagem (conta de luz?), aguardando analise" },
+    { "id": 4, "conta": "DR4", "cliente": "Djamenson", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:36", "ultima_msg": "19:36", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Djamenson: bot enviou SDR-2" },
+    { "id": 5, "conta": "DR4", "cliente": "Victor Paulo", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:33", "ultima_msg": "19:33", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": ["SDR-1"], "erros": ["SDR-X3"], "observacao": "Cliente Victor Paulo: respondeu 'boa noite' sem resposta humana" },
+    { "id": 6, "conta": "DR4", "cliente": "Maria", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "19:28", "ultima_msg": "19:28", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Maria: bot SDR-2 enviado" },
+    { "id": 7, "conta": "DR4", "cliente": "Acleilton", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:25", "ultima_msg": "19:25", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Acleilton: enviou audio" },
+    { "id": 8, "conta": "DR4", "cliente": "Ze Bazilo", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:24", "ultima_msg": "19:24", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Ze Bazilo: bot enviou SDR-2" },
+    { "id": 9, "conta": "DR4", "cliente": "catarina", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:23", "ultima_msg": "19:23", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente catarina: cliente enviou audio" },
+    { "id": 10, "conta": "DR4", "cliente": "Lucineide", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "19:21", "ultima_msg": "19:21", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Lucineide: 260 reais informados" },
+    { "id": 11, "conta": "DR4", "cliente": "Jimmy Amaral Santos", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "18:40", "ultima_msg": "18:40", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Jimmy Amaral: 'Vcs tem L...'" },
+    { "id": 12, "conta": "DR4", "cliente": "Eliane Vieira", "pessoa": "Keane", "papel": "SDR", "hora_lista": "18:38", "ultima_msg": "18:38", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Eliane Vieira: bot SDR-2 enviado" },
+    { "id": 13, "conta": "DR4", "cliente": "Pedro Henrique", "pessoa": "Keane", "papel": "SDR", "hora_lista": "18:37", "ultima_msg": "18:37", "total_msgs": 3, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Pedro Henrique: bot SDR-2" },
+    { "id": 14, "conta": "DR4", "cliente": "Everton", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "18:24", "ultima_msg": "18:24", "total_msgs": 2, "status": "ok", "nota": 5, "argumentos_usados": ["A3"], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Everton: informou 187 (R$ 187?)" },
+    { "id": 15, "conta": "DR4", "cliente": "JUCARA(VENDIDO)", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "18:22", "ultima_msg": "18:22", "total_msgs": 6, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": [], "observacao": "Cliente JUCARA: ja marcado como vendido" },
+    { "id": 16, "conta": "DR2", "cliente": "PEDRO HENRIQUE FERREIRA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "17:54", "ultima_msg": "17:53", "total_msgs": 9, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": ["X6"], "observacao": "Cliente PEDRO HENRIQUE: lead de reativacao (DISPARO_FIN)" },
+    { "id": 17, "conta": "DR2", "cliente": "Glau", "pessoa": "Maria Luiza", "papel": "SDR", "hora_lista": "17:13", "ultima_msg": "17:13", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["SDR-3"], "erros": [], "observacao": "Cliente Glau: bot SDR-1+SDR-2 enviados" },
+    { "id": 18, "conta": "DR2", "cliente": "Beatriz", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "16:37", "ultima_msg": "16:37", "total_msgs": 4, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["D1"], "erros": ["X6"], "observacao": "Cliente Beatriz: 'Vou ser d...'" },
+    { "id": 19, "conta": "DR2", "cliente": "Otavio Nunes", "pessoa": null, "papel": null, "hora_lista": "15:54", "ultima_msg": "15:54", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Otavio Nunes: SEM ATRIBUICAO - 'Boa tarde' sem resposta" },
+    { "id": 20, "conta": "DR2", "cliente": "RAILA CALIANE DA COSTA RODRIGUES", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "15:38", "ultima_msg": "15:38", "total_msgs": 1, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["C1"], "argumentos_perdidos": ["B1", "D1"], "erros": [], "observacao": "Cliente RAILA: cliente abandonou" },
+    { "id": 21, "conta": "DR2", "cliente": "IVAN DE AMORIM BARBOSA FILHO", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "15:35", "ultima_msg": "15:35", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": ["B1", "D1"], "erros": ["X3"], "observacao": "Cliente IVAN: enviou audio sem resposta" },
+    { "id": 22, "conta": "DR2", "cliente": "ROMERSON FERNANDES GALINDO", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "15:31", "ultima_msg": "15:31", "total_msgs": 4, "status": "ok", "nota": 7, "argumentos_usados": ["C1", "B1", "D1"], "argumentos_perdidos": ["D2", "D3"], "erros": [], "observacao": "Cliente ROMERSON: vendedor usou kit C1+B1+D1 - destaque positivo" },
+    { "id": 23, "conta": "DR2", "cliente": "Edy Mascarenhas", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "15:28", "ultima_msg": "15:28", "total_msgs": 6, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": ["X6"], "observacao": "Cliente Edy Mascarenhas: 6 msgs trocadas, sem diferenciacao" },
+    { "id": 24, "conta": "DR2", "cliente": "Jamisson", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "15:23", "ultima_msg": "15:23", "total_msgs": 5, "status": "ok", "nota": 5, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": ["X6"], "observacao": "Cliente Jamisson: 5 msgs sem diferenciais" },
+    { "id": 25, "conta": "DR2", "cliente": "Daiane", "pessoa": null, "papel": null, "hora_lista": "13:04", "ultima_msg": "13:04", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": [], "erros": [], "observacao": "Cliente Daiane: SEM ATRIBUICAO - 'Boa tarde' sem resposta" },
+    { "id": 26, "conta": "DR2", "cliente": "Uiliam Andrade", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "10:59", "ultima_msg": "10:59", "total_msgs": 7, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": [], "observacao": "Cliente Uiliam Andrade: conversa engajada, Guilherme ja ligou hoje" },
+    { "id": 27, "conta": "DR2", "cliente": "Roberta", "pessoa": "Guilherme", "papel": "VENDEDOR", "hora_lista": "10:47", "ultima_msg": "10:47", "total_msgs": 1, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A2"], "argumentos_perdidos": ["B1"], "erros": [], "observacao": "Cliente Roberta: perguntou da regiao sem retorno" },
+    { "id": 28, "conta": "DR2", "cliente": "Elisabete", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:17", "ultima_msg": "10:17", "total_msgs": 13, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1", "D2"], "erros": ["X6"], "observacao": "Cliente Elisabete: LEAD QUENTE - 13 mensagens trocadas" },
+    { "id": 29, "conta": "DR2", "cliente": "Souzza", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:06", "ultima_msg": "10:06", "total_msgs": 11, "status": "ok", "nota": 7, "argumentos_usados": [], "argumentos_perdidos": ["D1"], "erros": ["X6"], "observacao": "Cliente Souzza: 11 msgs, lead quente" },
+    { "id": 30, "conta": "DR2", "cliente": "Gabriel Almeida", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "10:00", "ultima_msg": "10:00", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": [], "argumentos_perdidos": ["B1"], "erros": ["X3"], "observacao": "Cliente Gabriel Almeida: cliente respondeu sem retorno" }
   ]
 }
