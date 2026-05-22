@@ -1,0 +1,150 @@
+{
+  "data_referencia": "2026-05-21",
+  "gerado_em": "2026-05-22T09:40",
+
+  "resumo": {
+    "total_pendentes": 13,
+    "sem_resposta_antes_18h": 0,
+    "sem_resposta_apos_18h": 1,
+    "alto_consumo": 3,
+    "leads_quentes": 4,
+    "sdr_sem_retorno_cliente": 5
+  },
+
+  "sem_resposta_antes_18h": [],
+
+  "sem_resposta_apos_18h": [
+    {
+      "cliente": "Leandro",
+      "vendedor": "Keanny Brandao (Keane) / Camila",
+      "conta": "DR4",
+      "hora_ultima_msg": "18:21",
+      "resumo_conversa": "Cliente em contato continuo com Camila sobre questao tecnica resolvida pela engenharia. Mandou audio as 18:20, depois texto 'Boa tarde', 'Tem contato de camila' e '?' as 18:21. Vendedora Keanny ja havia respondido as 17:53 que Camila esta resolvendo, mas cliente quer falar com Camila diretamente.",
+      "valor_conta": "nao mencionado",
+      "recomendacao": "Responder logo cedo - cliente busca Camila diretamente. Conectar Camila ou retornar Keanny com previsao concreta da engenharia.",
+      "abordagem_sugerida": "Bom dia + 'A Camila esta com seu caso, vou pedir que te chame agora' + chamar Camila no atendimento"
+    }
+  ],
+
+  "alto_consumo": [
+    {
+      "cliente": "~ Filipe Silva",
+      "vendedor": "Ana Maryllya (atual) / Kemily Carvalho (anterior)",
+      "conta": "DR4",
+      "valor_conta": "Sistema 1000kw solicitado (divido entre 2 casas) - ALTO TICKET",
+      "tipo_imovel": "Residencial (2 casas - Lagoa Grande-PE)",
+      "status_atual": "Ana Maryllya enviou as 17:53-17:57 oferecendo orcamento de 1000kw e ligacao. Aguardando resposta cliente.",
+      "resumo_conversa": "Cliente solicitou orcamento sistema 1000kw para 2 casas em Lagoa Grande-PE. Conversa iniciada 15/05 com Kemily, retomada ontem por Ana Maryllya com proposta de ligacao e envio de orcamento.",
+      "recomendacao": "PRIORIDADE ALTA - sistema 1000kw e ticket muito alto. Ana Maryllya deve ligar HOJE pela manha (oferecida na ultima msg) e enviar orcamento detalhado por escrito.",
+      "abordagem_sugerida": "Bom dia + 'Filipe, conforme combinado vou ligar para apresentar o orcamento de 1000kw' + ligar + enviar PDF orcamento + destacar diferenciais (laboratorio proprio, monitoramento 1 ano, 17 anos mercado)"
+    },
+    {
+      "cliente": "Adrianna Pinto",
+      "vendedor": "Kemily Carvalho",
+      "conta": "DR4",
+      "valor_conta": "Consumo: 1.000 kWh/mes - MUITO ALTO",
+      "tipo_imovel": "Residencial (uso alto, possivel ar condicionado)",
+      "status_atual": "Conversa em andamento desde marco. Kemily ofereceu promocao relampago ontem.",
+      "resumo_conversa": "Cliente com consumo de 1.000 kWh/mes (faixa de R$ 1.000-1.500). Conversa retomada ontem por Kemily com proposta de promocao relampago para 3 projetos.",
+      "recomendacao": "PRIORIDADE ALTA - consumo de 1000kWh = ticket grande. Kemily deve fechar proposta urgente hoje, leadja em estagio avancado.",
+      "abordagem_sugerida": "Bom dia Adrianna + 'Conforme conversamos, separei o preco diferenciado da promocao para voce' + ligar para apresentar + agendar visita tecnica"
+    },
+    {
+      "cliente": "Socorro Andrade",
+      "vendedor": "Kemily Carvalho / Ana Maryllya",
+      "conta": "DR4",
+      "valor_conta": "Consumo atual + plano de adicionar 2 ARs 9000 BTUs - alto consumo futuro",
+      "tipo_imovel": "Residencial (com expansao prevista)",
+      "status_atual": "Cliente em viagem, retorna quinta-feira. Kemily/Ana acompanhando.",
+      "resumo_conversa": "Cliente vai instalar 2 ARs 9000 BTUs (uso somente para dormir). Kemily ofereceu visita ou recepcao na empresa. Cliente esta viajando, retorna na quinta. Ana Maryllya entrou no caso.",
+      "recomendacao": "Acompanhar e ja agendar visita para semana que vem (apos volta da viagem). Enviar material por whatsapp para clientes pensar durante viagem.",
+      "abordagem_sugerida": "Bom dia + 'Boa viagem, separei o estudo do seu projeto com os 2 ARs incluidos no calculo' + enviar PDF + 'Marcamos a visita para quarta da semana que vem?'"
+    }
+  ],
+
+  "leads_quentes": [
+    {
+      "cliente": "Natali Brito",
+      "vendedor": "Keanny Brandao (Keane)",
+      "conta": "DR4",
+      "nivel_interesse": "Muito Alto - vai pagar a vista",
+      "resumo_conversa": "Cliente em Juazeiro-BA. Ontem das 17:32 as 17:48 conversa ativa: 'Quero saber valor a vista', 'Vou mandar conta de energia', 'A vista mesmo'. Keanny respondeu 'Combinado! Ate amanha!' as 17:49.",
+      "valor_conta": "aguardando envio da conta",
+      "recomendacao": "PRIORIDADE TOTAL - cliente quer comprar a vista HOJE. Keanny prometeu retorno. Enviar orcamento assim que cliente mandar a conta.",
+      "abordagem_sugerida": "Bom dia Natali! + 'Conforme combinado, ja estou pronta com seu orcamento. Pode me enviar a foto da conta?' + preparar proposta a vista com condicao especial"
+    },
+    {
+      "cliente": "Paulo Valmir",
+      "vendedor": "Luana / Alexandre",
+      "conta": "DR4",
+      "nivel_interesse": "Muito Alto - financiamento aprovado para irmao",
+      "resumo_conversa": "Banco aprovou o projeto pelo nome do irmao do Paulo. Alexandre ligou pela manha, Luana retomou a tarde. Cliente perguntou nome do irmao aprovado (cliente tem varios irmaos). Negociacao avancada.",
+      "valor_conta": "nao informado, mas financiamento ja aprovado",
+      "recomendacao": "PRIORIDADE TOTAL - projeto APROVADO pelo banco. Luana/Alexandre devem confirmar nome do irmao e fechar documentacao hoje.",
+      "abordagem_sugerida": "Bom dia Paulo + 'Confirmei com o financeiro - o nome do seu irmao aprovado e [nome]. Podemos seguir com a assinatura hoje?'"
+    },
+    {
+      "cliente": "Uesclei Santos",
+      "vendedor": "Caio Roberto / Luana",
+      "conta": "DR2",
+      "nivel_interesse": "Alto - aguardando aprovacao bancaria",
+      "resumo_conversa": "Cliente teve documentacao questionada (CPF antigo). Caio informou ontem 12:16 que aguarda resposta do banco. Negociacao avancada com financiamento.",
+      "valor_conta": "nao informado",
+      "recomendacao": "PRIORIDADE - assim que tiver resposta do banco, Caio retornar IMEDIATO. Se nao tiver resposta ate meio-dia, Caio cobrar o banco e dar feedback proativo ao cliente.",
+      "abordagem_sugerida": "Bom dia Doutor + 'Acabei de cobrar o banco - me retornam ate XX. Te informo assim que sair' + dar prazo concreto"
+    },
+    {
+      "cliente": "RAILA CALIANE DA COSTA RODRIGUES",
+      "vendedor": "Luana - Gestora de energia",
+      "conta": "DR2",
+      "nivel_interesse": "Alto - tentou 3 bancos",
+      "resumo_conversa": "Luana tentou 3 bancos, aguardando resposta do financeiro. Conversa ate 18:39 ontem. Cliente esperando 'Vai dar certo?'. Luana confirmou que vai tentar de tudo.",
+      "valor_conta": "nao informado",
+      "recomendacao": "PRIORIDADE - cliente em ansiedade. Luana prometeu retorno hoje sobre os 3 bancos. Cobrar bancos cedo e dar feedback.",
+      "abordagem_sugerida": "Bom dia Raila + 'Ja estou com os bancos para te dar retorno ainda pela manha. Pode contar comigo' + ligar quando tiver resposta"
+    }
+  ],
+
+  "sdr_sem_retorno_cliente": [
+    {
+      "cliente": "Marentinha",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "R$ 230 (informado pelo cliente)",
+      "resumo_conversa": "Cliente informou conta de R$230. Keanny tentou contato manha e tarde, oferta visita as 18h - sem retorno.",
+      "recomendacao": "Tentar ligacao logo cedo. Conta baixa, sistema pequeno, ticket modesto mas conversao rapida possivel."
+    },
+    {
+      "cliente": "Rogerio Luiz",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "R$ 400 (informado pelo cliente)",
+      "resumo_conversa": "Cliente informou conta de R$400. Keanny tentou ligacao 17:24 - sem retorno cliente.",
+      "recomendacao": "Tentar contato logo cedo - cliente engajou apenas com valor da conta, precisa qualificar mais."
+    },
+    {
+      "cliente": "Clescio Pereira",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "R$ 300-500 (cliente queria usina 500-600)",
+      "resumo_conversa": "Cliente pediu orcamento para usina 500-600 (sistema maior que conta sugere). Keanny tentou multiplas vezes - sem retorno.",
+      "recomendacao": "PRIORIDADE MEDIA-ALTA - cliente quer sistema maior do que conta indica (provavel expansao). Keanny insistir em horario noturno."
+    },
+    {
+      "cliente": "DAVI RODRIGUES LEITE FILHO",
+      "vendedor": "Luana - Gestora de energia",
+      "conta": "DR2",
+      "valor_conta": "nao especificado",
+      "resumo_conversa": "Cliente tinha visita marcada 12/05 14h30. Luana segue contato. Conversa em andamento.",
+      "recomendacao": "Confirmar status atual da visita/proposta. Acompanhar."
+    },
+    {
+      "cliente": "~ Filipe Silva (segundo contato Joao - SDR1)",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "nao informado",
+      "resumo_conversa": "Lead Joao - SDR-1 Keanny tentou contato manha e tarde - sem retorno.",
+      "recomendacao": "Tentar ligacao em horario alternativo."
+    }
+  ]
+}

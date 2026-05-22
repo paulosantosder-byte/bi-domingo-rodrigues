@@ -1,0 +1,110 @@
+====================================================
+FOLLOW-UPS PRIORITARIOS - 2026-05-22 (sexta-feira)
+Referencia: conversas de 2026-05-21 (quinta-feira)
+Gerado: 09:40 - Modo automatico
+====================================================
+
+>> SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
+----------------------------------------------------
+(nenhum caso identificado - vendedores responderam dentro do expediente)
+
+
+>> SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
+----------------------------------------------------
+1. Leandro - Vendedor: Keanny Brandao (Keane) / Camila - DR4
+   Ultima msg cliente: 18:21 ("Tem contato de camila", "?")
+   Situacao: Cliente quer falar diretamente com Camila (engenharia).
+            Keanny ja explicou que Camila esta resolvendo,
+            mas cliente cobrou contato direto.
+   ACAO: Responder logo cedo. Conectar Camila ao chat ou
+         retornar via Keanny com previsao concreta da engenharia.
+
+
+>> ALTO CONSUMO - PRIORIDADE COMERCIAL:
+----------------------------------------------------
+1. ~ Filipe Silva - Vendedor: Ana Maryllya - DR4
+   Sistema solicitado: 1000kw (2 casas - Lagoa Grande-PE)
+   Situacao: Ana enviou as 17:53-17:57 oferta de orcamento e ligacao.
+            Aguardando resposta cliente.
+   ACAO: Ana deve ligar HOJE pela manha (conforme prometido) e
+         enviar PDF do orcamento. Destacar diferenciais
+         (laboratorio proprio, monitoramento 1 ano, 17 anos).
+
+2. Adrianna Pinto - Vendedor: Kemily Carvalho - DR4
+   Consumo: 1.000 kWh/mes (MUITO ALTO)
+   Situacao: Conversa antiga retomada ontem com promocao relampago.
+   ACAO: Kemily deve fechar HOJE - lead em estagio avancado.
+         Enviar preco diferenciado + agendar visita tecnica.
+
+3. Socorro Andrade - Vendedor: Kemily/Ana Maryllya - DR2
+   Consumo atual + 2 ARs 9000 BTUs futuros
+   Situacao: Cliente viajando, retorna na quinta.
+   ACAO: Enviar PDF do estudo para cliente ler na viagem +
+         pre-agendar visita para semana que vem (quarta).
+
+
+>> LEADS QUENTES - FECHAR HOJE:
+----------------------------------------------------
+1. Natali Brito - Vendedor: Keanny Brandao - DR4
+   Nivel: MUITO ALTO - vai pagar a vista
+   Situacao: Ontem das 17:32-17:48 disse "Quero saber valor a vista",
+            "Vou mandar conta de energia", "A vista mesmo".
+            Keanny: "Combinado! Ate amanha!" (17:49).
+   ACAO: PRIORIDADE TOTAL - cliente quer comprar a vista HOJE.
+         Pedir foto da conta + preparar proposta com condicao
+         especial a vista.
+
+2. Paulo Valmir - Vendedor: Luana/Alexandre - DR4
+   Nivel: MUITO ALTO - financiamento APROVADO
+   Situacao: Banco aprovou pelo nome do irmao. Cliente perguntou
+            qual irmao (tem varios). Negociacao avancada.
+   ACAO: Confirmar nome exato do irmao aprovado + fechar
+         documentacao HOJE.
+
+3. Uesclei Santos - Vendedor: Caio Roberto/Luana - DR2
+   Nivel: ALTO - aguardando banco
+   Situacao: Caio informou ontem 12:16 que aguarda banco.
+   ACAO: Cobrar banco cedo. Se nao houver resposta ate meio-dia,
+         dar feedback proativo ao cliente.
+
+4. RAILA CALIANE DA COSTA RODRIGUES - Vendedor: Luana - DR2
+   Nivel: ALTO - 3 bancos tentados
+   Situacao: Conversa ate 18:39 - cliente ansiosa perguntou
+            "Vai dar certo?". Luana prometeu retorno hoje.
+   ACAO: Cobrar 3 bancos cedo + ligar cliente com posicao concreta.
+
+
+>> SDRs SEM RETORNO DO CLIENTE (acompanhar):
+----------------------------------------------------
+- Marentinha (DR4) - Conta R$ 230 - Keanny tentar contato cedo
+- Rogerio Luiz (DR4) - Conta R$ 400 - Keanny tentar contato cedo
+- Clescio Pereira (DR4) - Quer usina 500-600 - Keanny insistir
+- DAVI RODRIGUES (DR2) - Visita 12/05 marcada - Luana acompanhar
+- Joao (DR4) + lista SDR-1 com 13+ leads sem retorno do cliente
+  (Marcos severino, Fatima Sales, Iran, Jose Souza, Jose Ricardo,
+  Gilberto, helenacarvalho, crisalessandra, Maria Jose,
+  Rogerio - todos no fluxo Keanny SDR-1)
+
+====================================================
+RESUMO:
+- Sem resposta antes 18h: 0
+- Sem resposta apos 18h: 1 (Leandro - URGENTE)
+- Alto consumo: 3
+- Leads quentes: 4 (2 com financiamento ja aprovado/em analise!)
+- SDRs sem retorno cliente: 5+
+
+TOTAL DE FOLLOW-UPS PRIORITARIOS: 13
+====================================================
+
+TOP 5 PRIORIDADES DO DIA:
+1. Paulo Valmir (DR4 - Luana/Alexandre) - financiamento APROVADO
+2. Natali Brito (DR4 - Keanny) - quer comprar A VISTA hoje
+3. ~ Filipe Silva (DR4 - Ana Maryllya) - sistema 1000kw
+4. Leandro (DR4 - Camila/Keanny) - cliente cobrando contato urgente
+5. Adrianna Pinto (DR4 - Kemily) - 1000 kWh/mes consumo
+
+OBSERVACAO: A maioria dos leads SDR-1 do dia (13+ na Keanny) NAO
+respondeu apos abordagem padrao. Sugestao: revisar gatilho de
+abordagem para captar mais respostas (talvez mensagem mais
+personalizada baseada no que disseram inicialmente).
+====================================================
