@@ -1,0 +1,1501 @@
+{
+  "data": "2026-05-22",
+  "hora_execucao": "16:20",
+  "tipo_analise": "snapshot_tarde_preview_based",
+  "observacao_metodologia": "Snapshot da tarde (16:20). Analise baseada em metadata da lista (atendente, horario, preview de ultima msg). Clicks programaticos na SPA do BotConversa falharam intermitentemente, impossibilitando deep-read completo. Stats refletem ATRIBUICAO de conversas, nao analise de script por mensagem. Para nota_media e aderencia_script, use o relatorio fim-do-dia.",
+  "metricas": {
+    "total_conversas": 94,
+    "total_conversas_dr4": 80,
+    "total_conversas_dr2": 14,
+    "total_ligacoes": 4,
+    "ignorados": 2,
+    "sem_atribuicao": 25,
+    "criticos_bot_only": 18,
+    "ana_maryllya_nao_cadastrada": 1,
+    "nota_media_sdr": null,
+    "nota_media_vendedor": null,
+    "aderencia_geral": null
+  },
+  "sdrs": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 33,
+      "total_conversas_dr4": 33,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Keane: 33 conversas atribuidas (DR4:33 + DR2:0)"
+    },
+    {
+      "nome": "Kemily",
+      "cor": "#14b8a6",
+      "papel": "SDR",
+      "total_conversas": 2,
+      "total_conversas_dr4": 2,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 1,
+      "preview_only_analysis": true,
+      "observacao": "Kemily: 2 conversas atribuidas (DR4:2 + DR2:0)"
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "papel": "SDR",
+      "total_conversas": 0,
+      "total_conversas_dr4": 0,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Maria Luiza: 0 conversas atribuidas (DR4:0 + DR2:0)"
+    }
+  ],
+  "vendedores": [
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "papel": "VENDEDOR",
+      "total_conversas": 24,
+      "total_conversas_dr4": 16,
+      "total_conversas_dr2": 8,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Luana: 24 conversas atribuidas (DR4:16 + DR2:8)"
+    },
+    {
+      "nome": "Caio Roberto",
+      "cor": "#0ea5e9",
+      "papel": "VENDEDOR",
+      "total_conversas": 5,
+      "total_conversas_dr4": 5,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Caio Roberto: 5 conversas atribuidas (DR4:5 + DR2:0)"
+    },
+    {
+      "nome": "Alan Oliveira",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "total_conversas_dr4": 1,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Alan Oliveira: 1 conversas atribuidas (DR4:1 + DR2:0)"
+    },
+    {
+      "nome": "Pericles Mateus",
+      "cor": "#8b5cf6",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "total_conversas_dr4": 1,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 0,
+      "preview_only_analysis": true,
+      "observacao": "Pericles Mateus: 1 conversas atribuidas (DR4:1 + DR2:0)"
+    },
+    {
+      "nome": "Guilherme",
+      "cor": "#10b981",
+      "papel": "VENDEDOR",
+      "total_conversas": 0,
+      "total_conversas_dr4": 0,
+      "total_conversas_dr2": 0,
+      "ligacoes_dia": 3,
+      "preview_only_analysis": true,
+      "observacao": "Guilherme: 0 conversas atribuidas (DR4:0 + DR2:0)"
+    }
+  ],
+  "ranking_sdrs": [
+    {
+      "posicao": 1,
+      "nome": "Keane",
+      "total_conversas": 33,
+      "badge": "Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Kemily",
+      "total_conversas": 2,
+      "badge": "Prata"
+    },
+    {
+      "posicao": 3,
+      "nome": "Maria Luiza",
+      "total_conversas": 0,
+      "badge": "Bronze"
+    }
+  ],
+  "ranking_vendedores": [
+    {
+      "posicao": 1,
+      "nome": "Luana",
+      "total_conversas": 24,
+      "badge": "Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Caio Roberto",
+      "total_conversas": 5,
+      "badge": "Prata"
+    },
+    {
+      "posicao": 3,
+      "nome": "Alan Oliveira",
+      "total_conversas": 1,
+      "badge": "Bronze"
+    },
+    {
+      "posicao": 4,
+      "nome": "Pericles Mateus",
+      "total_conversas": 1,
+      "badge": "Em desenvolvimento"
+    },
+    {
+      "posicao": 5,
+      "nome": "Guilherme",
+      "total_conversas": 0,
+      "badge": "Em desenvolvimento"
+    }
+  ],
+  "insights": {
+    "alertas": [
+      {
+        "tipo": "ATENDENTE_NAO_CADASTRADO",
+        "pessoa": "Ana Maryllya",
+        "conversas": 1,
+        "problema": "Esta atendendo conversas DR4 mas nao esta cadastrada na lista oficial de SDRs/Vendedores",
+        "acao_corretiva": "Confirmar com Paulo se Ana Maryllya entra como SDR ou Vendedora e adicionar ao mapeamento"
+      },
+      {
+        "tipo": "SEM_ATRIBUICAO",
+        "conversas_afetadas": 25,
+        "problema": "25 conversas sem atendente identificado (bot autoresponder ou sem tag)",
+        "exemplos": [
+          "Cliente Davi Cavalcanti: aguarda atribuicao desde 15:52",
+          "Cliente Eliane Josefa: aguarda atribuicao desde 15:52",
+          "Cliente 558791409512: aguarda atribuicao desde 15:51",
+          "Cliente Edinaldo: aguarda atribuicao desde 15:45",
+          "Cliente JAS: aguarda atribuicao desde 15:36"
+        ],
+        "acao_corretiva": "Atribuir leads sem atendente, especialmente os criticos_bot_only"
+      },
+      {
+        "tipo": "BOT_ONLY",
+        "conversas_afetadas": 18,
+        "problema": "18 conversas tiveram apenas o bot respondendo (sem humano)",
+        "acao_corretiva": "Equipe deve atender leads novos rapidamente apos o bot intake"
+      }
+    ],
+    "destaques": [
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "acao": "Lidera SDRs com 33 atribuicoes"
+      },
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "acao": "Lidera Vendedores com 24 atribuicoes"
+      }
+    ],
+    "oportunidades_prioritarias_count": 43
+  },
+  "ignorados": [
+    {
+      "conta": "DR4",
+      "nome": "Paulo Junior -Ignorar",
+      "hora": "15:51"
+    },
+    {
+      "conta": "DR2",
+      "nome": "Paulo Santos - DR",
+      "hora": "11:26"
+    }
+  ],
+  "sem_atendente_lista": [
+    {
+      "conta": "DR4",
+      "nome": "Davi Cavalcanti",
+      "hora": "15:52",
+      "preview": ""
+    },
+    {
+      "conta": "DR4",
+      "nome": "Eliane Josefa",
+      "hora": "15:52",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "558791409512",
+      "hora": "15:51",
+      "preview": "Chegou um..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Edinaldo",
+      "hora": "15:45",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "JAS",
+      "hora": "15:36",
+      "preview": "Umas 5:30"
+    },
+    {
+      "conta": "DR4",
+      "nome": "igor Vinicius",
+      "hora": "15:19",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "558781463639",
+      "hora": "15:04",
+      "preview": "Chegou um..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Marcia Oliveira",
+      "hora": "14:24",
+      "preview": "Nao bati..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Rosa",
+      "hora": "13:54",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Lula Freire",
+      "hora": "13:43",
+      "preview": "Au..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Ok Fica Pra Amanha",
+      "hora": "13:07",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Maria",
+      "hora": "13:03",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Charles Tim",
+      "hora": "12:57",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Silvio Miguel",
+      "hora": "12:50",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Fatima Soares",
+      "hora": "12:45",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Edinilson",
+      "hora": "12:44",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "Lucia Gomes",
+      "hora": "12:44",
+      "preview": ""
+    },
+    {
+      "conta": "DR4",
+      "nome": "elianeroberta",
+      "hora": "11:54",
+      "preview": "Me inform..."
+    },
+    {
+      "conta": "DR4",
+      "nome": "RECICLA MAIS BRASIL",
+      "hora": "09:52",
+      "preview": ""
+    },
+    {
+      "conta": "DR4",
+      "nome": "Bom dia cliente",
+      "hora": "09:03",
+      "preview": "Bom dia A..."
+    },
+    {
+      "conta": "DR2",
+      "nome": "Ivanildo",
+      "hora": "13:58",
+      "preview": "Falei com..."
+    },
+    {
+      "conta": "DR2",
+      "nome": "5511953259949",
+      "hora": "11:51",
+      "preview": ""
+    },
+    {
+      "conta": "DR2",
+      "nome": "Fernando Codifica Web",
+      "hora": "11:27",
+      "preview": "Video"
+    },
+    {
+      "conta": "DR2",
+      "nome": "558791409512",
+      "hora": "11:26",
+      "preview": "Chegou um..."
+    },
+    {
+      "conta": "DR2",
+      "nome": "Jamisson",
+      "hora": "08:06",
+      "preview": "Bom dia"
+    }
+  ],
+  "criticos_bot_only_lista": [
+    {
+      "conta": "DR4",
+      "nome": "Davi Cavalcanti",
+      "hora": "15:52",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Eliane Josefa",
+      "hora": "15:52",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "558791409512",
+      "hora": "15:51",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Edinaldo",
+      "hora": "15:45",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "igor Vinicius",
+      "hora": "15:19",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "558781463639",
+      "hora": "15:04",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Rosa",
+      "hora": "13:54",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Ok Fica Pra Amanha",
+      "hora": "13:07",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Maria",
+      "hora": "13:03",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Charles Tim",
+      "hora": "12:57",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Silvio Miguel",
+      "hora": "12:50",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Fatima Soares",
+      "hora": "12:45",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Edinilson",
+      "hora": "12:44",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "Lucia Gomes",
+      "hora": "12:44",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "elianeroberta",
+      "hora": "11:54",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR4",
+      "nome": "RECICLA MAIS BRASIL",
+      "hora": "09:52",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR2",
+      "nome": "5511953259949",
+      "hora": "11:51",
+      "motivo": "bot_only"
+    },
+    {
+      "conta": "DR2",
+      "nome": "558791409512",
+      "hora": "11:26",
+      "motivo": "bot_only"
+    }
+  ],
+  "ana_maryllya_lista": [
+    {
+      "conta": "DR4",
+      "nome": "Nilza",
+      "hora": "16:04"
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Gilmar serafim",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "16:08",
+      "ultima_msg": "16:08",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "angelitamoreira06",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "16:05",
+      "ultima_msg": "16:05",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Nilza",
+      "pessoa": "Ana Maryllya (nao cadastrada)",
+      "papel": "DESCONHECIDO",
+      "hora_lista": "16:04",
+      "ultima_msg": "16:04",
+      "status": "ok",
+      "observacao": "Ana Maryllya nao esta na lista oficial - alerta"
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "Davi Cavalcanti",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:52",
+      "ultima_msg": "15:52",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "Eliane Josefa",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:52",
+      "ultima_msg": "15:52",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 6,
+      "conta": "DR4",
+      "cliente": "558791409512",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:51",
+      "ultima_msg": "15:51",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 7,
+      "conta": "DR4",
+      "cliente": "Igor Val",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:50",
+      "ultima_msg": "15:50",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 8,
+      "conta": "DR4",
+      "cliente": "Wellington",
+      "pessoa": "Pericles Mateus",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:46",
+      "ultima_msg": "15:46",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Pericles Mateus"
+    },
+    {
+      "id": 9,
+      "conta": "DR4",
+      "cliente": "Edinaldo",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:45",
+      "ultima_msg": "15:45",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 10,
+      "conta": "DR4",
+      "cliente": "Wilton (Butica)",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:43",
+      "ultima_msg": "15:43",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 11,
+      "conta": "DR4",
+      "cliente": "Rogerio Luiz",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:41",
+      "ultima_msg": "15:41",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 12,
+      "conta": "DR4",
+      "cliente": "Maria Jose",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:39",
+      "ultima_msg": "15:39",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 13,
+      "conta": "DR4",
+      "cliente": "JAS",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:36",
+      "ultima_msg": "15:36",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 14,
+      "conta": "DR4",
+      "cliente": "Clescio Pereira",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:31",
+      "ultima_msg": "15:31",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 15,
+      "conta": "DR4",
+      "cliente": "crisalessandra2001",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:28",
+      "ultima_msg": "15:28",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 16,
+      "conta": "DR4",
+      "cliente": "Camila Lima",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:26",
+      "ultima_msg": "15:26",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 17,
+      "conta": "DR4",
+      "cliente": "Gilberto Campos",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:25",
+      "ultima_msg": "15:25",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 18,
+      "conta": "DR4",
+      "cliente": "helenacarvalho210569",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:22",
+      "ultima_msg": "15:22",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 19,
+      "conta": "DR4",
+      "cliente": "igor Vinicius",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:19",
+      "ultima_msg": "15:19",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 20,
+      "conta": "DR4",
+      "cliente": "Expedito",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:11",
+      "ultima_msg": "15:11",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 21,
+      "conta": "DR4",
+      "cliente": "Joselma",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "15:08",
+      "ultima_msg": "15:08",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 22,
+      "conta": "DR4",
+      "cliente": "558781463639",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "15:04",
+      "ultima_msg": "15:04",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 23,
+      "conta": "DR4",
+      "cliente": "GEOCIVAN LOPES",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "14:57",
+      "ultima_msg": "14:57",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 24,
+      "conta": "DR4",
+      "cliente": "Manoel messias",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "14:41",
+      "ultima_msg": "14:41",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 25,
+      "conta": "DR4",
+      "cliente": "Paulo Luiz Da Silva",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "14:38",
+      "ultima_msg": "14:38",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 26,
+      "conta": "DR4",
+      "cliente": "Marcia Oliveira",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "14:24",
+      "ultima_msg": "14:24",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 27,
+      "conta": "DR4",
+      "cliente": "Rosa",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "13:54",
+      "ultima_msg": "13:54",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 28,
+      "conta": "DR4",
+      "cliente": "Lula Freire",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "13:43",
+      "ultima_msg": "13:43",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 29,
+      "conta": "DR4",
+      "cliente": "Ok Fica Pra Amanha",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "13:07",
+      "ultima_msg": "13:07",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 30,
+      "conta": "DR4",
+      "cliente": "Maria",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "13:03",
+      "ultima_msg": "13:03",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 31,
+      "conta": "DR4",
+      "cliente": "Maria Gracilda",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:01",
+      "ultima_msg": "13:01",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 32,
+      "conta": "DR4",
+      "cliente": "ismael",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:00",
+      "ultima_msg": "13:00",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 33,
+      "conta": "DR4",
+      "cliente": "Dion",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "12:58",
+      "ultima_msg": "12:58",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 34,
+      "conta": "DR4",
+      "cliente": "Charles Tim",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "12:57",
+      "ultima_msg": "12:57",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 35,
+      "conta": "DR4",
+      "cliente": "leandro trans",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "12:56",
+      "ultima_msg": "12:56",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 36,
+      "conta": "DR4",
+      "cliente": "Ytallo Mares",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "12:52",
+      "ultima_msg": "12:52",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 37,
+      "conta": "DR4",
+      "cliente": "Silvio Miguel",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "12:50",
+      "ultima_msg": "12:50",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 38,
+      "conta": "DR4",
+      "cliente": "Fatima Soares",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "12:45",
+      "ultima_msg": "12:45",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 39,
+      "conta": "DR4",
+      "cliente": "Edinilson",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "12:44",
+      "ultima_msg": "12:44",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 40,
+      "conta": "DR4",
+      "cliente": "Lucia Gomes",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "12:44",
+      "ultima_msg": "12:44",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 41,
+      "conta": "DR4",
+      "cliente": "Jonas",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "12:28",
+      "ultima_msg": "12:28",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 42,
+      "conta": "DR4",
+      "cliente": "Marentinha",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "12:10",
+      "ultima_msg": "12:10",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 43,
+      "conta": "DR4",
+      "cliente": "Jose Ricardo",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "12:09",
+      "ultima_msg": "12:09",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 44,
+      "conta": "DR4",
+      "cliente": "elianeroberta",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "11:54",
+      "ultima_msg": "11:54",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 45,
+      "conta": "DR4",
+      "cliente": "Luana Maisa",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "11:08",
+      "ultima_msg": "11:08",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 46,
+      "conta": "DR4",
+      "cliente": "Franceildo",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "11:07",
+      "ultima_msg": "11:07",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 47,
+      "conta": "DR4",
+      "cliente": "maria jose Oliveira",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "10:57",
+      "ultima_msg": "10:57",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 48,
+      "conta": "DR4",
+      "cliente": "Merce",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "10:53",
+      "ultima_msg": "10:53",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 49,
+      "conta": "DR4",
+      "cliente": "Jose Souza",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "10:26",
+      "ultima_msg": "10:26",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 50,
+      "conta": "DR4",
+      "cliente": "Iran",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "10:09",
+      "ultima_msg": "10:09",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 51,
+      "conta": "DR4",
+      "cliente": "Berneval",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "10:08",
+      "ultima_msg": "10:08",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 52,
+      "conta": "DR4",
+      "cliente": "Fabi oliveira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:59",
+      "ultima_msg": "09:59",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 53,
+      "conta": "DR4",
+      "cliente": "Fatima Sales",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:53",
+      "ultima_msg": "09:53",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 54,
+      "conta": "DR4",
+      "cliente": "RECICLA MAIS BRASIL",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "09:52",
+      "ultima_msg": "09:52",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 55,
+      "conta": "DR4",
+      "cliente": "CleRiSToN",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:52",
+      "ultima_msg": "09:52",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 56,
+      "conta": "DR4",
+      "cliente": "Joao",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:51",
+      "ultima_msg": "09:51",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 57,
+      "conta": "DR4",
+      "cliente": "Marcos severino",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:47",
+      "ultima_msg": "09:47",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 58,
+      "conta": "DR4",
+      "cliente": "Jhonatan Gabriel",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:39",
+      "ultima_msg": "09:39",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 59,
+      "conta": "DR4",
+      "cliente": "Tarcisio Oliveira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:37",
+      "ultima_msg": "09:37",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 60,
+      "conta": "DR4",
+      "cliente": "HARAS BARUCK SINRI",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:37",
+      "ultima_msg": "09:37",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 61,
+      "conta": "DR4",
+      "cliente": "CARLIZZE PORCELANATOS",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:34",
+      "ultima_msg": "09:34",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Alan Oliveira"
+    },
+    {
+      "id": 62,
+      "conta": "DR4",
+      "cliente": "Girlandia Novaes",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:34",
+      "ultima_msg": "09:34",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 63,
+      "conta": "DR4",
+      "cliente": "Carlos Bombeiro",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:32",
+      "ultima_msg": "09:32",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 64,
+      "conta": "DR4",
+      "cliente": "Clea",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:30",
+      "ultima_msg": "09:30",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 65,
+      "conta": "DR4",
+      "cliente": "murivaldo",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:28",
+      "ultima_msg": "09:28",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 66,
+      "conta": "DR4",
+      "cliente": "Gil",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:25",
+      "ultima_msg": "09:25",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 67,
+      "conta": "DR4",
+      "cliente": "Nonato Rnz",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:19",
+      "ultima_msg": "09:19",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 68,
+      "conta": "DR4",
+      "cliente": ".",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:17",
+      "ultima_msg": "09:17",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 69,
+      "conta": "DR4",
+      "cliente": "Ze Bazilo",
+      "pessoa": "Kemily",
+      "papel": "SDR",
+      "hora_lista": "09:16",
+      "ultima_msg": "09:16",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Kemily"
+    },
+    {
+      "id": 70,
+      "conta": "DR4",
+      "cliente": "Djamenson",
+      "pessoa": "Kemily",
+      "papel": "SDR",
+      "hora_lista": "09:16",
+      "ultima_msg": "09:16",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Kemily"
+    },
+    {
+      "id": 71,
+      "conta": "DR4",
+      "cliente": "Nildo Torres",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:16",
+      "ultima_msg": "09:16",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 72,
+      "conta": "DR4",
+      "cliente": "Maria Jose 2",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:13",
+      "ultima_msg": "09:13",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Keane"
+    },
+    {
+      "id": 73,
+      "conta": "DR4",
+      "cliente": "wedson",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:10",
+      "ultima_msg": "09:10",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 74,
+      "conta": "DR4",
+      "cliente": "Bom dia cliente",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "09:03",
+      "ultima_msg": "09:03",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 75,
+      "conta": "DR4",
+      "cliente": "Cicero Motos",
+      "pessoa": "Caio Roberto",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:01",
+      "ultima_msg": "09:01",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Caio Roberto"
+    },
+    {
+      "id": 76,
+      "conta": "DR4",
+      "cliente": "Anderson",
+      "pessoa": "Caio Roberto",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:00",
+      "ultima_msg": "09:00",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Caio Roberto"
+    },
+    {
+      "id": 77,
+      "conta": "DR4",
+      "cliente": "Yuri Souza",
+      "pessoa": "Caio Roberto",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:50",
+      "ultima_msg": "08:50",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Caio Roberto"
+    },
+    {
+      "id": 78,
+      "conta": "DR4",
+      "cliente": "MARIA",
+      "pessoa": "Caio Roberto",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:49",
+      "ultima_msg": "08:49",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Caio Roberto"
+    },
+    {
+      "id": 79,
+      "conta": "DR4",
+      "cliente": "Alan de Sa",
+      "pessoa": "Caio Roberto",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:49",
+      "ultima_msg": "08:49",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Caio Roberto"
+    },
+    {
+      "id": 80,
+      "conta": "DR2",
+      "cliente": "RAILA CALIANE",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "16:15",
+      "ultima_msg": "16:15",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 81,
+      "conta": "DR2",
+      "cliente": "EDIDEUS GERALDO",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "16:15",
+      "ultima_msg": "16:15",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 82,
+      "conta": "DR2",
+      "cliente": "Ivanildo",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "13:58",
+      "ultima_msg": "13:58",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 83,
+      "conta": "DR2",
+      "cliente": "Alisson Hamilton",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:24",
+      "ultima_msg": "13:24",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 84,
+      "conta": "DR2",
+      "cliente": "ZENAIDE COSTA",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:22",
+      "ultima_msg": "13:22",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 85,
+      "conta": "DR2",
+      "cliente": "FRANCISCA SALES",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:20",
+      "ultima_msg": "13:20",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 86,
+      "conta": "DR2",
+      "cliente": "IVAN DE AMORIM",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:08",
+      "ultima_msg": "13:08",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 87,
+      "conta": "DR2",
+      "cliente": "ROMERSON FERNANDES",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:07",
+      "ultima_msg": "13:07",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 88,
+      "conta": "DR2",
+      "cliente": "PEDRO HENRIQUE",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:06",
+      "ultima_msg": "13:06",
+      "status": "ok",
+      "observacao": "Conversa atribuida a Luana"
+    },
+    {
+      "id": 89,
+      "conta": "DR2",
+      "cliente": "5511953259949",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "11:51",
+      "ultima_msg": "11:51",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 90,
+      "conta": "DR2",
+      "cliente": "Fernando Codifica Web",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "11:27",
+      "ultima_msg": "11:27",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    },
+    {
+      "id": 91,
+      "conta": "DR2",
+      "cliente": "558791409512",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "11:26",
+      "ultima_msg": "11:26",
+      "status": "critico",
+      "observacao": "Bot autoresponder apenas, sem resposta humana"
+    },
+    {
+      "id": 92,
+      "conta": "DR2",
+      "cliente": "Jamisson",
+      "pessoa": "SEM_ATRIBUICAO",
+      "papel": "INDEFINIDO",
+      "hora_lista": "08:06",
+      "ultima_msg": "08:06",
+      "status": "sem_atribuicao",
+      "observacao": "Sem atendente atribuido"
+    }
+  ]
+}
