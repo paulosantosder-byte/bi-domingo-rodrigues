@@ -196,6 +196,30 @@ tr:hover td { background: #f8fafc; }
 .loading { text-align: center; padding: 48px; color: #64748b; }
 .spinner { display: inline-block; width: 40px; height: 40px; border: 4px solid #f1f5f9; border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* PAINEL DE FOLLOW-UP MATINAL */
+.followup-panel { background: linear-gradient(135deg, #1e3a8a 0%, #6d28d9 100%); border-radius: 14px; padding: 24px; margin-bottom: 24px; color: white; box-shadow: 0 10px 30px rgba(109,40,217,0.3); }
+.followup-panel h2 { font-size: 22px; margin-bottom: 4px; color: white; display: flex; align-items: center; gap: 10px; }
+.followup-panel .fu-sub { opacity: 0.85; font-size: 13px; margin-bottom: 18px; }
+.fu-resumo { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 20px; }
+.fu-resumo-card { background: rgba(255,255,255,0.15); border-radius: 10px; padding: 12px; text-align: center; }
+.fu-resumo-card .num { font-size: 26px; font-weight: 700; }
+.fu-resumo-card .lbl { font-size: 11px; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.5px; }
+.fu-categoria { margin-bottom: 18px; }
+.fu-categoria h3 { font-size: 15px; margin-bottom: 10px; padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); }
+.fu-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px; }
+.fu-card { background: white; color: #1e293b; border-radius: 10px; padding: 14px; border-left: 4px solid #6d28d9; }
+.fu-card.urgente { border-left-color: #dc2626; }
+.fu-card.apos18 { border-left-color: #f59e0b; }
+.fu-card.consumo { border-left-color: #8b5cf6; }
+.fu-card.quente { border-left-color: #10b981; }
+.fu-card .fu-cliente { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.fu-card .fu-meta { font-size: 12px; color: #64748b; margin-bottom: 8px; }
+.fu-card .fu-meta .conta-tag { background: #dbeafe; color: #1e40af; padding: 1px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px; }
+.fu-card .fu-resumo-conv { font-size: 13px; color: #475569; background: #f8fafc; padding: 8px; border-radius: 6px; margin-bottom: 8px; }
+.fu-card .fu-acao { font-size: 13px; background: #ecfdf5; color: #065f46; padding: 8px; border-radius: 6px; border-left: 3px solid #10b981; }
+.fu-card .fu-acao strong { display: block; margin-bottom: 2px; }
+.fu-card .fu-valor { display: inline-block; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -208,6 +232,8 @@ tr:hover td { background: #f8fafc; }
       <select id="date-select"><option value="">Carregando...</option></select>
     </div>
   </header>
+
+  <div id="followup-container"></div>
 
   <div id="content">
     <div class="loading">
@@ -263,6 +289,70 @@ function getCategoriaClass(cat) {
   return '';
 }
 
+async function carregarFollowup() {
+  try {
+    const response = await fetch(`${BASE_URL}followup_pendentes.json?t=${Date.now()}`);
+    if (!response.ok) return;
+    const fu = await response.json();
+    const container = document.getElementById('followup-container');
+    if (!container) return;
+    const r = fu.resumo || {};
+
+    const renderCards = (lista, classe) => {
+      if (!lista || lista.length === 0) return '<p style="opacity:0.7;font-size:13px;padding:8px;">Nenhum nesta categoria ✓</p>';
+      return `<div class="fu-cards">${lista.map(c => `
+        <div class="fu-card ${classe}">
+          <div class="fu-cliente">${c.cliente || '—'}</div>
+          <div class="fu-meta">
+            ${c.vendedor || 'não atribuído'}
+            ${c.conta ? `<span class="conta-tag">${c.conta}</span>` : ''}
+            ${c.hora_ultima_msg ? ` • última msg ${c.hora_ultima_msg}` : ''}
+          </div>
+          <div class="fu-resumo-conv">${c.resumo_conversa || ''}</div>
+          ${c.valor_conta ? `<span class="fu-valor">💡 ${c.valor_conta}</span>` : ''}
+          ${c.tipo_imovel ? `<span class="fu-valor">🏢 ${c.tipo_imovel}</span>` : ''}
+          <div class="fu-acao">
+            <strong>📋 Ação recomendada:</strong>
+            ${c.recomendacao || ''}
+            ${c.abordagem_sugerida ? `<br><em style="color:#0369a1;">→ ${c.abordagem_sugerida}</em>` : ''}
+          </div>
+        </div>
+      `).join('')}</div>`;
+    };
+
+    container.innerHTML = `
+      <div class="followup-panel">
+        <h2>🔔 Follow-ups Prioritários de Ontem</h2>
+        <div class="fu-sub">Referência: ${fu.data_referencia || '—'} • Gerado: ${(fu.gerado_em || '').split('T')[0]} • Aja logo ao começar o dia!</div>
+        <div class="fu-resumo">
+          <div class="fu-resumo-card"><div class="num">${r.sem_resposta_antes_18h || 0}</div><div class="lbl">🔴 Sem resp. antes 18h</div></div>
+          <div class="fu-resumo-card"><div class="num">${r.sem_resposta_apos_18h || 0}</div><div class="lbl">🟡 Sem resp. após 18h</div></div>
+          <div class="fu-resumo-card"><div class="num">${r.alto_consumo || 0}</div><div class="lbl">💎 Alto consumo</div></div>
+          <div class="fu-resumo-card"><div class="num">${r.leads_quentes || 0}</div><div class="lbl">🔥 Leads quentes</div></div>
+        </div>
+        <div class="fu-categoria">
+          <h3>🔴 Sem Resposta (cliente escreveu ANTES das 18h) — URGENTE</h3>
+          ${renderCards(fu.sem_resposta_antes_18h, 'urgente')}
+        </div>
+        <div class="fu-categoria">
+          <h3>🟡 Sem Resposta (cliente escreveu APÓS as 18h) — responder hoje</h3>
+          ${renderCards(fu.sem_resposta_apos_18h, 'apos18')}
+        </div>
+        <div class="fu-categoria">
+          <h3>💎 Alto Consumo — prioridade comercial</h3>
+          ${renderCards(fu.alto_consumo, 'consumo')}
+        </div>
+        <div class="fu-categoria">
+          <h3>🔥 Leads Quentes — fechar hoje</h3>
+          ${renderCards(fu.leads_quentes, 'quente')}
+        </div>
+      </div>
+    `;
+  } catch (error) {
+    console.log('Sem follow-up disponível:', error);
+  }
+}
+
 async function carregarDatasDisponiveis() {
   try {
     const response = await fetch(`${BASE_URL}index.json?t=${Date.now()}`);
@@ -297,7 +387,6 @@ async function carregarDados(dataISO) {
 }
 
 function renderSDRCard(s, idx) {
-  // Calcula taxas de execução de cada etapa
   const totalConv = s.total_conversas || 1;
   const etapas = s.qualidade?.etapas_cumpridas || {};
   const pct = (val) => Math.round((val / totalConv) * 100);
@@ -397,7 +486,6 @@ function renderizarDados(dados) {
   const content = document.getElementById('content');
   const m = dados.metricas || {};
   
-  // 1. MÉTRICAS GERAIS
   const metricas = `
     <div class="metrics-grid">
       <div class="metric-card blue">
@@ -433,7 +521,6 @@ function renderizarDados(dados) {
     </div>
   `;
   
-  // 2. OPORTUNIDADES
   const ops = dados.oportunidades_prioritarias || [];
   const oportunidades = ops.length > 0 ? `
     <div class="priority-section">
@@ -475,7 +562,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 3. INSIGHTS
   const insights = dados.insights ? `
     <div class="insights-grid">
       <div class="insight-card positive">
@@ -499,7 +585,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 4. RANKING SDRs
   const rankingSDR = (dados.ranking_sdrs || []).length > 0 ? `
     <div class="section">
       <h2>🏆 Ranking SDRs (Qualificação)</h2>
@@ -521,7 +606,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 5. RANKING Vendedores
   const rankingVend = (dados.ranking_vendedores || []).length > 0 ? `
     <div class="section">
       <h2>🏆 Ranking Vendedores (Fechamento)</h2>
@@ -542,7 +626,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 6. SDRs (seção destacada)
   const sdrs = (dados.sdrs || []);
   const secaoSDRs = sdrs.length > 0 ? `
     <div class="section-team sdrs">
@@ -554,7 +637,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 7. Vendedores (seção destacada)
   const vendedoresList = (dados.vendedores || []);
   const secaoVendedores = vendedoresList.length > 0 ? `
     <div class="section-team vendedores">
@@ -566,7 +648,6 @@ function renderizarDados(dados) {
     </div>
   ` : '';
   
-  // 8. Conversas
   const conversasDia = (dados.conversas || []);
   const semResposta = conversasDia.filter(c => c.status === 'sem_resposta' || c.status === 'critico');
   const criticas = conversasDia.filter(c => c.status === 'critico');
@@ -650,6 +731,7 @@ function toggleDetails(id) {
 }
 
 document.getElementById('date-select').addEventListener('change', (e) => carregarDados(e.target.value));
+carregarFollowup();
 carregarDatasDisponiveis();
 </script>
 </body>
