@@ -1,6 +1,30 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-25",
+      "tipo_analise": "analise_automatica_tarde",
+      "hora_execucao": "14:17",
+      "total_conversas": 60,
+      "total_conversas_dr4": 47,
+      "total_conversas_dr2": 13,
+      "sem_resposta": 5,
+      "criticas": 5,
+      "nota_media_sdr": 1.3,
+      "nota_media_vendedor": 0.7,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
       "data": "2026-05-22",
       "tipo_analise": "analise_completa_tarde",
       "hora_execucao": "16:20",
@@ -289,5 +313,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-22T16:20"
+  "ultima_atualizacao": "2026-05-25T14:17"
 }
