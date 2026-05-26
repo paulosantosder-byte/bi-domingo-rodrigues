@@ -1,110 +1,163 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-05-22 (sexta-feira)
-Referencia: conversas de 2026-05-21 (quinta-feira)
-Gerado: 09:40 - Modo automatico
+FOLLOW-UPS PRIORITARIOS - 26/05/2026 (terca)
+Referencia: conversas de 25/05/2026 (segunda - ontem)
 ====================================================
 
->> SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
-----------------------------------------------------
-(nenhum caso identificado - vendedores responderam dentro do expediente)
+RESUMO RAPIDO:
+- 14 follow-ups identificados
+- 9 do DR4 + 5 do DR2
+- DESTAQUE: 1 deal fechado aguardando contrato ha 30+ dias
+- DESTAQUE: 1 cliente DR2 quer falar com a GERENCIA
+- DESTAQUE: 2 leads DR2 SEM ATRIBUICAO (orcamento pedido + gerencia)
 
-
->> SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
-----------------------------------------------------
-1. Leandro - Vendedor: Keanny Brandao (Keane) / Camila - DR4
-   Ultima msg cliente: 18:21 ("Tem contato de camila", "?")
-   Situacao: Cliente quer falar diretamente com Camila (engenharia).
-            Keanny ja explicou que Camila esta resolvendo,
-            mas cliente cobrou contato direto.
-   ACAO: Responder logo cedo. Conectar Camila ao chat ou
-         retornar via Keanny com previsao concreta da engenharia.
-
-
->> ALTO CONSUMO - PRIORIDADE COMERCIAL:
-----------------------------------------------------
-1. ~ Filipe Silva - Vendedor: Ana Maryllya - DR4
-   Sistema solicitado: 1000kw (2 casas - Lagoa Grande-PE)
-   Situacao: Ana enviou as 17:53-17:57 oferta de orcamento e ligacao.
-            Aguardando resposta cliente.
-   ACAO: Ana deve ligar HOJE pela manha (conforme prometido) e
-         enviar PDF do orcamento. Destacar diferenciais
-         (laboratorio proprio, monitoramento 1 ano, 17 anos).
-
-2. Adrianna Pinto - Vendedor: Kemily Carvalho - DR4
-   Consumo: 1.000 kWh/mes (MUITO ALTO)
-   Situacao: Conversa antiga retomada ontem com promocao relampago.
-   ACAO: Kemily deve fechar HOJE - lead em estagio avancado.
-         Enviar preco diferenciado + agendar visita tecnica.
-
-3. Socorro Andrade - Vendedor: Kemily/Ana Maryllya - DR2
-   Consumo atual + 2 ARs 9000 BTUs futuros
-   Situacao: Cliente viajando, retorna na quinta.
-   ACAO: Enviar PDF do estudo para cliente ler na viagem +
-         pre-agendar visita para semana que vem (quarta).
-
-
->> LEADS QUENTES - FECHAR HOJE:
-----------------------------------------------------
-1. Natali Brito - Vendedor: Keanny Brandao - DR4
-   Nivel: MUITO ALTO - vai pagar a vista
-   Situacao: Ontem das 17:32-17:48 disse "Quero saber valor a vista",
-            "Vou mandar conta de energia", "A vista mesmo".
-            Keanny: "Combinado! Ate amanha!" (17:49).
-   ACAO: PRIORIDADE TOTAL - cliente quer comprar a vista HOJE.
-         Pedir foto da conta + preparar proposta com condicao
-         especial a vista.
-
-2. Paulo Valmir - Vendedor: Luana/Alexandre - DR4
-   Nivel: MUITO ALTO - financiamento APROVADO
-   Situacao: Banco aprovou pelo nome do irmao. Cliente perguntou
-            qual irmao (tem varios). Negociacao avancada.
-   ACAO: Confirmar nome exato do irmao aprovado + fechar
-         documentacao HOJE.
-
-3. Uesclei Santos - Vendedor: Caio Roberto/Luana - DR2
-   Nivel: ALTO - aguardando banco
-   Situacao: Caio informou ontem 12:16 que aguarda banco.
-   ACAO: Cobrar banco cedo. Se nao houver resposta ate meio-dia,
-         dar feedback proativo ao cliente.
-
-4. RAILA CALIANE DA COSTA RODRIGUES - Vendedor: Luana - DR2
-   Nivel: ALTO - 3 bancos tentados
-   Situacao: Conversa ate 18:39 - cliente ansiosa perguntou
-            "Vai dar certo?". Luana prometeu retorno hoje.
-   ACAO: Cobrar 3 bancos cedo + ligar cliente com posicao concreta.
-
-
->> SDRs SEM RETORNO DO CLIENTE (acompanhar):
-----------------------------------------------------
-- Marentinha (DR4) - Conta R$ 230 - Keanny tentar contato cedo
-- Rogerio Luiz (DR4) - Conta R$ 400 - Keanny tentar contato cedo
-- Clescio Pereira (DR4) - Quer usina 500-600 - Keanny insistir
-- DAVI RODRIGUES (DR2) - Visita 12/05 marcada - Luana acompanhar
-- Joao (DR4) + lista SDR-1 com 13+ leads sem retorno do cliente
-  (Marcos severino, Fatima Sales, Iran, Jose Souza, Jose Ricardo,
-  Gilberto, helenacarvalho, crisalessandra, Maria Jose,
-  Rogerio - todos no fluxo Keanny SDR-1)
 
 ====================================================
-RESUMO:
-- Sem resposta antes 18h: 0
-- Sem resposta apos 18h: 1 (Leandro - URGENTE)
-- Alto consumo: 3
-- Leads quentes: 4 (2 com financiamento ja aprovado/em analise!)
-- SDRs sem retorno cliente: 5+
-
-TOTAL DE FOLLOW-UPS PRIORITARIOS: 13
+ALERTA MAXIMO - DEAL FECHADO EM RISCO
 ====================================================
 
-TOP 5 PRIORIDADES DO DIA:
-1. Paulo Valmir (DR4 - Luana/Alexandre) - financiamento APROVADO
-2. Natali Brito (DR4 - Keanny) - quer comprar A VISTA hoje
-3. ~ Filipe Silva (DR4 - Ana Maryllya) - sistema 1000kw
-4. Leandro (DR4 - Camila/Keanny) - cliente cobrando contato urgente
-5. Adrianna Pinto (DR4 - Kemily) - 1000 kWh/mes consumo
+1. IVONALDO FAUSTINO (DR2) - Vendedor: Guilherme | Gestor em Energia
+   Ultima msg: ontem 08:17 ("Bom dia")
+   SITUACAO CRITICA: Deal JA FECHADO em 22-23/04! Visita tecnica feita,
+   contrato prometido "pronto pela manha" do dia 23.04. Cliente esta
+   cobrando o contrato pendente ha mais de 30 dias.
+   ACAO: Guilherme responder na PRIMEIRA hora. Pedir desculpas, dar
+   status concreto do contrato, comprometer-se com prazo final.
 
-OBSERVACAO: A maioria dos leads SDR-1 do dia (13+ na Keanny) NAO
-respondeu apos abordagem padrao. Sugestao: revisar gatilho de
-abordagem para captar mais respostas (talvez mensagem mais
-personalizada baseada no que disseram inicialmente).
+
+====================================================
+SEM RESPOSTA ANTES DAS 18H (URGENTE)
+====================================================
+
+2. GILBERTO CAMPOS DA SILVA (DR4) - SDR: Keane
+   Ultima msg: ontem 12:52 (3 audios entre 12:35-12:52)
+   Cliente original 19/05. SDR tentou 4 vezes em 5 dias sem sucesso.
+   Cliente FINALMENTE respondeu com 3 audios (00:27 + 00:37 + 00:32).
+   Vendedor NAO ouviu nem retornou.
+   ACAO: Ouvir os 3 audios URGENTE e retornar com ligacao.
+
+3. LUTIANE (DR2) - SEM ATRIBUICAO
+   Ultima msg: ontem 16:41 ("Desejo o numero da gerencia da empresa")
+   Cliente quer falar com GERENCIA - pode ser reclamacao seria ou
+   caso especial. Sem vendedor atribuido!
+   ACAO: Atribuir a gestor + ligar pessoalmente HOJE pela manha.
+
+4. LETICIA ANDRADE (DR2) - SEM ATRIBUICAO
+   Ultima msg: ontem 13:33 ("Gostaria de solicitar um orcamento")
+   Lead NOVO pedindo ORCAMENTO explicitamente, sem atribuicao!
+   Lead extremamente quente sendo desperdicado.
+   ACAO: Atribuir SDR imediato + responder pedindo valor da conta.
+
+5. GLAU (DR2) - SDR: Maria Luiza
+   Ultima msg: ontem 08:31 ("Bom dia")
+   Cliente havia mandado "Ola?" em 20/05 sem resposta. Voltou ontem
+   tentando retomar contato. Conversa abandonada.
+   ACAO: Pedir desculpas pela demora + seguir qualificacao.
+
+6. PAULO ORLEANS (DR4) - SDR: Keane
+   Ultima msg: ontem 13:12 ("Bom dia")
+   Caso curioso: mesmo contato em 29/04 enviou apresentacao como
+   Consultor Comercial concorrente. Agora ontem mudou postura para
+   CLIENTE: "Quero entender como economizar".
+   ACAO: Responder confirmando se virou cliente.
+
+7. CREUZA (DR4) - SDR: Kemilly
+   Ultima msg: ontem 19:35 (5 audios ao todo: 4 as 12:42 + 1 as 19:35)
+   ATENCAO: Em 25/05 10:23 vendedor registrou "clicou sem querer", mas
+   DEPOIS cliente mandou 5 audios mostrando claramente interesse.
+   Cliente de Jaguarari, anotacao precisa ser revertida.
+   ACAO: Reverter anotacao + ouvir 5 audios + retornar.
+
+8. JOSE MARCOS (DR4) - Vendedor: Kemily Carvalho
+   Ultima msg: ontem 15:51 audio (apos texto 13:05)
+   Cliente reabriu contato apos dias. Vendedora prometeu continuidade
+   em 21/05 mas nao respondeu.
+   ACAO: Ouvir audio + responder com simulacao.
+
+9. ROBERVAL (DR4) - SDR: Keane
+   Ultima msg: ontem 17:34 (audio 00:08)
+   Cliente novo ontem 17:23 com interesse. SDR respondeu perguntando
+   regiao. Cliente mandou audio respondendo. Sem retorno.
+   ACAO: Ouvir audio + perguntar valor da conta.
+
+10. EXPEDITO (DR4) - SDR: Keane
+    Ultima msg: ontem 12:09 (3 audios entre 12:06-12:09)
+    Lead de 22/05. SDR tentou contato 22-23/05. Cliente finalmente
+    respondeu com 3 audios.
+    ACAO: Ouvir 3 audios + retornar.
+
+11. IVO LANCELOT (DR4) - SDR: Keane
+    Ultima msg: ontem 12:50 (audio 00:17)
+    Lead de campanha de reativacao (NAO_RESPONDEU + Reativacao_2).
+    Cliente finalmente respondeu apos varias tentativas.
+    ACAO: Ouvir audio + agendar conversa hoje.
+
+12. MILLA (DR4) - SDR: Keane
+    Ultima msg: ontem 12:45 (audio 00:24)
+    Cliente de 22/05 finalmente respondeu apos tentativas.
+    ACAO: Ouvir audio + retornar com informacoes.
+
+13. JOSE CARDOSO (DR4) - SDR: Keane
+    Ultima msg: ontem 12:20 (audio 00:23)
+    Cliente de 20/05 esquentou apos multiplas tentativas SDR.
+    ACAO: Ouvir audio + perguntar valor da conta.
+
+
+====================================================
+LEADS QUENTES - FECHAR HOJE
+====================================================
+
+14. JORGE CAMPODONIO (DR4) - Vendedor: Alan Oliveira (Gestor de Energia)
+    Status: Orcamento ENVIADO
+    Cliente: "Otimo! Valeu! Vou dar uma olhada e volto a falar com vcs."
+    "Caso eu feche o negocio, qual o prazo pra instalacao?"
+    Alan migrou para WhatsApp pessoal: "Vou te mandar la pelo whats"
+    Cliente respondeu com polegar.
+    ACAO: Alan garantir contato HOJE pelo WhatsApp pessoal com proposta
+    detalhada e prazo de instalacao. SINAL FORTE DE FECHAMENTO.
+
+
+====================================================
+ATENCAO - NAO E CLIENTE FINAL
+====================================================
+
+15. MATHEUS - NOVA SINCRONIA (DR2) - Atribuido: Kemily
+    NAO E CLIENTE. E prospector B2B oferecendo servico de qualificacao
+    de leads para Domingo e Rodrigues.
+    ACAO: Direcionar para email comercial ou avaliar parceria.
+
+
+====================================================
+TOP 5 PRIORIDADES DE HOJE
+====================================================
+
+1. IVONALDO FAUSTINO (DR2) - Deal fechado, contrato atrasado 30+ dias
+2. LUTIANE (DR2) - Cliente quer falar com gerencia (sem atribuicao)
+3. LETICIA ANDRADE (DR2) - Pediu orcamento explicito (sem atribuicao)
+4. JORGE CAMPODONIO (DR4) - Lead quente, sinal de fechamento
+5. GILBERTO CAMPOS (DR4) - Cliente engajou apos 4 tentativas SDR
+
+
+====================================================
+RESUMO POR VENDEDOR
+====================================================
+
+Maria Luiza (SDR DR2): 2 followups (Ivonaldo - critico!, Glau)
+Sem Atribuicao (DR2): 2 followups (Lutiane gerencia, Leticia orcamento)
+Kemilly Carvalho (SDR DR4): 3 followups (Creuza, Jose Marcos, Jorge)
+Keane (SDR DR4): 7 followups (Gilberto, Paulo Orleans, Roberval, Expedito,
+                                  Ivo, Milla, jose cardoso)
+Alan Oliveira (Gestor DR4): 1 followup (Jorge Campodonio - HOT)
+Guilherme (Gestor DR2): 1 followup (Ivonaldo - critico)
+
+
+====================================================
+RESUMO FINAL
+====================================================
+- Sem resposta antes 18h: 13
+- Sem resposta apos 18h: 0
+- Alto consumo: 0
+- Leads quentes: 2
+TOTAL DE FOLLOW-UPS: 14 + 1 alerta especial B2B = 15
+
+BI: https://paulosantosder-byte.github.io/bi-domingo-rodrigues/
 ====================================================
