@@ -1,6 +1,31 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-27",
+      "tipo_analise": "analise_tarde_amostragem",
+      "hora_execucao": "17:25",
+      "total_conversas": 106,
+      "total_conversas_dr4": 83,
+      "total_conversas_dr2": 23,
+      "sem_resposta": 14,
+      "criticas": 3,
+      "nota_media_sdr": 5.8,
+      "nota_media_vendedor": 6.2,
+      "alerta_critico": "Lead Armando Nascimento R$750/800kWh SEM ATENDIMENTO HUMANO ha 3h40min - persona 'Gabriel' do bot mantida sem assumir; cliente Leticia Rodrigues DR2 confirmou visita 8h/9h sem retorno de Luana",
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
       "data": "2026-05-26",
       "tipo_analise": "analise_completa_noite",
       "hora_execucao": "20:55",
@@ -339,5 +364,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-26T20:55"
+  "ultima_atualizacao": "2026-05-27T17:25"
 }
