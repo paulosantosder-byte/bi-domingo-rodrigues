@@ -2,16 +2,16 @@
   "relatorios": [
     {
       "data": "2026-05-27",
-      "tipo_analise": "analise_tarde_amostragem",
-      "hora_execucao": "17:25",
-      "total_conversas": 106,
-      "total_conversas_dr4": 83,
+      "tipo_analise": "refresh_fim_do_dia_amostragem",
+      "hora_execucao": "18:34",
+      "total_conversas": 117,
+      "total_conversas_dr4": 94,
       "total_conversas_dr2": 23,
-      "sem_resposta": 14,
-      "criticas": 3,
-      "nota_media_sdr": 5.8,
-      "nota_media_vendedor": 6.2,
-      "alerta_critico": "Lead Armando Nascimento R$750/800kWh SEM ATENDIMENTO HUMANO ha 3h40min - persona 'Gabriel' do bot mantida sem assumir; cliente Leticia Rodrigues DR2 confirmou visita 8h/9h sem retorno de Luana",
+      "sem_resposta": 18,
+      "criticas": 5,
+      "nota_media_sdr": 6.2,
+      "nota_media_vendedor": 6.8,
+      "alerta_critico": "Armando Nascimento R$750/800kWh sem SDR humano apos 5h (bot Gabriel parado); BOT Ana Maryllya disparou para 8 leads ja atribuidos a Kemily (Hamilton, Maria do Carmo) gerando confusao com duas personas; Glau DR2 Petrolina posvenda sem resposta de Luana ao pedido de orcamento de limpeza; Maria Luiza/Caio/Alan/Pericles zero chats hoje",
       "sdrs": [
         "Maria Luiza",
         "Keane",
@@ -364,5 +364,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-27T17:25"
+  "ultima_atualizacao": "2026-05-27T18:34"
 }
