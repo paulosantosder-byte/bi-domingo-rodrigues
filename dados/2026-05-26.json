@@ -1,0 +1,790 @@
+{
+  "data": "2026-05-26",
+  "hora_execucao": "20:55",
+
+  "metricas": {
+    "total_conversas": 138,
+    "total_conversas_dr4": 118,
+    "total_conversas_dr2": 20,
+    "total_ligacoes": 4,
+    "sem_resposta": 36,
+    "criticas": 8,
+    "sem_vendedor": 12,
+    "nota_media_sdr": 5.2,
+    "nota_media_vendedor": 5.4,
+    "aderencia_geral": 48
+  },
+
+  "sdrs": [
+    {
+      "nome": "Maria Luiza",
+      "cor": "#ec4899",
+      "papel": "SDR",
+      "total_conversas": 0,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 0.0,
+        "aderencia_script": 0,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 0,
+          "SDR-2_qualificacao": 0,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Ausência total",
+            "descricao": "Maria Luiza NÃO atendeu nenhuma conversa hoje em DR4 nem DR2",
+            "impacto": "SDR ociosa enquanto Keane carrega 30 conversas e Gabriel (não cadastrado) faz 29",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Verificar disponibilidade da Maria Luiza e redistribuir leads para ela"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 30,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 3,
+      "taxa_conversao": 10,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 8,
+      "qualidade": {
+        "nota_media": 6.2,
+        "aderencia_script": 55,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 26,
+          "SDR-2_qualificacao": 18,
+          "SDR-3_quebra_objecao": 4,
+          "SDR-4_agendamento": 3
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Agendamento (SDR-4)",
+            "descricao": "Excelente em DR2: agendou visita e fez transferência para vendedor com perfeição",
+            "exemplos": [
+              "Cliente Jamisson (DR2): agendou às 16h30, pediu localização, apresentou Consultor Alan Oliveira, visita realizada às 16:47 - script perfeito",
+              "Cliente Jorge Campodonio (DR4): visita agendada para sábado, cliente confirmou com 👍🏻",
+              "Cliente Otávio Nunes (DR2): SDR engajada com lead"
+            ]
+          },
+          {
+            "categoria": "Volume e Personalização",
+            "descricao": "Carrega o maior volume de conversas (30) e personaliza com nome",
+            "exemplos": [
+              "Cliente Cavalache (DR4): abriu com 'Me chamo Keane' + perguntou valor conta",
+              "Cliente Jamisson (DR2): pediu localização do endereço antes da visita"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Abertura (SDR-1d)",
+            "descricao": "NÃO menciona benefício específico de redução até 95%",
+            "impacto": "Lead não recebe gatilho de valor inicial, qualificação fica mais lenta",
+            "conversas_afetadas": 22,
+            "exemplos_clientes": [
+              "Cliente Cavalache (DR4): script omitiu '95% de redução' na abertura",
+              "Cliente Gildemar (DR4): abertura sem benefício específico"
+            ],
+            "acao_corretiva": "Incluir frase padrão 'reduzir conta até 95%' no SDR-1"
+          },
+          {
+            "categoria": "Qualificação (SDR-2b)",
+            "descricao": "Pergunta valor da conta mas raramente pergunta se já pesquisou energia solar",
+            "impacto": "Vendedor recebe lead sem contexto sobre maturidade do interesse",
+            "conversas_afetadas": 15,
+            "exemplos_clientes": [
+              "Cliente Cavalache (DR4): pediu valor (R$ 400) mas não perguntou se já pesquisou"
+            ],
+            "acao_corretiva": "Sempre fazer SDR-2 completo (valor + pesquisa prévia)"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "SDR-X1", "descricao": "Em algumas conversas envia info sem agendar visita primeiro", "ocorrencias": 2}
+        ]
+      }
+    },
+    {
+      "nome": "Kemily | Gestora de Energia",
+      "cor": "#14b8a6",
+      "papel": "SDR",
+      "total_conversas": 5,
+      "ligacoes_dia": 1,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 1,
+      "media_resposta_min": 1,
+      "qualidade": {
+        "nota_media": 3.8,
+        "aderencia_script": 35,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 5,
+          "SDR-2_qualificacao": 5,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Velocidade de Resposta (SDR-1)",
+            "descricao": "Respondeu rapidamente (< 1 min) aos 5 leads atribuídos",
+            "exemplos": [
+              "Cliente Geraldo (DR4): cliente mandou 08:48, Kemilly abriu 08:48-49 quase instantâneo",
+              "Cliente Valdemir (DR4): atendimento rápido no início da manhã"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Pula para fechamento financeiro (SDR-X1)",
+            "descricao": "CRÍTICO: Pede CPF, data de nascimento e nome completo para 'pré-análise' SEM agendar visita primeiro",
+            "impacto": "Quebra script - lead deveria ir para visita técnica do vendedor, não para pré-análise financeira de SDR",
+            "conversas_afetadas": 5,
+            "exemplos_clientes": [
+              "Cliente Geraldo (DR4): após cliente mandar áudio, Kemilly já pediu CPF + data nasc + nome completo para 'pré-análise' (08:50-51)",
+              "Cliente Valdemir, José Fernando, Deus É Fiel!, Mó: mesmo padrão"
+            ],
+            "acao_corretiva": "PARAR de pedir CPF como SDR. Função é qualificar + agendar visita técnica do vendedor"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "SDR-X1", "descricao": "Enviou pedido de documentação financeira sem agendar visita", "ocorrencias": 5},
+          {"codigo": "SDR-X6", "descricao": "Não transferiu nenhum lead para vendedor presencialmente", "ocorrencias": 5}
+        ]
+      }
+    },
+    {
+      "nome": "Gabriel (NÃO CADASTRADO)",
+      "cor": "#dc2626",
+      "papel": "SDR",
+      "total_conversas": 29,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 10,
+      "media_resposta_min": 30,
+      "qualidade": {
+        "nota_media": 3.5,
+        "aderencia_script": 25,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 5,
+          "SDR-2_qualificacao": 12,
+          "SDR-3_quebra_objecao": 1,
+          "SDR-4_agendamento": 2
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Volume",
+            "descricao": "Carrega 29 conversas - 2º maior volume de SDR em DR4",
+            "exemplos": [
+              "Cliente Pedro Gusmão TIM (DR4): conduziu qualificação multi-etapa com pagamento e cidade",
+              "Cliente Paulo Alencar (DR4): fez handoff para vendedor Alan via ligação"
+            ]
+          },
+          {
+            "categoria": "Handoff",
+            "descricao": "Em alguns casos, transfere para vendedor (Paulo Alencar → Alan)",
+            "exemplos": [
+              "Cliente Paulo Alencar (DR4): 'vou andamento no seu atendimento... nosso vendedor vai entra em contato' - cliente teve continuidade com Alan"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "🚨 SDR NÃO CADASTRADO",
+            "descricao": "CRÍTICO: 'Gabriel' não consta na lista oficial de SDRs/Vendedores mas atende 29 conversas em DR4",
+            "impacto": "Sem visibilidade para gestão. Trabalho não é contabilizado oficialmente. Risco de processo trabalhista e perda de controle de qualidade",
+            "conversas_afetadas": 29,
+            "exemplos_clientes": [
+              "Cliente Pedro Gusmão TIM (DR4): 'Gabriel: vou direcionar o senhor para um dos nossos vendedores fazer seu orçamento' - clara função de SDR",
+              "Cliente Paulo Alencar (DR4): atuação como SDR fazendo qualificação por chamada de voz"
+            ],
+            "acao_corretiva": "URGENTE: Cadastrar Gabriel no time oficial OU descobrir quem é e regularizar. Suspeita: SDR informal, freelancer, ou colaborador novo não registrado"
+          },
+          {
+            "categoria": "Script informal",
+            "descricao": "Mensagens em minúsculo, sem assinatura padrão, sem benefício de 95%, sem padronização",
+            "impacto": "Imagem inconsistente da empresa, qualidade variável de qualificação",
+            "conversas_afetadas": 29,
+            "exemplos_clientes": [
+              "Cliente Pedro Gusmão TIM: 'Gabriel: sr pedro a forma de pagamento seria ( pix / cartao / financiamento' - script informal",
+              "Cliente Pedro Gusmão TIM: 'Gabriel: qual a sua cidade ?' - pergunta solta sem contexto"
+            ],
+            "acao_corretiva": "Se for manter Gabriel, treiná-lo no SDR-1 a SDR-4 padronizado"
+          },
+          {
+            "categoria": "Foco em pagamento/preço (SDR-X1)",
+            "descricao": "Pergunta forma de pagamento ANTES de agendar visita técnica",
+            "impacto": "Conversa fica no WhatsApp, vendedor não consegue presencial",
+            "conversas_afetadas": 8,
+            "exemplos_clientes": [
+              "Cliente Pedro Gusmão TIM: 'forma de pagamento seria (pix/cartao/financiamento?' - sem agendar visita"
+            ],
+            "acao_corretiva": "SDR não deve discutir pagamento. Só agendar visita técnica."
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "SDR-X1", "descricao": "Enviou tema de pagamento sem agendar visita", "ocorrencias": 10},
+          {"codigo": "SDR-X4", "descricao": "Mensagens genéricas, em minúsculo, sem nome no início", "ocorrencias": 22},
+          {"codigo": "SDR-X3", "descricao": "Quando agenda, não oferece opções concretas de horário", "ocorrencias": 27}
+        ]
+      }
+    }
+  ],
+
+  "vendedores": [
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "papel": "VENDEDOR",
+      "total_conversas": 35,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 4,
+      "sem_resposta": 5,
+      "mediana_resposta_min": 12,
+      "media_resposta_min": 35,
+      "total_respostas": 30,
+      "qualidade": {
+        "nota_media": 5.8,
+        "aderencia_script": 50,
+        "argumentos_usados": {
+          "A1": 28, "A2": 22, "A3": 12, "A4": 0,
+          "B1": 3, "B2": 0, "B3": 0, "B4": 2,
+          "C1": 4, "C2": 1, "C3": 0, "C4": 0, "C5": 1,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 2,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratório próprio + troca 24h", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 35},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 35},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 35},
+          {"id": "D4", "nome": "Órfãos solares", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 35}
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Volume e Persistência (A1)",
+            "descricao": "Carrega 35 conversas hoje - maior volume de vendedor. Tenta ligar repetidamente",
+            "exemplos": [
+              "Cliente Pablo Emerson (DR4): 3 mensagens consecutivas 'estou tentando te ligar' em 15:42-43",
+              "Cliente Alisson Hamilton (DR2): atendimento desde 09:12"
+            ]
+          },
+          {
+            "categoria": "Proposta Comercial (C1 - Financiamento)",
+            "descricao": "Envia proposta detalhada quando cliente sinaliza interesse",
+            "exemplos": [
+              "Cliente Leticia Rodrigues (DR2): proposta completa 'Geração 700 kWh, 9 placas DAH BIFACIAL 620W, inversor 5kw, R$ 9.780, 18x cartão' - cliente respondeu enviando endereço de entrega"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Zero (D1-D4)",
+            "descricao": "CRÍTICO: NUNCA mencionou nenhum diferencial competitivo em 35 conversas. Sem D1 (laboratório), D2 (17 anos), D3 (6k projetos), D4 (órfãos solares)",
+            "impacto": "Cliente compara só por preço. Não há justificativa para valor mais alto. Margens em risco",
+            "conversas_afetadas": 35,
+            "exemplos_clientes": [
+              "Cliente Leticia Rodrigues (DR2): proposta enviada SEM mencionar 17 anos, laboratório próprio ou 6 mil projetos - apenas preço e frete",
+              "Cliente Pablo Emerson (DR4): tentativas de ligação sem diferencial"
+            ],
+            "acao_corretiva": "OBRIGATÓRIO incluir D1-D4 em toda proposta. Se possível criar template padrão"
+          },
+          {
+            "categoria": "Tempo de Resposta (X8)",
+            "descricao": "Em casos críticos, demora >1h para responder pergunta direta sobre proposta",
+            "impacto": "Cliente perde interesse e desiste",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [
+              "Cliente Pedro Henrique Ferreira (DR2): cliente perguntou 'Como ficou as parcelas?' às 13:00, Luana respondeu apenas 14:40 (1h40 depois). Cliente desistiu às 17:28: 'Deixa pra uma próxima vez'"
+            ],
+            "acao_corretiva": "Estabelecer SLA de 15min em horário comercial para perguntas sobre proposta"
+          },
+          {
+            "categoria": "Sem Programa de Indicações (F3)",
+            "descricao": "Pós-venda com cliente VENDIDO sem pedir indicação",
+            "impacto": "Perde oportunidade de R$ 200/indicação fechada",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Juçara (VENDIDO, DR4): contato 11:46 sobre logística de entrega - momento ideal para pedir indicação"
+            ],
+            "acao_corretiva": "Em todo contato pós-venda, pedir 2 indicações de vizinhos/amigos"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais competitivos D1-D4", "ocorrencias": 35},
+          {"codigo": "X8", "descricao": "Tempo de resposta > 60min em momentos críticos", "ocorrencias": 4}
+        ]
+      }
+    },
+    {
+      "nome": "Caio Roberto | Gestor de energia",
+      "cor": "#0ea5e9",
+      "papel": "VENDEDOR",
+      "total_conversas": 0,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 0,
+        "aderencia_script": 0,
+        "argumentos_usados": {"A1":0,"A2":0,"A3":0,"A4":0,"B1":0,"B2":0,"B3":0,"B4":0,"C1":0,"C2":0,"C3":0,"C4":0,"C5":0,"D1":0,"D2":0,"D3":0,"D4":0,"D5":0,"D6":0,"E1":0,"E2":0,"E3":0,"E4":0,"E5":0,"F1":0,"F2":0,"F3":0,"F4":0},
+        "argumentos_nao_usados": [],
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Ausência",
+            "descricao": "Caio NÃO atendeu nenhuma conversa hoje",
+            "impacto": "Vendedor ocioso enquanto Luana carrega 35 leads sozinha",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Verificar disponibilidade do Caio e redistribuir leads"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Guilherme | Gestor em Energia",
+      "cor": "#10b981",
+      "papel": "VENDEDOR",
+      "total_conversas": 0,
+      "ligacoes_dia": 3,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 0,
+        "aderencia_script": 0,
+        "argumentos_usados": {"A1":0,"A2":0,"A3":0,"A4":0,"B1":0,"B2":0,"B3":0,"B4":0,"C1":0,"C2":0,"C3":0,"C4":0,"C5":0,"D1":0,"D2":0,"D3":0,"D4":0,"D5":0,"D6":0,"E1":0,"E2":0,"E3":0,"E4":0,"E5":0,"F1":0,"F2":0,"F3":0,"F4":0},
+        "argumentos_nao_usados": [],
+        "pontos_fortes": [
+          {
+            "categoria": "Ligações",
+            "descricao": "Realizou 3 ligações hoje (único vendedor ativo no telefone)",
+            "exemplos": []
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Sem WhatsApp",
+            "descricao": "0 atendimentos via BotConversa - apenas ligações",
+            "impacto": "Leads do WhatsApp ficaram com Luana sobrecarregada",
+            "conversas_afetadas": 0,
+            "exemplos_clientes": [],
+            "acao_corretiva": "Alocar Guilherme em atendimentos WhatsApp também"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Alan Oliveira - Gestor de energia",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 3,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 1,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 10,
+      "media_resposta_min": 15,
+      "total_respostas": 3,
+      "qualidade": {
+        "nota_media": 6.0,
+        "aderencia_script": 45,
+        "argumentos_usados": {
+          "A1": 3, "A2": 3, "A3": 2, "A4": 0,
+          "B1": 1, "B2": 0, "B3": 0, "B4": 1,
+          "C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratório próprio + troca 24h", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 3},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 3},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 3}
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Visita Realizada (B1)",
+            "descricao": "Foi presencial no cliente Jamisson (DR2) - única visita realizada hoje",
+            "exemplos": [
+              "Cliente Jamisson (DR2): 'Conseguiu falar com Alan' 16:44 e 'Já cheguei aqui na residência' 16:47 - VISITA REALIZADA"
+            ]
+          },
+          {
+            "categoria": "Personalização (A2)",
+            "descricao": "Usa nome do cliente, referencia conversa anterior",
+            "exemplos": [
+              "Cliente Paulo Alencar (DR4): 'Boa tarde Sr. Paulo, conforme nos falamos via chamada de voz...'",
+              "Cliente Alcione (DR4): 'Bom dia Alcione, tudo bem? Tentei contato com você por ligação'"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Zero (D1-D4)",
+            "descricao": "Não mencionou nenhum diferencial competitivo nas 3 conversas",
+            "impacto": "Cliente compara apenas por preço",
+            "conversas_afetadas": 3,
+            "exemplos_clientes": [
+              "Cliente Alcione: pediu CPF para financiamento sem mencionar 17 anos ou laboratório"
+            ],
+            "acao_corretiva": "Incluir 17 anos + 6 mil projetos em primeira mensagem com cliente novo"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X6", "descricao": "Não mencionou diferenciais", "ocorrencias": 3}
+        ]
+      }
+    },
+    {
+      "nome": "Pericles Mateus",
+      "cor": "#8b5cf6",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 1,
+      "qualidade": {
+        "nota_media": 1.0,
+        "aderencia_script": 10,
+        "argumentos_usados": {"A1":1,"A2":0,"A3":0,"A4":0,"B1":0,"B2":0,"B3":0,"B4":0,"C1":0,"C2":0,"C3":0,"C4":0,"C5":0,"D1":0,"D2":0,"D3":0,"D4":0,"D5":0,"D6":0,"E1":0,"E2":0,"E3":0,"E4":0,"E5":0,"F1":0,"F2":0,"F3":0,"F4":0},
+        "argumentos_nao_usados": [
+          {"id": "A3", "nome": "Pergunta de qualificação", "categoria": "Primeiro Contato", "importancia": "Crítica", "vezes_perdidas": 1}
+        ],
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Mensagem isolada sem objetivo (X4)",
+            "descricao": "Apenas 'Bom diaa' enviado para Erisvania às 08:32. Nenhum follow-up, qualificação ou agendamento",
+            "impacto": "Lead esfriou. Sem qualificação nem objetivo",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Erisvania (DR4): Pericles enviou apenas 'Bom diaa' às 08:32 e não voltou mais"
+            ],
+            "acao_corretiva": "Toda abertura deve incluir identificação, motivo do contato e pergunta de qualificação"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X4", "descricao": "Mensagem genérica sem contexto", "ocorrencias": 1},
+          {"codigo": "X5", "descricao": "Abandono do lead", "ocorrencias": 1}
+        ]
+      }
+    }
+  ],
+
+  "insights": {
+    "destaques_positivos": [
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "cliente": "Jamisson (DR2)",
+        "acao": "Agendou visita às 16h30, pediu localização e apresentou consultor Alan Oliveira",
+        "resultado": "Visita realizada às 16:47 - SDR-4 perfeito (transferência de autoridade)"
+      },
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "Leticia Rodrigues (DR2)",
+        "acao": "Enviou proposta completa: 9 placas DAH BIFACIAL 620W + inversor 5kw + R$ 9.780 + 18x cartão",
+        "resultado": "Cliente enviou endereço de entrega em Petrolina/PE - venda em fechamento"
+      },
+      {
+        "pessoa": "Alan",
+        "papel": "VENDEDOR",
+        "cliente": "Jamisson (DR2)",
+        "acao": "Foi presencial após handoff da Keane",
+        "resultado": "Visita técnica realizada - único vendedor com visita hoje"
+      },
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "cliente": "Jorge Campodonio (DR4)",
+        "acao": "Confirmou visita agendada para sábado",
+        "resultado": "Cliente confirmou com 👍🏻 - lead quente em sequência"
+      }
+    ],
+    "alertas": [
+      {
+        "pessoa": "Gabriel (NÃO CADASTRADO)",
+        "papel": "SDR",
+        "cliente": "29 conversas DR4",
+        "problema": "Pessoa 'Gabriel' não consta no time oficial mas atende 29 conversas em DR4 com tom de SDR ('vou direcionar para nossos vendedores')",
+        "impacto": "🚨 CRÍTICO: Sem visibilidade gerencial. Sem padronização. Risco trabalhista. Qualidade variável",
+        "acao_corretiva": "URGENTE: Identificar quem é Gabriel, cadastrar no time ou regularizar"
+      },
+      {
+        "pessoa": "Kemily",
+        "papel": "SDR",
+        "cliente": "Geraldo, Valdemir, José Fernando, Deus É Fiel!, Mó (DR4)",
+        "problema": "Pede CPF + nome completo + data de nascimento para 'pré-análise' SEM agendar visita técnica primeiro",
+        "impacto": "Quebra script SDR-X1. Lead vai para financeiro antes da visita técnica",
+        "acao_corretiva": "Treinar Kemily: SDR não pede CPF. Função é agendar visita do vendedor"
+      },
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "Pedro Henrique Ferreira (DR2)",
+        "problema": "Cliente perguntou 'Como ficou as parcelas?' às 13:00 e Luana respondeu apenas 1h40 depois (14:40). Cliente desistiu: 'Deixa pra uma próxima vez'",
+        "impacto": "🚨 VENDA PERDIDA por demora em responder pergunta direta sobre proposta",
+        "acao_corretiva": "RECUPERAÇÃO HOJE: Luana deve voltar ao Pedro Henrique com nova abordagem (talvez outro CPF, condição especial)"
+      },
+      {
+        "pessoa": "Sem atribuição",
+        "papel": "VENDEDOR",
+        "cliente": "😎😎😎 (DR4)",
+        "problema": "Cliente '😎😎😎' enviou 'Boa tarde Alexandre meu amigo' às 16:42 - nome próprio (Alexandre) sugere relacionamento prévio, mas sem ninguém atribuído",
+        "impacto": "🚨 Lead que conhece dono/equipe ficou sem resposta",
+        "acao_corretiva": "Atribuir HOJE ainda - parece relacionamento de relacionamento"
+      },
+      {
+        "pessoa": "Sem atribuição (DR2)",
+        "papel": "VENDEDOR",
+        "cliente": "Glau🌷 (DR2)",
+        "problema": "Cliente com sistema solar de OUTRA empresa apresentando defeito (desligando várias vezes ao dia) pediu manutenção - vendedor enviou só áudios sem responder por escrito",
+        "impacto": "💎 OPORTUNIDADE D4 (órfão solar) sendo perdida. Cliente precisa de socorro técnico",
+        "acao_corretiva": "Acionar D4: 'Temos setor de órfãos solares' + proposta de manutenção + venda de novo sistema/inversor"
+      },
+      {
+        "pessoa": "Maria Luiza, Caio, Guilherme",
+        "papel": "Time",
+        "cliente": "(N/A)",
+        "problema": "3 membros do time oficial com ZERO conversas WhatsApp hoje (Maria Luiza SDR e Caio/Guilherme Vendedores)",
+        "impacto": "Distribuição desigual de leads. Luana carrega 35, Keane 30 enquanto outros estão ociosos",
+        "acao_corretiva": "Verificar status de cada um e redistribuir leads"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Leticia Rodrigues (DR2)",
+        "descricao": "Cliente enviou endereço de entrega após proposta R$ 9.780 - venda em fechamento",
+        "acao_sugerida": "Confirmar pagamento e logística de instalação. Pedir D1 (laboratório) para fechar definitivo"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Jamisson (DR2)",
+        "descricao": "Visita técnica realizada hoje pelo Alan - proposta deve sair hoje/amanhã",
+        "acao_sugerida": "Alan enviar proposta ainda hoje com diferenciais D1-D3"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Jorge Campodonio (DR4)",
+        "descricao": "Visita agendada para sábado - lead quente em sequência",
+        "acao_sugerida": "Confirmar horário específico de sábado + designar vendedor"
+      },
+      {
+        "tipo": "🚨 RECUPERAÇÃO",
+        "cliente": "Pedro Henrique Ferreira (DR2)",
+        "descricao": "Cliente desistiu por demora 1h40 na resposta sobre parcelas. CPF próprio negado em Solfacil",
+        "acao_sugerida": "Tentar outro banco (Sicredi, BV) ou propor entrada à vista + financiamento menor"
+      },
+      {
+        "tipo": "💎 ALTO CONSUMO/ÓRFÃO",
+        "cliente": "Glau🌷 (DR2)",
+        "descricao": "Sistema solar de outra empresa com defeito - desligando várias vezes ao dia. Em Petrolina/PE. Enviou PDF de relatório",
+        "acao_sugerida": "Acionar D4 (órfão solar) + agendar visita técnica + propor troca de inversor (laboratório 24h)"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Israel (DR4)",
+        "descricao": "Lead novo 20:53 'Me inform...' - cliente perguntando informação",
+        "acao_sugerida": "SDR responder primeira hora amanhã com SDR-1 completo"
+      },
+      {
+        "tipo": "⚠️ FOLLOW-UP URGENTE",
+        "cliente": "😎😎😎 (DR4)",
+        "descricao": "Cliente conhece 'Alexandre' (nome próprio na saudação) e está sem atribuição",
+        "acao_sugerida": "Atribuir hoje - aparenta ser indicação ou cliente antigo"
+      },
+      {
+        "tipo": "⭐ INDICAÇÃO/RECOMPRA",
+        "cliente": "Juçara VENDIDO (DR4)",
+        "descricao": "Cliente em pós-venda (logística de entrega) - momento de pedir indicações",
+        "acao_sugerida": "Luana acionar F3: pedir 2 indicações em troca de bônus R$ 200 cada"
+      },
+      {
+        "tipo": "🔥 QUENTE",
+        "cliente": "Cavalache (DR4)",
+        "descricao": "Cliente B2B 'Cavalache' com conta R$ 400 (médio-alto) - acabou de responder valor às 19:49",
+        "acao_sugerida": "Keane (ou substituto) seguir com SDR-3 (quebra objeção financeira) e SDR-4 (agendar visita) AMANHÃ DE MANHÃ"
+      },
+      {
+        "tipo": "🚨 RECUPERAÇÃO",
+        "cliente": "Erisvania (DR4)",
+        "descricao": "Pericles enviou apenas 'Bom diaa' às 08:32 e não voltou. Lead frio",
+        "acao_sugerida": "Resgatar com mensagem estruturada amanhã - identificação + benefício + qualificação"
+      }
+    ]
+  },
+
+  "ranking_sdrs": [
+    {"posicao": 1, "nome": "Keane", "nota_media": 6.2, "aderencia": 55, "visitas_agendadas": 3, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Kemily | Gestora de Energia", "nota_media": 3.8, "aderencia": 35, "visitas_agendadas": 0, "badge": "🥈 Prata"},
+    {"posicao": 3, "nome": "Gabriel (NÃO CADASTRADO)", "nota_media": 3.5, "aderencia": 25, "visitas_agendadas": 2, "badge": "🥉 Bronze"},
+    {"posicao": 4, "nome": "Maria Luiza", "nota_media": 0.0, "aderencia": 0, "visitas_agendadas": 0, "badge": "📊 Em desenvolvimento"}
+  ],
+
+  "ranking_vendedores": [
+    {"posicao": 1, "nome": "Alan Oliveira - Gestor de energia", "nota_media": 6.0, "aderencia": 45, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Luana", "nota_media": 5.8, "aderencia": 50, "badge": "🥈 Prata"},
+    {"posicao": 3, "nome": "Pericles Mateus", "nota_media": 1.0, "aderencia": 10, "badge": "🥉 Bronze"},
+    {"posicao": 4, "nome": "Caio Roberto | Gestor de energia", "nota_media": 0.0, "aderencia": 0, "badge": "📊 Em desenvolvimento"},
+    {"posicao": 5, "nome": "Guilherme | Gestor em Energia", "nota_media": 0.0, "aderencia": 0, "badge": "📊 Em desenvolvimento"}
+  ],
+
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Leticia Rodrigues",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente enviou endereço de entrega após proposta R$ 9.780 - venda em fechamento",
+      "recomendacao": "Confirmar pagamento e data de instalação. Inserir D1 (laboratório 24h) para reforçar segurança",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["D1 - laboratório", "D2 - 17 anos", "F2 - gravação segurança"]
+    },
+    {
+      "cliente": "Jamisson",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Visita técnica realizada hoje (16:47) - cliente esperando proposta",
+      "recomendacao": "Enviar proposta ainda hoje com diferenciais D1-D3 e foto da instalação típica",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["D1 - laboratório", "D2 - 17 anos", "D3 - 6 mil projetos", "C1 - financiamento"]
+    },
+    {
+      "cliente": "Jorge Campodonio",
+      "pessoa": "Keane → vendedor",
+      "papel": "SDR→VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Visita confirmada para sábado, cliente já confirmou com 👍🏻 às 17:34",
+      "recomendacao": "Confirmar horário específico de sábado e designar vendedor (Alan ou Guilherme)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["B1 - proximidade", "D1 - laboratório", "F2 - gravação"]
+    },
+    {
+      "cliente": "Pedro Henrique Ferreira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Cliente desistiu HOJE 17:28 ('Deixa pra uma próxima vez') por demora 1h40 sobre parcelas - CPF próprio negado",
+      "recomendacao": "Voltar ainda hoje com novo banco (BV, Sicredi) ou condição especial. Pedir desculpas pela demora",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["C1 - financiamento alternativo", "C3 - aversão à perda", "C5 - pergunta direta"]
+    },
+    {
+      "cliente": "Glau🌷",
+      "pessoa": "(sem atribuição)",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "💎 ALTO CONSUMO/ÓRFÃO",
+      "motivo": "Sistema solar OUTRA empresa desligando várias vezes ao dia. Enviou PDF relatório. Em Petrolina/PE - cliente B2C órfão solar",
+      "recomendacao": "Acionar D4 (setor órfãos solares) + agendar visita técnica + propor troca de inversor (laboratório 24h)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["D4 - órfãos solares", "D1 - laboratório troca 24h", "B3 - segurança"]
+    },
+    {
+      "cliente": "Israel",
+      "pessoa": "(sem atribuição)",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Lead novo 20:53 - 'Me inform...' pedindo informação",
+      "recomendacao": "SDR responder primeira hora amanhã com SDR-1 completo",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["SDR-1 abertura completa", "SDR-2 qualificação"]
+    },
+    {
+      "cliente": "😎😎😎",
+      "pessoa": "(sem atribuição)",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Cliente conhece 'Alexandre' (saudação 'Boa tarde Alexandre meu amigo' 16:42) - relacionamento prévio",
+      "recomendacao": "Atribuir hoje - aparenta ser indicação ou cliente antigo. Verificar quem é Alexandre",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["A2 - personalização", "F3 - indicação"]
+    },
+    {
+      "cliente": "Juçara (VENDIDO)",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "⭐ INDICAÇÃO/RECOMPRA",
+      "motivo": "Cliente em pós-venda (logística entrega) - momento ideal para indicações",
+      "recomendacao": "Acionar F3: 'Sra. Juçara, o senhor conhece 2 vizinhos/amigos que também têm conta alta de luz? R$ 200 por indicação fechada'",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["F3 - programa de indicações"]
+    },
+    {
+      "cliente": "Cavalache",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Cliente B2B respondeu R$ 400 (médio-alto) às 19:49 - aguardando próximo passo",
+      "recomendacao": "Amanhã 8h: aplicar SDR-3 (quebra objeção financeira) e SDR-4 (agendar visita)",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["SDR-3 quebra objeção", "SDR-4 agendamento"]
+    },
+    {
+      "cliente": "Erisvania",
+      "pessoa": "Pericles",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Pericles enviou apenas 'Bom diaa' às 08:32 e não voltou. Lead esfriou",
+      "recomendacao": "Resgatar amanhã com identificação completa + benefício 95% + pergunta de qualificação",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": ["A1 - velocidade", "A2 - personalização", "A3 - qualificação", "D2 - 17 anos"]
+    }
+  ],
+
+  "conversas": [
+    {"id": 1, "conta": "DR4", "cliente": "Cavalache", "pessoa": "Keane", "papel": "SDR", "hora_lista": "19:49", "ultima_msg": "19:49", "total_msgs": 5, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["SDR-1a","SDR-1b","SDR-2a"], "argumentos_perdidos": ["SDR-1d","SDR-2b","SDR-3","SDR-4"], "erros": [], "observacao": "Cliente Cavalache: Keane abriu script padrão, cliente respondeu R$ 400 e Keane ainda não voltou"},
+    {"id": 2, "conta": "DR4", "cliente": "pedro gusmao tim", "pessoa": "Gabriel", "papel": "SDR", "hora_lista": "18:08", "ultima_msg": "18:08", "total_msgs": 15, "status": "ok", "nota": 3, "argumentos_usados": ["A2"], "argumentos_perdidos": ["SDR-1","SDR-2a","SDR-4"], "erros": ["SDR-X1","SDR-X4"], "observacao": "Cliente Pedro Gusmão: Gabriel conduziu qualificação fragmentada (forma de pagamento, cidade) e finalmente vai direcionar para vendedor"},
+    {"id": 3, "conta": "DR4", "cliente": "Pablo Emerson", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "15:43", "ultima_msg": "15:43", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","B1","D1-D4"], "erros": ["X6"], "observacao": "Cliente Pablo Emerson: Luana tentou ligar 3x sem sucesso, sem qualificação por escrito"},
+    {"id": 4, "conta": "DR4", "cliente": "Paulo Alencar", "pessoa": "Gabriel→Alan", "papel": "SDR→VENDEDOR", "hora_lista": "14:00", "ultima_msg": "14:00", "total_msgs": 8, "status": "ok", "nota": 6, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["D1-D4"], "erros": [], "observacao": "Cliente Paulo Alencar: Gabriel qualificou por ligação, Alan respondeu 'vamos buscar melhor forma' - handoff ok mas falta proposta com diferenciais"},
+    {"id": 5, "conta": "DR4", "cliente": "Geraldo", "pessoa": "Kemily", "papel": "SDR", "hora_lista": "08:51", "ultima_msg": "08:51", "total_msgs": 9, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["SDR-1a","SDR-1b","SDR-2a"], "argumentos_perdidos": ["SDR-4"], "erros": ["SDR-X1"], "observacao": "Cliente Geraldo: Kemily pediu CPF, data nasc e nome completo para pré-análise SEM agendar visita"},
+    {"id": 6, "conta": "DR4", "cliente": "Erisvania", "pessoa": "Pericles", "papel": "VENDEDOR", "hora_lista": "08:32", "ultima_msg": "08:32", "total_msgs": 1, "status": "critico", "nota": 1, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A2","A3","B1"], "erros": ["X4","X5"], "observacao": "Cliente Erisvania: Pericles enviou apenas 'Bom diaa' às 08:32, sem follow-up"},
+    {"id": 7, "conta": "DR4", "cliente": "JUÇARA(VENDIDO)", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "11:46", "ultima_msg": "11:46", "total_msgs": 6, "status": "ok", "nota": 6, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["F3"], "erros": [], "observacao": "Cliente Juçara (já vendido): pós-venda sobre logística entrega - oportunidade F3 perdida"},
+    {"id": 8, "conta": "DR4", "cliente": "Jorge Campodonio", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:12", "ultima_msg": "17:34", "total_msgs": 2, "status": "ok", "nota": 8, "argumentos_usados": ["SDR-4a","SDR-4d"], "argumentos_perdidos": ["SDR-4c"], "erros": [], "observacao": "Cliente Jorge Campodonio: Keane confirmou visita agendada sábado, cliente respondeu 👍🏻"},
+    {"id": 9, "conta": "DR4", "cliente": "Alcione", "pessoa": "Alan", "papel": "VENDEDOR", "hora_lista": "09:41", "ultima_msg": "09:41", "total_msgs": 3, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["A1","A2","C1"], "argumentos_perdidos": ["D1-D4"], "erros": ["X6"], "observacao": "Cliente Alcione: Alan tentou contato + pediu CPF para financiamento, sem diferenciais"},
+    {"id": 10, "conta": "DR4", "cliente": "😎😎😎", "pessoa": "(sem atribuição)", "papel": "VENDEDOR", "hora_lista": "16:42", "ultima_msg": "16:42", "total_msgs": 1, "status": "critico", "nota": 0, "argumentos_usados": [], "argumentos_perdidos": ["A1"], "erros": ["X3"], "observacao": "Cliente 😎😎😎: 'Boa tarde Alexandre meu amigo' 16:42 - sem ninguém atribuído, relacionamento prévio"},
+    {"id": 11, "conta": "DR2", "cliente": "Jamisson", "pessoa": "Keane→Alan", "papel": "SDR→VENDEDOR", "hora_lista": "18:14", "ultima_msg": "18:14", "total_msgs": 20, "status": "ok", "nota": 9, "argumentos_usados": ["SDR-4a","SDR-4b","SDR-4c","SDR-4d","A1","B1"], "argumentos_perdidos": ["D1-D4"], "erros": [], "observacao": "Cliente Jamisson: Keane agendou 16h30, pediu localização Sol Nascente Etapa 2, apresentou consultor Alan, visita realizada 16:47"},
+    {"id": 12, "conta": "DR2", "cliente": "Leticia Rodrigues", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "17:36", "ultima_msg": "17:36", "total_msgs": 20, "status": "ok", "nota": 8, "argumentos_usados": ["A3","C1","C5"], "argumentos_perdidos": ["D1-D4","F3"], "erros": ["X6"], "observacao": "Cliente Leticia Rodrigues: Luana enviou proposta 9 placas DAH BIFACIAL 620W R$ 9.780, cliente enviou endereço entrega Petrolina/PE"},
+    {"id": 13, "conta": "DR2", "cliente": "Glau🌷", "pessoa": "(sem atribuição)", "papel": "VENDEDOR", "hora_lista": "16:32", "ultima_msg": "16:32", "total_msgs": 11, "status": "critico", "nota": 2, "argumentos_usados": [], "argumentos_perdidos": ["D4","D1","B3"], "erros": ["X3","X6"], "observacao": "Cliente Glau: sistema solar outra empresa desligando várias vezes ao dia, enviou PDF relatório - vendedor enviou só áudios sem responder"},
+    {"id": 14, "conta": "DR2", "cliente": "PEDRO HENRIQUE FERREIRA", "pessoa": "Luana", "papel": "VENDEDOR", "hora_lista": "17:28", "ultima_msg": "17:28", "total_msgs": 13, "status": "ok", "nota": 3, "argumentos_usados": ["A1","A2","C1"], "argumentos_perdidos": ["C3","D1-D4"], "erros": ["X3","X8"], "observacao": "Cliente Pedro Henrique: tentativa financiamento Solfacil, Luana demorou 1h40 para responder sobre parcelas, cliente desistiu 'Deixa pra uma próxima vez'"}
+  ]
+}

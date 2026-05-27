@@ -1,6 +1,32 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-26",
+      "tipo_analise": "analise_completa_noite",
+      "hora_execucao": "20:55",
+      "total_conversas": 138,
+      "total_conversas_dr4": 118,
+      "total_conversas_dr2": 20,
+      "sem_resposta": 36,
+      "criticas": 8,
+      "nota_media_sdr": 5.2,
+      "nota_media_vendedor": 5.4,
+      "alerta_critico": "Gabriel (NÃO CADASTRADO) atendeu 29 conversas em DR4 como SDR informal",
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily",
+        "Gabriel (NÃO CADASTRADO)"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
       "data": "2026-05-25",
       "tipo_analise": "refresh_fim_do_dia",
       "hora_execucao": "18:30",
@@ -313,5 +339,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-25T18:30"
+  "ultima_atualizacao": "2026-05-26T20:55"
 }
