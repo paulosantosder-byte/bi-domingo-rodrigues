@@ -1,195 +1,211 @@
 {
-  "data_referencia": "2026-05-25",
-  "gerado_em": "2026-05-26T15:30:00",
+  "data_referencia": "2026-05-26",
+  "gerado_em": "2026-05-27T09:30",
+
   "resumo": {
-    "total_pendentes": 14,
-    "sem_resposta_antes_18h": 12,
-    "sem_resposta_apos_18h": 0,
-    "alto_consumo": 0,
-    "leads_quentes": 2
+    "total_pendentes": 17,
+    "sem_resposta_antes_18h": 11,
+    "sem_resposta_apos_18h": 1,
+    "alto_consumo": 1,
+    "leads_quentes": 4
   },
+
   "sem_resposta_antes_18h": [
     {
-      "cliente": "Ivonaldo Faustino",
-      "vendedor": "Guilherme | Gestor em Energia",
-      "sdr": "Maria Luiza",
-      "conta": "DR2",
-      "hora_ultima_msg": "08:17",
-      "tempo_esperando": "Desde ontem 08:17 (mais de 30h sem resposta)",
-      "resumo_conversa": "DEAL JA FECHADO em 22-23/04! Visita tecnica feita, vendedor prometeu contrato 'pronto pela manha' do dia 23.04. Cliente mandou 'Bom dia' ontem 08:17 fazendo check-in do contrato pendente ha 30+ dias.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "PRIORIDADE MAXIMA - Verificar status do contrato URGENTE. Cliente ja comprou, esta cobrando o contrato prometido ha um mes. Risco de perder deal fechado por falta de followup. Guilherme deve responder na primeira hora.",
-      "abordagem_sugerida": "Pedir desculpas pela demora + dar status concreto do contrato + comprometer-se com prazo final"
-    },
-    {
-      "cliente": "Gilberto Campos da silva",
-      "vendedor": "Keane",
-      "sdr": "Keane",
+      "cliente": "Hakai (Thiago Hoffman)",
+      "vendedor": "Pericles Mateus (atribuido); Gabriel SDR encaminhou",
       "conta": "DR4",
-      "hora_ultima_msg": "12:52",
-      "tempo_esperando": "Desde ontem 12:52 (cerca de 26h sem resposta)",
-      "resumo_conversa": "Lead persistente. Cliente original de 19/05. SDR Keane tentou contato em 20/05, 21/05, 22/05, 23/05 sem sucesso. Cliente FINALMENTE respondeu ontem com 3 audios entre 12:35 e 12:52 (00:27 + 00:37 + 00:32). Vendedor nao ouviu nem retornou.",
-      "valor_conta": "Nao informado nos audios analisados",
-      "recomendacao": "PRIORIDADE ALTA - Cliente engajou apos multiplas tentativas, nao pode esfriar agora. Ouvir os 3 audios + ligar imediato.",
-      "abordagem_sugerida": "Pedir desculpas pela demora, agradecer retorno dos audios, oferecer ligacao ou visita imediata"
+      "hora_ultima_msg": "14:10",
+      "tempo_esperando": "Desde ontem 14:10 (mais de 19h sem retorno do time de vendas)",
+      "resumo_conversa": "MEGA LEAD - usina 5.000 kWh em Recife (Av Inacio Monteiro 215 Cordeiro CEP 50721321). Pagamento a vista cartao ou Pix. Gabriel SDR prometeu encaminhar para vendas; ninguem retornou.",
+      "valor_conta": "R$ ~4.000+ (5.000 kWh)",
+      "tipo_imovel": "Recife - laje",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ABSOLUTA. Pericles deve ligar HOJE 8h. Cliente alto poder de compra (Pix/cartao), com endereco ja fornecido. Risco enorme de esfriar.",
+      "abordagem_sugerida": "Pedir desculpas pela demora, agendar visita tecnica HOJE ou amanha. Mencionar 53 paineis DAH 710W + inversor Huawei 30k. Apresentar diferenciais (laboratorio proprio, 17 anos)."
     },
     {
-      "cliente": "Lutiane",
-      "vendedor": "Sem atribuicao (automacao ligada)",
-      "sdr": "Nao atribuido",
-      "conta": "DR2",
-      "hora_ultima_msg": "16:41",
-      "tempo_esperando": "Desde ontem 16:41 (cerca de 22h sem resposta)",
-      "resumo_conversa": "Cliente mandou tres mensagens ontem 16:37-16:41: 'Boa tarde', 'Qual numero consigo falar com vcs', 'Desejo o numero da gerencia da empresa'. Quer falar com GERENCIA - pode ser reclamacao ou caso especial.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ATENDIMENTO URGENTE - cliente solicitou contato direto com gerencia. Atribuir imediato e escalar para gestor. Pode ser reclamacao ou oportunidade especial.",
-      "abordagem_sugerida": "Atribuir a Gestor + ligar pessoalmente: 'Sra. Lutiane, sou do time da Domingo e Rodrigues, recebi seu contato solicitando falar com a gerencia. Em que posso ajudar?'"
-    },
-    {
-      "cliente": "Leticia Andrade",
-      "vendedor": "Sem atribuicao (automacao ligada)",
-      "sdr": "Nao atribuido",
-      "conta": "DR2",
-      "hora_ultima_msg": "13:33",
-      "tempo_esperando": "Desde ontem 13:33 (cerca de 26h sem resposta)",
-      "resumo_conversa": "Cliente nova cadastrada ontem 13:33. Enviou 'Boa tarde' e 'Gostaria de solicitar um orcamento'. PEDIDO EXPLICITO DE ORCAMENTO sem atribuicao a vendedor.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "URGENTE - cliente pediu ORCAMENTO direto. Lead extremamente quente desperdicado por nao ter atribuicao. Atribuir imediato + responder.",
-      "abordagem_sugerida": "Atribuir a SDR + responder: 'Boa tarde Leticia! Obrigado pelo interesse, vou te ajudar com o orcamento. Para preparar a melhor proposta, me informa o valor medio da sua conta de energia e a cidade.'"
-    },
-    {
-      "cliente": "Glau",
-      "vendedor": "Maria Luiza",
-      "sdr": "Maria Luiza",
-      "conta": "DR2",
-      "hora_ultima_msg": "08:31",
-      "tempo_esperando": "Desde ontem 08:31 (cerca de 30h sem resposta)",
-      "resumo_conversa": "Cliente original de 20/05 mandou 'Ola, boa tarde'. Vendedor respondeu com template + video. Cliente perguntou 'Ola?' em 20/05 17:13 sem resposta. Voltou ontem 08:31 com 'Bom dia' tentando retomar conversa.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ALTA - cliente tentando retomar contato apos abandono. Pedir desculpas pela demora e seguir com qualificacao.",
-      "abordagem_sugerida": "Bom dia Glau! Desculpa a demora. Tudo bem? Para te ajudar com economia de energia, me informa o valor medio da sua conta?"
-    },
-    {
-      "cliente": "Paulo Orleans",
-      "vendedor": "Keane",
-      "sdr": "Keane",
+      "cliente": "Romario Dantas",
+      "vendedor": "Pericles Mateus (atribuido); Gabriel SDR encaminhou",
       "conta": "DR4",
-      "hora_ultima_msg": "13:12",
-      "tempo_esperando": "Desde ontem 13:12 (cerca de 26h sem resposta)",
-      "resumo_conversa": "Contato hibrido: em 29/04 enviou apresentacao como Consultor Comercial de Energia Solar oferecendo seus servicos. Ontem 13:12 mandou 'Quero entender como economizar' e 'Bom dia' - mudou postura para CLIENTE.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Caso curioso - mesmo contato era consultor concorrente, agora quer ser cliente. Responder e descobrir se mudou de lado ou ja foi convertido pela concorrencia.",
-      "abordagem_sugerida": "Bom dia Paulo! Vi seu interesse em economizar com energia solar. Voce e o mesmo Paulo Consultor que nos contatou em abril? Ficamos honrados em ter voce como cliente. Me informa o valor medio da sua conta para preparar simulacao."
+      "hora_ultima_msg": "10:48",
+      "tempo_esperando": "Desde ontem 10:48 (mais de 22h sem resposta)",
+      "resumo_conversa": "Pediu usina de 5.000 kWh em Recife. Gabriel SDR prometeu encaminhar para vendas 10:46. Cliente respondeu Ok 10:48. Time de vendas nao apareceu.",
+      "valor_conta": "R$ ~4.000+ (5.000 kWh)",
+      "tipo_imovel": "Recife",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ABSOLUTA. Pericles precisa ligar HOJE no primeiro horario. Lead grande perdido por 22h.",
+      "abordagem_sugerida": "Pedir desculpas, oferecer visita tecnica imediata, perguntar onde quer instalacao (Recife - bairro), forma de pagamento."
     },
     {
-      "cliente": "Creuza",
-      "vendedor": "Kemilly",
-      "sdr": "Kemilly",
+      "cliente": "Edson",
+      "vendedor": "Camila Rodrigues (atribuida); Kemily fez orcamento; Luana tentou ligar",
       "conta": "DR4",
-      "hora_ultima_msg": "19:35 (audios desde 12:42)",
-      "tempo_esperando": "Desde ontem 12:42 (cerca de 27h sem resposta)",
-      "resumo_conversa": "Lead de Jaguarari. Vendedor tinha registrado em 25/05 10:23 que 'cliente informou por ligacao que clicou sem querer'. Mas DEPOIS dessa anotacao, cliente mandou 4 audios as 12:42 e mais 1 audio as 19:35. Cliente claramente engajou e quer conversar.",
-      "valor_conta": "Nao informado nos audios",
-      "recomendacao": "URGENTE - reverter anotacao 'clicou sem querer'. Cliente mandou 5 audios! Ouvir todos e retornar ligacao. Pode ser oportunidade boa em Jaguarari.",
-      "abordagem_sugerida": "Bom dia Creuza! Recebi seus audios, peco desculpas por nao retornar antes. Em que posso te ajudar com energia solar? Qual o valor da sua conta de luz?"
+      "hora_ultima_msg": "15:42",
+      "tempo_esperando": "Desde ontem 15:42 (mais de 17h sem retorno)",
+      "resumo_conversa": "GRANDE LEAD R$ 1.500/mes. Kemily ja enviou orcamento de R$ 27.352,58 para 1.500 kWh. Cliente disse financiamento. Luana tentou ligar (cliente nao atendeu - numero outro estado). Cliente forneceu cidade Jaboatao dos Guararapes e consumo 1.400 kWh.",
+      "valor_conta": "R$ 1.500 (1.400 kWh)",
+      "tipo_imovel": "Jaboatao dos Guararapes - residencial",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ALTA. Camila deve ligar HOJE pelo WhatsApp pessoal (ja que cliente nao atende DDD outro estado). Orcamento ja esta pronto - so fechar.",
+      "abordagem_sugerida": "WhatsApp pessoal: 'Bom dia Edson, sou Camila da D&R. Vi que enviamos seu orcamento de R$ 27.352 para 1500kWh. Vamos avancar com o financiamento? Posso te enviar simulacao Banco do Brasil/Caixa.'"
     },
     {
-      "cliente": "Jose Marcos",
-      "vendedor": "Kemily Carvalho",
-      "sdr": "Kemilly",
+      "cliente": "Roberio Allan",
+      "vendedor": "Pericles Mateus (atribuido); Gabriel SDR encaminhou",
       "conta": "DR4",
-      "hora_ultima_msg": "15:51 audio (apos texto 13:05)",
-      "tempo_esperando": "Desde ontem 13:05 (cerca de 25h sem resposta)",
-      "resumo_conversa": "Cliente original de 20/05. Em 21/05 Kemily disse 'vou dar continuidade no seu atendimento'. Cliente reapareceu ontem 13:05 'Tambem quero economizar com energia solar' + audio 00:16 as 15:51. Nenhum retorno do vendedor.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ALTA - cliente reabriu contato apos dias, vendedor que prometeu continuidade nao respondeu.",
-      "abordagem_sugerida": "Bom dia Jose Marcos! Recebi sua mensagem e audio, vou ouvir e ja te retorno com a simulacao."
+      "hora_ultima_msg": "15:12",
+      "tempo_esperando": "Desde ontem 15:12 (mais de 18h sem retorno)",
+      "resumo_conversa": "Cliente Petrolina pediu projeto 1.000 kWh, com orcamento nas 3 formas de pagamento (PIX/cartao/financiamento). Gabriel encaminhou para vendas. Pericles atribuido mas nao retornou.",
+      "valor_conta": "R$ ~800-1.000 (1.000 kWh)",
+      "tipo_imovel": "Petrolina - residencial",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ALTA. Pericles precisa ligar HOJE no primeiro horario com as 3 opcoes de pagamento prontas.",
+      "abordagem_sugerida": "'Bom dia Roberio, sou Pericles da D&R. Vou te apresentar seu orcamento de 1000 kWh nas 3 formas - PIX (com desconto), cartao (ate X parcelas) e financiamento (R$ X/mes). Quando podemos agendar visita tecnica?'"
     },
     {
-      "cliente": "Roberval",
+      "cliente": "Silva (rural)",
       "vendedor": "Keanny Brandao",
-      "sdr": "Keane",
+      "conta": "DR4",
+      "hora_ultima_msg": "12:39",
+      "tempo_esperando": "Desde ontem 12:39 (mais de 20h sem resposta)",
+      "resumo_conversa": "Cliente rural sem rede eletrica, quer sistema solar off-grid so para bomba de 7,5 CV. Mandou audio 12:39 detalhando. Sem retorno.",
+      "valor_conta": "Sistema off-grid (sem conta de luz)",
+      "tipo_imovel": "Rural - poco artesiano",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ALTA. Bomba 7,5 CV e sistema solar isolado de bom porte. Keanny deve ouvir o audio e ligar HOJE.",
+      "abordagem_sugerida": "'Bom dia, sou Keanny da D&R. Recebi seu audio sobre bomba 7,5 CV. Trabalhamos com sistemas off-grid para essa potencia. Voce esta em qual regiao? Posso enviar dimensionamento ainda hoje.'"
+    },
+    {
+      "cliente": "Cliente Petrolina 1000 kWh (nome com emojis)",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "hora_ultima_msg": "16:40",
+      "tempo_esperando": "Desde ontem 16:40 (mais de 16h)",
+      "resumo_conversa": "Lead engajado em Petrolina, 1.000 kWh, telhado ceramica. Keanny ofereceu enviar gestor as 17h ontem. Cliente respondeu 'Nao tem como' 16:40. Keanny nao voltou a oferecer outro horario.",
+      "valor_conta": "R$ ~800-1.000 (1.000 kWh)",
+      "tipo_imovel": "Petrolina - telhado ceramica",
+      "alto_consumo": true,
+      "recomendacao": "PRIORIDADE ALTA. Keanny deve oferecer NOVO horario hoje. Cliente engajado mas Keanny abandonou apos o 'Nao tem como'.",
+      "abordagem_sugerida": "'Bom dia! Ontem nao conseguimos falar as 17h. Que tal hoje as 14h ou 16h? Tenho um orcamento especial para sua necessidade de 1000 kWh em Petrolina.'"
+    },
+    {
+      "cliente": "Claudio",
+      "vendedor": "Pericles Mateus (deveria ter ligado ontem 15h)",
+      "conta": "DR4",
+      "hora_ultima_msg": "15:06 (Keanny prometendo contato Pericles)",
+      "tempo_esperando": "Desde ontem 15:06 (mais de 18h - Pericles falhou no contato prometido)",
+      "resumo_conversa": "Cliente trocou audios com Keanny. Keanny prometeu que o gestor Pericles entraria em contato. Pericles NAO retornou. Cliente esta esperando orcamento.",
+      "recomendacao": "Pericles precisa ligar HOJE com pedido formal de desculpas. Cliente esta aguardando contato prometido.",
+      "abordagem_sugerida": "'Claudio, peco desculpas pela demora. Sou Pericles. Vamos conversar agora sobre seu orcamento? Tem 5 minutos?'"
+    },
+    {
+      "cliente": "Brandao (cliente)",
+      "vendedor": "Pericles Mateus (atribuido); Gabriel SDR atendeu",
       "conta": "DR4",
       "hora_ultima_msg": "17:34",
-      "tempo_esperando": "Desde ontem 17:34 (cerca de 22h sem resposta)",
-      "resumo_conversa": "Cliente original ontem 17:23 'Tenho interesse em energia solar'. SDR Keanny respondeu, perguntou regiao. Cliente mandou audio 00:08 as 17:34 respondendo. Vendedor nao retornou.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ALTA - cliente respondeu antes do horario de pico, vendedor nao deu sequencia.",
-      "abordagem_sugerida": "Bom dia Roberval! Ouvi seu audio, vamos seguir com a proposta. Qual o valor medio da sua conta de energia?"
+      "tempo_esperando": "Desde ontem 17:34 (cliente disse que envia conta hoje)",
+      "resumo_conversa": "Cliente antigo (Fev/Abr - estava com Maria Luiza pelo WhatsApp pessoal). Reabordagem ontem por Gabriel SDR. Cliente disse 'mando amanha' (hoje) a foto da conta. Cliente 'Ok' 17:34 a transferencia para vendas.",
+      "valor_conta": "R$ ~400 (500 kWh)",
+      "recomendacao": "Pericles precisa estar preparado para receber foto da conta HOJE e gerar orcamento na sequencia. Aproveitar o gancho com Maria Luiza (cliente ja conhece a empresa).",
+      "abordagem_sugerida": "'Bom dia Brandao! Sou Pericles. Estou aqui pronto para receber a foto da sua conta. Assim que enviar, em 30 min te mando o orcamento.'"
     },
     {
-      "cliente": "Expedito",
-      "vendedor": "Keane",
-      "sdr": "Keane",
+      "cliente": "Valdir Nogueira",
+      "vendedor": "Keanny Brandao",
       "conta": "DR4",
-      "hora_ultima_msg": "12:09 (3 audios 12:06-12:09)",
-      "tempo_esperando": "Desde ontem 12:06 (cerca de 27h sem resposta)",
-      "resumo_conversa": "Lead de 22/05. SDR tentou contato em 22/05 e 23/05 sem sucesso. Cliente respondeu ontem com 3 audios entre 12:06 e 12:09 (00:27 + 00:05 + 00:22).",
-      "valor_conta": "Nao informado nos audios",
-      "recomendacao": "ALTA - 3 audios mostram engajamento. Ouvir e retornar.",
-      "abordagem_sugerida": "Bom dia Expedito! Obrigado por retornar com os audios. Vou ouvir e ja te respondo com a proposta."
+      "hora_ultima_msg": "09:19 (2 audios)",
+      "tempo_esperando": "Desde ontem 09:19 (mais de 24h sem qualquer resposta)",
+      "resumo_conversa": "Lead chegou 25/05 15:39, mandou multiplos audios. Keanny atribuida mas NUNCA respondeu. Cliente mandou mais 2 audios ontem 09:19.",
+      "recomendacao": "URGENTE - 24h sem resposta. Keanny precisa ouvir os audios HOJE e responder.",
+      "abordagem_sugerida": "'Bom dia Valdir, peco desculpas pela demora. Ouvi seus audios. Vamos conversar agora sobre seu projeto?'"
     },
     {
       "cliente": "Ivo Lancelot",
-      "vendedor": "Keanny (SDR)",
-      "sdr": "Keane",
+      "vendedor": "Keanny Brandao",
       "conta": "DR4",
-      "hora_ultima_msg": "12:50",
-      "tempo_esperando": "Desde ontem 12:50 (cerca de 27h sem resposta)",
-      "resumo_conversa": "Lead de campanha de reativacao (tag Reativacao_2 + NAO_RESPONDEU). Cliente original de 22/05. Multiplas tentativas SDR. Cliente FINALMENTE respondeu ontem com audio 00:17 as 12:50.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ALTA - lead recuperado de reativacao, nao pode perder agora.",
-      "abordagem_sugerida": "Bom dia Ivo! Obrigado pelo retorno. Ouvi seu audio, vamos agendar uma conversa hoje?"
+      "hora_ultima_msg": "16:03 (3 audios)",
+      "tempo_esperando": "Desde ontem 16:03 (mais de 17h)",
+      "resumo_conversa": "Cliente disse 'Ja resolvi' 15:51, depois mandou 3 audios 16:02-16:03. Keanny nao retornou aos audios para entender o que ele quis dizer.",
+      "recomendacao": "Keanny precisa OUVIR os audios e entender se o cliente fechou com concorrente ou se ainda ha chance.",
+      "abordagem_sugerida": "'Ivo, ouvi seus audios. Entendi que falou de ja ter resolvido. Posso te apresentar uma proposta com diferenciais (laboratorio proprio, 17 anos) para voce comparar?'"
     },
     {
-      "cliente": "Milla",
-      "vendedor": "Keanny (SDR)",
-      "sdr": "Keane",
+      "cliente": "Expedito",
+      "vendedor": "Keanny Brandao",
       "conta": "DR4",
-      "hora_ultima_msg": "12:45",
-      "tempo_esperando": "Desde ontem 12:45 (cerca de 27h sem resposta)",
-      "resumo_conversa": "Cliente original de 22/05 'Ola! Tenho interesse e queria mais informacoes, por favor.' SDR tentou contato dias 22 e 23/05. Cliente respondeu ontem audio 00:24 as 12:45.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ALTA - cliente engajou apos tentativas. Ouvir audio e responder.",
-      "abordagem_sugerida": "Bom dia Milla! Obrigado pelo audio, vou ouvir e te retorno em seguida com mais informacoes."
-    },
-    {
-      "cliente": "jose cardoso",
-      "vendedor": "Keane",
-      "sdr": "Keane",
-      "conta": "DR4",
-      "hora_ultima_msg": "12:20",
-      "tempo_esperando": "Desde ontem 12:20 (cerca de 27h sem resposta)",
-      "resumo_conversa": "Cliente original de 20/05 'Quero mais informacoes'. Multiplas tentativas SDR (20, 21, 22, 23/05). Cliente respondeu ontem audio 00:23 as 12:20.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "MEDIA-ALTA - lead frio finalmente esquentou, nao pode esfriar de novo.",
-      "abordagem_sugerida": "Bom dia Jose! Ouvi seu audio. Para te ajudar com a economia, qual o valor medio da sua conta de luz?"
+      "hora_ultima_msg": "16:04 (sticker apos resposta generica)",
+      "tempo_esperando": "Desde ontem 16:04",
+      "resumo_conversa": "Cliente enviou 8 audios em 3 dias demonstrando engajamento. Keanny apenas respondeu 'Sem problemas, fico a disposicao' 16:02. Cliente reagiu com sticker. Vendedor abandonou conversa quente.",
+      "recomendacao": "Keanny precisa OUVIR os 8 audios e voltar com proposta concreta. Lead muito engajado.",
+      "abordagem_sugerida": "'Expedito, ouvi todos seus audios. Voce tem interesse genuino. Vamos marcar uma visita tecnica? Tenho horario hoje 14h ou amanha.'"
     }
   ],
-  "sem_resposta_apos_18h": [],
-  "alto_consumo": [],
+
+  "sem_resposta_apos_18h": [
+    {
+      "cliente": "Antonia Barbosa",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "hora_ultima_msg": "18:35",
+      "resumo_conversa": "Lead novo ontem 18:34. Bot pediu valor da conta, cliente respondeu com audio 18:35. Sem resposta da Keanny (fora do horario).",
+      "recomendacao": "Responder logo cedo. Cliente novo, momentum quente.",
+      "abordagem_sugerida": "'Bom dia Antonia! Ouvi seu audio sobre energia solar. Vamos conversar agora? Qual o melhor horario hoje?'"
+    }
+  ],
+
+  "alto_consumo": [
+    {
+      "cliente": "Barbara",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR2",
+      "valor_conta": "R$ ~560 (700 kWh)",
+      "tipo_imovel": "Residencial",
+      "status_atual": "Aguardando orcamento prometido ate sexta",
+      "resumo_conversa": "Cliente quer orcamento para 700 kWh. Sai 6h, volta 20h - dificil agendar visita. Keanny anotou que vai fazer orcamento e contatar ate sexta-feira. Mandou audio 12:14.",
+      "recomendacao": "Keanny preparar o orcamento HOJE para enviar amanha/sexta como prometido. Nao furar o compromisso.",
+      "abordagem_sugerida": "Mensagem WhatsApp a noite (apos 20h, quando cliente esta em casa): 'Boa noite Barbara, conforme combinado, segue seu orcamento de 700 kWh.'"
+    }
+  ],
+
   "leads_quentes": [
     {
-      "cliente": "Jorge Campodonio",
-      "vendedor": "Alan Oliveira - Gestor de Energia",
-      "sdr": "Kemilly",
-      "conta": "DR4",
-      "nivel_interesse": "Muito Alto",
-      "resumo_conversa": "Orcamento JA ENVIADO. Cliente respondeu 'Otimo! Valeu! Vou dar uma olhada e volto a falar com vcs.' E perguntou: 'Caso eu feche o negocio, qual o prazo pra instalacao e geracao de energia?' + audio. Alan respondeu 'Vou te mandar la pelo whats' migrando para WhatsApp pessoal. Cliente respondeu com polegar.",
-      "valor_conta": "Nao informado mas orcamento enviado",
-      "recomendacao": "FECHAR HOJE - cliente perguntou prazo de instalacao, sinal forte de intencao de compra. Alan deve garantir contato pelo WhatsApp pessoal e nao deixar esfriar.",
-      "abordagem_sugerida": "Alan: confirmar mensagem no WhatsApp pessoal com proposta detalhada e prazo de instalacao concreto. Oferecer fechamento HOJE com algum incentivo de prazo."
+      "cliente": "Otavio Nunes",
+      "vendedor": "Pericles Mateus (VISITA HOJE 8h) / Keanny",
+      "conta": "DR2",
+      "nivel_interesse": "Muito Alto - visita agendada para HOJE",
+      "resumo_conversa": "VISITA AGENDADA HOJE 27/05 AS 8H por Pericles. Cliente enviou conta de energia em PDF e endereco Rua Taina 381 Parque Petrolina.",
+      "recomendacao": "ATENCAO PERICLES: visita HOJE 8h em Rua Taina 381 Parque Petrolina. Nao atrasar!",
+      "abordagem_sugerida": "Confirmar com cliente 30 min antes: 'Otavio, estou a caminho, chegando 8h.' Levar orcamento preliminar baseado na conta enviada."
     },
     {
-      "cliente": "matheus - Nova Sincronia",
-      "vendedor": "Kemily Carvalho",
-      "sdr": "Kemilly",
+      "cliente": "Jamisson",
+      "vendedor": "Alan Oliveira (visita realizada ontem) / Keanny",
       "conta": "DR2",
-      "nivel_interesse": "Prospector B2B (atencao!)",
-      "resumo_conversa": "Contato se identificou como Matheus da 'Nova Sincronia', mencionou que viu DR no Instagram trabalhando com energia solar. Perguntou se DR tem o mesmo problema das outras empresas (perda de leads qualificados no processo de pre-vendas). Parece estar vendendo servico de qualificacao de leads B2B para DR, NAO e cliente.",
-      "valor_conta": "N/A (e prospector)",
-      "recomendacao": "ATENCAO - nao e cliente. E vendedor B2B oferecendo servicos a DR. Responder com cuidado: agradecer e direcionar para email/canal apropriado, OU avaliar se faz sentido conhecer o servico oferecido.",
-      "abordagem_sugerida": "Ola Matheus! Obrigado pelo contato. Para tratar de parcerias B2B, gentileza encaminhar proposta para o e-mail comercial. Aqui no chat focamos atendimento a clientes finais de energia solar."
+      "nivel_interesse": "Muito Alto - visita realizada, em fechamento",
+      "resumo_conversa": "Visita tecnica realizada ontem por Alan no Condominio Sol Nascente Etapa 2, Rua das Hortensia 51. Cliente pediu orcamento 830 kWh com inversor 10k. Alan precisa enviar proposta final.",
+      "valor_conta": "R$ ~700+ (830 kWh)",
+      "recomendacao": "ALAN: enviar proposta formalizada HOJE. Cliente ja viu a casa, esta em decisao. Risco de demora esfriar.",
+      "abordagem_sugerida": "'Bom dia Jamisson! Como combinado apos a visita, segue sua proposta formalizada de 830 kWh. Garantia, prazo de instalacao e formas de pagamento na anexa.'"
+    },
+    {
+      "cliente": "Jorge Campodonio",
+      "vendedor": "Alan Oliveira / Keanny",
+      "conta": "DR4",
+      "nivel_interesse": "Alto - aguardando visita sabado",
+      "resumo_conversa": "Lead quente ja em andamento. Orcamento enviado por Alan 25/05. Cliente perguntou prazo de instalacao. Ontem Keanny confirmou visita para sabado 31/05. Cliente respondeu 👍🏻.",
+      "valor_conta": "R$ ~700+ (>500 kWh)",
+      "recomendacao": "Manter cliente aquecido ate sabado. Nao esfriar.",
+      "abordagem_sugerida": "Mensagem na sexta: 'Bom dia Jorge! Lembrando da visita amanha sabado. Qual horario fica melhor? Estou enviando localizacao real.'"
+    },
+    {
+      "cliente": "Expedito (DUPLICADO - ver em sem_resposta_antes_18h)",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "nivel_interesse": "Alto - 8 audios em 3 dias",
+      "resumo_conversa": "Ver acima em sem_resposta_antes_18h.",
+      "recomendacao": "Ver em sem_resposta_antes_18h.",
+      "abordagem_sugerida": "Ver em sem_resposta_antes_18h."
     }
   ]
 }

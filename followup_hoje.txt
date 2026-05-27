@@ -1,163 +1,142 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 26/05/2026 (terca)
-Referencia: conversas de 25/05/2026 (segunda - ontem)
+FOLLOW-UPS PRIORITARIOS - 2026-05-27 (QUA)
+Referencia: conversas de 2026-05-26 (TER)
 ====================================================
 
-RESUMO RAPIDO:
-- 14 follow-ups identificados
-- 9 do DR4 + 5 do DR2
-- DESTAQUE: 1 deal fechado aguardando contrato ha 30+ dias
-- DESTAQUE: 1 cliente DR2 quer falar com a GERENCIA
-- DESTAQUE: 2 leads DR2 SEM ATRIBUICAO (orcamento pedido + gerencia)
-
+VENDEDORES: leitura matinal de 5 minutos.
+17 follow-ups identificados | 2 visitas/proposta HOJE
 
 ====================================================
-ALERTA MAXIMO - DEAL FECHADO EM RISCO
+PRIORIDADE MAXIMA - SEM RESPOSTA + ALTO TICKET:
 ====================================================
 
-1. IVONALDO FAUSTINO (DR2) - Vendedor: Guilherme | Gestor em Energia
-   Ultima msg: ontem 08:17 ("Bom dia")
-   SITUACAO CRITICA: Deal JA FECHADO em 22-23/04! Visita tecnica feita,
-   contrato prometido "pronto pela manha" do dia 23.04. Cliente esta
-   cobrando o contrato pendente ha mais de 30 dias.
-   ACAO: Guilherme responder na PRIMEIRA hora. Pedir desculpas, dar
-   status concreto do contrato, comprometer-se com prazo final.
+1. HAKAI (Thiago Hoffman) - DR4
+   Vendedor: PERICLES MATEUS
+   Ultima msg: 14:10 ontem | Conta: ~R$ 4.000+ (5.000 kWh)
+   Endereco: Av Inacio Monteiro 215 Cordeiro - Recife (CEP 50721321)
+   Situacao: MEGA LEAD. Pagamento a vista (Pix ou cartao). Gabriel SDR
+   prometeu encaminhar para vendas; ninguem retornou. 19h sem retorno.
+   ACAO: Pericles deve ligar HOJE no primeiro horario. Risco enorme.
 
+2. ROMARIO DANTAS - DR4
+   Vendedor: PERICLES MATEUS
+   Ultima msg: 10:48 ontem | Conta: ~R$ 4.000+ (5.000 kWh)
+   Cidade: Recife
+   Situacao: Pediu usina de 5.000 kWh. Gabriel encaminhou; vendas nao
+   apareceu. 22h sem resposta.
+   ACAO: Pericles ligar HOJE 8h. Lead grande perdido por quase 1 dia.
 
-====================================================
-SEM RESPOSTA ANTES DAS 18H (URGENTE)
-====================================================
+3. EDSON - DR4
+   Vendedor: CAMILA RODRIGUES (atribuida)
+   Ultima msg: 15:42 ontem | Conta: R$ 1.500 (1.400 kWh)
+   Cidade: Jaboatao dos Guararapes
+   Situacao: Orcamento de R$ 27.352,58 ja enviado por Kemily. Cliente
+   quer financiamento, ja forneceu cidade e consumo. Luana tentou ligar
+   mas cliente nao atende numero outro estado.
+   ACAO: Camila ligar pelo WHATSAPP PESSOAL HOJE. So fechar.
 
-2. GILBERTO CAMPOS DA SILVA (DR4) - SDR: Keane
-   Ultima msg: ontem 12:52 (3 audios entre 12:35-12:52)
-   Cliente original 19/05. SDR tentou 4 vezes em 5 dias sem sucesso.
-   Cliente FINALMENTE respondeu com 3 audios (00:27 + 00:37 + 00:32).
-   Vendedor NAO ouviu nem retornou.
-   ACAO: Ouvir os 3 audios URGENTE e retornar com ligacao.
+4. ROBERIO ALLAN - DR4
+   Vendedor: PERICLES MATEUS
+   Ultima msg: 15:12 ontem | Conta: ~R$ 800-1.000 (1.000 kWh)
+   Cidade: Petrolina
+   Situacao: Pediu orcamento nas 3 formas de pagamento (PIX/cartao/
+   financiamento). Gabriel encaminhou; Pericles nao retornou.
+   ACAO: Pericles ligar HOJE com as 3 opcoes prontas.
 
-3. LUTIANE (DR2) - SEM ATRIBUICAO
-   Ultima msg: ontem 16:41 ("Desejo o numero da gerencia da empresa")
-   Cliente quer falar com GERENCIA - pode ser reclamacao seria ou
-   caso especial. Sem vendedor atribuido!
-   ACAO: Atribuir a gestor + ligar pessoalmente HOJE pela manha.
+5. SILVA (rural) - DR4
+   Vendedor: KEANNY BRANDAO
+   Ultima msg: 12:39 ontem (audio) | Sistema off-grid
+   Situacao: Cliente rural, sem rede eletrica, quer sistema solar
+   isolado para bomba de 7,5 CV. Sem retorno.
+   ACAO: Keanny ouvir audio HOJE e ligar.
 
-4. LETICIA ANDRADE (DR2) - SEM ATRIBUICAO
-   Ultima msg: ontem 13:33 ("Gostaria de solicitar um orcamento")
-   Lead NOVO pedindo ORCAMENTO explicitamente, sem atribuicao!
-   Lead extremamente quente sendo desperdicado.
-   ACAO: Atribuir SDR imediato + responder pedindo valor da conta.
-
-5. GLAU (DR2) - SDR: Maria Luiza
-   Ultima msg: ontem 08:31 ("Bom dia")
-   Cliente havia mandado "Ola?" em 20/05 sem resposta. Voltou ontem
-   tentando retomar contato. Conversa abandonada.
-   ACAO: Pedir desculpas pela demora + seguir qualificacao.
-
-6. PAULO ORLEANS (DR4) - SDR: Keane
-   Ultima msg: ontem 13:12 ("Bom dia")
-   Caso curioso: mesmo contato em 29/04 enviou apresentacao como
-   Consultor Comercial concorrente. Agora ontem mudou postura para
-   CLIENTE: "Quero entender como economizar".
-   ACAO: Responder confirmando se virou cliente.
-
-7. CREUZA (DR4) - SDR: Kemilly
-   Ultima msg: ontem 19:35 (5 audios ao todo: 4 as 12:42 + 1 as 19:35)
-   ATENCAO: Em 25/05 10:23 vendedor registrou "clicou sem querer", mas
-   DEPOIS cliente mandou 5 audios mostrando claramente interesse.
-   Cliente de Jaguarari, anotacao precisa ser revertida.
-   ACAO: Reverter anotacao + ouvir 5 audios + retornar.
-
-8. JOSE MARCOS (DR4) - Vendedor: Kemily Carvalho
-   Ultima msg: ontem 15:51 audio (apos texto 13:05)
-   Cliente reabriu contato apos dias. Vendedora prometeu continuidade
-   em 21/05 mas nao respondeu.
-   ACAO: Ouvir audio + responder com simulacao.
-
-9. ROBERVAL (DR4) - SDR: Keane
-   Ultima msg: ontem 17:34 (audio 00:08)
-   Cliente novo ontem 17:23 com interesse. SDR respondeu perguntando
-   regiao. Cliente mandou audio respondendo. Sem retorno.
-   ACAO: Ouvir audio + perguntar valor da conta.
-
-10. EXPEDITO (DR4) - SDR: Keane
-    Ultima msg: ontem 12:09 (3 audios entre 12:06-12:09)
-    Lead de 22/05. SDR tentou contato 22-23/05. Cliente finalmente
-    respondeu com 3 audios.
-    ACAO: Ouvir 3 audios + retornar.
-
-11. IVO LANCELOT (DR4) - SDR: Keane
-    Ultima msg: ontem 12:50 (audio 00:17)
-    Lead de campanha de reativacao (NAO_RESPONDEU + Reativacao_2).
-    Cliente finalmente respondeu apos varias tentativas.
-    ACAO: Ouvir audio + agendar conversa hoje.
-
-12. MILLA (DR4) - SDR: Keane
-    Ultima msg: ontem 12:45 (audio 00:24)
-    Cliente de 22/05 finalmente respondeu apos tentativas.
-    ACAO: Ouvir audio + retornar com informacoes.
-
-13. JOSE CARDOSO (DR4) - SDR: Keane
-    Ultima msg: ontem 12:20 (audio 00:23)
-    Cliente de 20/05 esquentou apos multiplas tentativas SDR.
-    ACAO: Ouvir audio + perguntar valor da conta.
-
+6. CLIENTE PETROLINA 1000kWh (perfil com emojis) - DR4
+   Vendedor: KEANNY BRANDAO
+   Ultima msg: 16:40 ontem | Conta: ~R$ 800-1.000 (1.000 kWh)
+   Situacao: Cliente engajado. Keanny ofereceu gestor as 17h, cliente
+   disse 'Nao tem como'. Keanny abandonou sem oferecer novo horario.
+   ACAO: Keanny propor 14h ou 16h HOJE.
 
 ====================================================
-LEADS QUENTES - FECHAR HOJE
+SEM RESPOSTA (ANTES 18H) - URGENTE:
 ====================================================
 
-14. JORGE CAMPODONIO (DR4) - Vendedor: Alan Oliveira (Gestor de Energia)
-    Status: Orcamento ENVIADO
-    Cliente: "Otimo! Valeu! Vou dar uma olhada e volto a falar com vcs."
-    "Caso eu feche o negocio, qual o prazo pra instalacao?"
-    Alan migrou para WhatsApp pessoal: "Vou te mandar la pelo whats"
-    Cliente respondeu com polegar.
-    ACAO: Alan garantir contato HOJE pelo WhatsApp pessoal com proposta
-    detalhada e prazo de instalacao. SINAL FORTE DE FECHAMENTO.
+7. CLAUDIO - DR4 | Vendedor: PERICLES MATEUS
+   Ultima msg: 15:06 ontem (Keanny prometeu Pericles entraria em contato)
+   ACAO: Pericles ligar HOJE com pedido de desculpas pela falta de
+   contato prometido.
 
+8. BRANDAO (cliente, nao Keanny) - DR4 | Vendedor: PERICLES MATEUS
+   Ultima msg: 17:34 ontem ('Ok' a transferencia para vendas)
+   Conta: ~R$ 400 (500 kWh)
+   Cliente disse que envia foto da conta HOJE. Cliente antigo, ja tinha
+   contato com Maria Luiza pelo WhatsApp pessoal.
+   ACAO: Pericles preparar para receber foto da conta HOJE e gerar
+   orcamento na sequencia.
 
-====================================================
-ATENCAO - NAO E CLIENTE FINAL
-====================================================
+9. VALDIR NOGUEIRA - DR4 | Vendedor: KEANNY BRANDAO
+   Ultima msg: 09:19 ontem (2 audios) | 24h+ sem resposta
+   Keanny atribuida desde 25/05 mas NUNCA respondeu.
+   ACAO: Keanny ouvir audios HOJE 8h e responder com desculpas.
 
-15. MATHEUS - NOVA SINCRONIA (DR2) - Atribuido: Kemily
-    NAO E CLIENTE. E prospector B2B oferecendo servico de qualificacao
-    de leads para Domingo e Rodrigues.
-    ACAO: Direcionar para email comercial ou avaliar parceria.
+10. IVO LANCELOT - DR4 | Vendedor: KEANNY BRANDAO
+    Ultima msg: 16:03 ontem (3 audios, apos dizer 'Ja resolvi')
+    ACAO: Keanny OUVIR os 3 audios para entender se ainda ha chance.
 
-
-====================================================
-TOP 5 PRIORIDADES DE HOJE
-====================================================
-
-1. IVONALDO FAUSTINO (DR2) - Deal fechado, contrato atrasado 30+ dias
-2. LUTIANE (DR2) - Cliente quer falar com gerencia (sem atribuicao)
-3. LETICIA ANDRADE (DR2) - Pediu orcamento explicito (sem atribuicao)
-4. JORGE CAMPODONIO (DR4) - Lead quente, sinal de fechamento
-5. GILBERTO CAMPOS (DR4) - Cliente engajou apos 4 tentativas SDR
-
+11. EXPEDITO - DR4 | Vendedor: KEANNY BRANDAO
+    Ultima msg: 16:04 ontem (sticker apos resposta generica)
+    Cliente mandou 8 audios em 3 dias, muito engajado. Keanny so disse
+    'Sem problemas, fico a disposicao' e parou.
+    ACAO: Keanny OUVIR todos os audios e voltar com proposta concreta.
 
 ====================================================
-RESUMO POR VENDEDOR
+SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ====================================================
 
-Maria Luiza (SDR DR2): 2 followups (Ivonaldo - critico!, Glau)
-Sem Atribuicao (DR2): 2 followups (Lutiane gerencia, Leticia orcamento)
-Kemilly Carvalho (SDR DR4): 3 followups (Creuza, Jose Marcos, Jorge)
-Keane (SDR DR4): 7 followups (Gilberto, Paulo Orleans, Roberval, Expedito,
-                                  Ivo, Milla, jose cardoso)
-Alan Oliveira (Gestor DR4): 1 followup (Jorge Campodonio - HOT)
-Guilherme (Gestor DR2): 1 followup (Ivonaldo - critico)
-
+12. ANTONIA BARBOSA - DR4 | Vendedor: KEANNY BRANDAO
+    Ultima msg: 18:35 ontem (audio - lead novo)
+    ACAO: Keanny ouvir audio e responder logo cedo, momentum quente.
 
 ====================================================
-RESUMO FINAL
+ALTO CONSUMO - SEGUIR PRAZO PROMETIDO:
 ====================================================
-- Sem resposta antes 18h: 13
-- Sem resposta apos 18h: 0
-- Alto consumo: 0
-- Leads quentes: 2
-TOTAL DE FOLLOW-UPS: 14 + 1 alerta especial B2B = 15
 
-BI: https://paulosantosder-byte.github.io/bi-domingo-rodrigues/
+13. BARBARA - DR2 | Vendedor: KEANNY BRANDAO
+    Ultima msg: 12:14 ontem (audio) | Conta: ~R$ 560 (700 kWh)
+    Cliente sai 6h, volta 20h. Keanny prometeu orcamento ate sexta.
+    ACAO: Keanny PREPARAR orcamento HOJE para enviar amanha/sexta a noite.
+
+====================================================
+LEADS QUENTES - FECHAR HOJE/SEMANA:
+====================================================
+
+14. OTAVIO NUNES - DR2 | Vendedor: PERICLES MATEUS
+    *** VISITA HOJE 8H ***
+    Endereco: Rua Taina 381, Parque Petrolina
+    Cliente ja enviou conta de energia em PDF.
+    ACAO: Pericles confirmar com cliente 30min antes e nao atrasar.
+
+15. JAMISSON - DR2 | Vendedor: ALAN OLIVEIRA
+    Visita realizada ONTEM no Cond. Sol Nascente Etapa 2 (Rua das
+    Hortensia 51). Cliente pediu orcamento 830 kWh + inversor 10k.
+    ACAO: Alan enviar PROPOSTA FORMAL HOJE. Cliente em decisao.
+
+16. JORGE CAMPODONIO - DR4 | Vendedor: ALAN OLIVEIRA
+    Visita agendada SABADO 31/05. Orcamento ja enviado 25/05.
+    ACAO: Mensagem de aquecimento na SEXTA reforcando visita.
+
+====================================================
+RESUMO:
+- Sem resposta antes 18h: 11
+- Sem resposta apos 18h: 1
+- Alto consumo: 1
+- Leads quentes: 4
+TOTAL DE FOLLOW-UPS: 17
+
+DESTAQUES DO DIA:
+- 2 leads de R$ 4.000+ sem retorno (Hakai, Romario Dantas) - URGENCIA MAXIMA
+- 1 lead com orcamento pronto (Edson R$ 27.352) - so fechar
+- 1 visita HOJE 8h (Otavio Nunes - Pericles)
+- 1 proposta a enviar (Jamisson - Alan)
+- 5 clientes esperando ligacao de Pericles (Hakai, Romario, Roberio, Claudio, Brandao)
 ====================================================
