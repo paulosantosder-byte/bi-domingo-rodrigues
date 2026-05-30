@@ -1,281 +1,302 @@
 {
   "data_referencia": "2026-05-28",
-  "gerado_em": "2026-05-29T10:05:00",
+  "gerado_em": "2026-05-29T21:36",
+  "observacao_geral": "Relatorio gerado as 21h36 de 29/05 (sexta). Varios compromissos agendados para 'hoje 29/05' (visitas/ligacoes 8h-11h) ja passaram - tratar como VERIFICAR RESULTADO. ALERTA CRONICO DR4: maioria dos leads de ontem foi atendida APENAS pelo BOT 'Gabriel'/'Ana Maryllya' sem assuncao por SDR humano. Proximo dia util = sabado 30/05.",
 
   "resumo": {
-    "total_pendentes": 24,
-    "sem_resposta_antes_18h": 8,
+    "total_pendentes": 25,
+    "sem_resposta_antes_18h": 1,
     "sem_resposta_apos_18h": 1,
-    "alto_consumo": 9,
-    "leads_quentes": 6
+    "alto_consumo": 11,
+    "leads_quentes": 12
   },
 
   "sem_resposta_antes_18h": [
     {
-      "cliente": "Leticia Rodrigues",
-      "vendedor": "Luana",
-      "conta": "DR2",
-      "hora_ultima_msg": "15:42",
-      "tempo_esperando": "Desde ontem 15:42 (mais de 18h sem resposta)",
-      "resumo_conversa": "Cliente confirmou agendamento e perguntou 'amanha as 9h?' pedindo confirmacao do horario da visita. Ja enviou codigo e endereco em Petrolina (rua 12, n 40, Lote Rafael).",
-      "valor_conta": "Nao informado, mas em estagio avancado de visita",
-      "recomendacao": "URGENTISSIMO - Confirmar a visita as 9h HOJE imediatamente. Cliente esta aguardando confirmacao desde ontem.",
-      "abordagem_sugerida": "Mensagem 8h: Bom dia Leticia! Confirmando nossa visita as 9h hoje. Estamos a caminho do endereco em Petrolina. Combinado!"
-    },
-    {
       "cliente": "Vladimiro Lopes",
-      "vendedor": "Keanny (originalmente) / Bot Gabriel",
+      "vendedor": "Keanny / BOT Gabriel",
       "conta": "DR4",
       "hora_ultima_msg": "10:55",
-      "tempo_esperando": "Desde ontem 10:55 (mais de 22h sem resposta)",
-      "resumo_conversa": "Cliente fez pergunta direta: 'Bom dia Gabriel sabe dizer se Magno eletricista ainda trabalha com a domingo e Rodrigues?' - pergunta sem resposta humana. Historico: ja interagiu com Keanny em 20.05 sobre orcamento e visita.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Responder pergunta sobre Magno eletricista e retomar conversa sobre orcamento solar. Cliente pode estar querendo indicacao de tecnico.",
-      "abordagem_sugerida": "Bom dia Vladimiro! Sobre o Magno, vou verificar internamente e ja te respondo. Sobre seu projeto solar, ainda tenho condicoes especiais para hoje, posso te ligar?"
-    },
-    {
-      "cliente": "Leiliane Cardoso",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "hora_ultima_msg": "10:54 (Keanny ofereceu visita 14h)",
-      "tempo_esperando": "Cliente sem retorno ha mais de 22h",
-      "resumo_conversa": "Cliente do Salitre com projeto de 3 residencias + 2 bombas em um so projeto. Keanny ofereceu visita 14h ontem com condicoes especiais. Cliente nao respondeu.",
-      "valor_conta": "Alto - 3 residencias + 2 bombas (irrigacao/multipontos)",
-      "recomendacao": "PRIORIDADE - mega ticket combinado (residencial + bombas). Ligar primeiro horario para confirmar visita hoje no Salitre.",
-      "abordagem_sugerida": "Ligar 8h. Mensagem: Bom dia Leiliane! Vamos confirmar visita ainda essa semana para preparar projeto das 3 residencias + bombas com as condicoes especiais que comentei."
-    },
-    {
-      "cliente": "Natali Brito",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "hora_ultima_msg": "16:52 (audio cliente)",
-      "tempo_esperando": "Desde ontem 16:52 (mais de 16h sem resposta)",
-      "resumo_conversa": "Cliente enviou 2 audios respondendo oferta de visita 16h40 de Keanny. Keanny ofereceu condicoes especiais antes mas nao respondeu aos audios. Historico de tentativas desde 21.05.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Ouvir os audios e responder URGENTE. Cliente esta engajada (mandou audio = interesse).",
-      "abordagem_sugerida": "Ouvir audios primeiro, depois: Oi Natali! Desculpe a demora. Sobre o que voce falou nos audios... (responder o conteudo especifico)"
-    },
-    {
-      "cliente": "Joao Vicente",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "hora_ultima_msg": "15:53 (Keanny pediu conta)",
-      "tempo_esperando": "Cliente sem retorno ha mais de 18h",
-      "resumo_conversa": "HAMBURGUERIA. Visita ja agendada para SEXTA (29.05 = HOJE). Cliente disse na quarta 'vou pegar o papel de luz' e 'vou estar la as 15h'. Keanny pediu conta ontem 15:53, sem resposta. Visita hoje agendada.",
-      "valor_conta": "Comercio (hamburgueria) - alto consumo provavel",
-      "recomendacao": "PRIORIDADE ALTA - visita HOJE confirmada. Ligar 8h para reconfirmar horario e pedir conta de luz antes da visita para preparar orcamento.",
-      "abordagem_sugerida": "Bom dia Joao! Tudo certo para nossa visita HOJE? Ainda da para voce enviar a foto da conta? Posso te apresentar orcamento ja na visita."
-    },
-    {
-      "cliente": "Nivaldo Almeida",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "hora_ultima_msg": "07:54 (cliente)",
-      "tempo_esperando": "Cliente pediu simulacao ontem 07:54",
-      "resumo_conversa": "Cliente: 'Bom dia mande por favor a simulacao para ela ver'. Keanny pediu detalhes 09:22 e ligacao 10h. Cliente nao retornou.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Cliente PEDIU simulacao - lead quente. Mandar simulacao basica de manha. Esposa toma decisao.",
-      "abordagem_sugerida": "Bom dia Nivaldo! Preparei uma simulacao base, ja te envio para a sua esposa ver e depois ajustamos para o consumo exato de voces."
-    },
-    {
-      "cliente": "Franklin",
-      "vendedor": "Bot Gabriel (sem SDR humano)",
-      "conta": "DR4",
-      "hora_ultima_msg": "09:39 (cliente prometeu enviar)",
-      "tempo_esperando": "Cliente prometeu mandar info ontem manha, bot tentou ate 17:28",
-      "resumo_conversa": "Cliente confirmou interesse ('Mando mensagem / Grato') e disse que enviaria info no horario de almoco. Bot Gabriel tentou ao longo do dia (14:31, 15:19, 17:28) sem resposta humana de SDR.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "ORFAO de SDR humano - urgente atribuir vendedor e fazer contato pessoal. Cliente demonstrou interesse mas so o bot interagiu.",
-      "abordagem_sugerida": "Atribuir SDR humano. Mensagem: Oi Franklin! Sou a [SDR], assumindo seu atendimento. Conseguimos confirmar suas info hoje para preparar orcamento?"
-    },
-    {
-      "cliente": "Ma Refrigeracao (Matheus)",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "hora_ultima_msg": "09:28 (Keanny ofereceu condicoes)",
-      "tempo_esperando": "Cliente sem retorno ha mais de 24h",
-      "resumo_conversa": "Comercio (refrigeracao). Keanny: 'Matheus, bom dia! Tenho condicoes imperdiveis para voce hoje, me diga um horario que eu possa te ligar?' 09:28 ontem.",
-      "valor_conta": "Comercio - alto consumo provavel (refrigeracao)",
-      "recomendacao": "Comercio com alto consumo. Tentar contato direto por telefone primeiro horario.",
-      "abordagem_sugerida": "Ligar 8h30. Se sem sucesso: Bom dia Matheus! As condicoes especiais para Ma Refrigeracao ainda valem hoje. Posso te ligar agora?"
+      "tempo_esperando": "Desde ontem 28/05 10:55 - sem resposta o dia todo",
+      "resumo_conversa": "CLIENTE ANTIGO (instalou ha 4 anos com a Domingo e Rodrigues). Voltou querendo nova usina de 500kW. Perguntou 'sabe dizer se Magno eletricista ainda trabalha com a Domingo e Rodrigues?' e ninguem respondeu.",
+      "valor_conta": "Nao informado (projeto 500kW)",
+      "recomendacao": "URGENTE responder primeiro horario. Cliente fidelizado (4 anos) sendo ignorado. Responder sobre o Magno e retomar o projeto 500kW.",
+      "abordagem_sugerida": "Bom dia personalizado reconhecendo que ja e cliente, responder sobre Magno, oferecer orcamento 500kW na hora"
     }
   ],
 
   "sem_resposta_apos_18h": [
     {
       "cliente": "Valdir",
-      "vendedor": "Keanny",
+      "vendedor": "Keanny Brandao",
       "conta": "DR4",
       "hora_ultima_msg": "18:25",
-      "resumo_conversa": "Cliente desorientado respondendo ofertas. Keanny perguntou se ja possui usina solar 18:23. Cliente respondeu 'Noamoce tinho uma casa' 18:25 (possivelmente 'No momento tenho uma casa') - mensagem confusa sem resposta.",
+      "resumo_conversa": "Keanny estava atendendo ao vivo (18:03-18:23). Cliente respondeu com mensagens confusas/truncadas ('Noamoce tinho uma casa') as 18:25 e ficou sem retorno.",
       "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje pela manha pedindo esclarecimento de forma simples e clara. Cliente parece com dificuldade de digitacao.",
-      "abordagem_sugerida": "Bom dia Valdir! Pode me explicar melhor sua situacao? Voce ja tem placas solares instaladas ou esta querendo instalar? Posso te ligar para conversarmos melhor?"
+      "recomendacao": "Responder hoje de manha, retomar com clareza. Confirmar regiao e media de consumo (conversa estava truncada).",
+      "abordagem_sugerida": "Bom dia, retomar perguntando regiao e valor da conta de forma simples"
     }
   ],
 
   "alto_consumo": [
     {
       "cliente": "Thaisi Tavares (Sindica)",
-      "vendedor": "Keanny",
+      "vendedor": "Keanny / Guilherme",
       "conta": "DR2",
-      "valor_conta": "4.000 kWh - condominio em laje",
-      "tipo_imovel": "Condominio (sindica)",
-      "status_atual": "Visita realizada ONTEM 11h. Status nao registrado.",
-      "resumo_conversa": "Sindica de condominio pediu orcamento para instalacao em laje com cogeracao 4.000 kWh. Visita agendada ontem (28.05) 11h por Keanny.",
-      "recomendacao": "MEGA TICKET - 4.000 kWh. Verificar status da visita de ontem com Keanny e enviar follow-up cordial a sindica HOJE.",
-      "abordagem_sugerida": "Bom dia Thaisi! Foi um prazer estarmos no condominio ontem. Estamos preparando o projeto detalhado com as condicoes que conversamos. Quando podemos apresentar o orcamento final?"
+      "valor_conta": "4.000 kWh (cogeracao)",
+      "tipo_imovel": "Condominio (laje) - Comercial/coletivo",
+      "status_atual": "Visita agendada ontem 28/05 as 11h - aguardando status pos-visita",
+      "resumo_conversa": "Sindica de condominio pediu orcamento para geracao de 4.000 kWh em laje de condominio. Visita tecnica foi agendada para 11h de ontem.",
+      "recomendacao": "MEGA PRIORIDADE - maior ticket do mural. Confirmar resultado da visita de ontem e ENTREGAR a proposta para 4.000 kWh. Decisao coletiva de condominio.",
+      "abordagem_sugerida": "Bom dia, confirmar visita realizada, enviar proposta formal (PDF) destacando economia coletiva do condominio e 17 anos de mercado"
     },
     {
-      "cliente": "Edney (558796419715)",
-      "vendedor": "Keanny",
+      "cliente": "Edney (+558796419715)",
+      "vendedor": "Keanny / Guilherme",
       "conta": "DR2",
-      "valor_conta": "2.000 kWh",
-      "tipo_imovel": "Nao informado",
-      "status_atual": "Visita agendada para HOJE 8h",
-      "resumo_conversa": "Cliente pediu orcamento ontem 12:09, informou 2000kWh. Keanny agendou visita HOJE 8h.",
-      "recomendacao": "Visita HOJE 8h - confirmar saida e endereco. Ticket alto.",
-      "abordagem_sugerida": "Bom dia Edney! Confirmando nossa visita hoje 8h. Estamos saindo agora."
+      "valor_conta": "R$ 2.300 / ~2.000 kWh",
+      "tipo_imovel": "Residencial alto padrao (casa nova, piscina, climatizacao)",
+      "status_atual": "Visita agendada HOJE 29/05 as 8h",
+      "resumo_conversa": "Casa nova em obra (Buona Vita), consumo subindo para 1900-2000 kWh (climatizar tudo + aquecer piscina). Ja tinha orcamento de 2.000kWh = R$33.355 (ago/25). Voltou ontem pedindo orcamento, ficou aguardando ('?') e foi agendada visita 8h hoje.",
+      "recomendacao": "MEGA PRIORIDADE - ticket R$33mil. CONFIRMAR/verificar visita das 8h de hoje. Retomar orcamento de 2.000kWh que ja existe.",
+      "abordagem_sugerida": "Confirmar visita 8h, levar proposta de 2.000kWh atualizada, destacar seguranca (placas chegam antes do pagamento)"
+    },
+    {
+      "cliente": "Jamisson",
+      "vendedor": "Alan Oliveira / Keanny",
+      "conta": "DR2",
+      "valor_conta": "830 kW (inversor 10k)",
+      "tipo_imovel": "Residencial (Condominio Sol Nascente Etapa 2)",
+      "status_atual": "Visita JA REALIZADA (26/05 por Alan) - aguardando proposta",
+      "resumo_conversa": "Pediu orcamento 830kW varias vezes. Visita feita por Alan Oliveira em 26/05. Ontem (28/05 10h) Keanny avisou que Alan enviaria proposta conforme utensilios de alto consumo. Cliente AGUARDA a proposta.",
+      "recomendacao": "ALTA - visita ja feita, cliente quente esperando ha dias. Alan precisa ENVIAR a proposta de 830kW HOJE.",
+      "abordagem_sugerida": "Alan enviar proposta 830kW com geracao estimada, formas de pagamento e responder se inversor 10k suporta 24 placas"
     },
     {
       "cliente": "Erivan Batista de Lima",
-      "vendedor": "Bot Gabriel (sem SDR humano)",
+      "vendedor": "BOT Gabriel (sem humano)",
       "conta": "DR4",
       "valor_conta": "1.200 kW",
-      "tipo_imovel": "Catingueira-PB",
-      "status_atual": "Bot Gabriel coletou parcial. Cliente sem condicoes de enviar foto agora.",
-      "resumo_conversa": "Cliente quer 1.200 kW (alto consumo). Catingueira-PB. So bot Gabriel interagiu - SEM SDR humano atribuido.",
-      "recomendacao": "ORFAO + ALTO CONSUMO - atribuir SDR humano com urgencia para qualificar lead grande.",
-      "abordagem_sugerida": "Atribuir SDR. Mensagem: Oi Erivan! Sou [SDR], vou cuidar do seu projeto de 1.200 kW em Catingueira. Quando voce conseguir, manda a conta para eu preparar uma proposta cheia de condicoes especiais."
+      "tipo_imovel": "Residencial - Catingueira/PB",
+      "status_atual": "So o BOT atendeu - sem SDR humano",
+      "resumo_conversa": "Cliente quer projeto de 1.200 kW. Nao pode mandar a conta no momento. BOT Gabriel pediu forma de pagamento e ficou aguardando.",
+      "recomendacao": "ALTA - 1.200kW e ticket grande e foi atendido so por BOT. SDR humano assumir e preparar orcamento 1.200kW.",
+      "abordagem_sugerida": "Vendedor humano se apresentar, oferecer orcamento 1.200kW, ligar para Catingueira-PB"
     },
     {
       "cliente": "Lindalva",
-      "vendedor": "Bot Gabriel (sem SDR humano)",
+      "vendedor": "BOT Gabriel -> vendedor (sem retorno)",
       "conta": "DR4",
       "valor_conta": "1.000 kW",
-      "tipo_imovel": "Recife",
-      "status_atual": "Bot Gabriel disse 'vou passar atendimento para vendedor' 11:55 ontem. SEM SDR atribuido.",
-      "resumo_conversa": "Cliente quer 1.000 kW em Recife. Cliente engajada (perguntou valor, regiao, forma pagamento). Bot diz que transferiu mas sem SDR humano de fato.",
-      "recomendacao": "ORFAO - atribuir SDR Recife imediatamente. Cliente esta esperando contato humano.",
-      "abordagem_sugerida": "Atribuir SDR. Oi Lindalva! Sou [SDR]. Como combinado, vou preparar seu orcamento de 1000 kW para Recife. Pode me enviar a conta de luz?"
+      "tipo_imovel": "Residencial - Recife",
+      "status_atual": "BOT transferiu para vendedor mas orcamento nao saiu",
+      "resumo_conversa": "Quer valor para 1.000 kW em Recife, pagamento 'depende do valor'. BOT Gabriel disse que passaria para vendedor - sem retorno depois.",
+      "recomendacao": "ALTA - 1.000kW orfao. Vendedor enviar orcamento de 1.000kW para Recife hoje.",
+      "abordagem_sugerida": "Apresentar orcamento 1.000kW com opcoes a vista/cartao/financiamento ja na primeira mensagem"
+    },
+    {
+      "cliente": "Chico",
+      "vendedor": "Alan Oliveira",
+      "conta": "DR4",
+      "valor_conta": "1.000 kWh",
+      "tipo_imovel": "Rural (cliente 'fica na roca')",
+      "status_atual": "Alan iniciou contato - cliente quer orcamento pelo chat",
+      "resumo_conversa": "Quer projeto 1.000 kWh, precos a vista e no cartao. Pediu para mandar pelo chat ('Mande por aqui. Fico na roca'). Alan Oliveira ofereceu ligar.",
+      "recomendacao": "ALTA - 1.000kWh, cliente rural prefere chat (nao receber visita). Alan ENVIAR orcamento por escrito (a vista e cartao).",
+      "abordagem_sugerida": "Enviar orcamento 1.000kWh por escrito no chat (a vista + cartao), respeitando que e da zona rural"
+    },
+    {
+      "cliente": "Maria Bileu",
+      "vendedor": "Guilherme (orig) / BOT Gabriel",
+      "conta": "DR4",
+      "valor_conta": "1.000 kWh - orcamento R$ 15.729 (Ouricuri)",
+      "tipo_imovel": "Residencial - Ouricuri",
+      "status_atual": "JA TEM orcamento completo - reabriu mas BOT nao reconheceu",
+      "resumo_conversa": "Em 11/05 Guilherme enviou orcamento completo: 12 placas 620W, inversor 5kW, R$15.729. Ontem (28/05) ela reabriu 'quero entender como economizar' e o BOT Gabriel recomecou do zero pedindo consumo, ignorando o orcamento existente.",
+      "recomendacao": "ALTA - cliente pronta para fechar, ja tem proposta de R$15.729. Humano retomar referenciando o orcamento que ja existe, NAO recomecar.",
+      "abordagem_sugerida": "Bom dia, retomar o orcamento de R$15.729 ja enviado, perguntar duvida/forma de pagamento e tentar fechar"
     },
     {
       "cliente": "Armando Nascimento",
-      "vendedor": "Bot Gabriel (sem SDR humano - cronico)",
+      "vendedor": "BOT Gabriel (CRONICO - sem humano)",
       "conta": "DR4",
       "valor_conta": "R$ 750 / 800 kWh",
-      "tipo_imovel": "Nao informado",
-      "status_atual": "Bot Gabriel pediu horario de ligacao 09:07 ontem. SEM SDR humano ha dias.",
-      "resumo_conversa": "Cliente engajado desde 27.05 informou 800 kWh / R$ 750. So bot Gabriel interagiu desde entao - problema cronico reportado em analises anteriores.",
-      "recomendacao": "URGENTE - lead nao atendido por humano ha mais de 24h. Atribuir SDR ainda nessa manha.",
-      "abordagem_sugerida": "Atribuir SDR. Oi Armando! Desculpe a demora! Sou [SDR]. Para R$ 750 com 800 kWh consigo te apresentar uma economia enorme - me confirma a cidade?"
-    },
-    {
-      "cliente": "Pmsaulo2021",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "valor_conta": "Driver/irrigacao solar",
-      "tipo_imovel": "Rural (irrigacao - bombas)",
-      "status_atual": "Cliente aceitou contato 15h30 ontem. Vendedor deveria ter ligado.",
-      "resumo_conversa": "Cliente perguntou se trabalham com driver solar para bombas de irrigacao. Keanny disse que iria direcionar vendedor 15h30. Cliente disse 'Sim'.",
-      "recomendacao": "Verificar se vendedor ligou ontem 15h30. Se nao, fazer contato HOJE - projeto rural de irrigacao = ticket alto.",
-      "abordagem_sugerida": "Bom dia! Tudo bem? Sobre o driver solar para suas bombas, podemos conversar agora?"
+      "tipo_imovel": "Residencial",
+      "status_atual": "ALERTA CRONICO - dias atendido so pelo BOT Gabriel",
+      "resumo_conversa": "Desde 27/05 informou 800 kWh e R$750/mes. BOT Gabriel so pede foto da conta e tenta ligacao sem sucesso. Nenhum SDR humano assumiu (lead vem sendo citado ha dias).",
+      "recomendacao": "ALTA - R$750/mes orfao do BOT ha dias. SDR humano assumir AGORA, ligar e preparar orcamento 800kWh.",
+      "abordagem_sugerida": "Vendedor humano ligar, se desculpar pela demora, preparar orcamento 800kWh e marcar visita"
     },
     {
       "cliente": "Financeiro MAXFIX",
-      "vendedor": "Keanny",
+      "vendedor": "Keanny Brandao",
       "conta": "DR2",
-      "valor_conta": "Empresa (financeiro)",
-      "tipo_imovel": "Comercio/empresa",
-      "status_atual": "Visita ja foi agendada HOJE-28.05 14h ontem. Ja ocorreu? Status?",
-      "resumo_conversa": "Cliente comercial pediu PDF da proposta para reuniao. Keanny agendou visita 14h 28.05 (ontem).",
-      "recomendacao": "Verificar resultado da visita de ontem. Cliente queria proposta em PDF. Enviar PDF HOJE pela manha.",
-      "abordagem_sugerida": "Bom dia! Conforme combinado, segue em anexo o orcamento em PDF para apresentacao em reuniao. Qualquer ajuste, me avise."
+      "valor_conta": "Nao informado (empresa)",
+      "tipo_imovel": "Comercial/Empresa - Petrolina/PE",
+      "status_atual": "Visita agendada ontem 28/05 as 14h - pediu proposta em PDF para reuniao",
+      "resumo_conversa": "Contato do financeiro da empresa MAXFIX. Pediu proposta em PDF para apresentar em reuniao. Visita tecnica foi agendada para 14h de ontem.",
+      "recomendacao": "ALTA (B2B) - empresa que decide em reuniao. Confirmar visita de ontem e ENVIAR proposta formal em PDF.",
+      "abordagem_sugerida": "Enviar proposta em PDF profissional + confirmar dados da geracao levantados na visita"
     },
     {
-      "cliente": "Danila",
-      "vendedor": "Keanny",
-      "conta": "DR2",
-      "valor_conta": "Boleto.pdf enviado (valor a verificar)",
-      "tipo_imovel": "Petrolina",
-      "status_atual": "Cliente enviou boleto e 3 audios anteontem 17:51-18:00. Keanny ofereceu entrega hoje a partir 15h ontem 11:03.",
-      "resumo_conversa": "Cliente engajada (Petrolina) enviou boleto.pdf e 3 audios. Keanny ofereceu entregar orcamento ontem 15h. Cliente nao respondeu.",
-      "recomendacao": "Cliente quente que enviou docs. Ouvir audios, abrir boleto e enviar orcamento HOJE pela manha.",
-      "abordagem_sugerida": "Bom dia Danila! Seu orcamento esta pronto com base no seu boleto. Consigo te entregar hoje 11h - confirma?"
-    },
-    {
-      "cliente": "Helio Escobar",
-      "vendedor": "Keanny / Bot",
+      "cliente": "Girlandia Novaes",
+      "vendedor": "Keanny / Pericles Mateus",
       "conta": "DR4",
-      "valor_conta": "700 kWh - Kit",
-      "tipo_imovel": "Nao informado",
-      "status_atual": "Cliente nao estava em casa ontem 08:58. Combinou contato a noite via bot.",
-      "resumo_conversa": "Cliente quer kit 700 kWh. Cliente disse 'No momento nao estou em casa, Bom dia!' 08:58 ontem. Bot/Keanny tentaram sem sucesso.",
-      "recomendacao": "Tentar contato a noite conforme combinado anteontem. Manha so se cliente responder.",
-      "abordagem_sugerida": "Bom dia Helio! Como combinado, ja confirmo o melhor horario a noite para apresentar o kit 700kWh."
+      "valor_conta": "1.000 kWh (quer financiamento)",
+      "tipo_imovel": "Residencial",
+      "status_atual": "Em negociacao por audio - visita ja remarcada antes (cliente teve imprevisto)",
+      "resumo_conversa": "Projeto 1.000kWh com financiamento. Visita marcada em 21/05 foi cancelada por imprevisto familiar. Pericles seguiu tentando; trocaram audios 27 e 28/05.",
+      "recomendacao": "MEDIA-ALTA - 1.000kWh quente mas dificil de fechar agenda. Entregar o orcamento/simulacao de financiamento de uma vez por escrito.",
+      "abordagem_sugerida": "Enviar simulacao de financiamento 1.000kWh por escrito + audio, sem depender de nova visita"
+    },
+    {
+      "cliente": "pmsaulo2021",
+      "vendedor": "Keanny -> vendedor (15h30)",
+      "conta": "DR4",
+      "valor_conta": "Nao informado (irrigacao)",
+      "tipo_imovel": "Rural / Agro - bombeamento solar",
+      "status_atual": "Direcionado a vendedor as 15h30 de ontem - verificar atendimento",
+      "resumo_conversa": "Quer projeto de irrigacao solar / 'driver solar' para bombas. Keanny direcionou a um vendedor as 15h30 de ontem.",
+      "recomendacao": "MEDIA-ALTA - nicho agro/irrigacao (ticket diferenciado). Verificar se vendedor atendeu e retomar duvida sobre driver/bomba solar.",
+      "abordagem_sugerida": "Vendedor com conhecimento tecnico em bombeamento solar retomar e tirar duvidas sobre driver"
     }
   ],
 
   "leads_quentes": [
     {
       "cliente": "Iara",
-      "vendedor": "Bot Ana Maryllya (precisa SDR humano)",
+      "vendedor": "Ana Maryllya (persona BOT) - precisa humano",
       "conta": "DR4",
       "nivel_interesse": "Muito Alto",
-      "resumo_conversa": "Bot Ana Maryllya agendou ligacao para HOJE 9h. Cliente confirmou 'Pode sim' 16:28 ontem. Cliente esta em clinica, pediu para falar amanha.",
+      "resumo_conversa": "Longa conversa por audio. Mandou foto da conta (Coelba/Neoenergia-BA). Confirmou 'pode sim' para LIGACAO HOJE (29/05) as 9h. Pronta para receber orcamento.",
+      "valor_conta": "Nao informado (conta enviada)",
+      "recomendacao": "VERIFICAR/EXECUTAR ligacao das 9h de hoje. Vendedor HUMANO deve ligar (foi atendida pela persona-bot Ana Maryllya). Levar orcamento pronto.",
+      "abordagem_sugerida": "Ligar conforme combinado 9h, analisar conta enviada e apresentar orcamento + financiamento proximo do valor da conta atual"
+    },
+    {
+      "cliente": "Erilandio",
+      "vendedor": "Keanny / Pericles",
+      "conta": "DR4",
+      "nivel_interesse": "Muito Alto",
+      "resumo_conversa": "Interesse em placas de 700W. Keanny confirmou VISITA HOJE (29/05) as 10h com o gestor Pericles.",
       "valor_conta": "Nao informado",
-      "recomendacao": "CONTATO CONFIRMADO HOJE 9H. Garantir que SDR humano (nao bot) ligue. Cliente esperando.",
-      "abordagem_sugerida": "Ligar pontualmente 9h. Persona humana, nao 'Ana Maryllya' (bot). Oi Iara, tudo bem? Sou [SDR], como combinado pela manha. Para sua casa quanto seu consumo?"
+      "recomendacao": "VERIFICAR/EXECUTAR visita das 10h de hoje. Confirmar que Pericles compareceu e levou proposta.",
+      "abordagem_sugerida": "Confirmar visita 10h, levar proposta dimensionada e fechar no local"
     },
     {
-      "cliente": "Jamisson",
-      "vendedor": "Alan Oliveira (gestor) + Keanny",
-      "conta": "DR2",
-      "nivel_interesse": "Muito Alto - visita ja realizada",
-      "resumo_conversa": "Visita realizada terca 26.05 por Alan Oliveira no Condominio Sol Nascente. Keanny informou ontem 10:00 que Alan ja vai encaminhar proposta. Cliente engajado.",
-      "valor_conta": "Alto - identificado utensilios e eletros de alto consumo na visita",
-      "recomendacao": "Cobrar Alan Oliveira o envio da proposta HOJE. Cliente esta aguardando.",
-      "abordagem_sugerida": "Alan: enviar proposta finalizada HOJE. Mensagem para Jamisson: Bom dia Jamisson! Estou finalizando os ultimos detalhes da proposta. Te envio hoje ate as 11h."
+      "cliente": "Bruno Rodrigues",
+      "vendedor": "BOT Gabriel -> Yuri (vendas)",
+      "conta": "DR4",
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "Quer instalar ~9 placas, pagamento PIX, ja mandou fatura. Perguntou direto 'ficou quanto a simulacao?'. BOT disse que transferiria para o vendedor Yuri.",
+      "valor_conta": "Conta enviada (projeto ~9 placas)",
+      "recomendacao": "ALTA - cliente pediu o preco e tem PIX na mao. Yuri precisa ENVIAR a simulacao HOJE antes que esfrie.",
+      "abordagem_sugerida": "Yuri enviar simulacao com valor a vista/PIX (cliente ja decidiu forma de pagamento)"
     },
     {
-      "cliente": "Joanes",
+      "cliente": "Paulo Barros Dos Santos",
+      "vendedor": "BOT Gabriel -> time de vendas",
+      "conta": "DR4",
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "Consumo 550-600 kWh, quer kit de 700 kWh, pagamento no cartao. Fez pergunta tecnica especifica (marca do inversor da usina de 700kWh) que NUNCA foi respondida. Pediu orcamento pelo chat. BOT transferiu para vendas.",
+      "valor_conta": "550-600 kWh (quer kit 700 kWh)",
+      "recomendacao": "ALTA - pergunta tecnica do cliente ficou sem resposta. Vendedor enviar orcamento 700kWh no cartao + responder a marca do inversor.",
+      "abordagem_sugerida": "Responder a marca do inversor do kit 700kWh + enviar orcamento no cartao pelo chat"
+    },
+    {
+      "cliente": "FLANKLIN",
+      "vendedor": "BOT Gabriel (sem humano)",
+      "conta": "DR4",
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "Lead recorrente desde out/25 (Araripina). Quer 500kW via financiamento. Ontem prometeu mandar documentos no horario de almoco mas nao mandou; BOT Gabriel tentou ligar sem sucesso. Ja tem historico de simulacao (~R$805 conta, 700kW).",
+      "valor_conta": "~R$ 805 (projeto 500kW)",
+      "recomendacao": "MEDIA-ALTA - lead antigo e insistente. SDR humano cobrar documentos (CNH/conta/email) para financiamento 500kW.",
+      "abordagem_sugerida": "Vendedor humano retomar lembrando do projeto, pedir os 3 documentos do financiamento de forma simples"
+    },
+    {
+      "cliente": "Deus eu te amo",
+      "vendedor": "BOT Gabriel -> vendedor",
+      "conta": "DR4",
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "Ja enviou documentacao (fotos). Quer visita. Citou que conhece a vendedora 'Natalia Beatriz'. BOT disse que vendedor entraria em contato para agendar visita.",
+      "valor_conta": "Nao informado (docs enviados)",
+      "recomendacao": "ALTA - cliente ja mandou documentos e quer visita. Agendar visita e preparar orcamento. Se possivel, direcionar a Natalia Beatriz (cliente ja confia nela).",
+      "abordagem_sugerida": "Vendedor (de preferencia Natalia Beatriz) agendar visita e levar orcamento pronto"
+    },
+    {
+      "cliente": "Alexsandro",
       "vendedor": "Keanny",
       "conta": "DR4",
       "nivel_interesse": "Alto",
-      "resumo_conversa": "Cliente enviou dados completos ontem noite (CPF Isabel Vitoria Joanes 71744914486, data nasc 13/03/2007 - cliente menor, deve ser nome no projeto). Keanny ja respondeu HOJE 09:50 pedindo confirmacao da cidade. Em andamento.",
+      "resumo_conversa": "Keanny registrou VISITA AGENDADA ontem (28/05) as 17h. Sem registro do resultado.",
       "valor_conta": "Nao informado",
-      "recomendacao": "Em andamento - acompanhar resposta da cidade e fechar orcamento. ATENCAO: CPF e de menor de idade (nascida 2007), confirmar quem assinara contrato.",
-      "abordagem_sugerida": "Manter ritmo. Cliente esperando orcamento - entregar ainda HOJE com a cidade confirmada."
+      "recomendacao": "VERIFICAR resultado da visita de ontem 17h. Se nao houve fechamento, fazer follow-up com a proposta apresentada.",
+      "abordagem_sugerida": "Confirmar como foi a visita de ontem, retomar negociacao a partir do que foi apresentado"
+    },
+    {
+      "cliente": "Samuel G Santos",
+      "vendedor": "Keanny -> Alan Oliveira",
+      "conta": "DR4",
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "Quer geracao de 400 kW/mes. Vendedor Alan ficou de ligar ontem (28/05) as 12h10. Cliente confirmou ('Ok').",
+      "valor_conta": "400 kW",
+      "recomendacao": "VERIFICAR se Alan ligou as 12h10 de ontem. Se nao, ligar hoje e enviar orcamento 400kW.",
+      "abordagem_sugerida": "Confirmar contato do Alan; caso pendente, ligar e mandar orcamento 400kW"
     },
     {
       "cliente": "Cavalache",
-      "vendedor": "Keanny",
-      "conta": "DR4",
-      "nivel_interesse": "Medio-Alto",
-      "resumo_conversa": "Cliente Petrolina, conta R$ 400. Keanny anotou 'Retornar a ligacao as 16h' 15:06 ontem. Cliente havia perguntado 'Bom dia, veja 400,00 reais, quanto fica' (interesse em saber valor).",
-      "valor_conta": "R$ 400 (residencial)",
-      "recomendacao": "Retorno agendado para HOJE 16h. Preparar simulacao de economia para conta de R$ 400.",
-      "abordagem_sugerida": "Ligar 16h hoje com simulacao pronta: economia mensal + valor parcela. Oi! Como combinado, te liguei agora para apresentar quanto voce vai economizar."
-    },
-    {
-      "cliente": "Camila Lima",
-      "vendedor": "Keanny",
+      "vendedor": "BOT Gabriel / Keanny",
       "conta": "DR4",
       "nivel_interesse": "Medio",
-      "resumo_conversa": "Cliente avisou ter restricao no CPF. Keanny sugeriu tentar simulacao com outro CPF. Cliente nao respondeu desde 25.05. Keanny insistiu novamente ontem 15:06.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Insistir com solucao concreta - simulacao com CPF do conjuge / parente. Cliente sente vergonha de pedir.",
-      "abordagem_sugerida": "Bom dia Camila! Sem pressao - posso simular com outro CPF (esposo, mae, irmao) so para voce ver o valor real. Sem compromisso nenhum, ta?"
+      "resumo_conversa": "Conta de R$400. Keanny registrou retorno de ligacao para as 16h de ontem (28/05). Cliente queria saber 'quanto fica' para R$400.",
+      "valor_conta": "R$ 400",
+      "recomendacao": "VERIFICAR se a ligacao das 16h de ontem aconteceu. Retomar com o valor do projeto para conta de R$400.",
+      "abordagem_sugerida": "Ligar/retomar e ja passar o valor do projeto compativel com conta de R$400"
     },
     {
-      "cliente": "Leticia Andrade",
-      "vendedor": "Sem atribuicao (orfao identificado em followup anterior)",
-      "conta": "DR2",
-      "nivel_interesse": "Alto (pediu orcamento ha 4 dias)",
-      "resumo_conversa": "Cliente DR2 listada como orfao em followup do dia 26.05 - pediu orcamento sem atribuicao. Apareceu em 25.05.26 (nao em ontem), mas continua pendente conforme reportes anteriores.",
+      "cliente": "Helio Escobar",
+      "vendedor": "BOT Gabriel / Keanny",
+      "conta": "DR4",
+      "nivel_interesse": "Medio",
+      "resumo_conversa": "Conta R$300. Pediu informacoes e orcamento dos KITS de 500 kWh e 700 kWh (perguntas especificas). Disse que nao estava em casa para mandar a conta. Ficou sem o orcamento pedido.",
+      "valor_conta": "R$ 300",
+      "recomendacao": "MEDIA - responder o que ele pediu: enviar info/orcamento dos kits 500kWh e 700kWh.",
+      "abordagem_sugerida": "Enviar comparativo dos kits 500 e 700 kWh com precos, ja que foi exatamente o que ele pediu"
+    },
+    {
+      "cliente": "Marleine",
+      "vendedor": "BOT Gabriel",
+      "conta": "DR4",
+      "nivel_interesse": "Medio",
+      "resumo_conversa": "Perguntou as 12:19 'Faz em boleto?' e so foi respondida as 17:38 pelo BOT Gabriel (mais de 5h depois), que perguntou a regiao. Sem retorno do cliente desde entao.",
       "valor_conta": "Nao informado",
-      "recomendacao": "Verificar se foi atribuida apos relatorio de 26.05. Se nao, atribuir HOJE.",
-      "abordagem_sugerida": "Atribuir SDR DR2. Mensagem: Oi Leticia! Desculpe a demora. Sou [SDR]. Vou cuidar do seu orcamento - me envia a conta de luz que preparo hoje mesmo."
+      "recomendacao": "MEDIA - reengajar. Resposta foi muito lenta (5h). Confirmar que faz financiamento/boleto e pedir regiao + consumo.",
+      "abordagem_sugerida": "Bom dia, confirmar que faz financiamento, pedir regiao e media de consumo"
+    },
+    {
+      "cliente": "Ana Risolandia",
+      "vendedor": "BOT Gabriel",
+      "conta": "DR4",
+      "nivel_interesse": "Medio",
+      "resumo_conversa": "Perguntou se atende em Teresina (atende todo Brasil). BOT pediu consumo e foto da conta; cliente nao retornou.",
+      "valor_conta": "Nao informado - Teresina/PI",
+      "recomendacao": "MEDIA - reengajar lead de Teresina. Pedir consumo de forma objetiva e oferecer orcamento.",
+      "abordagem_sugerida": "Bom dia, confirmar atendimento em Teresina e pedir media de consumo para orcamento"
     }
+  ],
+
+  "baixa_prioridade_reengajar": [
+    {"cliente": "Joao Gomes", "conta": "DR4", "obs": "So BOT, cliente nao informou consumo. Reengajar pedindo media de consumo."},
+    {"cliente": "Alberico", "conta": "DR4", "obs": "So BOT, sem retorno do cliente. Reengajar."},
+    {"cliente": "Zelia Correia", "conta": "DR4", "obs": "Conta ~R$500, so BOT, sem retorno. Reengajar pedindo regiao."},
+    {"cliente": "Maria Isabe", "conta": "DR4", "obs": "So personas BOT (Kemilly/Gabriel/Ana Maryllya), cliente nunca respondeu. Reengajar."},
+    {"cliente": "ribeirochagas", "conta": "DR4", "obs": "So personas BOT, cliente nunca respondeu. Reengajar."},
+    {"cliente": "Roberval", "conta": "DR4", "obs": "Encerrou com 'ok, boa noite' as 18:44. Sem consumo informado. Tentar 1 reengajamento leve."}
+  ],
+
+  "resolvidos_ou_sem_interesse": [
+    {"cliente": "Antonia Barbosa", "conta": "DR4", "obs": "Disse 'nao quero, ja tenho' (ja possui solar). NAO contatar."},
+    {"cliente": "Evanisia Amorim", "conta": "DR4", "obs": "Informou por ligacao que nao tem interesse; ofereceram plano de indicacao. NAO contatar."},
+    {"cliente": "Carlos", "conta": "DR4", "obs": "Conversa vazia/sem conteudo. Ignorar."}
   ]
 }

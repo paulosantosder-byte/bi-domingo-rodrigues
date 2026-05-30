@@ -1,147 +1,143 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-05-29 (SEX)
-Referencia: conversas de 2026-05-28 (QUI)
+FOLLOW-UPS PRIORITARIOS - 29/05/2026 (sexta)
+Referencia: conversas de ONTEM (28/05/2026 - quinta)
+Gerado: 21h36 de 29/05
+====================================================
+
+>> OBS: relatorio gerado a noite. Compromissos marcados para
+   "hoje 29/05" (8h-11h) JA PASSARAM -> tratar como VERIFICAR RESULTADO.
+>> ALERTA CRONICO DR4: maioria dos leads de ontem foi atendida
+   APENAS pelo BOT "Gabriel"/"Ana Maryllya", sem SDR humano assumir.
+>> Proximo dia util = sabado 30/05.
+
+----------------------------------------------------
+TOP 5 MEGA PRIORIDADES
+----------------------------------------------------
+1. EDNEY (DR2) - visita 8h hoje - 2.000kWh / R$2.300 / orcamento R$33.355 ja existe
+2. THAISI TAVARES (DR2) - sindica condominio - 4.000kWh - pos-visita 11h ontem
+3. JAMISSON (DR2) - 830kW - visita JA FEITA por Alan - SO FALTA ENVIAR A PROPOSTA
+4. IARA (DR4) - ligacao 9h hoje - conta enviada - so foi atendida por BOT
+5. ERILANDIO (DR4) - visita 10h hoje (Pericles) - placas 700W
+
 ====================================================
 
 🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-1. Leticia Rodrigues - Vendedor: Luana - DR2
-   Ultima msg: 15:42 | Conta de luz: estagio avancado (Petrolina, rua 12 n 40 Lote Rafael)
-   Situacao: Cliente perguntou 'amanha as 9h?' confirmando visita para HOJE. SEM RESPOSTA DA LUANA.
-   ACAO: URGENTISSIMO - Confirmar visita 9h HOJE imediatamente. Mensagem 8h confirmando.
-
-2. Vladimiro Lopes - Vendedor: Keanny - DR4
-   Ultima msg: 10:55 | Conta de luz: nao informada
-   Situacao: Cliente fez pergunta direta sobre 'Magno eletricista' sem resposta humana ha 22h.
-   ACAO: Responder sobre o Magno e retomar conversa solar.
-
-3. Leiliane Cardoso - Vendedor: Keanny - DR4
-   Ultima msg: 10:54 (Keanny ofereceu visita 14h) | Conta de luz: alto (3 residencias + 2 bombas)
-   Situacao: Cliente do Salitre - MEGA TICKET combinado nao respondeu oferta de visita.
-   ACAO: Ligar primeiro horario. Confirmar visita ainda essa semana no Salitre.
-
-4. Natali Brito - Vendedor: Keanny - DR4
-   Ultima msg: 16:52 (audio cliente) | Conta de luz: nao informada
-   Situacao: Cliente enviou 2 audios respondendo oferta de visita 16h40. Sem resposta.
-   ACAO: OUVIR AUDIOS primeiro, responder conteudo especifico. Cliente engajada.
-
-5. Joao Vicente - Vendedor: Keanny - DR4
-   Ultima msg: 15:53 (Keanny pediu conta) | Conta de luz: hamburgueria (alto consumo provavel)
-   Situacao: Visita HOJE (29.05) agendada. Cliente nao enviou conta como prometeu.
-   ACAO: PRIORIDADE - ligar 8h reconfirmando visita HOJE e pedir conta de luz.
-
-6. Nivaldo Almeida - Vendedor: Keanny - DR4
-   Ultima msg: 07:54 (cliente) | Conta de luz: nao informada
-   Situacao: Cliente PEDIU simulacao para a esposa ver. Keanny nao enviou ainda.
-   ACAO: Enviar simulacao base HOJE manha. Cliente quente.
-
-7. Franklin - Vendedor: Bot Gabriel (SEM SDR HUMANO) - DR4
-   Ultima msg: 09:39 (cliente prometeu enviar info) | Conta de luz: nao informada
-   Situacao: ORFAO. So o bot interagiu durante todo o dia.
-   ACAO: ATRIBUIR SDR humano e fazer contato pessoal hoje manha.
-
-8. Ma Refrigeracao (Matheus) - Vendedor: Keanny - DR4
-   Ultima msg: 09:28 (Keanny ofereceu condicoes imperdiveis) | Conta de luz: comercio (refrigeracao)
-   Situacao: Comercio com alto consumo nao respondeu condicoes especiais.
-   ACAO: Ligar 8h30 com proposta.
+1. Vladimiro Lopes - Vendedor: Keanny/BOT - DR4
+   Ultima msg: 10:55 (ontem) | Projeto 500kW
+   Situacao: CLIENTE ANTIGO (4 anos de casa) voltou querendo nova usina.
+             Perguntou sobre o eletricista "Magno" e NINGUEM respondeu o dia todo.
+   ACAO: Responder no 1o horario, reconhecer que ja e cliente, responder sobre
+         o Magno e retomar projeto 500kW.
 
 🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ----------------------------------------------------
-9. Valdir - Vendedor: Keanny - DR4
-   Ultima msg: 18:25 (cliente confuso) | Conta de luz: nao informada
-   Situacao: Cliente respondeu 'Noamoce tinho uma casa' (mensagem confusa).
-   ACAO: Responder simples e ligar para esclarecer.
+1. Valdir - Vendedor: Keanny Brandao - DR4
+   Ultima msg: 18:25 (ontem)
+   Situacao: Conversa truncada/confusa ("Noamoce tinho uma casa"), ficou sem retorno.
+   ACAO: Bom dia, retomar com clareza pedindo regiao e media de consumo.
 
-💎 ALTO CONSUMO - PRIORIDADE COMERCIAL:
+💎 ALTO CONSUMO / BIG TICKET - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-10. Thaisi Tavares (Sindica) - Vendedor: Keanny - DR2 - 4.000 kWh CONDOMINIO
-    Status: Visita realizada ONTEM 11h. Sem registro de status posterior.
-    ACAO: MEGA TICKET - cobrar Keanny status da visita. Enviar follow-up cordial HOJE.
+1. THAISI TAVARES (Sindica) - Keanny/Guilherme - DR2 - 4.000 kWh
+   Condominio (laje). Visita 11h ontem. AGUARDA status pos-visita.
+   ACAO: Confirmar visita e ENTREGAR proposta 4.000kWh (PDF). Maior ticket do mural.
 
-11. Edney (558796419715) - Vendedor: Keanny - DR2 - 2.000 kWh
-    Status: VISITA AGENDADA HOJE 8H.
-    ACAO: Confirmar saida e endereco com Edney pela manha.
+2. EDNEY (+558796419715) - Keanny/Guilherme - DR2 - R$2.300 / ~2.000 kWh
+   Casa nova (piscina/climatizacao). Ja tem orcamento 2.000kWh = R$33.355.
+   Visita 8h hoje. ACAO: confirmar visita, retomar orcamento R$33mil ja existente.
 
-12. Erivan Batista de Lima - Vendedor: BOT GABRIEL (orfao) - DR4 - 1.200 kW Catingueira-PB
-    Status: Cliente nao podia mandar foto agora. Bot so.
-    ACAO: ATRIBUIR SDR humano urgente. Acompanhar envio da conta.
+3. JAMISSON - Alan Oliveira/Keanny - DR2 - 830 kW (inversor 10k)
+   Visita JA REALIZADA por Alan (26/05). Cliente AGUARDA a proposta.
+   ACAO: Alan ENVIAR proposta 830kW hoje + responder se inversor 10k aguenta 24 placas.
 
-13. Lindalva - Vendedor: BOT GABRIEL (orfao) - DR4 - 1.000 kW Recife
-    Status: Bot disse 'vou passar para vendedor' mas sem atribuicao real.
-    ACAO: ATRIBUIR SDR Recife imediatamente. Cliente engajada esperando.
+4. ERIVAN BATISTA DE LIMA - BOT Gabriel - DR4 - 1.200 kW (Catingueira/PB)
+   So o BOT atendeu. ACAO: SDR humano assumir, ligar e preparar orcamento 1.200kW.
 
-14. Armando Nascimento - Vendedor: BOT GABRIEL (orfao cronico) - DR4 - R$ 750 / 800 kWh
-    Status: Bot interagindo ha dias sem SDR humano (problema cronico reportado).
-    ACAO: URGENTE - atribuir SDR ainda nessa manha. Lead nao atendido > 24h.
+5. LINDALVA - BOT Gabriel -> vendedor - DR4 - 1.000 kW (Recife)
+   BOT transferiu mas orcamento nao saiu. ACAO: enviar orcamento 1.000kW Recife.
 
-15. Pmsaulo2021 - Vendedor: Keanny - DR4 - Irrigacao solar (bombas)
-    Status: Cliente aceitou contato 15h30 ontem. Verificar se vendedor ligou.
-    ACAO: Confirmar com Keanny e ligar HOJE se nao foi feito.
+6. CHICO - Alan Oliveira - DR4 - 1.000 kWh (rural/roca)
+   Quer orcamento PELO CHAT (a vista e cartao). ACAO: Alan enviar por escrito.
 
-16. Financeiro MAXFIX - Vendedor: Keanny - DR2 - Empresa/comercio
-    Status: Visita 14h ontem (28.05). Cliente queria PDF da proposta.
-    ACAO: Enviar PDF do orcamento HOJE pela manha.
+7. MARIA BILEU - Guilherme/BOT - DR4 - 1.000 kWh (Ouricuri)
+   JA TEM orcamento R$15.729. Reabriu e o BOT recomecou do zero, ignorando.
+   ACAO: humano retomar referenciando o R$15.729 e tentar fechar.
 
-17. Danila - Vendedor: Keanny - DR2 - Petrolina (enviou boleto + 3 audios)
-    Status: Cliente quente - enviou docs. Keanny ofereceu entrega 15h ontem.
-    ACAO: Ouvir audios, abrir boleto e enviar orcamento HOJE 11h.
+8. ARMANDO NASCIMENTO - BOT Gabriel (CRONICO) - DR4 - R$750 / 800 kWh
+   Orfao do BOT ha dias. ACAO: SDR humano assumir AGORA, ligar e orcar 800kWh.
 
-18. Helio Escobar - Vendedor: Keanny/Bot - DR4 - Kit 700 kWh
-    Status: Combinou contato a noite. Cliente nao em casa de manha.
-    ACAO: Contato a noite. Manha so se cliente sinalizar.
+9. FINANCEIRO MAXFIX - Keanny - DR2 - Empresa (Petrolina/PE)
+   Pediu proposta em PDF para reuniao. Visita 14h ontem.
+   ACAO: confirmar visita + enviar proposta formal em PDF.
 
-🔥 LEADS QUENTES - FECHAR HOJE:
+10. GIRLANDIA NOVAES - Keanny/Pericles - DR4 - 1.000 kWh (financiamento)
+    Visita cancelada antes (imprevisto). Negociando por audio.
+    ACAO: enviar simulacao de financiamento por escrito, sem depender de visita.
+
+11. PMSAULO2021 - Keanny -> vendedor - DR4 - Irrigacao/bomba solar (agro)
+    Direcionado a vendedor 15h30 ontem. ACAO: verificar atendimento, retomar
+    duvida sobre "driver solar" para bombas (precisa vendedor tecnico).
+
+🔥 LEADS QUENTES - FECHAR/AGIR HOJE:
 ----------------------------------------------------
-19. Iara - Bot Ana Maryllya - DR4
-    Nivel: MUITO ALTO - CONTATO AGENDADO HOJE 9H.
-    Situacao: Bot agendou ligacao 9h. Cliente confirmou 'Pode sim' ontem 16:28.
-    ACAO: SDR HUMANO ligar pontualmente 9h (NAO BOT). Cliente esperando.
+1. IARA - Ana Maryllya (BOT) - DR4 - MUITO ALTO
+   Ligacao 9h hoje, conta ja enviada (Coelba/BA). ACAO: HUMANO ligar 9h c/ orcamento.
 
-20. Jamisson - Alan Oliveira + Keanny - DR2
-    Nivel: MUITO ALTO - visita realizada (Condominio Sol Nascente).
-    Situacao: Alan visitou terca, Keanny prometeu ontem proposta. Cliente engajado.
-    ACAO: COBRAR Alan Oliveira o envio da proposta HOJE ate 11h.
+2. ERILANDIO - Keanny/Pericles - DR4 - MUITO ALTO
+   Visita 10h hoje (placas 700W). ACAO: confirmar visita e fechar no local.
 
-21. Joanes - Keanny - DR4
-    Nivel: ALTO - em andamento (HOJE 09:50 Keanny pediu cidade).
-    Situacao: Cliente enviou CPF/dados ontem noite. ATENCAO: CPF e de menor (2007).
-    ACAO: Acompanhar resposta da cidade e fechar orcamento ainda HOJE.
+3. BRUNO RODRIGUES - BOT -> Yuri - DR4 - ALTO
+   ~9 placas, PIX, ja mandou fatura, perguntou "ficou quanto?".
+   ACAO: Yuri ENVIAR simulacao hoje (cliente ja escolheu PIX).
 
-22. Cavalache - Keanny - DR4 - Conta R$ 400 Petrolina
-    Nivel: MEDIO-ALTO - retorno agendado HOJE 16H.
-    ACAO: Ligar 16h com simulacao pronta de economia para conta de R$ 400.
+4. PAULO BARROS DOS SANTOS - BOT -> vendas - DR4 - ALTO
+   550-600kWh, quer kit 700kWh no cartao. Perguntou marca do inversor (sem resposta!).
+   ACAO: responder marca do inversor + enviar orcamento 700kWh pelo chat.
 
-23. Camila Lima - Keanny - DR4
-    Nivel: MEDIO - cliente com restricao CPF.
-    Situacao: Keanny insistiu ontem 15:06 oferecendo simulacao com outro CPF.
-    ACAO: Insistir com solucao concreta (CPF de conjuge/parente). Sem vergonha.
+5. FLANKLIN - BOT Gabriel - DR4 - ALTO
+   Recorrente desde out/25 (Araripina). 500kW financiamento. Prometeu docs, nao enviou.
+   ACAO: humano cobrar CNH/conta/email para financiamento.
 
-24. Leticia Andrade - SEM ATRIBUICAO - DR2 (orfao pendente dia 26.05)
-    Nivel: ALTO - pediu orcamento ha 4 dias sem atribuicao.
-    ACAO: Verificar se foi atribuida. Se nao, atribuir SDR DR2 HOJE.
+6. DEUS EU TE AMO - BOT -> vendedor - DR4 - ALTO
+   Ja enviou documentos, quer visita, conhece a vendedora "Natalia Beatriz".
+   ACAO: agendar visita (de preferencia com Natalia Beatriz) + orcamento.
+
+7. ALEXSANDRO - Keanny - DR4 - ALTO
+   Visita agendada 17h ONTEM. ACAO: verificar resultado e fazer follow-up.
+
+8. SAMUEL G SANTOS - Keanny -> Alan - DR4 - ALTO
+   400kW, Alan ligaria 12h10 ontem. ACAO: verificar contato; se nao, ligar + orcar.
+
+9. CAVALACHE - BOT/Keanny - DR4 - MEDIO
+   R$400. Retorno de ligacao 16h ontem. ACAO: verificar ligacao e passar valor do projeto.
+
+10. HELIO ESCOBAR - BOT/Keanny - DR4 - MEDIO
+    R$300. Pediu orcamento dos KITS 500kWh e 700kWh. ACAO: enviar comparativo 500x700.
+
+11. MARLEINE - BOT Gabriel - DR4 - MEDIO
+    Perguntou "faz boleto?" 12:19 e so respondida 17:38 (5h). ACAO: reengajar, confirmar
+    financiamento, pedir regiao e consumo.
+
+12. ANA RISOLANDIA - BOT Gabriel - DR4 - MEDIO
+    Teresina/PI. ACAO: reengajar, confirmar atendimento e pedir consumo.
+
+----------------------------------------------------
+BAIXA PRIORIDADE (so BOT, cliente nao respondeu - reengajar):
+----------------------------------------------------
+Joao Gomes, Alberico, Zelia Correia (~R$500), Maria Isabe, ribeirochagas, Roberval
+
+NAO CONTATAR (resolvido/sem interesse):
+Antonia Barbosa (ja tem solar), Evanisia Amorim (sem interesse), Carlos (vazio)
 
 ====================================================
 RESUMO:
-- Sem resposta antes 18h: 8
+- Sem resposta antes 18h: 1
 - Sem resposta apos 18h: 1
-- Alto consumo: 9 (3 sao mega tickets DR2: Thaisi 4000kWh, Edney 2000kWh, Financeiro MAXFIX)
-- Leads quentes: 6
-TOTAL DE FOLLOW-UPS: 24
+- Alto consumo / big ticket: 11
+- Leads quentes: 12
+TOTAL DE FOLLOW-UPS PRIORITARIOS: 25
+(+ 6 reengajar baixa prioridade, 3 nao contatar)
 
-⚠️ ALERTAS CRITICOS:
-- DR4 com PROBLEMA CRONICO de leads orfaos atendidos so pelo BOT Gabriel (Franklin, Erivan,
-  Lindalva, Armando, Maria Bileu, Joao Gomes, Ana Risolandia, Marleine, Alberico, Deus eu te amo,
-  ribeirochagas, Maria Isabe, Zelia Correia)
-- DR2 com MEGA TICKETS pendentes (4000kWh Thaisi, 2000kWh Edney) - acompanhar HOJE de perto
-- VISITAS AGENDADAS HOJE: Edney 8h DR2, Iara 9h DR4, Leticia Rodrigues 9h DR2,
-  Joao Vicente (hamburgueria) DR4
-- RETORNO AGENDADO HOJE: Cavalache 16h DR4
-
-TOP 5 PRIORIDADES DE HOJE:
-1. Leticia Rodrigues (Luana DR2) - confirmar visita 9h HOJE
-2. Edney 558796419715 (Keanny DR2) - visita 8h HOJE - 2000 kWh
-3. Thaisi Tavares (Keanny DR2) - status visita ontem 4000 kWh condominio
-4. Joao Vicente (Keanny DR4) - visita HOJE hamburgueria
-5. Iara (DR4) - ligacao confirmada 9h HOJE (mandar SDR humano, nao bot)
-
+CONTAS: DR4 = 30 conversas de ontem | DR2 = 5 conversas de ontem
 ====================================================
