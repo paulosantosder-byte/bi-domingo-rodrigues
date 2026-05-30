@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-05-29",
+      "tipo_analise": "refresh_fim_do_dia",
+      "hora_execucao": "21:30",
+      "total_conversas": 99,
+      "total_conversas_dr4": 83,
+      "total_conversas_dr2": 16,
+      "sem_resposta": 5,
+      "criticas": 10,
+      "nota_media_sdr": 4.9,
+      "nota_media_vendedor": 5.0,
+      "alerta_critico": "10 leads atendidos somente pelo BOT sem SDR humano em DR4 (Joséquiel informou conta R$500 e ficou sem retorno); valdete DR2 com 10 msgs respondido so pelo bot; Gabriel mediana 80min de resposta (SDR-X5); Augusto Lima busca 2500kWh/mes pendente; Leticia Rodrigues DR2 visita confirmada 14h30 por Luana",
+      "sdrs": [
+        "Keane",
+        "Gabriel"
+      ],
+      "vendedores": [
+        "Luana",
+        "Pericles",
+        "Guilherme"
+      ]
+    },
+    {
       "data": "2026-05-27",
       "tipo_analise": "refresh_fim_do_dia_amostragem",
       "hora_execucao": "18:34",
@@ -364,5 +386,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-05-27T18:34"
+  "ultima_atualizacao": "2026-05-29T21:30"
 }
