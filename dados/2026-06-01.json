@@ -1,0 +1,2171 @@
+{
+  "data": "2026-06-01",
+  "hora_execucao": "17:25",
+  "metricas": {
+    "total_conversas": 113,
+    "total_conversas_dr4": 100,
+    "total_conversas_dr2": 13,
+    "total_ligacoes": 4,
+    "sem_resposta": 2,
+    "criticas": 2,
+    "sem_vendedor": 6,
+    "nota_media_sdr": 7.1,
+    "nota_media_vendedor": 7.5,
+    "aderencia_geral": 68
+  },
+  "sdrs": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 44,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 4,
+      "taxa_conversao": 9,
+      "mediana_resposta_min": 12,
+      "media_resposta_min": 20,
+      "qualidade": {
+        "nota_media": 7.5,
+        "aderencia_script": 72,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 40,
+          "SDR-2_qualificacao": 12,
+          "SDR-3_quebra_objecao": 6,
+          "SDR-4_agendamento": 8
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Abertura (SDR-1)",
+            "descricao": "Personaliza com nome do cliente e cita beneficio (reducao ate 95%) em alto volume",
+            "exemplos": [
+              "Cliente Deisivan Eletricista: aplicou protocolo visita-antes-de-orcamento e ofereceu horario 14h",
+              "Cliente Flavio: visita presencial agendada hoje na empresa, acompanhou reagendamento p/ amanha"
+            ]
+          },
+          {
+            "categoria": "Agendamento (SDR-4)",
+            "descricao": "Converte interesse em visita tecnica presencial",
+            "exemplos": [
+              "Cliente Ma Refrigeracao: visita agendada hoje 18h30 (B2B refrigeracao, alto consumo)",
+              "Cliente Zico Menezes: qualificou bomba d'agua/20 placas e transferiu ao gestor Pericles"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Qualificacao (SDR-2)",
+            "descricao": "Maioria das mensagens sao aberturas template sem perguntar valor da conta no chat",
+            "impacto": "Vendedor recebe lead sem contexto de consumo",
+            "conversas_afetadas": 25,
+            "exemplos_clientes": [
+              "Cliente Sara: somente abertura padrao, sem qualificacao",
+              "Cliente Louzinho: mensagem copy-paste sem pergunta de consumo"
+            ],
+            "acao_corretiva": "Inserir pergunta de valor da conta (SDR-2) logo apos a abertura"
+          },
+          {
+            "categoria": "Recuperacao",
+            "descricao": "Perdeu lead para concorrente sem quebra de objecao efetiva",
+            "impacto": "Venda perdida",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente It's Burger Zona Sul: respondeu 'Fechei ja!' e Keane so perguntou 'podemos analisar sua proposta?' sem D1-D4"
+            ],
+            "acao_corretiva": "Acionar diferenciais (laboratorio proprio, 17 anos, orfaos solares) ao detectar fechamento com concorrente"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "SDR-X2",
+            "descricao": "Nao fez pergunta de qualificacao (valor da conta)",
+            "ocorrencias": 25
+          },
+          {
+            "codigo": "SDR-X4",
+            "descricao": "Mensagem generica copy-paste (mesmo texto de abertura repetido)",
+            "ocorrencias": 18
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Gabriel",
+      "cor": "#06b6d4",
+      "papel": "SDR",
+      "total_conversas": 6,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 5.1,
+        "aderencia_script": 51,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 6,
+          "SDR-2_qualificacao": 4,
+          "SDR-3_quebra_objecao": 1,
+          "SDR-4_agendamento": 1
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Roteamento (SDR-4)",
+            "descricao": "Registra resultado de ligacao e roteia ao vendedor certo",
+            "exemplos": [
+              "Cliente FLANKLIN: registrou que esposa fechou com concorrente mas cliente quer 500kw e roteou ao vendedor Alan"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Orfaos do bot",
+            "descricao": "Persona 'Gabriel' (bot) atende leads de alto valor sozinha, sem SDR humano assumir",
+            "impacto": "Leads quentes esfriam",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [
+              "Cliente Armando Nascimento: R$750/800kWh atendido so pelo bot ha dias, 'nao obtive sucesso'",
+              "Cliente Cesio Tenorio: informou consumo de 1.000kw e o bot parou de responder (sem handoff)"
+            ],
+            "acao_corretiva": "Definir SLA de assuncao humana para leads >R$500 atendidos pelo bot"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "SDR-X6",
+            "descricao": "Nao transferiu lead de alto valor para vendedor humano (perdeu o lead)",
+            "ocorrencias": 3
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Maria Luiza",
+      "cor": "#fbbf24",
+      "papel": "SDR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 2.5,
+        "aderencia_script": 40,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 0,
+          "SDR-2_qualificacao": 0,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [],
+        "pontos_fracos": [
+          {
+            "categoria": "Resposta",
+            "descricao": "Audio do cliente sem resposta",
+            "impacto": "Lead sem atendimento",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Leo: enviou audio 12:09 e ficou sem retorno"
+            ],
+            "acao_corretiva": "Responder audios pendentes ainda no horario comercial"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "SDR-X5",
+            "descricao": "Demorou para responder (>30min)",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    }
+  ],
+  "vendedores": [
+    {
+      "nome": "Luana",
+      "cor": "#7c3aed",
+      "papel": "VENDEDOR",
+      "total_conversas": 45,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 3,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 3,
+      "media_resposta_min": 8,
+      "total_respostas": 45,
+      "qualidade": {
+        "nota_media": 7.8,
+        "aderencia_script": 72,
+        "argumentos_usados": {
+          "A1": 20,
+          "A2": 15,
+          "A3": 8,
+          "A4": 10,
+          "B1": 4,
+          "B2": 3,
+          "B3": 2,
+          "B4": 6,
+          "C1": 5,
+          "C2": 1,
+          "C3": 3,
+          "C4": 0,
+          "C5": 2,
+          "D1": 7,
+          "D2": 2,
+          "D3": 1,
+          "D4": 1,
+          "D5": 0,
+          "D6": 1,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 4,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D4",
+            "nome": "Orfaos solares",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 40
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Quebra de Objecoes (C)",
+            "descricao": "Conduz objecao financeira com troca conta-por-parcela e aversao a perda",
+            "exemplos": [
+              "Cliente Tarcisio Oliveira: rebateu hesitacao ('Celpe corta se nao pagar; financiamento sai menor') e reforcou pos-venda",
+              "Cliente antonio (DR2): passou diferenciais completos (laboratorio proprio, monitoramento 1 ano, CNPJ ativo, engenheiro) e agendou visita"
+            ]
+          },
+          {
+            "categoria": "Diferenciacao (D1) + Indicacao (F3)",
+            "descricao": "Cita laboratorio proprio e programa indique-amigos R$200",
+            "exemplos": [
+              "Cliente josenildopereirapequeno: ofereceu indicacao 5 amigos R$200 e listou diferenciais",
+              "Cliente Claudemy: agendou reuniao via meet para quinta-feira, confirmada pelo cliente"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Mensagens sem valor (X2)",
+            "descricao": "Grande parte das conversas e apenas 'Boa tarde / estou te ligando' sem agregar valor no chat",
+            "impacto": "Depende 100% da ligacao; chat nao avanca o funil",
+            "conversas_afetadas": 22,
+            "exemplos_clientes": [
+              "Cliente Adailton: apenas 'Boa tarde' + 'estou tentando te ligar'",
+              "Cliente zzxx: mesmo padrao sem argumento"
+            ],
+            "acao_corretiva": "Inserir 1 diferencial (D1) ou prova social (C2) em cada tentativa de contato por texto"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nao mencionou nenhum diferencial competitivo no chat",
+            "ocorrencias": 22
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Alan Oliveira",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 14,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 2,
+      "sem_resposta": 1,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 12,
+      "total_respostas": 14,
+      "qualidade": {
+        "nota_media": 6.7,
+        "aderencia_script": 62,
+        "argumentos_usados": {
+          "A1": 12,
+          "A2": 8,
+          "A3": 3,
+          "A4": 6,
+          "B1": 1,
+          "B2": 1,
+          "B3": 3,
+          "B4": 2,
+          "C1": 1,
+          "C2": 1,
+          "C3": 1,
+          "C4": 0,
+          "C5": 1,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 1,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 2,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratorio proprio + troca 24h",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 14
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Seguranca (F2/B3)",
+            "descricao": "Usa argumento de registro/seguranca para manter cliente no canal oficial",
+            "exemplos": [
+              "Cliente Jorge Campodonio: 'aqui as conversas ficam salvas, melhor para seguranca' e acompanhou status da engenharia (telhado)",
+              "Cliente CARLIZZE PORCELANATOS: enviou proposta fotovoltaica 1.000kWh com simulacao de financiamento 60x"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Erro de personalizacao (X4)",
+            "descricao": "Mensagem copy-paste com nome trocado",
+            "impacto": "Quebra de confianca",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Alcione: recebeu mensagem dirigida a 'Marcos' (nome de outro cliente)"
+            ],
+            "acao_corretiva": "Revisar nome antes de enviar; evitar reaproveitar texto sem ajustar"
+          },
+          {
+            "categoria": "Diferenciacao (D)",
+            "descricao": "Nao menciona laboratorio proprio / 17 anos no chat",
+            "impacto": "Perde diferenciacao competitiva",
+            "conversas_afetadas": 14,
+            "exemplos_clientes": [
+              "Cliente Chico: apenas abertura sem diferencial",
+              "Cliente Samuel G Santos: idem"
+            ],
+            "acao_corretiva": "Incluir D1/D2 nas aberturas"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem generica/nome trocado",
+            "ocorrencias": 1
+          },
+          {
+            "codigo": "X6",
+            "descricao": "Nao mencionou diferenciais (D1-D4)",
+            "ocorrencias": 12
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Pericles",
+      "cor": "#8b5cf6",
+      "papel": "VENDEDOR",
+      "total_conversas": 2,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 2,
+      "qualidade": {
+        "nota_media": 6.0,
+        "aderencia_script": 55,
+        "argumentos_usados": {
+          "A1": 2,
+          "A2": 2,
+          "A3": 1,
+          "A4": 1,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratorio proprio",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 2
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Continuidade",
+            "descricao": "Assume lead qualificado e busca entender necessidade",
+            "exemplos": [
+              "Cliente Iara: assumiu atendimento e direcionou para entender a necessidade por numero privado"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Visibilidade",
+            "descricao": "Conversas migradas para numero privado, pouca atividade registrada no sistema",
+            "impacto": "Dificil auditar qualidade/pos-venda",
+            "conversas_afetadas": 2,
+            "exemplos_clientes": [
+              "Cliente Iara: 'falei com vc no meu numero privado'"
+            ],
+            "acao_corretiva": "Registrar follow-up no canal oficial"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    }
+  ],
+  "insights": {
+    "destaques_positivos": [
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "antonio (DR2)",
+        "acao": "Apresentou diferenciais completos (laboratorio proprio, monitoramento 1 ano, CNPJ ativo, engenheiro homologador)",
+        "resultado": "Cliente aceitou; visita marcada para amanha"
+      },
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "Tarcisio Oliveira",
+        "acao": "Quebra de objecao financeira (troca Celpe pela parcela) + aversao a perda + pos-venda",
+        "resultado": "Manteve lead aquecido apesar da hesitacao"
+      },
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "cliente": "Deisivan Eletricista",
+        "acao": "Aplicou protocolo de visita tecnica antes do orcamento e ofereceu 14h",
+        "resultado": "Lead B2B (eletricista, Petrolina) aceitou visita"
+      },
+      {
+        "pessoa": "Alan Oliveira",
+        "papel": "VENDEDOR",
+        "cliente": "Jorge Campodonio",
+        "acao": "Argumento de seguranca + acompanhamento da engenharia (estrutura do telhado)",
+        "resultado": "Cliente respondeu 'Combinado', proximo do fechamento"
+      }
+    ],
+    "alertas": [
+      {
+        "pessoa": "Gabriel (bot)",
+        "papel": "SDR",
+        "cliente": "Armando Nascimento",
+        "problema": "Lead R$750/800kWh atendido somente pela persona-bot, sem SDR humano ha dias",
+        "impacto": "Lead quente de alto valor esfriando (orfao cronico)",
+        "acao_corretiva": "Atribuir SDR humano imediatamente; ligar fora do horario informado pelo cliente"
+      },
+      {
+        "pessoa": "Gabriel (bot)",
+        "papel": "SDR",
+        "cliente": "Cesio Tenorio",
+        "problema": "Cliente informou consumo de 1.000kw e o bot nao respondeu / nao houve handoff",
+        "impacto": "Oportunidade de alto consumo parada aguardando resposta",
+        "acao_corretiva": "Handoff imediato para vendedor; responder ainda hoje"
+      },
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "cliente": "It's Burger Zona Sul",
+        "problema": "Cliente disse 'Fechei ja!' (concorrente) e nao houve quebra de objecao com diferenciais",
+        "impacto": "Venda perdida sem tentativa de recuperacao estruturada",
+        "acao_corretiva": "Roteiro de recuperacao com D1-D4 e checklist de comparacao"
+      },
+      {
+        "pessoa": "Maria Luiza",
+        "papel": "SDR",
+        "cliente": "Leo",
+        "problema": "Audio do cliente (12:09) sem resposta",
+        "impacto": "Lead sem atendimento no horario comercial",
+        "acao_corretiva": "Responder audios pendentes"
+      },
+      {
+        "pessoa": "Alan Oliveira",
+        "papel": "VENDEDOR",
+        "cliente": "Alcione",
+        "problema": "Mensagem copy-paste dirigida a 'Marcos' (nome trocado)",
+        "impacto": "Quebra de confianca/personalizacao",
+        "acao_corretiva": "Conferir nome antes de enviar"
+      },
+      {
+        "pessoa": "Luana",
+        "papel": "VENDEDOR",
+        "cliente": "Leticia Rodrigues (DR2)",
+        "problema": "Pos-venda confuso: mencao a equipe externa e cliente exige horario marcado para conclusao da instalacao",
+        "impacto": "Risco de insatisfacao do cliente",
+        "acao_corretiva": "Confirmar agendamento exato e responsavel pela conclusao"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "Padrao de processo",
+        "cliente": "Diversos (Luana)",
+        "descricao": "~22 conversas avancam so por ligacao com texto 'estou te ligando' sem registro de valor no chat",
+        "acao_sugerida": "Padronizar 1 diferencial + 1 prova social por tentativa de contato textual"
+      },
+      {
+        "tipo": "Handoff bot->humano",
+        "cliente": "Armando, Cesio, Helio (Gabriel-bot)",
+        "descricao": "Leads de alto valor presos na persona-bot",
+        "acao_sugerida": "Criar regra de SLA para assuncao humana de leads >R$500"
+      }
+    ]
+  },
+  "ranking_sdrs": [
+    {
+      "posicao": 1,
+      "nome": "Keane",
+      "nota_media": 7.5,
+      "aderencia": 72,
+      "visitas_agendadas": 4,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Gabriel",
+      "nota_media": 5.1,
+      "aderencia": 51,
+      "visitas_agendadas": 0,
+      "badge": "🥈 Prata"
+    },
+    {
+      "posicao": 3,
+      "nome": "Maria Luiza",
+      "nota_media": 2.5,
+      "aderencia": 40,
+      "visitas_agendadas": 0,
+      "badge": "🥉 Bronze"
+    }
+  ],
+  "ranking_vendedores": [
+    {
+      "posicao": 1,
+      "nome": "Luana",
+      "nota_media": 7.8,
+      "aderencia": 72,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Alan Oliveira",
+      "nota_media": 6.7,
+      "aderencia": 62,
+      "badge": "🥈 Prata"
+    },
+    {
+      "posicao": 3,
+      "nome": "Pericles",
+      "nota_media": 6.0,
+      "aderencia": 55,
+      "badge": "🥉 Bronze"
+    }
+  ],
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Cesio Tenorio",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "Informou 1.000kw e ficou sem resposta do bot",
+      "recomendacao": "Handoff imediato para vendedor e retorno hoje",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratorio proprio",
+        "B4 - vender a visita"
+      ]
+    },
+    {
+      "cliente": "Armando Nascimento",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "R$750/800kWh, orfao do bot ha dias",
+      "recomendacao": "Atribuir SDR humano e ligar no horario informado",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "SDR-4 - agendamento",
+        "D2 - 17 anos"
+      ]
+    },
+    {
+      "cliente": "Flavio",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Visita presencial agendada; cliente vira amanha",
+      "recomendacao": "Confirmar horario exato da visita de amanha",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B1 - proximidade",
+        "SDR-4c - opcoes de horario"
+      ]
+    },
+    {
+      "cliente": "Ma Refrigeracao",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Visita agendada hoje 18h30 (B2B refrigeracao, alto consumo)",
+      "recomendacao": "Garantir comparecimento do vendedor com proposta",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D6 - compra geracao, nao placas",
+        "C2 - prova social"
+      ]
+    },
+    {
+      "cliente": "antonio",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Diferenciais passados, cliente aceitou; visita amanha",
+      "recomendacao": "Confirmar visita e levar proposta",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B4 - vender a visita",
+        "F2 - gravacao/seguranca"
+      ]
+    },
+    {
+      "cliente": "Claudemy",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Reuniao via meet confirmada para quinta",
+      "recomendacao": "Preparar simulacao e confirmar link/horario",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "C1 - financiamento",
+        "C2 - prova social"
+      ]
+    },
+    {
+      "cliente": "Jorge Campodonio",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Aguardando engenharia confirmar telhado; cliente 'Combinado'",
+      "recomendacao": "Retornar assim que engenharia liberar",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "F2 - seguranca",
+        "D1 - laboratorio"
+      ]
+    },
+    {
+      "cliente": "Deisivan Eletricista",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "Eletricista B2B em Petrolina aceitou visita 14h",
+      "recomendacao": "Confirmar visita tecnica",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "B2 - protocolo visita",
+        "B3 - seguranca"
+      ]
+    },
+    {
+      "cliente": "wedson",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "4 ar-condicionados, quer expandir +2",
+      "recomendacao": "Dimensionar sistema p/ expansao e enviar proposta",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "A3 - qualificacao",
+        "D6 - geracao"
+      ]
+    },
+    {
+      "cliente": "Hewerthon",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Caruaru-PE, callback 18h combinado, engajado",
+      "recomendacao": "Cumprir retorno 18h com simulacao",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "C1 - financiamento",
+        "B1 - proximidade"
+      ]
+    },
+    {
+      "cliente": "It's Burger Zona Sul",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERACAO",
+      "motivo": "Fechou com concorrente ('Fechei ja!')",
+      "recomendacao": "Roteiro de recuperacao com diferenciais e checklist de comparacao",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "D4 - orfaos solares",
+        "D5 - checklist comparacao"
+      ]
+    },
+    {
+      "cliente": "FLANKLIN",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERACAO",
+      "motivo": "Esposa fechou com outra empresa mas cliente quer orcamento 500kw",
+      "recomendacao": "Contatar com proposta 500kw e diferenciais",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratorio",
+        "F4 - plantar duvida concorrente"
+      ]
+    },
+    {
+      "cliente": "josenildopereirapequeno",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "⭐ INDICACAO/RECOMPRA",
+      "motivo": "Cliente fez nova aquisicao; programa indique 5 amigos R$200",
+      "recomendacao": "Coletar indicacoes e formalizar bonus",
+      "urgencia": "FOLLOW-UP NORMAL",
+      "argumentos_recomendados": [
+        "F3 - indicacoes"
+      ]
+    },
+    {
+      "cliente": "Lairton Conceicao",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "conta": "DR2",
+      "categoria": "⭐ INDICACAO/RECOMPRA",
+      "motivo": "Nova aquisicao; indique 10 amigos R$200 cada",
+      "recomendacao": "Acompanhar indicacoes",
+      "urgencia": "FOLLOW-UP NORMAL",
+      "argumentos_recomendados": [
+        "F3 - indicacoes"
+      ]
+    },
+    {
+      "cliente": "Leo",
+      "pessoa": "Maria Luiza",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Audio do cliente sem resposta",
+      "recomendacao": "Ouvir audio e retornar ainda hoje",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "SDR-1 - abertura",
+        "SDR-2 - qualificacao"
+      ]
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Erivan Batista de Lima",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Erivan Batista de Lima: 8 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "It’s Burger Zona Sul",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 5.0,
+      "observacao": "Cliente It’s Burger Zona Sul: 10 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Barbosa 🌵☀️",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Barbosa 🌵☀️: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "Armando Nascimento",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 13,
+      "status": "ok",
+      "nota": 3.0,
+      "observacao": "Cliente Armando Nascimento: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "Sara",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Sara: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 6,
+      "conta": "DR4",
+      "cliente": "Aroldo Ferreira Dantas",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Aroldo Ferreira Dantas: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 7,
+      "conta": "DR4",
+      "cliente": "Natali Brito",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Natali Brito: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 8,
+      "conta": "DR4",
+      "cliente": "Alan Chalega",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Alan Chalega: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 9,
+      "conta": "DR4",
+      "cliente": "Zico Menezes",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Zico Menezes: 10 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 10,
+      "conta": "DR4",
+      "cliente": "Fran",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Fran: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 11,
+      "conta": "DR4",
+      "cliente": "FLANKLIN 🏍️🏍️",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 5.5,
+      "observacao": "Cliente FLANKLIN 🏍️🏍️: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 12,
+      "conta": "DR4",
+      "cliente": "Leiliane Cardoso",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Leiliane Cardoso: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 13,
+      "conta": "DR4",
+      "cliente": "Bruno Rodrigues 😎",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 5.5,
+      "observacao": "Cliente Bruno Rodrigues 😎: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 14,
+      "conta": "DR4",
+      "cliente": "Nivaldo Almeida",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Nivaldo Almeida: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 15,
+      "conta": "DR4",
+      "cliente": "ZAIDILMA|ENG. CIVIL 👷🏻‍♀️",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente ZAIDILMA|ENG. CIVIL 👷🏻‍♀️: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 16,
+      "conta": "DR4",
+      "cliente": "Césio Tenório 🚚",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 5,
+      "status": "sem_resposta",
+      "nota": 5.5,
+      "observacao": "Cliente Césio Tenório 🚚: 5 msgs hoje (CL por ultimo)"
+    },
+    {
+      "id": 17,
+      "conta": "DR4",
+      "cliente": "murivaldo",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente murivaldo: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 18,
+      "conta": "DR4",
+      "cliente": "Alberico",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 5.5,
+      "observacao": "Cliente Alberico: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 19,
+      "conta": "DR4",
+      "cliente": "josenildopereirapequeno",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente josenildopereirapequeno: 5 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 20,
+      "conta": "DR4",
+      "cliente": "Flavio",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente Flavio: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 21,
+      "conta": "DR4",
+      "cliente": "Louzinho",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Louzinho: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 22,
+      "conta": "DR4",
+      "cliente": "Helio Escobar",
+      "pessoa": "Gabriel",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 17,
+      "status": "ok",
+      "nota": 5.5,
+      "observacao": "Cliente Helio Escobar: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 23,
+      "conta": "DR4",
+      "cliente": "Estuda que a vida muda 📚",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Estuda que a vida muda 📚: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 24,
+      "conta": "DR4",
+      "cliente": "Socorro Matos",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Socorro Matos: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 25,
+      "conta": "DR4",
+      "cliente": "Alpina Hotdog",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Alpina Hotdog: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 26,
+      "conta": "DR4",
+      "cliente": "Irmão Wagner",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Irmão Wagner: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 27,
+      "conta": "DR4",
+      "cliente": "Jefferson Soares",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 9,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Jefferson Soares: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 28,
+      "conta": "DR4",
+      "cliente": "Gilvana",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 19,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Gilvana: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 29,
+      "conta": "DR4",
+      "cliente": "HARAS BARUCK SINRI",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente HARAS BARUCK SINRI: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 30,
+      "conta": "DR4",
+      "cliente": "maria",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente maria: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 31,
+      "conta": "DR4",
+      "cliente": "CARLIZZE PORCELANATOS",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 19,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente CARLIZZE PORCELANATOS: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 32,
+      "conta": "DR4",
+      "cliente": "Pablo Emerson",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Pablo Emerson: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 33,
+      "conta": "DR4",
+      "cliente": "Jorge Campodonio",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "sem_resposta",
+      "nota": 8.0,
+      "observacao": "Cliente Jorge Campodonio: 5 msgs hoje (CL por ultimo)"
+    },
+    {
+      "id": 34,
+      "conta": "DR4",
+      "cliente": "Cristiana",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Cristiana: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 35,
+      "conta": "DR4",
+      "cliente": "Luiz do filé",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Luiz do filé: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 36,
+      "conta": "DR4",
+      "cliente": "zehertzz@hotmail.com",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente zehertzz@hotmail.com: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 37,
+      "conta": "DR4",
+      "cliente": "Edinan Pereira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 19,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Edinan Pereira: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 38,
+      "conta": "DR4",
+      "cliente": "MARCOS WALGRENIO",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente MARCOS WALGRENIO: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 39,
+      "conta": "DR4",
+      "cliente": "Alcione",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 4.0,
+      "observacao": "Cliente Alcione: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 40,
+      "conta": "DR4",
+      "cliente": "Paulo Alencar",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Paulo Alencar: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 41,
+      "conta": "DR4",
+      "cliente": "Deus eu te amo",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 12,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Deus eu te amo: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 42,
+      "conta": "DR4",
+      "cliente": "Chico",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Chico: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 43,
+      "conta": "DR4",
+      "cliente": "Samuel G Santos",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Samuel G Santos: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 44,
+      "conta": "DR4",
+      "cliente": "Lindalva",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 17,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Lindalva: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 45,
+      "conta": "DR4",
+      "cliente": "Bastião",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Bastião: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 46,
+      "conta": "DR4",
+      "cliente": "Gilberto Terto",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Gilberto Terto: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 47,
+      "conta": "DR4",
+      "cliente": "Paulo Barros Dos Santos",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.8,
+      "observacao": "Cliente Paulo Barros Dos Santos: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 48,
+      "conta": "DR4",
+      "cliente": "Tatiane Lima",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Tatiane Lima: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 49,
+      "conta": "DR4",
+      "cliente": "zzxx",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente zzxx: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 50,
+      "conta": "DR4",
+      "cliente": "Adailton",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Adailton: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 51,
+      "conta": "DR4",
+      "cliente": "DR Sergio DRa Aldilania",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente DR Sergio DRa Aldilania: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 52,
+      "conta": "DR4",
+      "cliente": "Francisco Aoun",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Francisco Aoun: 10 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 53,
+      "conta": "DR4",
+      "cliente": "Souza",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Souza: 6 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 54,
+      "conta": "DR4",
+      "cliente": "Jhonatan Gabriel",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Jhonatan Gabriel: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 55,
+      "conta": "DR4",
+      "cliente": "Gilmar Acosta - Advogados As",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Gilmar Acosta - Advogados As: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 56,
+      "conta": "DR4",
+      "cliente": "Carl Biologista",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 15,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Carl Biologista: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 57,
+      "conta": "DR4",
+      "cliente": "Jucimario",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Jucimario: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 58,
+      "conta": "DR4",
+      "cliente": "Cleison",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Cleison: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 59,
+      "conta": "DR4",
+      "cliente": "Claudemy",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.5,
+      "observacao": "Cliente Claudemy: 6 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 60,
+      "conta": "DR4",
+      "cliente": "Deisivan Eletricista",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 8.5,
+      "observacao": "Cliente Deisivan Eletricista: 8 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 61,
+      "conta": "DR4",
+      "cliente": "Tarcisio Oliveira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.5,
+      "observacao": "Cliente Tarcisio Oliveira: 14 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 62,
+      "conta": "DR4",
+      "cliente": "Pequena",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 12,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Pequena: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 63,
+      "conta": "DR4",
+      "cliente": "Ayrllam",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Ayrllam: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 64,
+      "conta": "DR4",
+      "cliente": "Jonas",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Jonas: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 65,
+      "conta": "DR4",
+      "cliente": "Tania Coelho Andrade",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Tania Coelho Andrade: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 66,
+      "conta": "DR4",
+      "cliente": "pedroaniceto037",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente pedroaniceto037: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 67,
+      "conta": "DR4",
+      "cliente": "Gilmar",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Gilmar: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 68,
+      "conta": "DR4",
+      "cliente": "Eddie",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Eddie: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 69,
+      "conta": "DR4",
+      "cliente": "Tereza",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Tereza: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 70,
+      "conta": "DR4",
+      "cliente": "Natália",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 5,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Natália: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 71,
+      "conta": "DR4",
+      "cliente": "ok",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente ok: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 72,
+      "conta": "DR4",
+      "cliente": "Léo",
+      "pessoa": "Maria Luiza",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 14,
+      "status": "critico",
+      "nota": 2.5,
+      "observacao": "Cliente Léo: 1 msgs hoje (CL por ultimo)"
+    },
+    {
+      "id": 73,
+      "conta": "DR4",
+      "cliente": "avelarmoreira3",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente avelarmoreira3: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 74,
+      "conta": "DR4",
+      "cliente": "Hewerthon",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente Hewerthon: 19 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 75,
+      "conta": "DR4",
+      "cliente": "wedson",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente wedson: 16 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 76,
+      "conta": "DR4",
+      "cliente": "Ma Refrigeração",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 17,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente Ma Refrigeração: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 77,
+      "conta": "DR4",
+      "cliente": "Carlos Bombeiro",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Carlos Bombeiro: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 78,
+      "conta": "DR4",
+      "cliente": "Luiz Carlos",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 8,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Luiz Carlos: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 79,
+      "conta": "DR4",
+      "cliente": "pmsaulo2021",
+      "pessoa": "Pericles",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 6.0,
+      "observacao": "Cliente pmsaulo2021: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 80,
+      "conta": "DR4",
+      "cliente": "Vera Lucia",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Vera Lucia: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 81,
+      "conta": "DR4",
+      "cliente": "José possidonio",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 14,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente José possidonio: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 82,
+      "conta": "DR4",
+      "cliente": "Jubileu",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Jubileu: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 83,
+      "conta": "DR4",
+      "cliente": "Lilito",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Lilito: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 84,
+      "conta": "DR4",
+      "cliente": "Gildemar",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Gildemar: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 85,
+      "conta": "DR4",
+      "cliente": "Robson",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 18,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Robson: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 86,
+      "conta": "DR4",
+      "cliente": "Luciano de Santana",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 13,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Luciano de Santana: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 87,
+      "conta": "DR4",
+      "cliente": "Alexandre Firmino",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Alexandre Firmino: 5 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 88,
+      "conta": "DR4",
+      "cliente": "dilson",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 17,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente dilson: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 89,
+      "conta": "DR4",
+      "cliente": "Camila Lima",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Camila Lima: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 90,
+      "conta": "DR4",
+      "cliente": "Cavalache",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 13,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Cavalache: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 91,
+      "conta": "DR4",
+      "cliente": "Joséquiel",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Joséquiel: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 92,
+      "conta": "DR4",
+      "cliente": "Augusto Lima",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Augusto Lima: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 93,
+      "conta": "DR4",
+      "cliente": "Iara",
+      "pessoa": "Pericles",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.0,
+      "observacao": "Cliente Iara: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 94,
+      "conta": "DR4",
+      "cliente": "Joanes",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Joanes: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 95,
+      "conta": "DR4",
+      "cliente": "Nora gourmet",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 6,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Nora gourmet: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 96,
+      "conta": "DR4",
+      "cliente": "Cherlington",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 7,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Cherlington: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 97,
+      "conta": "DR4",
+      "cliente": "Cleiton",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Cleiton: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 98,
+      "conta": "DR4",
+      "cliente": "help moraes",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 10,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente help moraes: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 99,
+      "conta": "DR4",
+      "cliente": "Jo",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Jo: 1 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 100,
+      "conta": "DR4",
+      "cliente": "Fabi oliveira",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Fabi oliveira: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 101,
+      "conta": "DR2",
+      "cliente": "antonio",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 9.0,
+      "observacao": "Cliente antonio: 20 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 102,
+      "conta": "DR2",
+      "cliente": "EDIDEUS GERALDO DE SOUZA",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente EDIDEUS GERALDO DE SOUZA: 6 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 103,
+      "conta": "DR2",
+      "cliente": "LEANDRO BRUNO BEZERRA DA SILVA",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 19,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente LEANDRO BRUNO BEZERRA DA SILVA: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 104,
+      "conta": "DR2",
+      "cliente": "Lucas",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 18,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Lucas: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 105,
+      "conta": "DR2",
+      "cliente": "Alisson Hamilton",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente Alisson Hamilton: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 106,
+      "conta": "DR2",
+      "cliente": "DAVI RODRIGUES LEITE FILHO",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente DAVI RODRIGUES LEITE FILHO: 6 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 107,
+      "conta": "DR2",
+      "cliente": "Leticia Rodrigues",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 6.0,
+      "observacao": "Cliente Leticia Rodrigues: 3 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 108,
+      "conta": "DR2",
+      "cliente": "Alex",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "ultima_msg": "",
+      "total_msgs": 11,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Alex: 11 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 109,
+      "conta": "DR2",
+      "cliente": "Ceiça",
+      "pessoa": "(sem)",
+      "papel": "INDEF",
+      "ultima_msg": "",
+      "total_msgs": 1,
+      "status": "critico",
+      "nota": 3.0,
+      "observacao": "Cliente Ceiça: 1 msgs hoje (CL por ultimo)"
+    },
+    {
+      "id": 110,
+      "conta": "DR2",
+      "cliente": "Josemario",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 8.0,
+      "observacao": "Cliente Josemario: 4 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 111,
+      "conta": "DR2",
+      "cliente": "Lairton Conceição",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.5,
+      "observacao": "Cliente Lairton Conceição: 5 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 112,
+      "conta": "DR2",
+      "cliente": "ROMERSON FERNANDES GALINDO",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 20,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente ROMERSON FERNANDES GALINDO: 2 msgs hoje (AG por ultimo)"
+    },
+    {
+      "id": 113,
+      "conta": "DR2",
+      "cliente": "❤️ (lead s/ nome)",
+      "pessoa": "Luana",
+      "papel": "VENDEDOR",
+      "ultima_msg": "",
+      "total_msgs": 18,
+      "status": "ok",
+      "nota": 7.8,
+      "observacao": "Cliente ❤️ (lead s/ nome): 2 msgs hoje (AG por ultimo)"
+    }
+  ]
+}

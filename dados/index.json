@@ -1,390 +1,413 @@
 {
-  "relatorios": [
-    {
-      "data": "2026-05-29",
-      "tipo_analise": "refresh_fim_do_dia",
-      "hora_execucao": "21:30",
-      "total_conversas": 99,
-      "total_conversas_dr4": 83,
-      "total_conversas_dr2": 16,
-      "sem_resposta": 5,
-      "criticas": 10,
-      "nota_media_sdr": 4.9,
-      "nota_media_vendedor": 5.0,
-      "alerta_critico": "10 leads atendidos somente pelo BOT sem SDR humano em DR4 (Joséquiel informou conta R$500 e ficou sem retorno); valdete DR2 com 10 msgs respondido so pelo bot; Gabriel mediana 80min de resposta (SDR-X5); Augusto Lima busca 2500kWh/mes pendente; Leticia Rodrigues DR2 visita confirmada 14h30 por Luana",
-      "sdrs": [
-        "Keane",
-        "Gabriel"
-      ],
-      "vendedores": [
-        "Luana",
-        "Pericles",
-        "Guilherme"
-      ]
-    },
-    {
-      "data": "2026-05-27",
-      "tipo_analise": "refresh_fim_do_dia_amostragem",
-      "hora_execucao": "18:34",
-      "total_conversas": 117,
-      "total_conversas_dr4": 94,
-      "total_conversas_dr2": 23,
-      "sem_resposta": 18,
-      "criticas": 5,
-      "nota_media_sdr": 6.2,
-      "nota_media_vendedor": 6.8,
-      "alerta_critico": "Armando Nascimento R$750/800kWh sem SDR humano apos 5h (bot Gabriel parado); BOT Ana Maryllya disparou para 8 leads ja atribuidos a Kemily (Hamilton, Maria do Carmo) gerando confusao com duas personas; Glau DR2 Petrolina posvenda sem resposta de Luana ao pedido de orcamento de limpeza; Maria Luiza/Caio/Alan/Pericles zero chats hoje",
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-26",
-      "tipo_analise": "analise_completa_noite",
-      "hora_execucao": "20:55",
-      "total_conversas": 138,
-      "total_conversas_dr4": 118,
-      "total_conversas_dr2": 20,
-      "sem_resposta": 36,
-      "criticas": 8,
-      "nota_media_sdr": 5.2,
-      "nota_media_vendedor": 5.4,
-      "alerta_critico": "Gabriel (NÃO CADASTRADO) atendeu 29 conversas em DR4 como SDR informal",
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily",
-        "Gabriel (NÃO CADASTRADO)"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-25",
-      "tipo_analise": "refresh_fim_do_dia",
-      "hora_execucao": "18:30",
-      "total_conversas": 88,
-      "total_conversas_dr4": 75,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 7,
-      "criticas": 5,
-      "nota_media_sdr": 6.4,
-      "nota_media_vendedor": 6.1,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-22",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "16:20",
-      "total_conversas": 94,
-      "total_conversas_dr4": 81,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 21,
-      "criticas": 16,
-      "nota_media_sdr": 7.3,
-      "nota_media_vendedor": 6.4,
-      "ana_maryllya_nao_cadastrada": 1,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-21",
-      "tipo_analise": "refresh_fim_do_dia",
-      "total_conversas": 167,
-      "total_conversas_dr4": 152,
-      "total_conversas_dr2": 15,
-      "sem_resposta": 18,
-      "criticas": 4,
-      "nota_media_sdr": 3.1,
-      "nota_media_vendedor": 1.0,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-20",
-      "total_conversas": 202,
-      "total_conversas_dr4": 177,
-      "total_conversas_dr2": 25,
-      "sem_resposta": 35,
-      "criticas": 8,
-      "nota_media_sdr": 5.0,
-      "nota_media_vendedor": 5.4,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-19",
-      "total_conversas": 197,
-      "total_conversas_dr4": 182,
-      "total_conversas_dr2": 15,
-      "sem_resposta": 30,
-      "criticas": 5,
-      "nota_media_sdr": 4.8,
-      "nota_media_vendedor": 6.2,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-18",
-      "total_conversas": 115,
-      "total_conversas_dr4": 97,
-      "total_conversas_dr2": 18,
-      "sem_resposta": 11,
-      "criticas": 3,
-      "nota_media_sdr": 5.4,
-      "nota_media_vendedor": 5.6,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-15",
-      "tipo_analise": "ontem",
-      "total_conversas": 184,
-      "total_conversas_dr4": 164,
-      "total_conversas_dr2": 20,
-      "sem_resposta": 13,
-      "criticas": 1,
-      "mensagens_apos_18h": 20,
-      "nota_media_sdr": 6.2,
-      "nota_media_vendedor": 6.8,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-14",
-      "total_conversas": 235,
-      "total_conversas_dr4": 235,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 20,
-      "criticas": 3,
-      "nota_media_sdr": 5.7,
-      "nota_media_vendedor": 6.3,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-13",
-      "total_conversas": 196,
-      "sem_resposta": 2,
-      "criticas": 0,
-      "nota_media": 0.0,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Kemily",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-12",
-      "total_conversas": 240,
-      "sem_resposta": 82,
-      "criticas": 1,
-      "nota_media": 4.9,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Kemily",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira"
-      ]
-    },
-    {
-      "data": "2026-05-11",
-      "total_conversas": 93,
-      "sem_resposta": 3,
-      "criticas": 3,
-      "nota_media": 0.3,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Claudio Rodrigues",
-        "Caio Roberto",
-        "Guilherme",
-        "Kemilly"
-      ]
-    },
-    {
-      "data": "2026-05-07",
-      "total_conversas": 92,
-      "sem_resposta": 4,
-      "criticas": 10,
-      "nota_media": 3.8,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan"
-      ]
-    },
-    {
-      "data": "2026-05-06",
-      "total_conversas": 153,
-      "sem_resposta": 12,
-      "criticas": 2,
-      "nota_media": 5.1,
-      "vendedores": [
-        "Claudio Rodrigues",
-        "Caio Roberto",
-        "Keane",
-        "Luana",
-        "Guilherme",
-        "Maria Luiza",
-        "Kemily"
-      ]
-    },
-    {
-      "data": "2026-05-05",
-      "total_conversas": 163,
-      "sem_resposta": 46,
-      "criticas": 8,
-      "nota_media": 5.0,
-      "vendedores": [
-        "Caio Roberto",
-        "Kemily",
-        "Guilherme",
-        "Keane",
-        "Luana",
-        "Claudio Rodrigues",
-        "Maria Luiza"
-      ]
-    },
-    {
-      "data": "2026-05-04",
-      "total_conversas": 227,
-      "sem_resposta": 11,
-      "criticas": 5,
-      "nota_media": 5.0,
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Claudio Rodrigues",
-        "Keane",
-        "Guilherme",
-        "Maria Luiza Ramos",
-        "Kemily",
-        "Guilherme Comercial"
-      ]
-    },
-    {
-      "data": "2026-05-02",
-      "total_conversas": 71,
-      "sem_resposta": 15,
-      "criticas": 2,
-      "nota_media": 5.4,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza Ramos",
-        "Keane",
-        "Claudio Rodrigues",
-        "Caio Roberto",
-        "Guilherme"
-      ]
-    }
-  ],
-  "ultima_atualizacao": "2026-05-29T21:30"
+ "relatorios": [
+  {
+   "data": "2026-06-01",
+   "tipo_analise": "analise_completa",
+   "hora_execucao": "17:25",
+   "total_conversas": 113,
+   "total_conversas_dr4": 100,
+   "total_conversas_dr2": 13,
+   "sem_resposta": 2,
+   "criticas": 2,
+   "nota_media_sdr": 7.1,
+   "nota_media_vendedor": 7.5,
+   "alerta_critico": "Gabriel(bot) atendeu sozinho Armando R$750/800kWh (orfao cronico) e Cesio Tenorio 1.000kw ficou sem resposta apos informar consumo; It's Burger fechou com concorrente sem recuperacao; Leo (Maria Luiza) audio sem resposta; Alan Oliveira enviou msg copy-paste chamando Alcione de 'Marcos'; ~22 conversas de Luana avancam so por ligacao sem agregar valor no chat. Positivos: visitas agendadas (Flavio, Ma Refrigeracao, Deisivan, antonio DR2) e Claudemy reuniao meet quinta.",
+   "sdrs": [
+    "Keane",
+    "Gabriel",
+    "Maria Luiza"
+   ],
+   "vendedores": [
+    "Luana",
+    "Alan Oliveira",
+    "Pericles"
+   ]
+  },
+  {
+   "data": "2026-05-29",
+   "tipo_analise": "refresh_fim_do_dia",
+   "hora_execucao": "21:30",
+   "total_conversas": 99,
+   "total_conversas_dr4": 83,
+   "total_conversas_dr2": 16,
+   "sem_resposta": 5,
+   "criticas": 10,
+   "nota_media_sdr": 4.9,
+   "nota_media_vendedor": 5.0,
+   "alerta_critico": "10 leads atendidos somente pelo BOT sem SDR humano em DR4 (Joséquiel informou conta R$500 e ficou sem retorno); valdete DR2 com 10 msgs respondido so pelo bot; Gabriel mediana 80min de resposta (SDR-X5); Augusto Lima busca 2500kWh/mes pendente; Leticia Rodrigues DR2 visita confirmada 14h30 por Luana",
+   "sdrs": [
+    "Keane",
+    "Gabriel"
+   ],
+   "vendedores": [
+    "Luana",
+    "Pericles",
+    "Guilherme"
+   ]
+  },
+  {
+   "data": "2026-05-27",
+   "tipo_analise": "refresh_fim_do_dia_amostragem",
+   "hora_execucao": "18:34",
+   "total_conversas": 117,
+   "total_conversas_dr4": 94,
+   "total_conversas_dr2": 23,
+   "sem_resposta": 18,
+   "criticas": 5,
+   "nota_media_sdr": 6.2,
+   "nota_media_vendedor": 6.8,
+   "alerta_critico": "Armando Nascimento R$750/800kWh sem SDR humano apos 5h (bot Gabriel parado); BOT Ana Maryllya disparou para 8 leads ja atribuidos a Kemily (Hamilton, Maria do Carmo) gerando confusao com duas personas; Glau DR2 Petrolina posvenda sem resposta de Luana ao pedido de orcamento de limpeza; Maria Luiza/Caio/Alan/Pericles zero chats hoje",
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-26",
+   "tipo_analise": "analise_completa_noite",
+   "hora_execucao": "20:55",
+   "total_conversas": 138,
+   "total_conversas_dr4": 118,
+   "total_conversas_dr2": 20,
+   "sem_resposta": 36,
+   "criticas": 8,
+   "nota_media_sdr": 5.2,
+   "nota_media_vendedor": 5.4,
+   "alerta_critico": "Gabriel (NÃO CADASTRADO) atendeu 29 conversas em DR4 como SDR informal",
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily",
+    "Gabriel (NÃO CADASTRADO)"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-25",
+   "tipo_analise": "refresh_fim_do_dia",
+   "hora_execucao": "18:30",
+   "total_conversas": 88,
+   "total_conversas_dr4": 75,
+   "total_conversas_dr2": 13,
+   "sem_resposta": 7,
+   "criticas": 5,
+   "nota_media_sdr": 6.4,
+   "nota_media_vendedor": 6.1,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-22",
+   "tipo_analise": "analise_completa_tarde",
+   "hora_execucao": "16:20",
+   "total_conversas": 94,
+   "total_conversas_dr4": 81,
+   "total_conversas_dr2": 13,
+   "sem_resposta": 21,
+   "criticas": 16,
+   "nota_media_sdr": 7.3,
+   "nota_media_vendedor": 6.4,
+   "ana_maryllya_nao_cadastrada": 1,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-21",
+   "tipo_analise": "refresh_fim_do_dia",
+   "total_conversas": 167,
+   "total_conversas_dr4": 152,
+   "total_conversas_dr2": 15,
+   "sem_resposta": 18,
+   "criticas": 4,
+   "nota_media_sdr": 3.1,
+   "nota_media_vendedor": 1.0,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-20",
+   "total_conversas": 202,
+   "total_conversas_dr4": 177,
+   "total_conversas_dr2": 25,
+   "sem_resposta": 35,
+   "criticas": 8,
+   "nota_media_sdr": 5.0,
+   "nota_media_vendedor": 5.4,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-19",
+   "total_conversas": 197,
+   "total_conversas_dr4": 182,
+   "total_conversas_dr2": 15,
+   "sem_resposta": 30,
+   "criticas": 5,
+   "nota_media_sdr": 4.8,
+   "nota_media_vendedor": 6.2,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-18",
+   "total_conversas": 115,
+   "total_conversas_dr4": 97,
+   "total_conversas_dr2": 18,
+   "sem_resposta": 11,
+   "criticas": 3,
+   "nota_media_sdr": 5.4,
+   "nota_media_vendedor": 5.6,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-15",
+   "tipo_analise": "ontem",
+   "total_conversas": 184,
+   "total_conversas_dr4": 164,
+   "total_conversas_dr2": 20,
+   "sem_resposta": 13,
+   "criticas": 1,
+   "mensagens_apos_18h": 20,
+   "nota_media_sdr": 6.2,
+   "nota_media_vendedor": 6.8,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-14",
+   "total_conversas": 235,
+   "total_conversas_dr4": 235,
+   "total_conversas_dr2": 0,
+   "sem_resposta": 20,
+   "criticas": 3,
+   "nota_media_sdr": 5.7,
+   "nota_media_vendedor": 6.3,
+   "sdrs": [
+    "Maria Luiza",
+    "Keane",
+    "Kemily"
+   ],
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-13",
+   "total_conversas": 196,
+   "sem_resposta": 2,
+   "criticas": 0,
+   "nota_media": 0.0,
+   "vendedores": [
+    "Luana",
+    "Maria Luiza",
+    "Keane",
+    "Kemily",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira",
+    "Pericles Mateus"
+   ]
+  },
+  {
+   "data": "2026-05-12",
+   "total_conversas": 240,
+   "sem_resposta": 82,
+   "criticas": 1,
+   "nota_media": 4.9,
+   "vendedores": [
+    "Luana",
+    "Maria Luiza",
+    "Keane",
+    "Kemily",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan Oliveira"
+   ]
+  },
+  {
+   "data": "2026-05-11",
+   "total_conversas": 93,
+   "sem_resposta": 3,
+   "criticas": 3,
+   "nota_media": 0.3,
+   "vendedores": [
+    "Luana",
+    "Maria Luiza",
+    "Keane",
+    "Claudio Rodrigues",
+    "Caio Roberto",
+    "Guilherme",
+    "Kemilly"
+   ]
+  },
+  {
+   "data": "2026-05-07",
+   "total_conversas": 92,
+   "sem_resposta": 4,
+   "criticas": 10,
+   "nota_media": 3.8,
+   "vendedores": [
+    "Luana",
+    "Maria Luiza",
+    "Keane",
+    "Caio Roberto",
+    "Guilherme",
+    "Alan"
+   ]
+  },
+  {
+   "data": "2026-05-06",
+   "total_conversas": 153,
+   "sem_resposta": 12,
+   "criticas": 2,
+   "nota_media": 5.1,
+   "vendedores": [
+    "Claudio Rodrigues",
+    "Caio Roberto",
+    "Keane",
+    "Luana",
+    "Guilherme",
+    "Maria Luiza",
+    "Kemily"
+   ]
+  },
+  {
+   "data": "2026-05-05",
+   "total_conversas": 163,
+   "sem_resposta": 46,
+   "criticas": 8,
+   "nota_media": 5.0,
+   "vendedores": [
+    "Caio Roberto",
+    "Kemily",
+    "Guilherme",
+    "Keane",
+    "Luana",
+    "Claudio Rodrigues",
+    "Maria Luiza"
+   ]
+  },
+  {
+   "data": "2026-05-04",
+   "total_conversas": 227,
+   "sem_resposta": 11,
+   "criticas": 5,
+   "nota_media": 5.0,
+   "vendedores": [
+    "Luana",
+    "Caio Roberto",
+    "Claudio Rodrigues",
+    "Keane",
+    "Guilherme",
+    "Maria Luiza Ramos",
+    "Kemily",
+    "Guilherme Comercial"
+   ]
+  },
+  {
+   "data": "2026-05-02",
+   "total_conversas": 71,
+   "sem_resposta": 15,
+   "criticas": 2,
+   "nota_media": 5.4,
+   "vendedores": [
+    "Luana",
+    "Maria Luiza Ramos",
+    "Keane",
+    "Claudio Rodrigues",
+    "Caio Roberto",
+    "Guilherme"
+   ]
+  }
+ ],
+ "ultima_atualizacao": "2026-06-01T17:25"
 }
