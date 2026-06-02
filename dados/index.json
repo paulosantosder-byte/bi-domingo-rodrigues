@@ -2,17 +2,17 @@
  "relatorios": [
   {
    "data": "2026-06-02",
-   "tipo_analise": "amostragem_tarde",
-   "hora_execucao": "15:45",
-   "total_conversas": 54,
-   "total_conversas_dr4": 43,
-   "total_conversas_dr2": 11,
-   "sem_resposta": 4,
-   "criticas": 1,
-   "nota_media_sdr": 6.1,
-   "nota_media_vendedor": 6.7,
-   "cobertura_parcial": "Amostra de 54 conversas lidas a fundo (DR4 43 de ~105; DR2 11 de ~15) - lista ao vivo crescendo + instabilidade do navegador. Cobre todos os atendentes ativos e todos os leads prioritarios.",
-   "alerta_critico": "JURIDICO: Bonani Advogados enviou NOTIFICACAO EXTRAJUDICIAL sobre a MARCA 'Domingo e Rodrigues' (DR2 10:25) e o BOT respondeu automaticamente com video de boas-vindas - encaminhar p/ gestao/juridico. QUENTES: antonio (DR2) enviou conta MAIO/2026 e Ceica (DR2) disse 'pode ser agora' - acao imediata; Jorge Campodonio aguarda valor final (Alan); Deisivan orcamento pronto. ALTO CONSUMO mal aproveitado: Augusto Lima ~2500kWh so com template (Keanny). Leonidas enviou conta 15:22 sem resposta. POSITIVOS: Luana quebrou objecao de concorrente (Douglas) e esta em visita (EDIDEUS); Alan Oliveira melhor em diferenciais (Flanklin D1/D2/D3).",
+   "tipo_analise": "refresh_fim_tarde",
+   "hora_execucao": "19:10",
+   "total_conversas": 88,
+   "total_conversas_dr4": 72,
+   "total_conversas_dr2": 16,
+   "sem_resposta": 8,
+   "criticas": 4,
+   "nota_media_sdr": 5.7,
+   "nota_media_vendedor": 6.3,
+   "cobertura_parcial": "Refresh de fim de tarde: DR4 janela 12:21-19:03 (72 conversas enumeradas) + DR2 09:28-17:55 (16). ~45 conversas lidas a fundo neste refresh (alem das 54 do run 15:45). Manha do DR4 coberta no follow-up matinal. Navegador instavel (screenshots congelaram); leitura via extracao de DOM.",
+   "alerta_critico": "POS-VENDA CRITICO: Henrique Leal (DR2) - CLIENTE CONTRATADO ameaca cancelar contrato e pedir reembolso (3a tentativa) e o BOT respondeu com video de boas-vindas - ESCALAR DIRECAO HOJE. JURIDICO: Bonani Advogados notificacao extrajudicial sobre a MARCA (DR2 10:25), BOT respondeu com video. A AUTOMACAO do DR2 responde mensagens graves com video sem escalar para humano. QUENTES: GEOCIVAN (Pericles) quer 500kW A VISTA sem retorno; antonio (Luana) enviou conta MAIO; dilson (Keanny) enviou conta; EDIDEUS visita feita (Luana). Islane pediu preco 300/500kWh sem resposta. PERDIDO: Alan Pinheiro 'ja contratei'. DESTAQUE: proposta completa do Alan p/ Flanklin (D1/D2/D3). PADROES: onda de template identico do Keanny (~12 leads 17:28-17:53); Gabriel msgs repetitivas (Nelson Luna 6x); Luana 'estou te ligando' em reativacoes (Souza/Souzza/Alisson); Vladimiro (cliente antigo) com pergunta ignorada.",
    "sdrs": [
     "Gabriel",
     "Keanny Brandao"
@@ -432,5 +432,5 @@
    ]
   }
  ],
- "ultima_atualizacao": "2026-06-02T15:45"
+ "ultima_atualizacao": "2026-06-02T19:10"
 }
