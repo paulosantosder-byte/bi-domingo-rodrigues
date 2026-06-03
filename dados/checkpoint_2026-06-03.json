@@ -1,0 +1,39 @@
+{
+  "data": "2026-06-03",
+  "hora_execucao": "19:00",
+  "janela_dr4": "14:36-18:52 (lista ao vivo nao paginou alem; manha nao carregada)",
+  "dr4_lidas": [
+    {"cliente":"Pedrito","pessoa":"Gabriel/Yan Francisco","papel":"SDR->VEND","obs":"cliente 1000kwh ALTO CONSUMO respondeu 18:47, Yan qualificou em 6min","status":"ok","cat":"💎 ALTO CONSUMO"},
+    {"cliente":"Nildo Torres","pessoa":"Gabriel/Yan","papel":"SDR","obs":"cliente adiou (momento delicado), Yan acolheu","status":"ok"},
+    {"cliente":"Paulo Orleans","pessoa":"Yan Francisco","papel":"VEND","obs":"back-and-forth ativo, cliente engajado","status":"ok"},
+    {"cliente":"Natalia","pessoa":"Keanny","papel":"SDR","obs":"template follow-up Petrolina, sem resposta cliente","status":"ok"},
+    {"cliente":"Deisivan Eletricista","pessoa":"Keanny","papel":"SDR","obs":"cliente esfriou 'deixa pra frente', Keanny reengajou","status":"ok"},
+    {"cliente":"Victor Gabriel","pessoa":"Keanny","papel":"SDR","obs":"follow-up apos ligacao sem sucesso","status":"ok"},
+    {"cliente":"Joao Vicente","pessoa":"Keanny","papel":"SDR","obs":"oferta visita tecnica","status":"ok"},
+    {"cliente":"Idalina Araquam","pessoa":"Keanny","papel":"SDR","obs":"oferta visita sexta","status":"ok"},
+    {"cliente":"Elizangela Feitosa","pessoa":"Keanny","papel":"SDR","obs":"AGENDOU VISITA 05/06 10h, usou 17anos+9mil projetos, quebrou objecao","status":"ok","cat":"🔥 QUENTE","nota":9},
+    {"cliente":"Islane Andrade","pessoa":"Keanny","papel":"SDR","obs":"AGENDOU VISITA 08/06 10h","status":"ok","cat":"🔥 QUENTE","nota":9},
+    {"cliente":"Augusto Lima","pessoa":"Keanny","papel":"SDR","obs":"ALTO CONSUMO ~2500kwh historico, so template generico","status":"ok","cat":"💎 ALTO CONSUMO"},
+    {"cliente":"HARAS BARUCK SINRI","pessoa":"Keanny","papel":"SDR","obs":"rural/B2B, Keanny perguntou cidade/financiamento, sem resposta","status":"ok","cat":"💎 ALTO CONSUMO"},
+    {"cliente":"Ma Refrigeracao (Matheus)","pessoa":"Keanny","papel":"SDR","obs":"comercio/B2B, so template 'tudo bem'","status":"ok","cat":"💎 ALTO CONSUMO"},
+    {"cliente":"Flavio","pessoa":"Keanny","papel":"SDR","obs":"cliente comparando PRECO, Keanny quebrou objecao investimento","status":"ok","cat":"🚨 RECUPERACAO"},
+    {"cliente":"Walter Queiroz","pessoa":"Laercio","papel":"VEND","obs":"usou C1 troca conta por parcela","status":"ok"},
+    {"cliente":"Maikon","pessoa":"Laercio","papel":"VEND","obs":"abertura com typos 'boa taerde'","status":"ok"},
+    {"cliente":"Ze","pessoa":"Laercio","papel":"VEND","obs":"cliente mandou audios, Laercio respondeu fragmentado/typos","status":"ok"},
+    {"cliente":"Claudemir","pessoa":"Laercio","papel":"VEND","obs":"abertura cheia de erros 'sou Laecio','chanses'","status":"ok"},
+    {"cliente":"Matheus","pessoa":"Alan Oliveira","papel":"VEND","obs":"reengajamento 'ainda faz sentido?'","status":"ok"},
+    {"cliente":"dilson","pessoa":"Keanny","papel":"SDR","obs":"template financiamento","status":"ok"},
+    {"cliente":"Marcio Mattos","pessoa":"Gabriel","papel":"SDR","obs":"template assina 'Meu nome e Yan' (inconsistencia)","status":"ok"},
+    {"cliente":"Jonas","pessoa":"Gabriel","papel":"SDR","obs":"tentou ligar, template","status":"ok"},
+    {"cliente":"karyne souza","pessoa":"Gabriel","papel":"SDR","obs":"'Bom dia' enviado 16:57 (saudacao errada)","status":"ok"},
+    {"cliente":"saulo","pessoa":"Gabriel","papel":"SDR","obs":"template reengajamento generico","status":"ok"}
+  ],
+  "sistema_ignorar": ["557481211414 (canal de distribuicao de leads)","552120181195 (canal automatico nao-interativo)","Paulo Junior -Ignorar"],
+  "notas_preliminares": {
+    "Keanny": "SDR forte - 2 agendamentos, usa diferenciais e quebra objecao",
+    "Gabriel": "SDR fraco - templates genericos, saudacao errada, assina Yan, sem qualificacao",
+    "Laercio": "Vendedor fraco - typos, fragmentado, generico",
+    "Yan Francisco": "Vendedor responsivo nos inbounds",
+    "Alan Oliveira": "Vendedor - reengajamentos"
+  }
+}
