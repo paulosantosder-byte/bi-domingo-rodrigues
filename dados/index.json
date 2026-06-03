@@ -1,6 +1,27 @@
 {
  "relatorios": [
   {
+   "data": "2026-06-03",
+   "tipo_analise": "analise_tarde_amostragem",
+   "hora_execucao": "14:50",
+   "total_conversas": 47,
+   "total_conversas_dr4": 40,
+   "total_conversas_dr2": 7,
+   "sem_resposta": 5,
+   "criticas": 3,
+   "nota_media_sdr": 5.6,
+   "nota_media_vendedor": 5.5,
+   "cobertura_parcial": "Analise de tarde (lista viva). DR4 ~11:29-14:43 (~40 conversas, ordenada por ultima atividade) + DR2 08:35-12:31 (7, lista ate 'ontem'). Lidas a fundo TODAS as conversas com engajamento de cliente; demais sao prospeccao fria/reativacao por template (BOT/SDR/Alan) sem resposta. Manha do DR4 antes de ~11:29 nao recarregou no scroll ao vivo (websocket). Leitura via extracao de DOM. Dia majoritariamente SDR/prospeccao - vendedores quase sem atividade no chat (so onda de reativacao do Alan Oliveira); Luana/Pericles sem chats.",
+   "alerta_critico": "DR2 sem cobertura humana de inbound na manha/inicio da tarde: 3 inbounds sem resposta (Ytalo M. POS-VENDA cliente existente nao consegue ver geracao no app SolarZ; 558781771924 'Boa tarde' 12:31; Eugenio victor 'Bom dia' 08:46) + Carlos pediu orcamento (R$300-350) 11:15 sem retorno. DESTAQUE: Keanny AGENDOU visita 08/06 (Islane Andrade) e qualificou bem Elizangela (apartamento 600kWh). QUENTES/ALTO CONSUMO no DR4 com resposta lenta (~1h45): GS quer 1000kWh, Leandro 'Top Frio' (refrigeracao/B2B); Flavio comparando concorrentes/PDF (risco preco). Alan Oliveira: onda de ~10 reativacoes com texto identico sem diferenciais (D1-D4) - nenhuma resposta. CARRYOVERS nao resolvidos de ontem: Henrique Leal (pos-venda, ameaca cancelar) e Bonani Advogados (juridico/marca) - confirmar tratativa com direcao; GEOCIVAN 500kW a vista (Pericles) sem retorno.",
+   "sdrs": [
+    "Keanny Brandao",
+    "Gabriel"
+   ],
+   "vendedores": [
+    "Alan Oliveira"
+   ]
+  },
+  {
    "data": "2026-06-02",
    "tipo_analise": "refresh_fim_tarde",
    "hora_execucao": "19:10",
@@ -432,5 +453,5 @@
    ]
   }
  ],
- "ultima_atualizacao": "2026-06-02T19:10"
+ "ultima_atualizacao": "2026-06-03T14:50"
 }
