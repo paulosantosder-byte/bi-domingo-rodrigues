@@ -1,143 +1,92 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-06-03 (quarta-feira)
-Referencia: conversas de 2026-06-02 (terca-feira)
-Gerado: 09:43
+FOLLOW-UPS PRIORITARIOS - 2026-06-05 (sexta-feira)
+Referencia: conversas de 2026-06-04 (quinta-feira)
 ====================================================
 
-🚨🚨 ALERTAS CRITICOS - RESOLVER ANTES DE TUDO (DR2):
+ATENCAO: contas com baixo volume ontem (DR4: 7 conversas "ontem" / DR2: 5).
+Maioria do movimento ja foi atendida hoje cedo. Foco nos 8 follow-ups abaixo.
+
 ----------------------------------------------------
-1. HENRIQUE LEAL - POS-VENDA / RISCO DE CANCELAMENTO - [DR2]
-   Ultima msg do cliente: ontem 13:49
-   Situacao: CLIENTE JA CONTRATADO (comprou equipamentos, aguarda instalacao).
-   3a tentativa de contato. Disse que se nao tiver retorno vai ENCERRAR O
-   CONTRATO e pedir o DINHEIRO DE VOLTA. O BOT respondeu com video de
-   boas-vindas (tratou como lead novo).
-   ACAO: Gestor/pos-venda LIGAR HOJE no 1o horario. Pedir desculpas + dar
-   status real (equipamentos + previsao de instalacao). Tirar do bot.
-
-2. BONANI ADVOGADOS - JURIDICO / MARCA - [DR2]
-   Ultima msg: ontem 10:25
-   Situacao: Escritorio enviou PDF "Comunicado - MARCA DOMINGO E RODRIGUES"
-   = NOTIFICACAO EXTRAJUDICIAL sobre a marca. O BOT respondeu com video de
-   vendas. NAO e lead.
-   ACAO: Encaminhar HOJE para DIRECAO/juridico. Baixar o PDF, analisar e
-   responder formalmente no prazo. Tirar do bot.
-
 🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-1. GEOCIVAN LOPES - Vendedor: Pericles Mateus - [DR4]
-   Ultima msg: ontem 16:00 | Sistema: 500kW (porte industrial)
-   Situacao: "Querendo 500kw mais em conta possivel pra pagar A VISTA".
-   Maior oportunidade do dia, ficou sem resposta.
-   ACAO: Responder no 1o horario. Condicao especial p/ pagamento a vista +
-   agendar visita tecnica para dimensionar os 500kW.
+1. Henrique Leal - Vendedor: Yan Francisco / POS-VENDA - DR2  [** CRITICO **]
+   Ultima msg: 04/06 11:34 (imagem) | Cliente JA CONTRATADO
+   Situacao: Cliente contratado com projeto em andamento. 3a tentativa (02/06)
+   cobrando status e AMEACANDO ENCERRAR O CONTRATO + pedir reembolso. O BOT
+   respondeu com video de boas-vindas (foi tratado como lead novo de trafego).
+   Keanny prometeu escalar 03/06; ontem 11:34 mandou nova imagem e segue SEM
+   RESPOSTA HUMANA.
+   ACAO: ESCALAR PARA GESTAO AGORA. Ligar (+55 71 99042456) no 1o horario,
+   dar status real do projeto (equipamentos/homologacao/instalacao), pedir
+   desculpas. Pausar automacao desse contato.
 
-2. LAERCIO RODRIGUES MACHADO - Vendedor: Pericles Mateus - [DR4]
-   Ultima msg: ontem 17:33 | Rural/agro - Manicoba, Juazeiro/BA (expansao)
-   Situacao: Em fechamento. Pericles perguntou "o que falta para fechar a
-   expansao?" e o cliente respondeu so "Preco" - sem resposta.
-   ACAO: Enviar o VALOR da expansao no 1o horario. Esta a um passo de fechar.
+2. Lucas Rodrigues - Vendedor: Caio Roberto - DR2
+   Ultima msg: 04/06 16:26 ("Boa tarde") | Conta de luz: R$ 200
+   Situacao: Proposta de R$ 11.183,42 ja enviada (decidindo a vista x
+   financiamento). Sumiu e ontem 16:26 REABRIU sozinho - sem resposta.
+   ACAO: Responder cedo, retomar a proposta e perguntar a vista ou
+   financiamento; propor fechar/agendar visita esta semana.
 
-3. RENATO AMORIM - Vendedor: (nenhum) - [DR2]
-   Ultima msg: ontem 15:14 | Lead novo
-   Situacao: Mandou "Boa tarde" e NAO teve nenhuma resposta.
-   ACAO: Responder hoje cedo + qualificar (consumo, cidade, tipo de imovel).
+3. Anderson Freitas - Vendedor: sem atribuicao (inbound novo) - DR2
+   Ultima msg: 04/06 10:46 ("Bom dia") | Conta de luz: nao informado
+   Situacao: Inbound novo IGNORADO por completo (nem o bot respondeu). Nao lido.
+   ACAO: Responder hoje cedo, se apresentar e qualificar (pedir valor da conta
+   e cidade).
 
+----------------------------------------------------
 🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ----------------------------------------------------
-1. LEONIDAS - Vendedor: Pericles Mateus - [DR4]
-   Ultima msg: ontem 18:13 ("Blz")
-   Situacao: Cliente ENVIOU A CONTA DE LUZ 15:22 (sinal de compra), Pericles
-   respondeu por audio, cliente confirmou "Blz". Falta enviar o orcamento.
-   ACAO: Bom dia + enviar simulacao com base na conta recebida + propor visita.
+1. Nivaldo Almeida - Vendedor: Keanny Brandao - DR4
+   Ultima msg: 04/06 19:41 | Orcamento a preparar
+   Situacao: Apos longa cadencia, reengajou: orcamento sera no nome da esposa
+   e pediu para ligarmos para ela -> JANUZA, tel 87988422901 ("liga pra ela").
+   ACAO: QUENTE - ligar para Januza (87988422901) hoje cedo e avancar o
+   orcamento no nome dela; levar proposta base pronta.
 
+----------------------------------------------------
 💎 ALTO CONSUMO - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-1. MA REFRIGERACAO (comercio) - Vendedor: Keanny Brandao - [DR4]
-   Situacao: Visita feita 01/06, orcamento pronto ("ficou muito bom"). Keanny
-   tentou reagendar entrega ontem 09:14, sem retorno.
-   ACAO: Reconfirmar e agendar entrega/fechamento hoje. Ticket comercial.
+(nenhum cliente de alto consumo / comercio / industria / rural marcado ontem)
 
-2. AUGUSTO LIMA (~2500 kWh/mes) - Vendedor: Keanny Brandao - [DR4]
-   Situacao: Alto consumo. So abordagem por template ("qual horario p/ ligar?"),
-   cliente nao responde.
-   ACAO: LIGAR (sair do template). Atendimento humano dedicado.
-
-3. HARAS BARUCK SINRI (rural/haras) - Vendedor: Keanny Brandao - [DR4]
-   Situacao: Ja perguntou sobre "geracao" por audio (29/05) mas foi atendido
-   com template generico; ontem so template, sem resposta.
-   ACAO: Mensagem personalizada retomando o interesse dele + pedir a conta.
-
+----------------------------------------------------
 🔥 LEADS QUENTES - FECHAR HOJE:
 ----------------------------------------------------
-1. JORGE CAMPODONIO - Vendedor: Alan Oliveira - [DR4]
-   Situacao: Medicao APROVADA. Alan prometeu o VALOR FINAL "no 1o horario" e
-   ainda nao enviou (atrasado 1 dia). Cliente quentissimo esperando o numero.
-   ACAO: ENVIAR O VALOR FINAL HOJE + cobrar a conta por e-mail + partir p/ contrato.
+1. Raquel - Vendedor: Yan Francisco - DR4  [VISITA HOJE 10H]
+   Petrolina, ~1000 kWh de geracao. Visita marcada para HOJE 05/06 as 10h.
+   Yan prometeu "retornar no primeiro horario" p/ confirmar localizacao.
+   ACAO: URGENTISSIMO - confirmar AGORA e pegar a localizacao (o horario ja
+   esta chegando).
 
-2. EDIDEUS GERALDO DE SOUZA - Vendedor: Luana - [DR2]
-   Situacao: VISITA PRESENCIAL feita ontem. Cliente pediu SIMULACAO DE
-   FINANCIAMENTO; Luana prometeu fazer.
-   ACAO: Entregar a simulacao de financiamento HOJE + propor data de fechamento.
+2. Felipe - Vendedor: Yan Francisco - DR4  [VISITA SABADO 13H]
+   Negociou pagamento (preocupado com aprovacao no financiamento). Visita
+   confirmada para SABADO 06/06 as 13h.
+   ACAO: Garantir follow-up - preparar proposta e adiantar analise de credito
+   p/ nao travar no sabado.
 
-3. ANTONIO - Vendedor: Luana - [DR2]
-   Situacao: Enviou conta de maio. Disse ontem 16:14 "Agora so amanha"
-   (= disponivel HOJE). Ele mesmo marcou o contato para hoje.
-   ACAO: LIGAR HOJE no horario combinado, ja com a simulacao da conta de maio.
+3. Enfermeira Rosilda Leite - Vendedor: Yan Francisco - DR4
+   Petrolina, casa, conta R$ 450, quer geracao de 1000 kWh (vai instalar
+   aparelhos). Yan ofereceu visita 10:14 e a cliente esfriou (sem resposta
+   desde 10:05).
+   ACAO: Reengajar hoje - empurrar para a visita ou ja enviar orcamento de
+   1000 kWh.
 
-4. DEISIVAN ELETRICISTA - Vendedor: Keanny Brandao - [DR4]
-   Situacao: Orcamento PRONTO com condicoes especiais. Ofereceu entrega ontem
-   15:37, sem resposta.
-   ACAO: Reconfirmar e agendar a entrega presencial hoje (2 horarios).
-
-5. SAMPAIO - Vendedor: Luana - [DR4]
-   Situacao: Orcamento enviado. Falta o cliente confirmar o dia da REUNIAO
-   VIA MEET.
-   ACAO: Oferecer 2 opcoes concretas de dia/horario para o Meet.
-
-6. FLANKLIN - Vendedor: Alan Oliveira - [DR4]
-   Situacao: PROPOSTA COMPLETA enviada ontem 14:39 (sistema ~500 kWh/mes,
-   cartao ate 18x, diferenciais). Aguardando resposta.
-   ACAO: Follow-up p/ confirmar recebimento, tirar duvidas e conduzir ao fechamento.
-
-7. DOUGLAS - Vendedor: Luana - [DR4]
-   Situacao: Fazendo cotacao com concorrentes. Luana quebrou a objecao bem,
-   cliente reagiu positivo ("conte conosco").
-   ACAO: Acompanhar HOJE para fechar antes do concorrente.
-
-8. FLAVIO - Vendedor: Keanny Brandao - [DR4]
-   Situacao: Orcamento pronto. Cliente disse "vou tentar ir hoje ai"; falta
-   horario definido.
-   ACAO: Confirmar comparecimento e fixar um horario.
-
-9. VLADIMIRO LOPES - Vendedor: Alan Oliveira - [DR4]
-   Situacao: Alan reativou "vamos acelerar seu sistema solar", tentou ligar
-   sem sucesso. Aguardando retorno.
-   ACAO: Nova tentativa de contato hoje (ligacao + mensagem).
-
-10. FLAVIO LEANDRO DOS SANTOS AMORIM - Vendedor: Luana - [DR2]
-    Situacao: Estudo/orcamento solar ja feito. Luana reativou "vamos dar
-    continuidade ao orcamento". Aguardando.
-    ACAO: Retomar hoje com gancho de urgencia (reajuste de kits) + propor visita/Meet.
+4. joselita - Vendedor: Yan Francisco - DR4
+   Quer economizar; perguntou se vende ATACADO ou so varejo (possivel
+   revenda/volume). Vendedor respondeu generico e nao qualificou.
+   ACAO: Reengajar - responder atacado/varejo objetivamente e capturar
+   consumo/objetivo (uso proprio x revenda).
 
 ====================================================
 RESUMO:
-- ALERTAS CRITICOS (pos-venda/juridico): 2
-- Sem resposta antes 18h: 3
-- Sem resposta apos 18h: 1
-- Alto consumo: 3
-- Leads quentes: 10
-TOTAL DE FOLLOW-UPS: 17 (+2 alertas criticos)
+- Sem resposta antes 18h: 3  (Henrique Leal CRITICO, Lucas Rodrigues, Anderson Freitas)
+- Sem resposta apos 18h: 1   (Nivaldo Almeida)
+- Alto consumo: 0
+- Leads quentes: 4           (Raquel HOJE 10h, Felipe, Rosilda, joselita)
+TOTAL DE FOLLOW-UPS: 8
 ====================================================
 
-NOTA DE COBERTURA:
-O DR4 teve ~141 conversas marcadas "ontem" - volume muito alto, em sua
-maioria prospeccao fria por template de SDR/bot SEM resposta do cliente.
-Foram lidas a fundo as conversas com sinal de compra real (cliente enviou
-conta, pediu preco, orcamento ou visita) e os leads quentes conhecidos.
-O DR2 (~9 conversas uteis) foi lido integralmente.
-
-PADRAO RECORRENTE A CORRIGIR: o BOT esta respondendo automaticamente
-mensagens GRAVES (cliente contratado ameacando cancelar; notificacao
-juridica) com VIDEO DE BOAS-VINDAS, sem escalar para humano.
+TOP 3 DO DIA:
+1. Henrique Leal (DR2) - cliente contratado ameacando cancelar - ESCALAR JA
+2. Raquel (DR4) - visita HOJE 10h - confirmar AGORA
+3. Nivaldo Almeida (DR4) - ligar para a esposa Januza 87988422901 (decisora)
 ====================================================
