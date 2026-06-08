@@ -1,6 +1,33 @@
 {
  "relatorios": [
   {
+   "data": "2026-06-08",
+   "tipo_analise": "analise_completa_fim_de_tarde",
+   "hora_execucao": "19:25",
+   "total_conversas": 136,
+   "total_conversas_dr4": 128,
+   "total_conversas_dr2": 8,
+   "sem_resposta": 8,
+   "criticas": 6,
+   "nota_media_sdr": 6.2,
+   "nota_media_vendedor": 6.0,
+   "cobertura_parcial": "Censo 100% da lista ao vivo via extracao de DOM/estado React: 128 conversas DR4 (08:57-19:12) + 8 DR2 (10:26-17:21) com mensagem HOJE, cada thread aberta e lida. 29 conversas DR4 bidirecionais (cliente respondeu) + 8 DR2 lidas a fundo; ~99 conversas DR4 sao disparo/follow-up de template sem resposta do cliente hoje (Keanny 40, Yan 32, Gabriel 13, Pericles 6, Alan 4, Laercio 2). Segunda-feira de alto volume de prospeccao no DR4. Papeis: SDR=Keanny Brandao, Keane, Gabriel, Kemily Carvalho; Vendedor=Yan Francisco, Pericles Mateus, Alan Oliveira, Laercio, Luana.",
+   "alerta_critico": "PADRAO RECORRENTE: BOT do DR2 respondeu reclamacao de POS-VENDA com VIDEO de vendas antes de escalar (Islayne Carvalho: desconto solar parou apos trocar titularidade da conta). DR2 SEM cobertura humana de inbound: 3 inbounds sem resposta (Castro orcamento novo 17:21; Pnzsun pediu suporte tecnico; Bianca Souza advogada pediu telefone). POS-VENDA: Cicero relata conta nao reduziu apos instalacao (precisa diagnostico). LEAD PERDIDO: Ademilton (Gabriel) fechou com concorrente por falta de retorno. SDR-X1: Keanny enviou orcamento R$25.508 a Carol antes de agendar e cliente esfriou. QUENTES: Pericles avancou financiamento de Alan Chalega (visita feita, 2o CPF) e danilo (CNH/email); Yan confirmou visitas 10h de Franciel e Pablo na empresa e qualificou Francisco Aoun 1000kWh casa+apto (alto consumo); Keanny confirmou visita Islane 11h; Keane remarcou Dario amanha 10h. Nenhum vendedor usou diferenciais D1-D4 (laboratorio 24h/17 anos/6 mil projetos).",
+   "sdrs": [
+    "Keanny Brandão",
+    "Keane",
+    "Gabriel",
+    "Kemily Carvalho"
+   ],
+   "vendedores": [
+    "Yan Francisco",
+    "Pericles Mateus",
+    "Alan Oliveira",
+    "Laercio",
+    "Luana"
+   ]
+  },
+  {
    "data": "2026-06-03",
    "tipo_analise": "refresh_fim_tarde_amostragem",
    "hora_execucao": "19:05",
@@ -455,5 +482,5 @@
    ]
   }
  ],
- "ultima_atualizacao": "2026-06-03T19:05"
+ "ultima_atualizacao": "2026-06-08T19:25"
 }
