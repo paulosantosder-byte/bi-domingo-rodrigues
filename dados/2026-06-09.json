@@ -1,0 +1,414 @@
+{
+  "data": "2026-06-09",
+  "hora_execucao": "08:45",
+  "tipo_analise": "snapshot_matinal",
+  "observacao_cobertura": "Snapshot matinal (~08:45). Volume baixo por ser inicio da manha. Censo 100% da lista ao vivo com mensagem HOJE: DR4 = 5 conversas reais (06:30-08:37) + 1 feed de notificacao de sistema (558781463639, 'Chegou um lead pra voce', EXCLUIDO) + Paulo Junior -Ignorar (EXCLUIDO). DR2 = 1 conversa (Krystian Felipe 07:56). Cada thread aberta e lida a fundo via extracao de DOM. Papeis: SDR = Keane (atendimento automatico de inbound); Vendedor = Yan Francisco (reativacao de leads frios) e Pericles Mateus (follow-up de proposta).",
+
+  "metricas": {
+    "total_conversas": 6,
+    "total_conversas_dr4": 5,
+    "total_conversas_dr2": 1,
+    "total_ligacoes": 4,
+    "sem_resposta": 0,
+    "criticas": 1,
+    "sem_vendedor": 1,
+    "nota_media_sdr": 6.0,
+    "nota_media_vendedor": 5.9,
+    "aderencia_geral": 58
+  },
+
+  "sdrs": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 6.0,
+        "aderencia_script": 50,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 1,
+          "SDR-2_qualificacao": 1,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Qualificacao (SDR-2)",
+            "descricao": "Abertura automatica ja pede o valor da conta de luz logo no primeiro contato",
+            "exemplos": [
+              "Cliente manoelrodriguez198: bot respondeu o inbound em segundos (06:30) com 'Me chamo Keane' e ja pediu 'o valor medio da sua conta de energia atualmente'"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Abertura (SDR-1)",
+            "descricao": "Mensagem automatica nao cita o beneficio especifico (reducao de ate 95%) e nao usa o nome do cliente",
+            "impacto": "Abertura generica, perde gancho de valor logo de cara",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente manoelrodriguez198: 'irei te ajudar a gerar sua propria energia' sem mencionar a reducao de ate 95% nem o nome"
+            ],
+            "acao_corretiva": "Incluir o gatilho de beneficio (reducao ate 95%) e puxar o nome do lead na abertura automatica"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "SDR-X4",
+            "descricao": "Abertura sem nome do cliente (inbound automatico)",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    }
+  ],
+
+  "vendedores": [
+    {
+      "nome": "Pericles Mateus",
+      "cor": "#8b5cf6",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 1,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 1,
+      "qualidade": {
+        "nota_media": 7.5,
+        "aderencia_script": 75,
+        "argumentos_usados": {
+          "A1": 0, "A2": 1, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 1, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 1,
+          "E1": 1, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 1
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos instalados",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 1
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Diferenciacao + Follow-up",
+            "descricao": "Proposta completa com diferenciais reais e follow-up personalizado no dia seguinte",
+            "exemplos": [
+              "Cliente Fernando Davi: proposta detalhada R$14.084,99 (1.000kW, 12 placas DAH 620W + inversor DEYE 5kW) com laboratorio proprio (D1), frete incluso, instalacao, homologacao e monitoramento 60 meses",
+              "Cliente Fernando Davi: follow-up hoje 08:37 'Bom diaa Fernando tudo bom?' usando o nome (A2)"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Quebra de objecao / fechamento",
+            "descricao": "Apos enviar a proposta nao reforcou aversao a perda (C3) nem condicao de financiamento (C1) para acelerar a decisao",
+            "impacto": "Proposta de R$14k parada aguardando decisao do cliente sem gatilho de urgencia",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Fernando Davi: follow-up apenas 'tudo bom?' sem ancorar valor economizado ou condicao de pagamento"
+            ],
+            "acao_corretiva": "No follow-up de proposta, anexar C1 (troca conta pela parcela) e C3 (quanto ja pagou de mais a concessionaria)"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Yan Francisco",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 3,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 2,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 3,
+      "qualidade": {
+        "nota_media": 5.3,
+        "aderencia_script": 40,
+        "argumentos_usados": {
+          "A1": 0, "A2": 0, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 1,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratorio proprio + troca 24h",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 3
+          },
+          {
+            "id": "A2",
+            "nome": "Personalizacao (nome do cliente)",
+            "categoria": "Primeiro contato",
+            "importancia": "Alta",
+            "vezes_perdidas": 2
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Cadencia de reativacao",
+            "descricao": "Mantem cadencia diaria de reativacao de leads frios com abordagem consultiva (sem despejar preco)",
+            "exemplos": [
+              "Cliente Claudemy: retomou o lead, conduziu para ligacao no telefone pessoal e registrou nota de acompanhamento (08:26)"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Personalizacao e diferenciacao",
+            "descricao": "Mensagens de reativacao identicas, sem nome do cliente e sem nenhum diferencial competitivo",
+            "impacto": "Reativacao generica tende a ser ignorada (2 de 3 sem resposta hoje)",
+            "conversas_afetadas": 2,
+            "exemplos_clientes": [
+              "Cliente Rivailbasilio: 'Entrei em contato porque recebemos o seu interesse e gostaria de entender qual e sua situacao' sem nome e sem gancho de valor",
+              "Cliente Rewry: mesma mensagem repetida em 08/06 e 09/06 sem variar o gatilho"
+            ],
+            "acao_corretiva": "Personalizar com o nome e variar gatilho (D1 laboratorio, reducao 95%) a cada toque de reativacao"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem generica copy-paste (sem nome, sem contexto)",
+            "ocorrencias": 2
+          },
+          {
+            "codigo": "X6",
+            "descricao": "Nao mencionou nenhum diferencial competitivo (D1-D4)",
+            "ocorrencias": 3
+          }
+        ]
+      }
+    }
+  ],
+
+  "insights": {
+    "destaques_positivos": [
+      {
+        "pessoa": "Pericles Mateus",
+        "papel": "VENDEDOR",
+        "cliente": "Fernando Davi",
+        "acao": "Enviou proposta completa com diferenciais (laboratorio proprio, monitoramento 60m, IPTU verde) e fez follow-up personalizado no dia seguinte usando o nome",
+        "resultado": "Proposta de R$14.084,99 ativa, lead aquecido aguardando decisao"
+      }
+    ],
+    "alertas": [
+      {
+        "pessoa": "Sem atribuicao",
+        "papel": "SDR",
+        "cliente": "Krystian Felipe",
+        "problema": "Inbound no DR2 as 07:55-07:56 sem nenhuma resposta humana (na verdade pergunta de emprego: 'Vcs estao contratando montador?')",
+        "impacto": "Padrao recorrente: DR2 sem cobertura humana de inbound. Mesmo nao sendo venda, fica sem resposta",
+        "acao_corretiva": "Encaminhar para RH e padronizar resposta automatica para perguntas de vaga no DR2"
+      },
+      {
+        "pessoa": "Yan Francisco",
+        "papel": "VENDEDOR",
+        "cliente": "Rivailbasilio / Rewry",
+        "problema": "Reativacoes genericas, sem nome e sem diferencial; mesma mensagem repetida em dias seguidos",
+        "impacto": "2 de 3 reativacoes sem resposta hoje; baixa eficacia da cadencia",
+        "acao_corretiva": "Personalizar e variar o gatilho mental a cada toque (E5)"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "Follow-up de proposta",
+        "cliente": "Fernando Davi",
+        "descricao": "Proposta de R$14k enviada e follow-up feito, mas sem gatilho de fechamento",
+        "acao_sugerida": "Ligar hoje reforcando C1 (troca conta pela parcela) e C3 (aversao a perda)"
+      }
+    ]
+  },
+
+  "ranking_sdrs": [
+    {
+      "posicao": 1,
+      "nome": "Keane",
+      "nota_media": 6.0,
+      "aderencia": 50,
+      "visitas_agendadas": 0,
+      "badge": "🏆 Ouro"
+    }
+  ],
+
+  "ranking_vendedores": [
+    {
+      "posicao": 1,
+      "nome": "Pericles Mateus",
+      "nota_media": 7.5,
+      "aderencia": 75,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Yan Francisco",
+      "nota_media": 5.3,
+      "aderencia": 40,
+      "badge": "🥈 Prata"
+    }
+  ],
+
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Fernando Davi",
+      "pessoa": "Pericles Mateus",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Proposta de R$14.084,99 (1.000kW) enviada ontem, follow-up feito hoje 08:37, aguardando decisao",
+      "recomendacao": "Ligar hoje para fechar, ancorando economia e condicao de pagamento",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["C1 - troca conta pela parcela", "C3 - aversao a perda", "D1 - laboratorio proprio"]
+    },
+    {
+      "cliente": "Claudemy",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Lead em negociacao ativa, conduzido para ligacao no telefone pessoal hoje 08:26",
+      "recomendacao": "Garantir retorno da ligacao e registrar o combinado no chat para nao perder rastreabilidade",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["B4 - vender a visita", "D1 - laboratorio proprio"]
+    },
+    {
+      "cliente": "Krystian Felipe",
+      "pessoa": "Sem atribuicao",
+      "papel": "SDR",
+      "conta": "DR2",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Inbound no DR2 sem resposta (pergunta sobre vaga de montador) - DR2 sem cobertura humana",
+      "recomendacao": "Responder encaminhando para RH; nao deixar inbound do DR2 sem retorno",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": []
+    }
+  ],
+
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Fernando Davi",
+      "pessoa": "Pericles Mateus",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:37",
+      "ultima_msg": "08:37",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 7.5,
+      "argumentos_usados": ["A2", "D1", "D6", "E1"],
+      "argumentos_perdidos": ["C1", "C3", "D2", "D3"],
+      "erros": [],
+      "observacao": "Cliente Fernando Davi: proposta R$14.084,99 (1.000kW) enviada ontem com diferenciais; follow-up personalizado hoje 08:37 sem gatilho de fechamento. QUENTE."
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "Rivailbasilio",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:34",
+      "ultima_msg": "08:34",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": ["A2", "D1"],
+      "erros": ["X4", "X6"],
+      "observacao": "Cliente Rivailbasilio: reativacao generica 08:33-08:34 (lead antigo marcado inviavel por distancia em maio), sem nome e sem diferencial, sem resposta do cliente."
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Rewry",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:29",
+      "ultima_msg": "08:29",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [],
+      "argumentos_perdidos": ["A2", "D1"],
+      "erros": ["X4", "X6"],
+      "observacao": "Cliente Rewry: mesma mensagem de reativacao repetida em 08/06 e 09/06 (08:29), sem variar gatilho, sem resposta."
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "Claudemy",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:26",
+      "ultima_msg": "08:26",
+      "total_msgs": 1,
+      "status": "ok",
+      "nota": 6,
+      "argumentos_usados": ["C5"],
+      "argumentos_perdidos": ["D1"],
+      "erros": ["X6"],
+      "observacao": "Cliente Claudemy: lead ativo (engajou ontem 08/06), hoje 08:26 nota interna 'Conversando com Senhor Claudemy por telefone pessoal'. Negociacao migrou para fora do chat."
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "manoelrodriguez198",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "06:30",
+      "ultima_msg": "06:30",
+      "total_msgs": 4,
+      "status": "ok",
+      "nota": 6,
+      "argumentos_usados": ["SDR-1", "SDR-2"],
+      "argumentos_perdidos": ["SDR-1d", "SDR-4"],
+      "erros": ["SDR-X4"],
+      "observacao": "Cliente manoelrodriguez198: inbound novo 06:30 ('Quero economizar com energia solar'), abertura automatica de Keane com pedido do valor da conta; sem citar reducao 95% nem nome; cliente ainda nao respondeu."
+    },
+    {
+      "id": 6,
+      "conta": "DR2",
+      "cliente": "Krystian Felipe",
+      "pessoa": "Sem atribuicao",
+      "papel": "SDR",
+      "hora_lista": "07:56",
+      "ultima_msg": "07:56",
+      "total_msgs": 2,
+      "status": "critico",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [],
+      "erros": [],
+      "observacao": "Cliente Krystian Felipe: NAO e lead de venda - pergunta sobre vaga de emprego ('Vcs estao contratando montador?') 07:55-07:56. Sem resposta humana. Encaminhar para RH."
+    }
+  ]
+}

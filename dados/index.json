@@ -1,6 +1,27 @@
 {
  "relatorios": [
   {
+   "data": "2026-06-09",
+   "tipo_analise": "snapshot_matinal",
+   "hora_execucao": "08:45",
+   "total_conversas": 6,
+   "total_conversas_dr4": 5,
+   "total_conversas_dr2": 1,
+   "sem_resposta": 0,
+   "criticas": 1,
+   "nota_media_sdr": 6.0,
+   "nota_media_vendedor": 5.9,
+   "cobertura_parcial": "Snapshot matinal (~08:45, volume baixo por ser inicio da manha). Censo 100% da lista ao vivo com mensagem HOJE via extracao de DOM: DR4 = 5 conversas reais (06:30-08:37) + feed de notificacao de sistema 558781463639 e 'Paulo Junior -Ignorar' EXCLUIDOS; DR2 = 1 conversa (Krystian Felipe 07:56). Papeis: SDR = Keane (atendimento automatico de inbound); Vendedor = Yan Francisco (reativacao de leads frios, 3) e Pericles Mateus (follow-up de proposta, 1).",
+   "alerta_critico": "DESTAQUE: Pericles Mateus com proposta completa de R$14.084,99 (1.000kW) para Fernando Davi usando diferenciais (laboratorio proprio, monitoramento 60m, IPTU verde) + follow-up personalizado hoje 08:37 - QUENTE aguardando fechamento (faltou C1/C3 no follow-up). DR2 SEM cobertura humana de inbound (padrao recorrente): Krystian Felipe sem resposta 07:56 (pergunta de vaga de montador, encaminhar RH). Yan Francisco com reativacoes genericas sem nome e sem diferencial, mesma mensagem repetida em dias seguidos (X4/X6), 2 de 3 sem resposta. Keane (bot inbound) pede valor da conta mas nao cita reducao 95% nem nome. Nota SDR 6.0 (Keane) / Vendedor 5.9 (Pericles 7.5 lider, Yan 5.3).",
+   "sdrs": [
+    "Keane"
+   ],
+   "vendedores": [
+    "Pericles Mateus",
+    "Yan Francisco"
+   ]
+  },
+  {
    "data": "2026-06-08",
    "tipo_analise": "analise_completa_fim_de_tarde",
    "hora_execucao": "19:25",
@@ -482,5 +503,5 @@
    ]
   }
  ],
- "ultima_atualizacao": "2026-06-08T19:25"
+ "ultima_atualizacao": "2026-06-09T08:45"
 }
