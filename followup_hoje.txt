@@ -1,92 +1,119 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-06-05 (sexta-feira)
-Referencia: conversas de 2026-06-04 (quinta-feira)
+FOLLOW-UPS PRIORITARIOS - 09/06/2026 (terca-feira)
+Referencia: conversas de ONTEM (08/06/2026, segunda)
+Contas analisadas: DR4 (113 conversas de ontem) + DR2 (8 conversas de ontem)
 ====================================================
 
-ATENCAO: contas com baixo volume ontem (DR4: 7 conversas "ontem" / DR2: 5).
-Maioria do movimento ja foi atendida hoje cedo. Foco nos 8 follow-ups abaixo.
+>> Observacao: segunda foi dia de ALTO volume e os vendedores
+   responderam a grande maioria dos leads. O que esta abaixo e o
+   que ficou genuinamente PENDENTE e precisa de acao hoje.
 
 ----------------------------------------------------
 🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-1. Henrique Leal - Vendedor: Yan Francisco / POS-VENDA - DR2  [** CRITICO **]
-   Ultima msg: 04/06 11:34 (imagem) | Cliente JA CONTRATADO
-   Situacao: Cliente contratado com projeto em andamento. 3a tentativa (02/06)
-   cobrando status e AMEACANDO ENCERRAR O CONTRATO + pedir reembolso. O BOT
-   respondeu com video de boas-vindas (foi tratado como lead novo de trafego).
-   Keanny prometeu escalar 03/06; ontem 11:34 mandou nova imagem e segue SEM
-   RESPOSTA HUMANA.
-   ACAO: ESCALAR PARA GESTAO AGORA. Ligar (+55 71 99042456) no 1o horario,
-   dar status real do projeto (equipamentos/homologacao/instalacao), pedir
-   desculpas. Pausar automacao desse contato.
+1. danilo - Vendedor: Pericles - DR4
+   Ultima msg: 15:20 (cliente) | Conta de luz: ~R$ 600 (600kWh)
+   Situacao: Lead QUENTE de financiamento. Pericles ja enviou proposta
+   R$ 12.010. Cliente mandou localizacao (Ilha do Massangano) + 2 audios
+   as 15:20 e ja tinha enviado CNH e e-mail. Ficou sem retorno.
+   ACAO: Responder logo cedo. Confirmar docs recebidos + status do
+   financiamento + puxar o fechamento HOJE.
 
-2. Lucas Rodrigues - Vendedor: Caio Roberto - DR2
-   Ultima msg: 04/06 16:26 ("Boa tarde") | Conta de luz: R$ 200
-   Situacao: Proposta de R$ 11.183,42 ja enviada (decidindo a vista x
-   financiamento). Sumiu e ontem 16:26 REABRIU sozinho - sem resposta.
-   ACAO: Responder cedo, retomar a proposta e perguntar a vista ou
-   financiamento; propor fechar/agendar visita esta semana.
+2. Cicero Ricardo Batista - Atend.: Keanny (SDR) - DR2  [POS-VENDA]
+   Ultima msg: 10:26 (cliente) | Cliente JA CONTRATADO
+   Situacao: CLIENTE INSATISFEITO / risco de cancelamento. Diz que a
+   conta veio igual ao periodo antes dos paineis e que a Celpe nao
+   compensou este mes. Mandou audio 10:26 e ficou sem resposta.
+   ACAO: URGENTE - escalar para POS-VENDA/TECNICO checar geracao e
+   compensacao na Celpe. Nao deixar com SDR. Dar retorno hoje.
 
-3. Anderson Freitas - Vendedor: sem atribuicao (inbound novo) - DR2
-   Ultima msg: 04/06 10:46 ("Bom dia") | Conta de luz: nao informado
-   Situacao: Inbound novo IGNORADO por completo (nem o bot respondeu). Nao lido.
-   ACAO: Responder hoje cedo, se apresentar e qualificar (pedir valor da conta
-   e cidade).
+3. Bianca Souza | Advogada - SEM ATRIBUICAO - DR2  [inbound ignorado]
+   Ultima msg: 10:51 (cliente) | Conta: nao informada
+   Situacao: Lead novo (advogada) pediu "Qual numero consigo falar por
+   ligacao com voces?" as 10:51 e foi ignorada o dia todo (bot ligado,
+   sem atendente).
+   ACAO: LIGAR para ela hoje cedo. Se nao atender, mandar numero
+   comercial e oferecer 2 horarios.
+
+4. Pnzsun energy - SEM ATRIBUICAO - DR2  [inbound ignorado]
+   Ultima msg: 17:13 (cliente) | Conta: nao informada
+   Situacao: Pediu "me envia o contato do suporte tecnico" as 17:13.
+   Sem resposta (bot ligado, sem atendente).
+   ACAO: Responder cedo, enviar contato do suporte e identificar se e
+   pos-venda ou novo lead.
+
+5. Tany Liborio - SEM ATRIBUICAO - DR4  [inbound nao atendido]
+   Ultima msg: 11:50 | Conta: nao informada
+   Situacao: Novo contato de ontem 11:50, mas a mensagem nao carregou
+   (so aparece placeholder do WhatsApp). Nunca foi atendido.
+   ACAO: Mandar saudacao para reabrir a conversa e descobrir a demanda.
 
 ----------------------------------------------------
 🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ----------------------------------------------------
-1. Nivaldo Almeida - Vendedor: Keanny Brandao - DR4
-   Ultima msg: 04/06 19:41 | Orcamento a preparar
-   Situacao: Apos longa cadencia, reengajou: orcamento sera no nome da esposa
-   e pediu para ligarmos para ela -> JANUZA, tel 87988422901 ("liga pra ela").
-   ACAO: QUENTE - ligar para Januza (87988422901) hoje cedo e avancar o
-   orcamento no nome dela; levar proposta base pronta.
+(nenhum caso de cliente sem resposta apos as 18h)
 
 ----------------------------------------------------
 💎 ALTO CONSUMO - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-(nenhum cliente de alto consumo / comercio / industria / rural marcado ontem)
+1. Francisco Aoun - Vendedor: Yan - DR4
+   Valor: usina de 1000kWh (casa em Serrambi/Ipojuca + apto em Recife)
+   Status: Yan pediu o orcamento a engenharia ontem 12:38.
+   ACAO: Cobrar a engenharia e ENTREGAR o orcamento hoje. Ticket grande,
+   cliente ja deu localizacao.
+
+2. Enfermeira Rosilda Leite - Vendedor: Yan - DR4
+   Valor: paga R$ 450/mes, quer gerar 1000kWh - casa em Petrolina
+   Status: REENGAJOU HOJE 09:12 com audio (estava sumida desde 04/06).
+   ACAO: Yan responder o audio de hoje AGORA e fechar a visita/orcamento
+   enquanto a janela esta aberta.
+
+3. Leandro Top Frio - Vendedor: Keanny - DR4  [B2B refrigeracao]
+   Valor: nao informado (estabelecimento de refrigeracao)
+   Status: pediu "os valores dos projetos" (03/06) e nunca recebeu;
+   Keanny ainda perseguindo (ultimo contato ontem 18:03).
+   ACAO: Enviar faixa de valores de referencia + pedir conta media (kWh)
+   para fechar o orcamento.
+
+4. Atacadao Do Sofa Juazeiro (Geovany) - Vend.: Alan/Yan - DR4  [B2B moveis]
+   Valor: nao informado | Visita ja realizada (sexta 15h)
+   Status: Alan pediu dados para simulacao de financiamento ontem 14:44.
+   ACAO: Cobrar os dados hoje (contato Geovany 74 98809-5625) e emitir a
+   simulacao assim que receber.
+
+5. Ma Refrigeracao (Matheus) - Vendedor: Keanny - DR4  [B2B refrigeracao]
+   Valor: nao informado | Orcamento ja pronto
+   Status: cliente sem retorno ha +1 semana (visita perdida 01/06).
+   ACAO: Ultima tentativa com condicao especial; se nao responder, mover
+   para reativacao mais espacada.
 
 ----------------------------------------------------
 🔥 LEADS QUENTES - FECHAR HOJE:
 ----------------------------------------------------
-1. Raquel - Vendedor: Yan Francisco - DR4  [VISITA HOJE 10H]
-   Petrolina, ~1000 kWh de geracao. Visita marcada para HOJE 05/06 as 10h.
-   Yan prometeu "retornar no primeiro horario" p/ confirmar localizacao.
-   ACAO: URGENTISSIMO - confirmar AGORA e pegar a localizacao (o horario ja
-   esta chegando).
+1. Franciel Gomes - Vendedor: Yan - DR4
+   Nivel: Muito Alto
+   Situacao: VISITA JA FEITA ontem 10h na empresa dele. Momento pos-visita.
+   ACAO: Enviar a proposta e puxar o fechamento hoje, enquanto esta quente.
 
-2. Felipe - Vendedor: Yan Francisco - DR4  [VISITA SABADO 13H]
-   Negociou pagamento (preocupado com aprovacao no financiamento). Visita
-   confirmada para SABADO 06/06 as 13h.
-   ACAO: Garantir follow-up - preparar proposta e adiantar analise de credito
-   p/ nao travar no sabado.
-
-3. Enfermeira Rosilda Leite - Vendedor: Yan Francisco - DR4
-   Petrolina, casa, conta R$ 450, quer geracao de 1000 kWh (vai instalar
-   aparelhos). Yan ofereceu visita 10:14 e a cliente esfriou (sem resposta
-   desde 10:05).
-   ACAO: Reengajar hoje - empurrar para a visita ou ja enviar orcamento de
-   1000 kWh.
-
-4. joselita - Vendedor: Yan Francisco - DR4
-   Quer economizar; perguntou se vende ATACADO ou so varejo (possivel
-   revenda/volume). Vendedor respondeu generico e nao qualificou.
-   ACAO: Reengajar - responder atacado/varejo objetivamente e capturar
-   consumo/objetivo (uso proprio x revenda).
+2. Islane Andrade - Vendedor: Keanny - DR4
+   Nivel: Muito Alto
+   Situacao: VISITA JA FEITA ontem 11h. Quer 2 unidades (500kWh + 300kWh).
+   ACAO: Consolidar e enviar o orcamento das duas unidades hoje.
 
 ====================================================
 RESUMO:
-- Sem resposta antes 18h: 3  (Henrique Leal CRITICO, Lucas Rodrigues, Anderson Freitas)
-- Sem resposta apos 18h: 1   (Nivaldo Almeida)
-- Alto consumo: 0
-- Leads quentes: 4           (Raquel HOJE 10h, Felipe, Rosilda, joselita)
-TOTAL DE FOLLOW-UPS: 8
+- Sem resposta antes 18h: 5
+- Sem resposta apos 18h: 0
+- Alto consumo: 5
+- Leads quentes: 2
+TOTAL DE FOLLOW-UPS: 12
 ====================================================
 
-TOP 3 DO DIA:
-1. Henrique Leal (DR2) - cliente contratado ameacando cancelar - ESCALAR JA
-2. Raquel (DR4) - visita HOJE 10h - confirmar AGORA
-3. Nivaldo Almeida (DR4) - ligar para a esposa Januza 87988422901 (decisora)
+DESTAQUES DO DIA:
+- DR2 segue com falha de cobertura de INBOUND: Bianca (advogada) e
+  Pnzsun ficaram sem qualquer resposta humana o dia todo.
+- POS-VENDA reincidente: Cicero (cliente contratado) reclama que a conta
+  nao reduziu - mesmo padrao do caso Henrique Leal. Risco de cancelamento.
+- Bom sinal: visitas de Franciel (10h) e Islane (11h) foram realizadas
+  ontem - hoje e dia de PROPOSTA pos-visita.
 ====================================================

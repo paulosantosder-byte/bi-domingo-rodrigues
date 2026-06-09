@@ -1,106 +1,153 @@
 {
-  "data_referencia": "2026-06-04",
-  "gerado_em": "2026-06-05T10:46",
+  "data_referencia": "2026-06-08",
+  "gerado_em": "2026-06-09T09:35",
 
   "resumo": {
-    "total_pendentes": 8,
-    "sem_resposta_antes_18h": 3,
-    "sem_resposta_apos_18h": 1,
-    "alto_consumo": 0,
-    "leads_quentes": 4
+    "total_pendentes": 12,
+    "sem_resposta_antes_18h": 5,
+    "sem_resposta_apos_18h": 0,
+    "alto_consumo": 5,
+    "leads_quentes": 2
   },
 
   "sem_resposta_antes_18h": [
     {
-      "cliente": "Henrique Leal",
-      "vendedor": "Yan Francisco (atribuido) / pos-venda",
-      "conta": "DR2",
-      "hora_ultima_msg": "11:34",
-      "tempo_esperando": "Desde ontem 11:34 (imagem/cobranca sem resposta humana) - reclamacao aberta desde 02/06",
-      "resumo_conversa": "CRITICO POS-VENDA. Cliente JA CONTRATADO (projeto em andamento: compra de equipamentos e instalacao). Em 02/06 13:49 enviou a 3a tentativa de contato cobrando status do projeto e ameacando ENCERRAR O CONTRATO e pedir o dinheiro de volta. O BOT respondeu com video de boas-vindas (cliente foi misclassificado como lead NOVO de trafego pago). Keanny prometeu escalar com urgencia em 03/06 17:15. Ontem 04/06 11:34 o cliente enviou nova imagem/cobranca e segue SEM RESPOSTA HUMANA.",
-      "valor_conta": "Cliente contratado (ticket ja fechado)",
-      "recomendacao": "PRIORIDADE MAXIMA - risco real de cancelamento de contrato, reembolso e dano reputacional/juridico. Escalar para gestao/pos-venda AGORA. Ligar para Henrique (+55 71 99042456) logo no primeiro horario, dar status REAL do projeto (compra de equipamentos, homologacao e previsao de instalacao) e pedir desculpas formais pela falha de comunicacao.",
-      "abordagem_sugerida": "Ligacao de um responsavel (nao bot): reconhecer a falha, dar prazo concreto de cada etapa por escrito, e pausar a automacao para esse contato para nao reenviar video de vendas."
+      "cliente": "danilo",
+      "vendedor": "Pericles Mateus",
+      "conta": "DR4",
+      "hora_ultima_msg": "15:20",
+      "tempo_esperando": "Desde ontem 15:20 (mais de 18h sem resposta)",
+      "resumo_conversa": "Lead de financiamento QUENTE. Pericles enviou proposta R$12.010 (usina 600kWh). Cliente respondeu com a localizacao ('Ilha do Massangano') e mandou 2 audios as 15:20. Ja havia enviado CNH (CNH-e.pdf) e e-mail (fariasdanilo743@gmail.com). Ficou sem retorno desde entao.",
+      "valor_conta": "~R$ 600 (projeto de 600kWh)",
+      "recomendacao": "PRIORIDADE MAXIMA. Pericles responder logo no primeiro horario. Todos os documentos ja foram enviados (CNH, e-mail, localizacao). So falta dar retorno do financiamento e puxar o fechamento.",
+      "abordagem_sugerida": "Bom dia + confirmar que recebeu os documentos e a localizacao + informar status da aprovacao do financiamento + propor assinatura/proximo passo ainda hoje."
     },
     {
-      "cliente": "Lucas Rodrigues",
-      "vendedor": "Caio Roberto",
+      "cliente": "Cicero Ricardo Batista da Silva",
+      "vendedor": "Keanny Brandao (SDR) - precisa escalar para POS-VENDA",
       "conta": "DR2",
-      "hora_ultima_msg": "16:26",
-      "tempo_esperando": "Desde ontem 16:26 (reabriu conversa e ficou sem resposta)",
-      "resumo_conversa": "Lead de 15/05, conta ~R$200/mes. Ja recebeu PROPOSTA COMPLETA de R$ 11.183,42 (cartao ate 18x ou financiamento). Estava decidindo entre a vista e financiamento e sumiu. Ontem 04/06 16:26 REABRIU a conversa com 'Boa tarde' e nao foi respondido.",
-      "valor_conta": "R$ 200",
-      "recomendacao": "Responder logo cedo - cliente reaqueceu sozinho com proposta ja na mesa. Retomar exatamente do ponto: 'a vista ou financiamento?'.",
-      "abordagem_sugerida": "Bom dia + retomar a proposta de R$ 11.183,42, reforcar condicao de parcelamento e propor fechar/agendar visita ainda esta semana."
+      "hora_ultima_msg": "10:26",
+      "tempo_esperando": "Desde ontem 10:26 (mais de 18h sem resposta)",
+      "resumo_conversa": "CLIENTE JA CONTRATADO E INSATISFEITO (risco de cancelamento). Reclama que este mes a conta de energia veio com o MESMO valor de antes de instalar os paineis e que a Celpe nao compensou/'nao deixou o papel' este mes. Mandou audio explicando as 10:26 e ficou sem retorno. Esta sendo tratado por SDR (Keanny), nao por pos-venda.",
+      "valor_conta": "Cliente ja instalado (pos-venda)",
+      "recomendacao": "URGENTE - risco de churn de cliente contratado. Escalar HOJE para a equipe TECNICA/POS-VENDA verificar a geracao e a compensacao na Celpe. Nao deixar com SDR.",
+      "abordagem_sugerida": "Pedir desculpas pela demora + acionar tecnico para checar geracao/compensacao + dar previsao concreta de retorno ainda hoje."
     },
     {
-      "cliente": "Anderson Freitas",
-      "vendedor": "Sem atribuicao (inbound novo)",
+      "cliente": "Bianca Souza | Advogada",
+      "vendedor": "Sem atribuicao (inbound sem cobertura)",
       "conta": "DR2",
-      "hora_ultima_msg": "10:46",
-      "tempo_esperando": "Desde ontem 10:46 (inbound novo totalmente ignorado, nem o bot respondeu)",
-      "resumo_conversa": "Lead novo entrou ontem 04/06 10:46 com 'Bom dia' e NAO recebeu nenhuma resposta - nem do vendedor nem da automacao. Conversa segue como nao lida.",
+      "hora_ultima_msg": "10:51",
+      "tempo_esperando": "Desde ontem 10:51 (mais de 18h sem resposta)",
+      "resumo_conversa": "Lead inbound novo (advogada). Mandou 'Bom dia' e perguntou 'Qual numero eu consigo falar por ligacao com voces?' as 10:51. Foi totalmente ignorada - automacao ainda ligada e nenhum atendente assumiu.",
       "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje cedo e qualificar do zero - inbound interessado deixado sem qualquer retorno por mais de 18h.",
-      "abordagem_sugerida": "Bom dia + apresentacao rapida + perguntar o valor medio da conta de energia e a cidade para preparar orcamento."
+      "recomendacao": "Ligar para ela HOJE cedo. Ela pediu explicitamente um numero para falar por ligacao e ficou sem resposta o dia todo.",
+      "abordagem_sugerida": "Ligar diretamente; se nao atender, mandar o numero comercial por escrito e oferecer 2 horarios para a ligacao."
+    },
+    {
+      "cliente": "Pnzsun energy",
+      "vendedor": "Sem atribuicao (inbound sem cobertura)",
+      "conta": "DR2",
+      "hora_ultima_msg": "17:13",
+      "tempo_esperando": "Desde ontem 17:13 (mais de 18h sem resposta)",
+      "resumo_conversa": "Contato novo registrado ontem 17:13. Mandou 'Boa tarde' e 'Me envia o contato do suporte tecnico, por favor'. Sem resposta. Automacao ainda ligada, nenhum atendente assumiu.",
+      "valor_conta": "Nao informado",
+      "recomendacao": "Responder hoje cedo. Enviar o contato do suporte tecnico e identificar se e cliente de pos-venda ou novo lead.",
+      "abordagem_sugerida": "Bom dia + enviar contato/encaminhar ao suporte tecnico + perguntar o que precisa para direcionar certo."
+    },
+    {
+      "cliente": "Tany Liborio",
+      "vendedor": "Sem atribuicao (inbound sem cobertura)",
+      "conta": "DR4",
+      "hora_ultima_msg": "11:50",
+      "tempo_esperando": "Desde ontem 11:50 (mais de 18h sem atendimento)",
+      "resumo_conversa": "Novo contato registrado ontem 11:50. A unica mensagem visivel e um placeholder do WhatsApp ('Aguardando mensagem. Abra o WhatsApp no seu celular') - o conteudo nao carregou. Nenhum atendimento foi feito.",
+      "valor_conta": "Nao informado",
+      "recomendacao": "Verificar e reabrir contato. Mandar uma saudacao para destravar a conversa, ja que a mensagem original nao apareceu.",
+      "abordagem_sugerida": "Bom dia + 'recebemos seu contato ontem, como posso te ajudar com energia solar?'"
     }
   ],
 
-  "sem_resposta_apos_18h": [
-    {
-      "cliente": "Nivaldo Almeida",
-      "vendedor": "Keanny Brandao",
-      "conta": "DR4",
-      "hora_ultima_msg": "19:41",
-      "resumo_conversa": "Lead desde 23/05 em longa cadencia de follow-up da Keanny (precisava decidir com a esposa). Ontem 04/06 19:41 (apos 18h) finalmente respondeu: o orcamento sera no nome da esposa e pediu para ligarmos para ela - JANUZA, tel 87988422901 - e pediu desculpas pela demora. Sem retorno ainda.",
-      "valor_conta": "Nao informado (orcamento a preparar)",
-      "recomendacao": "QUENTE - cliente reengajou e liberou contato da decisora. Mensagem foi apos as 18h (sem cobranca), mas e prioridade comercial: ligar para a esposa Januza (87988422901) hoje cedo e avancar o orcamento no nome dela.",
-      "abordagem_sugerida": "Confirmar com Nivaldo o melhor horario e ligar para Januza apresentando a simulacao; ja levar proposta base pronta para fechar."
-    }
-  ],
+  "sem_resposta_apos_18h": [],
 
-  "alto_consumo": [],
-
-  "leads_quentes": [
+  "alto_consumo": [
     {
-      "cliente": "Raquel",
+      "cliente": "Francisco Aoun",
       "vendedor": "Yan Francisco",
       "conta": "DR4",
-      "nivel_interesse": "Muito Alto",
-      "resumo_conversa": "Petrolina, interesse em geracao ~1000 (kWh). Ontem 04/06 fechou VISITA para HOJE 05/06 as 10h. Yan prometeu 'retornar contato no primeiro horario' para confirmar localizacao. Cliente: 'Fico no aguardo'.",
-      "valor_conta": "Nao informado (~1000 kWh de geracao)",
-      "recomendacao": "URGENTISSIMO - a visita esta marcada para HOJE 10h e o horario ja esta chegando. Confirmar AGORA com a Raquel e pegar a localizacao exata.",
-      "abordagem_sugerida": "Mensagem/ligacao imediata: 'Bom dia Raquel, confirmando nossa visita hoje as 10h - me envia sua localizacao, por favor?'"
-    },
-    {
-      "cliente": "Felipe",
-      "vendedor": "Yan Francisco",
-      "conta": "DR4",
-      "nivel_interesse": "Alto",
-      "resumo_conversa": "Negociou forma de pagamento (preocupado se o nome passa no financiamento; nao consegue a vista/cartao). Ontem 04/06 CONFIRMOU VISITA para SABADO 06/06 as 13h.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Visita ja agendada para sabado 13h. Garantir o follow-up: preparar proposta e ja adiantar a analise de credito/financiamento para nao travar no sabado.",
-      "abordagem_sugerida": "Confirmar a visita na sexta/sabado de manha, levar simulacao de financiamento pronta e documentos necessarios para aprovacao de credito."
+      "valor_conta": "Usina de 1000kWh (casa em Serrambi/Ipojuca-PE + apartamento em Recife)",
+      "tipo_imovel": "Residencial alto consumo (2 imoveis)",
+      "status_atual": "Yan disse 'vou pedir seu orcamento para o pessoal da engenharia' ontem 12:38",
+      "resumo_conversa": "Lead qualificado de alto consumo. Quer uma usina de 1000kWh para atender uma casa (Praia de Serrambi, Ipojuca) e um apartamento em Recife. Ja passou a localizacao. Aguardando orcamento da engenharia.",
+      "recomendacao": "PRIORIDADE ALTA - ticket grande (1000kWh). Cobrar a engenharia e entregar o orcamento HOJE. Cliente quente, ja deu todos os dados.",
+      "abordagem_sugerida": "Enviar o orcamento da usina de 1000kWh + destacar atendimento dos 2 imoveis + propor visita/fechamento."
     },
     {
       "cliente": "Enfermeira Rosilda Leite",
       "vendedor": "Yan Francisco",
       "conta": "DR4",
-      "nivel_interesse": "Alto",
-      "resumo_conversa": "Petrolina, casa, conta ~R$450/mes, quer geracao de 1000 (kWh) porque vai instalar mais aparelhos. Yan ofereceu entregar o orcamento pessoalmente/visita ontem 04/06 10:14, mas a cliente nao respondeu desde as 10:05.",
-      "valor_conta": "R$ 450",
-      "recomendacao": "Reengajar hoje - cliente qualificada (consumo e necessidade definidos) que esfriou no meio da conversa. Empurrar para a visita ou ja enviar orcamento.",
-      "abordagem_sugerida": "Bom dia + retomar: 'Consigo agendar nossa visita para entregar seu orcamento - prefere hoje ou amanha?' Se recusar visita, enviar orcamento de 1000 kWh por aqui."
+      "valor_conta": "Paga R$ 450/mes - quer gerar 1000kWh",
+      "tipo_imovel": "Residencial (casa) - Petrolina",
+      "status_atual": "Reengajou HOJE 09:12 com audio (estava sem responder desde 04/06)",
+      "resumo_conversa": "Lead de alto consumo: paga ~R$450/mes e quer uma geracao de 1000kWh. Yan vinha tentando agendar visita para entregar o orcamento e ela tinha sumido. Voltou a responder HOJE de manha (09:12) com um audio.",
+      "recomendacao": "Yan responder o audio de hoje 09:12 AGORA - a janela reabriu. Fechar visita/orcamento enquanto ela esta ativa.",
+      "abordagem_sugerida": "Ouvir o audio + responder na hora + agendar visita hoje/amanha para entregar o orcamento de 1000kWh."
     },
     {
-      "cliente": "joselita",
+      "cliente": "Leandro Top Frio",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "Nao informado (B2B - refrigeracao/camara fria)",
+      "tipo_imovel": "Comercio/Industria (refrigeracao)",
+      "status_atual": "Pediu 'os valores dos projetos' (03/06); Keanny ainda perseguindo (ultimo contato ontem 18:03)",
+      "resumo_conversa": "Empresa de refrigeracao (Top Frio). Disse 'tenho interesse em energia solar' e 'manda os valores dos projetos'. Keanny tentou qualificar consumo/ligacao e o cliente esfriou. Ainda nao recebeu os valores que pediu.",
+      "recomendacao": "Negocio B2B de potencial alto consumo. Enviar uma FAIXA de valores de referencia + pedir a conta media (kWh) para fechar o orcamento. Cliente pediu preco e nunca recebeu.",
+      "abordagem_sugerida": "Mandar valores de referencia por porte + perguntar a conta media do estabelecimento para fechar o orcamento exato."
+    },
+    {
+      "cliente": "Atacadao Do Sofa Juazeiro (contato Geovany)",
+      "vendedor": "Alan Oliveira / Yan Francisco",
+      "conta": "DR4",
+      "valor_conta": "Nao informado (B2B - varejo de moveis)",
+      "tipo_imovel": "Comercio (loja de moveis) - Juazeiro",
+      "status_atual": "Visita feita sexta 15h; Alan pediu dados para simulacao de financiamento ontem 14:44",
+      "resumo_conversa": "Loja de moveis (Atacadao do Sofa, Juazeiro). Visita tecnica ja realizada. Esta na etapa de financiamento - Alan pediu os dados para a simulacao e aguarda o cliente enviar. Contato direto Geovany: 74 98809-5625.",
+      "recomendacao": "Cobrar os dados do financiamento hoje. A visita ja foi feita, so falta a documentacao para emitir a simulacao.",
+      "abordagem_sugerida": "Reforcar o pedido dos dados + prometer enviar a simulacao no mesmo dia em que receber."
+    },
+    {
+      "cliente": "Ma Refrigeracao (Matheus)",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "valor_conta": "Nao informado (B2B - refrigeracao)",
+      "tipo_imovel": "Comercio/Industria (refrigeracao)",
+      "status_atual": "Orcamento pronto, cliente sem retorno ha mais de 1 semana (visita perdida em 01/06)",
+      "resumo_conversa": "Negocio de refrigeracao. Orcamento ja preparado, mas o cliente perdeu a visita de 01/06 e nao responde ha mais de uma semana, apesar de varios follow-ups da Keanny.",
+      "recomendacao": "Ultima tentativa de resgate com gancho de condicao especial. Se nao responder hoje/amanha, mover para reativacao mais espacada para nao queimar o lead.",
+      "abordagem_sugerida": "Mensagem curta e direta com condicao especial + CTA pedindo um horario para ligacao."
+    }
+  ],
+
+  "leads_quentes": [
+    {
+      "cliente": "Franciel Gomes",
       "vendedor": "Yan Francisco",
       "conta": "DR4",
-      "nivel_interesse": "Medio",
-      "resumo_conversa": "Entrou ontem 04/06 querendo economizar com energia solar e perguntou se a empresa 'vende atacado ou so varejo' (possivel revenda/volume maior). Mandou um audio. Yan respondeu de forma generica ('Certo' / 'Qualquer coisa estou aqui') sem captar o valor da conta nem responder objetivamente a pergunta de atacado.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Reengajar e qualificar - responder direto a pergunta de atacado/varejo (pode ser revendedor/volume) e capturar o consumo.",
-      "abordagem_sugerida": "Bom dia + responder atacado/varejo + perguntar o valor medio da conta e o objetivo (uso proprio ou revenda) para direcionar a proposta."
+      "nivel_interesse": "Muito Alto",
+      "resumo_conversa": "Visita JA REALIZADA ontem (08/06) as 10h na empresa dele - ele mesmo confirmou ('tudo certo pra hoje 10h') e foi recebido pela recepcao. Esta no momento pos-visita, pronto para proposta.",
+      "valor_conta": "Nao informado (visita comercial/empresa)",
+      "recomendacao": "Follow-up POS-VISITA hoje: enviar a proposta e puxar o fechamento enquanto esta quente. Visita feita = lead no ponto.",
+      "abordagem_sugerida": "Agradecer a visita de ontem + enviar a proposta + propor proximo passo (assinatura/financiamento)."
+    },
+    {
+      "cliente": "Islane Andrade",
+      "vendedor": "Keanny Brandao",
+      "conta": "DR4",
+      "nivel_interesse": "Muito Alto",
+      "resumo_conversa": "Visita JA REALIZADA ontem (08/06) as 11h - localizacao enviada e visita confirmada. Cliente quer 2 unidades (geracao de 500kWh + 300kWh). Momento pos-visita.",
+      "valor_conta": "2 unidades (~500kWh + ~300kWh)",
+      "recomendacao": "Follow-up POS-VISITA hoje: consolidar e enviar o orcamento das DUAS unidades. Lead avancado, nao deixar esfriar.",
+      "abordagem_sugerida": "Enviar orcamento das duas unidades (500 + 300kWh) + agendar o fechamento."
     }
   ]
 }
