@@ -1,0 +1,16 @@
+{
+  "conta": "DR2",
+  "data": "2026-06-10",
+  "total_conversas": 8,
+  "responsavel_unico": "Pericles Mateus (vendedor)",
+  "conversas": [
+    {"cliente": "Bonani Advogados", "hora": "16:31", "papel_resp": "VENDEDOR", "pessoa": "(sem resposta)", "status": "critico", "obs": "NOTIFICACAO JURIDICA - escritorio adv informa que serao adotadas medidas judiciais cabiveis sem novo aviso; protocolo de acao judicial. SEM RESPOSTA. CRITICO juridico.", "msgs_hoje": 1},
+    {"cliente": "Jackson Lobo", "hora": "15:36", "status": "critico", "obs": "Chamou 'Caio'. Retomando planejamento solar, pediu orcamento 600kWh/mes. SEM RESPOSTA.", "msgs_hoje": 4},
+    {"cliente": "Yuri Santos", "hora": "15:18", "status": "critico", "obs": "Apenas 'Boa tarde'. SEM RESPOSTA.", "msgs_hoje": 1},
+    {"cliente": "Rodrigo Chales Projetos", "hora": "15:18", "status": "critico", "obs": "B2B (Projetos). 'Boa tarde'. SEM RESPOSTA.", "msgs_hoje": 1},
+    {"cliente": "Lucas Rodrigues", "hora": "15:02", "pessoa": "Pericles Mateus", "status": "sem_resposta", "obs": "Pericles pediu documentacao 09:32; cliente mandou audio 11:54 + 'boa tarde' 13:09 + 15:02 'Voce trabalha com energia solar?'. Pericles silente desde manha. Cliente confuso/aguardando.", "msgs_hoje": 5},
+    {"cliente": "Diego Costa", "hora": "12:02", "pessoa": "Pericles Mateus", "status": "sem_resposta", "obs": "ALTO CONSUMO 2000kWh. Pericles saudou AM (09:22-09:31), cliente reforcou pedido orcamento 12:02. Aguardando. QUENTE.", "msgs_hoje": 5},
+    {"cliente": "5511914879479", "hora": "10:03", "status": "spam", "obs": "Mensagem automatica/marketing (proposta 3D) - numero SP, nao e cliente real.", "msgs_hoje": 1},
+    {"cliente": "Barbara Duarte", "hora": "09:53", "pessoa": "Pericles Mateus", "status": "sem_resposta", "obs": "ALTO CONSUMO/QUENTE 1000kW, 2 imoveis (Petrolina condominio Sunville + apartamento Recife). Pericles saudou 09:33, cliente detalhou 09:52-09:53. SEM resposta ha 8h+.", "msgs_hoje": 8}
+  ]
+}
