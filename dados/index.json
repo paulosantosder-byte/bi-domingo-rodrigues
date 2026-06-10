@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-10",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "16:45",
+      "total_conversas": 104,
+      "total_conversas_dr4": 96,
+      "total_conversas_dr2": 8,
+      "sem_resposta": 13,
+      "criticas": 8,
+      "nota_media_sdr": 6.0,
+      "nota_media_vendedor": 5.9,
+      "cobertura": "Censo 100% via extracao de DOM/estado React (loader com verificacao de cabecalho p/ evitar contaminacao entre conversas). DR4=96 (08:11-14:41) + DR2=8 (09:53-16:31). 16 conversas DR4 com resposta do cliente + 8 DR2 lidas a fundo; ~80 conversas DR4 sao reativacao em massa por template do Yan Francisco sem resposta. SDR=Keanny Brandao; Vendedores=Pericles Mateus, Alan Oliveira, Yan Francisco (+ assessor Yuri).",
+      "alerta_critico": "JURIDICO: Bonani Advogados (DR2 16:31) enviou notificacao de cobranca/ameaca de medidas legais SEM resposta - escalar HOJE. DR2 SEM cobertura de inbound: 100% das 8 conversas terminaram com cliente aguardando (5 criticas: Bonani, Jackson Lobo 600kWh p/ Caio, Yuri Santos, Rodrigo Chales Projetos B2B, 5511914879479; 3 de Pericles aguardando: Barbara Duarte 1000kW 2 imoveis Petrolina+Recife, Diego Costa 2000kWh, Lucas Rodrigues docs). DR4 QUENTES: Pericles fechamento Fernando Davi 1000kW ('o que falta pra fechar'); Yan financiamento Pedroh (2o CPF aprovado score baixo) + Eduardo Costa 3500kWh encaminhado a Yuri + Rosilda 1000kW; Alan qualificou Samuel 1000kW. ALERTA Alan: Nivaldo vai fechar com concorrente e vendedor so aguardou (sem D1-D4/F4). SDR Keanny agendou 3 visitas (Melkzedek 1000kW 21h, Jarmeson 20h, Marcones 9h) mas follow-ups genericos e mediana 93min. NENHUM vendedor usou diferenciais D1-D4. Reativacao em massa generica do Yan (~45 disparos identicos) com baixissima conversao.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
+      "vendedores": [
+        "Pericles Mateus",
+        "Alan Oliveira",
+        "Yan Francisco"
+      ]
+    },
+    {
       "data": "2026-06-09",
       "tipo_analise": "analise_completa_tarde",
       "hora_execucao": "17:05",
@@ -503,5 +525,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-09T17:05"
+  "ultima_atualizacao": "2026-06-10T16:45"
 }
