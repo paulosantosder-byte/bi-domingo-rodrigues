@@ -1,135 +1,97 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 10/06/2026 (quarta-feira)
-Referencia: conversas de ONTEM 09/06/2026
+FOLLOW-UPS PRIORITARIOS - 11/06/2026
+Referencia: conversas de ONTEM (10/06/2026)
 ====================================================
 
->> TOP 5 DE HOJE (faca PRIMEIRO):
- 1. PAULO ALENCAR (Alan) - confirmar REUNIAO de HOJE apos 13h / geracao 3.000 kWh
- 2. VERINHA (Laercio) - corrigir projeto p/ 600kW; financiamento JA APROVADO
- 3. BARBARA DUARTE (Pericles/DR2) - 1000kW p/ 2 imoveis, responder AGORA
- 4. TIAGO LIBORIO/CODEVASF (Pericles/DR2) - licitacao governo 6 kits UFV, ligar+email HOJE
- 5. CLEONICE (Pericles/DR2) - pediu PRECO A VISTA, so falta enviar o orcamento
+CONTEXTO DO DIA (10/06):
+A DR4 foi dominada por DISPAROS DE REATIVACAO EM MASSA do Yan Francisco
+(templates genericos identicos), com praticamente ZERO engajamento real.
+Os leads abaixo sao os clientes que ESTAVAM AGUARDANDO atendimento e que,
+em vez de resposta, levaram o disparo automatico. Na DR2 o inbound de alto
+valor (2000kWh, 1000kW 2 imoveis) continua sem cobertura humana adequada.
 
 ----------------------------------------------------
 🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-1. Paulo Alencar - Vendedor: Alan Oliveira - DR4
-   Ultima msg: 12:37 | Geracao 3.000 kWh (ALTO CONSUMO)
-   Situacao: Confirmou reuniao online "amanha apos as 13:00" (= HOJE). Alan NAO confirmou.
-   ACAO: CRITICO - confirmar a reuniao de hoje ainda de manha e preparar proposta de 3.000 kWh.
+1. ⚖️ Bonani Advogados - Atendimento: BOT (sem humano) - [DR2]
+   Ultima msg: ONTEM 16:31 | JURIDICO - NAO E VENDA
+   Situacao: Escritorio ja notificou extrajudicialmente em 02/06 (PDF) e o
+   bot respondeu com VIDEO DE VENDAS. Ontem 16:31 ESCALOU: "serao adotadas
+   medidas judiciais" por "reiterado descumprimento das obrigacoes". Sem
+   resposta humana.
+   ACAO: MAXIMA PRIORIDADE - encaminhar HOJE 1a hora para DIRETORIA/JURIDICO.
+   Parar o bot de responder notificacao juridica com video. Risco de acao.
 
-2. Verinha - Vendedor: Laercio - DR4
-   Ultima msg: 09:55 | Geracao 600 kW - FINANCIAMENTO APROVADO
-   Situacao: Visita feita, orcamento e financiamento aprovados. Cliente corrigiu: "foi de 600 kw" (nao 500).
-   ACAO: Corrigir simulacao p/ 600kW, reapresentar e seguir tramitacao no banco. Quase fechado!
+2. Diego Costa - Vendedor: Pericles Mateus - [DR2]
+   Ultima msg: ONTEM 12:02 | Conta: 2000 kWh (altissimo)
+   Situacao: Pediu orcamento de 2000 kWh as 08:43; Pericles so se apresentou,
+   nao orcou. Cliente REENVIOU o pedido as 12:02 cobrando (emoji apontando).
+   ACAO: URGENTE 1a hora. Qualificar e enviar orcamento HOJE + agendar visita.
+   Ja cobrou 2x, risco de esfriar.
 
-3. Enfermeira Rosilda Leite - Vendedor: Yan Francisco - DR4
-   Ultima msg: 09:12 (audio) | ~1000 kWh / conta ~R$450 (ALTO CONSUMO)
-   Situacao: Reengajou com audio respondendo a tentativa de marcar visita. Yan nao retornou.
-   ACAO: Ouvir audio e responder cedo, oferecendo 2 horarios de visita.
+3. Barbara Duarte - Vendedor: Pericles Mateus - [DR2]
+   Ultima msg: ONTEM 09:53 | Conta: 1000 kW - 2 IMOVEIS
+   Situacao: Detalhou projeto de 1000kW para 2 casas (Petrolina/Cond. Sunville
+   + apto em Recife). Apos detalhar, ficou SEM resposta. Lead recorrente.
+   ACAO: URGENTE - responder hoje, confirmar os 2 enderecos e tocar os 2
+   orcamentos + visita tecnica em Petrolina.
 
-4. Cleonice - Vendedor: Pericles Mateus - DR2
-   Ultima msg: 16:35 | 6 placas (~500kW)
-   Situacao: Pericles disse que mandaria orcamento; cliente respondeu "Eu quero preco de avista". Sem retorno.
-   ACAO: Enviar o orcamento com preco A VISTA logo cedo. Cliente ja quer comprar.
+4. Pedrito - Vendedor: Yan Francisco - [DR4]
+   Ultima msg: AUDIO em 07/06 10:30 (ontem so recebeu disparo generico)
+   Conta: 1000 kWh (alto consumo)
+   Situacao: Cliente de 1000 kWh mandou audio em 07/06 respondendo a tentativa
+   de ligacao e foi IGNORADO. Ontem levou o template de reativacao em massa.
+   ACAO: Ouvir o audio de 07/06 e responder PERSONALIZADO hoje. Parar template.
 
-5. Flavio - Vendedor: Keanny Brandao (SDR) - DR4
-   Ultima msg: 15:50 (2 audios)
-   Situacao: Keanny ofereceu ir ate o cliente; Flavio respondeu com 2 audios. Sem retorno.
-   ACAO: Ouvir audios e confirmar local/horario da visita.
-
-6. Tarcisio Oliveira - Vendedor: Yan Francisco - DR4
-   Ultima msg: 09:19 (audio) | Interesse em financiamento
-   Situacao: Respondeu com audio sobre financiamento. Yan nao retornou.
-   ACAO: Ouvir audio + retornar com opcoes de financiamento/visita.
-
-7. manuel das gracas - Vendedor: Yan Francisco - DR4
-   Ultima msg: 14:58 (audio)
-   Situacao: Respondeu com audio ao "vamos falar do seu plano solar?". Yan nao retornou.
-   ACAO: Ouvir audio + pedir valor da conta para montar proposta.
-
-8. Dr. Jose Bispo - Vendedor: Yan Francisco - DR4
-   Ultima msg: 09:13 (audio) | Estava PERDIDO, REATIVOU sozinho
-   Situacao: Lead marcado como perdido voltou com audio. Yan nao retornou.
-   ACAO: Ouvir audio e responder rapido - aproveitar o reengajamento.
-
-9. Samuel G Santos - Vendedor: Alan Oliveira - DR4
-   Ultima msg: 16:08 (audio)
-   Situacao: Respondeu com audio apos condicao especial. Alan nao retornou.
-   ACAO: Ouvir audio e retomar a qualificacao.
+5. Erivelto Ferreira - Vendedor: DR4 (caiu na reativacao) - [DR4]
+   Ultima msg: 08/06 10:09 (ontem so recebeu disparo generico)
+   Situacao: Quer solar em 2 pontos - trabalho (Vila Eulalia) + casa (Juazeiro-BA).
+   Pediu contato "na parte da tarde". Mensagens de 08/06 sem retorno.
+   ACAO: Responder HOJE A TARDE (como ele pediu), qualificar os 2 enderecos
+   e pedir as 2 contas de luz.
 
 ----------------------------------------------------
 🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ----------------------------------------------------
-1. Socorro Nascimento - Vendedor: Keanny Brandao (SDR) - DR4
-   Ultima msg: 21:41
-   Situacao: Lead novo (21:40) disse "tambem quero economizar com energia solar"; bot pediu valor da conta.
-   ACAO: Bom dia + cobrar gentilmente o valor da conta para qualificar.
+(nenhum nesta categoria)
 
 ----------------------------------------------------
 💎 ALTO CONSUMO / B2B - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-1. Tiago Liborio / CODEVASF - Vendedor: Pericles Mateus - DR2
-   B2B / ORGAO PUBLICO FEDERAL | Licitacao de 6 kits de UFV
-   Situacao: Funcionario da Codevasf quer orcamentos p/ processo licitatorio; pediu e-mail. Pericles disse que ligaria.
-   ACAO: LIGAR HOJE + enviar e-mail formal com os orcamentos dos 6 kits. Venda em volume p/ governo.
+1. Maria Bileu - Vendedor: Gabriel / Yan Francisco - [DR4]
+   Conta: ~1.000-1.011 kWh | Residencial/possivel comercial
+   Situacao: Alto consumo, esfriou. Audio dela saiu inaudivel, vendedor pediu
+   reenvio. Sem retorno recente.
+   ACAO: Reaquecer hoje (mensagem pessoal, nao template) e pedir FOTO da conta
+   de luz em vez de audio.
 
-2. Geovany Juazeiro - Vendedor: Alan Oliveira - DR4
-   Sistema 1000 KW (financiamento)
-   Situacao: Alan pediu CPF + data de nascimento p/ simulacao; cliente nao enviou.
-   ACAO: Retomar pedindo CPF e data de nascimento para liberar a simulacao.
-
-3. CARLIZZE Porcelanatos - Vendedor: Alan Oliveira - DR4
-   B2B / Comercio | Usina acima de 1000 KW (quer mais placas)
-   Situacao: Engajou ("Mostra"); falta dimensionar e apresentar proposta.
-   ACAO: Dimensionar a usina + enviar proposta + agendar visita tecnica.
-
-4. Myldson - Vendedor: Alan Oliveira - DR4
-   Sistema 500 KW | Financiamento NAO aprovado
-   Situacao: So aprovaria com entrada. Cliente sem responder desde 03/06, Alan so manda "bom dia".
-   ACAO: MUDAR abordagem - oferecer alternativa de pagamento concreta (entrada + cartao/a vista).
+2. Gilmar Acosta - Advogados Associados / Incorporacao - Vendedor: Luana - [DR4]
+   B2B - escritorio de advocacia / incorporadora (potencial alto)
+   Situacao: Luana nao consegue contato (numero da empresa "fora de area").
+   Ultima tentativa 01/06 sem retorno.
+   ACAO: Tentar canal alternativo hoje (WhatsApp em outro horario / e-mail).
+   Tratar como conta empresarial/incorporadora.
 
 ----------------------------------------------------
 🔥 LEADS QUENTES - FECHAR HOJE:
 ----------------------------------------------------
-1. Barbara Duarte - Vendedor: Pericles Mateus - DR2
-   Projeto 1000 kW para 2 IMOVEIS (casa Petrolina/Cond. Sunville + apto Recife)
-   Situacao: Inbound espontaneo de alto ticket, detalhou a demanda hoje cedo (09:53).
-   ACAO: RESPONDER AGORA + iniciar orcamento dos 2 imoveis + agendar visita tecnica.
-
-2. Fernando Davi - Vendedor: Pericles Mateus - DR4
-   Sistema 1000 kW (financiamento via banco)
-   Situacao: Esposa de acordo, querem excedente p/ a roca. Pericles pediu horario p/ ligar e fechar; cliente parou.
-   ACAO: Oferecer 2 horarios concretos para a ligacao de fechamento ainda hoje.
-
-3. Evelangio - Vendedor: Pericles Mateus - DR4
-   ~1500-2000 kWh (alto consumo)
-   Situacao: Recebeu pitch completo + pagamento (cartao 18x). Pericles respondeu duvida e aguarda decisao.
-   ACAO: Follow-up p/ fechar - confirmar decisao e propor inicio (entrada/1a parcela).
-
-4. FLANKLIN - Vendedor: Alan Oliveira - DR4
-   RECOMPRA - novo sistema de 500 KW (cliente desde out/2025)
-   Situacao: Confirmou que quer outro sistema; Alan perguntou forma de pagamento, sem retorno.
-   ACAO: Retomar pedindo pagamento + enviar proposta do 2o sistema (condicao de cliente recorrente).
-
-----------------------------------------------------
-⚠️ OUTROS ALERTAS:
-----------------------------------------------------
-- Castro (Pericles/DR2): inbound morno, consome 350kWh mas quer geracao 600kWh. Pericles pediu a conta; cliente nao enviou. Dar um empurrao na qualificacao.
-- Krystian Felipe (DR2): MAL ROTEADO - e candidato a vaga de MONTADOR (mandou curriculo), o bot respondeu com video de VENDAS. Encaminhar ao RH e ajustar roteamento.
-- PADRAO SISTEMICO (Yan e Alan): varios clientes mandaram AUDIO ontem no horario comercial e ficaram sem resposta. Confirmados acima; ha outros so com audio (CELIA MARIA, Joanes, wedson, Makez, Jh, Luis Antonio, ALEXANDRE JUNIOR) a triar. Ouvir e responder TODOS os audios pendentes logo cedo.
+1. Mayane Gabriela - Vendedor: Gabriel / Yan Francisco - [DR4]
+   Interesse: Alto - quer fechar orcamento
+   Situacao: Em 08/06 disse "quando meu esposo chegar entro em contato pra
+   fazer o orcamento". Depende so da presenca do marido.
+   ACAO: Follow-up gentil hoje: "Seu esposo ja retornou? Faco o orcamento
+   rapidinho." - manter iniciativa do nosso lado.
 
 ====================================================
 RESUMO:
-- Sem resposta antes 18h: 9
-- Sem resposta apos 18h: 1
-- Alto consumo / B2B: 4
-- Leads quentes: 4
-TOTAL DE FOLLOW-UPS PRIORITARIOS: 18 (+ 3 alertas)
-====================================================
-Obs.: relatorio focado nos leads ACIONAVEIS de maior valor e nos
-casos claros de "sem resposta". O dia 09/06 teve alto volume em DR4
-(dezenas de conversas "ontem", boa parte disparos em massa ja
-respondidos pelo vendedor). Conversas so com audio do cliente ainda
-nao ouvidas devem ser triadas pela equipe (ver alerta sistemico).
+- Sem resposta antes 18h: 5  (sendo 1 JURIDICO critico)
+- Sem resposta apos 18h:  0
+- Alto consumo / B2B:     2
+- Leads quentes:          1
+TOTAL DE FOLLOW-UPS: 8
+
+ALERTA DO DIA: DR4 esta "queimando base" com disparos de reativacao em massa
+(Yan Francisco) em vez de responder os clientes que ja estavam aguardando.
+DR2 segue sem cobertura humana adequada para inbound de alto valor.
+CRITICO: notificacao juridica do Bonani Advogados sem tratamento.
 ====================================================
