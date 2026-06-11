@@ -2,27 +2,22 @@
   "relatorios": [
     {
       "data": "2026-06-11",
-      "tipo_analise": "analise_meio_dia",
-      "hora_execucao": "13:15",
-      "total_conversas": 41,
-      "total_conversas_dr4": 21,
-      "total_conversas_dr2": 20,
-      "sem_resposta": 9,
+      "tipo_analise": "analise_completa_fim_de_tarde",
+      "hora_execucao": "18:40",
+      "total_conversas": 52,
+      "total_conversas_dr4": 22,
+      "total_conversas_dr2": 30,
+      "sem_resposta": 8,
       "criticas": 2,
-      "nota_media_sdr": 6.1,
-      "nota_media_vendedor": 5.4,
-      "cobertura": "Censo 100% das conversas com mensagem HOJE ate ~13:05 (run de MEIO-DIA, dia ainda em curso). Extracao de DOM com loader anti-contaminacao (verificacao de troca de URL por conversa). DR4=21 (08:36-12:31; 14 reais + 4 feeds de notificacao interna 'Chegou um lead pra voce' + 1 vazia + excluida 'Paulo Junior -Ignorar'); DR2=20 (10:06-13:05) lidas a fundo integralmente. Dia DOMINADO pelo Yan Francisco fazendo reativacao/inbound em massa nas DUAS contas; Pericles/Keanny/Gabriel atuaram pouco hoje.",
-      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 (gap cronico). Yan Francisco AGENDOU 3 visitas (Barbara Duarte 1000kW 2 imoveis Petrolina+Recife Segunda 9h; Jackson Lobo HOJE 13h; Adailton 500kwh 13h) mas tambem: 2 leads perdidos para concorrente apenas registrados sem F4 (Malan, Jose/carvalho); perguntas de preco ignoradas (Cleonice a vista, 558788692514 HOJE, Gilberto financiamento+garantia ha 1 mes); 1000kW off-grid de Wellington (Petrolina) abandonado com '.'; audios que nao tocam (Ana Cecilia, Bruna Dantas). DR2 alto valor parado: Diego Costa 2000kWh sem orcamento; Tiago Liborio CODEVASF licitacao 6 kits UFV (B2B governo) encaminhado ao assessor Anderson. CARRYOVER: Bonani Advogados (DR2) notificacao judicial agora marcada 'ontem' - verificar se foi respondida. SDR=Keanny Brandao, Gabriel, Kemilly; Vendedores=Yan Francisco, Pericles Mateus, Caio Roberto, Luana.",
+      "nota_media_sdr": 5.5,
+      "nota_media_vendedor": 4.9,
+      "cobertura": "Censo 100% das conversas com mensagem HOJE (sobrescreve run de meio-dia 13:15). Extracao de DOM com loader anti-contaminacao (troca de URL por conversa, leitura no-scroll do bloco do dia). DR4=22 reais (08:36-17:39; +2 feeds internos e 1 'Paulo Junior -Ignorar' excluidos; Regis nao renderizou); DR2=30 (09:45-18:19) lidas a fundo. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas; DR2 hoje 100% Yan (sem SDR). Keanny Brandao (SDR) so em 4 conversas do DR4; Pericles/Alan/Luana/Gabriel sem chats proprios (so handoffs).",
+      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 52 conversas (gap cronico). POSITIVO: Yan AGENDOU 4 visitas (Jackson Lobo 600kW HOJE 13h c/ B1+B3+B4; Adailton 500kwh HOJE 13h; Barbara Duarte 1000kW 2 imoveis Petrolina+Recife Segunda 9h; Anderson Freitas 17/06 10h) + Aparecida visita realizada (Laercio) + callback Geordanio 18h; usou B3/B4 com Ana Cecilia 1000kW e Bruna Dantas. CRITICO: 3 leads perdidos p/ concorrente so registrados sem F4 (Malan, Leticia Andrade, Jose); Diego Costa 2000kWh (maior valor do dia) so com template; Thales Souza enviou 2 contas e Yan prometeu orcamento e nao voltou; Wellington 1000kW Petrolina engajou e ficou sem resposta; Cinara 300kW pediu simulacao 2x sem proposta; audios do Yan nao tocam (Ana Cecilia, Bruna). DR2 alto valor depende de 1 pessoa: Tiago Liborio CODEVASF licitacao 6 kits UFV (B2B governo) encaminhado ao assessor Anderson. SDR=Keanny Brandao; Vendedor=Yan Francisco.",
       "sdrs": [
-        "Keanny Brandão",
-        "Gabriel",
-        "Kemilly"
+        "Keanny Brandão"
       ],
       "vendedores": [
-        "Yan Francisco",
-        "Pericles Mateus",
-        "Caio Roberto",
-        "Luana"
+        "Yan Francisco"
       ]
     },
     {
@@ -550,5 +545,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-11T13:15"
+  "ultima_atualizacao": "2026-06-11T18:40"
 }
