@@ -1,6 +1,31 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-11",
+      "tipo_analise": "analise_meio_dia",
+      "hora_execucao": "13:15",
+      "total_conversas": 41,
+      "total_conversas_dr4": 21,
+      "total_conversas_dr2": 20,
+      "sem_resposta": 9,
+      "criticas": 2,
+      "nota_media_sdr": 6.1,
+      "nota_media_vendedor": 5.4,
+      "cobertura": "Censo 100% das conversas com mensagem HOJE ate ~13:05 (run de MEIO-DIA, dia ainda em curso). Extracao de DOM com loader anti-contaminacao (verificacao de troca de URL por conversa). DR4=21 (08:36-12:31; 14 reais + 4 feeds de notificacao interna 'Chegou um lead pra voce' + 1 vazia + excluida 'Paulo Junior -Ignorar'); DR2=20 (10:06-13:05) lidas a fundo integralmente. Dia DOMINADO pelo Yan Francisco fazendo reativacao/inbound em massa nas DUAS contas; Pericles/Keanny/Gabriel atuaram pouco hoje.",
+      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 (gap cronico). Yan Francisco AGENDOU 3 visitas (Barbara Duarte 1000kW 2 imoveis Petrolina+Recife Segunda 9h; Jackson Lobo HOJE 13h; Adailton 500kwh 13h) mas tambem: 2 leads perdidos para concorrente apenas registrados sem F4 (Malan, Jose/carvalho); perguntas de preco ignoradas (Cleonice a vista, 558788692514 HOJE, Gilberto financiamento+garantia ha 1 mes); 1000kW off-grid de Wellington (Petrolina) abandonado com '.'; audios que nao tocam (Ana Cecilia, Bruna Dantas). DR2 alto valor parado: Diego Costa 2000kWh sem orcamento; Tiago Liborio CODEVASF licitacao 6 kits UFV (B2B governo) encaminhado ao assessor Anderson. CARRYOVER: Bonani Advogados (DR2) notificacao judicial agora marcada 'ontem' - verificar se foi respondida. SDR=Keanny Brandao, Gabriel, Kemilly; Vendedores=Yan Francisco, Pericles Mateus, Caio Roberto, Luana.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Gabriel",
+        "Kemilly"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Pericles Mateus",
+        "Caio Roberto",
+        "Luana"
+      ]
+    },
+    {
       "data": "2026-06-10",
       "tipo_analise": "analise_completa_fim_de_tarde",
       "hora_execucao": "18:55",
@@ -525,5 +550,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-10T18:55"
+  "ultima_atualizacao": "2026-06-11T13:15"
 }
