@@ -1,0 +1,362 @@
+{
+  "data": "2026-06-12",
+  "hora_execucao": "16:20",
+
+  "metricas": {
+    "total_conversas": 69,
+    "total_conversas_dr4": 36,
+    "total_conversas_dr2": 33,
+    "total_ligacoes": 4,
+    "sem_resposta": 9,
+    "criticas": 2,
+    "sem_vendedor": 0,
+    "nota_media_sdr": 6.0,
+    "nota_media_vendedor": 5.0,
+    "aderencia_geral": 38
+  },
+
+  "sdrs": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 6,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 5,
+      "media_resposta_min": 8,
+      "qualidade": {
+        "nota_media": 6.0,
+        "aderencia_script": 45,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 5,
+          "SDR-2_qualificacao": 1,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 1
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Transferência/Agendamento (SDR-4)",
+            "descricao": "Faz handoff organizado para assessor e coordena callback",
+            "exemplos": [
+              "Cliente Jose: passou o lead para o assessor Anderson e negociou melhor horário de retorno por ligação ('qual o melhor horário para te retornar?')"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Qualificação (SDR-2)",
+            "descricao": "Abre só com saudação e não puxa valor da conta nem pesquisa antes do handoff",
+            "impacto": "Lead chega ao assessor/vendedor sem contexto de consumo",
+            "conversas_afetadas": 4,
+            "exemplos_clientes": [
+              "Cliente Marcelo: apenas 'ola, boa tarde' sem qualificação",
+              "Cliente reindo canario: apenas saudação, sem pergunta de conta",
+              "Cliente Dario: cliente respondeu 'Bom dia' e ficou aguardando"
+            ],
+            "acao_corretiva": "Perguntar valor da conta e se já pesquisou ANTES de passar para o assessor"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "SDR-X2", "descricao": "Não fez pergunta de qualificação (valor da conta)", "ocorrencias": 4},
+          {"codigo": "SDR-X8", "descricao": "Conversou/saudou sem objetivo claro de agendamento", "ocorrencias": 2}
+        ]
+      }
+    },
+    {
+      "nome": "Gabriel",
+      "cor": "#06b6d4",
+      "papel": "SDR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 5.0,
+        "aderencia_script": 30,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 1,
+          "SDR-2_qualificacao": 1,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Abertura automática (SDR-1)",
+            "descricao": "Fluxo de boas-vindas responde inbound na hora pedindo valor da conta",
+            "exemplos": ["Cliente Iveraldo: inbound 'Quero economizar com energia solar' recebeu saudação e pergunta de valor da conta no mesmo minuto"]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Atuação humana (SDR-2/4)",
+            "descricao": "Fluxo é automatizado; sem condução humana de qualificação/agendamento (quem assumiu foi o vendedor Yan)",
+            "impacto": "Pouca presença real do SDR Gabriel no dia",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": ["Cliente Iveraldo: após o bot, foi o Yan quem passou para o assessor Yuri"],
+            "acao_corretiva": "SDR assumir a qualificação humana do inbound antes do repasse"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    }
+  ],
+
+  "vendedores": [
+    {
+      "nome": "Yan Francisco",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 59,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 9,
+      "mediana_resposta_min": 4,
+      "media_resposta_min": 7,
+      "total_respostas": 30,
+      "qualidade": {
+        "nota_media": 5.0,
+        "aderencia_script": 35,
+        "argumentos_usados": {
+          "A1": 30, "A2": 20, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 3,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 1
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratório próprio + troca 24h", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 59},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciação", "importancia": "Alta", "vezes_perdidas": 59},
+          {"id": "D3", "nome": "Mais de 5/6 mil projetos", "categoria": "Diferenciação", "importancia": "Alta", "vezes_perdidas": 59},
+          {"id": "A3", "nome": "Pergunta de qualificação (valor da conta)", "categoria": "Qualificação", "importancia": "Crítica", "vezes_perdidas": 55}
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Agendamento de visita",
+            "descricao": "Converteu contatos em visitas técnicas com assessor",
+            "exemplos": [
+              "Cliente Geordanio: agendou visita HOJE 15h com assessor Alan",
+              "Cliente Ronaldo (557488335084, kit 1000 kW): agendou visita SEGUNDA 8:30",
+              "Cliente Providência divina: marcou visita amanhã 14h com assessor Yuri"
+            ]
+          },
+          {
+            "categoria": "Velocidade de resposta (A1)",
+            "descricao": "Responde rápido quando o cliente está presente",
+            "exemplos": [
+              "Cliente Ailton: respondeu em ~1 min",
+              "Cliente Ana Cecília: respondeu em 3 min"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciação Competitiva (D1-D4)",
+            "descricao": "NUNCA mencionou laboratório próprio, 17 anos, mil projetos ou órfãos solares em nenhuma das 59 conversas",
+            "impacto": "Zero diferenciação; perde para concorrente no preço",
+            "conversas_afetadas": 59,
+            "exemplos_clientes": [
+              "Cliente kercio: 'Já contratei o serviço de outra empresa' e Yan só respondeu 'Certo.'",
+              "Cliente Ivonaldo: 'Já estou em contato com outro fornecedor' sem nenhum diferencial para reverter"
+            ],
+            "acao_corretiva": "Incluir D1 (laboratório próprio/troca 24h) e D2/D3 em toda conversa, principalmente em quem cita concorrente"
+          },
+          {
+            "categoria": "Reativação por template idêntico (E5/X4)",
+            "descricao": "Dispara o mesmo texto 'Entrei em contato porque recebemos o seu interesse...' em massa, sem qualificação",
+            "impacto": "Baixíssima conversão e queima de base; maioria fica 'aguardando cliente'",
+            "conversas_afetadas": 40,
+            "exemplos_clientes": [
+              "Clientes Hewerthon, Jh, Carlos Gondim, Makez, alisson, Léo, Antônio, Castro: template idêntico sem retorno",
+              "Cliente Genialdo: template enviado com NOME ERRADO ('senhor Léo')"
+            ],
+            "acao_corretiva": "Variar gatilhos (E1-E4), personalizar e abrir com pergunta de qualificação"
+          },
+          {
+            "categoria": "Preço sem qualificação (A4/X1)",
+            "descricao": "Passou faixa de preço sem qualificar nem agendar visita",
+            "impacto": "Perde controle do funil e o gancho da visita técnica",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": ["Cliente Ailton (1000 kW): perguntou valor e recebeu 'entre 14 e 15 mil' solto, sem visita nem diferenciais"],
+            "acao_corretiva": "Responder preço com convite de visita técnica (B1-B4), não valor solto"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais (D1-D4)", "ocorrencias": 59},
+          {"codigo": "X4", "descricao": "Mensagem genérica copy-paste de reativação", "ocorrencias": 40},
+          {"codigo": "X1", "descricao": "Enviou preço sem qualificação prévia", "ocorrencias": 1},
+          {"codigo": "X3", "descricao": "Ignorou/abandonou cliente que aguardava", "ocorrencias": 3}
+        ]
+      }
+    },
+    {
+      "nome": "Laercio",
+      "cor": "#e11d48",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 1,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 0,
+      "qualidade": {
+        "nota_media": 6.5,
+        "aderencia_script": 40,
+        "argumentos_usados": {
+          "A1": 0, "A2": 0, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 1,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratório próprio + troca 24h", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 1}
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Visita realizada",
+            "descricao": "Executou visita técnica presencial",
+            "exemplos": ["Cliente Adailton Souza: visita feita por Laercio (registrada hoje)"]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Registro de pós-visita",
+            "descricao": "Sem detalhe do desfecho/proposta após a visita no chat",
+            "impacto": "Dificulta follow-up estruturado",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": ["Cliente Adailton: só consta 'visita feita ontem', sem próximos passos"],
+            "acao_corretiva": "Registrar resultado da visita e agendar follow-up de proposta"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    }
+  ],
+
+  "insights": {
+    "destaques_positivos": [
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Ronaldo (1000 kW)", "acao": "Qualificou por telefone e agendou visita técnica para segunda 8:30", "resultado": "Lead de alto consumo encaminhado para fechamento"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Geordanio", "acao": "Agendou visita hoje 15h com assessor Alan", "resultado": "Visita no mesmo dia"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Providência divina", "acao": "Marcou visita amanhã 14h com assessor Yuri", "resultado": "Cliente confirmou (👍)"},
+      {"pessoa": "Keane", "papel": "SDR", "cliente": "Jose", "acao": "Handoff organizado para assessor Anderson com coordenação de horário", "resultado": "Cliente alinhado para callback"},
+      {"pessoa": "Laercio", "papel": "VENDEDOR", "cliente": "Adailton Souza", "acao": "Visita técnica realizada", "resultado": "Avanço no funil presencial"}
+    ],
+    "alertas": [
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Lilian Costa", "problema": "Cliente pós-venda muito insatisfeita: 'é muita dor de cabeça resolver qualquer coisa com vocês' / 'empresa que não indico a ninguém'. Foi empurrada para outro número.", "impacto": "Risco de reputação e indicação negativa", "acao_corretiva": "Escalar para gestão/pós-venda HOJE e dar resolução concreta, não repasse"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "kercio / Ivonaldo Faustino", "problema": "Ambos disseram que já fecharam/estão com concorrente; Yan respondeu só 'Certo.' ou perguntou o nome da empresa sem aplicar diferenciais", "impacto": "Leads perdidos sem tentativa real de recuperação", "acao_corretiva": "Aplicar D1-D4 e F4 (plantar dúvida sobre concorrente) antes de aceitar a perda"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Ailton Guimarães (1000 kW)", "problema": "Perguntou valor de sistema 1000 kW e recebeu faixa solta (14-15 mil) sem qualificação, visita ou diferenciais", "impacto": "Lead de alto consumo tratado como cotação de WhatsApp", "acao_corretiva": "Reabrir com B1-B4 (vender a visita) e D1-D4"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Clescio Pereira", "problema": "Cliente enviou dados (conta vencida + documento) e ficou sem resposta", "impacto": "Lead engajado abandonado", "acao_corretiva": "Responder e qualificar HOJE"},
+      {"pessoa": "Yan Francisco", "papel": "VENDEDOR", "cliente": "Stenio / Ana Cecília", "problema": "Stenio pergunta 'Chegaram?' (homologação) e Ana Cecília 'KD o orçamento?' — ambos aguardando há horas", "impacto": "Cliente quente esfriando", "acao_corretiva": "Dar retorno objetivo e prazo"}
+    ],
+    "oportunidades": [
+      {"tipo": "Diferenciação", "cliente": "Toda a base", "descricao": "Nenhum vendedor usou D1-D4 em 69 conversas (gap crônico recorrente)", "acao_sugerida": "Treinar e cobrar uso obrigatório de laboratório próprio/24h, 17 anos e projetos em toda conversa"},
+      {"tipo": "Reativação", "cliente": "~40 templates do Yan", "descricao": "Reativação em massa por texto idêntico tem baixíssima conversão", "acao_sugerida": "Sequência de follow-up variada (E1-E4) com qualificação na abertura"},
+      {"tipo": "Alto consumo", "cliente": "Ronaldo, Ailton, Bruna Dantas", "descricao": "Vários leads 1000 kW no DR2/DR4 hoje", "acao_sugerida": "Priorizar visita + proposta consultiva com diferenciais"}
+    ]
+  },
+
+  "ranking_sdrs": [
+    {"posicao": 1, "nome": "Keane", "nota_media": 6.0, "aderencia": 45, "visitas_agendadas": 0, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Gabriel", "nota_media": 5.0, "aderencia": 30, "visitas_agendadas": 0, "badge": "🥈 Prata"}
+  ],
+
+  "ranking_vendedores": [
+    {"posicao": 1, "nome": "Laercio", "nota_media": 6.5, "aderencia": 40, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Yan Francisco", "nota_media": 5.0, "aderencia": 35, "badge": "🥈 Prata"}
+  ],
+
+  "oportunidades_prioritarias": [
+    {"cliente": "Lilian Costa", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "🚨 RECUPERAÇÃO", "motivo": "Cliente pós-venda furiosa, ameaça reputação ('não indico a ninguém')", "recomendacao": "Gestão/pós-venda assumir e resolver hoje, com retorno proativo", "urgencia": "HOJE", "argumentos_recomendados": ["F2 - registro/gravação para segurança", "C5 - pergunta direta de resolução"]},
+    {"cliente": "Ronaldo (557488335084)", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "💎 ALTO CONSUMO", "motivo": "Kit 1000 kW com visita marcada segunda 8:30", "recomendacao": "Preparar proposta consultiva e levar diferenciais na visita", "urgencia": "ESTA SEMANA", "argumentos_recomendados": ["D1 - laboratório próprio", "D3 - milhares de projetos", "B4 - vender a visita"]},
+    {"cliente": "Ailton Guimarães", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR4", "categoria": "💎 ALTO CONSUMO", "motivo": "1000 kW recebeu só faixa de preço solta", "recomendacao": "Reabrir oferecendo visita técnica e diferenciais", "urgencia": "HOJE", "argumentos_recomendados": ["B1 - proximidade", "D1 - laboratório", "C1 - troca conta por parcela"]},
+    {"cliente": "kercio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "🚨 RECUPERAÇÃO", "motivo": "Fechou com concorrente; resposta foi só 'Certo.'", "recomendacao": "Aplicar F4 (dúvida sobre concorrente) e D1-D4", "urgencia": "HOJE", "argumentos_recomendados": ["F4 - plantar dúvida", "D1 - laboratório/24h", "D4 - órfãos solares"]},
+    {"cliente": "Ivonaldo Faustino", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "🚨 RECUPERAÇÃO", "motivo": "Já com outro fornecedor; sem diferencial para reverter", "recomendacao": "Comparativo (D5) + diferenciais antes de desistir", "urgencia": "HOJE", "argumentos_recomendados": ["D5 - checklist comparação", "F4 - dúvida concorrente"]},
+    {"cliente": "Clescio Pereira", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR4", "categoria": "⚠️ FOLLOW-UP URGENTE", "motivo": "Enviou conta/documento e ficou sem resposta", "recomendacao": "Responder e qualificar", "urgencia": "HOJE", "argumentos_recomendados": ["A3 - qualificação", "B1 - proximidade"]},
+    {"cliente": "Stenio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "⚠️ FOLLOW-UP URGENTE", "motivo": "Cliente de homologação perguntou 'Chegaram?' e aguarda", "recomendacao": "Dar retorno do setor de homologação com prazo", "urgencia": "HOJE", "argumentos_recomendados": ["C5 - pergunta direta"]},
+    {"cliente": "Ana Cecília", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "🔥 QUENTE", "motivo": "Pediu o orçamento ('KD o orçamento?') e aguarda desde de manhã", "recomendacao": "Enviar orçamento após foto da conta, com diferenciais", "urgencia": "HOJE", "argumentos_recomendados": ["A3 - qualificação", "D1 - laboratório"]},
+    {"cliente": "Geordanio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR2", "categoria": "🔥 QUENTE", "motivo": "Visita hoje 15h com Alan", "recomendacao": "Confirmar visita e preparar proposta", "urgencia": "HOJE", "argumentos_recomendados": ["B4 - vender a visita", "D1 - laboratório"]},
+    {"cliente": "Providência divina", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "conta": "DR4", "categoria": "🔥 QUENTE", "motivo": "Visita amanhã 14h com Yuri; cliente pediu faixa de valor", "recomendacao": "Levar proposta na visita, segurar o preço para o presencial", "urgencia": "ESTA SEMANA", "argumentos_recomendados": ["B2 - quebra 'manda pelo zap'", "D1 - laboratório"]}
+  ],
+
+  "conversas": [
+    {"id": 1, "conta": "DR4", "cliente": "Hewerthon", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:14", "ultima_msg": "16:14", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Hewerthon: template de reativação, aguardando cliente"},
+    {"id": 2, "conta": "DR4", "cliente": "Claudemy", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:12", "ultima_msg": "16:12", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Claudemy: follow-up 'ainda aguardando', sem qualificação"},
+    {"id": 3, "conta": "DR4", "cliente": "Joao Bispo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:10", "ultima_msg": "16:10", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Joao Bispo: saudação, histórico antigo da Luana, aguardando"},
+    {"id": 4, "conta": "DR4", "cliente": "Artur Pereira", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:54", "ultima_msg": "15:54", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Artur Pereira: saudação, aguardando"},
+    {"id": 5, "conta": "DR4", "cliente": "Jh", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:52", "ultima_msg": "15:52", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Jh: template de reativação, aguardando"},
+    {"id": 6, "conta": "DR4", "cliente": "pedro gusmao tim", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:00", "ultima_msg": "15:00", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente pedro gusmao: template de reativação, aguardando"},
+    {"id": 7, "conta": "DR4", "cliente": "Diego H.Silveira", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:57", "ultima_msg": "14:57", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Diego: template de reativação, aguardando"},
+    {"id": 8, "conta": "DR4", "cliente": "Carlos Gondim", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:56", "ultima_msg": "14:56", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Carlos Gondim: template de reativação, aguardando"},
+    {"id": 9, "conta": "DR4", "cliente": "wedson", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:53", "ultima_msg": "14:53", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente wedson: template de reativação, aguardando"},
+    {"id": 10, "conta": "DR4", "cliente": "Ailton Guimaraes", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:52", "ultima_msg": "14:52", "total_msgs": 5, "status": "ok", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","B1","D1"], "erros": ["X1","X6","X7"], "observacao": "Cliente Ailton (1000 kW): perguntou valor e recebeu faixa solta 14-15 mil, sem qualificação/visita/diferenciais"},
+    {"id": 11, "conta": "DR4", "cliente": "Armando Nascimento", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:50", "ultima_msg": "14:50", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Armando: template de reativação, aguardando"},
+    {"id": 12, "conta": "DR4", "cliente": "Luiz Eduardo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:47", "ultima_msg": "14:47", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Luiz Eduardo: template de reativação, aguardando"},
+    {"id": 13, "conta": "DR4", "cliente": "ALEXANDRE JUNIOR", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:44", "ultima_msg": "14:44", "total_msgs": 4, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Alexandre: template de reativação 'sem retorno', aguardando"},
+    {"id": 14, "conta": "DR4", "cliente": "Marcelo", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:48", "ultima_msg": "12:48", "total_msgs": 1, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["SDR-1"], "argumentos_perdidos": ["SDR-2"], "erros": ["SDR-X2"], "observacao": "Cliente Marcelo: SDR só saudou, aguardando"},
+    {"id": 15, "conta": "DR4", "cliente": "Jose", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:42", "ultima_msg": "12:42", "total_msgs": 5, "status": "ok", "nota": 7, "argumentos_usados": ["SDR-1","SDR-4"], "argumentos_perdidos": ["SDR-2"], "erros": [], "observacao": "Cliente Jose: handoff para assessor Anderson e coordenou callback - bom"},
+    {"id": 16, "conta": "DR4", "cliente": "Providencia divina", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "12:14", "ultima_msg": "12:14", "total_msgs": 13, "status": "ok", "nota": 6, "argumentos_usados": ["A1","A2","B4"], "argumentos_perdidos": ["D1","B2"], "erros": ["X6"], "observacao": "Cliente Providência: visita amanhã 14h c/ Yuri; cliente pediu faixa de valor, Yan segurou e pediu conta"},
+    {"id": 17, "conta": "DR4", "cliente": "Cesar", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "12:10", "ultima_msg": "12:10", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente César: template de reativação, aguardando"},
+    {"id": 18, "conta": "DR4", "cliente": "reindo canario", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:06", "ultima_msg": "12:06", "total_msgs": 2, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["SDR-1"], "argumentos_perdidos": ["SDR-2"], "erros": ["SDR-X2"], "observacao": "Cliente reindo canario: SDR saudou, aguardando"},
+    {"id": 19, "conta": "DR4", "cliente": "Iveraldo", "pessoa": "Gabriel", "papel": "SDR", "hora_lista": "12:05", "ultima_msg": "12:05", "total_msgs": 5, "status": "ok", "nota": 5, "argumentos_usados": ["SDR-1","SDR-2"], "argumentos_perdidos": ["SDR-4"], "erros": [], "observacao": "Cliente Iveraldo: inbound, bot qualificou e Yan passou p/ assessor Yuri"},
+    {"id": 20, "conta": "DR4", "cliente": "Flavio", "pessoa": "Keane", "papel": "SDR", "hora_lista": "12:00", "ultima_msg": "12:00", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["SDR-1"], "argumentos_perdidos": ["SDR-3"], "erros": ["SDR-X7"], "observacao": "Cliente Flavio: 'Já fechei a usina' (concorrente?) e ficou sem resposta - recuperação"},
+    {"id": 21, "conta": "DR4", "cliente": "Makez", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "11:47", "ultima_msg": "11:47", "total_msgs": 4, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Makez: template de reativação 'sem retorno', aguardando"},
+    {"id": 22, "conta": "DR4", "cliente": "Robson Silva (Barbosa)", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "11:45", "ultima_msg": "11:45", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Robson: template de reativação, aguardando"},
+    {"id": 23, "conta": "DR4", "cliente": "Dario", "pessoa": "Keane", "papel": "SDR", "hora_lista": "11:38", "ultima_msg": "11:38", "total_msgs": 2, "status": "ok", "nota": 5, "argumentos_usados": ["SDR-1"], "argumentos_perdidos": ["SDR-2"], "erros": ["SDR-X2"], "observacao": "Cliente Dario: saudou, cliente respondeu 'Bom dia', aguardando qualificação"},
+    {"id": 24, "conta": "DR4", "cliente": "Rogerio Batista", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:50", "ultima_msg": "10:50", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Rogerio: template de reativação, aguardando"},
+    {"id": 25, "conta": "DR4", "cliente": "Clescio Pereira", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:27", "ultima_msg": "10:27", "total_msgs": 3, "status": "critico", "nota": 3, "argumentos_usados": [], "argumentos_perdidos": ["A1","A3","D1"], "erros": ["X3"], "observacao": "Cliente Clescio: enviou conta vencida + documento e ficou SEM resposta"},
+    {"id": 26, "conta": "DR4", "cliente": "Dewilson Nogueira", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:22", "ultima_msg": "10:22", "total_msgs": 2, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Dewilson: saudação, aguardando"},
+    {"id": 27, "conta": "DR4", "cliente": "A Melhor Opcao (carro)", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:19", "ultima_msg": "10:19", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Contato comercial: template de reativação, aguardando"},
+    {"id": 28, "conta": "DR4", "cliente": "Adailton Souza", "pessoa": "Laercio", "papel": "VENDEDOR", "hora_lista": "10:17", "ultima_msg": "10:17", "total_msgs": 1, "status": "ok", "nota": 6, "argumentos_usados": ["B4"], "argumentos_perdidos": ["D1"], "erros": [], "observacao": "Cliente Adailton: visita realizada por Laercio (registrada)"},
+    {"id": 29, "conta": "DR4", "cliente": "alisson", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:15", "ultima_msg": "10:15", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente alisson: template de reativação, aguardando"},
+    {"id": 30, "conta": "DR4", "cliente": "Genialdo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:01", "ultima_msg": "10:01", "total_msgs": 3, "status": "sem_resposta", "nota": 3, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Genialdo: template com NOME ERRADO ('senhor Léo'), aguardando"},
+    {"id": 31, "conta": "DR4", "cliente": "Leo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:00", "ultima_msg": "10:00", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Léo: template de reativação, aguardando"},
+    {"id": 32, "conta": "DR4", "cliente": "Marmitaria da Leide", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "09:59", "ultima_msg": "09:59", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Marmitaria (B2B comércio): template de reativação, aguardando"},
+    {"id": 33, "conta": "DR4", "cliente": "Ana Risolandia", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "09:53", "ultima_msg": "09:53", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Ana Risolândia: template de reativação, aguardando"},
+    {"id": 34, "conta": "DR4", "cliente": "Enfermeira Rosilda Leite", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "09:52", "ultima_msg": "09:52", "total_msgs": 4, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Rosilda: tentou ligação, template, aguardando"},
+    {"id": 35, "conta": "DR4", "cliente": "Marcos Aurelio M.D.S", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "08:22", "ultima_msg": "08:22", "total_msgs": 4, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Marcos: tentou ligação, template, aguardando"},
+    {"id": 36, "conta": "DR4", "cliente": "Erevelton Antonio", "pessoa": "Keane", "papel": "SDR", "hora_lista": "07:53", "ultima_msg": "07:53", "total_msgs": 3, "status": "sem_resposta", "nota": 5, "argumentos_usados": ["SDR-1"], "argumentos_perdidos": ["SDR-2"], "erros": [], "observacao": "Cliente Erevelton: inbound, fluxo de boas-vindas Keane, aguardando"},
+
+    {"id": 37, "conta": "DR2", "cliente": "Eugenio victor", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:16", "ultima_msg": "16:16", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Eugênio: template de reativação, aguardando"},
+    {"id": 38, "conta": "DR2", "cliente": "558796100835", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:03", "ultima_msg": "16:03", "total_msgs": 1, "status": "critico", "nota": 3, "argumentos_usados": [], "argumentos_perdidos": ["A1","D1"], "erros": ["X3"], "observacao": "Cliente disse 'Boa tarde' e está aguardando resposta"},
+    {"id": 39, "conta": "DR2", "cliente": "Fabio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "16:02", "ultima_msg": "16:02", "total_msgs": 9, "status": "ok", "nota": 5, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Fabio: oferta 'dia dos namorados só hoje' com urgência; cliente confuso ('?'), pediu foto da conta"},
+    {"id": 40, "conta": "DR2", "cliente": "Ivonaldo Faustino", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:58", "ultima_msg": "15:58", "total_msgs": 8, "status": "ok", "nota": 4, "argumentos_usados": ["A1","A2","F4"], "argumentos_perdidos": ["D1","D5"], "erros": ["X6"], "observacao": "Cliente Ivonaldo: 'já estou com outro fornecedor'; Yan só perguntou o nome da empresa, sem diferenciais - perda"},
+    {"id": 41, "conta": "DR2", "cliente": "kercio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:57", "ultima_msg": "15:57", "total_msgs": 5, "status": "ok", "nota": 3, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["D1","F4"], "erros": ["X6"], "observacao": "Cliente kercio: 'já contratei outra empresa'; Yan respondeu só 'Certo.' - perda sem recuperação"},
+    {"id": 42, "conta": "DR2", "cliente": "Thiago Silva", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:42", "ultima_msg": "15:42", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Thiago: template de reativação, aguardando"},
+    {"id": 43, "conta": "DR2", "cliente": "sandro", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:37", "ultima_msg": "15:37", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente sandro: template de reativação, aguardando"},
+    {"id": 44, "conta": "DR2", "cliente": "Rafael Alves", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:34", "ultima_msg": "15:34", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Rafael: template de reativação, aguardando"},
+    {"id": 45, "conta": "DR2", "cliente": "Wellington Cordeiro Lima", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:32", "ultima_msg": "15:32", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Wellington: template de reativação, aguardando"},
+    {"id": 46, "conta": "DR2", "cliente": "Lucas Matheus", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:27", "ultima_msg": "15:27", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Lucas Matheus: template de reativação, aguardando"},
+    {"id": 47, "conta": "DR2", "cliente": "Jade1001coisinhas", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:23", "ultima_msg": "15:23", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Jade (B2B comércio): template de reativação, aguardando"},
+    {"id": 48, "conta": "DR2", "cliente": "Marquinhos", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:20", "ultima_msg": "15:20", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Marquinhos: template de reativação, aguardando"},
+    {"id": 49, "conta": "DR2", "cliente": "Afonso Torres", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:18", "ultima_msg": "15:18", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Afonso: histórico Guilherme com diferenciais (D1/D2/D3), hoje só template Yan"},
+    {"id": 50, "conta": "DR2", "cliente": "Antonio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:15", "ultima_msg": "15:15", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Antônio: histórico Guilherme com diferenciais, hoje só template Yan"},
+    {"id": 51, "conta": "DR2", "cliente": "Josemario", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:11", "ultima_msg": "15:11", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Josemario: template de reativação, aguardando"},
+    {"id": 52, "conta": "DR2", "cliente": "Castro", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "15:06", "ultima_msg": "15:06", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Castro: template de reativação, aguardando"},
+    {"id": 53, "conta": "DR2", "cliente": "Lilian Costa", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:57", "ultima_msg": "14:57", "total_msgs": 21, "status": "ok", "nota": 3, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1","F2"], "erros": ["X3"], "observacao": "Cliente Lilian: pós-venda MUITO insatisfeita ('não indico a ninguém'), empurrada para outro número - recuperação crítica"},
+    {"id": 54, "conta": "DR2", "cliente": "Ana Cecilia", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "14:42", "ultima_msg": "14:42", "total_msgs": 5, "status": "ok", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Ana Cecília: 'KD o orçamento?' aguardando desde de manhã; Yan pediu foto da conta"},
+    {"id": 55, "conta": "DR2", "cliente": "Thales Souza", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "12:32", "ultima_msg": "12:32", "total_msgs": 7, "status": "ok", "nota": 5, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Thales: passou p/ assessor Alan orçamento; cliente prefere por zap"},
+    {"id": 56, "conta": "DR2", "cliente": "Geordanio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "12:26", "ultima_msg": "12:26", "total_msgs": 3, "status": "ok", "nota": 6, "argumentos_usados": ["A1","B4"], "argumentos_perdidos": ["D1"], "erros": ["X6"], "observacao": "Cliente Geordanio: visita HOJE 15h com assessor Alan - confirmado"},
+    {"id": 57, "conta": "DR2", "cliente": "Stenio", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "11:37", "ultima_msg": "11:37", "total_msgs": 13, "status": "ok", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X3"], "observacao": "Cliente Stenio: setor de homologação, perguntou 'Chegaram?' e aguarda retorno"},
+    {"id": 58, "conta": "DR2", "cliente": "Lucas Rodrigues", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "11:28", "ultima_msg": "11:28", "total_msgs": 1, "status": "ok", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X6"], "observacao": "Cliente Lucas Rodrigues: apenas 'Certo, senhor Lucas' sem avanço"},
+    {"id": 59, "conta": "DR2", "cliente": "Bruna Dantas", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "11:25", "ultima_msg": "11:25", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Bruna (lead alto valor): template de reativação, aguardando"},
+    {"id": 60, "conta": "DR2", "cliente": "Toda Vez Que Choveu Parou", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:55", "ultima_msg": "10:55", "total_msgs": 4, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Histórico Caio 'marca a visita'; hoje só template Yan, tentou ligação, aguardando"},
+    {"id": 61, "conta": "DR2", "cliente": "Andrey Lopes", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:47", "ultima_msg": "10:47", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Ândrey: template de reativação, aguardando"},
+    {"id": 62, "conta": "DR2", "cliente": "Gustavo Macedo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:46", "ultima_msg": "10:46", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Gustavo: template de reativação, aguardando"},
+    {"id": 63, "conta": "DR2", "cliente": "Deus e bom o tempo todo", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:45", "ultima_msg": "10:45", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Contato: template de reativação, aguardando"},
+    {"id": 64, "conta": "DR2", "cliente": "558788326835", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:27", "ultima_msg": "10:27", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Contato numérico: template de reativação, aguardando"},
+    {"id": 65, "conta": "DR2", "cliente": "Heloyza", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:27", "ultima_msg": "10:27", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Heloyza: template de reativação, aguardando"},
+    {"id": 66, "conta": "DR2", "cliente": "Tainara Souza", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:25", "ultima_msg": "10:25", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Tainara: template de reativação, aguardando"},
+    {"id": 67, "conta": "DR2", "cliente": "Rosivania", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "10:24", "ultima_msg": "10:24", "total_msgs": 3, "status": "sem_resposta", "nota": 4, "argumentos_usados": ["A1","A2"], "argumentos_perdidos": ["A3","D1"], "erros": ["X4","X6"], "observacao": "Cliente Rosivania: template de reativação, aguardando"},
+    {"id": 68, "conta": "DR2", "cliente": "Anderson Freitas", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "09:50", "ultima_msg": "09:50", "total_msgs": 1, "status": "ok", "nota": 5, "argumentos_usados": ["A1"], "argumentos_perdidos": ["D1"], "erros": [], "observacao": "Cliente Anderson Freitas: fechamento de contato (👍🙏), provável visita já alinhada"},
+    {"id": 69, "conta": "DR2", "cliente": "Ronaldo (557488335084)", "pessoa": "Yan Francisco", "papel": "VENDEDOR", "hora_lista": "09:49", "ultima_msg": "09:49", "total_msgs": 10, "status": "ok", "nota": 6, "argumentos_usados": ["A1","A2","B4"], "argumentos_perdidos": ["D1"], "erros": ["X6"], "observacao": "Cliente Ronaldo (kit 1000 kW): qualificou por telefone e agendou visita SEGUNDA 8:30 - alto consumo"}
+  ]
+}
