@@ -2,20 +2,21 @@
   "relatorios": [
     {
       "data": "2026-06-12",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "16:20",
-      "total_conversas": 69,
-      "total_conversas_dr4": 36,
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "hora_execucao": "19:13",
+      "total_conversas": 70,
+      "total_conversas_dr4": 37,
       "total_conversas_dr2": 33,
-      "sem_resposta": 9,
-      "criticas": 2,
+      "sem_resposta": 7,
+      "criticas": 8,
       "nota_media_sdr": 6.0,
       "nota_media_vendedor": 5.0,
-      "cobertura": "Censo 100% das conversas com mensagem HOJE via extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa). DR4=36 reais (07:53-16:14; +2 feeds 'Chegou um lead' e 1 'Paulo Junior -Ignorar' excluidos) + DR2=33 (07:44-16:16; +internal 'Paulo Santos' e 1 feed excluidos). Cada thread aberta e lida no bloco do dia. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas (~59 conversas): reativacao em massa por TEMPLATE IDENTICO 'Entrei em contato porque recebemos seu interesse...' sem qualificacao/diferenciais, maioria aguardando cliente. SDR Keanny Brandao (Keane) so em ~6 do DR4 + bot Gabriel; Pericles/Alan/Luana sem chats proprios (so handoffs a assessores Alan/Yuri/Anderson). Laercio: 1 visita realizada (Adailton).",
-      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 69 conversas (gap cronico). POSITIVO: Yan AGENDOU 3 visitas (Ronaldo kit 1000kW SEGUNDA 8:30; Geordanio HOJE 15h c/ Alan; Providencia divina amanha 14h c/ Yuri) + Adailton visita feita (Laercio) + handoffs a assessores (Iveraldo->Yuri, Thales->Alan, Jose->Anderson via Keanny). CRITICO POS-VENDA: Lilian Costa MUITO insatisfeita ('empresa que nao indico a ninguem', 'muita dor de cabeca') empurrada p/ outro numero - escalar gestao HOJE. 2 leads perdidos p/ concorrente sem recuperacao real (kercio so 'Certo.'; Ivonaldo so perguntou nome da empresa, sem D1-D4/F4). Ailton 1000kW recebeu faixa de preco solta (14-15mil) sem qualificacao/visita (X1). Clescio enviou conta+documento e ficou sem resposta. Ana Cecilia 'KD o orcamento?' e Stenio (homologacao) 'Chegaram?' aguardando ha horas. Fabio recebeu urgencia 'oferta namorados so hoje' e ficou confuso. SDR=Keanny/Gabriel; Vendedor=Yan Francisco (dominante), Laercio.",
+      "cobertura": "Censo 100% das conversas com mensagem HOJE via extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa). Run de FIM DE DIA (sobrescreve run das 16:20). DR4=37 reais (07:53-17:20; +2 feeds 'Chegou um lead' e 1 'Paulo Junior -Ignorar' excluidos) + DR2=33 (07:44-18:02; +internal 'Paulo Santos' e 2 feeds excluidos). Cada thread aberta e lida no bloco do dia. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas (~66 conversas): reativacao em massa por TEMPLATE IDENTICO 'Entrei em contato porque recebemos seu interesse...' sem qualificacao/diferenciais, maioria aguardando cliente. SDRs humanos pontuais: Keanny Brandao (Marcelo, handoff Adalberto), Gabriel (Iveraldo inbound), Keane (Erevelton inbound). Laercio: 1 visita realizada (Adailton).",
+      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 66 conversas (gap cronico; X6). POSITIVO: Yan AGENDOU/confirmou 3 visitas (Ronaldo kit 1000kW SEGUNDA 8:30; Geordanio HOJE 15h c/ Alan; Providencia divina amanha 14h c/ Yuri) + Adailton visita feita (Laercio) + handoffs a assessores (Iveraldo->Yuri, Thales->Alan, Jose->Anderson). CRITICO POS-VENDA: Lilian Costa MUITO insatisfeita ('empresa que nao indico a ninguem', 'muita dor de cabeca') empurrada p/ outro numero e SEM resolucao ate o fim do dia - escalar gestao. 3 leads perdidos p/ concorrente (kercio so 'Certo'; Rosivania so 'entendi'; Ivonaldo com F4 iniciado mas sem D1-D4). Flavio 'ja fechei a usina' sem nenhuma recuperacao. Ailton 1000kW recebeu faixa de preco solta (14-15mil) sem qualificacao/visita (X1). Clescio enviou conta e ficou sem resposta. Ana Cecilia 'KD o orcamento?' e Stenio (homologacao) aguardando. Fabio recebeu 'oferta so hoje' confusa + audios que nao tocam e pediu p/ sair da lista. SDR=Keanny/Gabriel/Keane; Vendedor=Yan Francisco (dominante), Laercio.",
       "sdrs": [
-        "Keane",
-        "Gabriel"
+        "Keanny Brandão",
+        "Gabriel",
+        "Keane"
       ],
       "vendedores": [
         "Yan Francisco",
@@ -567,5 +568,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-12T16:20"
+  "ultima_atualizacao": "2026-06-12T19:13"
 }
