@@ -1,6 +1,27 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-15",
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "hora_execucao": "22:07",
+      "total_conversas": 104,
+      "total_conversas_dr4": 104,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 6,
+      "criticas": 3,
+      "nota_media_sdr": 7.5,
+      "nota_media_vendedor": 5.2,
+      "cobertura": "DR4 VOLTOU (acesso restaurado em 15/06; estava inacessivel desde 12-15/06 de manha). DR2 (175001) CONTINUA bloqueado por 'Seu plano expirou' (WhatsApp desconectado, 0 salas) - renovacao e acao financeira do usuario, nao analisada. Censo DR4: 104 conversas com mensagem HOJE (09:45-20:20). 54 lidas a fundo (filtro de data anti-contaminacao por troca de URL); as 9 com resposta do cliente lidas integralmente; ~4 conversas pesadas deram timeout (render congela a aba ~30-60s) e 45 disparos identicos do Yan classificados por preview. Dia DOMINADO por reativacao em massa: Yan Francisco 72 (template generico), Alan Oliveira 21 (template de humor), Keanny Brandao SDR 8 (unica qualificando de verdade).",
+      "alerta_critico": "DR2 FORA DO AR pelo 2o dia (plano expirado, WhatsApp desconectado) - leads de alto valor sem cobertura, renovar plano. NENHUM vendedor usou diferenciais D1-D4 em 93 conversas (Yan 72 + Alan 21; gap cronico, X6). RECUPERACAO CRITICA: Alcides (Alan) - orcamento prometido e NUNCA entregue, fechando com concorrente e pediu sair da lista ('me humilhando') - escalar gestao. Hakai (Yan) ja comprou de concorrente 'pessoal nao me atendeu'. Givanildo inbound 'quero economizar' SEM resposta e sem vendedor atribuido. ALTO VALOR subaproveitado: Geovany 1000KW e Myldson 500KW (financiamento reprovado) so com opener generico. POSITIVO: Keanny agendou visita do Jose (16/06 14h confirmada); Alan conduzindo fechamento do Jota 600KW (2a visita feita) e dimensionamento da Elizangela. SDR=Keanny Brandao; Vendedores=Yan Francisco (dominante), Alan Oliveira.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
+      "vendedores": [
+        "Alan Oliveira",
+        "Yan Francisco"
+      ]
+    },
+    {
       "data": "2026-06-12",
       "tipo_analise": "analise_completa_fim_de_dia",
       "hora_execucao": "19:13",
@@ -568,5 +589,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-12T19:13"
+  "ultima_atualizacao": "2026-06-15T22:07"
 }
