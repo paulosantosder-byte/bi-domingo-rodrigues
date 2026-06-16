@@ -1,0 +1,2490 @@
+{
+  "data": "2026-06-16",
+  "hora_execucao": "16:17",
+  "tipo_analise": "analise_completa_tarde",
+  "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) BLOQUEADO pelo 3o dia consecutivo por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira do usuario, nao executada) - 0 conversas analisaveis. Censo DR4: 79 linhas com mensagem HOJE (08:29-16:10); excluidos 2 feeds internos ('Chegou um lead', numeros) e 1 'Paulo Junior -Ignorar' = 76 conversas reais. Extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '16 jun 2026'). ~20 conversas substantivas lidas a fundo; ~56 disparos identicos do Yan classificados por template+preview. Dia novamente DOMINADO por reativacao em massa do Yan Francisco (68 conversas, template generico, sem qualificacao/diferenciais). NOVO atendente: LUCAS (SDR/opener, 6 conversas).",
+  "metricas": {
+    "total_conversas": 76,
+    "total_conversas_dr4": 76,
+    "total_conversas_dr2": 0,
+    "total_ligacoes": 4,
+    "sem_resposta": 0,
+    "criticas": 0,
+    "sem_vendedor": 0,
+    "nota_media_sdr": 4.6,
+    "nota_media_vendedor": 4.0,
+    "aderencia_geral": 28
+  },
+  "sdrs": [
+    {
+      "nome": "Keanny Brandão",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 15,
+      "media_resposta_min": 15,
+      "qualidade": {
+        "nota_media": 7.0,
+        "aderencia_script": 70,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 1,
+          "SDR-2_qualificacao": 1,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Qualificacao (SDR-2)",
+            "descricao": "Unica qualificando de verdade no dia",
+            "exemplos": [
+              "Cliente RC: perguntou cidade, tentou contato por ligacao e pediu foto da conta (R$403) para calcular a geracao"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Agendamento (SDR-4)",
+            "descricao": "Nao avancou ate o agendamento da visita",
+            "impacto": "Lead morno fica aguardando",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente RC: qualificou bem mas parou na espera da foto, sem oferecer horarios de visita"
+            ],
+            "acao_corretiva": "Ja propor 2 horarios de visita junto com o pedido da conta"
+          }
+        ],
+        "erros_cometidos": []
+      }
+    },
+    {
+      "nome": "Lucas",
+      "cor": "#10b981",
+      "papel": "SDR",
+      "total_conversas": 6,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 4.2,
+        "aderencia_script": 35,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 6,
+          "SDR-2_qualificacao": 0,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Abertura (SDR-1)",
+            "descricao": "Faz a abertura padrao e retomou um lead quente",
+            "exemplos": [
+              "Cliente Wellington: reabriu lead de 700kW que estava em negociacao de fechamento"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Sequencia incompleta",
+            "descricao": "Para no opener; nao qualifica, nao agenda, nao usa diferenciais",
+            "impacto": "Leads de valor (Wellington 700kW) ficam so com 'aguardo retorno'",
+            "conversas_afetadas": 6,
+            "exemplos_clientes": [
+              "Cliente Wellington: lead 700kW em fase de fechamento recebeu apenas 'todo bem? aguardo seu retorno' sem retomar a proposta",
+              "Cliente Fernando Davi: apenas opener sem follow-up de qualificacao"
+            ],
+            "acao_corretiva": "No Wellington, retomar o fechamento dos 700kW com diferenciais D1-D4; nos novos, encadear SDR-2 (valor da conta) logo apos a abertura"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "SDR-X8",
+            "descricao": "Conversa sem objetivo de agendamento (so opener)",
+            "ocorrencias": 5
+          }
+        ]
+      }
+    }
+  ],
+  "vendedores": [
+    {
+      "nome": "Yan Francisco",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 68,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 68,
+      "qualidade": {
+        "nota_media": 4.0,
+        "aderencia_script": 20,
+        "argumentos_usados": {
+          "A1": 0,
+          "A2": 0,
+          "A3": 0,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratorio proprio + troca 24h",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 68
+          },
+          {
+            "id": "D2",
+            "nome": "17 anos de mercado",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 68
+          },
+          {
+            "id": "D3",
+            "nome": "6 mil projetos",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 68
+          },
+          {
+            "id": "D4",
+            "nome": "Orfaos solares",
+            "categoria": "Diferenciacao",
+            "importancia": "Alta",
+            "vezes_perdidas": 68
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Volume",
+            "descricao": "Altissimo volume de reativacao (68 conversas)",
+            "exemplos": [
+              "Cliente Armando Nascimento: disparo de reativacao iniciado as 16:09"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciacao Competitiva",
+            "descricao": "NUNCA mencionou nenhum diferencial D1-D4",
+            "impacto": "Reativacao sem valor; queima de base",
+            "conversas_afetadas": 68,
+            "exemplos_clientes": [
+              "Cliente Med Vet. Israel Castro: lead B2B (clinica veterinaria) so recebeu opener generico",
+              "Cliente Leandro - Lb Gesso: industria de gesso (alto consumo) so com template"
+            ],
+            "acao_corretiva": "Incluir ao menos 1 diferencial e 1 pergunta de qualificacao em cada reativacao"
+          },
+          {
+            "categoria": "Template generico",
+            "descricao": "Mesma mensagem copy-paste para todos ('recebemos seu interesse... verificar se faz sentido avancarmos')",
+            "impacto": "Baixa conversao, percepcao de spam",
+            "conversas_afetadas": 68,
+            "exemplos_clientes": [
+              "Cliente Givanildo Gomes: inbound 'quero economizar' respondido com o mesmo template",
+              "Cliente Hakai: lead perdido p/ concorrente recebeu so 'peco perdao por isso'"
+            ],
+            "acao_corretiva": "Segmentar: inbounds e leads de alto valor merecem abordagem personalizada e qualificacao"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X4",
+            "descricao": "Mensagem generica copy-paste",
+            "ocorrencias": 68
+          },
+          {
+            "codigo": "X6",
+            "descricao": "NUNCA mencionou diferenciais",
+            "ocorrencias": 68
+          },
+          {
+            "codigo": "X7",
+            "descricao": "Nao tentou agendar visita",
+            "ocorrencias": 68
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Alan Oliveira",
+      "cor": "#7c3aed",
+      "papel": "VENDEDOR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 1,
+      "qualidade": {
+        "nota_media": 6.0,
+        "aderencia_script": 50,
+        "argumentos_usados": {
+          "A1": 0,
+          "A2": 1,
+          "A3": 0,
+          "A4": 0,
+          "B1": 0,
+          "B2": 0,
+          "B3": 0,
+          "B4": 0,
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 1,
+          "D1": 0,
+          "D2": 0,
+          "D3": 0,
+          "D4": 0,
+          "D5": 0,
+          "D6": 0,
+          "E1": 0,
+          "E2": 0,
+          "E3": 0,
+          "E4": 0,
+          "E5": 0,
+          "F1": 0,
+          "F2": 0,
+          "F3": 0,
+          "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {
+            "id": "D1",
+            "nome": "Laboratorio proprio + troca 24h",
+            "categoria": "Diferenciacao",
+            "importancia": "Critica",
+            "vezes_perdidas": 1
+          }
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Quebra de objecao / fechamento",
+            "descricao": "Usa pergunta direta e gatilho de condicao para reaquecer",
+            "exemplos": [
+              "Cliente Elizangela Feitosa: 'se eu conseguir condicoes melhores pra gente fechar agora nao e interessante?'"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Diferenciacao",
+            "descricao": "Nao usou diferenciais D1-D4 no fechamento",
+            "impacto": "Cliente decide so por preco/condicao",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Elizangela Feitosa: fechamento sem reforco de laboratorio/17 anos/6 mil projetos"
+            ],
+            "acao_corretiva": "Anexar diferenciais ao gatilho de condicao"
+          }
+        ],
+        "erros_cometidos": [
+          {
+            "codigo": "X6",
+            "descricao": "Nao mencionou diferenciais",
+            "ocorrencias": 1
+          }
+        ]
+      }
+    }
+  ],
+  "insights": {
+    "destaques_positivos": [
+      {
+        "pessoa": "Keanny Brandão",
+        "papel": "SDR",
+        "cliente": "RC",
+        "acao": "Qualificou inbound (cidade, ligacao, pediu foto da conta R$403)",
+        "resultado": "Lead em qualificacao real, unico do dia"
+      },
+      {
+        "pessoa": "Alan Oliveira",
+        "papel": "VENDEDOR",
+        "cliente": "Elizangela Feitosa",
+        "acao": "Pergunta direta + gatilho de condicao para reaquecer fechamento",
+        "resultado": "Lead morno reaberto"
+      },
+      {
+        "pessoa": "Lucas",
+        "papel": "SDR",
+        "cliente": "Wellington",
+        "acao": "Reabriu lead de 700kW em fase de fechamento",
+        "resultado": "Cliente respondeu (audio); precisa retomada de proposta"
+      }
+    ],
+    "alertas": [
+      {
+        "pessoa": "Yan Francisco",
+        "papel": "VENDEDOR",
+        "cliente": "68 leads",
+        "problema": "Reativacao em massa por template identico, sem qualificacao nem diferenciais",
+        "impacto": "Baixa conversao e queima de base (gap cronico D1-D4)",
+        "acao_corretiva": "Personalizar e qualificar; priorizar inbounds e alto valor"
+      },
+      {
+        "pessoa": "Yan Francisco",
+        "papel": "VENDEDOR",
+        "cliente": "Hakai",
+        "problema": "Lead ja comprou de concorrente; recebeu so 'peco perdao por isso'",
+        "impacto": "Recuperacao perdida",
+        "acao_corretiva": "Oferta orfao solar (D4) + escalonamento"
+      },
+      {
+        "pessoa": "Lucas",
+        "papel": "SDR",
+        "cliente": "Wellington",
+        "problema": "Lead de 700kW em fechamento tratado so com 'aguardo seu retorno'",
+        "impacto": "Risco de esfriar negocio de alto valor",
+        "acao_corretiva": "Retomar proposta dos 700kW com diferenciais e agendar"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "💎 ALTO CONSUMO",
+        "cliente": "Med Vet. Israel Castro / Marmitaria da Leide / Leandro - Lb Gesso",
+        "descricao": "Leads B2B (clinica, comercio, industria) recebendo apenas template generico",
+        "acao_sugerida": "Roteiro B2B com qualificacao de consumo e visita tecnica"
+      },
+      {
+        "tipo": "🚨 DR2 fora do ar",
+        "cliente": "Conta DR2 inteira",
+        "descricao": "3o dia bloqueada por plano expirado - leads de alto valor (1000kW+, B2B, governo) inacessiveis",
+        "acao_sugerida": "Renovar o plano do DR2 (acao da diretoria) com urgencia"
+      }
+    ]
+  },
+  "ranking_sdrs": [
+    {
+      "posicao": 1,
+      "nome": "Keanny Brandão",
+      "nota_media": 7.0,
+      "aderencia": 70,
+      "visitas_agendadas": 0,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Lucas",
+      "nota_media": 4.2,
+      "aderencia": 35,
+      "visitas_agendadas": 0,
+      "badge": "🥈 Prata"
+    }
+  ],
+  "ranking_vendedores": [
+    {
+      "posicao": 1,
+      "nome": "Alan Oliveira",
+      "nota_media": 6.0,
+      "aderencia": 50,
+      "badge": "🏆 Ouro"
+    },
+    {
+      "posicao": 2,
+      "nome": "Yan Francisco",
+      "nota_media": 4.0,
+      "aderencia": 20,
+      "badge": "🥈 Prata"
+    }
+  ],
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Wellington",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "Lead de 700kW em fase de fechamento (Pericles negociava); hoje so follow-up generico",
+      "recomendacao": "Retomar a proposta dos 700kW, ligar e agendar; usar diferenciais",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratorio/troca 24h",
+        "D3 - 6 mil projetos",
+        "B4 - vender a visita"
+      ]
+    },
+    {
+      "cliente": "RC",
+      "pessoa": "Keanny Brandão",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Inbound 'quero economizar', conta R$403, em qualificacao (aguardando foto)",
+      "recomendacao": "Garantir a foto da conta e ja oferecer 2 horarios de visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "SDR-4 - agendamento",
+        "B1 - proximidade"
+      ]
+    },
+    {
+      "cliente": "Elizangela Feitosa",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Fechamento reaberto com gatilho de condicao",
+      "recomendacao": "Fechar reforcando diferenciais e urgencia real",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "D1 - laboratorio",
+        "C5 - pergunta direta"
+      ]
+    },
+    {
+      "cliente": "Hakai",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "🚨 RECUPERAÇÃO",
+      "motivo": "Ja comprou de concorrente; recuperacao fraca ('peco perdao')",
+      "recomendacao": "Acionar oferta de orfao solar e escalar para gestao",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "D4 - orfaos solares",
+        "D1 - laboratorio"
+      ]
+    },
+    {
+      "cliente": "Givanildo Gomes (Dinho)",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Inbound 'quero economizar' respondido so com template",
+      "recomendacao": "Qualificar de verdade (valor da conta) e oferecer visita",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": [
+        "A3 - qualificacao",
+        "B1 - proximidade"
+      ]
+    },
+    {
+      "cliente": "Med Vet. Israel Castro",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "B2B clinica veterinaria so com opener generico",
+      "recomendacao": "Roteiro B2B, qualificar consumo, agendar visita tecnica",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "A3 - qualificacao",
+        "D6 - geracao/garantia"
+      ]
+    },
+    {
+      "cliente": "Leandro - Lb Gesso",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "conta": "DR4",
+      "categoria": "💎 ALTO CONSUMO",
+      "motivo": "Industria de gesso (alto consumo) so com template",
+      "recomendacao": "Abordagem B2B industrial com visita tecnica",
+      "urgencia": "ESTA SEMANA",
+      "argumentos_recomendados": [
+        "A3 - qualificacao",
+        "D3 - 6 mil projetos"
+      ]
+    }
+  ],
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Armando Nascimento",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "16:10",
+      "ultima_msg": "16:10",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Armando Nascimento: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "Evelangio",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "16:07",
+      "ultima_msg": "16:07",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6"
+      ],
+      "observacao": "Cliente Evelangio: Lucas abriu 'condicao super especial, vamos dar continuidade?'; cliente respondeu 'Boa tarde' e o Yan ASSUMIU com saudacao generica 'Como posso estar ajudando?' (sobreposicao Lucas/Yan, sem qualificacao)."
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Wellington",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "16:06",
+      "ultima_msg": "16:06",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 5,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "B4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente Wellington: Lucas (SDR) follow-up de lead de 700kW (historico: Kemilly abriu, Pericles negociava fechamento do sistema de 700kw). Hoje so 'Boa tarde Wellington, todo bem?'; cliente enviou audio; Lucas 'certo, aguardo seu retorno'. NAO retomou o fechamento, nao agendou, sem diferenciais."
+    },
+    {
+      "id": 4,
+      "conta": "DR4",
+      "cliente": "Fernando Davi",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "15:54",
+      "ultima_msg": "15:54",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente Fernando Davi: Lucas: apenas opener SDR ('Ola! Somos a Domingo e Rodrigues') sem qualificacao na sequencia."
+    },
+    {
+      "id": 5,
+      "conta": "DR4",
+      "cliente": "Brandão",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "15:51",
+      "ultima_msg": "15:51",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente Brandão: Lucas: apenas opener SDR, sem qualificacao."
+    },
+    {
+      "id": 6,
+      "conta": "DR4",
+      "cliente": "Jil Bahia",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:50",
+      "ultima_msg": "15:50",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Jil Bahia: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 7,
+      "conta": "DR4",
+      "cliente": "Ítalo Rafael",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:49",
+      "ultima_msg": "15:49",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Ítalo Rafael: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 8,
+      "conta": "DR4",
+      "cliente": "Paulo Lopes",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:49",
+      "ultima_msg": "15:49",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Paulo Lopes: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 9,
+      "conta": "DR4",
+      "cliente": "Irmão Cristiano",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "15:42",
+      "ultima_msg": "15:42",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente Irmão Cristiano: Lucas: opener SDR ('me chamo Lucas, irei te ajudar a gerar sua propria energia'), aguardando."
+    },
+    {
+      "id": 10,
+      "conta": "DR4",
+      "cliente": "😃",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "15:41",
+      "ultima_msg": "15:41",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente 😃: Lucas: opener SDR, aguardando cliente."
+    },
+    {
+      "id": 11,
+      "conta": "DR4",
+      "cliente": "Alexandre",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:26",
+      "ultima_msg": "15:26",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Alexandre: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 12,
+      "conta": "DR4",
+      "cliente": "Clea",
+      "pessoa": "Lucas",
+      "papel": "SDR",
+      "hora_lista": "15:17",
+      "ultima_msg": "15:17",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [
+        "SDR-1"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [
+        "SDR-X8"
+      ],
+      "observacao": "Cliente Clea: Lucas: opener SDR, aguardando cliente."
+    },
+    {
+      "id": 13,
+      "conta": "DR4",
+      "cliente": "GEOCIVAN LOPES",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:10",
+      "ultima_msg": "15:10",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente GEOCIVAN LOPES: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 14,
+      "conta": "DR4",
+      "cliente": "Laércio Rodrigues Machado",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:03",
+      "ultima_msg": "15:03",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Laércio Rodrigues Machado: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 15,
+      "conta": "DR4",
+      "cliente": "Dewilson Nogueira",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "15:02",
+      "ultima_msg": "15:02",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Dewilson Nogueira: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 16,
+      "conta": "DR4",
+      "cliente": "Diego H.Silveira",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:45",
+      "ultima_msg": "14:45",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Diego H.Silveira: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 17,
+      "conta": "DR4",
+      "cliente": "💯",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:32",
+      "ultima_msg": "14:32",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente 💯: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 18,
+      "conta": "DR4",
+      "cliente": "Hipolito",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:30",
+      "ultima_msg": "14:30",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Hipolito: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 19,
+      "conta": "DR4",
+      "cliente": "Med Vet. Israel Castro",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:22",
+      "ultima_msg": "14:22",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Med Vet. Israel Castro: ALTO CONSUMO B2B (clinica veterinaria) - apenas opener generico do Yan, sem qualificar consumo."
+    },
+    {
+      "id": 20,
+      "conta": "DR4",
+      "cliente": "carlosfrancineide",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:18",
+      "ultima_msg": "14:18",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente carlosfrancineide: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 21,
+      "conta": "DR4",
+      "cliente": "Ana Risolândia",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:16",
+      "ultima_msg": "14:16",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Ana Risolândia: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 22,
+      "conta": "DR4",
+      "cliente": "Rogerio Batista",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:13",
+      "ultima_msg": "14:13",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Rogerio Batista: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 23,
+      "conta": "DR4",
+      "cliente": "Carlos Santos",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:12",
+      "ultima_msg": "14:12",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Carlos Santos: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 24,
+      "conta": "DR4",
+      "cliente": "Ramison Xavier",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:08",
+      "ultima_msg": "14:08",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Ramison Xavier: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 25,
+      "conta": "DR4",
+      "cliente": "Leandro Telez",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:07",
+      "ultima_msg": "14:07",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Leandro Telez: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 26,
+      "conta": "DR4",
+      "cliente": "Makez",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:05",
+      "ultima_msg": "14:05",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Makez: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 27,
+      "conta": "DR4",
+      "cliente": "Reginaldo Nascimento",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "13:58",
+      "ultima_msg": "13:58",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Reginaldo Nascimento: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 28,
+      "conta": "DR4",
+      "cliente": "RC",
+      "pessoa": "Keanny Brandão",
+      "papel": "SDR",
+      "hora_lista": "12:23",
+      "ultima_msg": "12:23",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 7,
+      "argumentos_usados": [
+        "SDR-1",
+        "SDR-2"
+      ],
+      "argumentos_perdidos": [
+        "SDR-2",
+        "SDR-3",
+        "SDR-4"
+      ],
+      "erros": [],
+      "observacao": "Cliente RC: Inbound 'Tambem quero economizar com energia solar / Orcamento'. Keane abriu, conta R$403; Keanny Brandao qualificou: tentou ligacao, perguntou a cidade, pediu foto da conta p/ calcular geracao. Boa qualificacao (SDR-2); falta SDR-4 (agendamento) - aguardando a foto da conta."
+    },
+    {
+      "id": 29,
+      "conta": "DR4",
+      "cliente": "Cleiton",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:33",
+      "ultima_msg": "11:33",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Cleiton: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 30,
+      "conta": "DR4",
+      "cliente": "Coutinho",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:32",
+      "ultima_msg": "11:32",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Coutinho: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 31,
+      "conta": "DR4",
+      "cliente": "Léo",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:28",
+      "ultima_msg": "11:28",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Léo: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 32,
+      "conta": "DR4",
+      "cliente": "Enfermeira Rosilda Leite",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:27",
+      "ultima_msg": "11:27",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Enfermeira Rosilda Leite: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 33,
+      "conta": "DR4",
+      "cliente": "Marcos Aurélio M. D. S",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:21",
+      "ultima_msg": "11:21",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Marcos Aurélio M. D. S: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 34,
+      "conta": "DR4",
+      "cliente": "José Wilker",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "11:01",
+      "ultima_msg": "11:01",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente José Wilker: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 35,
+      "conta": "DR4",
+      "cliente": "Eduardo Do Vally",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:55",
+      "ultima_msg": "10:55",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Eduardo Do Vally: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 36,
+      "conta": "DR4",
+      "cliente": "Marleine",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:53",
+      "ultima_msg": "10:53",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Marleine: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 37,
+      "conta": "DR4",
+      "cliente": "cird",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:51",
+      "ultima_msg": "10:51",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente cird: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 38,
+      "conta": "DR4",
+      "cliente": "Marmitaria da Leide",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:47",
+      "ultima_msg": "10:47",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Marmitaria da Leide: ALTO CONSUMO B2B (comercio/restaurante) - apenas opener generico do Yan."
+    },
+    {
+      "id": 39,
+      "conta": "DR4",
+      "cliente": "Abmael",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:46",
+      "ultima_msg": "10:46",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Abmael: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 40,
+      "conta": "DR4",
+      "cliente": "Dalva Matias",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:45",
+      "ultima_msg": "10:45",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Dalva Matias: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 41,
+      "conta": "DR4",
+      "cliente": "Roberto",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:43",
+      "ultima_msg": "10:43",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Roberto: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 42,
+      "conta": "DR4",
+      "cliente": "A Melhor Opcao Pra Quem Quer",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:41",
+      "ultima_msg": "10:41",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente A Melhor Opcao Pra Quem Quer: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 43,
+      "conta": "DR4",
+      "cliente": "Elizangela Feitosa",
+      "pessoa": "Alan Oliveira",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:40",
+      "ultima_msg": "10:40",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 6,
+      "argumentos_usados": [
+        "C5",
+        "A2"
+      ],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X6"
+      ],
+      "observacao": "Cliente Elizangela Feitosa: Alan (vendedor) follow-up de lead morno: 'prefere deixar pra frente?' + 'se eu conseguir condicoes melhores pra gente fechar agora nao e interessante?' (C5 pergunta direta + gatilho de condicao/urgencia). Bom fechamento, mas SEM diferenciais D1-D4. Aguardando."
+    },
+    {
+      "id": 44,
+      "conta": "DR4",
+      "cliente": "Carlos Bombeiro",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:36",
+      "ultima_msg": "10:36",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Carlos Bombeiro: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 45,
+      "conta": "DR4",
+      "cliente": "Matheus Souza",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:35",
+      "ultima_msg": "10:35",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Matheus Souza: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 46,
+      "conta": "DR4",
+      "cliente": "alisson",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:34",
+      "ultima_msg": "10:34",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente alisson: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 47,
+      "conta": "DR4",
+      "cliente": "Rosimeire Silva",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:29",
+      "ultima_msg": "10:29",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Rosimeire Silva: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 48,
+      "conta": "DR4",
+      "cliente": "Geraldo",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:27",
+      "ultima_msg": "10:27",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Geraldo: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 49,
+      "conta": "DR4",
+      "cliente": "Hakai",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:25",
+      "ultima_msg": "10:25",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Hakai: RECUPERACAO: lead que ja comprou de concorrente ('pessoal nao me atendeu', registro anterior). Hoje Yan so 'Peco perdao por isso' - recuperacao fraca, sem oferta de orfao solar (D4) nem escalonamento."
+    },
+    {
+      "id": 50,
+      "conta": "DR4",
+      "cliente": "Fabio",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:25",
+      "ultima_msg": "10:25",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Fabio: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 51,
+      "conta": "DR4",
+      "cliente": "Leandro - Lb Gesso",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:23",
+      "ultima_msg": "10:23",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Leandro - Lb Gesso: ALTO CONSUMO B2B (industria de gesso) - apenas opener generico do Yan."
+    },
+    {
+      "id": 52,
+      "conta": "DR4",
+      "cliente": "ALEXANDRE JUNIOR",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:21",
+      "ultima_msg": "10:21",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente ALEXANDRE JUNIOR: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 53,
+      "conta": "DR4",
+      "cliente": "Vera Lúcia de Magalhães",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:20",
+      "ultima_msg": "10:20",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Vera Lúcia de Magalhães: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 54,
+      "conta": "DR4",
+      "cliente": "Nelsom - Designer",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:19",
+      "ultima_msg": "10:19",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Nelsom - Designer: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 55,
+      "conta": "DR4",
+      "cliente": "wedson",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:18",
+      "ultima_msg": "10:18",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente wedson: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 56,
+      "conta": "DR4",
+      "cliente": "César",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:16",
+      "ultima_msg": "10:16",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente César: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 57,
+      "conta": "DR4",
+      "cliente": "Luiz Eduardo",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:08",
+      "ultima_msg": "10:08",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Luiz Eduardo: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 58,
+      "conta": "DR4",
+      "cliente": "Pamêla",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:07",
+      "ultima_msg": "10:07",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Pamêla: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 59,
+      "conta": "DR4",
+      "cliente": "Hewerthon",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:05",
+      "ultima_msg": "10:05",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Hewerthon: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 60,
+      "conta": "DR4",
+      "cliente": "Carlos Gondim",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:04",
+      "ultima_msg": "10:04",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Carlos Gondim: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 61,
+      "conta": "DR4",
+      "cliente": "Vanessa",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:03",
+      "ultima_msg": "10:03",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Vanessa: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 62,
+      "conta": "DR4",
+      "cliente": "Cássia Varjão",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "10:02",
+      "ultima_msg": "10:02",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Cássia Varjão: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 63,
+      "conta": "DR4",
+      "cliente": "Genialdo",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:21",
+      "ultima_msg": "09:21",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Genialdo: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 64,
+      "conta": "DR4",
+      "cliente": "Joao Bispo",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:13",
+      "ultima_msg": "09:13",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Joao Bispo: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 65,
+      "conta": "DR4",
+      "cliente": "Robson Silva (Barbosa)",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:12",
+      "ultima_msg": "09:12",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Robson Silva (Barbosa): Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 66,
+      "conta": "DR4",
+      "cliente": "Espedito Urquiza Temorio",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:11",
+      "ultima_msg": "09:11",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Espedito Urquiza Temorio: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 67,
+      "conta": "DR4",
+      "cliente": "Marilton",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:07",
+      "ultima_msg": "09:07",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Marilton: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 68,
+      "conta": "DR4",
+      "cliente": "Alan de Sá",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:06",
+      "ultima_msg": "09:06",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Alan de Sá: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 69,
+      "conta": "DR4",
+      "cliente": "Maria Da Penha",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:05",
+      "ultima_msg": "09:05",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Maria Da Penha: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 70,
+      "conta": "DR4",
+      "cliente": "Robério Allan",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "09:05",
+      "ultima_msg": "09:05",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Robério Allan: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 71,
+      "conta": "DR4",
+      "cliente": "Ailton Guimarães",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:55",
+      "ultima_msg": "08:55",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Ailton Guimarães: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 72,
+      "conta": "DR4",
+      "cliente": "limagilvenilson",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:50",
+      "ultima_msg": "08:50",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente limagilvenilson: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 73,
+      "conta": "DR4",
+      "cliente": "Euda",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:48",
+      "ultima_msg": "08:48",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Euda: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 74,
+      "conta": "DR4",
+      "cliente": "Marcelo Moreira",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:47",
+      "ultima_msg": "08:47",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Marcelo Moreira: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 75,
+      "conta": "DR4",
+      "cliente": "Raquel",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:46",
+      "ultima_msg": "08:46",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Raquel: Reativacao em massa do Yan por template identico ('recebemos seu interesse... verificar se faz sentido avancarmos'), sem qualificacao, sem diferenciais, sem agendamento. Aguardando cliente."
+    },
+    {
+      "id": 76,
+      "conta": "DR4",
+      "cliente": "Givanildo Gomes (Dinho)",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "08:29",
+      "ultima_msg": "08:29",
+      "total_msgs": 0,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": [],
+      "argumentos_perdidos": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "A3"
+      ],
+      "erros": [
+        "X4",
+        "X6",
+        "X7"
+      ],
+      "observacao": "Cliente Givanildo Gomes (Dinho): Inbound de valor ('quero economizar', registro anterior); recebeu APENAS o opener generico do Yan, sem qualificacao real."
+    }
+  ]
+}

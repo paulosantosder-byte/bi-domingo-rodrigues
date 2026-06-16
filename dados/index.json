@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-16",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "16:17",
+      "total_conversas": 76,
+      "total_conversas_dr4": 76,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 0,
+      "criticas": 0,
+      "nota_media_sdr": 4.6,
+      "nota_media_vendedor": 4.0,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) BLOQUEADO pelo 3o dia consecutivo por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira do usuario, nao executada) - 0 conversas analisaveis. Censo DR4: 79 linhas com mensagem HOJE (08:29-16:10); excluidos 2 feeds internos ('Chegou um lead', numeros) e 1 'Paulo Junior -Ignorar' = 76 conversas reais. Extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '16 jun 2026'). ~20 conversas substantivas lidas a fundo; ~56 disparos identicos do Yan classificados por template+preview. Dia novamente DOMINADO por reativacao em massa do Yan Francisco (68 conversas, template generico, sem qualificacao/diferenciais). NOVO atendente: LUCAS (SDR/opener, 6 conversas).",
+      "alerta_critico": "DR2 FORA DO AR pelo 3o dia consecutivo (plano expirado, modal 'Seu plano expirou') - leads de alto valor inacessiveis, renovar plano (acao da diretoria). DR4 novamente dominado por reativacao em massa do Yan Francisco (68 conversas, template generico, X4/X6/X7) - NENHUM diferencial D1-D4 (gap cronico). NOVO atendente LUCAS (SDR/opener, 6 conversas) para no opener inclusive em lead de 700kW (Wellington, em fechamento). POSITIVO: Keanny Brandao unica qualificando de verdade (RC inbound R$403); Alan Oliveira reabriu fechamento da Elizangela com gatilho de condicao. RECUPERACAO perdida: Hakai (ja comprou de concorrente, so 'peco perdao'). ALTO VALOR B2B subaproveitado: Med Vet Israel, Marmitaria da Leide, Leandro Lb Gesso so com template.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Alan Oliveira"
+      ]
+    },
+    {
       "data": "2026-06-15",
       "tipo_analise": "analise_completa_fim_de_dia",
       "hora_execucao": "22:07",
@@ -589,5 +611,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-15T22:07"
+  "ultima_atualizacao": "2026-06-16T16:17"
 }
