@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-17",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "14:07",
+      "total_conversas": 106,
+      "total_conversas_dr4": 106,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 4,
+      "criticas": 0,
+      "nota_media_sdr": 5.0,
+      "nota_media_vendedor": 5.2,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 4o dia consecutivo (14-17/06) por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira da diretoria, nao executada) - 0 conversas analisaveis. Censo DR4: 109 linhas com timestamp HH:MM (08:52-13:52); excluidos 2 feeds internos ('Chegou um lead') e 1 'Paulo Junior -Ignorar' = 106 conversas reais. Extracao DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '17 jun 2026'). ~18 conversas substantivas lidas a fundo; restante classificado por template+preview. Dia DOMINADO por reativacao em massa: Alan Oliveira 41, Yan Francisco 33, Lucas 24 (opener generico). Keanny Brandao SDR ~6 (unica qualificando de verdade).",
+      "alerta_critico": "DR2 FORA DO AR pelo 4o dia consecutivo (plano expirado) - renovar plano (acao da diretoria). NOVIDADE POSITIVA: Alan Oliveira passou a usar template que MENCIONA D1 (laboratorio proprio + troca imediata) - primeira vez que um diferencial D1-D4 aparece de forma consistente, quebrando o gap cronico (ainda em broadcast generico, sem qualificacao). Keanny Brandao agendou visita do Anderson (700kW) HOJE 14h com Alan. HOT SEM RESPOSTA: Louro Rodrigues pediu projeto 1000kW e preco a vista p/ Remanso 12:54, so recebeu opener do Lucas, ninguem respondeu. RECUPERACAO: Marcelo Moreira respondeu 'Ja resolvi' sem tentativa de recuperacao. ALTO VALOR subaproveitado so com template: Geovany 1000KW, Myldson 500KW (financiamento reprovado), B2Bs (Carlizze Porcelanatos, Denise Studio Hair, Leandro Top Frio, Leide). Lucas dispara opener generico (sem nome) em massa - SDR-X4.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Alan Oliveira",
+        "Yan Francisco"
+      ]
+    },
+    {
       "data": "2026-06-16",
       "tipo_analise": "analise_completa_tarde",
       "hora_execucao": "16:17",
@@ -611,5 +633,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-16T16:17"
+  "ultima_atualizacao": "2026-06-17T14:07"
 }
