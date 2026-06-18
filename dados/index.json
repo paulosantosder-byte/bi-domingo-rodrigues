@@ -1,6 +1,28 @@
 {
   "relatorios": [
     {
+      "data": "2026-06-18",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "16:16",
+      "total_conversas": 170,
+      "total_conversas_dr4": 170,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 6,
+      "criticas": 0,
+      "nota_media_sdr": 5.3,
+      "nota_media_vendedor": 4.5,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 5o dia consecutivo (14-18/06) por modal 'Seu plano expirou' + WhatsApp desconectado (botao Renovar; renovacao e acao financeira da diretoria) - 0 conversas analisaveis. Censo DR4: 173 linhas com timestamp HH:MM (07:53-16:06); excluidos 2 feeds internos e 1 'Paulo Junior -Ignorar' = 170 conversas reais. Extracao DOM no-scroll anti-contaminacao via campo de busca (troca de URL por conversa, filtro de data '18 jun 2026'). 16 conversas substantivas lidas a fundo; restante por template+preview+remetente. Dia DOMINADO por broadcast: Yan Francisco ~130 (reativacao generica), Lucas ~21 (opener SDR generico), Alan Oliveira 14 (template de DIFERENCIAL), Keane/Keanny SDR ~5 (unica qualificando).",
+      "alerta_critico": "DR2 FORA DO AR pelo 5o dia (plano expirado + WhatsApp desconectado) - renovar plano (acao da diretoria). ALTO VALOR AGUARDANDO RESPOSTA AGORA: Jair Araujo (INBOUND 1000kW, Keane qualificou, cliente enviou conta 15:10 sem retorno), Cristiano Lima (1000kW, Yan dimensionou usina, cliente 'Ok' 15:08), Grigorio Joao (700kW, enviou audio 15:16) - precisam de orcamento+visita HOJE. FALHA DE PROCESSO RECORRENTE: reativacao atingindo clientes JA GANHOS/INSTALADOS (Paulo Barros 'Ja fiz aquisicao' recebeu disparo do Alan; Romildo 'Ja coloquei o sistema solar em casa'). RECUPERACAO: Celia 'ja contratei outra empresa' sem F4/D5. ORFAO SOLAR: Carlos Ayalla enviou specs do sistema que ja tem (8 placas Honor 570W + 2 inversores) - encaixe D4, Alan engajou. POSITIVO: Alan mantem template com DIFERENCIAL (quebra parcial do gap D1-D4); Keane/Keanny unica qualificando (resposta inbound no mesmo minuto, orcamento Janiclea, tentando ligar Alex 400kWh+2 ar). Lucas dispara opener sem nome (SDR-X4).",
+      "sdrs": [
+        "Keane",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Alan Oliveira"
+      ]
+    },
+    {
       "data": "2026-06-17",
       "tipo_analise": "analise_completa_tarde",
       "hora_execucao": "14:07",
@@ -633,5 +655,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-17T14:07"
+  "ultima_atualizacao": "2026-06-18T16:16"
 }
