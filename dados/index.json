@@ -1,308 +1,304 @@
 {
   "relatorios": [
     {
-      "data": "2026-06-18",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "16:16",
-      "total_conversas": 170,
-      "total_conversas_dr4": 170,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 6,
-      "criticas": 0,
-      "nota_media_sdr": 5.3,
-      "nota_media_vendedor": 4.5,
-      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 5o dia consecutivo (14-18/06) por modal 'Seu plano expirou' + WhatsApp desconectado (botao Renovar; renovacao e acao financeira da diretoria) - 0 conversas analisaveis. Censo DR4: 173 linhas com timestamp HH:MM (07:53-16:06); excluidos 2 feeds internos e 1 'Paulo Junior -Ignorar' = 170 conversas reais. Extracao DOM no-scroll anti-contaminacao via campo de busca (troca de URL por conversa, filtro de data '18 jun 2026'). 16 conversas substantivas lidas a fundo; restante por template+preview+remetente. Dia DOMINADO por broadcast: Yan Francisco ~130 (reativacao generica), Lucas ~21 (opener SDR generico), Alan Oliveira 14 (template de DIFERENCIAL), Keane/Keanny SDR ~5 (unica qualificando).",
-      "alerta_critico": "DR2 FORA DO AR pelo 5o dia (plano expirado + WhatsApp desconectado) - renovar plano (acao da diretoria). ALTO VALOR AGUARDANDO RESPOSTA AGORA: Jair Araujo (INBOUND 1000kW, Keane qualificou, cliente enviou conta 15:10 sem retorno), Cristiano Lima (1000kW, Yan dimensionou usina, cliente 'Ok' 15:08), Grigorio Joao (700kW, enviou audio 15:16) - precisam de orcamento+visita HOJE. FALHA DE PROCESSO RECORRENTE: reativacao atingindo clientes JA GANHOS/INSTALADOS (Paulo Barros 'Ja fiz aquisicao' recebeu disparo do Alan; Romildo 'Ja coloquei o sistema solar em casa'). RECUPERACAO: Celia 'ja contratei outra empresa' sem F4/D5. ORFAO SOLAR: Carlos Ayalla enviou specs do sistema que ja tem (8 placas Honor 570W + 2 inversores) - encaixe D4, Alan engajou. POSITIVO: Alan mantem template com DIFERENCIAL (quebra parcial do gap D1-D4); Keane/Keanny unica qualificando (resposta inbound no mesmo minuto, orcamento Janiclea, tentando ligar Alex 400kWh+2 ar). Lucas dispara opener sem nome (SDR-X4).",
-      "sdrs": [
-        "Keane",
-        "Lucas"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Alan Oliveira"
-      ]
-    },
-    {
-      "data": "2026-06-17",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "14:07",
-      "total_conversas": 106,
-      "total_conversas_dr4": 106,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 4,
-      "criticas": 0,
-      "nota_media_sdr": 5.0,
-      "nota_media_vendedor": 5.2,
-      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 4o dia consecutivo (14-17/06) por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira da diretoria, nao executada) - 0 conversas analisaveis. Censo DR4: 109 linhas com timestamp HH:MM (08:52-13:52); excluidos 2 feeds internos ('Chegou um lead') e 1 'Paulo Junior -Ignorar' = 106 conversas reais. Extracao DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '17 jun 2026'). ~18 conversas substantivas lidas a fundo; restante classificado por template+preview. Dia DOMINADO por reativacao em massa: Alan Oliveira 41, Yan Francisco 33, Lucas 24 (opener generico). Keanny Brandao SDR ~6 (unica qualificando de verdade).",
-      "alerta_critico": "DR2 FORA DO AR pelo 4o dia consecutivo (plano expirado) - renovar plano (acao da diretoria). NOVIDADE POSITIVA: Alan Oliveira passou a usar template que MENCIONA D1 (laboratorio proprio + troca imediata) - primeira vez que um diferencial D1-D4 aparece de forma consistente, quebrando o gap cronico (ainda em broadcast generico, sem qualificacao). Keanny Brandao agendou visita do Anderson (700kW) HOJE 14h com Alan. HOT SEM RESPOSTA: Louro Rodrigues pediu projeto 1000kW e preco a vista p/ Remanso 12:54, so recebeu opener do Lucas, ninguem respondeu. RECUPERACAO: Marcelo Moreira respondeu 'Ja resolvi' sem tentativa de recuperacao. ALTO VALOR subaproveitado so com template: Geovany 1000KW, Myldson 500KW (financiamento reprovado), B2Bs (Carlizze Porcelanatos, Denise Studio Hair, Leandro Top Frio, Leide). Lucas dispara opener generico (sem nome) em massa - SDR-X4.",
-      "sdrs": [
-        "Keanny Brandão",
-        "Lucas"
-      ],
-      "vendedores": [
-        "Alan Oliveira",
-        "Yan Francisco"
-      ]
-    },
-    {
-      "data": "2026-06-16",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "16:17",
-      "total_conversas": 76,
-      "total_conversas_dr4": 76,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 0,
-      "criticas": 0,
-      "nota_media_sdr": 4.6,
-      "nota_media_vendedor": 4.0,
-      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) BLOQUEADO pelo 3o dia consecutivo por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira do usuario, nao executada) - 0 conversas analisaveis. Censo DR4: 79 linhas com mensagem HOJE (08:29-16:10); excluidos 2 feeds internos ('Chegou um lead', numeros) e 1 'Paulo Junior -Ignorar' = 76 conversas reais. Extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '16 jun 2026'). ~20 conversas substantivas lidas a fundo; ~56 disparos identicos do Yan classificados por template+preview. Dia novamente DOMINADO por reativacao em massa do Yan Francisco (68 conversas, template generico, sem qualificacao/diferenciais). NOVO atendente: LUCAS (SDR/opener, 6 conversas).",
-      "alerta_critico": "DR2 FORA DO AR pelo 3o dia consecutivo (plano expirado, modal 'Seu plano expirou') - leads de alto valor inacessiveis, renovar plano (acao da diretoria). DR4 novamente dominado por reativacao em massa do Yan Francisco (68 conversas, template generico, X4/X6/X7) - NENHUM diferencial D1-D4 (gap cronico). NOVO atendente LUCAS (SDR/opener, 6 conversas) para no opener inclusive em lead de 700kW (Wellington, em fechamento). POSITIVO: Keanny Brandao unica qualificando de verdade (RC inbound R$403); Alan Oliveira reabriu fechamento da Elizangela com gatilho de condicao. RECUPERACAO perdida: Hakai (ja comprou de concorrente, so 'peco perdao'). ALTO VALOR B2B subaproveitado: Med Vet Israel, Marmitaria da Leide, Leandro Lb Gesso so com template.",
-      "sdrs": [
-        "Keanny Brandão",
-        "Lucas"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Alan Oliveira"
-      ]
-    },
-    {
-      "data": "2026-06-15",
-      "tipo_analise": "analise_completa_fim_de_dia",
-      "hora_execucao": "22:07",
-      "total_conversas": 104,
-      "total_conversas_dr4": 104,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 6,
-      "criticas": 3,
-      "nota_media_sdr": 7.5,
-      "nota_media_vendedor": 5.2,
-      "cobertura": "DR4 VOLTOU (acesso restaurado em 15/06; estava inacessivel desde 12-15/06 de manha). DR2 (175001) CONTINUA bloqueado por 'Seu plano expirou' (WhatsApp desconectado, 0 salas) - renovacao e acao financeira do usuario, nao analisada. Censo DR4: 104 conversas com mensagem HOJE (09:45-20:20). 54 lidas a fundo (filtro de data anti-contaminacao por troca de URL); as 9 com resposta do cliente lidas integralmente; ~4 conversas pesadas deram timeout (render congela a aba ~30-60s) e 45 disparos identicos do Yan classificados por preview. Dia DOMINADO por reativacao em massa: Yan Francisco 72 (template generico), Alan Oliveira 21 (template de humor), Keanny Brandao SDR 8 (unica qualificando de verdade).",
-      "alerta_critico": "DR2 FORA DO AR pelo 2o dia (plano expirado, WhatsApp desconectado) - leads de alto valor sem cobertura, renovar plano. NENHUM vendedor usou diferenciais D1-D4 em 93 conversas (Yan 72 + Alan 21; gap cronico, X6). RECUPERACAO CRITICA: Alcides (Alan) - orcamento prometido e NUNCA entregue, fechando com concorrente e pediu sair da lista ('me humilhando') - escalar gestao. Hakai (Yan) ja comprou de concorrente 'pessoal nao me atendeu'. Givanildo inbound 'quero economizar' SEM resposta e sem vendedor atribuido. ALTO VALOR subaproveitado: Geovany 1000KW e Myldson 500KW (financiamento reprovado) so com opener generico. POSITIVO: Keanny agendou visita do Jose (16/06 14h confirmada); Alan conduzindo fechamento do Jota 600KW (2a visita feita) e dimensionamento da Elizangela. SDR=Keanny Brandao; Vendedores=Yan Francisco (dominante), Alan Oliveira.",
-      "sdrs": [
-        "Keanny Brandão"
-      ],
-      "vendedores": [
-        "Alan Oliveira",
-        "Yan Francisco"
-      ]
-    },
-    {
-      "data": "2026-06-12",
-      "tipo_analise": "analise_completa_fim_de_dia",
-      "hora_execucao": "19:13",
-      "total_conversas": 70,
-      "total_conversas_dr4": 37,
-      "total_conversas_dr2": 33,
-      "sem_resposta": 7,
-      "criticas": 8,
-      "nota_media_sdr": 6.0,
-      "nota_media_vendedor": 5.0,
-      "cobertura": "Censo 100% das conversas com mensagem HOJE via extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa). Run de FIM DE DIA (sobrescreve run das 16:20). DR4=37 reais (07:53-17:20; +2 feeds 'Chegou um lead' e 1 'Paulo Junior -Ignorar' excluidos) + DR2=33 (07:44-18:02; +internal 'Paulo Santos' e 2 feeds excluidos). Cada thread aberta e lida no bloco do dia. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas (~66 conversas): reativacao em massa por TEMPLATE IDENTICO 'Entrei em contato porque recebemos seu interesse...' sem qualificacao/diferenciais, maioria aguardando cliente. SDRs humanos pontuais: Keanny Brandao (Marcelo, handoff Adalberto), Gabriel (Iveraldo inbound), Keane (Erevelton inbound). Laercio: 1 visita realizada (Adailton).",
-      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 66 conversas (gap cronico; X6). POSITIVO: Yan AGENDOU/confirmou 3 visitas (Ronaldo kit 1000kW SEGUNDA 8:30; Geordanio HOJE 15h c/ Alan; Providencia divina amanha 14h c/ Yuri) + Adailton visita feita (Laercio) + handoffs a assessores (Iveraldo->Yuri, Thales->Alan, Jose->Anderson). CRITICO POS-VENDA: Lilian Costa MUITO insatisfeita ('empresa que nao indico a ninguem', 'muita dor de cabeca') empurrada p/ outro numero e SEM resolucao ate o fim do dia - escalar gestao. 3 leads perdidos p/ concorrente (kercio so 'Certo'; Rosivania so 'entendi'; Ivonaldo com F4 iniciado mas sem D1-D4). Flavio 'ja fechei a usina' sem nenhuma recuperacao. Ailton 1000kW recebeu faixa de preco solta (14-15mil) sem qualificacao/visita (X1). Clescio enviou conta e ficou sem resposta. Ana Cecilia 'KD o orcamento?' e Stenio (homologacao) aguardando. Fabio recebeu 'oferta so hoje' confusa + audios que nao tocam e pediu p/ sair da lista. SDR=Keanny/Gabriel/Keane; Vendedor=Yan Francisco (dominante), Laercio.",
-      "sdrs": [
-        "Keanny Brandão",
-        "Gabriel",
-        "Keane"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Laercio"
-      ]
-    },
-    {
-      "data": "2026-06-11",
-      "tipo_analise": "analise_completa_fim_de_tarde",
-      "hora_execucao": "18:40",
-      "total_conversas": 52,
-      "total_conversas_dr4": 22,
-      "total_conversas_dr2": 30,
-      "sem_resposta": 8,
+      "data": "2026-05-02",
+      "total_conversas": 71,
+      "sem_resposta": 15,
       "criticas": 2,
-      "nota_media_sdr": 5.5,
-      "nota_media_vendedor": 4.9,
-      "cobertura": "Censo 100% das conversas com mensagem HOJE (sobrescreve run de meio-dia 13:15). Extracao de DOM com loader anti-contaminacao (troca de URL por conversa, leitura no-scroll do bloco do dia). DR4=22 reais (08:36-17:39; +2 feeds internos e 1 'Paulo Junior -Ignorar' excluidos; Regis nao renderizou); DR2=30 (09:45-18:19) lidas a fundo. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas; DR2 hoje 100% Yan (sem SDR). Keanny Brandao (SDR) so em 4 conversas do DR4; Pericles/Alan/Luana/Gabriel sem chats proprios (so handoffs).",
-      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 52 conversas (gap cronico). POSITIVO: Yan AGENDOU 4 visitas (Jackson Lobo 600kW HOJE 13h c/ B1+B3+B4; Adailton 500kwh HOJE 13h; Barbara Duarte 1000kW 2 imoveis Petrolina+Recife Segunda 9h; Anderson Freitas 17/06 10h) + Aparecida visita realizada (Laercio) + callback Geordanio 18h; usou B3/B4 com Ana Cecilia 1000kW e Bruna Dantas. CRITICO: 3 leads perdidos p/ concorrente so registrados sem F4 (Malan, Leticia Andrade, Jose); Diego Costa 2000kWh (maior valor do dia) so com template; Thales Souza enviou 2 contas e Yan prometeu orcamento e nao voltou; Wellington 1000kW Petrolina engajou e ficou sem resposta; Cinara 300kW pediu simulacao 2x sem proposta; audios do Yan nao tocam (Ana Cecilia, Bruna). DR2 alto valor depende de 1 pessoa: Tiago Liborio CODEVASF licitacao 6 kits UFV (B2B governo) encaminhado ao assessor Anderson. SDR=Keanny Brandao; Vendedor=Yan Francisco.",
-      "sdrs": [
-        "Keanny Brandão"
-      ],
-      "vendedores": [
-        "Yan Francisco"
-      ]
-    },
-    {
-      "data": "2026-06-10",
-      "tipo_analise": "analise_completa_fim_de_tarde",
-      "hora_execucao": "18:55",
-      "total_conversas": 221,
-      "total_conversas_dr4": 213,
-      "total_conversas_dr2": 8,
-      "sem_resposta": 35,
-      "criticas": 9,
-      "nota_media_sdr": 6.0,
-      "nota_media_vendedor": 5.2,
-      "cobertura": "Refresh de fim de tarde (sobrescreve run 16:45). Censo 100% via extracao de DOM/estado React: DR4=213 (08:27-18:53) + DR2=8 (09:53-16:31) = 221. DR2 lido a fundo integral (8/8). DR4: triagem 100% por ultimo remetente + leitura profunda das conversas com interacao real e do trabalho de Alan/Keanny/Pericles, mais amostra ampla dos disparos do Yan. ~140 das 213 conversas DR4 sao reativacao em massa por TEMPLATE IDENTICO do Yan Francisco (sem resposta). 30 conversas DR4 terminaram com cliente aguardando (21 audios + 9 textos). Limite de plataforma: render pesado por conversa inviabilizou transcricao 1-a-1 dos 140 disparos identicos (censados) e dos audios. SDR=Keanny Brandao; Vendedores=Yan Francisco (disparos em massa), Alan Oliveira, Pericles Mateus.",
-      "alerta_critico": "JURIDICO: Bonani Advogados (DR2 16:31) - notificacao de adocao de MEDIDAS JUDICIAIS por descumprimento, com protocolo de acao judicial, SEM resposta - escalar direcao/juridico HOJE. DR2 SEM cobertura humana de inbound: 7 das 8 conversas com cliente aguardando (Bonani; Barbara Duarte 1000kW 2 imoveis Petrolina+Recife; Diego Costa 2000kWh; Jackson Lobo 600kWh p/ Caio; Lucas Rodrigues docs; Yuri Santos; Rodrigo Chales Projetos B2B). DR4: Yan Francisco disparou TEMPLATE IDENTICO em ~140 leads (sem qualificacao/diferenciais/visita) com baixissima conversao e queima de base; 30 clientes aguardando resposta (21 audios sem retorno). POSITIVO: Alan Oliveira agendou visita do Jota (sexta de manha) e fez follow-ups personalizados (Myldson 500KW financiamento reprovado; CARLIZZE PORCELANATOS B2B; FLANKLIN recompra 500KW). Keanny (SDR) conduzindo visitas (Melkzedek alto consumo, Jarmeson). NENHUM vendedor usou diferenciais D1-D4.",
-      "sdrs": [
-        "Keanny Brandão"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-06-09",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "17:05",
-      "total_conversas": 162,
-      "total_conversas_dr4": 149,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 11,
-      "criticas": 3,
-      "nota_media_sdr": 6.2,
-      "nota_media_vendedor": 6.1,
-      "cobertura": "Analise completa de fim de tarde (~17:05). Censo 100%: DR4=149, DR2=13 (162). 85 conversas lidas a fundo via extracao de DOM. SDR=Keanny Brandao; Vendedores=Pericles Mateus, Yan Francisco, Alan Oliveira.",
-      "sdrs": [
-        "Keanny Brandão"
-      ],
-      "vendedores": [
-        "Pericles Mateus",
-        "Yan Francisco",
-        "Alan Oliveira"
-      ]
-    },
-    {
-      "data": "2026-06-08",
-      "tipo_analise": "analise_completa_fim_de_tarde",
-      "hora_execucao": "19:25",
-      "total_conversas": 136,
-      "total_conversas_dr4": 128,
-      "total_conversas_dr2": 8,
-      "sem_resposta": 8,
-      "criticas": 6,
-      "nota_media_sdr": 6.2,
-      "nota_media_vendedor": 6.0,
-      "cobertura_parcial": "Censo 100% da lista ao vivo via extracao de DOM/estado React: 128 conversas DR4 (08:57-19:12) + 8 DR2 (10:26-17:21) com mensagem HOJE, cada thread aberta e lida. 29 conversas DR4 bidirecionais (cliente respondeu) + 8 DR2 lidas a fundo; ~99 conversas DR4 sao disparo/follow-up de template sem resposta do cliente hoje (Keanny 40, Yan 32, Gabriel 13, Pericles 6, Alan 4, Laercio 2). Segunda-feira de alto volume de prospeccao no DR4. Papeis: SDR=Keanny Brandao, Keane, Gabriel, Kemily Carvalho; Vendedor=Yan Francisco, Pericles Mateus, Alan Oliveira, Laercio, Luana.",
-      "alerta_critico": "PADRAO RECORRENTE: BOT do DR2 respondeu reclamacao de POS-VENDA com VIDEO de vendas antes de escalar (Islayne Carvalho: desconto solar parou apos trocar titularidade da conta). DR2 SEM cobertura humana de inbound: 3 inbounds sem resposta (Castro orcamento novo 17:21; Pnzsun pediu suporte tecnico; Bianca Souza advogada pediu telefone). POS-VENDA: Cicero relata conta nao reduziu apos instalacao (precisa diagnostico). LEAD PERDIDO: Ademilton (Gabriel) fechou com concorrente por falta de retorno. SDR-X1: Keanny enviou orcamento R$25.508 a Carol antes de agendar e cliente esfriou. QUENTES: Pericles avancou financiamento de Alan Chalega (visita feita, 2o CPF) e danilo (CNH/email); Yan confirmou visitas 10h de Franciel e Pablo na empresa e qualificou Francisco Aoun 1000kWh casa+apto (alto consumo); Keanny confirmou visita Islane 11h; Keane remarcou Dario amanha 10h. Nenhum vendedor usou diferenciais D1-D4 (laboratorio 24h/17 anos/6 mil projetos).",
-      "sdrs": [
-        "Keanny Brandão",
-        "Keane",
-        "Gabriel",
-        "Kemily Carvalho"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Pericles Mateus",
-        "Alan Oliveira",
-        "Laercio",
-        "Luana"
-      ]
-    },
-    {
-      "data": "2026-06-03",
-      "tipo_analise": "refresh_fim_tarde_amostragem",
-      "hora_execucao": "19:05",
-      "total_conversas": 76,
-      "total_conversas_dr4": 67,
-      "total_conversas_dr2": 9,
-      "sem_resposta": 5,
-      "criticas": 3,
-      "nota_media_sdr": 5.9,
-      "nota_media_vendedor": 5.5,
-      "cobertura_parcial": "Refresh de fim de tarde (sobrescreve run 14:50). DR4 janela 14:36-18:52 (~67 conversas reais; lista ao vivo nao paginou alem das 14:36 - manha nao recarregou) + DR2 lido integral 08:46-18:00 (9). ~24 conversas DR4 priorizadas + 9 DR2 lidas a fundo via extracao de DOM. Dia majoritariamente SDR/prospeccao por template. Keane (Keanny) lidera; Gabriel templates genericos; vendedores Yan Francisco (inbounds), Laercio (fraco) e Alan Oliveira ativos. Luana/Pericles sem chats hoje.",
-      "alerta_critico": "DR2 sem cobertura humana de inbound: 3 inbounds sem resposta o dia todo (Ytalo M. POS-VENDA cliente JA instalado nao consegue ver geracao no app ~8h; Eugenio victor 'Bom dia' 08:46; 558781771924 'Boa tarde' 12:31) + Carlos pediu orcamento R$300-350 com resposta lenta ~3h30. MELHORIA: Henrique Leal (pos-venda risco cancelamento) recebeu resposta HUMANA de Keane prometendo retorno urgente (antes era bot com video) - garantir que o responsavel contratual retorne. DESTAQUE: Keane AGENDOU 2 visitas (Elizangela 05/06 10h com 17anos/9mil projetos + quebra objecao; Islane Andrade 08/06 10h). ALTO CONSUMO/B2B so com template generico do SDR (Augusto Lima ~2500kWh, HARAS BARUCK rural, Ma Refrigeracao comercio, Distribuidora Leite). Pedrito 1000kWh assumido por Yan em ~6min. Flavio comparando preco (risco). Gabriel: saudacao errada ('Bom dia' 16:57), assina 'Yan' (inconsistencia). Laercio: mensagens com muitos typos/fragmentadas (Claudemir/Maikon/Ze).",
-      "sdrs": [
-        "Keane",
-        "Gabriel"
-      ],
-      "vendedores": [
-        "Yan Francisco",
-        "Alan Oliveira",
-        "Laercio"
-      ]
-    },
-    {
-      "data": "2026-06-02",
-      "tipo_analise": "refresh_fim_tarde",
-      "hora_execucao": "19:10",
-      "total_conversas": 88,
-      "total_conversas_dr4": 72,
-      "total_conversas_dr2": 16,
-      "sem_resposta": 8,
-      "criticas": 4,
-      "nota_media_sdr": 5.7,
-      "nota_media_vendedor": 6.3,
-      "cobertura_parcial": "Refresh de fim de tarde: DR4 janela 12:21-19:03 (72 conversas enumeradas) + DR2 09:28-17:55 (16). ~45 conversas lidas a fundo neste refresh (alem das 54 do run 15:45). Manha do DR4 coberta no follow-up matinal. Navegador instavel (screenshots congelaram); leitura via extracao de DOM.",
-      "alerta_critico": "POS-VENDA CRITICO: Henrique Leal (DR2) - CLIENTE CONTRATADO ameaca cancelar contrato e pedir reembolso (3a tentativa) e o BOT respondeu com video de boas-vindas - ESCALAR DIRECAO HOJE. JURIDICO: Bonani Advogados notificacao extrajudicial sobre a MARCA (DR2 10:25), BOT respondeu com video. A AUTOMACAO do DR2 responde mensagens graves com video sem escalar para humano. QUENTES: GEOCIVAN (Pericles) quer 500kW A VISTA sem retorno; antonio (Luana) enviou conta MAIO; dilson (Keanny) enviou conta; EDIDEUS visita feita (Luana). Islane pediu preco 300/500kWh sem resposta. PERDIDO: Alan Pinheiro 'ja contratei'. DESTAQUE: proposta completa do Alan p/ Flanklin (D1/D2/D3). PADROES: onda de template identico do Keanny (~12 leads 17:28-17:53); Gabriel msgs repetitivas (Nelson Luna 6x); Luana 'estou te ligando' em reativacoes (Souza/Souzza/Alisson); Vladimiro (cliente antigo) com pergunta ignorada.",
-      "sdrs": [
-        "Gabriel",
-        "Keanny Brandao"
-      ],
-      "vendedores": [
-        "Alan Oliveira",
-        "Luana",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-06-01",
-      "tipo_analise": "analise_completa",
-      "hora_execucao": "17:25",
-      "total_conversas": 113,
-      "total_conversas_dr4": 100,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 2,
-      "criticas": 2,
-      "nota_media_sdr": 7.1,
-      "nota_media_vendedor": 7.5,
-      "alerta_critico": "Gabriel(bot) atendeu sozinho Armando R$750/800kWh (orfao cronico) e Cesio Tenorio 1.000kw ficou sem resposta apos informar consumo; It's Burger fechou com concorrente sem recuperacao; Leo (Maria Luiza) audio sem resposta; Alan Oliveira enviou msg copy-paste chamando Alcione de 'Marcos'; ~22 conversas de Luana avancam so por ligacao sem agregar valor no chat. Positivos: visitas agendadas (Flavio, Ma Refrigeracao, Deisivan, antonio DR2) e Claudemy reuniao meet quinta.",
-      "sdrs": [
-        "Keane",
-        "Gabriel",
-        "Maria Luiza"
-      ],
+      "nota_media": 5.4,
       "vendedores": [
         "Luana",
-        "Alan Oliveira",
-        "Pericles"
-      ]
-    },
-    {
-      "data": "2026-05-29",
-      "tipo_analise": "refresh_fim_do_dia",
-      "hora_execucao": "21:30",
-      "total_conversas": 99,
-      "total_conversas_dr4": 83,
-      "total_conversas_dr2": 16,
-      "sem_resposta": 5,
-      "criticas": 10,
-      "nota_media_sdr": 4.9,
-      "nota_media_vendedor": 5.0,
-      "alerta_critico": "10 leads atendidos somente pelo BOT sem SDR humano em DR4 (Joséquiel informou conta R$500 e ficou sem retorno); valdete DR2 com 10 msgs respondido so pelo bot; Gabriel mediana 80min de resposta (SDR-X5); Augusto Lima busca 2500kWh/mes pendente; Leticia Rodrigues DR2 visita confirmada 14h30 por Luana",
-      "sdrs": [
+        "Maria Luiza Ramos",
         "Keane",
-        "Gabriel"
-      ],
-      "vendedores": [
-        "Luana",
-        "Pericles",
+        "Claudio Rodrigues",
+        "Caio Roberto",
         "Guilherme"
       ]
     },
     {
-      "data": "2026-05-27",
-      "tipo_analise": "refresh_fim_do_dia_amostragem",
-      "hora_execucao": "18:34",
-      "total_conversas": 117,
-      "total_conversas_dr4": 94,
-      "total_conversas_dr2": 23,
-      "sem_resposta": 18,
+      "data": "2026-05-04",
+      "total_conversas": 227,
+      "sem_resposta": 11,
       "criticas": 5,
+      "nota_media": 5.0,
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Claudio Rodrigues",
+        "Keane",
+        "Guilherme",
+        "Maria Luiza Ramos",
+        "Kemily",
+        "Guilherme Comercial"
+      ]
+    },
+    {
+      "data": "2026-05-05",
+      "total_conversas": 163,
+      "sem_resposta": 46,
+      "criticas": 8,
+      "nota_media": 5.0,
+      "vendedores": [
+        "Caio Roberto",
+        "Kemily",
+        "Guilherme",
+        "Keane",
+        "Luana",
+        "Claudio Rodrigues",
+        "Maria Luiza"
+      ]
+    },
+    {
+      "data": "2026-05-06",
+      "total_conversas": 153,
+      "sem_resposta": 12,
+      "criticas": 2,
+      "nota_media": 5.1,
+      "vendedores": [
+        "Claudio Rodrigues",
+        "Caio Roberto",
+        "Keane",
+        "Luana",
+        "Guilherme",
+        "Maria Luiza",
+        "Kemily"
+      ]
+    },
+    {
+      "data": "2026-05-07",
+      "total_conversas": 92,
+      "sem_resposta": 4,
+      "criticas": 10,
+      "nota_media": 3.8,
+      "vendedores": [
+        "Luana",
+        "Maria Luiza",
+        "Keane",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan"
+      ]
+    },
+    {
+      "data": "2026-05-11",
+      "total_conversas": 93,
+      "sem_resposta": 3,
+      "criticas": 3,
+      "nota_media": 0.3,
+      "vendedores": [
+        "Luana",
+        "Maria Luiza",
+        "Keane",
+        "Claudio Rodrigues",
+        "Caio Roberto",
+        "Guilherme",
+        "Kemilly"
+      ]
+    },
+    {
+      "data": "2026-05-12",
+      "total_conversas": 240,
+      "sem_resposta": 82,
+      "criticas": 1,
+      "nota_media": 4.9,
+      "vendedores": [
+        "Luana",
+        "Maria Luiza",
+        "Keane",
+        "Kemily",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira"
+      ]
+    },
+    {
+      "data": "2026-05-13",
+      "total_conversas": 196,
+      "sem_resposta": 2,
+      "criticas": 0,
+      "nota_media": 0.0,
+      "vendedores": [
+        "Luana",
+        "Maria Luiza",
+        "Keane",
+        "Kemily",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-14",
+      "total_conversas": 235,
+      "total_conversas_dr4": 235,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 20,
+      "criticas": 3,
+      "nota_media_sdr": 5.7,
+      "nota_media_vendedor": 6.3,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-15",
+      "tipo_analise": "ontem",
+      "total_conversas": 184,
+      "total_conversas_dr4": 164,
+      "total_conversas_dr2": 20,
+      "sem_resposta": 13,
+      "criticas": 1,
+      "mensagens_apos_18h": 20,
       "nota_media_sdr": 6.2,
       "nota_media_vendedor": 6.8,
-      "alerta_critico": "Armando Nascimento R$750/800kWh sem SDR humano apos 5h (bot Gabriel parado); BOT Ana Maryllya disparou para 8 leads ja atribuidos a Kemily (Hamilton, Maria do Carmo) gerando confusao com duas personas; Glau DR2 Petrolina posvenda sem resposta de Luana ao pedido de orcamento de limpeza; Maria Luiza/Caio/Alan/Pericles zero chats hoje",
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-18",
+      "total_conversas": 115,
+      "total_conversas_dr4": 97,
+      "total_conversas_dr2": 18,
+      "sem_resposta": 11,
+      "criticas": 3,
+      "nota_media_sdr": 5.4,
+      "nota_media_vendedor": 5.6,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-19",
+      "total_conversas": 197,
+      "total_conversas_dr4": 182,
+      "total_conversas_dr2": 15,
+      "sem_resposta": 30,
+      "criticas": 5,
+      "nota_media_sdr": 4.8,
+      "nota_media_vendedor": 6.2,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-20",
+      "total_conversas": 202,
+      "total_conversas_dr4": 177,
+      "total_conversas_dr2": 25,
+      "sem_resposta": 35,
+      "criticas": 8,
+      "nota_media_sdr": 5.0,
+      "nota_media_vendedor": 5.4,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-21",
+      "tipo_analise": "refresh_fim_do_dia",
+      "total_conversas": 167,
+      "total_conversas_dr4": 152,
+      "total_conversas_dr2": 15,
+      "sem_resposta": 18,
+      "criticas": 4,
+      "nota_media_sdr": 3.1,
+      "nota_media_vendedor": 1.0,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-22",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "16:20",
+      "total_conversas": 94,
+      "total_conversas_dr4": 81,
+      "total_conversas_dr2": 13,
+      "sem_resposta": 21,
+      "criticas": 16,
+      "nota_media_sdr": 7.3,
+      "nota_media_vendedor": 6.4,
+      "ana_maryllya_nao_cadastrada": 1,
+      "sdrs": [
+        "Maria Luiza",
+        "Keane",
+        "Kemily"
+      ],
+      "vendedores": [
+        "Luana",
+        "Caio Roberto",
+        "Guilherme",
+        "Alan Oliveira",
+        "Pericles Mateus"
+      ]
+    },
+    {
+      "data": "2026-05-25",
+      "tipo_analise": "refresh_fim_do_dia",
+      "hora_execucao": "18:30",
+      "total_conversas": 88,
+      "total_conversas_dr4": 75,
+      "total_conversas_dr2": 13,
+      "sem_resposta": 7,
+      "criticas": 5,
+      "nota_media_sdr": 6.4,
+      "nota_media_vendedor": 6.1,
       "sdrs": [
         "Maria Luiza",
         "Keane",
@@ -343,154 +339,17 @@
       ]
     },
     {
-      "data": "2026-05-25",
-      "tipo_analise": "refresh_fim_do_dia",
-      "hora_execucao": "18:30",
-      "total_conversas": 88,
-      "total_conversas_dr4": 75,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 7,
-      "criticas": 5,
-      "nota_media_sdr": 6.4,
-      "nota_media_vendedor": 6.1,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-22",
-      "tipo_analise": "analise_completa_tarde",
-      "hora_execucao": "16:20",
-      "total_conversas": 94,
-      "total_conversas_dr4": 81,
-      "total_conversas_dr2": 13,
-      "sem_resposta": 21,
-      "criticas": 16,
-      "nota_media_sdr": 7.3,
-      "nota_media_vendedor": 6.4,
-      "ana_maryllya_nao_cadastrada": 1,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-21",
-      "tipo_analise": "refresh_fim_do_dia",
-      "total_conversas": 167,
-      "total_conversas_dr4": 152,
-      "total_conversas_dr2": 15,
+      "data": "2026-05-27",
+      "tipo_analise": "refresh_fim_do_dia_amostragem",
+      "hora_execucao": "18:34",
+      "total_conversas": 117,
+      "total_conversas_dr4": 94,
+      "total_conversas_dr2": 23,
       "sem_resposta": 18,
-      "criticas": 4,
-      "nota_media_sdr": 3.1,
-      "nota_media_vendedor": 1.0,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-20",
-      "total_conversas": 202,
-      "total_conversas_dr4": 177,
-      "total_conversas_dr2": 25,
-      "sem_resposta": 35,
-      "criticas": 8,
-      "nota_media_sdr": 5.0,
-      "nota_media_vendedor": 5.4,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-19",
-      "total_conversas": 197,
-      "total_conversas_dr4": 182,
-      "total_conversas_dr2": 15,
-      "sem_resposta": 30,
       "criticas": 5,
-      "nota_media_sdr": 4.8,
-      "nota_media_vendedor": 6.2,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-18",
-      "total_conversas": 115,
-      "total_conversas_dr4": 97,
-      "total_conversas_dr2": 18,
-      "sem_resposta": 11,
-      "criticas": 3,
-      "nota_media_sdr": 5.4,
-      "nota_media_vendedor": 5.6,
-      "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
-      ],
-      "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan Oliveira",
-        "Pericles Mateus"
-      ]
-    },
-    {
-      "data": "2026-05-15",
-      "tipo_analise": "ontem",
-      "total_conversas": 184,
-      "total_conversas_dr4": 164,
-      "total_conversas_dr2": 20,
-      "sem_resposta": 13,
-      "criticas": 1,
-      "mensagens_apos_18h": 20,
       "nota_media_sdr": 6.2,
       "nota_media_vendedor": 6.8,
+      "alerta_critico": "Armando Nascimento R$750/800kWh sem SDR humano apos 5h (bot Gabriel parado); BOT Ana Maryllya disparou para 8 leads ja atribuidos a Kemily (Hamilton, Maria do Carmo) gerando confusao com duas personas; Glau DR2 Petrolina posvenda sem resposta de Luana ao pedido de orcamento de limpeza; Maria Luiza/Caio/Alan/Pericles zero chats hoje",
       "sdrs": [
         "Maria Luiza",
         "Keane",
@@ -505,155 +364,293 @@
       ]
     },
     {
-      "data": "2026-05-14",
-      "total_conversas": 235,
-      "total_conversas_dr4": 235,
-      "total_conversas_dr2": 0,
-      "sem_resposta": 20,
-      "criticas": 3,
+      "data": "2026-05-29",
+      "tipo_analise": "refresh_fim_do_dia",
+      "hora_execucao": "21:30",
+      "total_conversas": 99,
+      "total_conversas_dr4": 83,
+      "total_conversas_dr2": 16,
+      "sem_resposta": 5,
+      "criticas": 10,
+      "nota_media_sdr": 4.9,
+      "nota_media_vendedor": 5.0,
+      "alerta_critico": "10 leads atendidos somente pelo BOT sem SDR humano em DR4 (Joséquiel informou conta R$500 e ficou sem retorno); valdete DR2 com 10 msgs respondido so pelo bot; Gabriel mediana 80min de resposta (SDR-X5); Augusto Lima busca 2500kWh/mes pendente; Leticia Rodrigues DR2 visita confirmada 14h30 por Luana",
+      "sdrs": [
+        "Keane",
+        "Gabriel"
+      ],
+      "vendedores": [
+        "Luana",
+        "Pericles",
+        "Guilherme"
+      ]
+    },
+    {
+      "data": "2026-06-01",
+      "tipo_analise": "analise_completa",
+      "hora_execucao": "17:25",
+      "total_conversas": 113,
+      "total_conversas_dr4": 100,
+      "total_conversas_dr2": 13,
+      "sem_resposta": 2,
+      "criticas": 2,
+      "nota_media_sdr": 7.1,
+      "nota_media_vendedor": 7.5,
+      "alerta_critico": "Gabriel(bot) atendeu sozinho Armando R$750/800kWh (orfao cronico) e Cesio Tenorio 1.000kw ficou sem resposta apos informar consumo; It's Burger fechou com concorrente sem recuperacao; Leo (Maria Luiza) audio sem resposta; Alan Oliveira enviou msg copy-paste chamando Alcione de 'Marcos'; ~22 conversas de Luana avancam so por ligacao sem agregar valor no chat. Positivos: visitas agendadas (Flavio, Ma Refrigeracao, Deisivan, antonio DR2) e Claudemy reuniao meet quinta.",
+      "sdrs": [
+        "Keane",
+        "Gabriel",
+        "Maria Luiza"
+      ],
+      "vendedores": [
+        "Luana",
+        "Alan Oliveira",
+        "Pericles"
+      ]
+    },
+    {
+      "data": "2026-06-02",
+      "tipo_analise": "refresh_fim_tarde",
+      "hora_execucao": "19:10",
+      "total_conversas": 88,
+      "total_conversas_dr4": 72,
+      "total_conversas_dr2": 16,
+      "sem_resposta": 8,
+      "criticas": 4,
       "nota_media_sdr": 5.7,
       "nota_media_vendedor": 6.3,
+      "cobertura_parcial": "Refresh de fim de tarde: DR4 janela 12:21-19:03 (72 conversas enumeradas) + DR2 09:28-17:55 (16). ~45 conversas lidas a fundo neste refresh (alem das 54 do run 15:45). Manha do DR4 coberta no follow-up matinal. Navegador instavel (screenshots congelaram); leitura via extracao de DOM.",
+      "alerta_critico": "POS-VENDA CRITICO: Henrique Leal (DR2) - CLIENTE CONTRATADO ameaca cancelar contrato e pedir reembolso (3a tentativa) e o BOT respondeu com video de boas-vindas - ESCALAR DIRECAO HOJE. JURIDICO: Bonani Advogados notificacao extrajudicial sobre a MARCA (DR2 10:25), BOT respondeu com video. A AUTOMACAO do DR2 responde mensagens graves com video sem escalar para humano. QUENTES: GEOCIVAN (Pericles) quer 500kW A VISTA sem retorno; antonio (Luana) enviou conta MAIO; dilson (Keanny) enviou conta; EDIDEUS visita feita (Luana). Islane pediu preco 300/500kWh sem resposta. PERDIDO: Alan Pinheiro 'ja contratei'. DESTAQUE: proposta completa do Alan p/ Flanklin (D1/D2/D3). PADROES: onda de template identico do Keanny (~12 leads 17:28-17:53); Gabriel msgs repetitivas (Nelson Luna 6x); Luana 'estou te ligando' em reativacoes (Souza/Souzza/Alisson); Vladimiro (cliente antigo) com pergunta ignorada.",
       "sdrs": [
-        "Maria Luiza",
-        "Keane",
-        "Kemily"
+        "Gabriel",
+        "Keanny Brandao"
       ],
       "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Guilherme",
         "Alan Oliveira",
+        "Luana",
         "Pericles Mateus"
       ]
     },
     {
-      "data": "2026-05-13",
-      "total_conversas": 196,
-      "sem_resposta": 2,
-      "criticas": 0,
-      "nota_media": 0.0,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
+      "data": "2026-06-03",
+      "tipo_analise": "refresh_fim_tarde_amostragem",
+      "hora_execucao": "19:05",
+      "total_conversas": 76,
+      "total_conversas_dr4": 67,
+      "total_conversas_dr2": 9,
+      "sem_resposta": 5,
+      "criticas": 3,
+      "nota_media_sdr": 5.9,
+      "nota_media_vendedor": 5.5,
+      "cobertura_parcial": "Refresh de fim de tarde (sobrescreve run 14:50). DR4 janela 14:36-18:52 (~67 conversas reais; lista ao vivo nao paginou alem das 14:36 - manha nao recarregou) + DR2 lido integral 08:46-18:00 (9). ~24 conversas DR4 priorizadas + 9 DR2 lidas a fundo via extracao de DOM. Dia majoritariamente SDR/prospeccao por template. Keane (Keanny) lidera; Gabriel templates genericos; vendedores Yan Francisco (inbounds), Laercio (fraco) e Alan Oliveira ativos. Luana/Pericles sem chats hoje.",
+      "alerta_critico": "DR2 sem cobertura humana de inbound: 3 inbounds sem resposta o dia todo (Ytalo M. POS-VENDA cliente JA instalado nao consegue ver geracao no app ~8h; Eugenio victor 'Bom dia' 08:46; 558781771924 'Boa tarde' 12:31) + Carlos pediu orcamento R$300-350 com resposta lenta ~3h30. MELHORIA: Henrique Leal (pos-venda risco cancelamento) recebeu resposta HUMANA de Keane prometendo retorno urgente (antes era bot com video) - garantir que o responsavel contratual retorne. DESTAQUE: Keane AGENDOU 2 visitas (Elizangela 05/06 10h com 17anos/9mil projetos + quebra objecao; Islane Andrade 08/06 10h). ALTO CONSUMO/B2B so com template generico do SDR (Augusto Lima ~2500kWh, HARAS BARUCK rural, Ma Refrigeracao comercio, Distribuidora Leite). Pedrito 1000kWh assumido por Yan em ~6min. Flavio comparando preco (risco). Gabriel: saudacao errada ('Bom dia' 16:57), assina 'Yan' (inconsistencia). Laercio: mensagens com muitos typos/fragmentadas (Claudemir/Maikon/Ze).",
+      "sdrs": [
         "Keane",
-        "Kemily",
-        "Caio Roberto",
-        "Guilherme",
+        "Gabriel"
+      ],
+      "vendedores": [
+        "Yan Francisco",
         "Alan Oliveira",
-        "Pericles Mateus"
+        "Laercio"
       ]
     },
     {
-      "data": "2026-05-12",
-      "total_conversas": 240,
-      "sem_resposta": 82,
-      "criticas": 1,
-      "nota_media": 4.9,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
+      "data": "2026-06-08",
+      "tipo_analise": "analise_completa_fim_de_tarde",
+      "hora_execucao": "19:25",
+      "total_conversas": 136,
+      "total_conversas_dr4": 128,
+      "total_conversas_dr2": 8,
+      "sem_resposta": 8,
+      "criticas": 6,
+      "nota_media_sdr": 6.2,
+      "nota_media_vendedor": 6.0,
+      "cobertura_parcial": "Censo 100% da lista ao vivo via extracao de DOM/estado React: 128 conversas DR4 (08:57-19:12) + 8 DR2 (10:26-17:21) com mensagem HOJE, cada thread aberta e lida. 29 conversas DR4 bidirecionais (cliente respondeu) + 8 DR2 lidas a fundo; ~99 conversas DR4 sao disparo/follow-up de template sem resposta do cliente hoje (Keanny 40, Yan 32, Gabriel 13, Pericles 6, Alan 4, Laercio 2). Segunda-feira de alto volume de prospeccao no DR4. Papeis: SDR=Keanny Brandao, Keane, Gabriel, Kemily Carvalho; Vendedor=Yan Francisco, Pericles Mateus, Alan Oliveira, Laercio, Luana.",
+      "alerta_critico": "PADRAO RECORRENTE: BOT do DR2 respondeu reclamacao de POS-VENDA com VIDEO de vendas antes de escalar (Islayne Carvalho: desconto solar parou apos trocar titularidade da conta). DR2 SEM cobertura humana de inbound: 3 inbounds sem resposta (Castro orcamento novo 17:21; Pnzsun pediu suporte tecnico; Bianca Souza advogada pediu telefone). POS-VENDA: Cicero relata conta nao reduziu apos instalacao (precisa diagnostico). LEAD PERDIDO: Ademilton (Gabriel) fechou com concorrente por falta de retorno. SDR-X1: Keanny enviou orcamento R$25.508 a Carol antes de agendar e cliente esfriou. QUENTES: Pericles avancou financiamento de Alan Chalega (visita feita, 2o CPF) e danilo (CNH/email); Yan confirmou visitas 10h de Franciel e Pablo na empresa e qualificou Francisco Aoun 1000kWh casa+apto (alto consumo); Keanny confirmou visita Islane 11h; Keane remarcou Dario amanha 10h. Nenhum vendedor usou diferenciais D1-D4 (laboratorio 24h/17 anos/6 mil projetos).",
+      "sdrs": [
+        "Keanny Brandão",
         "Keane",
-        "Kemily",
-        "Caio Roberto",
-        "Guilherme",
+        "Gabriel",
+        "Kemily Carvalho"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Pericles Mateus",
+        "Alan Oliveira",
+        "Laercio",
+        "Luana"
+      ]
+    },
+    {
+      "data": "2026-06-09",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "17:05",
+      "total_conversas": 162,
+      "total_conversas_dr4": 149,
+      "total_conversas_dr2": 13,
+      "sem_resposta": 11,
+      "criticas": 3,
+      "nota_media_sdr": 6.2,
+      "nota_media_vendedor": 6.1,
+      "cobertura": "Analise completa de fim de tarde (~17:05). Censo 100%: DR4=149, DR2=13 (162). 85 conversas lidas a fundo via extracao de DOM. SDR=Keanny Brandao; Vendedores=Pericles Mateus, Yan Francisco, Alan Oliveira.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
+      "vendedores": [
+        "Pericles Mateus",
+        "Yan Francisco",
         "Alan Oliveira"
       ]
     },
     {
-      "data": "2026-05-11",
-      "total_conversas": 93,
-      "sem_resposta": 3,
-      "criticas": 3,
-      "nota_media": 0.3,
+      "data": "2026-06-10",
+      "tipo_analise": "analise_completa_fim_de_tarde",
+      "hora_execucao": "18:55",
+      "total_conversas": 221,
+      "total_conversas_dr4": 213,
+      "total_conversas_dr2": 8,
+      "sem_resposta": 35,
+      "criticas": 9,
+      "nota_media_sdr": 6.0,
+      "nota_media_vendedor": 5.2,
+      "cobertura": "Refresh de fim de tarde (sobrescreve run 16:45). Censo 100% via extracao de DOM/estado React: DR4=213 (08:27-18:53) + DR2=8 (09:53-16:31) = 221. DR2 lido a fundo integral (8/8). DR4: triagem 100% por ultimo remetente + leitura profunda das conversas com interacao real e do trabalho de Alan/Keanny/Pericles, mais amostra ampla dos disparos do Yan. ~140 das 213 conversas DR4 sao reativacao em massa por TEMPLATE IDENTICO do Yan Francisco (sem resposta). 30 conversas DR4 terminaram com cliente aguardando (21 audios + 9 textos). Limite de plataforma: render pesado por conversa inviabilizou transcricao 1-a-1 dos 140 disparos identicos (censados) e dos audios. SDR=Keanny Brandao; Vendedores=Yan Francisco (disparos em massa), Alan Oliveira, Pericles Mateus.",
+      "alerta_critico": "JURIDICO: Bonani Advogados (DR2 16:31) - notificacao de adocao de MEDIDAS JUDICIAIS por descumprimento, com protocolo de acao judicial, SEM resposta - escalar direcao/juridico HOJE. DR2 SEM cobertura humana de inbound: 7 das 8 conversas com cliente aguardando (Bonani; Barbara Duarte 1000kW 2 imoveis Petrolina+Recife; Diego Costa 2000kWh; Jackson Lobo 600kWh p/ Caio; Lucas Rodrigues docs; Yuri Santos; Rodrigo Chales Projetos B2B). DR4: Yan Francisco disparou TEMPLATE IDENTICO em ~140 leads (sem qualificacao/diferenciais/visita) com baixissima conversao e queima de base; 30 clientes aguardando resposta (21 audios sem retorno). POSITIVO: Alan Oliveira agendou visita do Jota (sexta de manha) e fez follow-ups personalizados (Myldson 500KW financiamento reprovado; CARLIZZE PORCELANATOS B2B; FLANKLIN recompra 500KW). Keanny (SDR) conduzindo visitas (Melkzedek alto consumo, Jarmeson). NENHUM vendedor usou diferenciais D1-D4.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
       "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Claudio Rodrigues",
-        "Caio Roberto",
-        "Guilherme",
-        "Kemilly"
+        "Yan Francisco",
+        "Alan Oliveira",
+        "Pericles Mateus"
       ]
     },
     {
-      "data": "2026-05-07",
-      "total_conversas": 92,
-      "sem_resposta": 4,
-      "criticas": 10,
-      "nota_media": 3.8,
-      "vendedores": [
-        "Luana",
-        "Maria Luiza",
-        "Keane",
-        "Caio Roberto",
-        "Guilherme",
-        "Alan"
-      ]
-    },
-    {
-      "data": "2026-05-06",
-      "total_conversas": 153,
-      "sem_resposta": 12,
+      "data": "2026-06-11",
+      "tipo_analise": "analise_completa_fim_de_tarde",
+      "hora_execucao": "18:40",
+      "total_conversas": 52,
+      "total_conversas_dr4": 22,
+      "total_conversas_dr2": 30,
+      "sem_resposta": 8,
       "criticas": 2,
-      "nota_media": 5.1,
+      "nota_media_sdr": 5.5,
+      "nota_media_vendedor": 4.9,
+      "cobertura": "Censo 100% das conversas com mensagem HOJE (sobrescreve run de meio-dia 13:15). Extracao de DOM com loader anti-contaminacao (troca de URL por conversa, leitura no-scroll do bloco do dia). DR4=22 reais (08:36-17:39; +2 feeds internos e 1 'Paulo Junior -Ignorar' excluidos; Regis nao renderizou); DR2=30 (09:45-18:19) lidas a fundo. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas; DR2 hoje 100% Yan (sem SDR). Keanny Brandao (SDR) so em 4 conversas do DR4; Pericles/Alan/Luana/Gabriel sem chats proprios (so handoffs).",
+      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 52 conversas (gap cronico). POSITIVO: Yan AGENDOU 4 visitas (Jackson Lobo 600kW HOJE 13h c/ B1+B3+B4; Adailton 500kwh HOJE 13h; Barbara Duarte 1000kW 2 imoveis Petrolina+Recife Segunda 9h; Anderson Freitas 17/06 10h) + Aparecida visita realizada (Laercio) + callback Geordanio 18h; usou B3/B4 com Ana Cecilia 1000kW e Bruna Dantas. CRITICO: 3 leads perdidos p/ concorrente so registrados sem F4 (Malan, Leticia Andrade, Jose); Diego Costa 2000kWh (maior valor do dia) so com template; Thales Souza enviou 2 contas e Yan prometeu orcamento e nao voltou; Wellington 1000kW Petrolina engajou e ficou sem resposta; Cinara 300kW pediu simulacao 2x sem proposta; audios do Yan nao tocam (Ana Cecilia, Bruna). DR2 alto valor depende de 1 pessoa: Tiago Liborio CODEVASF licitacao 6 kits UFV (B2B governo) encaminhado ao assessor Anderson. SDR=Keanny Brandao; Vendedor=Yan Francisco.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
       "vendedores": [
-        "Claudio Rodrigues",
-        "Caio Roberto",
-        "Keane",
-        "Luana",
-        "Guilherme",
-        "Maria Luiza",
-        "Kemily"
+        "Yan Francisco"
       ]
     },
     {
-      "data": "2026-05-05",
-      "total_conversas": 163,
-      "sem_resposta": 46,
+      "data": "2026-06-12",
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "hora_execucao": "19:13",
+      "total_conversas": 70,
+      "total_conversas_dr4": 37,
+      "total_conversas_dr2": 33,
+      "sem_resposta": 7,
       "criticas": 8,
-      "nota_media": 5.0,
+      "nota_media_sdr": 6.0,
+      "nota_media_vendedor": 5.0,
+      "cobertura": "Censo 100% das conversas com mensagem HOJE via extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa). Run de FIM DE DIA (sobrescreve run das 16:20). DR4=37 reais (07:53-17:20; +2 feeds 'Chegou um lead' e 1 'Paulo Junior -Ignorar' excluidos) + DR2=33 (07:44-18:02; +internal 'Paulo Santos' e 2 feeds excluidos). Cada thread aberta e lida no bloco do dia. Dia DOMINADO de ponta a ponta pelo Yan Francisco nas DUAS contas (~66 conversas): reativacao em massa por TEMPLATE IDENTICO 'Entrei em contato porque recebemos seu interesse...' sem qualificacao/diferenciais, maioria aguardando cliente. SDRs humanos pontuais: Keanny Brandao (Marcelo, handoff Adalberto), Gabriel (Iveraldo inbound), Keane (Erevelton inbound). Laercio: 1 visita realizada (Adailton).",
+      "alerta_critico": "NENHUM vendedor usou diferenciais D1-D4 em 66 conversas (gap cronico; X6). POSITIVO: Yan AGENDOU/confirmou 3 visitas (Ronaldo kit 1000kW SEGUNDA 8:30; Geordanio HOJE 15h c/ Alan; Providencia divina amanha 14h c/ Yuri) + Adailton visita feita (Laercio) + handoffs a assessores (Iveraldo->Yuri, Thales->Alan, Jose->Anderson). CRITICO POS-VENDA: Lilian Costa MUITO insatisfeita ('empresa que nao indico a ninguem', 'muita dor de cabeca') empurrada p/ outro numero e SEM resolucao ate o fim do dia - escalar gestao. 3 leads perdidos p/ concorrente (kercio so 'Certo'; Rosivania so 'entendi'; Ivonaldo com F4 iniciado mas sem D1-D4). Flavio 'ja fechei a usina' sem nenhuma recuperacao. Ailton 1000kW recebeu faixa de preco solta (14-15mil) sem qualificacao/visita (X1). Clescio enviou conta e ficou sem resposta. Ana Cecilia 'KD o orcamento?' e Stenio (homologacao) aguardando. Fabio recebeu 'oferta so hoje' confusa + audios que nao tocam e pediu p/ sair da lista. SDR=Keanny/Gabriel/Keane; Vendedor=Yan Francisco (dominante), Laercio.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Gabriel",
+        "Keane"
+      ],
       "vendedores": [
-        "Caio Roberto",
-        "Kemily",
-        "Guilherme",
-        "Keane",
-        "Luana",
-        "Claudio Rodrigues",
-        "Maria Luiza"
+        "Yan Francisco",
+        "Laercio"
       ]
     },
     {
-      "data": "2026-05-04",
-      "total_conversas": 227,
-      "sem_resposta": 11,
-      "criticas": 5,
-      "nota_media": 5.0,
+      "data": "2026-06-15",
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "hora_execucao": "22:07",
+      "total_conversas": 104,
+      "total_conversas_dr4": 104,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 6,
+      "criticas": 3,
+      "nota_media_sdr": 7.5,
+      "nota_media_vendedor": 5.2,
+      "cobertura": "DR4 VOLTOU (acesso restaurado em 15/06; estava inacessivel desde 12-15/06 de manha). DR2 (175001) CONTINUA bloqueado por 'Seu plano expirou' (WhatsApp desconectado, 0 salas) - renovacao e acao financeira do usuario, nao analisada. Censo DR4: 104 conversas com mensagem HOJE (09:45-20:20). 54 lidas a fundo (filtro de data anti-contaminacao por troca de URL); as 9 com resposta do cliente lidas integralmente; ~4 conversas pesadas deram timeout (render congela a aba ~30-60s) e 45 disparos identicos do Yan classificados por preview. Dia DOMINADO por reativacao em massa: Yan Francisco 72 (template generico), Alan Oliveira 21 (template de humor), Keanny Brandao SDR 8 (unica qualificando de verdade).",
+      "alerta_critico": "DR2 FORA DO AR pelo 2o dia (plano expirado, WhatsApp desconectado) - leads de alto valor sem cobertura, renovar plano. NENHUM vendedor usou diferenciais D1-D4 em 93 conversas (Yan 72 + Alan 21; gap cronico, X6). RECUPERACAO CRITICA: Alcides (Alan) - orcamento prometido e NUNCA entregue, fechando com concorrente e pediu sair da lista ('me humilhando') - escalar gestao. Hakai (Yan) ja comprou de concorrente 'pessoal nao me atendeu'. Givanildo inbound 'quero economizar' SEM resposta e sem vendedor atribuido. ALTO VALOR subaproveitado: Geovany 1000KW e Myldson 500KW (financiamento reprovado) so com opener generico. POSITIVO: Keanny agendou visita do Jose (16/06 14h confirmada); Alan conduzindo fechamento do Jota 600KW (2a visita feita) e dimensionamento da Elizangela. SDR=Keanny Brandao; Vendedores=Yan Francisco (dominante), Alan Oliveira.",
+      "sdrs": [
+        "Keanny Brandão"
+      ],
       "vendedores": [
-        "Luana",
-        "Caio Roberto",
-        "Claudio Rodrigues",
-        "Keane",
-        "Guilherme",
-        "Maria Luiza Ramos",
-        "Kemily",
-        "Guilherme Comercial"
+        "Alan Oliveira",
+        "Yan Francisco"
       ]
     },
     {
-      "data": "2026-05-02",
-      "total_conversas": 71,
-      "sem_resposta": 15,
-      "criticas": 2,
-      "nota_media": 5.4,
+      "data": "2026-06-16",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "16:17",
+      "total_conversas": 76,
+      "total_conversas_dr4": 76,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 0,
+      "criticas": 0,
+      "nota_media_sdr": 4.6,
+      "nota_media_vendedor": 4.0,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) BLOQUEADO pelo 3o dia consecutivo por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira do usuario, nao executada) - 0 conversas analisaveis. Censo DR4: 79 linhas com mensagem HOJE (08:29-16:10); excluidos 2 feeds internos ('Chegou um lead', numeros) e 1 'Paulo Junior -Ignorar' = 76 conversas reais. Extracao de DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '16 jun 2026'). ~20 conversas substantivas lidas a fundo; ~56 disparos identicos do Yan classificados por template+preview. Dia novamente DOMINADO por reativacao em massa do Yan Francisco (68 conversas, template generico, sem qualificacao/diferenciais). NOVO atendente: LUCAS (SDR/opener, 6 conversas).",
+      "alerta_critico": "DR2 FORA DO AR pelo 3o dia consecutivo (plano expirado, modal 'Seu plano expirou') - leads de alto valor inacessiveis, renovar plano (acao da diretoria). DR4 novamente dominado por reativacao em massa do Yan Francisco (68 conversas, template generico, X4/X6/X7) - NENHUM diferencial D1-D4 (gap cronico). NOVO atendente LUCAS (SDR/opener, 6 conversas) para no opener inclusive em lead de 700kW (Wellington, em fechamento). POSITIVO: Keanny Brandao unica qualificando de verdade (RC inbound R$403); Alan Oliveira reabriu fechamento da Elizangela com gatilho de condicao. RECUPERACAO perdida: Hakai (ja comprou de concorrente, so 'peco perdao'). ALTO VALOR B2B subaproveitado: Med Vet Israel, Marmitaria da Leide, Leandro Lb Gesso so com template.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
       "vendedores": [
+        "Yan Francisco",
+        "Alan Oliveira"
+      ]
+    },
+    {
+      "data": "2026-06-17",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "14:07",
+      "total_conversas": 106,
+      "total_conversas_dr4": 106,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 4,
+      "criticas": 0,
+      "nota_media_sdr": 5.0,
+      "nota_media_vendedor": 5.2,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 4o dia consecutivo (14-17/06) por modal 'Seu plano expirou' (botao Renovar; renovacao e acao financeira da diretoria, nao executada) - 0 conversas analisaveis. Censo DR4: 109 linhas com timestamp HH:MM (08:52-13:52); excluidos 2 feeds internos ('Chegou um lead') e 1 'Paulo Junior -Ignorar' = 106 conversas reais. Extracao DOM no-scroll anti-contaminacao (troca de URL por conversa, filtro de data '17 jun 2026'). ~18 conversas substantivas lidas a fundo; restante classificado por template+preview. Dia DOMINADO por reativacao em massa: Alan Oliveira 41, Yan Francisco 33, Lucas 24 (opener generico). Keanny Brandao SDR ~6 (unica qualificando de verdade).",
+      "alerta_critico": "DR2 FORA DO AR pelo 4o dia consecutivo (plano expirado) - renovar plano (acao da diretoria). NOVIDADE POSITIVA: Alan Oliveira passou a usar template que MENCIONA D1 (laboratorio proprio + troca imediata) - primeira vez que um diferencial D1-D4 aparece de forma consistente, quebrando o gap cronico (ainda em broadcast generico, sem qualificacao). Keanny Brandao agendou visita do Anderson (700kW) HOJE 14h com Alan. HOT SEM RESPOSTA: Louro Rodrigues pediu projeto 1000kW e preco a vista p/ Remanso 12:54, so recebeu opener do Lucas, ninguem respondeu. RECUPERACAO: Marcelo Moreira respondeu 'Ja resolvi' sem tentativa de recuperacao. ALTO VALOR subaproveitado so com template: Geovany 1000KW, Myldson 500KW (financiamento reprovado), B2Bs (Carlizze Porcelanatos, Denise Studio Hair, Leandro Top Frio, Leide). Lucas dispara opener generico (sem nome) em massa - SDR-X4.",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Alan Oliveira",
+        "Yan Francisco"
+      ]
+    },
+    {
+      "data": "2026-06-18",
+      "total_conversas": 217,
+      "sem_resposta": 5,
+      "criticas": 1,
+      "nota_media_sdr": 5.2,
+      "nota_media_vendedor": 4.9,
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas",
+        "Maria Luiza Ramos"
+      ],
+      "vendedores": [
+        "Alan Oliveira",
+        "Yan Francisco",
         "Luana",
-        "Maria Luiza Ramos",
-        "Keane",
-        "Claudio Rodrigues",
-        "Caio Roberto",
         "Guilherme"
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-18T16:16"
+  "ultima_atualizacao": "2026-06-18T18:31"
 }
