@@ -1,71 +1,143 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-06-15 (segunda)
-Referencia: fim de semana - sabado 13/06 + domingo 14/06
-Gerado: 08:50
+FOLLOW-UPS PRIORITARIOS - 18/06/2026 (quinta)
+Referencia: conversas de ONTEM 17/06/2026 (quarta)
+Conta analisada: DR4 (152352)
+DR2 (175001): FORA DO AR - 5o dia (plano expirado) - NAO analisado
 ====================================================
 
-!!! ALERTA CRITICO DE SISTEMA - DR2 FORA DO AR !!!
+CONTEXTO: ontem o DR4 foi dominado por reativacao em massa (Yan
+Francisco + Lucas + Alan) com template generico. Das 37 conversas
+marcadas "ontem", a maioria e nosso disparo de saida aguardando o
+cliente. Abaixo estao os leads com ENGAJAMENTO/VALOR REAL escondidos
+sob esses disparos.
+
 ----------------------------------------------------
-A conta DR2 (175001) NAO esta carregando conversas no
-live-chat. A tela mostra:
-   - "Sem conexao com WhatsApp - escaneie o QR CODE"
-   - "Seu plano expirou"
-
-IMPACTO: o DR2 concentra os leads de ALTO VALOR
-(1000kW+, B2B, governo). Com o WhatsApp desconectado /
-plano expirado, a empresa pode estar PERDENDO TODO o
-inbound do DR2 sem registro. Nao foi possivel analisar
-follow-ups do DR2 hoje.
-
-ACAO (DIRETORIA): reconectar o WhatsApp (escanear QR) e
-renovar o plano do BotConversa DR2 com URGENCIA.
-Conferir quantos leads entraram sem atendimento.
+🔴 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE CEDO:
 ----------------------------------------------------
+1. ALEX - Vendedor/SDR: Keanny Brandao - DR4
+   Ultima msg: ONTEM 19:51 | Consumo: ~400 kWh/mes
+   Situacao: INBOUND NOVO ontem a noite. Quer sistema com 8 placas,
+   informou ~400kWh, tem 1 ar-condicionado e quer +2 de 9.000 BTU.
+   Deu todos os dados e NAO teve retorno.
+   ACAO: Responder logo cedo. Dimensionar ~400kWh JA com a carga dos
+   2 ar-condicionado novos, mandar faixa de geracao e oferecer visita
+   hoje/amanha. Lead quente fresco - risco de esfriar.
 
-
-OBS: Fim de semana de baixo volume no DR4.
-Sabado (13/06): sem conversas com conteudo.
-Domingo (14/06): apenas disparos de saida sem resposta
-do cliente (Francisca Martins) + 1 lead reativado.
-
-
-🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-(nenhum)
-
-
-🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
+🔥 LEADS QUENTES - FECHAR/AVANCAR HOJE:
 ----------------------------------------------------
-1. Tereza - Vendedor: Keanny Brandao (SDR) - DR4
-   Ultima msg: Dom 14/06 19:07 (AUDIO) | Conta de luz: nao informada
-   Situacao: SDR tentou contato 3x no inicio de junho (reducao
-   de conta + financiamento). Cliente ficou ~11 dias muda e
-   REAGIU sozinha no domingo a noite com um audio. Lead frio
-   que esquentou.
-   ACAO: Responder no primeiro horario. OUVIR o audio antes.
-   Bom dia + "obrigada pelo retorno" + retomar financiamento +
-   pedir valor medio da conta + oferecer ligacao rapida hoje.
+1. JANICLEA - SDR: Keanny Brandao - DR4 [MUITO ALTO]
+   ~500 kWh | tem ar + chuveiro | quer CARTAO 18x
+   Negociacao ativa ONTEM 18:37-18:42. Keanny ofereceu VISITA
+   TECNICA "amanha" (= HOJE). Cliente pediu a media de 500.
+   ACAO: CONFIRMAR A VISITA DE HOJE + mandar faixa de valor/parcela
+   no cartao 18x para nao esfriar.
 
+2. JOAO EUDES - SDR Keanny -> Vendedor Guilherme - DR4 [MUITO ALTO]
+   Qualificado em 20/05: quer cartao com entrada R$3.000, Santa Luzia.
+   JA ENVIOU conta + CPF + nome. Guilherme ia ligar e a conversa parou.
+   ACAO: Guilherme monta o orcamento HOJE (cartao, entrada 3.000) e
+   liga a noite (horario que o cliente pediu). Cliente fez a parte
+   dele ha ~4 semanas e esta sem retorno.
 
+3. DARIO - SDR: Keanny Brandao - DR4 [ALTO]
+   Tinha VISITA agendada; pediu remarcar (08/06). Keanny tentou
+   remarcar sem sucesso (15-16/06).
+   ACAO: Oferecer 2 horarios concretos (ex: hoje 16h ou amanha 9h)
+   em vez de "qual o melhor horario".
+
+4. COUTO - Vendedor: Pericles Mateus - DR4 [ALTO]
+   Veio do Instagram, "gostei dos precos das parcelas", JA ENVIOU a
+   conta (16/05). Engajou e parou.
+   ACAO: Pericles retoma com orcamento fechado baseado na conta que
+   ele ja mandou + agendar visita.
+
+5. CLAUDIO - Vendedor: Yan Francisco - DR4 [ALTO]
+   ATIVO ONTEM 16:57: respondeu e ENVIOU a conta de luz. Yan
+   perguntou a geracao desejada e parou.
+   ACAO: Preparar e enviar o orcamento hoje cedo (conta chegou ontem),
+   antes de esfriar.
+
+6. SUYANE - SDR: Lucas - DR4 [MEDIO-ALTO]
+   ONTEM 12h enviou a foto da conta; falta o documento com foto
+   (RG/CNH).
+   ACAO: Cobrar o RG/CNH hoje e ja adiantar a simulacao com a conta.
+
+7. RC - SDR: Keanny Brandao - DR4 [MEDIO]
+   Conta R$403, cidade Casa Nova. Falta a foto da conta para calcular.
+   ACAO: Cobrar a foto da conta e tentar a ligacao.
+
+8. REINDO CANARIO - SDR: Keanny Brandao - DR4 [MEDIO]
+   Conta ~R$900. Tem duvida tecnica em aberto: "tamanho de area minima".
+   ACAO: Responder a duvida da area e propor estudo/visita.
+
+9. ROBERTO - Vendedor: Yan Francisco - DR4 [MEDIO]
+   Em qualificacao (15/06), convidado a passar na loja.
+   ACAO: Confirmar tipo de telhado + oferecer horario concreto na loja.
+
+10. MAYANE GABRIELA - Gabriel/Yan - DR4 [MEDIO]
+    Aguardando o marido para fazer o orcamento (08/06).
+    ACAO: Follow-up leve: ja alinhou com o esposo? Oferecer adiantar
+    o orcamento.
+
+----------------------------------------------------
 💎 ALTO CONSUMO - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-(nenhum identificado no DR4 - DR2 nao pode ser analisado)
+1. WELLINGTON - Vendedor: Pericles Mateus - DR4
+   700 kWh - orcamento A VISTA | EM FECHAMENTO
+   Aguardava decisao com a irma; cliente voltaria a Petrolina em
+   JUNHO (agora). 16/06 respondeu (midia).
+   ACAO: PRIORIDADE MAXIMA. Pericles liga HOJE, confirma valor a
+   vista do 700kW e fecha. Cliente ja voltou.
 
+2. GILMAR NUNES - Maria Luiza/Lucas - DR4
+   1000 kWh - proposta R$16.768,08 (ate 18x)
+   Aguardando a ampliacao da casa para definir consumo.
+   ACAO: Checar se a obra avancou; manter relacionamento e oferecer
+   redimensionar quando terminar. Nao forcar.
 
-🔥 LEADS QUENTES - FECHAR HOJE:
+3. IRMAO CRISTIANO - Pericles/Lucas - DR4
+   700 kW - projeto R$12.273,75 (financ. R$13.127, ate 18x)
+   Proposta enviada, travou no "valor das parcelas".
+   ACAO: Retomar com o calculo claro das parcelas e proposta de
+   fechamento.
+
+4. MA REFRIGERACAO (Matheus) - Keanny/Lucas - DR4
+   Comercio (refrigeracao) - conta R$500 - ORCAMENTO PRONTO
+   Orcamento ja ficou "muito bom"; visita sem retorno desde maio.
+   ACAO: Empurrar a entrega presencial do orcamento (oferecer 2
+   horarios) com gancho de economia para o comercio.
+
+5. MED VET ISRAEL CASTRO - Yan Francisco - DR4
+   Comercio (clinica veterinaria) - frio, so templates
+   ACAO: Trocar template generico por abordagem B2B (climatizacao +
+   equipamentos) + oferecer estudo gratis a partir de uma conta.
+
+6. MARMITARIA DA LEIDE - Yan Francisco - DR4
+   Comercio (marmitaria) - frio, so templates
+   ACAO: Abordagem B2B segmentada (refrigeracao/fogao eletrico) +
+   pedir uma conta para estudo gratuito.
+
 ----------------------------------------------------
-(nenhum)
-
+⚠️ OBSERVACOES / ALERTAS:
+----------------------------------------------------
+- ERRO DE PROCESSO: GABRIEL ALVES JA E CLIENTE (fechou com o vendedor
+  Guilherme em 13/05) e mesmo assim recebeu disparo de reativacao do
+  Yan ontem. Remover de listas de reativacao - risco de queimar
+  relacao com cliente ativo.
+- DR2 (175001) FORA DO AR pelo 5o dia consecutivo (plano expirado /
+  botao Renovar). Leads de alto valor do DR2 seguem inacessiveis -
+  renovar plano e decisao da diretoria.
+- GAP CRONICO: nenhum disparo de ontem usou os diferenciais D1-D4
+  (laboratorio proprio, 17 anos, 6 mil projetos, monitoramento) na
+  abertura - segue broadcast generico sem qualificacao.
 
 ====================================================
 RESUMO:
 - Sem resposta antes 18h: 0
-- Sem resposta apos 18h: 1 (Tereza)
-- Alto consumo: 0
-- Leads quentes: 0
-TOTAL DE FOLLOW-UPS: 1
-
->>> PRIORIDADE #1 DO DIA NAO E UM LEAD: e religar o DR2
-    (WhatsApp + plano). Sem isso, os leads de maior
-    ticket estao entrando no vacuo.
+- Sem resposta apos 18h: 1
+- Alto consumo: 6
+- Leads quentes: 10
+TOTAL DE FOLLOW-UPS (DR4): 17
+(DR2 nao contabilizado - fora do ar)
 ====================================================
