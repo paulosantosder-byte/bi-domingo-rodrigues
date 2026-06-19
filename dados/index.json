@@ -650,7 +650,29 @@
         "Luana",
         "Guilherme"
       ]
+    },
+    {
+      "data": "2026-06-19",
+      "tipo_analise": "analise_completa_manha",
+      "hora_execucao": "11:01",
+      "total_conversas": 17,
+      "total_conversas_dr4": 17,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 2,
+      "criticas": 1,
+      "nota_media_sdr": 4.4,
+      "nota_media_vendedor": 5.7,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 8o dia consecutivo (14-19/06) por modal 'Seu plano expirou' (renovacao e acao financeira da diretoria, nao executada) - 0 conversas. Censo DR4: 19 linhas com timestamp HH:MM (04:42-10:54); excluidos 1 feed interno ('Chegou um lead') e 1 'Paulo Junior -Ignorar' = 17 conversas reais, TODAS lidas a fundo via extracao de DOM no-scroll anti-contaminacao. Manha de baixo volume: follow-up/reativacao Yan Francisco (5) + Lucas SDR (6) + Alan Oliveira (5) + opener bot Gabriel (noturnos). SDR=Lucas, Gabriel(bot); Vendedor=Yan Francisco, Alan Oliveira.",
+      "alerta_critico": "INBOUND IGNORADO: Robson 'tenho interesse em energia solar' 08:26 ficou ~2h30 SEM resposta humana (sem vendedor atribuido). PR Alexandre enviou audio 09:43 e ficou +1h sem retorno (lead urgente do dia anterior). Ronis Silva em duvida ('decidindo investimento, aguardando renovacao de contrato') sem SDR-3. DESTAQUE: Alan Oliveira mantem template com D1 (laboratorio proprio) em todas as reativacoes - UNICO da equipe ancorando diferencial. ORFAO SOLAR Carlos Ayalla pronto p/ agendar ('e so marcar', placas desinstaladas) aguardando resposta do Alan. Yan respondeu antoniopomba85 so hoje 10:54 (cliente cobrou 'ESTOU AGUARDANDO??' desde ontem 18:38). Nenhum lead alto valor (1000kW) novo hoje. Yan sem diferenciais D1-D4 (X6).",
+      "sdrs": [
+        "Lucas",
+        "Gabriel"
+      ],
+      "vendedores": [
+        "Alan Oliveira",
+        "Yan Francisco"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-06-18T18:31"
+  "ultima_atualizacao": "2026-06-19T11:01"
 }
