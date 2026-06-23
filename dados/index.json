@@ -673,7 +673,28 @@
         "Alan Oliveira",
         "Yan Francisco"
       ]
+    },
+    {
+      "data": "2026-06-23",
+      "tipo_analise": "analise_completa_tarde",
+      "hora_execucao": "14:35",
+      "total_conversas": 63,
+      "total_conversas_dr4": 63,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 1,
+      "criticas": 0,
+      "nota_media_sdr": 3.0,
+      "nota_media_vendedor": 4.0,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 9o dia consecutivo (desde 14/06) por modal 'Seu plano expirou' (renovacao e acao financeira da diretoria, nao executada) - 0 conversas. Censo DR4: 65 linhas com timestamp HH:MM (08:23-14:28); excluidos 1 feed interno ('Chegou um lead') e 1 'Paulo Junior -Ignorar' = 63 reais. Dia DOMINADO por reativacao em massa do Yan Francisco (~61 conversas) por TEMPLATE IDENTICO 'Boa tarde senhor X! ... recebi seu interesse ... faz sentido avancar nas conversas' - NOS ultima msg, aguardando cliente, zero diferenciais D1-D4 (X4/X6/X7). 7 broadcasts lidos a fundo (Raquel/Martins/Job/Diego/Cid/Ademario/Estelita) confirmam template; NENHUM cliente respondeu ao broadcast ate 14:35. Substantivas reais: apenas Pedro (inbound R$200 noturno, SDR Keane opener, sem retorno ~5h) + Rafael Almeida (contato novo 12:33 sem mensagens, sem atendente).",
+      "alerta_critico": "DR2 FORA DO AR pelo 9o dia consecutivo (plano expirado) - leads de alto valor (1000kW+, B2B, governo) sem cobertura, renovar plano (acao da diretoria). DR4 = carpet-bombing de reativacao do Yan Francisco em ~61 leads frios por template generico sem diferenciais, atingindo ate leads em negociacao avancada (Raquel Rodrigues estava com Caio comparando concorrente SolAgora e recebeu texto frio) - queima de base. FOLLOW-UP URGENTE: Pedro informou conta R$200 e 'bom dia' 09:22 e ficou sem retorno. Rafael Almeida (lead novo) sem atendente atribuido. Nota SDR 3.0 (Keane) / Vendedor 4.0 (Yan).",
+      "sdrs": [
+        "Keane",
+        "Kemilly"
+      ],
+      "vendedores": [
+        "Yan Francisco"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-06-19T12:25"
+  "ultima_atualizacao": "2026-06-23T14:35"
 }

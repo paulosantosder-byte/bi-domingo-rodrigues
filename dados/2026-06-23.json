@@ -1,0 +1,267 @@
+{
+  "data": "2026-06-23",
+  "hora_execucao": "14:35",
+
+  "metricas": {
+    "total_conversas": 63,
+    "total_conversas_dr4": 63,
+    "total_conversas_dr2": 0,
+    "total_ligacoes": 4,
+    "sem_resposta": 1,
+    "criticas": 0,
+    "sem_vendedor": 1,
+    "nota_media_sdr": 3.0,
+    "nota_media_vendedor": 4.0,
+    "aderencia_geral": 25
+  },
+
+  "sdrs": [
+    {
+      "nome": "Keane",
+      "cor": "#f59e0b",
+      "papel": "SDR",
+      "total_conversas": 1,
+      "ligacoes_dia": 0,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 3.0,
+        "aderencia_script": 35,
+        "etapas_cumpridas": {
+          "SDR-1_abertura": 1,
+          "SDR-2_qualificacao": 1,
+          "SDR-3_quebra_objecao": 0,
+          "SDR-4_agendamento": 0
+        },
+        "pontos_fortes": [
+          {
+            "categoria": "Qualificação (SDR-2)",
+            "descricao": "Opener pediu o valor da conta logo no primeiro contato",
+            "exemplos": [
+              "Cliente Pedro: opener 'Me chamo Keane' pediu 'o valor médio da sua conta de energia atualmente que já preparo um orçamento' (SDR-2a)"
+            ]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Velocidade / Follow-up (SDR-X5)",
+            "descricao": "Cliente respondeu o valor da conta (R$200) e mandou 'bom dia' às 09:22 e ficou SEM RESPOSTA até a tarde",
+            "impacto": "Inbound qualificado esfriando por ausência de retorno",
+            "conversas_afetadas": 1,
+            "exemplos_clientes": [
+              "Cliente Pedro: informou conta '200' 22/06 23:13 e 'bom dia' 23/06 09:22, nenhuma resposta humana após ~5h em horário comercial"
+            ],
+            "acao_corretiva": "Responder Pedro hoje, montar mini-orçamento p/ R$200 e tentar agendar visita (SDR-4)"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "SDR-X5", "descricao": "Demorou muito para responder (>30min comercial)", "ocorrencias": 1},
+          {"codigo": "SDR-X6", "descricao": "Não tentou transferir/avançar para vendedor", "ocorrencias": 1}
+        ]
+      }
+    },
+    {
+      "nome": "Kemilly",
+      "cor": "#06b6d4",
+      "papel": "SDR",
+      "total_conversas": 0,
+      "ligacoes_dia": 1,
+      "visitas_agendadas": 0,
+      "taxa_conversao": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "qualidade": {
+        "nota_media": 0.0,
+        "aderencia_script": 0,
+        "etapas_cumpridas": {"SDR-1_abertura": 0, "SDR-2_qualificacao": 0, "SDR-3_quebra_objecao": 0, "SDR-4_agendamento": 0},
+        "pontos_fortes": [],
+        "pontos_fracos": [],
+        "erros_cometidos": []
+      }
+    }
+  ],
+
+  "vendedores": [
+    {
+      "nome": "Yan Francisco",
+      "cor": "#f97316",
+      "papel": "VENDEDOR",
+      "total_conversas": 61,
+      "ligacoes_dia": 0,
+      "visitas_realizadas": 0,
+      "propostas_enviadas": 0,
+      "sem_resposta": 0,
+      "mediana_resposta_min": 0,
+      "media_resposta_min": 0,
+      "total_respostas": 61,
+      "qualidade": {
+        "nota_media": 4.0,
+        "aderencia_script": 22,
+        "argumentos_usados": {
+          "A1": 0, "A2": 61, "A3": 0, "A4": 0,
+          "B1": 0, "B2": 0, "B3": 0, "B4": 0,
+          "C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0,
+          "D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 0, "D6": 0,
+          "E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0,
+          "F1": 0, "F2": 0, "F3": 0, "F4": 0
+        },
+        "argumentos_nao_usados": [
+          {"id": "D1", "nome": "Laboratório próprio + troca 24h", "categoria": "Diferenciação", "importancia": "Crítica", "vezes_perdidas": 61},
+          {"id": "D2", "nome": "17 anos de mercado", "categoria": "Diferenciação", "importancia": "Alta", "vezes_perdidas": 61},
+          {"id": "D3", "nome": "6 mil projetos", "categoria": "Diferenciação", "importancia": "Alta", "vezes_perdidas": 61},
+          {"id": "D4", "nome": "Órfãos solares", "categoria": "Diferenciação", "importancia": "Alta", "vezes_perdidas": 61}
+        ],
+        "pontos_fortes": [
+          {
+            "categoria": "Volume / Reativação",
+            "descricao": "Disparou ~61 reativações em poucas horas mantendo a base aquecida",
+            "exemplos": ["Cliente Raquel Rodrigues, Cliente Martins, Cliente Diego Dias: reativação enviada na tarde de hoje"]
+          }
+        ],
+        "pontos_fracos": [
+          {
+            "categoria": "Mensagem genérica (X4) e zero diferenciação (X6)",
+            "descricao": "Template idêntico copy-paste 'Boa tarde senhor X! ... recebi seu interesse ... faz sentido avançar nas conversas', sem nenhum diferencial D1-D4 e sem referência ao histórico do lead",
+            "impacto": "Queima de base, baixíssima conversão, perde leads que já estavam em negociação",
+            "conversas_afetadas": 61,
+            "exemplos_clientes": [
+              "Cliente Raquel Rodrigues: estava em negociação avançada com Caio (parcela R$450, comparando concorrente SolAgora) e recebeu template genérico ignorando todo o histórico",
+              "Cliente Martins: lead frio de abril reativado com mesmo texto, sem nenhuma personalização"
+            ],
+            "acao_corretiva": "Segmentar reativação por estágio do lead; incluir D1 (laboratório/troca 24h) e referência ao que já foi negociado"
+          }
+        ],
+        "erros_cometidos": [
+          {"codigo": "X4", "descricao": "Mensagem genérica copy-paste", "ocorrencias": 61},
+          {"codigo": "X6", "descricao": "NUNCA mencionou diferenciais (D1-D4)", "ocorrencias": 61},
+          {"codigo": "X7", "descricao": "Não tentou agendar visita (vendeu/abordou só pelo WhatsApp)", "ocorrencias": 61}
+        ]
+      }
+    }
+  ],
+
+  "insights": {
+    "destaques_positivos": [],
+    "alertas": [
+      {
+        "pessoa": "Yan Francisco",
+        "papel": "VENDEDOR",
+        "cliente": "Base geral (61 leads)",
+        "problema": "Reativação em massa por template idêntico, sem diferenciais e sem segmentação",
+        "impacto": "Queima de base e perda de leads já quentes (ex: Raquel Rodrigues em negociação avançada recebeu texto frio genérico)",
+        "acao_corretiva": "Segmentar disparos por estágio; usar D1-D4 e personalizar; não reativar leads em negociação ativa com texto genérico"
+      },
+      {
+        "pessoa": "Keane",
+        "papel": "SDR",
+        "cliente": "Pedro",
+        "problema": "Inbound respondeu valor da conta (R$200) e 'bom dia' e ficou sem retorno ~5h",
+        "impacto": "Inbound qualificado esfriando",
+        "acao_corretiva": "Responder ainda hoje, montar orçamento e tentar agendar visita"
+      },
+      {
+        "pessoa": "Diretoria",
+        "papel": "VENDEDOR",
+        "cliente": "Leads de alto valor DR2",
+        "problema": "DR2 (175001) com 'Seu plano expirou' há 9 dias consecutivos (desde 14/06)",
+        "impacto": "Leads de alto valor (1000kW+, B2B, governo) sem atendimento há 9 dias",
+        "acao_corretiva": "Renovar o plano do DR2 (ação financeira da diretoria)"
+      }
+    ],
+    "oportunidades": [
+      {
+        "tipo": "⚠️ FOLLOW-UP URGENTE",
+        "cliente": "Pedro",
+        "descricao": "Inbound noturno que informou a conta e cumprimentou hoje sem receber retorno",
+        "acao_sugerida": "Responder, orçar R$200 e agendar visita"
+      }
+    ]
+  },
+
+  "ranking_sdrs": [
+    {"posicao": 1, "nome": "Keane", "nota_media": 3.0, "aderencia": 35, "visitas_agendadas": 0, "badge": "🏆 Ouro"},
+    {"posicao": 2, "nome": "Kemilly", "nota_media": 0.0, "aderencia": 0, "visitas_agendadas": 0, "badge": "🥈 Prata"}
+  ],
+
+  "ranking_vendedores": [
+    {"posicao": 1, "nome": "Yan Francisco", "nota_media": 4.0, "aderencia": 22, "badge": "🏆 Ouro"}
+  ],
+
+  "oportunidades_prioritarias": [
+    {
+      "cliente": "Pedro",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "⚠️ FOLLOW-UP URGENTE",
+      "motivo": "Inbound noturno 'quero economizar com energia solar', informou conta R$200 e mandou 'bom dia' 09:22 sem receber retorno (~5h)",
+      "recomendacao": "Responder hoje, montar mini-orçamento p/ conta R$200, qualificar e ofertar visita com horário concreto",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["SDR-4 - agendamento com opções de horário", "D1 - laboratório próprio/troca 24h"]
+    },
+    {
+      "cliente": "Rafael Almeida",
+      "pessoa": "-",
+      "papel": "SDR",
+      "conta": "DR4",
+      "categoria": "🔥 QUENTE",
+      "motivo": "Contato novo registrado hoje 12:33 sem nenhuma mensagem e sem atendente atribuído (automação ligada)",
+      "recomendacao": "Atribuir a um SDR e iniciar abordagem (SDR-1) antes de esfriar",
+      "urgencia": "HOJE",
+      "argumentos_recomendados": ["SDR-1 - abertura", "SDR-2 - qualificação valor da conta"]
+    }
+  ],
+
+  "conversas": [
+    {
+      "id": 1,
+      "conta": "DR4",
+      "cliente": "Pedro",
+      "pessoa": "Keane",
+      "papel": "SDR",
+      "hora_lista": "09:22",
+      "ultima_msg": "09:22",
+      "total_msgs": 6,
+      "status": "sem_resposta",
+      "nota": 3,
+      "argumentos_usados": ["SDR-1", "SDR-2"],
+      "argumentos_perdidos": ["SDR-3", "SDR-4"],
+      "erros": ["SDR-X5", "SDR-X6"],
+      "observacao": "Cliente Pedro: inbound noturno R$200, informou conta e 'bom dia' 09:22, sem retorno ~5h"
+    },
+    {
+      "id": 2,
+      "conta": "DR4",
+      "cliente": "Rafael Almeida",
+      "pessoa": "-",
+      "papel": "SDR",
+      "hora_lista": "12:33",
+      "ultima_msg": "12:33",
+      "total_msgs": 0,
+      "status": "critico",
+      "nota": 0,
+      "argumentos_usados": [],
+      "argumentos_perdidos": ["SDR-1", "SDR-2"],
+      "erros": [],
+      "observacao": "Cliente Rafael Almeida: contato novo 12:33 sem mensagens e sem atendente atribuído"
+    },
+    {
+      "id": 3,
+      "conta": "DR4",
+      "cliente": "Raquel Rodrigues (+ ~60 leads de reativação)",
+      "pessoa": "Yan Francisco",
+      "papel": "VENDEDOR",
+      "hora_lista": "14:22",
+      "ultima_msg": "14:22",
+      "total_msgs": 2,
+      "status": "ok",
+      "nota": 4,
+      "argumentos_usados": ["A2"],
+      "argumentos_perdidos": ["D1", "D2", "D3", "D4"],
+      "erros": ["X4", "X6", "X7"],
+      "observacao": "Cliente Raquel Rodrigues (representa ~61 broadcasts idênticos): reativação template genérica, NÓS última msg = aguardando cliente, zero diferenciais. Nenhum cliente respondeu ao broadcast até 14:35"
+    }
+  ]
+}
