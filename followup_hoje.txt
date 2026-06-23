@@ -1,96 +1,79 @@
 ====================================================
-FOLLOW-UPS PRIORITARIOS - 2026-06-19 (sexta)
-Referencia: conversas de 2026-06-18 (quinta)
+FOLLOW-UPS PRIORITARIOS - 23/06/2026 (terca)
+Referencia: conversas de ontem 22/06/2026 (segunda)
 ====================================================
 
-CONTEXTO DO DIA:
-- DR4: dia de volume EXTREMO de broadcast (214 conversas "ontem"),
-  mas ~205 sao disparos de reativacao/opener do Yan e do Lucas
-  (NOS mandamos a ultima msg = aguardando cliente). So ~10 leads
-  exigem acao real - listados abaixo.
-- DR2: FORA DO AR pelo 7o dia seguido (14->19/06) - "Seu plano expirou".
+>> DR2 FORA DO AR: "Seu plano expirou" (9o dia, desde 15/06).
+   Sem conversas de ontem nesta conta. Tudo abaixo e DR4.
+
+>> Dia de ALTO VOLUME na DR4: ~78 das 85 conversas de ontem
+   sao disparo de reativacao em massa do Yan Francisco (template
+   identico) + openers de SDR aguardando o cliente responder.
+   So 5 sao follow-ups acionaveis (abaixo).
+
+>> GARGALO DO DIA = ALAN (assessor): 3 leads quentes/altos
+   travados esperando ele entregar (Marcia, Cristiano, Carlos).
 
 ----------------------------------------------------
 🔴 SEM RESPOSTA (ANTES DAS 18H) - URGENTE:
 ----------------------------------------------------
-1. Jair Araujo - Vendedor: Yan Francisco - DR4
-   Ultima msg: 15:10 | Conta: ~1.000 kWh (Alagoinhas/BA)
-   Situacao: INBOUND quente. Keane qualificou, Yan pediu a conta,
-   cliente ENVIOU o boleto 15:03 e 15:10 e ficou +18h SEM RESPOSTA.
-   ACAO: Responder PRIMEIRA COISA do dia. Desculpa pela demora +
-   confirmar recebimento da conta + dimensionar e mandar proposta
-   ainda esta manha. Risco altissimo de perder pra concorrente.
+1. Murilo - SDR: Keanny Brandao - DR4
+   Ultima msg do cliente: ontem 16:26 (16h+ sem resposta)
+   Geracao: 600-700kW | Petrolina-PE | residencial c/ ar-cond.
+   Situacao: Cliente comparando precos pediu orcamento de 600kw
+   E 700kw. Keanny exigiu visita tecnica presencial obrigatoria
+   HOJE. Cliente objetou as 16:26 ("so queria o orcamento, estou
+   pesquisando, so chego em casa a noite") e Keanny SUMIU.
+   ACAO: Responder cedo. Enviar JA os 2 orcamentos (ou faixa de
+   valor) e oferecer visita no horario noturno dele - SEM
+   condicionar o orcamento a visita. Risco de perder p/ concorrente.
 
 ----------------------------------------------------
 🟡 SEM RESPOSTA (APOS 18H) - RESPONDER HOJE:
 ----------------------------------------------------
-(inbounds noturnos frescos que so receberam o opener automatico)
-
-1. Salvelina - Keane (SDR) - DR4 | 23:56
-   "Quero economizar com energia solar". So recebeu opener.
-   ACAO: Bom dia + repuxar a pergunta do valor da conta.
-
-2. Jbs - Gabriel (SDR) - DR4 | 23:19
-   "Tenho interesse em energia solar". So recebeu opener.
-   ACAO: Bom dia + reforcar pergunta do valor da conta.
-
-3. Antonio - Keane (SDR) - DR4 | 21:46
-   "Tenho interesse em energia solar". So recebeu opener.
-   ACAO: Bom dia + repetir pergunta do valor da conta.
-
-4. Julieta - Gabriel (SDR) - DR4 | 21:05
-   "Tambem quero economizar com energia solar". So recebeu opener.
-   ACAO: Bom dia + repetir pergunta do valor da conta.
+1. Pedro - SDR: Keanny/Bot - DR4
+   Ultima msg do cliente: ontem 23:13 | Conta: R$ 200
+   Situacao: Inbound noturno "Quero economizar com energia solar".
+   Bot pediu a conta, cliente respondeu "200" e ninguem retornou.
+   ACAO: Bom dia + confirmar conta ~R$200 + perguntar cidade/tipo
+   de imovel e indicar a economia para puxar o proximo passo.
 
 ----------------------------------------------------
 💎 ALTO CONSUMO - PRIORIDADE COMERCIAL:
 ----------------------------------------------------
-1. Cristiano Lima de Melo - Yan Francisco - DR4
-   Valor: ~1.000 kWh (usina de 1000kws dimensionada)
-   Situacao: Yan prometeu a simulacao ontem 17:48 ("esperando o rapaz
-   que faz"), cliente "Ok" 18:29. Simulacao NAO entregue.
-   ACAO: Cobrar internamente a simulacao e ENTREGAR hoje + destacar
-   economia anual + propor visita/fechamento.
-
-2. Louro Rodrigues - Alan Oliveira - DR4
-   Valor: projeto 1.000 kWatts - pediu preco A VISTA (Remanso)
-   Situacao: Alan perguntou a estrutura do telhado ontem 09:54 e o
-   cliente nao respondeu - negociacao travada nessa pergunta.
-   ACAO: Destravar HOJE. Refazer contato facilitando a resposta do
-   telhado (ceramica/metalico/laje) e ja sinalizar o valor a vista.
-
-3. Wellington - Lucas (SDR) - DR4
-   Valor: ~700 kW a vista (estava em fechamento)
-   Situacao: cliente silencioso desde 16/06; Lucas cobrou 17 e 18/06
-   (17:11) sem retorno. Lead esfriando.
-   ACAO: LIGAR (nao so texto). Retomar do ponto do fechamento +
-   condicao especial a vista por tempo limitado.
+1. Cristiano Lima de Melo - Yan Francisco -> Alan - DR4
+   Porte: USINA 1000kW | aguardando simulacao + financiamento
+   Situacao: Interesse desde 18/06. Yan dimensionou usina de
+   1000kW e prometeu a simulacao - que NUNCA saiu (4 dias). Em
+   22/06 repassou p/ o Alan tratar financiamento; cliente aguarda.
+   ACAO: Alan contatar HOJE com a simulacao da usina 1000kW + a
+   condicao de financiamento e ja propor visita tecnica. Ticket alto.
 
 ----------------------------------------------------
 🔥 LEADS QUENTES - FECHAR HOJE:
 ----------------------------------------------------
-1. Janiclea - Keanny Brandao - DR4
-   Valor: media R$ 500 | Interesse: Alto
-   Situacao: Keanny com orcamento PRONTO, migrou pro WhatsApp
-   (14:47), cliente "Ok" 18:13.
-   ACAO: Confirmar envio do orcamento no WhatsApp e PUXAR fechamento +
-   oferecer 2 horarios de visita tecnica.
+1. Marcia - Yan Francisco -> Alan - DR4
+   Interesse: MUITO ALTO | orcamento JA PRONTO
+   Situacao: Cliente colaborativa (mandou foto do telhado). Yan
+   avisou as 16:25 "orcamento pronto, o Alan vai enviar" - e ALAN
+   NUNCA ENVIOU. Cliente cobrou ("?", "ate o momento nao" 17:58).
+   Hoje 08:48 Yan voltou a perguntar, mas o orcamento segue parado.
+   ACAO: Alan ENVIAR o orcamento pronto logo cedo, pedir desculpas
+   pela demora e ja propor visita/fechamento. So falta entregar.
 
-2. Alex (PR Alexandre Oliveira) - Lucas (SDR) - DR4
-   Valor: verificar (ref. anterior ~400 kWh + 2 ar)
-   Situacao: engajado, mandou audio HOJE 09:43, mas so recebeu
-   saudacoes do Lucas (sem qualificacao/orcamento).
-   ACAO: Atender de verdade AGORA (cliente online). Ouvir o audio,
-   qualificar o valor da conta e encaminhar pra vendedor sem esfriar.
+2. Carlos Ayalla - Alan Oliveira -> Isla/tecnico - DR4
+   Interesse: ALTO | orfao solar (placas desinstaladas, quer expandir)
+   Situacao: Avaliacao tecnica encaminhada, "Isla vai entrar em
+   contato". Cliente mandou o localizador e confirmou disponibilidade
+   p/ SEXTA-FEIRA. Alan fechou com "me mantem informado" 14:20.
+   ACAO: Garantir que a Isla/tecnico realmente AGENDOU a visita de
+   sexta. So depende da execucao interna - nao deixar cair.
 
 ====================================================
 RESUMO:
-- Sem resposta antes 18h: 1
-- Sem resposta apos 18h: 4
-- Alto consumo: 3
-- Leads quentes: 2
-TOTAL DE FOLLOW-UPS: 10
-====================================================
-NOTA: DR2 fora do ar (plano expirado) ha 7 dias - leads de alto
-valor dessa conta seguem inacessiveis ate a renovacao do plano.
+- Sem resposta antes 18h: 1 (Murilo)
+- Sem resposta apos 18h: 1 (Pedro)
+- Alto consumo: 1 (Cristiano Lima - 1000kW)
+- Leads quentes: 2 (Marcia, Carlos Ayalla)
+TOTAL DE FOLLOW-UPS: 5
 ====================================================

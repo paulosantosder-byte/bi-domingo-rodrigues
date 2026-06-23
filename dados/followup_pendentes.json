@@ -1,130 +1,77 @@
 {
-  "data_referencia": "2026-06-18",
-  "gerado_em": "2026-06-19T10:13",
+  "data_referencia": "2026-06-22",
+  "gerado_em": "2026-06-23T09:10",
+  "observacao_dr2": "DR2 (ID 175001) FORA DO AR - 'Seu plano expirou' (9o dia, desde 15/06). Nenhuma conversa de ontem disponivel nesta conta. Todos os follow-ups abaixo sao da DR4.",
 
   "resumo": {
-    "total_pendentes": 10,
+    "total_pendentes": 5,
     "sem_resposta_antes_18h": 1,
-    "sem_resposta_apos_18h": 4,
-    "alto_consumo": 3,
+    "sem_resposta_apos_18h": 1,
+    "alto_consumo": 1,
     "leads_quentes": 2
   },
 
-  "observacao_geral": "Dia de volume EXTREMO de broadcast em DR4: 214 conversas 'ontem' no censo, mas ~205 sao disparos de reativacao/opener (Yan Francisco e Lucas) onde NOS enviamos a ultima mensagem (aguardando cliente) - nao sao follow-ups acionaveis. Apenas ~10 leads exigem acao real, listados abaixo. DR2 (175001) FORA DO AR pelo 7o dia consecutivo (14->19/06) - modal 'Seu plano expirou', renovacao e acao financeira do gestor.",
-
   "sem_resposta_antes_18h": [
     {
-      "cliente": "Jair Araujo",
-      "vendedor": "Yan Francisco",
+      "cliente": "Murilo",
+      "vendedor": "Keanny Brandao (SDR)",
       "conta": "DR4",
-      "hora_ultima_msg": "15:10",
-      "tempo_esperando": "Desde ontem 15:10 - mais de 18h sem resposta",
-      "resumo_conversa": "INBOUND quente de Alagoinhas/BA, conta media de 1.000 kWh. Keane qualificou 12:25, Yan pediu foto da conta 14:52, cliente disse 'Sim' e ENVIOU o boleto/conta as 15:03 e 15:10. Desde entao ZERO resposta do vendedor.",
-      "valor_conta": "~1.000 kWh (alto consumo)",
-      "recomendacao": "RESPONDER PRIMEIRA COISA DO DIA. Lead inbound de 1000kWh esperando ha quase 1 dia com a conta ja na mao - risco altissimo de perder para concorrente. Abrir a conta enviada, dimensionar e mandar simulacao hoje cedo.",
-      "abordagem_sugerida": "Pedir desculpas pela demora + confirmar recebimento da conta + 'ja estou dimensionando sua usina, te retorno com a proposta ainda esta manha' + agendar ligacao/visita"
+      "hora_ultima_msg": "16:26",
+      "tempo_esperando": "Desde ontem 22/06 16:26 (mais de 16h sem resposta)",
+      "resumo_conversa": "Lead de Petrolina-PE, comparando precos ('estou fazendo pesquisa'). Pediu orcamento de 600kw E 700kw (vai acrescentar ar-condicionado e quer sobra de geracao). Keanny aceitou preparar os dois, mas em seguida exigiu visita tecnica presencial obrigatoria HOJE para entregar. As 16:26 o cliente fez uma OBJECAO clara: 'na realidade eu so gostaria de fazer o orcamento inicialmente, pois estou fazendo pesquisa e por conta do trabalho so chego em casa a noite'. Keanny NAO respondeu mais.",
+      "valor_conta": "~600-700kW de geracao (residencial em expansao com ar-condicionado)",
+      "recomendacao": "Responder LOGO cedo. Cliente quente comparando precos, risco real de fechar com concorrente que entregar orcamento sem exigir visita. NAO insistir na visita presencial agora.",
+      "abordagem_sugerida": "Bom dia + reconhecer o pedido dele: enviar JA os dois orcamentos (600kw e 700kw) ou ao menos um valor de referencia, e oferecer visita tecnica a noite/no horario que ele puder, sem condicionar o orcamento a ela."
     }
   ],
 
   "sem_resposta_apos_18h": [
     {
-      "cliente": "Salvelina",
-      "vendedor": "Keane (SDR)",
+      "cliente": "Pedro",
+      "vendedor": "Keanny/Bot (SDR)",
       "conta": "DR4",
-      "hora_ultima_msg": "23:56",
-      "resumo_conversa": "Inbound noturno 'Quero economizar com energia solar' as 23:56. Recebeu apenas o opener automatico pedindo o valor da conta. Sem qualificacao humana ainda.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje cedo. Inbound fresco da madrugada - reengajar antes de esfriar.",
-      "abordagem_sugerida": "Bom dia personalizado + repetir a pergunta do valor da conta de forma leve + se possivel ja oferecer estimativa de economia"
-    },
-    {
-      "cliente": "Jbs",
-      "vendedor": "Gabriel (SDR)",
-      "conta": "DR4",
-      "hora_ultima_msg": "23:19",
-      "resumo_conversa": "Inbound noturno 'Tenho interesse em energia solar' as 23:19. Recebeu apenas o opener automatico pedindo o valor da conta.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje cedo. Inbound fresco aguardando.",
-      "abordagem_sugerida": "Bom dia + reforcar a pergunta do valor da conta + criar conexao"
-    },
-    {
-      "cliente": "Antonio",
-      "vendedor": "Keane (SDR)",
-      "conta": "DR4",
-      "hora_ultima_msg": "21:46",
-      "resumo_conversa": "Inbound noturno 'Tenho interesse em energia solar' as 21:46. Recebeu apenas o opener automatico pedindo o valor da conta.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje cedo. Inbound fresco aguardando.",
-      "abordagem_sugerida": "Bom dia + repetir a pergunta do valor da conta"
-    },
-    {
-      "cliente": "Julieta",
-      "vendedor": "Gabriel (SDR)",
-      "conta": "DR4",
-      "hora_ultima_msg": "21:05",
-      "resumo_conversa": "Inbound noturno 'Tambem quero economizar com energia solar' as 21:05. Recebeu apenas o opener automatico pedindo o valor da conta.",
-      "valor_conta": "Nao informado",
-      "recomendacao": "Responder hoje cedo. Inbound fresco aguardando.",
-      "abordagem_sugerida": "Bom dia + repetir a pergunta do valor da conta"
+      "hora_ultima_msg": "23:13",
+      "resumo_conversa": "Inbound noturno: 'Oi! Quero economizar com energia solar' as 23:12. Bot opener (Keane) pediu o valor da conta; cliente respondeu '200' (R$ 200) as 23:13. Ninguem deu retorno humano.",
+      "valor_conta": "R$ 200",
+      "recomendacao": "Responder pela manha. Lead inbound real, ticket pequeno mas com intencao explicita. Sem cobranca (entrou de madrugada).",
+      "abordagem_sugerida": "Bom dia + confirmar a conta de ~R$200 + perguntar cidade/tipo de imovel e ja indicar a faixa de economia para puxar o proximo passo."
     }
   ],
 
   "alto_consumo": [
     {
       "cliente": "Cristiano Lima de Melo",
-      "vendedor": "Yan Francisco",
+      "vendedor": "Yan Francisco -> repassado a Alan",
       "conta": "DR4",
-      "valor_conta": "~1.000 kWh (usina de 1000kws sendo dimensionada)",
-      "tipo_imovel": "Alto consumo",
-      "status_atual": "Aguardando simulacao",
-      "resumo_conversa": "Yan dimensionou usina de 1000kws. Ontem 17:48 disse que estava 'esperando o rapaz que faz a simulacao', cliente respondeu 'Ok' 18:29. Simulacao NAO foi entregue.",
-      "recomendacao": "PRIORIDADE ALTA - ticket grande de 1000kws comprometido com a simulacao prometida. Cobrar internamente quem faz a simulacao e ENTREGAR hoje.",
-      "abordagem_sugerida": "Bom dia + 'aqui esta a simulacao que prometi' + destacar economia anual + propor visita tecnica/fechamento"
-    },
-    {
-      "cliente": "Louro Rodrigues",
-      "vendedor": "Alan Oliveira",
-      "conta": "DR4",
-      "valor_conta": "Projeto de 1.000 kWatts - pediu preco A VISTA",
-      "tipo_imovel": "Alto consumo (Remanso)",
-      "status_atual": "Aguardando resposta do cliente sobre o telhado",
-      "resumo_conversa": "Cliente pediu preco a vista de projeto 1000kW para Remanso (17/06). Passado para Alan, que ontem 09:54 perguntou a estrutura do telhado. Cliente nao respondeu - negociacao travada nessa pergunta.",
-      "recomendacao": "PRIORIDADE ALTA - 1000kW A VISTA e dos melhores leads da base. Destravar hoje: refazer contato, facilitar a resposta sobre telhado e ja sinalizar o preco a vista.",
-      "abordagem_sugerida": "Bom dia Sr. Louro + 'so preciso saber o tipo de telhado (ceramica/metalico/laje) pra fechar seu valor a vista de Remanso' + oferecer foto/audio pra facilitar"
-    },
-    {
-      "cliente": "Wellington",
-      "vendedor": "Lucas (SDR)",
-      "conta": "DR4",
-      "valor_conta": "~700 kW - a vista (estava em fechamento)",
-      "tipo_imovel": "Alto consumo",
-      "status_atual": "Lead esfriando - cliente silencioso desde 16/06",
-      "resumo_conversa": "Lead de 700kW a vista que estava em fase de fechamento. Cliente parou de responder desde 16/06; Lucas cobrou continuidade 17/06 e 18/06 (17:11) sem retorno.",
-      "recomendacao": "PRIORIDADE ALTA - resgatar antes de perder de vez. Trocar a abordagem (parou de funcionar) - tirar do opener generico e usar gatilho de valor/condicao a vista, de preferencia ligacao.",
-      "abordagem_sugerida": "Ligar (nao so texto) + retomar o ponto onde parou (fechamento) + oferecer condicao especial a vista por tempo limitado"
+      "valor_conta": "Usina de 1000kW (alto consumo)",
+      "tipo_imovel": "Nao informado (alto consumo / financiamento)",
+      "status_atual": "Aguardando simulacao + contato do assessor Alan sobre financiamento",
+      "resumo_conversa": "Desde 18/06 demonstrou interesse (varios audios). Yan dimensionou USINA DE 1000kW e prometeu a simulacao ('estou so esperando o rapaz que faz') - que NUNCA foi entregue. Em 22/06 Yan repassou para o assessor Alan tratar o financiamento; cliente respondeu 'Ok / Bom dia!' 11:37 e segue aguardando.",
+      "recomendacao": "PRIORIDADE ALTA - ticket grande (1000kW). Simulacao prometida ha 4 dias ainda nao saiu. Alan precisa entrar em contato HOJE com a simulacao e a condicao de financiamento.",
+      "abordagem_sugerida": "Alan se apresentar, entregar a simulacao da usina 1000kW e a proposta de financiamento, e ja propor visita tecnica para fechar."
     }
   ],
 
   "leads_quentes": [
     {
-      "cliente": "Janiclea",
-      "vendedor": "Keanny Brandao",
+      "cliente": "Marcia",
+      "vendedor": "Yan Francisco -> Alan (assessor)",
       "conta": "DR4",
-      "nivel_interesse": "Alto",
-      "resumo_conversa": "Conta media de R$ 500. Keanny informou ontem que estava com o orcamento PRONTO e migrou o contato para o WhatsApp pessoal (14:47). Cliente respondeu 'Ok' 18:13.",
-      "valor_conta": "Media R$ 500",
-      "recomendacao": "Confirmar que o orcamento foi de fato enviado no WhatsApp e PUXAR o fechamento hoje. Orcamento pronto + cliente receptivo = momento de fechar.",
-      "abordagem_sugerida": "Enviar/reenviar orcamento no WhatsApp + perguntar se ficou alguma duvida + oferecer 2 horarios para visita tecnica"
+      "nivel_interesse": "Muito Alto",
+      "resumo_conversa": "Cliente colaborativa: mandou foto do telhado quando pediram. Yan prometeu o orcamento 'ate hoje' (22/06) e as 16:25 avisou 'Seu orcamento ja esta pronto, o assessor Alan vai lhe enviar'. ALAN NUNCA ENVIOU. A cliente cobrou ('?', 'Ate o momento nao' 17:58). Hoje 23/06 08:48 Yan voltou perguntando 'O rapaz ja enviou seu orcamento?' - mas o orcamento PRONTO continua sem ser entregue.",
+      "valor_conta": "Nao informado (orcamento ja dimensionado e pronto)",
+      "recomendacao": "Fechar a lacuna HOJE. Orcamento ja existe - so falta Alan ENVIAR. Risco de esfriar por pura falha de entrega interna.",
+      "abordagem_sugerida": "Alan enviar o orcamento pronto da Marcia logo no primeiro horario, pedir desculpas pela demora e ja propor a visita/fechamento."
     },
     {
-      "cliente": "Alex (PR Alexandre Oliveira)",
-      "vendedor": "Lucas (SDR)",
+      "cliente": "Carlos Ayalla",
+      "vendedor": "Alan Oliveira (-> Isla / time tecnico)",
       "conta": "DR4",
-      "nivel_interesse": "Alto - respondendo ativamente",
-      "resumo_conversa": "Cliente engajado, mandou 'BOM TARDE' ontem 14:39 e voltou a mandar audio HOJE 09:43. Ate agora so recebeu saudacoes do Lucas (sem qualificacao real nem orcamento).",
-      "valor_conta": "Verificar (referencia anterior: ~400 kWh + 2 aparelhos de ar)",
-      "recomendacao": "Atender DE VERDADE agora - cliente esta online e respondendo. Ouvir o audio enviado hoje, qualificar (valor da conta) e avancar, ao inves de so cumprimentar.",
-      "abordagem_sugerida": "Responder o audio + qualificar valor da conta + ja encaminhar para vendedor/orcamento sem deixar esfriar"
+      "nivel_interesse": "Alto",
+      "resumo_conversa": "ORFAO SOLAR: ja tem placas (atualmente TODAS desinstaladas) e quer reinstalar/expandir. Alan encaminhou avaliacao tecnica e disse que 'a Isla vai entrar em contato'. Cliente enviou o localizador e confirmou disponibilidade para SEXTA-FEIRA. Ultima msg do Alan 22/06 14:20: 'me mantem informado, qualquer coisa estou a disposicao'.",
+      "valor_conta": "Nao informado (orfao solar - expansao de sistema)",
+      "recomendacao": "Garantir que a Isla/tecnico REALMENTE agendou e vai a visita de sexta. Lead engajado e pronto - so depende da execucao interna da visita tecnica. Nao deixar cair.",
+      "abordagem_sugerida": "Isla confirmar com o Carlos o dia/hora exato da visita de sexta e o endereco (ja tem o localizador), e Alan acompanhar para nao perder o agendamento."
     }
   ]
 }
