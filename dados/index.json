@@ -698,19 +698,20 @@
     },
     {
       "data": "2026-06-25",
-      "hora_execucao": "10:25",
-      "tipo_analise": "Analise completa manha",
-      "total_conversas": 42,
+      "hora_execucao": "11:58",
+      "tipo_analise": "analise_completa_meio_dia",
+      "total_conversas": 75,
+      "total_conversas_dr4": 75,
+      "total_conversas_dr2": 0,
       "sem_resposta": 0,
-      "criticas": 0,
-      "nota_media_sdr": 4,
-      "nota_media_vendedor": 4.3,
-      "cobertura": "DR4 100% (42 conversas reais lidas a fundo). DR2 FORA DO AR 11o dia (plano expirado).",
-      "resumo": "DR4: 42 conversas reais (censo 44 -1 feed -1 Ignorar) TODAS lidas a fundo via extracao DOM. DR2 FORA DO AR 11o dia. Manha 100% dominada por reativacao em massa por template identico: Yan Francisco 28 + Alan Oliveira 13, TODAS com NOS ultima msg aguardando cliente, ZERO D1-D4, ZERO agendamento ativo. SDR humano so Lucas (1: Mille Anne).",
-      "alerta_critico": "DR2 FORA DO AR 11o dia (plano expirado) - renovar = acao da diretoria. DR4 carpet-bombing por template generico sem diferenciais. RECUPERACAO perdida: Cristiano Lima 1000kW financiamento reprovado, Yan ofereceu indicacao e encerrou passivo. ALTO CONSUMO: Mariana inbound R.000/mes so com bot ate manha seguinte; AD MODAS comercio Petrolina aguardando ligacao. QUENTE: Maria Vanilma ligacao 14h (D2); Helder projeto dimensionado (Alan). FOLLOW-UP: Mille Anne (Lucas respondeu localizacao 2 dias atraso); Rafael Borges pediu valores e sumiu. Jair 1000kW perdido por distancia. Nota SDR 4.0 / Vendedor 4.3.",
+      "criticas": 1,
+      "nota_media_sdr": 5.6,
+      "nota_media_vendedor": 4.1,
+      "cobertura": "SOBRESCREVE o run da manha (10:25). DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 11o dia consecutivo (desde 15/06) por modal 'Seu plano expirou' (renovacao = acao financeira da diretoria) - 0 conversas. Censo DR4: 77 linhas HH:MM (08:34-11:50); excluidos 1 feed 'Chegou um lead' e 1 'Paulo Junior -Ignorar' = 75 reais. Substantivas/inbound/SDR TODAS lidas a fundo via extracao DOM (clique por nome + leitura no-scroll); disparos de template amostrados a fundo e confirmados. Yan Francisco 50 + Alan Oliveira 20 (Vendedores), Keanny 4 + Lucas 1 (SDRs).",
+      "alerta_critico": "DR2 FORA DO AR pelo 11o dia (plano expirado) - renovar = acao da diretoria. DR4 = carpet-bombing de reativacao do Yan (50) + Alan (20) por template, NOS ultima msg, zero D1-D4 nos openers. DESTAQUE SDR: Keanny AGENDOU visita 14h do Pedro (qualificou + protocolo de visita + 14h/16h, execucao exemplar). QUENTE: Maria Vanilma 900kW A VISTA ligacao 14h (Yan usou D2). RECUPERACAO PERDIDA: Cristiano Lima 1000kW financiamento reprovado, Yan pivotou para plano de indicacao e encerrou passivo sem ofertar a vista. ALTO CONSUMO subaproveitado: Tomaz investidor usina 75kWp renda passiva (Keanny reopener generico); Mariana inbound R$1.000/mes; AD MODAS e CARLIZZE comercio Petrolina. Nota SDR 5.6 (Keanny 6.5/Lucas 3.0) / Vendedor 4.1 (Alan 4.3/Yan 4.0).",
       "sdrs": [
-        "Lucas",
-        "Gabriel"
+        "Keanny Brandão",
+        "Lucas"
       ],
       "vendedores": [
         "Yan Francisco",
@@ -718,5 +719,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-25T10:25"
+  "ultima_atualizacao": "2026-06-25T11:58"
 }
