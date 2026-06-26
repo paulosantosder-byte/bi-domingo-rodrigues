@@ -717,7 +717,29 @@
         "Yan Francisco",
         "Alan Oliveira"
       ]
+    },
+    {
+      "data": "2026-06-26",
+      "hora_execucao": "11:58",
+      "tipo_analise": "analise_completa_meio_dia",
+      "total_conversas": 37,
+      "total_conversas_dr4": 37,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 3,
+      "criticas": 0,
+      "nota_media_sdr": 5.1,
+      "nota_media_vendedor": 4.3,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 12o dia consecutivo (desde 14/06) por modal 'Seu plano expirou' + 'Sem conexao com WhatsApp' (renovacao = acao financeira da diretoria) - 0 conversas. Censo DR4: 40 linhas HH:MM (09:07-11:52); excluidos 2 feeds 'Chegou um lead' (Yan Sobral, 558781463639) e 1 'Paulo Junior -Ignorar' = 37 reais; 36 lidas a fundo via extracao DOM (clique por nome + leitura no-scroll). Yan Francisco 31 + Alan Oliveira 1 (Vendedores); Keanny Brandao 3 + Lucas 2 (SDRs).",
+      "alerta_critico": "DR2 FORA DO AR pelo 12o dia (plano expirado) - renovar = acao da diretoria. DR4 DOMINADO por reativacao em massa do Yan (31) por NOVO template ('Fechamos parceria com banco, taxas de financiamento solar cairam muito, faz sentido simular?'), NOS ultima msg, zero D1/D3/D4 (X6 em 31 conversas). DESTAQUES POSITIVOS: Maria Vanilma visita HOJE 17h confirmada (900kW a vista, Yan usou D2); Mariana agendou segunda 10h (R$1.000/mes); AD MODAS visita amanha 10h (comercio Petrolina); Keanny ofereceu visita HOJE 15h ao Evandro (Juazeiro). RESPONDENTES ao template banco: sidneylavinnia 1500kW deu CPF quer simular (Yan foi direto a simulacao sem visita tecnica - X7); Mateus Luiz perguntou 'qual banco?' e Yan parou seco 'Banco do Nordeste' (X7). ALTO CONSUMO PARADO: Cesar 3000kWh telhado ceramico Juazeiro esperando assessor Yuri ha 8 dias. RECUPERACAO: Marcio Bittencourt 1000-1200kWh (2-3 casas) ja tem orcamentos concorrentes. SDR LENTO: Lucas respondeu inbound da Ana Cleide (06:09) so 10:25 sem qualificar. Nota SDR 5.1 (Keanny 6.5/Lucas 3.0) / Vendedor 4.3 (Alan 5.5/Yan 4.3).",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Alan Oliveira"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-06-25T11:58"
+  "ultima_atualizacao": "2026-06-26T11:58"
 }
