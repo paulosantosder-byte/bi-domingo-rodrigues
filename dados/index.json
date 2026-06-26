@@ -720,17 +720,17 @@
     },
     {
       "data": "2026-06-26",
-      "hora_execucao": "11:58",
-      "tipo_analise": "analise_completa_meio_dia",
-      "total_conversas": 37,
-      "total_conversas_dr4": 37,
+      "hora_execucao": "18:05",
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "total_conversas": 115,
+      "total_conversas_dr4": 115,
       "total_conversas_dr2": 0,
-      "sem_resposta": 3,
+      "sem_resposta": 4,
       "criticas": 0,
-      "nota_media_sdr": 5.1,
-      "nota_media_vendedor": 4.3,
-      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 12o dia consecutivo (desde 14/06) por modal 'Seu plano expirou' + 'Sem conexao com WhatsApp' (renovacao = acao financeira da diretoria) - 0 conversas. Censo DR4: 40 linhas HH:MM (09:07-11:52); excluidos 2 feeds 'Chegou um lead' (Yan Sobral, 558781463639) e 1 'Paulo Junior -Ignorar' = 37 reais; 36 lidas a fundo via extracao DOM (clique por nome + leitura no-scroll). Yan Francisco 31 + Alan Oliveira 1 (Vendedores); Keanny Brandao 3 + Lucas 2 (SDRs).",
-      "alerta_critico": "DR2 FORA DO AR pelo 12o dia (plano expirado) - renovar = acao da diretoria. DR4 DOMINADO por reativacao em massa do Yan (31) por NOVO template ('Fechamos parceria com banco, taxas de financiamento solar cairam muito, faz sentido simular?'), NOS ultima msg, zero D1/D3/D4 (X6 em 31 conversas). DESTAQUES POSITIVOS: Maria Vanilma visita HOJE 17h confirmada (900kW a vista, Yan usou D2); Mariana agendou segunda 10h (R$1.000/mes); AD MODAS visita amanha 10h (comercio Petrolina); Keanny ofereceu visita HOJE 15h ao Evandro (Juazeiro). RESPONDENTES ao template banco: sidneylavinnia 1500kW deu CPF quer simular (Yan foi direto a simulacao sem visita tecnica - X7); Mateus Luiz perguntou 'qual banco?' e Yan parou seco 'Banco do Nordeste' (X7). ALTO CONSUMO PARADO: Cesar 3000kWh telhado ceramico Juazeiro esperando assessor Yuri ha 8 dias. RECUPERACAO: Marcio Bittencourt 1000-1200kWh (2-3 casas) ja tem orcamentos concorrentes. SDR LENTO: Lucas respondeu inbound da Ana Cleide (06:09) so 10:25 sem qualificar. Nota SDR 5.1 (Keanny 6.5/Lucas 3.0) / Vendedor 4.3 (Alan 5.5/Yan 4.3).",
+      "nota_media_sdr": 4.9,
+      "nota_media_vendedor": 4.4,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR pelo 13o dia consecutivo (desde 14/06) por modal 'Seu plano expirou' + 'Sem conexao com WhatsApp' (renovacao = acao financeira da diretoria) - 0 conversas. Censo DR4: 118 linhas HH:MM (09:14-17:39); excluidos 2 feeds 'Chegou um lead' (Yan Sobral, 558781463639) e 1 'Paulo Junior -Ignorar' = 115 reais. Substantivas/inbound/respondentes lidas a fundo + amostras dos dois disparos confirmadas via extracao DOM. Lucas 61 + Keanny Brandao 5 (SDRs); Yan Francisco 43 + Alan Oliveira 2 (Vendedores).",
+      "alerta_critico": "DR2 FORA DO AR pelo 13o dia (plano expirado) - renovar = acao da diretoria. DR4 DOMINADO POR DOIS DISPAROS EM MASSA: (1) LUCAS (SDR) carpet-bombing de reativacao a tarde (~61 conversas, 16:45-17:39) por templates genericos ('Boa tarde, vamos dar continuidade?' / 'Vi que voce nao seguiu... foi valor, prazo ou outro motivo?'), zero qualificacao/agendamento, atingiu cliente JA GANHO (Igor Val 'ja comprei') e lead de 700kW a vista em fechamento (Wellington) - falha de segmentacao da lista (X4 em 58). (2) YAN seguiu o template banco (43 conv, zero D1/D3/D4, X6 em 43). DESTAQUES POSITIVOS: Keanny AGENDOU visita HOJE 15h do Evandro (Juazeiro, conta declarada ~R$7mil = altissimo); Alan VISITOU e ENVIOU PROPOSTA 1.000kWh (12 mod DAH 620W + GoodWe 5kW) ao Leite Moura 14:35; Maria Vanilma visita 17h confirmada (900kW a vista); Jadson Rosendo quer visita amanha a tarde. RESPONDENTES template banco caindo em simulacao SEM visita tecnica (X7): Mateus Luiz (enviou conta), Viviane (deu numero), sidneylavinnia (1500kW). ALTO CONSUMO travado: Cesar 3000kWh esperando assessor Yuri 8 dias. INBOUND LENTO Lucas: Ana Cleide 06:09->10:25 so saudacao. Nota SDR 4.9 (Keanny 7.0/Lucas 2.8) / Vendedor 4.4 (Alan 6.0/Yan 4.3).",
       "sdrs": [
         "Keanny Brandão",
         "Lucas"
@@ -741,5 +741,5 @@
       ]
     }
   ],
-  "ultima_atualizacao": "2026-06-26T11:58"
+  "ultima_atualizacao": "2026-06-26T18:05"
 }
