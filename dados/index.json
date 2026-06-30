@@ -739,7 +739,29 @@
         "Yan Francisco",
         "Alan Oliveira"
       ]
+    },
+    {
+      "data": "2026-06-30",
+      "hora_execucao": "14:35",
+      "tipo_analise": "analise_completa_tarde",
+      "total_conversas": 37,
+      "total_conversas_dr4": 37,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 3,
+      "criticas": 1,
+      "nota_media_sdr": 4.8,
+      "nota_media_vendedor": 4.8,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) NAO verificado nesta analise (a pedido da diretoria) - ultimo status conhecido em 26/06 = plano expirado (13o dia fora do ar). Censo DR4: 40 linhas HH:MM (06:14-14:25); excluidos 2 feeds 'Chegou um lead' (Yan Sobral, 558781463639) e 1 'Paulo Junior -Ignorar' = 37 conversas reais. Substantivas/inbound/respondentes lidas a fundo via extracao DOM (clique por nome + leitura no-scroll). Yan Francisco domina (24 conversas, 12 disparos puros de template + 12 leads ativos); Alan Oliveira sem conversa solo (co-atende visitas com Yan). Keanny Brandao 11 + Lucas 2 (SDRs). NOVIDADE: Yan adotou template de URGENCIA FALSA ('diretor liberou desconto para os 3 proximos projetos fechados hoje').",
+      "alerta_critico": "DR4 dominado pelo Yan Francisco (24 conv: 12 disparos puros + 12 leads ativos) com NOVO template de URGENCIA FALSA ('diretor liberou desconto p/ 3 projetos hoje'). DESTAQUE: Yan AGENDOU visita HOJE 16h do Leandro Telez usando D2/D3/D4 (raro uso de diferenciais) + ofereceu visita 16h ao Jadson. GARGALO CRITICO: Keanny prometeu orcamento 300-350kW ao Andre Martins em 25/06, 5 dias sem entregar e cliente cobrando hoje. RECUPERACAO EM RISCO: Maria Vanilma (900kW a vista) visitada 26/06 e sumiu, so follow-up generico; Rafael Borges pediu valores em 23/06 e nunca recebeu. Mariana (R$1.000/mes) remarcou visita de hoje. SDR Lucas ignorou pergunta direta da Clea. Nota SDR 4.8 (Keanny 6.0/Lucas 3.5) / Vendedor 4.8 (Yan 4.8; Alan sem chat solo).",
+      "sdrs": [
+        "Keanny Brandão",
+        "Lucas"
+      ],
+      "vendedores": [
+        "Yan Francisco",
+        "Alan Oliveira"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-06-26T18:05"
+  "ultima_atualizacao": "2026-06-30T14:35"
 }
