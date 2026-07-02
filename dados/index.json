@@ -761,7 +761,28 @@
         "Yan Francisco",
         "Alan Oliveira"
       ]
+    },
+    {
+      "data": "2026-07-01",
+      "hora_execucao": "21:17",
+      "tipo_analise": "analise_completa_fim_de_dia",
+      "total_conversas": 192,
+      "total_conversas_dr4": 192,
+      "total_conversas_dr2": 0,
+      "sem_resposta": 4,
+      "criticas": 0,
+      "nota_media_sdr": 3.3,
+      "nota_media_vendedor": 4.3,
+      "cobertura": "DR4 (152352) ACESSIVEL. DR2 (175001) FORA DO AR (plano expirou + sem conexao WhatsApp) - nao verificada. Censo DR4: 194 linhas HH:MM (08:30-18:02); excluidos 1 feed e 1 'Paulo Junior -Ignorar' = 192 conversas reais. 8 substantivas lidas a fundo via extracao DOM sob ~184 disparos.",
+      "alerta_critico": "DIA DE CARPET-BOMBING (novamente): LUCAS (SDR) 135 reativacoes por template generico convidando lead a ir ATE a empresa, sem nome/qualificacao (SDR-X4 em massa); YAN (Vendedor) 49 reativacoes por financiamento + URGENCIA FALSA ('diretor liberou desconto p/ 3 projetos hoje'), zero D1-D4. QUENTES SEM RESPOSTA: Robson perguntou entrada/parcela 18:02 (Yan) sem retorno; Roberto cobrou simulacao do CPF ha 1 dia (Yan). FOLLOW-UP: Marivaldo se reativou sozinho 11:02 'Responda por favor' sem resposta ~10h. RECUPERACAO PERDIDA pelo disparo: Marcelo 'ja fechei com Solfacio' e luzia 'ja pensei outra empresa' - Lucas nao recuperou. POSITIVO: Yan retomou o inbound critico de ontem cleuber Cell prometendo orcamento 700kWh ~R$12.490. Nota SDR 3.3 (Keanny 5.0/Lucas 2.8) / Vendedor 4.3 (Yan 4.3).",
+      "sdrs": [
+        "Lucas",
+        "Keanny Brandão (Keane)"
+      ],
+      "vendedores": [
+        "Yan Francisco"
+      ]
     }
   ],
-  "ultima_atualizacao": "2026-06-30T19:13"
+  "ultima_atualizacao": "2026-07-01T21:17"
 }
